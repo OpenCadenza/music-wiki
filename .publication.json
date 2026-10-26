@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "source_commit": "61299360d4bf3c8237f7775276c0075a50c1a27c",
+  "source_branch": "master",
+  "content_root": "content",
+  "excluded_paths": [
+    "_maintenance/README.md",
+    "_maintenance/migration-reviews/README.md",
+    "_maintenance/migration-reviews/vivaldi-rv269-2.26.0.json",
+    "_maintenance/patches/README.md",
+    "_maintenance/target.json"
+  ],
+  "files": [
+    {
+      "path": "abc.md",
+      "sha256": "a6591d18af3160f8e0250c229e2be8a24d4221f5697f8a9b3ddbee434dea16c1"
+    },
+    {
+      "path": "composers/bach/examples/keyboard-counterpoint.md",
+      "sha256": "ef17469888f49a89f7baac7eabef22fbff3f5b2b6836d26d591dcf75431e0107"
+    },
+    {
+      "path": "composers/bach/examples/keyboard-variations.md",
+      "sha256": "57ce55dc5b63a3466094562db28c5e992c400d9e737eaed41a93dab50dd09256"
+    },
+    {
+      "path": "composers/bach/examples/README.md",
+      "sha256": "3c2a4a53f06d9f8ada42064648626a36a95d12e73711997b65f21c4d70d6bb71"
+    },
+    {
+      "path": "composers/bach/README.md",
+      "sha256": "29fdd75dd2be362c7568eddbf3e738467587aba151b2d16ada42405d2eff326a"
+    },
+    {
+      "path": "composers/beethoven/chamber/index.md",
+      "sha256": "de7740815b0b7e1788716920312a1201ab2022424ce4b103da3e7d5afa9dcd6f"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/index.md",
+      "sha256": "d652503c03ec5e92c548a6a7619cdf3a0d60671199a0419c698f6e0e27492aba"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op127-op132-return-meter.md",
+      "sha256": "2f7be4142ae458c556a223b01b9af6a9635aa87d7026709f9daad855763c0799"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op130-finale-return.md",
+      "sha256": "e91cc824e1c94d7b1efe2e4cc22a17fd9ede25dfd8f478ae44d1da19b2c11163"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op133-held-note.md",
+      "sha256": "681023160fb1d664c0271252a731d0dff04924eb374ba385f93788eed983a912"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op18-no4-opening.md",
+      "sha256": "aa5f8c69fd29a2585cdf816d058d458e882dd36d109f0bfdac7d25fc30f7738d"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op59-harmonic-expectation.md",
+      "sha256": "ca634836ced8b1eff01e9e3a790533154421989749a445402d82882ce0ab8609"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/op74-model-reinterpretation.md",
+      "sha256": "ea245dd6c94c18e457ce611c1b52e1efcd4be9bc62e5f7e0b709e3d9f0f5af7d"
+    },
+    {
+      "path": "composers/beethoven/chamber/quartets/voice-handoff.md",
+      "sha256": "6834230c57a198a51a03e1ad14ee79e9f315270a5cec70c6ed9c7c839a9d3647"
+    },
+    {
+      "path": "composers/beethoven/chamber/sonatas-trios/cello-piano-roles.md",
+      "sha256": "6787c5710033cb4d67195039bf77be25b4b47cdd51bf4fbd396bd055b17d099f"
+    },
+    {
+      "path": "composers/beethoven/chamber/sonatas-trios/index.md",
+      "sha256": "76fd63d5e46d7bc67935a407ff0e1ae412e2349ed6f20fd3bf05afcc6bfb93a5"
+    },
+    {
+      "path": "composers/beethoven/chamber/sonatas-trios/op97-role-transfer.md",
+      "sha256": "f13d713d29d49e517751af52e35d0ae69cc8cdefbb6ec46e61ab6b9408d9295e"
+    },
+    {
+      "path": "composers/beethoven/index.md",
+      "sha256": "c5d01d6445c6c9d674e8c8c28a290dfe73d706a601b0e8e0271c77a6a6071ab0"
+    },
+    {
+      "path": "composers/beethoven/orchestral/concertos/index.md",
+      "sha256": "e64d45a221b3fd7131882de9453c59ddf31af6d8c5e2c7a7cce0b35b0010c37a"
+    },
+    {
+      "path": "composers/beethoven/orchestral/concertos/solo-tutti-responsibility.md",
+      "sha256": "d3898b27386da03211e23f3e73ba018ebb949bea6273aeef367dbb329db24191"
+    },
+    {
+      "path": "composers/beethoven/orchestral/index.md",
+      "sha256": "88fadba2f118e8d825f4b194a648c7d9d843806e52b875f67c9f8193cb42ef0a"
+    },
+    {
+      "path": "composers/beethoven/orchestral/symphonies/cell-compression-and-comparison.md",
+      "sha256": "7909a4d9d2a7af4620c95fc91f27149ce22a4b41a3591e6173a1b5d4d24015f9"
+    },
+    {
+      "path": "composers/beethoven/orchestral/symphonies/index.md",
+      "sha256": "c2c927dbc4704f0ccbd4e073853789aef44a1203f24f729099b1e714b4bbff42"
+    },
+    {
+      "path": "composers/beethoven/orchestral/symphonies/rhythm-cell-to-boundary.md",
+      "sha256": "58978683a1f751eb0ce033e9c00affd34363a8dba430fe4e3d8e201ec6b49b60"
+    },
+    {
+      "path": "composers/beethoven/orchestral/symphonies/symphony5-opening-cell.md",
+      "sha256": "f02d99acd6a9831481da5fb6906536c2652a464ac1d7963c10e681858d1b7222"
+    },
+    {
+      "path": "composers/beethoven/piano/index.md",
+      "sha256": "a19719fcedf4756df59b663a62b4202483d8defc4ff91b4b0eb81610ad08b405"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/delayed-cadence-model.md",
+      "sha256": "725b264caad21e59624b14d888ec5e11328d138495f86cde24b98cdb672cbaf1"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/index.md",
+      "sha256": "70440fd9f790b26ca879fe9ca1444dbe67a72a0da22419152769b7f79ad6103b"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/op109-density.md",
+      "sha256": "daba9aad0f4f7129145328d113d398f0927e6195fe4fe3b54bae8e241865e0a9"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/op110-fugue.md",
+      "sha256": "effae944be8b28c73c615ce2fec936cf8aa1ff8eb8fded15d9bdcc6a117bcc8a"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/op111-rhythm.md",
+      "sha256": "8e377306410992460f9bd15c67dfa0bc371fd708d81f0253eb496c619706d953"
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/op2no1-opening.md",
+      "sha256": "4b29d72459dff679b32523b2f1a4685204207563f15660eadfc42f5adbbd808d"
+    },
+    {
+      "path": "composers/beethoven/piano/variations-miniatures/index.md",
+      "sha256": "54c790ba5afe795fb6512f6d99b3be44af6f95ff7fc0c3c7cd16880effc2c9a4"
+    },
+    {
+      "path": "composers/beethoven/piano/variations-miniatures/op120-cycle.md",
+      "sha256": "04a04da0a2a378e885315fbbe16a96bf366d3743a63535eb2a263a8efb5f2710"
+    },
+    {
+      "path": "composers/beethoven/piano/variations-miniatures/variation-time-scale.md",
+      "sha256": "b7d00f1569c6d35f64c3b185e6f970f5dfa94c281758d0f7ed0fc96228752587"
+    },
+    {
+      "path": "composers/beethoven/piano/variations-miniatures/woo78-theme-march.md",
+      "sha256": "ab3d3abe9113f08a1634e95343c3ce3ca48c86217916ab0b935e75ea14188606"
+    },
+    {
+      "path": "composers/beethoven/techniques/harmony-form/index.md",
+      "sha256": "38524384180cd0451df26de137231537e986de582143173930cc1b60ab06e91b"
+    },
+    {
+      "path": "composers/beethoven/techniques/harmony-form/mediant-route.md",
+      "sha256": "c693fb3210aa0f45b629a468d64f5bf6ca1663bddd20e10602589986033ebabc"
+    },
+    {
+      "path": "composers/beethoven/techniques/index.md",
+      "sha256": "2128e45c1d2c8b52f8a2b2b6e8524ab7adab5042a59fa3d1e668e9916b3c576f"
+    },
+    {
+      "path": "composers/beethoven/techniques/motivic-development/index.md",
+      "sha256": "9080c1f27260769e83c20eb0bd2634bdb75759429ea6068bde7701d01ca6701e"
+    },
+    {
+      "path": "composers/beethoven/techniques/motivic-development/motive-functions.md",
+      "sha256": "528f30d071888d88289d7052b05eb158afd3cfc28776355cf922c9091473d630"
+    },
+    {
+      "path": "composers/beethoven/techniques/motivic-development/op10-opening.md",
+      "sha256": "2f277b87253ce6df21dfa0bf6b95a4e2cdd30f6036b0c56b644b2803cda13209"
+    },
+    {
+      "path": "composers/beethoven/techniques/rhythm-phrase/index.md",
+      "sha256": "e5f428f1cf44c3d626b5071df26953cba6f199e8c4bc317e3555709f666f0566"
+    },
+    {
+      "path": "composers/beethoven/techniques/rhythm-phrase/metric-displacement.md",
+      "sha256": "1294b013bb4138124414dc595c42fc3cad9337c37f0bec2200fb5babe63ba850"
+    },
+    {
+      "path": "composers/beethoven/vocal/index.md",
+      "sha256": "f3b48af7249b6d4899a57470840b0edfc10054fe9cc31f1db8ed9c817c206d81"
+    },
+    {
+      "path": "composers/beethoven/vocal/sacred-choral/index.md",
+      "sha256": "41bbeba834ef8b7de561e2c2712434e7241ba0b93f1943debc94b2c18354751c"
+    },
+    {
+      "path": "composers/beethoven/vocal/sacred-choral/text-to-texture.md",
+      "sha256": "ba6b25b7fdb549cd54b5f5e73fc20a2989c402429216c7c7c0234a44c099b72b"
+    },
+    {
+      "path": "composers/beethoven/vocal/songs-opera/index.md",
+      "sha256": "e9776b4eac3af16a096c8f79cfb3f9ec7a0267f61c13fdad7d8df9621f1b3bb9"
+    },
+    {
+      "path": "composers/beethoven/vocal/songs-opera/text-melody-accompaniment.md",
+      "sha256": "c21e49d50d17318caa1e12e08cf1efa2129dc4c9da8bb7e1c035412b838a5f5d"
+    },
+    {
+      "path": "composers/beethoven/workflow/index.md",
+      "sha256": "6ed8b4e5f92d832d52188623fee3e01b31ece34633fdac30e975dae1cd150f4d"
+    },
+    {
+      "path": "composers/beethoven/workflow/retrieval-to-score.md",
+      "sha256": "472217b39a4148fde9dd3c058a708892a92545d1d9eb63149e26f4eb5761f22f"
+    },
+    {
+      "path": "composers/beethoven/workflow/sketch-to-voices.md",
+      "sha256": "a79f8923b1c0ee9792c24979079ad5724b96e2e93b75a58c2bd7837fa4a447e3"
+    },
+    {
+      "path": "composers/chopin/examples/etudes.md",
+      "sha256": "f1d1553805efd4ef578e63e6243c6b34409acb863563918aa27c9e1304beef24"
+    },
+    {
+      "path": "composers/chopin/examples/README.md",
+      "sha256": "c5c5c218d14726c311cb4e1371acfe8075d24827f04f92ab9498feac3927d41e"
+    },
+    {
+      "path": "composers/chopin/README.md",
+      "sha256": "7e39e9c14713edb87376227a4d224a9ac50c6d39a7e9c0acfda8c5c4cae78234"
+    },
+    {
+      "path": "composers/debussy/examples/keyboard-orchestral-texture.md",
+      "sha256": "0d9a4f4cf7dd83472e3a8969699a16511f3a81c00b25ec88afe7c594c9b5179e"
+    },
+    {
+      "path": "composers/debussy/examples/README.md",
+      "sha256": "ec5be834a89a42d7d0e548943e8a650c57cdae8e00d9bb8bc2ae9b4946404eb4"
+    },
+    {
+      "path": "composers/debussy/README.md",
+      "sha256": "a28c2fd3fbea5b22f3c03022008d832b44a65496d5636f966ecd8195c7562cdc"
+    },
+    {
+      "path": "composers/haydn/README.md",
+      "sha256": "dfb1590c39cb2a18c2e50a50dbcd7507aa3db16d225adea49caa24c44fbc692a"
+    },
+    {
+      "path": "composers/haydn/thematic-treatment.md",
+      "sha256": "6ddd95b8ebff18e1e295373080e4ae3bd260eecb697f6e4713a28d10a24ba75c"
+    },
+    {
+      "path": "composers/mozart/examples/piano-sonatas.md",
+      "sha256": "8a758d436acff5985775f9745a114fd6fb52b401ee2a2b81e8ac24dfb1c75e38"
+    },
+    {
+      "path": "composers/mozart/examples/piano-variations.md",
+      "sha256": "5122603568c3a1eee1e73f39dce634494306b476cad0881b1bb6d768c1caed36"
+    },
+    {
+      "path": "composers/mozart/examples/README.md",
+      "sha256": "41c45b53d7cf9ef5b3d0834e5685b7e84a17951e0b6c086285534e3d11f01112"
+    },
+    {
+      "path": "composers/mozart/README.md",
+      "sha256": "d41a9bdda3d25d7bba99f5c983edbc7edcc14c326f8e53602f78f0424c1241aa"
+    },
+    {
+      "path": "composers/ravel/examples/chamber-cyclic-writing.md",
+      "sha256": "abbd2419f136e6b78d55be2e81b73b606bda8d9cd293c02b0ed83f46807dd7fa"
+    },
+    {
+      "path": "composers/ravel/examples/orchestral-processes.md",
+      "sha256": "f3c519ca5227f22e0bbf711f15f2cd72fd1e857e0734c307fd14e04deb9146ce"
+    },
+    {
+      "path": "composers/ravel/examples/README.md",
+      "sha256": "010f3ab42ed4cc03cfee60904681e6d968a1ea07b357fdd12cf77e136d496d74"
+    },
+    {
+      "path": "composers/ravel/README.md",
+      "sha256": "98f1b2590050b3b653625f3ee65415ec227238ecaf3a2cab4340f745886893f7"
+    },
+    {
+      "path": "composers/ravel/string-quartet.md",
+      "sha256": "d7e975b378c47c1754f044ac5210e9bda4dd1f6d0579c13c740bfe3f5b2db692"
+    },
+    {
+      "path": "composers/ravel/style.md",
+      "sha256": "1bff20d4324ce2c0242c068edf6886e2b882e8e7142fd9dc609121328222dc56"
+    },
+    {
+      "path": "composers/README.md",
+      "sha256": "eb8dbb578d81071252cca5c12d4dd015406527b16adecf6d7ce61a75f090b4a1"
+    },
+    {
+      "path": "development.md",
+      "sha256": "eb44a35c3a4cddfef8c57f5c93a8358ef01038b2cb02e64cda6788c609a66702"
+    },
+    {
+      "path": "ensembles/jazz-combo/README.md",
+      "sha256": "bebc712e5c7b206ccc5d811f7071c78cea49d710e2f927ec7fdfd185e97892b4"
+    },
+    {
+      "path": "ensembles/jazz-combo/rhythm-section-to-big-band.md",
+      "sha256": "0d9c5b64613fd57e301f708893c44a7676e61b162e0a60c26474052ee33f15cb"
+    },
+    {
+      "path": "ensembles/orchestra/README.md",
+      "sha256": "60ec49a9c0950048d310cbdc455d2231cf03131301db29048d5b84fa7f345da1"
+    },
+    {
+      "path": "ensembles/orchestra/texture-and-timbre.md",
+      "sha256": "a8da4162e8fe183f9c1e40340776b4dac1250fc8f90a11cb7436a79d429536ef"
+    },
+    {
+      "path": "ensembles/README.md",
+      "sha256": "a23b2ecbe40debed54b1f9456ee5df2175d9b02822696e8202bfdd92d01642a8"
+    },
+    {
+      "path": "ensembles/string-quartet.md",
+      "sha256": "6bacd3f06f9ae2baeb2abf601227e6aab52a61a389c7ef7c18be3169ca6a2891"
+    },
+    {
+      "path": "form.md",
+      "sha256": "829d731386f879c58a81d3eeed9884d1b8b49a63189dd556ca7a0ba003002787"
+    },
+    {
+      "path": "forms/concerto/README.md",
+      "sha256": "f6c6bd9b0b38b00924c9a834de14be6ab498bec62cc84b66b9a1541f255af2ee"
+    },
+    {
+      "path": "forms/concerto/solo-tutti-duty.md",
+      "sha256": "30cd6c6f7c7748c3f0159e54406524163f361f189dfe3e7dcf15fe346b3134c3"
+    },
+    {
+      "path": "forms/phrase-form.md",
+      "sha256": "a5ce8e26a8fff1076700ea8eb42f5b7d9477d2664172b0ce525916221c3c6bb3"
+    },
+    {
+      "path": "forms/README.md",
+      "sha256": "14764e96baa55d823218ea7c0ab9dcf0060685354d5132076e9a5efe7c104861"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "sha256": "5ba31f7bdc9b2fd3811ed21248adc32df84e0365bea461a0a37b635370108300"
+    },
+    {
+      "path": "knowledge/README.md",
+      "sha256": "c6279b42748b8ee8e7b96a669829298e6fdd49db49c3134b8ff911c41b29db70"
+    },
+    {
+      "path": "knowledge/sources.json",
+      "sha256": "b4a086cefc66945a3930ea92e30b47baac985ab0910ed3ed0709f6417c97ecde"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "1a9933050f8ade0769c68a69ee9c926fcce1244ff3faa5daf4dcfc88c073cc9c"
+    },
+    {
+      "path": "lilypond.md",
+      "sha256": "ebd3544fe0477c35eed04efcef64940bfd52d1d5001299553815e84f1d177d65"
+    },
+    {
+      "path": "notation/format-cards.md",
+      "sha256": "9671a587f8befdfe8eaf17eaf2ae0ed9eb5bac1db4995016a5e7413fd00cc541"
+    },
+    {
+      "path": "notation/README.md",
+      "sha256": "38bfc4641658de72c5703157c2ef302c3ccfa552d804e9693a623c0fd32e4edc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2c1c4236da0bdee34421146a49691eafde65e7aad18f591d7219d6e5de53e0f2"
+    },
+    {
+      "path": "review.md",
+      "sha256": "8ebc89663ba82b2f71a1b50cba00d12d5a1c76757fe67c30b28e3b234bc27e4e"
+    },
+    {
+      "path": "scripts.md",
+      "sha256": "e2a857aa19f644b825b3458a1166aa7b36eb2b05894b16b6c46c8218562219fa"
+    },
+    {
+      "path": "setup.md",
+      "sha256": "4a0617116670f78d830a299e0a039744f9ad26678d73e8bf77df0834b23022e8"
+    },
+    {
+      "path": "styles/jazz/harmony-guide-tones-blues.md",
+      "sha256": "ab2c2663f7c43a10ada5ac050284f977edaa453f01b01f26c08a0e58ab8ae6c2"
+    },
+    {
+      "path": "styles/jazz/README.md",
+      "sha256": "5dba2894e15cd6bd5ef3980e0d0b2c6604ef9f10fcbf01f284849f4d89c591b6"
+    },
+    {
+      "path": "styles/modern/examples/README.md",
+      "sha256": "5d1481d4d91eaea30ab1875ffa8db55d5e5032db386ef8afb48a8a5fbafa0b7d"
+    },
+    {
+      "path": "styles/modern/examples/rhythm-timbre-collection.md",
+      "sha256": "d02a3b8394efce9ac22845043c6dd846b39b11508263cd0d2033403d6f5dda33"
+    },
+    {
+      "path": "styles/modern/README.md",
+      "sha256": "1b4e6f02d4fc1f10f523db61c396605bbd21afeff0605442b952efe2f64a9660"
+    },
+    {
+      "path": "styles/popular/README.md",
+      "sha256": "eee0117b418a78df68794a6db43641b0084355f1aa2718ccc7618f8928149525"
+    },
+    {
+      "path": "styles/popular/song-form-groove.md",
+      "sha256": "32279f0ef2f7a2b54d0ab660104554c3172b107285c0aa7d5e3c3b70e87f7e43"
+    },
+    {
+      "path": "styles/README.md",
+      "sha256": "dce734a2d4bb17fd017fe8b1f3ec90b9cbaa5dc85d36fdcde1310384a0d61323"
+    },
+    {
+      "path": "styles/style-orchestration.md",
+      "sha256": "138b44f1d245b04b0f2542a2b5c1c8902c92af1874f4950b6c1dbfe8665f8e6f"
+    },
+    {
+      "path": "techniques/counterpoint/cards.md",
+      "sha256": "c3ec3a4f9883104913daca4e94a26945817ee7d64a721f0bcd77334f08f1fdcd"
+    },
+    {
+      "path": "techniques/counterpoint/practice.md",
+      "sha256": "a7d4a045d89bdbd237869e1d1312a27604065deb506a9de16f4e96593c33d6c8"
+    },
+    {
+      "path": "techniques/counterpoint/README.md",
+      "sha256": "f0344d3c3b2d6a1d88b9b0696cbd8e6e1e2afdce9163ee7ec931ccdfaefbe457"
+    },
+    {
+      "path": "techniques/development-harmony.md",
+      "sha256": "25306342f14bd495e7b41f5b6237864adb63135052ebbf4c1383768f933daf8a"
+    },
+    {
+      "path": "techniques/README.md",
+      "sha256": "fa4bf53994054ac9e7b21cb4569047a54330faa58b017db7d2cf7e473642a957"
+    }
+  ]
+}
