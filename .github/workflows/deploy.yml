@@ -47,8 +47,33 @@ jobs:
           restore-keys: |
             notation-v3-${{ runner.os }}-
 
+      - name: Install FFmpeg
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
+            for attempt in 1 2 3; do
+              if sudo apt-get \
+                -o Acquire::Retries=5 \
+                -o Acquire::http::Timeout=120 \
+                -o Acquire::https::Timeout=120 \
+                install -y --no-install-recommends ffmpeg; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "FFmpeg installation failed after 3 attempts" >&2
+                exit 1
+              fi
+              sleep 5
+            done
+          fi
+          command -v ffmpeg
+          command -v ffprobe
+          ffmpeg -version | head -n 1
+          ffprobe -version | head -n 1
+
       - name: Build pinned abcMIDI
         run: |
+          set -euo pipefail
           if [ ! -x .tools/bin/abc2midi ]; then
             commit=7ba0b738e9bcd504288758472380e1597208a7a8
             mkdir -p .tools .tools/bin
@@ -66,6 +91,7 @@ jobs:
 
       - name: Build pinned FluidSynth 2.6.1
         run: |
+          set -euo pipefail
           if [ ! -x .tools/fluidsynth-2.6.1/bin/fluidsynth ]; then
             sudo apt-get install -y --no-install-recommends \
               build-essential \
