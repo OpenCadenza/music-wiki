@@ -12,6 +12,9 @@ $destinationRoot = [IO.Path]::GetFullPath($DestinationRepository).TrimEnd('\', '
 $contentRoot = Join-Path $destinationRoot 'content'
 $manifestPath = Join-Path $destinationRoot '.publication.json'
 $expectedRemote = 'https://github.com/OpenCadenza/music-wiki.git'
+$validatorName = 'validate_lilypond_versions.py'
+$validatorSourcePath = Join-Path $PSScriptRoot $validatorName
+$validatorHelperPath = Join-Path $destinationRoot ('scripts/' + $validatorName)
 
 function Invoke-Git([string] $repository, [string[]] $gitArguments) {
     $result = & git -C $repository @gitArguments
@@ -38,6 +41,16 @@ function Assert-NoReparsePath([string] $path) {
         $probe = $parent
     }
 }
+function Assert-LilyPondVersions([string] $rootPath) {
+    if (-not (Test-Path -LiteralPath $validatorSourcePath -PathType Leaf)) {
+        throw "LilyPond version validator is missing: $validatorSourcePath"
+    }
+    $python = Get-Command python -ErrorAction Stop
+    & $python.Source $validatorSourcePath --root $rootPath
+    if ($LASTEXITCODE -ne 0) {
+        throw 'LilyPond version policy failed; refusing to commit or publish'
+    }
+}
 
 if ($sourceRoot -eq $destinationRoot -or $sourceRoot.StartsWith($destinationRoot + '\', [StringComparison]::OrdinalIgnoreCase) -or $destinationRoot.StartsWith($sourceRoot + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Source and destination must be separate repositories' }
 foreach ($repository in @($sourceRoot, $destinationRoot)) {
@@ -58,6 +71,7 @@ if (Test-Path -LiteralPath $manifestPath) {
 if ((Test-Path -LiteralPath $contentRoot) -and $previousFiles.Count -eq 0 -and (Get-ChildItem -LiteralPath $contentRoot -Recurse -File -Force | Select-Object -First 1)) { throw 'Existing content is unmanaged; do not overwrite it on the first publication' }
 
 # The source repository is authoritative. Commit it before copying any content.
+Assert-LilyPondVersions $sourceRoot
 Invoke-Git $sourceRoot @('add', '--all') | Out-Null
 & git -C $sourceRoot diff --cached --quiet
 $stagedExit = $LASTEXITCODE
@@ -95,14 +109,20 @@ $manifest = [ordered]@{ schema_version = 1; source_commit = $sourceCommit; sourc
 Write-Bytes $manifestPath ([Text.UTF8Encoding]::new($false).GetBytes(($manifest | ConvertTo-Json -Depth 6) + "`n"))
 $helperPath = Join-Path $destinationRoot 'scripts/publish-content.ps1'
 if ([IO.Path]::GetFullPath($PSCommandPath) -ne [IO.Path]::GetFullPath($helperPath)) { Write-Bytes $helperPath ([IO.File]::ReadAllBytes($PSCommandPath)) }
+Write-Bytes $validatorHelperPath ([IO.File]::ReadAllBytes($validatorSourcePath))
 $readmePath = Join-Path $destinationRoot 'README.md'
-if (-not (Test-Path -LiteralPath $readmePath)) {
-    $readme = @'
+$readme = @'
 # Music Wiki
 
 Music theory and composition knowledge with embedded ABC and LilyPond examples.
 
 `content/` is the published knowledge snapshot. Its maintained source is the separate `references-origin` Git repository. Edit the source, then publish; do not maintain a second independent copy in `content/`.
+
+## LilyPond 2.26.0 requirement
+
+Every fenced `lilypond` or `ly` code block in this repository MUST declare `\version "2.26.0"`. Every LilyPond `opusloom:example` MUST set `target_version` to `2.26.0`. Publication is refused when any executable LilyPond block declares another version, omits the declaration, or targets another version.
+
+`source_version` records the version of a historical source encoding and may remain older for provenance. It does not relax the executable-code rule: convert or retype the example for 2.26.0 and compile the converted code before publishing. Do not merely replace the version string when syntax changes are required.
 
 Run the repeatable publication from PowerShell 7:
 
@@ -110,7 +130,7 @@ Run the repeatable publication from PowerShell 7:
 ./scripts/publish-content.ps1 -SourceRepository E:/programfiles/MusicKnowledgeBase/references-origin -DestinationRepository E:/github/music-wiki
 ```
 
-The script commits source changes, copies tracked knowledge files, verifies SHA-256, records the source commit in `.publication.json`, commits the publication and pushes `main`. Git metadata and `_maintenance/` stay outside the knowledge snapshot. Only stale files recorded in the previous publication manifest are removed. A repeated publication with unchanged input creates no new commit.
+The script validates the LilyPond version policy, commits source changes, copies tracked knowledge files, verifies SHA-256, records the source commit in `.publication.json`, commits the publication and pushes `main`. Git metadata and `_maintenance/` stay outside the knowledge snapshot. Only stale files recorded in the previous publication manifest are removed. A repeated publication with unchanged input creates no new commit.
 
 OpenViking is responsible for syncing this repository's `content/` subtree to `viking://resources/music-wiki/`. No additional Git synchronization service is included here.
 
@@ -118,13 +138,12 @@ VitePress configuration, GitHub Actions compilation of ABC/LilyPond into SVG and
 
 Source licenses and permissions are documented in `content/LICENSE.md` and `content/knowledge/sources.json`. Individual score examples retain their source, rights and verification metadata.
 '@
-    Write-Bytes $readmePath ([Text.UTF8Encoding]::new($false).GetBytes($readme + "`n"))
-}
+Write-Bytes $readmePath ([Text.UTF8Encoding]::new($false).GetBytes($readme + "`n"))
 if ($PrepareOnly) {
     [ordered]@{ source_commit = $sourceCommit; published_files = $records.Count; removed_paths = $removed; excluded_paths = $excluded; prepared_only = $true } | ConvertTo-Json -Depth 5
     return
 }
-Invoke-Git $destinationRoot @('add', '--all', '--', 'content', '.publication.json', 'scripts/publish-content.ps1', 'README.md') | Out-Null
+Invoke-Git $destinationRoot @('add', '--all', '--', 'content', '.publication.json', 'scripts/publish-content.ps1', ('scripts/' + $validatorName), 'README.md') | Out-Null
 & git -C $destinationRoot diff --cached --quiet
 $publicationExit = $LASTEXITCODE
 if ($publicationExit -eq 1) {
