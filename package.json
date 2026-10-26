@@ -1,0 +1,22 @@
+{
+  "name": "music-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "scripts": {
+    "dev": "pnpm notation && vitepress dev",
+    "build": "pnpm notation && vitepress build",
+    "notation": "node scripts/build-notation.mjs",
+    "preview": "vitepress preview",
+    "validate": "node scripts/validate-content.mjs"
+  },
+  "devDependencies": {
+    "@lucide/vue": "1.61.0",
+    "@tonejs/midi": "2.0.28",
+    "abc2svg": "1.22.1",
+    "markdown-it": "14.1.0",
+    "vitepress": "1.6.4",
+    "vitepress-sidebar": "1.41.0"
+  }
+}
