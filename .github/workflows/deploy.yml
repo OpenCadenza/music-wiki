@@ -31,45 +31,32 @@ jobs:
           run_install: false
 
       - name: Set up Node.js
+        id: node-cache
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
-      - name: Restore notation and toolchain cache
+      - name: Restore toolchain cache
+        id: toolchain-cache
         uses: actions/cache@v4
         with:
-          path: |
-            .tools
-            public/notation
-          key: notation-v3-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/**', '.vitepress/**', 'package.json', 'pnpm-lock.yaml', 'toolchains.json') }}
+          path: .tools
+          key: toolchain-v1-${{ runner.os }}-${{ hashFiles('toolchains.json', 'scripts/install-toolchain.sh', 'scripts/install-ffmpeg.sh') }}
           restore-keys: |
-            notation-v3-${{ runner.os }}-
+            toolchain-v1-${{ runner.os }}-
 
-      - name: Install FFmpeg
-        run: |
-          set -euo pipefail
-          if ! command -v ffmpeg >/dev/null || ! command -v ffprobe >/dev/null; then
-            for attempt in 1 2 3; do
-              if sudo apt-get \
-                -o Acquire::Retries=5 \
-                -o Acquire::http::Timeout=120 \
-                -o Acquire::https::Timeout=120 \
-                install -y --no-install-recommends ffmpeg; then
-                break
-              fi
-              if [ "$attempt" -eq 3 ]; then
-                echo "FFmpeg installation failed after 3 attempts" >&2
-                exit 1
-              fi
-              sleep 5
-            done
-          fi
-          command -v ffmpeg
-          command -v ffprobe
-          ffmpeg -version | head -n 1
-          ffprobe -version | head -n 1
+      - name: Restore notation cache
+        uses: actions/cache@v4
+        with:
+          path: public/notation
+          key: notation-v4-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/build-notation.mjs', 'toolchains.json', 'package.json', 'pnpm-lock.yaml') }}
+          restore-keys: |
+            notation-v4-${{ runner.os }}-
+
+      - name: Install pinned FFmpeg
+        run: bash scripts/install-ffmpeg.sh
 
       - name: Build pinned abcMIDI
         run: |
@@ -77,7 +64,7 @@ jobs:
           if [ ! -x .tools/bin/abc2midi ]; then
             commit=7ba0b738e9bcd504288758472380e1597208a7a8
             mkdir -p .tools .tools/bin
-            curl -fL --retry 3 \
+            curl -fL --retry 3 --retry-all-errors \
               "https://github.com/keryell/abcmidi/archive/${commit}.tar.gz" \
               -o .tools/abcmidi.tar.gz
             tar -xzf .tools/abcmidi.tar.gz -C .tools
@@ -86,8 +73,6 @@ jobs:
           fi
           echo "$PWD/.tools/bin" >> "$GITHUB_PATH"
           .tools/bin/abc2midi -ver | head -n 1
-          ffmpeg -version | head -n 1
-          ffprobe -version | head -n 1
 
       - name: Build pinned FluidSynth 2.6.1
         run: |
@@ -130,7 +115,15 @@ jobs:
         run: bash scripts/install-toolchain.sh
 
       - name: Install JavaScript dependencies
-        run: pnpm install --frozen-lockfile
+        run: |
+          set -euo pipefail
+          if [[ "${{ steps.node-cache.outputs.cache-hit }}" == "true" ]]; then
+            if pnpm install --frozen-lockfile --offline; then
+              exit 0
+            fi
+            echo "Offline pnpm cache was incomplete; retrying with network access" >&2
+          fi
+          pnpm install --frozen-lockfile
 
       - name: Validate source content
         run: pnpm validate
