@@ -20,6 +20,6 @@ The script validates the LilyPond version policy, commits source changes, copies
 
 OpenViking is responsible for syncing this repository's `content/` subtree to `viking://resources/music-wiki/`. No additional Git synchronization service is included here.
 
-VitePress configuration, GitHub Actions compilation of ABC/LilyPond into SVG and playable audio, and Pages deployment are planned separately. This initial publication does not implement them. Source Markdown and score code remain authoritative; rendered artifacts will be build outputs.
+VitePress configuration and local notation build scripts are included. They compile ABC/LilyPond into SVG and playable audio artifacts. GitHub Actions and Pages deployment still require separate configuration. Source Markdown and score code remain authoritative; rendered artifacts are build outputs.
 
 Source licenses and permissions are documented in `content/LICENSE.md` and `content/knowledge/sources.json`. Individual score examples retain their source, rights and verification metadata.
