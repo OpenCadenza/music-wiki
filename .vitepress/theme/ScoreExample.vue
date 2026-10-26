@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import {
   Download,
@@ -27,6 +27,8 @@ const muted = ref(false)
 const duration = ref(0)
 const currentTime = ref(0)
 const loadError = ref(false)
+const playbackEventName = 'music-wiki:exclusive-playback'
+const playerToken = Symbol(props.id)
 
 const svgUrls = computed(() =>
   props.svg
@@ -47,18 +49,34 @@ function formatTime(value: number) {
   return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
 
+function pauseOtherPlayers() {
+  window.dispatchEvent(
+    new CustomEvent(playbackEventName, { detail: { owner: playerToken } })
+  )
+}
+
+function handleExclusivePlayback(event: Event) {
+  const owner = (event as CustomEvent<{ owner: symbol }>).detail?.owner
+  if (owner !== playerToken) audioElement.value?.pause()
+}
+
+async function startPlayback(rewind = false) {
+  const audio = audioElement.value
+  if (!audio) return
+  if (rewind) audio.currentTime = 0
+  pauseOtherPlayers()
+  try {
+    await audio.play()
+  } catch {
+    loadError.value = true
+  }
+}
+
 async function togglePlayback() {
   const audio = audioElement.value
   if (!audio) return
-  if (audio.paused) {
-    try {
-      await audio.play()
-    } catch {
-      loadError.value = true
-    }
-  } else {
-    audio.pause()
-  }
+  if (audio.paused) await startPlayback()
+  else audio.pause()
 }
 
 function seek(event: Event) {
@@ -69,10 +87,7 @@ function seek(event: Event) {
 }
 
 function restart() {
-  const audio = audioElement.value
-  if (!audio) return
-  audio.currentTime = 0
-  void audio.play()
+  void startPlayback(true)
 }
 
 function toggleMute() {
@@ -93,9 +108,15 @@ function syncAudioMetadata() {
 onMounted(() => {
   const audio = audioElement.value
   if (!audio) return
+  window.addEventListener(playbackEventName, handleExclusivePlayback)
   audio.addEventListener('durationchange', syncAudioMetadata)
   audio.addEventListener('loadeddata', syncAudioMetadata)
   syncAudioMetadata()
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener(playbackEventName, handleExclusivePlayback)
+  audioElement.value?.pause()
 })
 </script>
 
@@ -161,7 +182,7 @@ onMounted(() => {
       :src="audioUrl"
       preload="metadata"
       @durationchange="syncAudioMetadata"
-      @play="playing = true"
+      @play="pauseOtherPlayers(); playing = true"
       @pause="playing = false"
       @ended="playing = false"
       @loadedmetadata="syncAudioMetadata"
