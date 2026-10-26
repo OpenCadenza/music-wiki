@@ -47,27 +47,34 @@ jobs:
           restore-keys: |
             notation-v3-${{ runner.os }}-
 
-      - name: Install system music tools
+      - name: Install ABC and encoding tools
         run: |
-          sudo apt-get \
-            -o Acquire::Retries=2 \
-            -o Acquire::http::Timeout=20 \
-            -o Acquire::https::Timeout=20 \
-            install -y --no-install-recommends \
-            abcmidi \
-            build-essential \
-            cmake \
-            curl \
-            ffmpeg \
-            libasound2-dev \
-            libglib2.0-dev \
-            libsndfile1-dev \
-            ninja-build \
-            pkg-config
+          for attempt in 1 2 3; do
+            if timeout 90 sudo apt-get \
+              -o Acquire::Retries=1 \
+              -o Acquire::http::Timeout=15 \
+              -o Acquire::https::Timeout=15 \
+              install -y --no-install-recommends abcmidi ffmpeg; then
+              break
+            fi
+            if [ "$attempt" = "3" ]; then
+              exit 1
+            fi
+            sleep 5
+          done
 
       - name: Build pinned FluidSynth 2.6.1
         run: |
           if [ ! -x .tools/fluidsynth-2.6.1/bin/fluidsynth ]; then
+            sudo apt-get install -y --no-install-recommends \
+              build-essential \
+              cmake \
+              curl \
+              libasound2-dev \
+              libglib2.0-dev \
+              libsndfile1-dev \
+              ninja-build \
+              pkg-config
             mkdir -p .tools
             curl -fL --retry 3 \
               https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz \
