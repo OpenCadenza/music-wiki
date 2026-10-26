@@ -49,12 +49,19 @@ jobs:
 
       - name: Install ABC and encoding tools
         run: |
+          packages=()
+          command -v abc2midi >/dev/null 2>&1 || packages+=(abcmidi)
+          command -v ffmpeg >/dev/null 2>&1 || packages+=(ffmpeg)
+          if [ "${#packages[@]}" -eq 0 ]; then
+            echo "ABC and encoding tools are already available"
+            exit 0
+          fi
           for attempt in 1 2 3; do
             if timeout 90 sudo apt-get \
               -o Acquire::Retries=1 \
               -o Acquire::http::Timeout=15 \
               -o Acquire::https::Timeout=15 \
-              install -y --no-install-recommends abcmidi ffmpeg; then
+              install -y --no-install-recommends "${packages[@]}"; then
               break
             fi
             if [ "$attempt" = "3" ]; then
