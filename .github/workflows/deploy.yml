@@ -47,28 +47,22 @@ jobs:
           restore-keys: |
             notation-v3-${{ runner.os }}-
 
-      - name: Install ABC and encoding tools
+      - name: Build pinned abcMIDI
         run: |
-          packages=()
-          command -v abc2midi >/dev/null 2>&1 || packages+=(abcmidi)
-          command -v ffmpeg >/dev/null 2>&1 || packages+=(ffmpeg)
-          if [ "${#packages[@]}" -eq 0 ]; then
-            echo "ABC and encoding tools are already available"
-            exit 0
+          if [ ! -x .tools/bin/abc2midi ]; then
+            commit=7ba0b738e9bcd504288758472380e1597208a7a8
+            mkdir -p .tools .tools/bin
+            curl -fL --retry 3 \
+              "https://github.com/keryell/abcmidi/archive/${commit}.tar.gz" \
+              -o .tools/abcmidi.tar.gz
+            tar -xzf .tools/abcmidi.tar.gz -C .tools
+            make -C ".tools/abcmidi-${commit}" abc2midi
+            cp ".tools/abcmidi-${commit}/abc2midi" .tools/bin/abc2midi
           fi
-          for attempt in 1 2 3; do
-            if timeout 90 sudo apt-get \
-              -o Acquire::Retries=1 \
-              -o Acquire::http::Timeout=15 \
-              -o Acquire::https::Timeout=15 \
-              install -y --no-install-recommends "${packages[@]}"; then
-              break
-            fi
-            if [ "$attempt" = "3" ]; then
-              exit 1
-            fi
-            sleep 5
-          done
+          echo "$PWD/.tools/bin" >> "$GITHUB_PATH"
+          .tools/bin/abc2midi -ver | head -n 1
+          ffmpeg -version | head -n 1
+          ffprobe -version | head -n 1
 
       - name: Build pinned FluidSynth 2.6.1
         run: |
