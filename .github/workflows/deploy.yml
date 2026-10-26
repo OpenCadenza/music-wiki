@@ -38,6 +38,14 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
 
+      - name: Restore pnpm metadata cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pnpm
+          key: pnpm-metadata-v1-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-metadata-v1-${{ runner.os }}-
+
       - name: Restore toolchain cache
         id: toolchain-cache
         uses: actions/cache@v4
