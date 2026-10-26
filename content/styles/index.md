@@ -2,7 +2,7 @@
 <!-- knowledge: styles.navigation -->
 # 风格作为可检验的选择
 
-[风格与配器卡](style-orchestration.md) 提供证据边界；具体音乐模型在 [作曲家资料](../composers/README.md)。按时期、作品、编制和具体机制收窄“像某人”的要求。
+[风格与配器卡](style-orchestration.md) 提供证据边界；具体音乐模型在 [作曲家资料](../composers/index.md)。按时期、作品、编制和具体机制收窄“像某人”的要求。
 
 平行和弦可能作为融合音色，也可能掩盖原本需要独立的声部。先确定当前作品的语法，再决定是否适用种类对位的限制；不能用“现代风格”豁免所有错误。
 
@@ -10,6 +10,6 @@
 
 ## 专题入口
 
-- [现代音乐：节奏、音色与音高集合](modern/README.md)
-- [爵士：和声、导向音与布鲁斯](jazz/README.md)
-- [流行音乐：歌曲结构与律动](popular/README.md)
+- [现代音乐：节奏、音色与音高集合](modern/index.md)
+- [爵士：和声、导向音与布鲁斯](jazz/index.md)
+- [流行音乐：歌曲结构与律动](popular/index.md)

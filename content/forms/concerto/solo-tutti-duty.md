@@ -62,7 +62,7 @@ MIT的ritornello教学说明区分了开头、完整或缩短的中间全奏以�
 -->
 ```lilypond
 #(ly:set-option 'old-relative)
-\version "2.12.3"
+\version "2.26.0"
 
 violinOne = \relative e'' {
   \clef violin
@@ -161,7 +161,7 @@ MTO 2025年的cadenza研究补充了后段结构：中晚期18世纪的独奏写
 }
 -->
 ```lilypond
-\version "2.18.2"
+\version "2.26.0"
 
 orchestralTheme = \relative c'' {
   \key a \major

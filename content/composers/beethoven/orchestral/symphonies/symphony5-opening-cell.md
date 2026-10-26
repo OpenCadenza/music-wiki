@@ -32,7 +32,7 @@ Eastman 的导读补充全曲尺度：短单元后来缩成两音乃至一音问
 }
 -->
 ```lilypond
-\version "2.18.2"
+\version "2.26.0"
 \include "english.ly"
 
 upper = \relative g' {

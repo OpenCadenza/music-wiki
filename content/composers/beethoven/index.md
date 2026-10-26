@@ -20,7 +20,7 @@ Op.59部分分析仍依赖二手转述与局部语料；Op.97演奏平衡、完�
 
 当前完成的是两轮内容建设与树状整理，并未穷尽贝多芬作品，也未完成音乐学专家认证、ABC独立渲染或受控创作效果评估。谱例的published仅指本地生成器收录；编译通过不等于音乐质量或远端Wiki已发布。
 
-[全库来源表](../../knowledge/sources.json)登记许可与证据范围；[稳定ID索引](../../knowledge/INDEX.md)可直达正文。在线实读、已缓存全文、索引片段、二手转述分别判断，不能用下载数量代替实读。
+[全库来源表](../../knowledge/sources.json)登记许可与证据范围；[稳定ID索引](../../knowledge/stable-ids.md)可直达正文。在线实读、已缓存全文、索引片段、二手转述分别判断，不能用下载数量代替实读。
 
 ```powershell
 rg -n 'Op\.?\s*110|Arioso|倒影|赋格' references-origin/composers/beethoven/piano/sonatas

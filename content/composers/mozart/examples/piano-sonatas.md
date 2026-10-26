@@ -50,7 +50,7 @@ rights: CC-BY-SA-3.0
 }
 -->
 ```lilypond
-\version "2.16.0"
+\version "2.26.0"
 
 right = \relative c'' {
   \time 4/4 \key c \major
@@ -159,7 +159,7 @@ rights: CC-BY-SA-3.0
 }
 -->
 ```lilypond
-\version "2.16.0"
+\version "2.26.0"
 right = {
   \time 4/4 \key c \major
   \transpose c f \relative c'' {
@@ -252,24 +252,24 @@ rights: Public-Domain
 }
 -->
 ```lilypond
-\version "2.18.0"
+\version "2.26.0"
 \include "english.ly"
 
 upper = \relative c' {
   \time 2/2 \key c \minor
-  c2^^-\f eflat4-\staccatissimo g-\staccatissimo |
-  c-\staccatissimo eflat-\staccatissimo r8. eflat16-.-\p eflat8(-[-\trill d16 eflat-] |
+  c2^^-\f ef4-\staccatissimo g-\staccatissimo |
+  c-\staccatissimo ef-\staccatissimo r8. ef16-.-\p ef8(-[-\trill d16 ef-] |
   g4 c,-.-) c-. c-. |
-  aflat'-( b,-)-. b-. r |
+  af'-( b,-)-. b-. r |
 }
 
 lower = \relative c, {
   \time 2/2 \key c \minor
-  <c c'>2^^-\sustainOn <eflat eflat'>4-\staccatissimo-\sustainOff <g g'>-\staccatissimo |
-  <c c'>-\staccatissimo <eflat eflat'>-\staccatissimo r2 |
+  <c c'>2^^-\sustainOn <ef ef'>4-\staccatissimo-\sustainOff <g g'>-\staccatissimo |
+  <c c'>-\staccatissimo <ef ef'>-\staccatissimo r2 |
   \clef "treble"
-  r4 <eflat' g>-. <eflat g>-. <eflat g>-. |
-  r <d f aflat>-. <d f aflat>-. r |
+  r4 <ef' g>-. <ef g>-. <ef g>-. |
+  r <d f af>-. <d f af>-. r |
 }
 
 \score {

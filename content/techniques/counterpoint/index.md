@@ -2,7 +2,7 @@
 <!-- knowledge: counterpoint.navigation -->
 # 对位、模仿与赋格
 
-读 [写作与审查](practice.md)，再按需读 [种类对位与赋格卡](cards.md)。作品与短例从 [巴赫案例](../../composers/bach/README.md) 进入。
+读 [写作与审查](practice.md)，再按需读 [种类对位与赋格卡](cards.md)。作品与短例从 [巴赫案例](../../composers/bach/index.md) 进入。
 
 ## 卡农 Canon
 

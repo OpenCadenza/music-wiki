@@ -13,7 +13,7 @@
 
 <!-- opusloom:example {"id": "beethoven.score.op10-1.opening", "status": "published", "source_version": "2.8.0", "target_version": "2.26.0", "compile": "score", "midi": false, "requires": [], "sources": ["mutopia-beethoven-op10-1"], "rights": "Beethoven work and Mutopia typesetting declared Public Domain; maintainer Stelios Samelis. Short excerpt with explicit bar lines, no pitch/rhythm modernization.", "source_locator": "Op.10 No.1, I, mm.1–4, both piano staves; Mutopia-2006/06/12-778, source Breitkopf & Hartel 1862–1865; corpus/lilypond/BeethovenLv/O10/LVB_Sonate_10no1_1/LVB_Sonate_10no1_1.ly, declared version 2.8.0.", "context": "原谱四小节：上行爆发、休止与较低音区的弱奏应答。下谱表第3小节换高音谱号是原编码的一部分。"} -->
 ```lilypond
-\version "2.8.0"
+\version "2.26.0"
 \score {
   \new PianoStaff <<
     \new Staff {

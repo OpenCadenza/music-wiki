@@ -13,7 +13,7 @@
 
 <!-- opusloom:example {"id": "beethoven.op2no1.opening-right-hand", "status": "published", "source_version": "2.10.3", "target_version": "2.26.0", "compile": "score", "midi": false, "requires": [], "sources": ["mutopia-beethoven-op2no1-m1"], "rights": "贝多芬原作与此 Mutopia 类型稿由制作者声明置于公有领域。保留 Mutopia/制作者署名；短片段从原 LilyPond 2.10.3 类型稿摘录，删去左手、反复、力度、延音与版面，不是新编原谱。", "source_locator": "Mutopia-2008/01/07-1211; Beethoven, Piano Sonata in F minor, Op. 2 No. 1, I, opening, first four complete bars after the quarter-note upbeat; Breitkopf & Härtel 1862–65; Stelios Samelis.", "context": "右手旋律/和弦声部摘录。原稿 version 2.10.3; \\partial 4 的四分音符弱起后接四个 4/4 小节。简化标记以便只讨论节奏与音高方向。"} -->
 ```lilypond
-\version "2.10.3"
+\version "2.26.0"
 \score {
   \new Staff {
     \clef treble \key f \minor \time 4/4

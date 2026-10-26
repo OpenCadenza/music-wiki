@@ -12,7 +12,7 @@ Read in this order:
 1. [Operational style profile](style.md) for the constraints and warning signs.
 2. [String-quartet and cyclic-material analysis](string-quartet.md) for the
    ensemble most relevant to a new quartet.
-3. [Analysis examples](examples/README.md) for short musical demonstrations.
+3. [Analysis examples](examples/index.md) for short musical demonstrations.
 
 Useful task queries:
 

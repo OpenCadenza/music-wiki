@@ -37,7 +37,7 @@ rights: Public-Domain
 }
 -->
 ```lilypond
-\version "2.6.0"
+\version "2.26.0"
 
 upper = {
   \key a \major \time 6/8
@@ -94,7 +94,7 @@ rights: Public-Domain
 }
 -->
 ```lilypond
-\version "2.6.0"
+\version "2.26.0"
 
 upper = {
   \key a \major \time 6/8

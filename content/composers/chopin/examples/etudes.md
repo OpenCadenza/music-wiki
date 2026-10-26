@@ -44,7 +44,7 @@ B. 130 No. 1 的原编码有一个容易误读的开头。第 1–4 小节左手
 }
 -->
 ```lilypond
-\version "2.16.2"
+\version "2.26.0"
 \score {
   \new PianoStaff <<
     \new Staff = "right" \relative c' {
@@ -93,7 +93,7 @@ Op. 10 No. 2 的常见概述强调右手 chromatic scalar passage，但原编码
 }
 -->
 ```lilypond
-\version "2.16.1"
+\version "2.26.0"
 \include "deutsch.ly"
 \key a \minor
 \time 4/4

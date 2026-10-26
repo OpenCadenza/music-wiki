@@ -49,7 +49,7 @@ rights: CC-BY-SA-3.0
 }
 -->
 ```lilypond
-\version "2.11.46"
+\version "2.26.0"
 upper = \relative c' {
   \time 4/4
   r16 c[ d e] f[ d e c] g'8[ c b^\prall c] |
@@ -141,7 +141,7 @@ rights: Public-Domain
 }
 -->
 ```lilypond
-\version "2.16.1"
+\version "2.26.0"
 
 global = { \time 4/4 \key c \major }
 
@@ -262,7 +262,7 @@ rights: Public-Domain
 }
 -->
 ```lilypond
-\version "2.14.2"
+\version "2.26.0"
 
 upper = {
   \time 4/4

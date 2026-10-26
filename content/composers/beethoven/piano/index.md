@@ -13,7 +13,7 @@
 
 ## 相邻入口
 
-- 跨体裁的调性、动机与节奏方法见 [`../techniques/README.md`](../techniques/index.md)。
+- 跨体裁的调性、动机与节奏方法见 [`../techniques/index.md`](../techniques/index.md)。
 - 钢琴与弦乐室内乐的独立声部角色见 `../chamber/sonatas-trios/`。
 - 作品的完整来源登记见 [`../../knowledge/sources.json`](../../../knowledge/sources.json)。
 

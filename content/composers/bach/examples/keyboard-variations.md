@@ -38,7 +38,7 @@ rights: CC-BY-SA-3.0
 }
 -->
 ```lilypond
-\version "2.16.1"
+\version "2.26.0"
 upper = \relative c'' {
   \time 3/4 \key g \major
   g'4 g4( a8.\prallmordent) b16 |
@@ -92,7 +92,7 @@ rights: CC-BY-SA-3.0
 }
 -->
 ```lilypond
-\version "2.16.1"
+\version "2.26.0"
 
 upper = \relative c'' {
   \time 3/4 \key g \major

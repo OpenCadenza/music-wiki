@@ -12,8 +12,10 @@ import {
 } from 'node:fs/promises'
 import { join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { Midi } from '@tonejs/midi'
+import midiPackage from '@tonejs/midi'
 import MarkdownIt from 'markdown-it'
+
+const { Midi } = midiPackage
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const contentRoot = join(root, 'content')
@@ -29,13 +31,7 @@ const abc2midi = process.env.ABC2MIDI_PATH || 'abc2midi'
 const fluidsynth = process.env.FLUIDSYNTH_PATH || 'fluidsynth'
 const ffmpeg = process.env.FFMPEG_PATH || 'ffmpeg'
 const abc2svg =
-  process.env.ABC2SVG_PATH ||
-  join(
-    root,
-    'node_modules',
-    '.bin',
-    process.platform === 'win32' ? 'abc2svg.cmd' : 'abc2svg'
-  )
+  process.env.ABC2SVG_PATH || join(root, 'node_modules', 'abc2svg', 'abc2svg')
 
 const soundfontCandidates = [
   process.env.SOUNDFONT_PATH,
@@ -98,7 +94,7 @@ function run(command, args, options = {}) {
     const child = spawn(command, args, {
       cwd: options.cwd || root,
       env: { ...process.env, SOURCE_DATE_EPOCH: '946684800' },
-      shell: process.platform === 'win32' && command.toLowerCase().endsWith('.cmd'),
+      shell: false,
       windowsHide: true
     })
     const stdout = []
@@ -213,6 +209,33 @@ function withoutVersion(code) {
   return code.replace(/^\\version\s+"[^"]+"\s*\r?\n?/m, '')
 }
 
+function splitTopLevelDirectives(code) {
+  const directives = []
+  const music = []
+  for (const line of withoutVersion(code).split(/\r?\n/)) {
+    if (/^\s*\\(?:include|language)\b/.test(line)) directives.push(line)
+    else music.push(line)
+  }
+  return { directives, music: music.join('\n').trim() }
+}
+
+function wrappedFragment(code, midi) {
+  const { directives, music } = splitTopLevelDirectives(code)
+  return [
+    `\\version "${targetVersion}"`,
+    ...directives,
+    '\\score {',
+    `  \\new Staff { ${music} }`,
+    '  \\layout { }',
+    ...(midi ? ['  \\midi { }'] : []),
+    '}'
+  ].join('\n')
+}
+
+function withLayoutOutput(code) {
+  return /\\score\b/.test(code) ? code : wrappedFragment(code, false)
+}
+
 function skipQuotedAndComments(source, index) {
   const character = source[index]
   if (character === '"') {
@@ -269,14 +292,7 @@ function withMidiOutput(code) {
 
   if (scoreEnds.length === 0 && /\\score\b/.test(code)) return code
   if (scoreEnds.length === 0) {
-    return [
-      `\\version "${targetVersion}"`,
-      '\\score {',
-      `  \\new Staff { ${withoutVersion(code).trim()} }`,
-      '  \\layout { }',
-      '  \\midi { }',
-      '}'
-    ].join('\n')
+    return wrappedFragment(code, true)
   }
 
   let rendered = code
@@ -293,6 +309,33 @@ async function filesWithExtension(directory, extension) {
     .sort()
 }
 
+async function mergeMidiFiles(paths, outputPath) {
+  if (paths.length === 1) return paths[0]
+
+  const merged = new Midi()
+  let offset = 0
+  for (const path of paths) {
+    const source = new Midi(await readFile(path))
+    for (const sourceTrack of source.tracks) {
+      const track = merged.addTrack()
+      track.name = sourceTrack.name
+      track.channel = sourceTrack.channel
+      track.instrument.number = sourceTrack.instrument.number
+      for (const note of sourceTrack.notes) {
+        track.addNote({
+          midi: note.midi,
+          time: note.time + offset,
+          duration: note.duration,
+          velocity: note.velocity
+        })
+      }
+    }
+    offset += source.duration + 0.1
+  }
+  await writeFile(outputPath, Buffer.from(merged.toArray()))
+  return outputPath
+}
+
 async function renderLilyPond(block, outputDirectory) {
   const workDirectory = join(workRoot, block.hash)
   await rm(workDirectory, { recursive: true, force: true })
@@ -302,7 +345,7 @@ async function renderLilyPond(block, outputDirectory) {
   const scorePath = join(workDirectory, 'score.ly')
   const audioPath = join(workDirectory, 'audio.ly')
   await writeFile(sourcePath, block.code, 'utf8')
-  await writeFile(scorePath, block.code, 'utf8')
+  await writeFile(scorePath, withLayoutOutput(block.code), 'utf8')
   await writeFile(audioPath, withMidiOutput(block.code), 'utf8')
 
   await run(
@@ -328,14 +371,16 @@ async function renderLilyPond(block, outputDirectory) {
     ...(await filesWithExtension(workDirectory, '.mid')),
     ...(await filesWithExtension(workDirectory, '.midi'))
   ]
-  if (midiFiles.length !== 1) {
-    throw new Error(
-      `${block.stableId}: expected one LilyPond MIDI file, found ${midiFiles.length}`
-    )
+  if (midiFiles.length === 0) {
+    throw new Error(`${block.stableId}: LilyPond produced no MIDI`)
   }
+  const midi = await mergeMidiFiles(
+    midiFiles.map((name) => join(workDirectory, name)),
+    join(workDirectory, 'merged.mid')
+  )
   return {
     svg,
-    midi: join(workDirectory, midiFiles[0]),
+    midi,
     sourceName: 'source.ly'
   }
 }
@@ -353,7 +398,9 @@ async function renderAbc(block, outputDirectory) {
     : `%%fullsvg 1\n${block.code}`
   await writeFile(renderPath, renderSource, 'utf8')
 
-  const rendered = await run(abc2svg, [renderPath], { cwd: workDirectory })
+  const rendered = await run(process.execPath, [abc2svg, renderPath], {
+    cwd: workDirectory
+  })
   const svgPages = [...rendered.stdout.matchAll(/<svg\b[\s\S]*?<\/svg>/gi)].map(
     (match) => match[0]
   )

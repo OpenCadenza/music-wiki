@@ -8,5 +8,5 @@
 
 ## 编制专题
 
-- [管弦乐：织体与音色](orchestra/README.md)
-- [爵士组合与大乐队](jazz-combo/README.md)
+- [管弦乐：织体与音色](orchestra/index.md)
+- [爵士组合与大乐队](jazz-combo/index.md)

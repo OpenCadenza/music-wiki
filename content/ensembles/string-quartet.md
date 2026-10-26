@@ -14,4 +14,4 @@
 
 ## 适用边界与证据
 
-以上角色审查是本项目的写作工作法，不是外部教材的硬性规范。以 [OpenScore 四重奏编码](https://github.com/OpenScore/StringQuartets) 及 [拉威尔案例](../composers/ravel/README.md) 对照具体织体。弦乐音色的融合、弓压和真实平衡无法由符号检查充分判断；保留试听和演奏审稿项。
+以上角色审查是本项目的写作工作法，不是外部教材的硬性规范。以 [OpenScore 四重奏编码](https://github.com/OpenScore/StringQuartets) 及 [拉威尔案例](../composers/ravel/index.md) 对照具体织体。弦乐音色的融合、弓压和真实平衡无法由符号检查充分判断；保留试听和演奏审稿项。
