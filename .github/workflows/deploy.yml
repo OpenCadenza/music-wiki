@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    timeout-minutes: 30
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -48,8 +49,11 @@ jobs:
 
       - name: Install system music tools
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
+          sudo apt-get \
+            -o Acquire::Retries=2 \
+            -o Acquire::http::Timeout=20 \
+            -o Acquire::https::Timeout=20 \
+            install -y --no-install-recommends \
             abcmidi \
             build-essential \
             cmake \
