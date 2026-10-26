@@ -136,15 +136,20 @@ OpenViking is responsible for syncing this repository's `content/` subtree to `v
 
 VitePress, the score player, the ABC/LilyPond build pipeline and GitHub Pages deployment are included. Generated SVG/MIDI/MP3 files stay in ignored build directories. Source Markdown and score code remain authoritative.
 
-Local site build on Linux/WSL:
+Local site build on Linux/WSL uses the same pinned tools as the deployment workflow:
 
 ```bash
-sudo apt install abcmidi ffmpeg fluidsynth
+sudo apt install abcmidi build-essential cmake ffmpeg libasound2-dev libglib2.0-dev libsndfile1-dev ninja-build pkg-config
 pnpm install --frozen-lockfile
+bash scripts/install-toolchain.sh
 pnpm build
 ```
 
-On Windows, run `scripts/install-toolchain.ps1` and expose the printed tool paths before `pnpm build`. The deployed site uses the pinned toolchain in `.github/workflows/deploy.yml`.
+FluidSynth must be version 2.6.1. The workflow contains the reproducible Linux build commands. The installation script downloads and verifies LilyPond 2.26.0 and FluidR3 GM, then checks abcMIDI, FluidSynth, FFmpeg, and ffprobe.
+
+On Windows, run `scripts/install-toolchain.ps1` and expose the printed paths before `pnpm build`.
+
+The full build validates source content, compiles all 66 notation blocks, verifies the artifact manifest, builds VitePress, and runs the built-site smoke test. The GitHub Actions workflow builds and deploys `dist/` through GitHub Pages.
 
 Source licenses and permissions are documented in `content/LICENSE.md` and `content/knowledge/sources.json`. Individual score examples retain their source, rights and verification metadata.
 '@
