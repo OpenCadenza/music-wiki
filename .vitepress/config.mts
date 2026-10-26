@@ -11,6 +11,7 @@ type NotationBlock = {
   hash: string
   id: string
   language: 'abc' | 'lilypond'
+  status: 'published' | 'draft'
   title: string
   svg: string[]
   audio: string
@@ -57,6 +58,7 @@ function notationMarkdownPlugin(md: MarkdownIt) {
       id: block.id,
       title: block.title,
       language: block.language,
+      status: block.status || 'published',
       svg: block.svg.join('|'),
       audio: block.audio,
       source: block.source
@@ -74,7 +76,10 @@ const siteConfig = {
   lang: 'zh-CN',
   base: '/music-wiki/',
   srcDir: 'content',
+  publicDir: 'public',
+  outDir: 'dist',
   cleanUrls: false,
+  lastUpdated: true,
   head: [
     ['meta', { name: 'theme-color', content: '#1f4d46' }],
     ['link', { rel: 'icon', href: '/music-wiki/favicon.svg' }]

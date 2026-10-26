@@ -1,25 +1,70 @@
 # Music Wiki
 
-Music theory and composition knowledge with embedded ABC and LilyPond examples.
+Composition knowledge with embedded ABC and LilyPond examples. The public site is deployed to:
 
-`content/` is the published knowledge snapshot. Its maintained source is the separate `references-origin` Git repository. Edit the source, then publish; do not maintain a second independent copy in `content/`.
+- Site: <https://opencadenza.github.io/music-wiki/>
+- Repository: <https://github.com/OpenCadenza/music-wiki>
 
-## LilyPond 2.26.0 requirement
+`content/` is the published knowledge snapshot. Its maintained source is the separate
+`references-origin` Git repository. Edit the source, then publish; do not maintain a
+second independent copy in `content/`.
 
-Every fenced `lilypond` or `ly` code block in this repository MUST declare `\version "2.26.0"`. Every LilyPond `opusloom:example` MUST set `target_version` to `2.26.0`. Publication is refused when any executable LilyPond block declares another version, omits the declaration, or targets another version.
+## LilyPond 2.26.0
 
-`source_version` records the version of a historical source encoding and may remain older for provenance. It does not relax the executable-code rule: convert or retype the example for 2.26.0 and compile the converted code before publishing. Do not merely replace the version string when syntax changes are required.
+Every fenced `lilypond` or `ly` block must declare exactly `\version "2.26.0"`.
+`source_version` remains historical provenance and may name an older encoding; the
+executable code and `target_version` must use 2.26.0.
 
-Run the repeatable publication from PowerShell 7:
+## Build
 
-```powershell
-./scripts/publish-content.ps1 -SourceRepository E:/programfiles/MusicKnowledgeBase/references-origin -DestinationRepository E:/github/music-wiki
+Install Node 24 and pnpm 12.3.4, then run:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm build
 ```
 
-The script validates the LilyPond version policy, commits source changes, copies tracked knowledge files, verifies SHA-256, records the source commit in `.publication.json`, commits the publication and pushes `main`. Git metadata and `_maintenance/` stay outside the knowledge snapshot. Only stale files recorded in the previous publication manifest are removed. A repeated publication with unchanged input creates no new commit.
+The full build checks all content, compiles all 66 notation blocks into SVG and MIDI,
+renders MP3 previews with FluidR3 GM, validates the artifact manifest, builds
+VitePress, and smoke-tests the generated site.
 
-OpenViking is responsible for syncing this repository's `content/` subtree to `viking://resources/music-wiki/`. No additional Git synchronization service is included here.
+Linux/WSL prerequisites:
 
-VitePress configuration and local notation build scripts are included. They compile ABC/LilyPond into SVG and playable audio artifacts. GitHub Actions and Pages deployment still require separate configuration. Source Markdown and score code remain authoritative; rendered artifacts are build outputs.
+```bash
+sudo apt install abcmidi ffmpeg fluidsynth
+bash scripts/install-toolchain.sh
+```
 
-Source licenses and permissions are documented in `content/LICENSE.md` and `content/knowledge/sources.json`. Individual score examples retain their source, rights and verification metadata.
+Windows:
+
+```powershell
+./scripts/install-toolchain.ps1
+```
+
+Set the printed `LILYPOND_PATH`, `ABC2MIDI_PATH`, `FLUIDSYNTH_PATH`, and
+`SOUNDFONT_PATH` values in the shell before `pnpm notation`. Generated files live in
+`public/notation/` and `.notation-work/`, which are ignored by Git.
+
+## Publish
+
+The source repository is committed first, then copied into `content/` and published:
+
+```powershell
+./scripts/publish-content.ps1 `
+  -SourceRepository E:/programfiles/MusicKnowledgeBase/references-origin `
+  -DestinationRepository E:/Github/music-wiki
+```
+
+The publication script validates LilyPond versions, records the source commit in
+`.publication.json`, verifies copied files with SHA-256, commits the site, pushes
+`main`, and verifies the remote commit. A push to `main` triggers
+`.github/workflows/deploy.yml`, which builds the notation and deploys `dist/` through
+GitHub Pages.
+
+OpenViking syncs the GitHub `content/` subtree to
+`viking://resources/music-wiki/`; that synchronization is managed outside this
+repository.
+
+Source licenses and permissions are documented in `content/LICENSE.md` and
+`content/knowledge/sources.json`. Individual score examples retain their source,
+rights, and verification metadata.

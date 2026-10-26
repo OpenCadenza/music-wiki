@@ -52,7 +52,7 @@
 | `form.variation` | [../forms/phrase-form.md](../forms/phrase-form.md) |
 | `form.multi-movement-coherence` | [../forms/phrase-form.md](../forms/phrase-form.md) |
 | `forms.navigation` | [../forms/index.md](../forms/index.md) |
-| `knowledge.source-policy` | [index.md](index.md) |
+| `knowledge.source-policy` | <a href="/music-wiki/knowledge/index.html">来源索引</a> |
 | `governance.license` | [../LICENSE.md](../LICENSE.md) |
 | `operation.lilypond` | [../lilypond.md](../lilypond.md) |
 | `format.abc.version-and-header` | [../notation/format-cards.md](../notation/format-cards.md) |
@@ -65,7 +65,7 @@
 | `format.compile-evidence` | [../notation/format-cards.md](../notation/format-cards.md) |
 | `corpus.source-admission` | [../notation/format-cards.md](../notation/format-cards.md) |
 | `notation.navigation` | [../notation/index.md](../notation/index.md) |
-| `navigation.root` | [../index.md](../index.md) |
+| `navigation.root` | <a href="/music-wiki/index.html">首页</a> |
 | `operation.review` | [../review.md](../review.md) |
 | `operation.scripts` | [../scripts.md](../scripts.md) |
 | `operation.setup` | [../setup.md](../setup.md) |

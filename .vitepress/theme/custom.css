@@ -28,6 +28,22 @@
   min-width: 0;
 }
 
+.score-meta {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  gap: 0.5rem;
+}
+
+.score-status {
+  padding: 0.15rem 0.42rem;
+  color: var(--vp-c-warning-1);
+  border: 1px solid color-mix(in srgb, var(--vp-c-warning-1) 45%, transparent);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
 .score-format {
   flex: none;
   color: var(--vp-c-text-2);

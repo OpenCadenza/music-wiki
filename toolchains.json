@@ -1,0 +1,33 @@
+{
+  "lilypond": {
+    "version": "2.26.0",
+    "linux": {
+      "url": "https://gitlab.com/lilypond/lilypond/-/releases/v2.26.0/downloads/lilypond-2.26.0-linux-x86_64.tar.gz",
+      "filename": "lilypond-2.26.0-linux-x86_64.tar.gz",
+      "sha256": "cd8a097a9f52cb2b9f4e7914774786f203f4fc61fcd299afcbb63c23fa5c6b24",
+      "size": 42590078
+    },
+    "windows": {
+      "url": "https://gitlab.com/lilypond/lilypond/-/releases/v2.26.0/downloads/lilypond-2.26.0-mingw-x86_64.zip",
+      "filename": "lilypond-2.26.0-mingw-x86_64.zip",
+      "sha256": "14ddddc233b469ef60d4ffc1c7f35520f15ac6b58e38cab458c60bdcc3af650c",
+      "size": 45581453
+    }
+  },
+  "abc2svg": "1.22.1",
+  "fluidsynth": "2.6.1",
+  "soundfont": {
+    "name": "FluidR3 GM",
+    "filename": "FluidR3_GM.sf2",
+    "url": "https://github.com/pianobooster/fluid-soundfont/releases/download/v3.1/FluidR3_GM.sf2",
+    "sha256": "74594e8f4250680adf590507a306655a299935343583256f3b722c48a1bc1cb0",
+    "size": 148398306,
+    "license": "MIT; copyright Frank Wen 2000-2002, 2008"
+  },
+  "audio": {
+    "sampleRate": 44100,
+    "gain": 0.85,
+    "codec": "libmp3lame",
+    "bitrate": "128k"
+  }
+}

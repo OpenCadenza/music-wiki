@@ -5,3 +5,6 @@ dist/
 public/notation/
 soundfonts/
 *.log
+content/public/
+playwright-report/
+test-results/

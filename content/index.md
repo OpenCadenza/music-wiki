@@ -16,7 +16,7 @@
 | 风格证据、平行和声、音色与结构 | [风格](styles/index.md) |
 | string quartet / 弦乐四重奏、音域、织体 | [编制](ensembles/index.md) |
 | 编译、music21、独立审稿、工具安装 | [脚本](scripts.md)、[审稿](review.md)、[环境](setup.md) |
-| 来源、许可、稳定 ID、引用边界 | [稳定 ID 直达](knowledge/stable-ids.md)、[来源索引](knowledge/index.md)、[许可](LICENSE.md) |
+| 来源、许可、稳定 ID、引用边界 | [稳定 ID 直达](knowledge/stable-ids.md)、<a href="/music-wiki/knowledge/index.html">来源索引</a>、[许可](LICENSE.md) |
 
 组合任务示例：拉威尔风格弦乐四重奏先读作曲家与编制入口，再读指定曲式和对位资料；各自约束先组合试写，不能把风格标签当成和弦预设。最后一乐章写赋格是用户的创作选择，不代表拉威尔原四重奏末乐章就是赋格。
 

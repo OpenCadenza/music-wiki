@@ -5,10 +5,14 @@
   "type": "module",
   "packageManager": "pnpm@12.3.4",
   "scripts": {
-    "dev": "pnpm notation && vitepress dev",
-    "build": "pnpm notation && vitepress build",
+    "dev": "pnpm notation && pnpm prepare:site && vitepress dev",
+    "build": "pnpm validate && pnpm notation && pnpm validate:notation && pnpm build:site && pnpm smoke:site",
+    "build:site": "pnpm prepare:site && vitepress build",
     "notation": "node scripts/build-notation.mjs",
+    "prepare:site": "node scripts/prepare-site-public.mjs",
+    "validate:notation": "node scripts/build-notation.mjs --check",
     "preview": "vitepress preview",
+    "smoke:site": "node scripts/smoke-site.mjs",
     "validate": "node scripts/validate-content.mjs"
   },
   "devDependencies": {
@@ -17,6 +21,7 @@
     "abc2svg": "1.22.1",
     "markdown-it": "14.1.0",
     "vitepress": "1.6.4",
-    "vitepress-sidebar": "1.41.0"
+    "vitepress-sidebar": "1.41.0",
+    "vue": "3.5.44"
   }
 }

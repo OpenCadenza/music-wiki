@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import {
   Download,
@@ -15,6 +15,7 @@ const props = defineProps<{
   id: string
   title: string
   language: 'abc' | 'lilypond'
+  status: 'published' | 'draft'
   svg: string
   audio: string
   source: string
@@ -80,13 +81,32 @@ function toggleMute() {
   audio.muted = !audio.muted
   muted.value = audio.muted
 }
+
+function syncAudioMetadata() {
+  const audio = audioElement.value
+  if (!audio) return
+  if (Number.isFinite(audio.duration)) duration.value = audio.duration
+  currentTime.value = Number.isFinite(audio.currentTime) ? audio.currentTime : 0
+  loadError.value = false
+}
+
+onMounted(() => {
+  const audio = audioElement.value
+  if (!audio) return
+  audio.addEventListener('durationchange', syncAudioMetadata)
+  audio.addEventListener('loadeddata', syncAudioMetadata)
+  syncAudioMetadata()
+})
 </script>
 
 <template>
   <figure class="score-example" :data-score-id="id">
     <figcaption>
       <span class="score-title">{{ title }}</span>
-      <span class="score-format">{{ language === 'abc' ? 'ABC' : 'LilyPond 2.26.0' }}</span>
+      <span class="score-meta">
+        <span v-if="status === 'draft'" class="score-status">草稿</span>
+        <span class="score-format">{{ language === 'abc' ? 'ABC' : 'LilyPond 2.26.0' }}</span>
+      </span>
     </figcaption>
 
     <div class="score-sheet">
@@ -140,10 +160,12 @@ function toggleMute() {
       class="score-audio-element"
       :src="audioUrl"
       preload="metadata"
+      @durationchange="syncAudioMetadata"
       @play="playing = true"
       @pause="playing = false"
       @ended="playing = false"
-      @loadedmetadata="duration = $event.currentTarget.duration"
+      @loadedmetadata="syncAudioMetadata"
+      @loadeddata="syncAudioMetadata"
       @timeupdate="currentTime = $event.currentTarget.currentTime"
       @error="loadError = true"
     />

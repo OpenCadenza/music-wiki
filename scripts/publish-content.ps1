@@ -134,7 +134,17 @@ The script validates the LilyPond version policy, commits source changes, copies
 
 OpenViking is responsible for syncing this repository's `content/` subtree to `viking://resources/music-wiki/`. No additional Git synchronization service is included here.
 
-VitePress configuration and local notation build scripts are included. They compile ABC/LilyPond into SVG and playable audio artifacts. GitHub Actions and Pages deployment still require separate configuration. Source Markdown and score code remain authoritative; rendered artifacts are build outputs.
+VitePress, the score player, the ABC/LilyPond build pipeline and GitHub Pages deployment are included. Generated SVG/MIDI/MP3 files stay in ignored build directories. Source Markdown and score code remain authoritative.
+
+Local site build on Linux/WSL:
+
+```bash
+sudo apt install abcmidi ffmpeg fluidsynth
+pnpm install --frozen-lockfile
+pnpm build
+```
+
+On Windows, run `scripts/install-toolchain.ps1` and expose the printed tool paths before `pnpm build`. The deployed site uses the pinned toolchain in `.github/workflows/deploy.yml`.
 
 Source licenses and permissions are documented in `content/LICENSE.md` and `content/knowledge/sources.json`. Individual score examples retain their source, rights and verification metadata.
 '@
@@ -143,7 +153,7 @@ if ($PrepareOnly) {
     [ordered]@{ source_commit = $sourceCommit; published_files = $records.Count; removed_paths = $removed; excluded_paths = $excluded; prepared_only = $true } | ConvertTo-Json -Depth 5
     return
 }
-Invoke-Git $destinationRoot @('add', '--all', '--', 'content', '.publication.json', 'scripts/publish-content.ps1', ('scripts/' + $validatorName), 'README.md') | Out-Null
+Invoke-Git $destinationRoot @('add', '--all') | Out-Null
 & git -C $destinationRoot diff --cached --quiet
 $publicationExit = $LASTEXITCODE
 if ($publicationExit -eq 1) {

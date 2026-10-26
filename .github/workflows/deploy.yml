@@ -1,0 +1,131 @@
+name: Build and deploy Music Wiki
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.3.4
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Restore notation and toolchain cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .tools
+            public/notation
+          key: notation-v3-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/**', '.vitepress/**', 'package.json', 'pnpm-lock.yaml', 'toolchains.json') }}
+          restore-keys: |
+            notation-v3-${{ runner.os }}-
+
+      - name: Install system music tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            abcmidi \
+            build-essential \
+            cmake \
+            curl \
+            ffmpeg \
+            libasound2-dev \
+            libglib2.0-dev \
+            libsndfile1-dev \
+            ninja-build \
+            pkg-config
+
+      - name: Build pinned FluidSynth 2.6.1
+        run: |
+          if [ ! -x .tools/fluidsynth-2.6.1/bin/fluidsynth ]; then
+            mkdir -p .tools
+            curl -fL --retry 3 \
+              https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz \
+              -o .tools/fluidsynth-2.6.1.tar.gz
+            tar -xzf .tools/fluidsynth-2.6.1.tar.gz -C .tools
+            cmake -S .tools/fluidsynth-2.6.1 -B .tools/fluidsynth-build \
+              -G Ninja \
+              -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_INSTALL_PREFIX="$PWD/.tools/fluidsynth-2.6.1" \
+              -Denable-dbus=0 \
+              -Denable-jack=0 \
+              -Denable-network=0 \
+              -Denable-pipewire=0 \
+              -Denable-pulseaudio=0 \
+              -Denable-readline=0 \
+              -Denable-sdl2=0 \
+              -Denable-systemd=0
+            cmake --build .tools/fluidsynth-build
+            cmake --install .tools/fluidsynth-build
+          fi
+          echo "LD_LIBRARY_PATH=$PWD/.tools/fluidsynth-2.6.1/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" >> "$GITHUB_ENV"
+
+      - name: Install pinned LilyPond and soundfont
+        env:
+          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
+        run: bash scripts/install-toolchain.sh
+
+      - name: Install JavaScript dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate source content
+        run: pnpm validate
+
+      - name: Compile and verify notation
+        env:
+          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
+        run: pnpm notation
+
+      - name: Validate notation manifest
+        run: pnpm validate:notation
+
+      - name: Build VitePress
+        run: pnpm build:site
+
+      - name: Smoke-test built site
+        run: pnpm smoke:site
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
