@@ -40,6 +40,9 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
       \clef treble
       \key c \minor
       \time 3/4
+      \set Score.barNumberVisibility = #all-bar-numbers-visible
+      \override Score.BarNumber.break-visibility = ##(#t #t #t)
+      \set Score.currentBarNumber = #88
        ef''4\sf\staccato r8. ef'16([ bf'8. g'16] ef''4\sf\staccato) r8. c''16([ fs''8. ef''16])
  g''4.\ff^"第90小节：冲到最高再退"( ef''8) ef''8([ bf']) bf'8( g') g'( ef') ef'( bf) \clef bass bf( g) g( ef) ef( bf,)
  r4 r <f af bf d'>^"第93小节：属七齐全，低音第一次进来"\sf( <g bf ef'>) r r
@@ -90,6 +93,9 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
       \clef treble
       \key f \minor
       \time 4/4
+      \set Score.barNumberVisibility = #all-bar-numbers-visible
+      \override Score.BarNumber.break-visibility = ##(#t #t #t)
+      \set Score.currentBarNumber = #41
       af4^"第41小节：低音先站住"
  r4 \acciaccatura d'16 cf''4._\markup { \italic "con espressione" }( bf'8) af'2^"旋律在这里停两拍" g'4.( ef''8)
  ef''4\sf( af'4) \acciaccatura d'16 cf''4.( bf'8) af'2 g'4.( ef''8) ef''4\sf( af'4)
