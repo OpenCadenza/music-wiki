@@ -126,7 +126,8 @@ const siteConfig = {
     ],
     footer: {
       message: '面向创作任务的音乐知识库',
-      copyright: 'Content licenses are documented per source.'
+      copyright:
+        '谱例来源与许可见 <a href="https://github.com/OpenCadenza/music-wiki/blob/main/NOTICE.md">NOTICE.md</a>'
     }
   }
 }

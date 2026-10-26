@@ -111,6 +111,8 @@ for (const path of files) {
       fenceHashes.set(hash, `${rel}:${line}`)
     }
 
+    // 谱例元数据是可选的：正文不再写来源、许可或定位字段。
+    // 若作者仍写了注释块，只校验它是合法 JSON。
     const rawMetadata = metadataBefore(text, token.map?.[0] || 0)
     let metadata = {}
     if (rawMetadata) {
@@ -119,8 +121,6 @@ for (const path of files) {
       } catch {
         errors.push(`${rel}:${line}: invalid notation metadata JSON`)
       }
-    } else if (language !== 'abc') {
-      errors.push(`${rel}:${line}: fenced notation needs adjacent metadata`)
     }
     const id =
       metadata.id || `notation.${rel.replace(/\.md$/, '').replaceAll('/', '.')}.${pageFenceIndex}`
@@ -170,14 +170,12 @@ if (notationBlocks === 0) {
   errors.push('expected at least one ABC/LilyPond block')
 }
 
-const sourceRegistry = JSON.parse(
-  await readFile(join(contentRoot, 'knowledge', 'sources.json'), 'utf8')
-)
-if (!Array.isArray(sourceRegistry.sources) || sourceRegistry.sources.length === 0) {
-  errors.push('knowledge/sources.json must contain sources')
+// 来源与许可不再登记在 content/ 内，改为仓库根 NOTICE.md。
+if (!existsSync(join(root, 'NOTICE.md'))) {
+  errors.push('NOTICE.md is missing at repository root')
 }
-if (!existsSync(join(contentRoot, 'LICENSE.md'))) {
-  errors.push('content/LICENSE.md is missing')
+if (existsSync(join(contentRoot, 'knowledge', 'sources.json'))) {
+  errors.push('content/knowledge/sources.json: source registry belongs in NOTICE.md')
 }
 
 if (errors.length) {

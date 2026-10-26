@@ -18,10 +18,9 @@ if (!Number.isInteger(manifest.blocks?.length) || manifest.blocks.length === 0) 
 const pages = [
   ['首页', 'index.html', false],
   ['贝多芬', 'composers/beethoven/index.html', false],
-  ['Op.110', 'composers/beethoven/piano/sonatas/op110-fugue.html', true],
-  ['Op.74', 'composers/beethoven/chamber/quartets/op74-model-reinterpretation.html', true],
-  ['Op.127/132', 'composers/beethoven/chamber/quartets/op127-op132-return-meter.html', true],
-  ['ABC', 'abc.html', true]
+  ['奏鸣曲目录', 'composers/beethoven/piano/sonatas/index.html', false],
+  ['开头', 'composers/beethoven/piano/sonatas/opening-gestures.html', true],
+  ['动机', 'composers/beethoven/piano/sonatas/motive-tasks.html', true]
 ]
 
 for (const [name, relativePath, expectScore] of pages) {
