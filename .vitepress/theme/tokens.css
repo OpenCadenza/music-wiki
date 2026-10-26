@@ -1,0 +1,95 @@
+/*
+ * VitePress adaptation of the Intercom editorial design specification.
+ * Saans is proprietary; Inter and the local CJK stack provide the fallback.
+ */
+:root {
+  --design-canvas: #f5f1ec;
+  --design-surface-1: #ffffff;
+  --design-surface-2: #ebe7e1;
+  --design-ink: #111111;
+  --design-ink-muted: #626260;
+  --design-ink-subtle: #7b7b78;
+  --design-ink-tertiary: #9c9fa5;
+  --design-hairline: #d3cec6;
+  --design-hairline-soft: #ebe7e1;
+  --design-accent: #ff5600;
+  --design-accent-ink: #a93600;
+  --design-accent-soft: #fff0e8;
+  --design-error: #c41c1c;
+  --design-success: #087a36;
+
+  --vp-c-white: #ffffff;
+  --vp-c-black: #111111;
+  --vp-c-bg: var(--design-canvas);
+  --vp-c-bg-alt: var(--design-canvas);
+  --vp-c-bg-elv: var(--design-surface-1);
+  --vp-c-bg-soft: var(--design-surface-1);
+  --vp-c-border: var(--design-hairline);
+  --vp-c-divider: var(--design-hairline);
+  --vp-c-gutter: var(--design-canvas);
+  --vp-c-text-1: var(--design-ink);
+  --vp-c-text-2: var(--design-ink-muted);
+  --vp-c-text-3: var(--design-ink-subtle);
+  --vp-c-default-1: var(--design-ink);
+  --vp-c-default-2: var(--design-ink-muted);
+  --vp-c-default-3: var(--design-ink-subtle);
+  --vp-c-default-soft: var(--design-surface-2);
+
+  --vp-c-brand-1: var(--design-accent-ink);
+  --vp-c-brand-2: var(--design-ink);
+  --vp-c-brand-3: var(--design-accent);
+  --vp-c-brand-soft: var(--design-accent-soft);
+
+  --vp-c-tip-1: #0a6a43;
+  --vp-c-tip-2: #0a6a43;
+  --vp-c-tip-3: #0a6a43;
+  --vp-c-tip-soft: #e8f5ed;
+  --vp-c-warning-1: #8a4b00;
+  --vp-c-warning-2: #8a4b00;
+  --vp-c-warning-3: #8a4b00;
+  --vp-c-warning-soft: #fff4e5;
+  --vp-c-danger-1: var(--design-error);
+  --vp-c-danger-2: var(--design-error);
+  --vp-c-danger-3: var(--design-error);
+  --vp-c-danger-soft: #fff0f0;
+
+  --vp-button-brand-border: var(--design-ink);
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-bg: var(--design-ink);
+  --vp-button-brand-hover-border: #000000;
+  --vp-button-brand-hover-text: #ffffff;
+  --vp-button-brand-hover-bg: #000000;
+  --vp-button-brand-active-border: #313130;
+  --vp-button-brand-active-text: #ffffff;
+  --vp-button-brand-active-bg: #313130;
+  --vp-button-alt-border: var(--design-hairline);
+  --vp-button-alt-text: var(--design-ink);
+  --vp-button-alt-bg: var(--design-surface-1);
+  --vp-button-alt-hover-border: var(--design-ink);
+  --vp-button-alt-hover-text: var(--design-ink);
+  --vp-button-alt-hover-bg: var(--design-surface-1);
+
+  --vp-code-color: var(--design-ink);
+  --vp-code-bg: var(--design-surface-1);
+  --vp-code-block-bg: var(--design-surface-1);
+  --vp-code-line-highlight-color: var(--design-accent-soft);
+  --vp-code-copy-code-bg: var(--design-surface-1);
+  --vp-code-copy-code-hover-bg: var(--design-surface-2);
+
+  --vp-custom-block-note-border: var(--design-hairline);
+  --vp-custom-block-note-bg: var(--design-surface-1);
+  --vp-custom-block-tip-border: #9fc9b5;
+  --vp-custom-block-tip-bg: #f4faf6;
+  --vp-custom-block-warning-border: #e6c18e;
+  --vp-custom-block-warning-bg: #fff8ee;
+  --vp-custom-block-danger-border: #dfaaaa;
+  --vp-custom-block-danger-bg: #fff5f5;
+
+  --vp-font-family-base: "Inter", "Noto Sans SC", "Source Han Sans SC",
+    "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: "JetBrains Mono", "SFMono-Regular", Consolas,
+    "Liberation Mono", monospace;
+  --vp-nav-height: 56px;
+  --vp-sidebar-width: 292px;
+  --vp-layout-max-width: 1420px;
+}
