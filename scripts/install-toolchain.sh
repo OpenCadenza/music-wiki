@@ -39,7 +39,8 @@ actual="$(sha256sum "$soundfont" | awk '{print $1}')"
 "$lily_root/bin/lilypond" --version | head -n 1
 "$lily_root/bin/convert-ly" --version | head -n 1
 abc2midi -ver | head -n 1
-fluid_version="$(fluidsynth --version 2>&1)"
+fluidsynth_bin="${FLUIDSYNTH_PATH:-fluidsynth}"
+fluid_version="$("$fluidsynth_bin" --version 2>&1)"
 echo "$fluid_version" | head -n 1
 [[ "$fluid_version" == *"2.6.1"* ]] || {
   echo "FluidSynth 2.6.1 is required" >&2
