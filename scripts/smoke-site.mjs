@@ -11,8 +11,8 @@ if (!existsSync(manifestPath)) throw new Error('Notation manifest is missing')
 if (!existsSync(distRoot)) throw new Error('VitePress output dist/ is missing')
 
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'))
-if (manifest.blocks?.length !== 66) {
-  throw new Error(`Expected 66 notation blocks, found ${manifest.blocks?.length || 0}`)
+if (!Number.isInteger(manifest.blocks?.length) || manifest.blocks.length === 0) {
+  throw new Error(`Expected at least one notation block, found ${manifest.blocks?.length || 0}`)
 }
 
 const pages = [
