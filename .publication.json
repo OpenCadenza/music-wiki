@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "source_commit": "d563dbb116258d05e58c056d44e64a84f9d468d5",
+  "source_commit": "79549d3c94d846e27f806529ed723662e1fa5a52",
   "source_branch": "master",
   "content_root": "content",
   "excluded_paths": [
@@ -345,7 +345,7 @@
     },
     {
       "path": "index.md",
-      "sha256": "1d2dd13e53b16a53dea3abf0d40e2d85c47d388a5fa063a43c6064c9fb1dc7b0"
+      "sha256": "e72fad8f77f8d1f73cf430fa0778f396cf92f454ea3dd16c4b5380f4a785d12e"
     },
     {
       "path": "knowledge/index.md",
@@ -357,7 +357,7 @@
     },
     {
       "path": "knowledge/stable-ids.md",
-      "sha256": "31c0a7797fcecb19819e73a5b5c1eb3db4b028f619ac794cb5a86ff1be3bbdf8"
+      "sha256": "489efec933eacd45d573717d61ab50e9cd47484993d6e45c455fc1e782d480f9"
     },
     {
       "path": "LICENSE.md",
