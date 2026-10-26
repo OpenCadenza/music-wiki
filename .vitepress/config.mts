@@ -71,16 +71,14 @@ function notationMarkdownPlugin(md: MarkdownIt) {
 }
 
 const siteConfig = {
-  title: '音乐知识库',
-  titleTemplate: ':title | 音乐知识库',
-  description: '面向音乐创作任务的作曲、乐理与 ABC/LilyPond 谱例知识库',
+  title: 'Music Wiki',
+  description: '作曲、乐理与 ABC/LilyPond 谱例知识库',
   lang: 'zh-CN',
   base: '/music-wiki/',
   srcDir: 'content',
   publicDir: 'public',
   outDir: 'dist',
   cleanUrls: false,
-  appearance: false,
   lastUpdated: true,
   head: [
     ['meta', { name: 'theme-color', content: '#f5f1ec' }],
@@ -89,11 +87,14 @@ const siteConfig = {
   markdown: {
     config: notationMarkdownPlugin,
     lineNumbers: true,
-    theme: 'github-light'
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
+    }
   },
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: '音乐知识库',
+    siteTitle: 'Music Wiki',
     outline: {
       level: [2, 3],
       label: '本页目录'
@@ -105,26 +106,7 @@ const siteConfig = {
       { text: '来源与许可', link: '/knowledge/' }
     ],
     search: {
-      provider: 'local',
-      options: {
-        translations: {
-          button: {
-            buttonText: '搜索',
-            buttonAriaLabel: '搜索知识库'
-          },
-          modal: {
-            displayDetails: '显示详细列表',
-            resetButtonTitle: '清除搜索',
-            backButtonTitle: '关闭搜索',
-            noResultsText: '没有找到相关内容',
-            footer: {
-              selectText: '选择',
-              navigateText: '切换',
-              closeText: '关闭'
-            }
-          }
-        }
-      }
+      provider: 'local'
     },
     docFooter: {
       prev: '上一页',
@@ -133,6 +115,7 @@ const siteConfig = {
     lastUpdated: {
       text: '最后更新'
     },
+    darkModeSwitchLabel: '主题',
     sidebarMenuLabel: '知识树',
     returnToTopLabel: '回到顶部',
     socialLinks: [
@@ -143,7 +126,7 @@ const siteConfig = {
     ],
     footer: {
       message: '面向创作任务的音乐知识库',
-      copyright: '来源许可与引用边界见来源登记表'
+      copyright: 'Content licenses are documented per source.'
     }
   }
 }

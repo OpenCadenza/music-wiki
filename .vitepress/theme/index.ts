@@ -1,7 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import ScoreExample from './ScoreExample.vue'
-import './tokens.css'
 import './custom.css'
 
 export default {
