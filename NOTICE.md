@@ -46,6 +46,8 @@
 | `mutopia-919` | 贝多芬 Op.17 圆号奏鸣曲 | Mollo (1801) | Jay Anderson | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=919> |
 | `mutopia-1197` | 贝多芬 Op.11 钢琴三重奏第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1197> |
 | `mutopia-685` | 贝多芬 Op.69 大提琴奏鸣曲第三乐章 | Breitkopf & Härtel（Stelios Samelis 转录） | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=685> |
+| `mutopia-934` | 贝多芬 Op.76 六首变奏曲（主题与变奏） | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=934> |
+| `mutopia-1198` | 贝多芬 Op.11 钢琴三重奏第三乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1198> |
 
 ## 按文章登记
 
@@ -86,6 +88,7 @@
 | `techniques/postponing-the-cadence.md` | Op.2 No.1 i mm.93–101；Op.18 No.4 i mm.130–137 | `mutopia-1211`、`mutopia-sq-op18no4` |
 | `techniques/motivic-transformation.md` | Op.10 No.1 i mm.1–16（钢琴）；Op.18 No.4 i mm.17–24（四重奏） | `mutopia-778`、`mutopia-sq-op18no4` |
 | `composers/beethoven/concertos/double-exposition.md` | Op.37 i mm.1–8；mm.110–118 | `mutopia-899` |
+| `techniques/variation-technique.md` | Op.76 Tema mm.1–16、Var. I mm.18–25（钢琴）；Op.11 iii Tema mm.1–16（单簧管 in B♭） | `mutopia-934`、`mutopia-1198` |
 
 ## 编辑约定
 

@@ -29,3 +29,4 @@
 
 - [终止式：把终止推迟的四种手段](postponing-the-cadence.md)
 - [动机变形：改哪个参数还算同一个动机](motivic-transformation.md)
+- [变奏：改哪个参数才叫另一个变奏](variation-technique.md)
