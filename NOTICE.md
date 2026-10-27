@@ -83,6 +83,7 @@
 | `composers/beethoven/chamber/horn-sonata-writing.md` | Op.17 i mm.1–8；ii mm.1–8 | `mutopia-919` |
 | `composers/beethoven/chamber/piano-trio-balance.md` | Op.11 i mm.1–16（单簧管 in B♭） | `mutopia-1197` |
 | `composers/beethoven/chamber/slow-intro-to-allegro.md` | Op.69 iii（引子 + 快板开头） | `mutopia-685` |
+| `techniques/postponing-the-cadence.md` | Op.2 No.1 i mm.93–101；Op.18 No.4 i mm.130–137 | `mutopia-1211`、`mutopia-sq-op18no4` |
 ## 编辑约定
 
 - 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。
