@@ -28,3 +28,4 @@
 这个分支按技法组织，每篇跨至少两个体裁。
 
 - [终止式：把终止推迟的四种手段](postponing-the-cadence.md)
+- [动机变形：改哪个参数还算同一个动机](motivic-transformation.md)
