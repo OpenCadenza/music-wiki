@@ -4,9 +4,7 @@
 
 谱例是 mm.1–14。前面那一个四分音符的弱起 C 不计数，第 1 小节从 f′ 开始。
 
-**贝多芬 Op.2 No.1 第一乐章，mm.1–14**
-
-```lilypond
+```lilypond title="贝多芬 Op.2 No.1 第一乐章" location="mm.1–14"
 \version "2.26.0"
 \language "english"
 

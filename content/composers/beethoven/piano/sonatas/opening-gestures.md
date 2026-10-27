@@ -63,9 +63,7 @@ Op.13 第一乐章的 Grave 走相反的路：落差不在第 5 小节，而在�
 
 第 10 小节收在延长记号上：右手是一串十六分、六十四分、一百二十八分音符的下行跑句，停在 a♭′ 与 b 上；左手 G–C–E♭ 加延长记号，标着"紧接快板，不停顿"。
 
-**贝多芬 Op.13《悲怆》第一乐章 Grave，mm.1–10**
-
-```lilypond
+```lilypond title="贝多芬 Op.13《悲怆》第一乐章" location="Grave，mm.1–10"
 \version "2.26.0"
 \language "english"
 

@@ -6,9 +6,7 @@ Op.90 是贝多芬中期最短的奏鸣曲之一，只有两个乐章：e 小调
 
 ## 一、前十五小节：张力自己花掉
 
-**贝多芬 Op.90 第一乐章，mm.1–15**
-
-```lilypond
+```lilypond title="贝多芬 Op.90 第一乐章" location="mm.1–15"
 \version "2.26.0"
 \language "english"
 
@@ -66,9 +64,7 @@ E 大调在第一乐章里始终是这个身份：借来的颜色，亮一拍就
 
 ## 三、第二乐章为什么必须换到同名大调
 
-**贝多芬 Op.90 第二乐章，mm.1–15**
-
-```lilypond
+```lilypond title="贝多芬 Op.90 第二乐章" location="mm.1–15"
 \version "2.26.0"
 \language "english"
 

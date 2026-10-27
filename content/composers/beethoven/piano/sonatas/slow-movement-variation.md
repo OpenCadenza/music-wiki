@@ -6,9 +6,7 @@ Op.57《热情》第二乐章（Andante con moto）提供了一个干净的样�
 
 ## 一、主题的骨架：顶声两个音，低音一条线
 
-**贝多芬 Op.57 第二乐章，mm.1–16**
-
-```lilypond
+```lilypond title="贝多芬 Op.57 第二乐章" location="mm.1–16"
 \version "2.26.0"
 \language "english"
 
