@@ -46,6 +46,8 @@
 
 调性到达和主题到达之间的这段距离，是副部最容易被写坏的地方：新调一到就把主题端出来，副部会像主部的一个变奏；这段距离留得够长，副部才有"另一个地方"的分量。
 
+**贝多芬 Op.2 No.1 第一乐章，mm.20–32**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -53,9 +55,12 @@
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
+      \tempo 4 = 190
       \set Score.barNumberVisibility = #all-bar-numbers-visible
       \override Score.BarNumber.break-visibility = ##(#t #t #t)
       \set Score.currentBarNumber = #20
@@ -66,6 +71,8 @@
  r8 g''\<( bf'' af'') r a''( c''' bf'') r b''( df''' c''') r c'''( ef''' df'''\!)
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key f \minor
       \time 4/4
@@ -98,6 +105,8 @@ Op.31 No.2 第一乐章（d 小调，4/4）的副部区用的是相反的算法�
 
 这一段也解释了为什么"副部必然抒情"是错的：副部成立的条件是参数换了，不是表情变了。Op.31 No.2 这段又响又硬，可是音区被压在 a–a‴、织体换成三连音音型、支点从和声进行换成音型在两手之间轮换——三条到位，它就是副部。
 
+**贝多芬 Op.31 No.2 第一乐章，mm.29–38**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -105,9 +114,12 @@ Op.31 No.2 第一乐章（d 小调，4/4）的副部区用的是相反的算法�
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key d \minor
       \time 4/4
+      \tempo 4 = 224
       \set Score.barNumberVisibility = #all-bar-numbers-visible
       \override Score.BarNumber.break-visibility = ##(#t #t #t)
       \set Score.currentBarNumber = #29
@@ -122,6 +134,8 @@ Op.31 No.2 第一乐章（d 小调，4/4）的副部区用的是相反的算法�
            \tuplet 3/2 { a'8\ff[ c'' a'] c''[ a' c''] a'[ c'' a'] c''[ a' c''] } } >>
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key d \minor
       \time 4/4

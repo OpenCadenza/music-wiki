@@ -247,6 +247,17 @@ function pageHeading(text) {
   return match ? match[1].replaceAll(/[*_`]/g, '').trim() : '音乐谱例'
 }
 
+// 代码块正上方的加粗说明行，作为这份乐谱的标题（见 README「标题行」）。
+function captionBefore(lines, openingLine) {
+  for (let index = openingLine - 1; index >= 0 && index > openingLine - 8; index -= 1) {
+    const text = (lines[index] || '').trim()
+    if (!text) continue
+    const match = text.match(/^\*\*(.+)\*\*$/)
+    return match ? match[1].trim() : null
+  }
+  return null
+}
+
 async function collectBlocks() {
   const blocks = []
   const hashes = new Map()
@@ -295,9 +306,12 @@ async function collectBlocks() {
       }
       ids.set(stableId, `${relativePath}:${line}`)
       const context = String(metadata.context || metadata.title || '').trim()
-      const title = context
-        ? `${pageTitle}: ${context.length > 72 ? `${context.slice(0, 72)}...` : context}`
-        : `${pageTitle} (${notationIndex})`
+      const caption = captionBefore(lines, token.map?.[0] || 0)
+      const title =
+        caption ||
+        (context
+          ? `${pageTitle}: ${context.length > 72 ? `${context.slice(0, 72)}...` : context}`
+          : `${pageTitle} (${notationIndex})`)
       blocks.push({
         path,
         relativePath,
@@ -543,7 +557,23 @@ async function renderAbc(block, workDirectory, outputDirectory) {
   return { svg, midi, sourceName: 'source.abc' }
 }
 
+function gmProgramsFromCode(code) {
+  return [...code.matchAll(/%\s*GM\s+(\d{1,3})\b/gi)]
+    .map((match) => Number(match[1]))
+    .filter((value) => Number.isInteger(value) && value >= 0 && value <= 127)
+}
+
 function requestedInstrument(block) {
+  // % GM <编号> 是权威值：LilyPond 只认乐器名，名字对不上会静默退回钢琴。
+  const programs = gmProgramsFromCode(block.code)
+  if (programs.length > 0) {
+    return {
+      strategy: 'gm-comment',
+      label: `GM ${programs.join('/')}`,
+      program: programs.length === 1 ? programs[0] : null,
+      programs
+    }
+  }
   const requested = block.metadata.instrument || block.metadata.midi_instrument
   if (requested !== undefined && requested !== null && requested !== '') {
     const numeric = Number(requested)
@@ -580,13 +610,23 @@ async function readMidi(path) {
 }
 
 async function applyInstrument(block, midiPath, instrument) {
-  if (instrument.program === null) {
+  const perTrack = Array.isArray(instrument.programs) && instrument.programs.length > 0
+  if (!perTrack && instrument.program === null) {
     const midiMetadata = await readMidi(midiPath)
     return midiMetadata
   }
   const midiMetadata = await readMidi(midiPath)
-  for (const track of midiMetadata.midi.tracks) {
-    track.instrument.number = instrument.program
+  const tracks = midiMetadata.midi.tracks
+  if (perTrack) {
+    // 按声部出现顺序逐轨设置；轨道多于声明数时，多出的沿用最后一个
+    tracks.forEach((track, index) => {
+      const program = instrument.programs[Math.min(index, instrument.programs.length - 1)]
+      track.instrument.number = program
+    })
+  } else {
+    for (const track of tracks) {
+      track.instrument.number = instrument.program
+    }
   }
   await writeFile(midiPath, Buffer.from(midiMetadata.midi.toArray()))
   return readMidi(midiPath)

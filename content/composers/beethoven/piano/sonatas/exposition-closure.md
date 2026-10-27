@@ -30,6 +30,8 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
 
 这是结束部（closing section）钉住新调的第一种答案：靠一条被反复走的下行低音。判据很具体——把这四遍终止的低音抄下来排成一行。如果全是 e♭，你写的是四个句号；如果连成 a♭–g–f，你写的是一个结尾。
 
+**贝多芬 Op.10 No.1 第一乐章，mm.88–105**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -37,9 +39,12 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key c \minor
       \time 3/4
+      \tempo 4 = 164
       \set Score.barNumberVisibility = #all-bar-numbers-visible
       \override Score.BarNumber.break-visibility = ##(#t #t #t)
       \set Score.currentBarNumber = #88
@@ -53,6 +58,8 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
  <af d' f'>2.( <g bf ef'>4) r4 r
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key c \minor
       \time 3/4
@@ -83,6 +90,8 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
 
 所以"低音到主音"不是唯一的闭合方式。低音可以一直站在主音上，这时判据换成另一条：**属七的七音与导音必须在下一个和弦里被解决掉，而且大三度必须在主和弦里出现。**Op.2 No.1 的第 47→48 小节，两件事都做了。
 
+**贝多芬 Op.2 No.1 第一乐章，mm.41–48**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -90,9 +99,12 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
+      \tempo 4 = 190
       \set Score.barNumberVisibility = #all-bar-numbers-visible
       \override Score.BarNumber.break-visibility = ##(#t #t #t)
       \set Score.currentBarNumber = #41
@@ -102,6 +114,8 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
  \acciaccatura d''16 cf'''4.( bf''8) af''2 g''4.( ef'''8) <df'' g'' ef'''>1^"第47小节：属七补上 g"\ff\> <c'' ef'' af''>4^"第48小节：落到 a♭ 大三和弦"\!\p r4 r 
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key f \minor
       \time 4/4

@@ -2,6 +2,8 @@
 
 连接部（transition）最难的地方是它必须"没有内容"：一有新材料，奏鸣曲式就多出一个主题；什么也不做，调又回不到目标上。Op.2 No.1 第一乐章的连接部（大致 mm.9–40）给出的办法是把三件事排成顺序——低音的走向、模进的单位、"等待"的长度——一件一件换掉。主题一个也没有增加，调性已经从 f 小调走到 a♭ 大调。谱例是它的前二十小节（mm.9–28）。
 
+**贝多芬 Op.2 No.1 第一乐章，mm.9–28**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -9,9 +11,12 @@
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
+      \tempo 4 = 190
       \set Score.currentBarNumber = #9
       % m.9–m.10：右手整两小节休止，低音独行
       R1
@@ -48,6 +53,8 @@
       ef''4 r4 r8 d''8 \< ( af''8 \! \> d''8 \! )
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key f \minor
       \time 4/4

@@ -32,8 +32,22 @@ Op.2 No.1 的火箭式开头、Op.10 No.1 的碎片化发展部，都是后来�
 
 本目录不按作品一篇一篇写，而是按创作问题组织。同一篇文章里可以出现多部作品的片段。
 
+**呈示部的四个位置**
+
 - [开头怎样在四小节内建立调性、音区与性格](opening-gestures.md)
 - [一个动机怎样承担陈述、继续、碎片化三种任务](motive-tasks.md)
 - [连接部怎样把调性推走](transition.md)
 - [副部主题为什么"像副部"](secondary-theme.md)
 - [呈示部怎样真正闭合](exposition-closure.md)
+
+**中段与整体**
+
+- [展开部：材料怎样被拆开又拼回去](development-techniques.md)
+- [只有两个乐章时，结构重量往哪里挪](op90-two-movements.md)
+- [终章用什么曲式：回旋、变奏还是奏鸣曲](finale-choice.md)
+
+**晚期**
+
+- [晚期织体：两个平面](late-texture.md)
+- [完整赋格、发展部 fugato、变奏里的模仿](fugue-or-fugato.md)
+- [慢乐章的变奏：什么时候是装饰，什么时候是换性格](slow-movement-variation.md)

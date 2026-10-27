@@ -36,50 +36,8 @@ Op.2 No.1 第一乐章（f 小调，4/4）的开头不是和弦，是一条单�
 
 第 8 小节是这套安排的收口：装饰音 e″–f″–g″ 顶到 f″，p，然后退半步到 e″（导音），断奏，延长记号，休止。开头不是靠更响结束的，是靠一个半音的下行加一次停顿结束。
 
-```lilypond
-\version "2.26.0"
-\language "english"
+Op.2 No.1 这一段逐音的谱面见[《一个四音动机怎样承担陈述、继续、碎片化》](motive-tasks.md)里的谱例（弱起 + mm.1–14）。这里只把它当作开头设计的对照，不再重复贴一次。
 
-\score {
-  \new PianoStaff <<
-    \new Staff = "up" {
-      \clef treble
-      \key f \minor
-      \time 4/4
-      \override Score.MetronomeMark.transparent = ##t
-      \tempo 4 = 190
-      \partial 4 c'4\p\staccato^\markup { \large \bold "Allegro" }_"弱起只有一拍"
-      f'\staccato^"第一个强拍落在主音" af'\staccato c''\staccato f''\staccato
-      af''4.( \tuplet 3/2 { g''16[ f'' e''] } f''4\staccato) r4
-      g'\staccato^"同一个琶音换到属和弦" c''\staccato e''\staccato g''\staccato
-      bf''4.( \tuplet 3/2 { af''16[ g'' f''] } g''4\staccato) r4
-      \acciaccatura c''16 af''4.\sf^"第一个 sf" ( \tuplet 3/2 { g''16[ f'' e''] } f''4\staccato) r4
-      \acciaccatura c''16 bf''4.\sf ( \tuplet 3/2 { af''16[ g'' f''] } g''4\staccato) r4
-      <c'' f'' af'' c'''>2\ff^"这里才出现和弦"\arpeggio\> bf''8([ af'' g'' f''\!])
-      \grace { e''16[ f'' g''] } f''4\p^"退回半音" ( e''\staccato) r4^\fermata r4
-      R1
-      R1
-    }
-    \new Staff = "down" {
-      \clef bass
-      \key f \minor
-      \time 4/4
-      \partial 4 r4
-      R1
-      r4 <f af c'>4\staccato <f af c'>\staccato <f af c'>\staccato
-      <e g bf c'>4\staccato r4 r2 r4 <e g bf c'>\staccato <e g bf c'>\staccato <e g bf c'>\staccato
-      r4 <f af c'>\staccato <f af c'>\staccato <f af c'>\staccato
-      r <g bf e'>\staccato <g bf e'>\staccato <g bf e'>\staccato
-      r4 <af c' f'>\staccato r <bf df' g'>\staccato
-      r4 <c' g'>4\staccato r4^\fermata g,4\staccato^\p
-      c\staccato^"右手空两小节" ef!\staccato g\staccato c'\staccato
-      ef'!4.( \tuplet 3/2 { d'16[ c' b] } c'4\staccato) c'4\staccato
-    }
-  >>
-  \layout { }
-  \midi { }
-}
-```
 
 ## 第 8 小节的半步，第 9 小节的换手
 
@@ -105,12 +63,14 @@ Op.13 第一乐章的 Grave 走相反的路：落差不在第 5 小节，而在�
 
 第 10 小节收在延长记号上：右手是一串十六分、六十四分、一百二十八分音符的下行跑句，停在 a♭′ 与 b 上；左手 G–C–E♭ 加延长记号，标着"紧接快板，不停顿"。
 
+**贝多芬 Op.13《悲怆》第一乐章 Grave，mm.1–10**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
 
 graveRH = \relative c' {
-  \clef treble \key c \minor \time 4/4
+  \clef treble \key c \minor \time 4/4 \tempo 8 = 66
   <c g ef>4^\markup {\large "Grave"}^"fp：强起，立刻收回"
     ~ <c g ef>16.[ <c g>32 <d b g>16. <ef c g>32]
     <ef c a>4( <d b>8) r
@@ -171,8 +131,16 @@ graveLH = \relative c {
 
 \score {
   \new PianoStaff <<
-    \new Staff = "up" { \graveRH }
-    \new Staff = "down" { \graveLH }
+    \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
+      \graveRH
+    }
+    \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
+      \graveLH
+    }
   >>
   \layout { }
   \midi { }

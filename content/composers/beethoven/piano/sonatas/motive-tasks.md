@@ -4,6 +4,8 @@
 
 谱例是 mm.1–14。前面那一个四分音符的弱起 C 不计数，第 1 小节从 f′ 开始。
 
+**贝多芬 Op.2 No.1 第一乐章，mm.1–14**
+
 ```lilypond
 \version "2.26.0"
 \language "english"
@@ -11,9 +13,12 @@
 \score {
   \new PianoStaff <<
     \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
+      \tempo 4 = 190
       \partial 4 c'4\p\staccato
       % m.1
       f'4 \staccato^\markup { \small "陈述" } af'4 \staccato c''4 \staccato f''4 \staccato
@@ -38,6 +43,8 @@
       << { g''4 \rest g''8 \rest \tuplet 3/2 { ef''16 ( [ df''! c'' ] } df''4 \staccato ) df'' \staccato df''1 ~ df''4. \tuplet 3/2 { ef''16 ( [ df'' c'' ] } df''4 \staccato ) df'' \staccato g''4 \rest g''8 \rest \tuplet 3/2 { df''16 ( [ c'' b' ] } c''4 \staccato ) c'' \staccato } \\ { af'1 ~ af'4. \tuplet 3/2 { bf'16 ( [ af' g' ] } af'4 \staccato ) af' \staccato g'1 af'1 } >>
     }
     \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      % GM 0
       \clef bass
       \key f \minor
       \time 4/4

@@ -19,6 +19,12 @@
 | `mutopia-299` | 贝多芬 Op.13《悲怆》第一乐章 | G. Schirmer (1894)、Berners (1908) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=299> |
 | `mutopia-1509` | 贝多芬 Op.31 No.2《暴风雨》第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1509> |
 | `mutopia-1022` | 贝多芬 Op.111 第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1022> |
+| `mutopia-288` | 贝多芬 Op.57《热情》第二乐章 | Schott Einzelausgabe | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=288> |
+| `mutopia-937` | 贝多芬 Op.57《热情》第三乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=937> |
+| `mutopia-776` | 贝多芬 Op.49 No.2 第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=776> |
+| `mutopia-777` | 贝多芬 Op.49 No.2 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=777> |
+| `mutopia-906` | 贝多芬 Op.90 第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=906> |
+| `mutopia-909` | 贝多芬 Op.90 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=909> |
 
 ## 按文章登记
 
@@ -26,14 +32,21 @@
 
 | 文章 | 谱例小节 | 来源 ID |
 | --- | --- | --- |
-| `composers/beethoven/piano/sonatas/opening-gestures.md` | Op.2 No.1 i 弱起–m.10；Op.13 i Grave mm.1–10 | `mutopia-1211`、`mutopia-299` |
-| `composers/beethoven/piano/sonatas/motive-tasks.md` | Op.2 No.1 i 弱起–m.14 | `mutopia-1211` |
+| `composers/beethoven/piano/sonatas/opening-gestures.md` | Op.13 i Grave mm.1–10 | `mutopia-299` |
+| `composers/beethoven/piano/sonatas/motive-tasks.md` | Op.2 No.1 i 弱起–m.14（Op.2 No.1 开头段全站只出现这一次） | `mutopia-1211` |
 | `composers/beethoven/piano/sonatas/transition.md` | Op.2 No.1 i mm.9–28 | `mutopia-1211` |
-| `composers/beethoven/piano/sonatas/secondary-theme.md` | Op.2 No.1 i mm.20 起；Op.31 No.2 i 副部段 | `mutopia-1211`、`mutopia-1509` |
-| `composers/beethoven/piano/sonatas/exposition-closure.md` | Op.10 No.1 i mm.90 起；Op.2 No.1 i mm.41–48 | `mutopia-778`、`mutopia-1211` |
+| `composers/beethoven/piano/sonatas/secondary-theme.md` | Op.2 No.1 i mm.20–32；Op.31 No.2 i mm.29–38 | `mutopia-1211`、`mutopia-1509` |
+| `composers/beethoven/piano/sonatas/exposition-closure.md` | Op.10 No.1 i mm.88–105；Op.2 No.1 i mm.41–48 | `mutopia-778`、`mutopia-1211` |
+| `composers/beethoven/piano/sonatas/finale-choice.md` | Op.57 iii mm.8–16；Op.49 No.2 ii mm.1–12；Op.111 ii 待补 | `mutopia-937`、`mutopia-777`、`mutopia-1022` |
+| `composers/beethoven/piano/sonatas/development-techniques.md` | Op.10 No.1 i mm.106–118；Op.31 No.2 i mm.100–111 | `mutopia-778`、`mutopia-1509` |
+| `composers/beethoven/piano/sonatas/op90-two-movements.md` | Op.90 i mm.1–15；Op.90 ii mm.1–15 | `mutopia-906`、`mutopia-909` |
+| `composers/beethoven/piano/sonatas/slow-movement-variation.md` | Op.57 ii mm.1–16；Op.109 iii 待补 | `mutopia-288` |
+| `composers/beethoven/piano/sonatas/late-texture.md` | Op.111 i、Op.101 i、Op.106 i 均待补（`\cadenzaOn` 排版，小节号需重对齐） | `mutopia-1022` |
+| `composers/beethoven/piano/sonatas/fugue-or-fugato.md` | Op.2 No.1 i mm.49–60；Op.110 iii mm.136–174、Op.106 iv mm.1–32 待补 | `mutopia-1211` |
 
 ## 编辑约定
 
-- 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移、
-  音名转写，并逐音核对（以 MIDI 事件序列比对原始排版）后入库。
-- 原始 `.ly` 编码与核对记录留在项目工作区，不进入本仓库。
+- 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。
+- 每段谱例必须带标题行、`\tempo` 速度标记、`% GM <编号>` 乐器编号，规则见 README「谱例要求」。
+- 谱例的正确性由人工复核，不由构建脚本校验；构建只保证编译通过。
+- 原始 `.ly` 编码留在项目工作区，不进入本仓库。
