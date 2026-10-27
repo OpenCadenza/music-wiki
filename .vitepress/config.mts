@@ -133,9 +133,8 @@ const siteConfig = {
       label: '本页目录'
     },
     nav: [
-      { text: '按任务查资料', link: '/' },
+      { text: 'OpenCadenza', link: 'https://opencadenza.github.io/' },
       { text: '作曲家', link: '/composers/' },
-      { text: '贝多芬', link: '/composers/beethoven/' },
       { text: '来源与许可', link: '/knowledge/' }
     ],
     search: {
