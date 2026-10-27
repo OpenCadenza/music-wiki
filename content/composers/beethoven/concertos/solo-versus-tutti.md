@@ -212,15 +212,119 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
 
 ## 乐队退到什么程度
 
-独奏进来之后，乐队分四步退。
+独奏进来之后，乐队分四步退。下面这九小节只留六行——独奏、四部弦乐、单簧管——四步在谱面上直接数得出来。
 
-**第一步，木管、圆号、小号、定音鼓全部停手。** 第 89 小节这七行都是整小节休止，一直到第 91 小节单簧管才回来一下（`<bf' e''>4`，记谱，A 调单簧管实音 g′–cs″）。
+```lilypond title="贝多芬 Op.61 第一乐章" location="mm.88–96"
+\version "2.26.0"
+\language "english"
+
+\score {
+  \new StaffGroup <<
+    \new Staff = "clarinetti" {
+      \set Staff.instrumentName = \markup \column { "Clarinetti" "in A." }
+      \set Staff.shortInstrumentName = "Cl"
+      \set Staff.midiInstrument = "clarinet"
+      % GM 71
+      \transposition a
+      \clef treble \key f \major \time 4/4
+      \set Score.currentBarNumber = #88
+      \tempo 4 = 102
+      R1 |
+      R1 |
+      R1 |
+      <bf' e''>4\f r r2 |
+      <bf' e''>4\f r r2 |
+      <bf' e''>4\p r4 r2 |
+      R1*3
+    }
+    \new Staff = "violinoprincipale" {
+      \set Staff.instrumentName = \markup \column { "Violino" "principale" }
+      \set Staff.shortInstrumentName = "Vn pr"
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key d \major \time 4/4
+      \override TupletNumber.transparent = ##t
+      \override TupletBracket.transparent = ##t
+      R1 |
+      r4 \appoggiatura a16 a'4 \appoggiatura cs'16 cs''4 \appoggiatura e'16 e''4 |
+      \appoggiatura g'16 g''4 \appoggiatura a'16 a''4 \appoggiatura cs''16 cs'''4 \appoggiatura e''16 e'''4 |
+      \barNumberCheck #91
+      \appoggiatura g''16 g'''2\sf~ \tuplet 3/2 { g'''8([ fs''' e'''] d'''[ e''' cs''']) } |
+      \appoggiatura g''16 g'''2\sf~ \tuplet 3/2 { g'''8([ fs''' e'''] d'''[ e''' cs''']) g'''\p([ fs''' e'''] d'''[ e''' cs'''] d'''[ b'' cs'''] a''[ b'' g'']
+      a''[ fs'' g''] e''[ fs'' d''] e''[ cs'' d''] b'[ cs'' a'] b'[ g' a'] fs'[ g' e'] fs'[ d' e'] cs'[ d' b]
+      cs'[ a b] gs[ b a] gs[ b a] gs[ b a]) } |
+      \barNumberCheck #97
+    }
+    \new Staff = "violinoone" {
+      \set Staff.instrumentName = "Violino I."
+      \set Staff.shortInstrumentName = "Vn I"
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key d \major \time 4/4
+      r4 g''4\p( e'' cs'') |
+      g'1~ |
+      g'1 |
+      g'4\f r r2 |
+      g'4\f r r2 |
+      g'4\p r r2 |
+      R1*3
+    }
+    \new Staff = "violinotwo" {
+      \set Staff.instrumentName = "Violino II."
+      \set Staff.shortInstrumentName = "Vn II"
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key d \major \time 4/4
+      r4 g'4\p( e' cs') |
+      g1~ |
+      g1 |
+      cs'4\f r r2 |
+      cs'4\f r r2 |
+      cs'4\p r r2 |
+      R1*3
+    }
+    \new Staff = "viola" {
+      \set Staff.instrumentName = "Viola"
+      \set Staff.shortInstrumentName = "Va"
+      \set Staff.midiInstrument = "viola"
+      % GM 41
+      \clef alto \key d \major \time 4/4
+      r4 e'4\p( cs' g) |
+      e1~ |
+      e1 |
+      e4\f r r2 |
+      e4\f r r2 |
+      e4\p r r2 |
+      R1*3
+    }
+    \new Staff = "violoncello" {
+      \set Staff.instrumentName = "Violoncello"
+      \set Staff.shortInstrumentName = "Vc"
+      \set Staff.midiInstrument = "cello"
+      % GM 42
+      \clef bass \key d \major \time 4/4
+      a,1~ |
+      a,1~ |
+      a,1 |
+      a,4\f r r2 |
+      a,4\f r r2 |
+      a,4\p r r2 |
+      R1*3
+    }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+
+**第一步，木管、圆号、小号、定音鼓全部停手。** 第 89 小节这七行都是整小节休止（这一例里只截到单簧管那一行），一直到第 91 小节单簧管才回来一下（`<bf' e''>4`，记谱，A 调单簧管实音 g′–cs″）。
 
 **第二步，弦乐从"声部"缩成"持续音"。** 第 89 小节第一小提琴写的是 `g'1~`，连到第 90 小节的 `g'1`——整两小节只有一个音。第二小提琴 g、中提琴 e、大提琴 a, 同样各按两小节。四行弦乐合成一个静止的和弦，谁都不动。
 
 **第三步，连持续音也不给了。** 第 91 小节起，弦乐每小节只在第 1 拍给一个四分音符和弦（第一小提琴 g′、第二小提琴 cs′、中提琴 e、大提琴 a,），后三拍全空：`g'4\f r r2`。第 92、93 小节重复同样的写法。
 
-**第四步，全停。** 第 94–96 小节，除独奏以外的十二行全部整小节休止。独奏一个人跑完那串三连音，乐队一声不出。大管要到第 97 小节才回来。
+**第四步，全停。** 第 94–96 小节，除独奏以外的十二行全部整小节休止——这一例截到的五行从第 94 小节起全空。独奏一个人跑完那串三连音，乐队一声不出。大管要到第 97 小节才回来。
 
 所以答案是：**先留持续音，再缩成一拍一下，最后全停三小节。** 四步的次序不能倒：乐队全停会让独奏失去音准参照，乐队满编会把独奏淹掉；先给参照、再收参照、最后撤走，独奏才有一段完全归自己的时间。
 

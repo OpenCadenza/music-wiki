@@ -42,6 +42,8 @@
 | `mutopia-57` | 贝多芬 Op.62《科里奥兰》序曲 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=57> |
 | `mutopia-899` | 贝多芬 Op.37 第三钢琴协奏曲第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=899> |
 | `mutopia-547` | 贝多芬 Op.84《埃格蒙特》序曲 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=547> |
+| `mutopia-930` | 贝多芬 Op.137 弦乐五重奏赋格 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=930> |
+| `mutopia-919` | 贝多芬 Op.17 圆号奏鸣曲 | Mollo (1801) | Jay Anderson | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=919> |
 
 ## 按文章登记
 
@@ -75,6 +77,8 @@
 | `composers/beethoven/chamber/violin-sonata-equality.md` | Op.47 i 引子 mm.1–12；Presto mm.18–26 | `mutopia-922` |
 | `composers/beethoven/concertos/solo-versus-tutti.md` | Op.61 i mm.1–16（独奏 + 乐队总谱） | `mutopia-990` |
 | `composers/beethoven/overtures/overture-in-one-breath.md` | Op.62 mm.1–16（8 个谱表） | `mutopia-57` |
+| `composers/beethoven/chamber/five-voice-fugue.md` | Op.137 mm.1–16（五声部） | `mutopia-930` |
+| `composers/beethoven/chamber/horn-sonata-writing.md` | Op.17 i mm.1–8；ii mm.1–8 | `mutopia-919` |
 ## 编辑约定
 
 - 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。
