@@ -61,3 +61,8 @@ Op.2 No.1 的火箭式开头、Op.10 No.1 的碎片化发展部，都是后来�
 
 - [慢乐章不止一种"慢"：咏叹型、变奏型、进行曲型](slow-movement-types.md)
 - [谐谑曲取代小步舞曲：换了什么，没换什么](scherzo-replaces-minuet.md)
+
+**织体与篇幅**
+
+- [伴奏型一旦定下，整章就被它规定死了](accompaniment-as-form.md)
+- [把奏鸣曲压到最短：Op.78 的两个乐章靠什么站住](two-movement-sonata.md)
