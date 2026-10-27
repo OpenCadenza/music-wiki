@@ -27,6 +27,8 @@
 | `mutopia-909` | 贝多芬 Op.90 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=909> |
 | `mutopia-912` | 贝多芬 Op.49 No.1 第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=912> |
 | `mutopia-913` | 贝多芬 Op.49 No.1 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=913> |
+| `mutopia-1510` | 贝多芬 Op.31 No.2 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1510> |
+| `mutopia-1276` | 贝多芬 Op.2 No.1 第三乐章（Menuetto. Allegretto） | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1276> |
 | `mutopia-594` | 贝多芬 Op.131（弦乐四重奏，七乐章） | Eulenburg (1911) | — | **CC BY-SA 2.5** | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=594> |
 | `mutopia-sq-op18no4` | 贝多芬 Op.18 No.4（弦乐四重奏，四乐章） | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/ftp/BeethovenLv/O18/QuartetOpus18_No4_1/> |
 | `mutopia-sq-op59no3` | 贝多芬 Op.59 No.3 第二乐章 | — | — | 见 Mutopia 条目 | <https://www.mutopiaproject.org/ftp/BeethovenLv/O59/Quartet_Opus_59No3_2/> |
@@ -53,7 +55,8 @@
 | `composers/beethoven/quartets/inner-voices.md` | Op.18 No.4 i mm.53–68 | `mutopia-sq-op18no4` |
 | `composers/beethoven/piano/sonatas/sonatina-position.md` | Op.49 No.1 i mm.1–8；Op.49 No.2 ii mm.13–20 | `mutopia-912`、`mutopia-777` |
 | `composers/beethoven/piano/sonatas/early-experiments.md` | Op.10 No.2 i mm.1–15；Allegretto 待补 | `mutopia-992` |
-
+| `composers/beethoven/piano/sonatas/slow-movement-types.md` | Op.31 No.2 ii mm.1–9；Op.90 ii mm.17–24 | `mutopia-1510`、`mutopia-909` |
+| `composers/beethoven/piano/sonatas/scherzo-replaces-minuet.md` | Op.2 No.1 iii mm.1–16 与 Trio mm.1–8 | `mutopia-1276` |
 ## 编辑约定
 
 - 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。

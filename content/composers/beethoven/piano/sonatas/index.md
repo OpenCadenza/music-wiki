@@ -56,3 +56,8 @@ Op.2 No.1 的火箭式开头、Op.10 No.1 的碎片化发展部，都是后来�
 
 - [《小奏鸣曲》这个称呼在结构上意味着什么](sonatina-position.md)
 - [早期奏鸣曲里已经在试的东西：Op.10 No.2 的三乐章方案](early-experiments.md)
+
+**乐章类型**
+
+- [慢乐章不止一种"慢"：咏叹型、变奏型、进行曲型](slow-movement-types.md)
+- [谐谑曲取代小步舞曲：换了什么，没换什么](scherzo-replaces-minuet.md)
