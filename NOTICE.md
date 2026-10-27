@@ -30,11 +30,13 @@
 | `mutopia-1510` | 贝多芬 Op.31 No.2 第二乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1510> |
 | `mutopia-1276` | 贝多芬 Op.2 No.1 第三乐章（Menuetto. Allegretto） | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1276> |
 | `mutopia-594` | 贝多芬 Op.131（弦乐四重奏，七乐章） | Eulenburg (1911) | — | **CC BY-SA 2.5** | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=594> |
+| `mutopia-683` | 贝多芬 Op.69 大提琴奏鸣曲第一乐章 | Breitkopf & Härtel（19 世纪；Stelios Samelis 转录） | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=683> |
 | `mutopia-sq-op18no4` | 贝多芬 Op.18 No.4（弦乐四重奏，四乐章） | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/ftp/BeethovenLv/O18/QuartetOpus18_No4_1/> |
 | `mutopia-941` | 贝多芬 Op.67 第五交响曲第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis（Johannes Heinecke 迁至 2.16.2） | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=941> |
 | `mutopia-276` | 贝多芬 Op.27 No.2《月光》第一乐章 | Berners (1908) | A. Winterberger 编 | **CC BY-SA 2.5** | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=276> |
 | `mutopia-1137` | 贝多芬 Op.78 第一乐章 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1137> || `mutopia-891` | 贝多芬 Op.92 第七交响曲第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=891> |
 | `mutopia-sq-op59no3` | 贝多芬 Op.59 No.3 第二乐章 | — | — | 见 Mutopia 条目 | <https://www.mutopiaproject.org/ftp/BeethovenLv/O59/Quartet_Opus_59No3_2/> |
+| `mutopia-922` | 贝多芬 Op.47《克罗采》小提琴奏鸣曲第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=922> |
 
 ## 按文章登记
 
@@ -64,6 +66,8 @@
 | `composers/beethoven/symphonies/motivic-cell.md` | Op.67 i mm.1–16（全乐队 12 声部） | `mutopia-941` |
 | `composers/beethoven/piano/sonatas/accompaniment-as-form.md` | Op.27 No.2 i mm.1–8 | `mutopia-276` |
 | `composers/beethoven/piano/sonatas/two-movement-sonata.md` | Op.78 i mm.1–8 | `mutopia-1137` |
+| `composers/beethoven/chamber/cello-piano-dialogue.md` | Op.69 i mm.1–11；主题第二次陈述待补 | `mutopia-683` |
+| `composers/beethoven/chamber/violin-sonata-equality.md` | Op.47 i 引子 mm.1–12；Presto mm.18–26 | `mutopia-922` |
 ## 编辑约定
 
 - 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。

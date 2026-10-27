@@ -44,3 +44,4 @@
 - [三十二首钢琴奏鸣曲](piano/sonatas/index.md)：按创作问题组织的选题。
 - [弦乐四重奏](quartets/index.md)：四件乐器的职责分配、织体分层与晚期结构。
 - [交响曲](symphonies/index.md)：配器分层、加倍与音色作为结构参数。
+- [室内乐](chamber/index.md)：二重奏与三重奏里，两件乐器怎样轮流说话。
