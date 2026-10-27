@@ -42,7 +42,7 @@
 | --- | --- | --- |
 | `composers/beethoven/piano/sonatas/opening-gestures.md` | Op.13 i Grave mm.1–10 | `mutopia-299` |
 | `composers/beethoven/piano/sonatas/motive-tasks.md` | Op.2 No.1 i 弱起–m.14（Op.2 No.1 开头段全站只出现这一次） | `mutopia-1211` |
-| `composers/beethoven/piano/sonatas/transition.md` | Op.2 No.1 i mm.9–28 | `mutopia-1211` |
+| `composers/beethoven/piano/sonatas/transition.md` | Op.2 No.1 i mm.9–19 | `mutopia-1211` |
 | `composers/beethoven/piano/sonatas/secondary-theme.md` | Op.2 No.1 i mm.20–32；Op.31 No.2 i mm.29–38 | `mutopia-1211`、`mutopia-1509` |
 | `composers/beethoven/piano/sonatas/exposition-closure.md` | Op.10 No.1 i mm.88–105；Op.2 No.1 i mm.41–48 | `mutopia-778`、`mutopia-1211` |
 | `composers/beethoven/piano/sonatas/finale-choice.md` | Op.57 iii mm.8–16；Op.49 No.2 ii mm.1–12；Op.111 ii 待补 | `mutopia-937`、`mutopia-777`、`mutopia-1022` |
