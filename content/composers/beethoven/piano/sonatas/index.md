@@ -51,3 +51,8 @@ Op.2 No.1 的火箭式开头、Op.10 No.1 的碎片化发展部，都是后来�
 - [晚期织体：两个平面](late-texture.md)
 - [完整赋格、发展部 fugato、变奏里的模仿](fugue-or-fugato.md)
 - [慢乐章的变奏：什么时候是装饰，什么时候是换性格](slow-movement-variation.md)
+
+**体裁定型之前**
+
+- [《小奏鸣曲》这个称呼在结构上意味着什么](sonatina-position.md)
+- [早期奏鸣曲里已经在试的东西：Op.10 No.2 的三乐章方案](early-experiments.md)
