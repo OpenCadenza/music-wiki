@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "source": "E:\\programfiles\\MusicKnowledgeBase\\music-library",
+  "target": "E:\\github\\music-wiki\\local\\origin_resources",
+  "files": 12945,
+  "bytes": 2962015986,
+  "mismatches": [],
+  "extra_paths": [],
+  "missing_paths": [],
+  "elapsed_s": 114.3
+}

@@ -1,1 +1,8 @@
 /materials/
+/origin_resources/
+/resources/
+/archive/
+/workbench/ocr-runtime/
+/workbench/migration-runtime/
+/workbench/tmp/
+__pycache__/
