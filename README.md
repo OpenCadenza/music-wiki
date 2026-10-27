@@ -147,6 +147,8 @@
 里的编号设置该声部的 MIDI 程序号，两者不一致时以编号为准。**不写编号会退回钢琴音色**，
 非钢琴作品（弦乐四重奏、管弦乐、声乐）尤其要注意。
 
+移调乐器的 `\transposition` 也按 `\language "english"` 的音名写：B♭ 调写 `\transposition bf`、
+E♭ 调写 `ef`、D 调写 `d`。写成 `bes` 会在 english 下报 `Expecting pitch, found bes`。
 乐器名要写 LilyPond 认可的写法：钢琴 `"acoustic grand"`（**不是** `"acoustic grand piano"`），
 小提琴 `"violin"`，中提琴 `"viola"`，大提琴 `"cello"`。名字写错会有 `no such MIDI instrument`
 警告，并静默退回钢琴。

@@ -24,6 +24,8 @@
 - [两件乐器的平等：谁在什么时候让位](violin-sonata-equality.md)
 - [五声部赋格：多出来的那个内声部有什么用](five-voice-fugue.md)
 - [写给移调乐器：记谱调与实际音高之间那层翻译](horn-sonata-writing.md)
+- [三件乐器怎么不打架](piano-trio-balance.md)
+- [慢引子怎样被快板吃掉](slow-intro-to-allegro.md)
 ## 这个分支怎么读
 
 按创作问题组织。已经覆盖四重奏（[quartets](../quartets/index.md)）与钢琴独奏

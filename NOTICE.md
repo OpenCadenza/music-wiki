@@ -44,6 +44,8 @@
 | `mutopia-547` | 贝多芬 Op.84《埃格蒙特》序曲 | Breitkopf & Härtel (1862–1865) | — | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=547> |
 | `mutopia-930` | 贝多芬 Op.137 弦乐五重奏赋格 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=930> |
 | `mutopia-919` | 贝多芬 Op.17 圆号奏鸣曲 | Mollo (1801) | Jay Anderson | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=919> |
+| `mutopia-1197` | 贝多芬 Op.11 钢琴三重奏第一乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1197> |
+| `mutopia-685` | 贝多芬 Op.69 大提琴奏鸣曲第三乐章 | Breitkopf & Härtel（Stelios Samelis 转录） | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=685> |
 
 ## 按文章登记
 
@@ -79,6 +81,8 @@
 | `composers/beethoven/overtures/overture-in-one-breath.md` | Op.62 mm.1–16（8 个谱表） | `mutopia-57` |
 | `composers/beethoven/chamber/five-voice-fugue.md` | Op.137 mm.1–16（五声部） | `mutopia-930` |
 | `composers/beethoven/chamber/horn-sonata-writing.md` | Op.17 i mm.1–8；ii mm.1–8 | `mutopia-919` |
+| `composers/beethoven/chamber/piano-trio-balance.md` | Op.11 i mm.1–16（单簧管 in B♭） | `mutopia-1197` |
+| `composers/beethoven/chamber/slow-intro-to-allegro.md` | Op.69 iii（引子 + 快板开头） | `mutopia-685` |
 ## 编辑约定
 
 - 谱例统一用 `\language "english"`、`\version "2.26.0"`，由原始编码经 `convert-ly` 迁移后入库。
