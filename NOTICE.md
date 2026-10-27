@@ -85,6 +85,7 @@
 | `composers/beethoven/chamber/slow-intro-to-allegro.md` | Op.69 iii（引子 + 快板开头） | `mutopia-685` |
 | `techniques/postponing-the-cadence.md` | Op.2 No.1 i mm.93–101；Op.18 No.4 i mm.130–137 | `mutopia-1211`、`mutopia-sq-op18no4` |
 | `techniques/motivic-transformation.md` | Op.10 No.1 i mm.1–16（钢琴）；Op.18 No.4 i mm.17–24（四重奏） | `mutopia-778`、`mutopia-sq-op18no4` |
+| `composers/beethoven/concertos/double-exposition.md` | Op.37 i mm.1–8；mm.110–118 | `mutopia-899` |
 
 ## 编辑约定
 
