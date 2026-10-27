@@ -45,3 +45,5 @@
 - [弦乐四重奏](quartets/index.md)：四件乐器的职责分配、织体分层与晚期结构。
 - [交响曲](symphonies/index.md)：配器分层、加倍与音色作为结构参数。
 - [室内乐](chamber/index.md)：二重奏与三重奏里，两件乐器怎样轮流说话。
+- [协奏曲](concertos/index.md)：独奏与乐队两方，怎样交换职责。
+- [序曲](overtures/index.md)：没有第二乐章可以补救，一次说清一件事。
