@@ -6,9 +6,9 @@
   --design-ink-muted: #626260;
   --design-ink-subtle: #7b7b78;
   --design-hairline: #d3cec6;
-  --design-accent: #ff5600;
-  --design-accent-ink: #a93600;
-  --design-accent-soft: #fff0e8;
+  --design-accent: #8f4a2b;
+  --design-accent-ink: #71391f;
+  --design-accent-soft: #f2e4dd;
 
   --vp-c-bg: var(--design-canvas);
   --vp-c-bg-alt: var(--design-surface-2);
@@ -42,8 +42,9 @@
 }
 
 html.dark {
-  --design-accent-ink: #ff8a50;
-  --design-accent-soft: rgba(255, 86, 0, 0.18);
+  --design-accent: #d98c65;
+  --design-accent-ink: #e6a585;
+  --design-accent-soft: rgba(217, 140, 101, 0.18);
   --vp-c-bg: #1c1916;
   --vp-c-bg-alt: #141210;
   --vp-c-bg-soft: #28231f;
@@ -55,16 +56,16 @@ html.dark {
   --vp-c-text-2: #c0b8af;
   --vp-c-text-3: #918980;
   --vp-c-default-soft: #302a25;
-  --vp-c-brand-1: #ff6a24;
-  --vp-c-brand-2: #ff955f;
-  --vp-c-brand-3: #ff6a24;
-  --vp-c-brand-soft: rgba(255, 106, 36, 0.18);
-  --vp-button-brand-border: #ff6a24;
+  --vp-c-brand-1: #d98c65;
+  --vp-c-brand-2: #e6a585;
+  --vp-c-brand-3: #d98c65;
+  --vp-c-brand-soft: rgba(217, 140, 101, 0.18);
+  --vp-button-brand-border: #d98c65;
   --vp-button-brand-text: #191512;
-  --vp-button-brand-bg: #ff6a24;
-  --vp-button-brand-hover-border: #ff955f;
+  --vp-button-brand-bg: #d98c65;
+  --vp-button-brand-hover-border: #e6a585;
   --vp-button-brand-hover-text: #191512;
-  --vp-button-brand-hover-bg: #ff955f;
+  --vp-button-brand-hover-bg: #e6a585;
   --vp-code-color: #f5f1ec;
   --vp-code-bg: #28231f;
   --vp-code-block-bg: #141210;
