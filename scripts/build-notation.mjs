@@ -14,6 +14,7 @@ import { join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import midiPackage from '@tonejs/midi'
 import MarkdownIt from 'markdown-it'
+import { parseNotationFenceInfo } from './notation-info.mjs'
 
 const { Midi } = midiPackage
 
@@ -270,12 +271,16 @@ async function collectBlocks() {
     let notationIndex = 0
     for (const token of tokens) {
       if (token.type !== 'fence') continue
-      const language = token.info.trim().split(/\s+/, 1)[0].toLowerCase()
+      const fenceInfo = parseNotationFenceInfo(token.info)
+      const language = fenceInfo.language
       if (!['abc', 'lilypond', 'ly'].includes(language)) continue
       notationIndex += 1
       const normalizedLanguage = language === 'ly' ? 'lilypond' : language
       const line = (token.map?.[0] || 0) + 1
       const relativePath = slash(relative(contentRoot, path))
+      if (fenceInfo.error) {
+        throw new Error(`${relativePath}:${line}: ${fenceInfo.error}`)
+      }
       const hash = digest(token.content)
       const previousHash = hashes.get(hash)
       if (previousHash) {
@@ -297,6 +302,7 @@ async function collectBlocks() {
         }
       }
       const stableId =
+        fenceInfo.attributes.id ||
         metadata.id ||
         `notation.${relativePath.replace(/\.md$/, '').replaceAll('/', '.')}.${notationIndex}`
       if (ids.has(stableId)) {
@@ -307,7 +313,17 @@ async function collectBlocks() {
       ids.set(stableId, `${relativePath}:${line}`)
       const context = String(metadata.context || metadata.title || '').trim()
       const caption = captionBefore(lines, token.map?.[0] || 0)
+      if (fenceInfo.hasMetadata && caption) {
+        throw new Error(
+          `${relativePath}:${line}: remove the bold title line when using fence attributes`
+        )
+      }
+      const explicitTitle = String(fenceInfo.attributes.title || '').trim()
+      const location = String(
+        fenceInfo.attributes.location || metadata.location || ''
+      ).trim()
       const title =
+        explicitTitle ||
         caption ||
         (context
           ? `${pageTitle}: ${context.length > 72 ? `${context.slice(0, 72)}...` : context}`
@@ -322,7 +338,8 @@ async function collectBlocks() {
         language: normalizedLanguage,
         status: metadata.status || 'published',
         metadata,
-        title
+        title,
+        location
       })
     }
   }
@@ -792,7 +809,12 @@ async function validateManifest(blocks) {
       throw new Error(`Notation manifest has an unknown or duplicate block ${item.hash}`)
     }
     seen.add(item.hash)
-    if (item.id !== block.stableId || item.sourcePath !== block.relativePath) {
+    if (
+      item.id !== block.stableId ||
+      item.sourcePath !== block.relativePath ||
+      item.title !== block.title ||
+      item.location !== block.location
+    ) {
       throw new Error(`Notation manifest metadata mismatch for ${block.stableId}`)
     }
     for (const artifact of item.artifacts || []) {
@@ -876,6 +898,7 @@ async function main() {
           cacheKey,
           id: block.stableId,
           title: block.title,
+          location: block.location,
           status: block.status,
           language: block.language,
           sourceHash: block.hash,
@@ -898,6 +921,7 @@ async function main() {
     }
 
     metadata.title = block.title
+    metadata.location = block.location
     metadata.status = block.status
     await writeFile(metadataPath, `${JSON.stringify(metadata, null, 2)}\n`, 'utf8')
     const url = (name) => `/notation/${assetId}/${name}`
@@ -907,6 +931,7 @@ async function main() {
       language: block.language,
       status: block.status,
       title: block.title,
+      location: block.location,
       svg: metadata.svg.map(url),
       audio: url(metadata.audioFile),
       source: url(metadata.sourceFile),

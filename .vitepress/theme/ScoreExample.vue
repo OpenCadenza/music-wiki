@@ -14,6 +14,7 @@ import {
 const props = defineProps<{
   id: string
   title: string
+  location: string
   language: 'abc' | 'lilypond'
   status: 'published' | 'draft'
   svg: string
@@ -40,6 +41,9 @@ const audioUrl = computed(() => withBase(props.audio))
 const sourceUrl = computed(() => withBase(props.source))
 const progress = computed(() =>
   duration.value > 0 ? (currentTime.value / duration.value) * 100 : 0
+)
+const fullTitle = computed(() =>
+  props.location ? `${props.title}，${props.location}` : props.title
 )
 
 function formatTime(value: number) {
@@ -123,7 +127,10 @@ onBeforeUnmount(() => {
 <template>
   <figure class="score-example" :data-score-id="id">
     <figcaption>
-      <span class="score-title">{{ title }}</span>
+      <span class="score-title">
+        <span>{{ title }}</span>
+        <span v-if="location" class="score-location">{{ location }}</span>
+      </span>
       <span class="score-meta">
         <span v-if="status === 'draft'" class="score-status">草稿</span>
         <span class="score-format">{{ language === 'abc' ? 'ABC' : 'LilyPond 2.26.0' }}</span>
@@ -139,7 +146,7 @@ onBeforeUnmount(() => {
         target="_blank"
         rel="noreferrer"
       >
-        <img :src="svgUrl" :alt="`${title} 乐谱第 ${pageIndex + 1} 页`" loading="lazy" />
+        <img :src="svgUrl" :alt="`${fullTitle} 乐谱第 ${pageIndex + 1} 页`" loading="lazy" />
         <span class="score-open" aria-hidden="true"><ExternalLink :size="16" /></span>
       </a>
     </div>

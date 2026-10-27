@@ -59,7 +59,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: public/notation
-          key: notation-v4-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/build-notation.mjs', 'toolchains.json', 'package.json', 'pnpm-lock.yaml') }}
+          key: notation-v4-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/build-notation.mjs', 'scripts/notation-info.mjs', 'toolchains.json', 'package.json', 'pnpm-lock.yaml') }}
           restore-keys: |
             notation-v4-${{ runner.os }}-
 

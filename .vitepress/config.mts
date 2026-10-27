@@ -13,6 +13,7 @@ type NotationBlock = {
   language: 'abc' | 'lilypond'
   status: 'published' | 'draft'
   title: string
+  location: string
   svg: string[]
   audio: string
   source: string
@@ -37,7 +38,38 @@ function escapeAttribute(value: string) {
     .replaceAll('>', '&gt;')
 }
 
+function hideLegacyNotationCaptions(md: MarkdownIt) {
+  md.core.ruler.after('inline', 'music-wiki-hide-legacy-notation-captions', (state) => {
+    const tokens = state.tokens
+    for (let index = tokens.length - 1; index >= 3; index -= 1) {
+      const fence = tokens[index]
+      if (fence.type !== 'fence') continue
+      const language = fence.info.trim().split(/\s+/, 1)[0].toLowerCase()
+      if (!['abc', 'lilypond', 'ly'].includes(language)) continue
+
+      const paragraphOpen = tokens[index - 3]
+      const caption = tokens[index - 2]
+      const paragraphClose = tokens[index - 1]
+      const children = (caption.children || []).filter(
+        (child) => child.type !== 'text' || child.content.length > 0
+      )
+      if (
+        paragraphOpen.type === 'paragraph_open' &&
+        caption.type === 'inline' &&
+        paragraphClose.type === 'paragraph_close' &&
+        children.length === 3 &&
+        children[0].type === 'strong_open' &&
+        children[1].type === 'text' &&
+        children[2].type === 'strong_close'
+      ) {
+        tokens.splice(index - 3, 3)
+      }
+    }
+  })
+}
+
 function notationMarkdownPlugin(md: MarkdownIt) {
+  hideLegacyNotationCaptions(md)
   const manifest = readManifest()
   const defaultFence = md.renderer.rules.fence
 
@@ -57,6 +89,7 @@ function notationMarkdownPlugin(md: MarkdownIt) {
     const attributes = {
       id: block.id,
       title: block.title,
+      location: block.location,
       language: block.language,
       status: block.status || 'published',
       svg: block.svg.join('|'),

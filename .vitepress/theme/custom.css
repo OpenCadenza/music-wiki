@@ -93,7 +93,17 @@ html.dark .score-sheet img {
 }
 
 .score-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.65rem;
   min-width: 0;
+}
+
+.score-location {
+  color: var(--vp-c-text-2);
+  font-size: 0.86em;
+  font-weight: 500;
 }
 
 .score-meta {

@@ -4,6 +4,7 @@ import { readFile, readdir, stat } from 'node:fs/promises'
 import { dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import MarkdownIt from 'markdown-it'
+import { parseNotationFenceInfo } from './notation-info.mjs'
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const contentRoot = join(root, 'content')
@@ -12,6 +13,7 @@ const errors = []
 const markdown = new MarkdownIt({ html: true })
 const sourceIds = new Map()
 const fenceHashes = new Map()
+let legacyTitleBlocks = 0
 
 async function walk(directory) {
   const files = []
@@ -46,6 +48,17 @@ function metadataBefore(text, openingLine) {
   const match = matches.at(-1)
   if (!match || prefix.slice(match.index + match[0].length).trim()) return null
   return match[1]
+}
+
+function captionBefore(text, openingLine) {
+  const lines = text.split(/\r?\n/)
+  for (let index = openingLine - 1; index >= 0 && index > openingLine - 8; index -= 1) {
+    const line = lines[index].trim()
+    if (!line) continue
+    const match = line.match(/^\*\*(.+)\*\*$/)
+    return match ? match[1].trim() : null
+  }
+  return null
 }
 
 function localTarget(raw) {
@@ -99,11 +112,27 @@ for (const path of files) {
     for (let line = token.map?.[0] || 0; line < (token.map?.[1] || 0); line += 1) {
       codeLines.add(line)
     }
-    const language = token.info.trim().split(/\s+/, 1)[0].toLowerCase()
+    const fenceInfo = parseNotationFenceInfo(token.info)
+    const language = fenceInfo.language
     if (!['abc', 'lilypond', 'ly'].includes(language)) continue
     notationBlocks += 1
     pageFenceIndex += 1
     const line = (token.map?.[0] || 0) + 1
+    if (fenceInfo.error) {
+      errors.push(`${rel}:${line}: ${fenceInfo.error}`)
+    }
+    const legacyCaption = captionBefore(text, token.map?.[0] || 0)
+    if (fenceInfo.hasMetadata && legacyCaption) {
+      errors.push(
+        `${rel}:${line}: remove the bold title line when using fence attributes`
+      )
+    } else if (!fenceInfo.hasMetadata && !legacyCaption) {
+      errors.push(
+        `${rel}:${line}: notation block needs title/location attributes or a legacy bold title`
+      )
+    } else if (!fenceInfo.hasMetadata) {
+      legacyTitleBlocks += 1
+    }
     const hash = createHash('sha256').update(token.content).digest('hex')
     if (fenceHashes.has(hash)) {
       errors.push(`${rel}:${line}: duplicate notation content also used by ${fenceHashes.get(hash)}`)
@@ -123,7 +152,9 @@ for (const path of files) {
       }
     }
     const id =
-      metadata.id || `notation.${rel.replace(/\.md$/, '').replaceAll('/', '.')}.${pageFenceIndex}`
+      fenceInfo.attributes.id ||
+      metadata.id ||
+      `notation.${rel.replace(/\.md$/, '').replaceAll('/', '.')}.${pageFenceIndex}`
     if (sourceIds.has(id)) {
       errors.push(`${rel}:${line}: duplicate notation id ${id}; first used at ${sourceIds.get(id)}`)
     } else {
@@ -186,4 +217,10 @@ if (errors.length) {
     `content validation passed: ${files.filter((path) => path.endsWith('.md')).length} Markdown files, ` +
       `${directories.length} directories, ${notationBlocks} notation blocks`
   )
+  if (legacyTitleBlocks > 0) {
+    console.warn(
+      `content validation warning: ${legacyTitleBlocks} notation blocks use legacy bold titles; ` +
+        'migrate them to title/location fence attributes'
+    )
+  }
 }
