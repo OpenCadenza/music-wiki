@@ -52,7 +52,7 @@ html.dark {
   --vp-c-border: #4a423b;
   --vp-c-divider: #4a423b;
   --vp-c-gutter: #1c1916;
-  --vp-c-text-1: #f5f1ec;
+  --vp-c-text-1: #ded7cf;
   --vp-c-text-2: #c0b8af;
   --vp-c-text-3: #918980;
   --vp-c-default-soft: #302a25;
@@ -66,7 +66,7 @@ html.dark {
   --vp-button-brand-hover-border: #e6a585;
   --vp-button-brand-hover-text: #191512;
   --vp-button-brand-hover-bg: #e6a585;
-  --vp-code-color: #f5f1ec;
+  --vp-code-color: var(--vp-c-text-1);
   --vp-code-bg: #28231f;
   --vp-code-block-bg: #141210;
 }
