@@ -70,9 +70,167 @@
 
 判断一段展开部写得好不好，有一个很简单的检查：**把第一小提琴和大提琴都盖住，只听两个内声部。**如果还能听出和声在走、节奏在推，内声部就是工作的；如果听到的是一片没有方向的音块，那段展开部其实只有两个声部在写。
 
-**贝多芬 Op.132 第三乐章，mm.1–16**
+```lilypond title="贝多芬 Op.18 No.4 第一乐章" location="展开部，mm.53–68"
+\version "2.26.0"
+\language "english"
 
-> 谱例待补：Op.132 第三乐章 mm.1–16，四个声部。这是和声填充的样本：Molto adagio，利底亚调式，四个声部以和弦式进行陈述主题。看内声部的时值与旋律同步——这里的"齐"是刻意的，用来制造庄严；也看它怎样靠音区差（而不是节奏差）把声部分开。
+\score {
+  \new StaffGroup <<
+    \new Staff = "v1" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key c \minor \time 4/4 \tempo 4 = 138 \set Score.currentBarNumber = #54
+  % m.53
+  g'4 \staccato bf'4. \sf \staccato bf'8 \staccato d'' \staccato ef'' \staccato
+  % m.54
+  f''8 ( d'' ) bf'2 \acciaccatura bf'16 af'8 ( g'16 af' )
+  % m.55
+  g'4 \staccato bf'4. \sf \staccato bf'8 \staccato d'' \staccato ef'' \staccato
+  % m.56
+  f''8 ( d'' ) bf'2 \acciaccatura bf'16 af'8 ( g'16 af' )
+  % m.57
+  g'4 \staccato bf'4. \sf \staccato bf'8 \staccato d'' \staccato ef'' \staccato
+  % m.58
+  ef''8 ( c'' ) c''4. \sf c''8 \staccato e'' \staccato f'' \staccato
+  % m.59
+  f''4 ( ef''!2 d''4 )
+  % m.60
+  ef''8 \p bf''4 \sf bf''8 ~ bf''8 [ bf'' \staccato af'' \staccato g'' \staccato ]
+  % m.61
+  f''8 \staccato c'''4 \sf c'''8 ~ c'''8 [ c''' \staccato bf'' \staccato af'' \staccato ]
+  % m.62
+  g''8 \staccato df'''4 \sf df'''8 ~ df'''8 [ df''' \staccato c''' \staccato b'' \staccato ]
+  % m.63
+  c'''8 \staccato c''' \staccato c''' \staccato b'' \staccato \sf c''' \staccato c''' \staccato c''' \staccato b'' \staccato \sf
+  % m.64
+  c'''4 c'''2 ef'''4 ~
+  % m.65
+  ef'''4 gf'''2 a4 (
+  % m.66
+  bf16 ) ( a c' bf d' c' ef' d' f' e' g' f' a' g' bf' a' )
+  % m.67
+  c''16 ( bf' d'' c'' ef'' d'' f'' e'' g'' f'' af''! g'' bf'' a'' c''' bf'' )
+  % m.68
+  bf''8 ef'''4 g'''4 bf'''8 [ bf''' bf''' ]
+    }
+    \new Staff = "v2" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key c \minor \time 4/4
+  % m.53
+  ef'4 \p \staccato ef'4. \sf ef'8 \staccato af' \staccato g' \staccato
+  % m.54
+  f'4 ( af' d' f' )
+  % m.55
+  bf4 \staccato ef'4. \sf ef'8 \staccato af' \staccato g' \staccato
+  % m.56
+  f'4 ( af' d' f' )
+  % m.57
+  bf4 \staccato ef'4. \sf ef'8 \staccato f' \staccato g' \staccato
+  % m.58
+  g'8 ( ef'4 e'8 f' ) f' \staccato g' \staccato af' \staccato
+  % m.59
+  af'4 ( g' gf' f' )
+  % m.60
+  ef'8 \p ef'4 \sf ef'8 ~ ef'8 ef' \staccato d' \staccato ef' \staccato
+  % m.61
+  ef'8 f'4 \sf f'8 ~ f'8 \staccato f' \staccato e' \staccato f' \staccato
+  % m.62
+  e'8 df''4 \sf df''8 ~ df'' df'' \staccato c'' \staccato b' \staccato
+  % m.63
+  c''8 \staccato c'' \staccato c'' \staccato b' \sf \staccato c'' \staccato c'' \staccato c'' \staccato b' \sf \staccato
+  % m.64
+  c''4 ( ef'' c'' bf'! )
+  % m.65
+  a'2 ( c'' )
+  % m.66
+  f'4 r r2
+  % m.67
+  r2 r4 d''4 (
+  % m.68
+  ef'' ) r r8 ef'' \staccato g'' \staccato ef'' \staccato
+    }
+    \new Staff = "va" {
+      \set Staff.midiInstrument = "viola"
+      % GM 41
+      \clef alto \key c \minor \time 4/4
+  % m.53
+  bf4 \p \staccato bf4. \sf bf8 \staccato bf \staccato bf \staccato
+  % m.54
+  bf4 ( d' f' bf )
+  % m.55
+  bf4 \staccato bf4. \sf bf8 \staccato bf \staccato bf \staccato
+  % m.56
+  bf4 ( d' f' bf )
+  % m.57
+  bf4 \staccato bf4. \sf bf8 \staccato af \staccato g \staccato
+  % m.58
+  g8 ( c' ) c'4. \sf c'8 \staccato bf \staccato af \staccato
+  % m.59
+  bf4 ( bf' c'' bf' )
+  % m.60
+  bf'8 \p bf4 \sf bf8 ~ bf8 bf \staccato bf \staccato bf \staccato
+  % m.61
+  c'8 c'4 \sf c'8 ~ c'8 \staccato c' \staccato c' \staccato c' \staccato
+  % m.62
+  df'8 e'4 \sf e'8 ~ e' e' \staccato f' \staccato f' \staccato
+  % m.63
+  f'8 \staccato f' \staccato f' \staccato f' \sf \staccato f' \staccato f' \staccato f' \staccato f' \sf \staccato
+  % m.64
+  f'4 ( ef'! c' bf )
+  % m.65
+  a2 ( c' )
+  % m.66
+  f4 r r2
+  % m.67
+  af'!4 ( f' d' af )
+  % m.68
+  g4 r r8 g' \staccato ef' \staccato g' \staccato
+    }
+    \new Staff = "vc" {
+      \set Staff.midiInstrument = "cello"
+      % GM 42
+      \clef bass \key c \minor \time 4/4
+  % m.53
+  ef4 \p \staccato g4. \sf g8 \staccato f \staccato ef \staccato
+  % m.54
+  d4 ( f bf, d )
+  % m.55
+  ef4 \staccato g4. \sf g8 \staccato f \staccato ef \staccato
+  % m.56
+  d4 ( f bf, d )
+  % m.57
+  ef4 \p \staccato g4. \sf g8 \staccato f \staccato ef \staccato
+  % m.58
+  ef8 ( af ) af4. \sf af8 \staccato g \staccato f \staccato
+  % m.59
+  bf2 ( a4 af )
+  % m.60
+  g,8 \p \staccato g4 \sf g8 ~ g8 g \staccato f \staccato ef \staccato
+  % m.61
+  af,8 \staccato af4 \sf af8 ~ af8 af \staccato g \staccato f \staccato
+  % m.62
+  bf,8 \staccato bf4 \sf bf8 ~ bf8 bf \staccato af \staccato g \staccato
+  % m.63
+  af8 \staccato af \staccato af \staccato g \sf \staccato af \staccato af \staccato af \staccato g \sf \staccato
+  % m.64
+  af2 ( gf
+  % m.65
+  f ef )
+  % m.66
+  d4 r r2
+  % m.67
+  af4 ( f d af, )
+  % m.68
+  g,4 r r2
+    }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+这一段正好可以用上面的检查来验：第 53–58 小节，中提琴反复落在 bf 上，一小节三次，做的是脉动；第二小提琴走自己的音型（ef′–af′–d′–f′），与第一小提琴的模进错开；第一小提琴在上面走八度跳进。三条内声部动作没有一个重合。到第 59 小节，中提琴突然上到 bf′–c′′–bf′，从脉动改成一条线——展开部需要换和声层时，它就是那个换层的地方。
 
 ## 五条检查
 

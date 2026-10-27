@@ -58,9 +58,167 @@
 
 反过来，如果一段里出现三次从主调到复调的切换，听者会以为有三个段落，结构就散了。习作里常见的"段落感不清"，多数不是和声没写清楚，是织体切换太频繁。
 
-**贝多芬 Op.59 No.3 第二乐章，mm.1–16**
+```lilypond title="贝多芬 Op.59 No.3 第二乐章" location="mm.1–16"
+\version "2.26.0"
+\language "english"
 
-> 谱例待补：Op.59 No.3 第二乐章 mm.1–16，四个声部。主调织体的样本：中提琴单独起句，其余三声部提供和声与节奏背景。看三个伴奏声部的动作速率是否一致——不一致，是这段能听清的原因。
+\score {
+  \new StaffGroup <<
+    \new Staff = "v1" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key a \minor \time 6/8 \tempo 4 = 68
+  % m.1
+  r8 r8 e'8 \p ( a' [ b' c'' ] )
+  % m.2
+  b' ( a' gs' f' e' d' )
+  % m.3
+  c'8 ( b a ) e'4. ~
+  % m.4
+  e'4. ~ e'8 ( fs' gs' )
+  % m.5
+  a'4 r8 r4 r8
+  % m.6
+  R2.
+  % m.7
+  a'4 r8 r4 r8
+  % m.8
+  R2. \bar "||"
+  % m.9
+  r8 r c'8 \p ( g' a' bf' )
+  % m.10
+  bf' ( a' ) a' << { a'4. ~ a'4 } \\ { e'8 ( f' g' ) ~ g'8 ( [ f' ] ) } >>
+  % m.11
+  a'8 d''8 \fp ( [ e'' f'' ] )
+  % m.12
+  e''8 ( d'' cs'' bf' a' g' )
+  % m.13
+  f' ( e' d' ) gs'4. (
+  % m.14
+  a'4 ) a'8 a'8 \sfp ( b' c''
+  % m.15
+  b' gs' e' ) gs'4. (
+  % m.16
+  a'4 ) a'8 a'8 \sfp ( [ b' c'' ]
+    }
+    \new Staff = "v2" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key a \minor \time 6/8
+  % m.1
+  R2.
+  % m.2
+  R2.
+  % m.3
+  r8 r8 a8 \p ( b c' d' )
+  % m.4
+  c' ( b a gs a b )
+  % m.5
+  c'4 r8 r4 r8
+  % m.6
+  R2.
+  % m.7
+  c'4 r8 r4 r8
+  % m.8
+  R2. \bar "||"
+  % m.9
+  r8 r << { c'8 ( e' [ f' g' ] ) g'8 ( f' ) f' } \\ { c'8 ~ c'4. ~ c'4. } >>
+  % m.10
+  cs'8 ( d' e' )
+  % m.11
+  e'8 ( [ d' ] ) a'8 ~ a'4. \fp ~
+  % m.12
+  a'4. cs'8 ( d' e' )
+  % m.13
+  a4. d'8 ( e' f'
+  % m.14
+  e' d' c' ) fs'4. \sfp (
+  % m.15
+  gs'4. ) d'!8 ( e' f'!
+  % m.16
+  e' d' c' ) fs'4. \sfp (
+    }
+    \new Staff = "va" {
+      \set Staff.midiInstrument = "viola"
+      % GM 41
+      \clef alto \key a \minor \time 6/8
+  % m.1
+  R2.
+  % m.2
+  R2.
+  % m.3
+  r8 r8 a8 \p ( gs a b )
+  % m.4
+  a ( gs f e4 d8 )
+  % m.5
+  c4 r8 r4 r8
+  % m.6
+  R2.
+  % m.7
+  c4 r8 r4 r8
+  % m.8
+  R2. \bar "||"
+  % m.9
+  r8 r c'8 \p ( bf [ a e ] )
+  % m.10
+  e ( f ) f g ( f cs )
+  % m.11
+  cs ( [ d ] ) a8 ( f' \fp [ e' d' ] )
+  % m.12
+  cs' ( bf a g f e )
+  % m.13
+  d ( e f ) b! ( c' d'
+  % m.14
+  c' b a ) ds'4. \fp (
+  % m.15
+  e'4. ) b8 ( c' d'!
+  % m.16
+  c' b a ) ds'4. \fp (
+    }
+    \new Staff = "vc" {
+      \set Staff.midiInstrument = "cello"
+      % GM 42
+      \clef bass \key a \minor \time 6/8
+  % m.1
+  e,4 \f r8 e,4 \p r8
+  % m.2
+  e,4 r8 e,4 r8
+  % m.3
+  e,4 r8 e,4 r8
+  % m.4
+  e,4 r8 e,4 r8
+  % m.5
+  a,8 [ b, a, ] gs, [ a, g, ]
+  % m.6
+  f, [ e, d, ] c, [ d, ds, ]
+  % m.7
+  a,8 [ b, a, ] gs, [ a, g, ]
+  % m.8
+  f, [ g, f, ] e, [ f, d, ] \bar "||"
+  % m.9
+  c,4 \f r8 c4 \p r8
+  % m.10
+  f,4 r8 a,4 r8
+  % m.11
+  d,4 r8 d4 \f r8
+  % m.12
+  a,4 \p r8 a,4 r8
+  % m.13
+  d,4 r8 e4.
+  % m.14
+  a,4 a,8 c8 \sfp ( b, a, )
+  % m.15
+  e,4. e4.
+  % m.16
+  a,4 a,8 c8 \sfp ( b, a, )
+    }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+这段的安排值得逐声部看：第一小提琴第 1 小节第 2 拍就唱出主题（e′′–a′–b′–c′′），大提琴同时用同一个音反复八次给出节拍骨架（前两小节 f，第 3 小节起转 p），第二小提琴与中提琴直到第 3 小节才进入，进入时用的是与主题同向的级进，而不是跟着主题的跳进。三个伴奏声部三种动作：大提琴是重复音，第二小提琴是级进线条，中提琴是更慢的和声填充。没有一个在"陪"旋律。
 
 复调织体的样本见[《四重奏里的赋格》](quartet-fugue.md)：Op.131 第一乐章开头，四个声部依次进入。看进入的间隔——间隔越大，主题越清楚。
 

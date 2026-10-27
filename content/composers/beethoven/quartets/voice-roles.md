@@ -37,7 +37,7 @@
 
 三种救法，按代价从小到大排：
 
-**一，换节奏。**第一小提琴唱长音时，第二小提琴走八分或十六分；第一小提琴走十六分时，第二小提琴改切分（syncopation）。两条线的起音点错开，耳朵就能把它们分开。Op.18 No.1 第一乐章开头就是这个安排：主题在第一小提琴，第二小提琴与中提琴用八分音符的音型在下面推，节奏型与主题不同步。
+**一，换节奏。**第一小提琴唱长音时，第二小提琴走八分或十六分；第一小提琴走十六分时，第二小提琴改切分（syncopation）。两条线的起音点错开，耳朵就能把它们分开。Op.18 No.4 第一乐章开头就是这个安排：主题在第一小提琴，第二小提琴与中提琴用八分音符的音型在下面推，节奏型与主题不同步。本文末尾的谱例就是这一段。
 
 **二，换位置。**让第二小提琴在几小节里升到第一小提琴上方。两条小提琴交叉（crossing）在四重奏里是常规手段，交叉的那几小节，音色关系立刻改变，听者会意识到"上面这条不是刚才那条"。
 
@@ -71,9 +71,183 @@
 
 判断一段大提琴写得够不够，有一个可操作的检查：把大提琴声部单独唱一遍。如果能唱成一句有起伏的线，它就在工作；如果只能唱成"咚—咚—咚"，它就是低音机器。
 
-**贝多芬 Op.18 No.1 第一乐章，mm.1–8**
+```lilypond title="贝多芬 Op.18 No.4 第一乐章" location="Allegro ma non tanto，mm.1–16"
+\version "2.26.0"
+\language "english"
 
-> 谱例待补：Op.18 No.1 第一乐章 mm.1–8，四个声部。这一段的安排是：主题在第一小提琴，第二小提琴与中提琴以八分音符音型在下方推进，大提琴给低音支点。看第二小提琴的节奏型与主题怎样错开，看中提琴填的是哪个音级。
+\score {
+  \new StaffGroup <<
+    \new Staff = "v1" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key c \minor \time 4/4 \tempo 4 = 138 \partial 4
+  % m.0
+  g4 \p
+  % m.1
+  c'8 [ \grace { d'16 [ ( c' b ] ) } c'8 ( ef' d' ) ] d'2 \sf (
+  % m.2
+  c'4 \staccato ) c'4 f'2 ~
+  % m.3
+  f'8 [ \grace { g'16 [ ( f' e' ] ) } f'8 ( af' g' ) ] g'2 \sf (
+  % m.4
+  f'4 \staccato ) f'4 f'8 ( d'' ) d''2 (
+  % m.5
+  c''4 ) b'8 ( f'' ) f''2 (
+  % m.6
+  ef''4 ) ef''8 ( d'' ) c''2 (
+  % m.7
+  b'4 ) c''4. ( d''8
+  % m.8
+  ef''4 ) r8 c'' b'8 ( af'' ) af''2 (
+  % m.9
+  g''4 ) f''8 ( f''' ) f'''2 (
+  % m.10
+  ef'''4 ) ef'''4 ( d''' ) ~
+  % m.11
+  d'''8 ^ \turn d''' f''' d''' d'''4 ( c'''2
+  % m.12
+  b''4 ) c'''4 \ff \staccato r4
+  % m.13
+  r2 r2
+  % m.14
+  r4 <g' ef'' c'''>4 \ff \staccato R1
+  % m.15
+  r2
+  % m.16
+  r4 <g' d'' b''>4 \ff \staccato g''8 ( g''' ) g'''2
+  % m.17
+  f'''4 ~ f'''4 ef'''2
+    }
+    \new Staff = "v2" {
+      \set Staff.midiInstrument = "violin"
+      % GM 40
+      \clef treble \key c \minor \time 4/4 \partial 4
+  % m.0
+  r4
+  % m.1
+  af'8 af' fs' fs' a' a' f' f'
+  % m.2
+  g' g' g' g' g' g' ef' c'
+  % m.3
+  g d' d' d' d' d' ef' ef'
+  % m.4
+  r8 d' d'' d'' d'' d'' ef'' ef''
+  % m.5
+  ef''4 ( d'' ) ~ d''8 ^ \turn d'' f'' d''
+  % m.6
+  d''4 ( <ef' c''>2 <d' b'>4 )
+  % m.7
+  <g ef' c''>4 \staccato r <g d' b'>4 \staccato r
+  % m.8
+  <g ef' c''>4 \staccato <g d' b'> \staccato <g ef' c''> \staccato r
+  % m.9
+  <g d' b'>4 \staccato r <g ef' c''> \staccato r
+  % m.10
+  <g d' b'> \staccato <g ef' c''> \staccato <g d' b'> \staccato r
+  % m.11
+  r4 g'4 \ff ( a' b' )
+  % m.12
+  c'' ( ef' f' g' )
+  % m.13
+  af'! ( ef' c' c'' )
+  % m.14
+  b'8 \fp d' d' d' d' d' d' d'
+  % m.15
+  r ef' ef' ef' ef' ef' ef' ef'
+  % m.16
+  r8 d' d' d' d' d' d' d'
+  % m.17
+  r ef' ef' ef' ef' ef' ef' ef'
+    }
+    \new Staff = "va" {
+      \set Staff.midiInstrument = "viola"
+      % GM 41
+      \clef alto \key c \minor \time 4/4 \partial 4
+  % m.0
+  r4
+  % m.1
+  r4 af2 ( g4 )
+  % m.2
+  f8 ( b ) b2 ( c'4 )
+  % m.3
+  f'8 f' ef' ef' ef' ef' d' d'
+  % m.4
+  g8 g g ( f' ) ef' \staccato g \staccato ef \staccato c \staccato
+  % m.5
+  g8 b b b b b c' c'
+  % m.6
+  r8 g g g g g g g
+  % m.7
+  af <c' af'> [ <c' af'> <c' af'> ] <c' f'> [ <c' f'> <c' af'> <c' af'> ]
+  % m.8
+  <c' a'>8 <c' a'> fs' fs' g' g' <g f'> <g f'>
+  % m.9
+  <g ef'>4 \ff \staccato r <g g'> r
+  % m.10
+  <g g'> \staccato <g g'> \staccato <g g'> \staccato r4
+  % m.11
+  <g g'>4 \staccato r <g g'> \staccato r
+  % m.12
+  <g g'> \staccato <g g'> \staccato <g g'> \staccato r
+  % m.13
+  r4 g \ff ( a b )
+  % m.14
+  c' ( ef f g )
+  % m.15
+  af! ( ef c c' )
+  % m.16
+  b8 \fp b b b b b b b
+  % m.17
+  r c' c' c' c' c' c' c'
+    }
+    \new Staff = "vc" {
+      \set Staff.midiInstrument = "cello"
+      % GM 42
+      \clef bass \key c \minor \time 4/4 \partial 4
+  % m.0
+  r4
+  % m.1
+  c,8 c c c c c c c
+  % m.2
+  c, c c c c c c c
+  % m.3
+  f f af af fs fs g g
+  % m.4
+  ef ef ef ( b, ) c \staccato g \staccato ef \staccato c \staccato
+  % m.5
+  g, f f f f f ef ef
+  % m.6
+  r8 b, b, b, b, b, c c
+  % m.7
+  f, f f f af af f f
+  % m.8
+  fs fs af af g g g, g,
+  % m.9
+  c4 \staccato r g, \staccato r
+  % m.10
+  c \staccato g, \staccato c \staccato r
+  % m.11
+  g,4 \staccato r c \staccato r
+  % m.12
+  g, \staccato c \staccato g, \staccato r
+  % m.13
+  ef2 \ff ( d
+  % m.14
+  c bf, )
+  % m.15
+  af,2. af,4
+  % m.16
+  g,8 \fp g g g g g g g
+  % m.17
+  g,8 g g g g g g g
+    }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+看三处：第一小提琴的主题是二分音符起的长句，第二小提琴的八分音符音型比主题晚半拍进入，中提琴填的是三音与五音——不是根音，根音在大提琴手里。四个声部没有一个在"陪"另一个，各自都有独立节奏型。
 
 ## 一段写完之后的五个检查
 
