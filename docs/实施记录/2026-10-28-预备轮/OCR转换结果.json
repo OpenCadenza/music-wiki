@@ -1,0 +1,1148 @@
+{
+  "checked_on": "2026-10-28",
+  "tool": "EverythingMarkdown",
+  "model": "PaddleOCR-VL-1.6",
+  "scope": "用户授权清单41份原件",
+  "totals": {
+    "documents": 41,
+    "pdfs": 32,
+    "pdf_pages": 2207,
+    "jpgs": 9,
+    "jpg_physical_pages": 9,
+    "ocr_text_documents": 40,
+    "source_image_only_documents": 1,
+    "markdown_files_nonempty": 41,
+    "jsonl_files_nonempty": 41,
+    "jsonl_batch_records": 575,
+    "jsonl_physical_page_records": 2216,
+    "jsonl_physical_pages_matched": 41,
+    "jsonl_mismatches": 0,
+    "missing_markdown_image_references": 0,
+    "missing_original_sources": 0,
+    "non_readable_or_incomplete": 0
+  },
+  "documents": [
+    {
+      "source_path": "sources/alan-belkin/raw/bk-O-O.pdf",
+      "source_sha256": "94ab1eea590b28e332e4ec0f34b7d7519dffe89ddadf194da7425767f53ae5e4",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 65,
+      "page_ranges": [
+        "1-65"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-65",
+          "markdown": "local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md",
+          "jsonl": "local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.jsonl",
+          "images_dir": "local/resources/text/ocr/alan-belkin/bk-O-O/images",
+          "image_count": 114,
+          "elapsed_s": 114,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "job_ids": [
+        "108694412645642240"
+      ],
+      "metadata": "resources/text/ocr/alan-belkin/bk-O-O/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-chamber/raw/barenreiter-cello-sonatas-preface.pdf",
+      "source_sha256": "7dbdbd396dd82ccb45cb492c4bb5361edc27685220ea9472378ac3df1b272ae4",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 18,
+      "page_ranges": [
+        "1-18"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-18",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-chamber/barenreiter-cello-sonatas-preface/barenreiter-cello-sonatas-preface.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-chamber/barenreiter-cello-sonatas-preface/barenreiter-cello-sonatas-preface.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-chamber/barenreiter-cello-sonatas-preface/images",
+          "image_count": 19,
+          "elapsed_s": 10.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "job_ids": [
+        "108694914189316096"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-chamber/barenreiter-cello-sonatas-preface/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-chamber/raw/barry-op97-formung-2022.pdf",
+      "source_sha256": "6d4625a0ca1c01bf8604b307611288959c0f3f222ab04a55b8aece38f9ee383d",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 24,
+      "page_ranges": [
+        "1-24"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-24",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-chamber/barry-op97-formung-2022/barry-op97-formung-2022.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-chamber/barry-op97-formung-2022/barry-op97-formung-2022.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-chamber/barry-op97-formung-2022/images",
+          "image_count": 59,
+          "elapsed_s": 61.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "job_ids": [
+        "108697544353468416"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-chamber/barry-op97-formung-2022/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-chamber/raw/bu-ross-op130-second-finale-2013.pdf",
+      "source_sha256": "eacbdcb025c11fd8016684f0252b547d02dddf9ac3f8eb03c74f21bc4af42496",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 137,
+      "page_ranges": [
+        "1-137"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-137",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-chamber/bu-ross-op130-second-finale-2013/bu-ross-op130-second-finale-2013.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-chamber/bu-ross-op130-second-finale-2013/bu-ross-op130-second-finale-2013.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-chamber/bu-ross-op130-second-finale-2013/images",
+          "image_count": 339,
+          "elapsed_s": 327.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "uncertainty_retries": [
+        {
+          "source_path": "sources/beethoven-analysis-chamber/raw/bu-ross-op130-second-finale-2013.pdf",
+          "source_sha256": "eacbdcb025c11fd8016684f0252b547d02dddf9ac3f8eb03c74f21bc4af42496",
+          "model": "PaddleOCR-VL-1.6",
+          "page_range": "1-137",
+          "job_id": null,
+          "status": "uncertain_submission_retry_started",
+          "reason": "An explicit one-document retry was authorized after a prior connection reset without a returned jobId.",
+          "previous_error": "('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。'))",
+          "recorded_at_epoch": 1793142341.583112
+        }
+      ],
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702760178896896"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-chamber/bu-ross-op130-second-finale-2013/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-chamber/raw/henle-op130-op133-preface-cadenbach-2007.pdf",
+      "source_sha256": "be1312ae3291cef8349af462f042c2a56b58a4a45a065a28b3fa58ef9eced0c0",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 11,
+      "page_ranges": [
+        "1-11"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-11",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-chamber/henle-op130-op133-preface-cadenbach-2007/henle-op130-op133-preface-cadenbach-2007.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-chamber/henle-op130-op133-preface-cadenbach-2007/henle-op130-op133-preface-cadenbach-2007.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-chamber/henle-op130-op133-preface-cadenbach-2007/images",
+          "image_count": 11,
+          "elapsed_s": 39.1,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700941681881088"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-chamber/henle-op130-op133-preface-cadenbach-2007/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/britton-2008-op135.pdf",
+      "source_sha256": "3da78c91d6293ae79c96ac22e799ddc79277adb200783061c75a11e6068004a9",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 201,
+      "page_ranges": [
+        "1-201"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-201",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/britton-2008-op135/britton-2008-op135.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/britton-2008-op135/britton-2008-op135.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/britton-2008-op135/images",
+          "image_count": 367,
+          "elapsed_s": 325.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108704365532733440"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/britton-2008-op135/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/kinderman-diabellicycle-2021.pdf",
+      "source_sha256": "63af21ea46d90e8f5f105cfaa58fe33b475a2c3632cf42b95baaca286b70e756",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 20,
+      "page_ranges": [
+        "1-20"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-20",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/kinderman-diabellicycle-2021/kinderman-diabellicycle-2021.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/kinderman-diabellicycle-2021/kinderman-diabellicycle-2021.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/kinderman-diabellicycle-2021/images",
+          "image_count": 31,
+          "elapsed_s": 55.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108704129825050624"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/kinderman-diabellicycle-2021/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/leather-2005-op126.pdf",
+      "source_sha256": "8aea40e7fd0b41a5a9959ae60adaebcf9bd0c8d5d7437f164885b1b5d764c3ef",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 151,
+      "page_ranges": [
+        "1-151"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-151",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/leather-2005-op126/leather-2005-op126.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/leather-2005-op126/leather-2005-op126.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/leather-2005-op126/images",
+          "image_count": 222,
+          "elapsed_s": 250.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108708675683930112"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/leather-2005-op126/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/linke-diabellicycle-macroform-2021.pdf",
+      "source_sha256": "da9e55dccc788598a1de0b377de2e09da3013d10e65ce7b9aa59979a300b39f7",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 39,
+      "page_ranges": [
+        "1-39"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-39",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/linke-diabellicycle-macroform-2021/linke-diabellicycle-macroform-2021.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/linke-diabellicycle-macroform-2021/linke-diabellicycle-macroform-2021.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/linke-diabellicycle-macroform-2021/images",
+          "image_count": 44,
+          "elapsed_s": 127,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108703044640714752"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/linke-diabellicycle-macroform-2021/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/matheson-1993-op110.pdf",
+      "source_sha256": "9e9286ac6bd4c9ed5cc5c209918d3d2cf0fe4c17a5e0ed25128f484df692acb7",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 133,
+      "page_ranges": [
+        "1-133"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-133",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/matheson-1993-op110/matheson-1993-op110.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/matheson-1993-op110/matheson-1993-op110.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/matheson-1993-op110/images",
+          "image_count": 276,
+          "elapsed_s": 250.5,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108711083157393408"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/matheson-1993-op110/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/ormesher-late-fugues-1989.pdf",
+      "source_sha256": "38a6e0a2fac53dc45d7596ca277cf73446dfe1bed98552650e00afdb15cacdf0",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 272,
+      "page_ranges": [
+        "1-272"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-272",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/ormesher-late-fugues-1989/ormesher-late-fugues-1989.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/ormesher-late-fugues-1989/ormesher-late-fugues-1989.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/ormesher-late-fugues-1989/images",
+          "image_count": 272,
+          "elapsed_s": 315.5,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108712134527520768"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/ormesher-late-fugues-1989/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-keyboard/raw/warburton-op109-2018.pdf",
+      "source_sha256": "1a777589d4b0bc9b1bb2fb6307830d2f36abc1c3fdd4cb81f3070a723f4df0a3",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 122,
+      "page_ranges": [
+        "1-122"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-122",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-keyboard/warburton-op109-2018/warburton-op109-2018.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-keyboard/warburton-op109-2018/warburton-op109-2018.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-keyboard/warburton-op109-2018/images",
+          "image_count": 122,
+          "elapsed_s": 176,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702304756666368"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-keyboard/warburton-op109-2018/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-orchestral/raw/fiU-fidelio-leonore-analysis.pdf",
+      "source_sha256": "067fa6ad2ae2153b50467657740934165abeda3ca7440be26bddd856dbaecf7d",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 19,
+      "page_ranges": [
+        "1-19"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-19",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-orchestral/fiU-fidelio-leonore-analysis/fiU-fidelio-leonore-analysis.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-orchestral/fiU-fidelio-leonore-analysis/fiU-fidelio-leonore-analysis.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-orchestral/fiU-fidelio-leonore-analysis/images",
+          "image_count": 19,
+          "elapsed_s": 38.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701220152606720"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-orchestral/fiU-fidelio-leonore-analysis/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-orchestral/raw/lopez-symphony-9-performance.pdf",
+      "source_sha256": "29649f6503ab08239ceb8fc0549149d900c07d91e7e5abb7705830e892707dc0",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 206,
+      "page_ranges": [
+        "1-206"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-206",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-orchestral/lopez-symphony-9-performance/lopez-symphony-9-performance.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-orchestral/lopez-symphony-9-performance/lopez-symphony-9-performance.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-orchestral/lopez-symphony-9-performance/images",
+          "image_count": 280,
+          "elapsed_s": 287.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108711852989136896"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-orchestral/lopez-symphony-9-performance/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-orchestral/raw/stanley-periodization-sample.pdf",
+      "source_sha256": "ac042fc21701a66daf985e11a96e6b0f87a5cad42fc458913ce9c0b93cd78d3d",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 16,
+      "page_ranges": [
+        "1-16"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-16",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-orchestral/stanley-periodization-sample/stanley-periodization-sample.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-orchestral/stanley-periodization-sample/stanley-periodization-sample.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-orchestral/stanley-periodization-sample/images",
+          "image_count": 18,
+          "elapsed_s": 60,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701404949995520"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-orchestral/stanley-periodization-sample/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-orchestral/raw/turner-leonore-overtures.pdf",
+      "source_sha256": "9d91e934112203baaeacb5a4cbdfc38320e0c4eb413dc4d6373f467bb25693eb",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 91,
+      "page_ranges": [
+        "1-91"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-91",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-orchestral/turner-leonore-overtures/turner-leonore-overtures.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-orchestral/turner-leonore-overtures/turner-leonore-overtures.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-orchestral/turner-leonore-overtures/images",
+          "image_count": 127,
+          "elapsed_s": 161.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 1,
+      "job_ids": [
+        "108706630062247936"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-orchestral/turner-leonore-overtures/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-analysis-orchestral/raw/waikato-an-die-ferne-geliebte.pdf",
+      "source_sha256": "fd16abac854174382a8b70e1f98be9cd20099147309b13502e8cc7ffc9e1beb8",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 194,
+      "page_ranges": [
+        "1-194"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-194",
+          "markdown": "local/resources/text/ocr/beethoven-analysis-orchestral/waikato-an-die-ferne-geliebte/waikato-an-die-ferne-geliebte.md",
+          "jsonl": "local/resources/text/ocr/beethoven-analysis-orchestral/waikato-an-die-ferne-geliebte/waikato-an-die-ferne-geliebte.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-analysis-orchestral/waikato-an-die-ferne-geliebte/images",
+          "image_count": 329,
+          "elapsed_s": 322.5,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108709760632348672"
+      ],
+      "metadata": "resources/text/ocr/beethoven-analysis-orchestral/waikato-an-die-ferne-geliebte/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-context/raw/henle-op2-preface.pdf",
+      "source_sha256": "a1ffc5b80b222a112b93226ba0922236c37009e53364055e96388113098c5c51",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 15,
+      "page_ranges": [
+        "1-15"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-15",
+          "markdown": "local/resources/text/ocr/beethoven-context/henle-op2-preface/henle-op2-preface.md",
+          "jsonl": "local/resources/text/ocr/beethoven-context/henle-op2-preface/henle-op2-preface.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-context/henle-op2-preface/images",
+          "image_count": 15,
+          "elapsed_s": 33.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701076483379200"
+      ],
+      "metadata": "resources/text/ocr/beethoven-context/henle-op2-preface/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-context/raw/henle-sonatas-commentary.pdf",
+      "source_sha256": "60c91d4d53e4bae179e4100112bc36f5bedb23b444a6132175a785407369b833",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 3,
+      "page_ranges": [
+        "1-3"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-3",
+          "markdown": "local/resources/text/ocr/beethoven-context/henle-sonatas-commentary/henle-sonatas-commentary.md",
+          "jsonl": "local/resources/text/ocr/beethoven-context/henle-sonatas-commentary/henle-sonatas-commentary.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-context/henle-sonatas-commentary/images",
+          "image_count": 3,
+          "elapsed_s": 9.6,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700523001171968"
+      ],
+      "metadata": "resources/text/ocr/beethoven-context/henle-sonatas-commentary/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/op98-autograph-page-001.jpg",
+      "source_sha256": "78f3ffd26b9b44c1f315565cce56872073cd178a5075215dceb9c26e3777f193",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-001/op98-autograph-page-001.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-001/op98-autograph-page-001.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-001/images",
+          "image_count": 1,
+          "elapsed_s": 4.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702283467264000"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/op98-autograph-page-001/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/op98-autograph-page-002.jpg",
+      "source_sha256": "bf55273c40225705670753ca59a572ea600744706b23f1c664ce77461b05e4b0",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_image_only",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/op98-autograph-page-002.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/op98-autograph-page-002.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/images",
+          "image_count": 1,
+          "elapsed_s": 42.5,
+          "status": "converted_image_only",
+          "service_markdown": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/op98-autograph-page-002.service-empty.md"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701979623809024"
+      ],
+      "service_markdown": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/op98-autograph-page-002.service-empty.md",
+      "ocr_text_empty": true,
+      "reading_mode": "source_image",
+      "source_image_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/op98-autograph-page-002.jpg",
+      "metadata": "resources/text/ocr/beethoven-score-sources/op98-autograph-page-002/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/op98-autograph-page-003.jpg",
+      "source_sha256": "25958d6ff2573d11742a1c6ce84ef36b1ba2090c8251fe467e2ef6a0335bc606",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-003/op98-autograph-page-003.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-003/op98-autograph-page-003.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/op98-autograph-page-003/images",
+          "image_count": 2,
+          "elapsed_s": 9.6,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702221785018368"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/op98-autograph-page-003/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/piano-concerto3-page-001.jpg",
+      "source_sha256": "87dca173845683ebc5300f10fdecf471470363876b309ac897eb651b3744ad3b",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-001/piano-concerto3-page-001.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-001/piano-concerto3-page-001.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-001/images",
+          "image_count": 1,
+          "elapsed_s": 4.5,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702202889314304"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/piano-concerto3-page-001/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/piano-concerto3-page-002.jpg",
+      "source_sha256": "2f44e6c5b80a0c1f3f9329754c0ccc2a265205e718fba0be8813f09744400667",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-002/piano-concerto3-page-002.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-002/piano-concerto3-page-002.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-002/images",
+          "image_count": 2,
+          "elapsed_s": 61.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701633339387904"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/piano-concerto3-page-002/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/piano-concerto3-page-003.jpg",
+      "source_sha256": "94dc70d9e91bdf365a8993875494d7b9041b72bab892b232b49e1211fcbadea6",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-003/piano-concerto3-page-003.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-003/piano-concerto3-page-003.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/piano-concerto3-page-003/images",
+          "image_count": 5,
+          "elapsed_s": 5.9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702178266042368"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/piano-concerto3-page-003/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/symphony5-page-001.jpg",
+      "source_sha256": "ffc26e5cc947c325c8db223a1ad55c44c63d4b4163f0f4da8e40b10357bf30a1",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-001/symphony5-page-001.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-001/symphony5-page-001.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-001/images",
+          "image_count": 3,
+          "elapsed_s": 17.1,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702106039816192"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/symphony5-page-001/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/symphony5-page-002.jpg",
+      "source_sha256": "bc683d3571540f2647a5da9276306d170f86abd609e7bcfd9965408d1da28422",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-002/symphony5-page-002.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-002/symphony5-page-002.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-002/images",
+          "image_count": 2,
+          "elapsed_s": 9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108701889982021632"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/symphony5-page-002/conversion.json"
+    },
+    {
+      "source_path": "sources/beethoven-score-sources/raw/beethoven-house-selected/symphony5-page-003.jpg",
+      "source_sha256": "720fe7f9f6e2c4bff75987057aba452453116977fecc89dc0af8ce8d53d71d56",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "image"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "image",
+          "markdown": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-003/symphony5-page-003.md",
+          "jsonl": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-003/symphony5-page-003.jsonl",
+          "images_dir": "local/resources/text/ocr/beethoven-score-sources/symphony5-page-003/images",
+          "image_count": 2,
+          "elapsed_s": 5.1,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108702262081409024"
+      ],
+      "metadata": "resources/text/ocr/beethoven-score-sources/symphony5-page-003/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu.pdf",
+      "source_sha256": "0ce06fc8afe873764bc5f285fbde5c367bf8269a36f31c1860f5404fc14c4c2d",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu/images",
+          "image_count": 3,
+          "elapsed_s": 4.8,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700712185200640"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/1c211eed4e5995d42c701ee93de0a06e_asgnmnt2_continu/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart.pdf",
+      "source_sha256": "947b046151ade1e14b3724afa2c068813ee250a8259ab64836048f1731590a40",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart/images",
+          "image_count": 3,
+          "elapsed_s": 29,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700430712320000"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/1e2dff536bc156dd3f2f903885c3ff4c_asgnmnt5_twopart/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in.pdf",
+      "source_sha256": "42dedd823880f591e88b2ab537fa03a536fe0d01fb0ec5c3cb07c4fe8e8bb66d",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in/images",
+          "image_count": 1,
+          "elapsed_s": 4.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700242337824768"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/2aa5a9f0c064677fdb79b8becdbf2fc5_asgnmnt2_keys_in/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part.pdf",
+      "source_sha256": "7566876155b546f5cbbddbb2c01b9df7413160be8b636116b96717a5df7b904c",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part/images",
+          "image_count": 4,
+          "elapsed_s": 10.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700732484141056"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/63900e60a0c16bf3ba082fec7f6d1ffc_asgnmnt4_part/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon.pdf",
+      "source_sha256": "2afe085de3b3bf1b9695cc6c12a8985aecf9020631e38917104424bdcb154202",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 2,
+      "page_ranges": [
+        "1-2"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-2",
+          "markdown": "local/resources/text/ocr/mit-ocw/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon/images",
+          "image_count": 2,
+          "elapsed_s": 24.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700319793192960"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/6832bc8959d3cf094daa3ff0db0dfa43_asgnmnt1_sclecon/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/695d904f02a6015a316583ae707e7118_final_proj_force.pdf",
+      "source_sha256": "14905981b80239e554c8ef464e8aa6ea9e8b7c5e0086ff94ef18ac836c5d68d7",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/695d904f02a6015a316583ae707e7118_final_proj_force/695d904f02a6015a316583ae707e7118_final_proj_force.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/695d904f02a6015a316583ae707e7118_final_proj_force/695d904f02a6015a316583ae707e7118_final_proj_force.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/695d904f02a6015a316583ae707e7118_final_proj_force/images",
+          "image_count": 1,
+          "elapsed_s": 9,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700261178511360"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/695d904f02a6015a316583ae707e7118_final_proj_force/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr.pdf",
+      "source_sha256": "db5e8b8bc1171cbf20a52648eea5d0194439f63aec2d298b20bd1744f653b6a6",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 4,
+      "page_ranges": [
+        "1-4"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-4",
+          "markdown": "local/resources/text/ocr/mit-ocw/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr/images",
+          "image_count": 4,
+          "elapsed_s": 32.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700776114601984"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/6b1ca66c13e4844f186011fb73cee0c9_final_proj_instr/conversion.json"
+    },
+    {
+      "source_path": "sources/mit-ocw/raw/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads.pdf",
+      "source_sha256": "aef5e91348f281a405ef5330bbf3aa54986987e8102c9f7e3471854fc9afc602",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 1,
+      "page_ranges": [
+        "1-1"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-1",
+          "markdown": "local/resources/text/ocr/mit-ocw/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads.md",
+          "jsonl": "local/resources/text/ocr/mit-ocw/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads.jsonl",
+          "images_dir": "local/resources/text/ocr/mit-ocw/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads/images",
+          "image_count": 3,
+          "elapsed_s": 35.3,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108700587839004672"
+      ],
+      "metadata": "resources/text/ocr/mit-ocw/ee19a1342a38393be325ef17f64fb912_asgnmnt3_triads/conversion.json"
+    },
+    {
+      "source_path": "sources/partimenti/raw/basili_1776_smaller.pdf",
+      "source_sha256": "31fac94393d8456125b82031d5ae1f5b98272ddbd013bb33c97f38dfc6f69270",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 136,
+      "page_ranges": [
+        "1-136"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-136",
+          "markdown": "local/resources/text/ocr/partimenti/basili_1776_smaller/basili_1776_smaller.md",
+          "jsonl": "local/resources/text/ocr/partimenti/basili_1776_smaller/basili_1776_smaller.jsonl",
+          "images_dir": "local/resources/text/ocr/partimenti/basili_1776_smaller/images",
+          "image_count": 326,
+          "elapsed_s": 319.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108713459344703488"
+      ],
+      "metadata": "resources/text/ocr/partimenti/basili_1776_smaller/conversion.json"
+    },
+    {
+      "source_path": "sources/partimenti/raw/doll_regole_smaller.pdf",
+      "source_sha256": "b49bd6c05754d605a9d1ff94908ad8489c9aa29777456ca81a4e454e8e343463",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 101,
+      "page_ranges": [
+        "1-101"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-101",
+          "markdown": "local/resources/text/ocr/partimenti/doll_regole_smaller/doll_regole_smaller.md",
+          "jsonl": "local/resources/text/ocr/partimenti/doll_regole_smaller/doll_regole_smaller.jsonl",
+          "images_dir": "local/resources/text/ocr/partimenti/doll_regole_smaller/images",
+          "image_count": 229,
+          "elapsed_s": 214.5,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108705751626579968"
+      ],
+      "metadata": "resources/text/ocr/partimenti/doll_regole_smaller/conversion.json"
+    },
+    {
+      "source_path": "sources/partimenti/raw/lorenzini_regs.pdf",
+      "source_sha256": "38a503f40574041f22ede034671acbc900898c8d0c0fd9e4a439552fdc7b6b69",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 111,
+      "page_ranges": [
+        "1-111"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-111",
+          "markdown": "local/resources/text/ocr/partimenti/lorenzini_regs/lorenzini_regs.md",
+          "jsonl": "local/resources/text/ocr/partimenti/lorenzini_regs/lorenzini_regs.jsonl",
+          "images_dir": "local/resources/text/ocr/partimenti/lorenzini_regs/images",
+          "image_count": 251,
+          "elapsed_s": 193.2,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108707308033290240"
+      ],
+      "metadata": "resources/text/ocr/partimenti/lorenzini_regs/conversion.json"
+    },
+    {
+      "source_path": "sources/partimenti/raw/paisiello_regole_1782.pdf",
+      "source_sha256": "1c0fa837f4bb394aaea31a8d5aff6f5a9a43bc4b4eefd2986533bf79e22330b9",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 61,
+      "page_ranges": [
+        "1-61"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-61",
+          "markdown": "local/resources/text/ocr/partimenti/paisiello_regole_1782/paisiello_regole_1782.md",
+          "jsonl": "local/resources/text/ocr/partimenti/paisiello_regole_1782/paisiello_regole_1782.jsonl",
+          "images_dir": "local/resources/text/ocr/partimenti/paisiello_regole_1782/images",
+          "image_count": 108,
+          "elapsed_s": 132.1,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108708119879340032"
+      ],
+      "metadata": "resources/text/ocr/partimenti/paisiello_regole_1782/conversion.json"
+    },
+    {
+      "source_path": "sources/partimenti/raw/sala_elementi_small.pdf",
+      "source_sha256": "e1a062b4696138c56fea1d5c080eef68415310c88f4c136f70bb1f053e9147f8",
+      "model": "PaddleOCR-VL-1.6",
+      "page_count": 49,
+      "page_ranges": [
+        "1-49"
+      ],
+      "status": "converted_readable",
+      "outputs": [
+        {
+          "page_range": "1-49",
+          "markdown": "local/resources/text/ocr/partimenti/sala_elementi_small/sala_elementi_small.md",
+          "jsonl": "local/resources/text/ocr/partimenti/sala_elementi_small/sala_elementi_small.jsonl",
+          "images_dir": "local/resources/text/ocr/partimenti/sala_elementi_small/images",
+          "image_count": 104,
+          "elapsed_s": 131.6,
+          "status": "converted_readable"
+        }
+      ],
+      "score_ocr_note": "For scores and manuscript images, OCR text/layout is not reliable note encoding.",
+      "get_retry_count": 0,
+      "job_ids": [
+        "108703608678895616"
+      ],
+      "metadata": "resources/text/ocr/partimenti/sala_elementi_small/conversion.json"
+    }
+  ]
+}

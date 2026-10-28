@@ -60,7 +60,7 @@ def first(entry, *keys, default=""):
     return default
 
 
-def source_cards(origin: Path, output: Path, readable, score_packages):
+def source_cards(origin: Path, output: Path, readable, score_packages, html_records=None):
     cards = output / "catalog" / "parts" / "text" / "sources"
     cards.mkdir(parents=True, exist_ok=True)
     summary = []
@@ -152,6 +152,7 @@ def source_cards(origin: Path, output: Path, readable, score_packages):
             *([f"- [{Path(item['copy']).name}](../../../../text/source-copies/{item['source']}/{item['copy'].split('/', 3)[-1]})" for item in readable if item["source"] == src.name] or ["没有从 raw/ 复制单独文本文件；请使用上方的原件入口或压缩包目录清点。"]),
             *(["- [旧版 OMT 可读源码](../../../../text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/contents.md)"] if src.name == "open-music-theory" else []),
             *(["- [整理后的 DCML 标注表](../../../../scores/dcml-abc/README.md)"] if src.name == "dcml" else []), "",
+            *(["## 整理后的 HTML 正文", "", *[f"- [{item['title'] or Path(item['reading_copy']).name}]({os.path.relpath(output / item['reading_copy'], cards).replace(os.sep, '/')})（{item['visible_text_chars']} 字符）" for item in (html_records or []) if item.get("source") == src.name and item.get("status") == "cleaned-body"], ""] if any(item.get("source") == src.name and item.get("status") == "cleaned-body" for item in (html_records or [])) else []),
             *([f"- [解包机器可读谱源](../../../../scores/source-packages/{src.name}/README.md)（{sum(p['score_files'] for p in score_packages if p['source'] == src.name)} 个谱文件）"] if any(p["source"] == src.name for p in score_packages) else []), "",
             "## 其他清单元数据", "",
             json.dumps({key: value for key, value in data.items() if key not in {"records", "items", "files", "downloads", "sources", "entries", "results", "repos", "score_scan_pages"}}, ensure_ascii=False, indent=2)[:6000] if isinstance(data, dict) else "无", "",
@@ -482,6 +483,153 @@ def html_body_summary(path: Path):
     return {"visible_text_chars": len(body), "preview": body[:240], "is_error_page": bool(re.search(r"\b(404|page not found|robots denied|access denied)\b", body[:2000], re.I))}
 
 
+def clean_html_reading_copies(origin: Path, output: Path):
+    """Create article-focused Markdown from saved HTML while retaining raw copies."""
+    from lxml import html as lhtml
+    raw_root = output / "text" / "source-copies"
+    dest_root = output / "text" / "organized-html"
+    records = []
+    drop_tags = {"script", "style", "noscript", "svg", "nav", "header", "footer", "aside", "form", "iframe", "button"}
+    chrome = re.compile(r"nav|menu|footer|header|breadcrumb|cookie|social|sidebar|toolbar|pagination|search|advert|promo|share", re.I)
+
+    def inline_text(node, html_file, md_parent):
+        result = node.text or ""
+        for child in node:
+            tag = str(child.tag).lower() if isinstance(child.tag, str) else ""
+            value = inline_text(child, html_file, md_parent)
+            if tag == "a" and child.get("href"):
+                href = child.get("href")
+                if href.startswith("//"):
+                    href = "https:" + href
+                elif re.match(r"^javascript:", href, re.I):
+                    href = ""
+                elif not re.match(r"^(?:https?:|mailto:|#)", href, re.I):
+                    local = (html_file.parent / unquote(href.split("#", 1)[0].split("?", 1)[0])).resolve()
+                    if local.is_file():
+                        anchor = ("#" + href.split("#", 1)[1]) if "#" in href else ""
+                        href = os.path.relpath(local, md_parent).replace(os.sep, "/") + anchor
+                value = f"[{value.strip() or href}]({href})" if href else value
+            elif tag in {"strong", "b"}:
+                value = "**" + value.strip() + "**"
+            elif tag in {"em", "i"}:
+                value = "*" + value.strip() + "*"
+            elif tag == "br":
+                value = "  \n"
+            result += value + (child.tail or "")
+        return re.sub(r"[ \t]+", " ", result).strip()
+    for source_dir in sorted(path for path in raw_root.iterdir() if path.is_dir()):
+        for file in source_dir.rglob("*"):
+            if not file.is_file() or file.suffix.lower() not in {".html", ".htm"}:
+                continue
+            rel = file.relative_to(source_dir)
+            original = origin / "sources" / source_dir.name / "raw" / rel
+            try:
+                root = lhtml.fromstring(file.read_bytes().decode("utf-8", errors="replace"))
+            except Exception as exc:
+                records.append({"source": source_dir.name, "origin": original.relative_to(origin).as_posix(), "status": "parse-error", "reason": str(exc)[:240]})
+                continue
+            title = " ".join(root.xpath("//title[1]//text()") or root.xpath("//h1[1]//text()")).strip()
+            selected = root.xpath("//article[1] | //main[1]") or root.xpath("//body") or [root]
+            content = selected[0]
+            for node in list(content.iterdescendants()):
+                tag = str(node.tag).lower() if isinstance(node.tag, str) else ""
+                attrs = " ".join((node.get("id") or "", node.get("class") or "", node.get("role") or ""))
+                if tag in drop_tags or (tag in {"div", "section", "ul", "ol"} and chrome.search(attrs)):
+                    parent = node.getparent()
+                    if parent is not None:
+                        parent.remove(node)
+            md_parent = dest_root / source_dir.name / rel.parent
+            raw_copy = raw_root / source_dir.name / rel
+            raw_link = os.path.relpath(raw_copy, md_parent).replace(os.sep, "/")
+            origin_link = os.path.relpath(original, md_parent).replace(os.sep, "/")
+            safe_title = (title or rel.stem).replace("[", "\\[").replace("]", "\\]")
+            out = [f"# {safe_title}", "", f"> 来源 HTML：[原件副本]({raw_link})；[原始文件]({origin_link})。此整理副本保留标题、段落、列表、表格、图像和链接；原 HTML 保留供核对。", ""]
+            images = 0
+            missing_images = 0
+            for node in content.iterdescendants():
+                tag = str(node.tag).lower() if isinstance(node.tag, str) else ""
+                if tag in {"h1", "h2", "h3", "h4", "h5", "h6", "p", "blockquote", "li", "figcaption", "dt", "dd"}:
+                    text = " ".join(inline_text(node, file, md_parent).split())
+                    if text:
+                        if tag.startswith("h") and len(tag) == 2 and tag[1].isdigit():
+                            out.extend(["#" * int(tag[1]) + " " + text, ""])
+                        elif tag == "li":
+                            out.append("- " + text)
+                        elif tag == "blockquote":
+                            out.extend(["> " + text, ""])
+                        else:
+                            out.extend([text, ""])
+                elif tag == "img":
+                    src = node.get("src") or node.get("data-src") or ""
+                    if src:
+                        if src.startswith("//"):
+                            out.extend([f"![{node.get('alt', '图像')}](https:{src})", ""])
+                        elif re.match(r"^(?:https?:|data:)", src, re.I):
+                            out.extend([f"![{node.get('alt', '图像')}]({src})", ""])
+                        else:
+                            target = (file.parent / unquote(src.split("#", 1)[0].split("?", 1)[0])).resolve()
+                            if target.is_file():
+                                link = os.path.relpath(target, md_parent).replace(os.sep, "/")
+                                out.extend([f"![{node.get('alt', '图像')}]({link})", ""])
+                            else:
+                                out.extend([f"> 图像未保存在本地：{node.get('alt', '未命名图像')}（{src}）", ""])
+                                missing_images += 1
+                        images += 1
+            for table in content.xpath(".//table"):
+                rows = []
+                for tr in table.xpath(".//tr"):
+                    cells = [" ".join(inline_text(cell, file, md_parent).split()).replace("|", "\\|") for cell in tr.xpath("./th|./td")]
+                    if cells:
+                        rows.append(cells)
+                if rows:
+                    width = max(map(len, rows))
+                    rows = [row + [""] * (width - len(row)) for row in rows]
+                    out.extend(["| " + " | ".join(rows[0]) + " |", "| " + " | ".join(["---"] * width) + " |"])
+                    out.extend("| " + " | ".join(row) + " |" for row in rows[1:])
+                    out.append("")
+            text = "\n".join(out).strip() + "\n"
+            visible = " ".join(re.sub(r"[#>*|_~-]", " ", text).split())
+            error = bool(re.search(r"\b(404|page not found|robots denied|access denied)\b", visible[:1000], re.I))
+            article_like = bool(root.xpath("//article | //main")) or len(visible) > 1800
+            if len(visible) > 500 and not error and article_like:
+                target = dest_root / source_dir.name / rel.with_suffix(".md")
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(text, encoding="utf-8")
+                status, copy = "cleaned-body", target.relative_to(output).as_posix()
+            else:
+                status, copy = ("error-page" if error else "directory-or-short-page"), None
+            records.append({"source": source_dir.name, "origin": original.relative_to(origin).as_posix(), "html_copy": file.relative_to(output).as_posix(), "reading_copy": copy, "title": title, "visible_text_chars": len(visible), "image_links": images, "missing_local_image_refs": missing_images, "status": status, "source_exists": original.is_file()})
+    manifest = dest_root / "manifest.json"
+    manifest.parent.mkdir(parents=True, exist_ok=True)
+    link_check = validate_organized_html_links(dest_root)
+    manifest.write_text(json.dumps({"method": "UTF-8 decode + lxml HTML parse; discard common site chrome; preserve headings, paragraphs, lists, tables, images and links", "local_link_check": link_check, "records": records}, ensure_ascii=False, indent=2), encoding="utf-8")
+    return records
+
+
+def validate_organized_html_links(root: Path):
+    """Resolve local Markdown links to disk and make absent targets explicit."""
+    pattern = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
+    checked = valid = repaired = 0
+    for file in root.rglob("*.md"):
+        text = file.read_text(encoding="utf-8", errors="replace")
+        def replace(match):
+            nonlocal checked, valid, repaired
+            label, target = match.group(1), match.group(2).strip()
+            if re.match(r"^(?:https?:|mailto:|data:|#|javascript:|//)", target, re.I):
+                return match.group(0)
+            checked += 1
+            local_path = unquote(target.split("#", 1)[0].split("?", 1)[0])
+            if (file.parent / local_path).is_file():
+                valid += 1
+                return match.group(0)
+            repaired += 1
+            return f"{label}（本地未缓存目标：{target}）"
+        updated = pattern.sub(replace, text)
+        if updated != text:
+            file.write_text(updated, encoding="utf-8")
+    return {"local_links_checked": checked, "local_links_resolving_to_files": valid, "unavailable_links_made_explicit": repaired}
+
+
 def manifest_reference(origin: Path, source: str, raw_path: str):
     manifest = origin / "sources" / source / "manifest.json"
     try:
@@ -494,7 +642,7 @@ def manifest_reference(origin: Path, source: str, raw_path: str):
     return {}
 
 
-def sample_readability_qa(origin: Path, output: Path, omt, score_packages, dcml):
+def sample_readability_qa(origin: Path, output: Path, omt, score_packages, dcml, html_records=None):
     samples = []
     omt_dir = output / "text" / "open-music-theory" / "legacy-source" / "openmusictheory-openmusictheory.github.io-a907aa0"
     chapter = omt_dir / "bassoContinuo.md"
@@ -519,14 +667,23 @@ def sample_readability_qa(origin: Path, output: Path, omt, score_packages, dcml)
     ]
     for kind, source, raw_path in html_samples:
         raw = origin / "sources" / source / raw_path
-        copy = output / "text" / "source-copies" / source / Path(raw_path).relative_to("raw")
-        summary = html_body_summary(copy) if copy.is_file() else {"visible_text_chars": 0, "preview": "", "is_error_page": True}
+        raw_copy = output / "text" / "source-copies" / source / Path(raw_path).relative_to("raw")
+        matched = next((item for item in (html_records or []) if item.get("source") == source and item.get("origin") == raw.relative_to(origin).as_posix()), {})
+        copy = output / (matched["reading_copy"] if matched.get("reading_copy") else raw_copy.relative_to(output).as_posix())
+        summary = html_body_summary(copy) if copy.is_file() and copy.suffix.lower() in {".html", ".htm"} else {"visible_text_chars": len(copy.read_text(encoding="utf-8", errors="replace")) if copy.is_file() else 0, "preview": safe_read(copy)[:240], "is_error_page": False}
         ref = manifest_reference(origin, source, raw_path)
+        md_text = safe_read(copy)
+        image_targets = re.findall(r"!\[[^\]]*\]\(([^)]+)\)", md_text)
+        local_image_targets = [target for target in image_targets if not re.match(r"^(?:https?:|data:)", target, re.I)]
+        image_checks = [{"target": target, "exists": (copy.parent / unquote(target.split("#", 1)[0])).is_file()} for target in local_image_targets]
         samples.append({
-            "kind": kind, "source": source, "copy": copy.relative_to(output).as_posix(),
+            "kind": kind, "source": source, "copy": copy.relative_to(output).as_posix(), "raw_html_copy": raw_copy.relative_to(output).as_posix(),
             "origin": raw.relative_to(origin).as_posix(), "origin_exists": raw.is_file(),
             "source_manifest_reference": ref, **summary,
-            "readable": raw.is_file() and copy.is_file() and summary["visible_text_chars"] > 500 and not summary["is_error_page"],
+            "image_links": image_checks,
+            "image_paths_valid": all(item["exists"] for item in image_checks),
+            "missing_local_image_refs": matched.get("missing_local_image_refs", 0),
+            "readable": raw.is_file() and copy.is_file() and summary["visible_text_chars"] > 500 and not summary["is_error_page"] and all(item["exists"] for item in image_checks),
         })
     kern_package = next(item for item in score_packages if item["source"] == "beethoven-score-sources" and "piano-sonatas" in item["archive_name"])
     kern_manifest_path = output / kern_package["manifest"]
@@ -566,9 +723,19 @@ def main():
     omt_navigation = rewrite_omt_links(output)
     dcml = copy_dcml_materials(origin, materials, output)
     score_packages = extract_score_packages(origin, output)
-    cards = source_cards(origin, output, readable, score_packages)
     archives = zip_inventory(origin, omt, score_packages)
-    qa = sample_readability_qa(origin, output, omt, score_packages, dcml)
+    html_records = clean_html_reading_copies(origin, output)
+    cards = source_cards(origin, output, readable, score_packages, html_records)
+    cleaned_root = output / "text" / "organized-html"
+    cleaned_root.mkdir(parents=True, exist_ok=True)
+    cleaned_lines = ["# 整理后的 HTML 正文", "", "> 从本地保存的 HTML 清除常见导航和站点外壳，整理成便于阅读的 Markdown。原 HTML 与原件映射保留；此处理不作音乐事实核验。目录页、短摘要、错误页不会标记为正文。", ""]
+    for item in html_records:
+        if item.get("status") == "cleaned-body":
+            title = (item.get("title") or Path(item["reading_copy"]).name).replace("[", "\\[").replace("]", "\\]")
+            cleaned_lines.append(f"- [{item['source']} — {title}]({Path(item['reading_copy']).relative_to('text/organized-html').as_posix()})（{item['visible_text_chars']} 字符；原件：{item['origin']}）")
+    cleaned_lines.extend(["", f"整理正文 {sum(item.get('status') == 'cleaned-body' for item in html_records)} 篇；排除目录/短页 {sum(item.get('status') == 'directory-or-short-page' for item in html_records)} 页、错误页 {sum(item.get('status') == 'error-page' for item in html_records)} 页、解析失败 {sum(item.get('status') == 'parse-error' for item in html_records)} 页。逐页状态和来源见 [manifest.json](manifest.json)。", ""])
+    (cleaned_root / "README.md").write_text("\n".join(cleaned_lines), encoding="utf-8")
+    qa = sample_readability_qa(origin, output, omt, score_packages, dcml, html_records)
     score_count = sum(item["score_files"] for item in score_packages)
     report = {
         "scope": "初步整理和可发现性；不是全文阅读、音乐分析或逐条事实核验",
@@ -582,8 +749,9 @@ def main():
             "archives": len(archives),
             "machine_readable_score_files": score_count,
             "score_packages": len(score_packages),
+            "cleaned_html_documents": sum(item.get("status") == "cleaned-body" for item in html_records),
         },
-        "sources": cards, "omt": omt, "omt_navigation": omt_navigation, "existing_omt_comparison": existing_omt, "dcml": dcml, "score_packages": score_packages, "archives": archives, "qa": qa, "excluded": excluded,
+        "sources": cards, "omt": omt, "omt_navigation": omt_navigation, "existing_omt_comparison": existing_omt, "dcml": dcml, "score_packages": score_packages, "archives": archives, "html_reading_copies": html_records, "qa": qa, "excluded": excluded,
     }
     index_root = output / "catalog" / "parts" / "text"
     index_root.mkdir(parents=True, exist_ok=True)
@@ -597,7 +765,7 @@ def main():
         "## 可读材料", "",
         f"- [OMT 旧版教材阅读入口](../../../text/open-music-theory/README.md)：官方 GitHub 旧版源码，非 OMT2。抽取 {omt.get('count', 0)} 项；现有 Markdown 与官方源码同路径 SHA-256 一致 {existing_omt.get('matched', 0)} 项；已改写 {omt_navigation.get('rewritten', 0)} 个可解析的站内链接，另有 {omt_navigation.get('unresolved_count', 0)} 个源链接目标未取得或未识别。",
         f"- [DCML 标注 TSV 说明](../../../scores/dcml-abc/README.md)：[阅读副本目录](../../../scores/dcml-abc/)，纳入 {dcml.get('count', 0)} 项，排除未登记来源的 `_reviewed.tsv` {dcml.get('excluded_reviewed', 0)} 项；需结合 ABC 原件及数据字典使用。",
-        "- [其他 HTML、文本和原生编码副本](../../../text/source-copies/)：保留来源子目录和相对路径。", "",
+        f"- [整理后的 HTML 正文阅读入口](../../../text/organized-html/README.md)：{report['counts']['cleaned_html_documents']} 篇正文；原始 HTML 副本仍在 [source-copies](../../../text/source-copies/)，目录、摘要和错误页未作为正文。", "",
         f"- [机器可读谱包副本](../../../scores/source-packages/README.md)：从 Beethoven Kern、Bach 370 Chorales、Josquin、DCML ABC 指定原包解出 {score_count} 个原生谱文件；不编译或转换。", "",
         "- [本地可读性抽样记录](qa.json)：覆盖教材、MTO、Philharmonia、作品/版本 HTML 和 Beethoven Kern 谱。", "",
         f"- [既有谱源总目录](../../../../materials/scores/CATALOG.md)（{score_material_count(materials)} 个文件）；[第二批贝多芬奏鸣曲记录](../../../../materials/scores/BATCH2-INDEX.md)。", "",

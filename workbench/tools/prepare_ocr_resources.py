@@ -74,7 +74,7 @@ def append_job_event(event):
 def cached_outputs_match(metadata_path: Path, source_sha: str, range_labels: list[str]):
     try:
         old = json.loads(metadata_path.read_text(encoding="utf-8"))
-        if (old.get("status") != "converted_readable"
+        if (old.get("status") not in {"converted_readable", "converted_image_only"}
                 or old.get("source_sha256") != source_sha
                 or old.get("model") != MODEL
                 or old.get("page_ranges") != range_labels):
@@ -86,7 +86,7 @@ def cached_outputs_match(metadata_path: Path, source_sha: str, range_labels: lis
             md = ROOT / output["markdown"]
             jsonl = ROOT / output["jsonl"] if output.get("jsonl") else None
             images = ROOT / output["images_dir"]
-            if not md.is_file() or md.stat().st_size == 0:
+            if not md.is_file() or not md.read_text(encoding="utf-8-sig").strip():
                 return None
             if jsonl and (not jsonl.is_file() or jsonl.stat().st_size == 0):
                 return None
@@ -148,7 +148,8 @@ def install_get_retries(cloud_api):
     return restore, counter
 
 
-def process(path: Path, dry_run: bool, network_error: str | None = None):
+def process(path: Path, dry_run: bool, network_error: str | None = None,
+            retry_uncertain: bool = False):
     rel = path.relative_to(SOURCE_ROOT).as_posix()
     parts = Path(rel).parts
     source_name = parts[1] if len(parts) >= 4 else path.parent.parent.name
@@ -184,17 +185,33 @@ def process(path: Path, dry_run: bool, network_error: str | None = None):
             out_dir.mkdir(parents=True, exist_ok=True)
             metadata_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             return record
-        uncertain = [e for e in read_job_events()
-                     if e.get("source_path") == rel
-                     and e.get("source_sha256") == source_sha
-                     and e.get("model") == MODEL
-                     and e.get("status") == "uncertain_submission"]
-        if uncertain:
+        matching_events = [e for e in read_job_events()
+                           if e.get("source_path") == rel
+                           and e.get("source_sha256") == source_sha
+                           and e.get("model") == MODEL
+                           and e.get("page_range") in range_labels]
+        latest_by_range = {}
+        for event in matching_events:
+            latest_by_range[event["page_range"]] = event
+        uncertain = [e for e in latest_by_range.values()
+                     if e.get("status") in {"uncertain_submission", "uncertain_submission_retry_started"}]
+        if uncertain and not retry_uncertain:
             record["status"] = "submission_uncertain"
             record["error"] = uncertain[-1].get("error", "Previous POST ended without a jobId")
             out_dir.mkdir(parents=True, exist_ok=True)
             metadata_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             return record
+        if uncertain and retry_uncertain:
+            record["uncertainty_retries"] = []
+            for event in uncertain:
+                retry_event = {"source_path": rel, "source_sha256": source_sha,
+                               "model": MODEL, "page_range": event["page_range"],
+                               "job_id": None, "status": "uncertain_submission_retry_started",
+                               "reason": "An explicit one-document retry was authorized after a prior connection reset without a returned jobId.",
+                               "previous_error": event.get("error"),
+                               "recorded_at_epoch": time.time()}
+                append_job_event(retry_event)
+                record["uncertainty_retries"].append(retry_event)
         out_dir.mkdir(parents=True, exist_ok=True)
         from everythingmarkdown import cloud_api
         job_events = read_job_events()
@@ -299,7 +316,10 @@ def main():
     parser.add_argument("--only", action="append", help="process only these source-relative paths (repeatable)")
     parser.add_argument("--record-network-block", help="record documents as unattempted due to a known network block")
     parser.add_argument("--skip", action="append", default=[], help="exclude a source-relative path")
+    parser.add_argument("--retry-uncertain", action="store_true", help="retry a prior no-jobId submission only for one explicitly selected document")
     args = parser.parse_args()
+    if args.retry_uncertain and (not args.only or len(args.only) != 1):
+        parser.error("--retry-uncertain requires exactly one --only source-relative path")
     files = source_files()
     if args.only:
         files = [p for p in files if p.relative_to(SOURCE_ROOT).as_posix() in args.only]
@@ -308,7 +328,8 @@ def main():
     rows = []
     blocked = args.record_network_block
     for path in files:
-        row = process(path, dry_run=not args.run and not blocked, network_error=blocked)
+        row = process(path, dry_run=not args.run and not blocked, network_error=blocked,
+                      retry_uncertain=args.retry_uncertain)
         rows.append(row)
         if row.get("stop_batch_reason") and blocked is None:
             blocked = row["stop_batch_reason"]
