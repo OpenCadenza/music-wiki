@@ -1,0 +1,26 @@
+[
+  {
+    "name": "README.md",
+    "expected_sha256": "24ecc192256b4ce04b66ebeec43735cbe5d9e490ad9f6ebae022c55cec847617"
+  },
+  {
+    "name": "writing-rules.md",
+    "expected_sha256": "7d3dda6affc86cb9e6edea8295ed4237f3deb6ab8537685742db9385e69b15db"
+  },
+  {
+    "name": "sources.md",
+    "expected_sha256": "63ac14a89786e74773b024bd4454c1176824a42b2c32d3804cafea14dd61bbb4"
+  },
+  {
+    "name": "score-pipeline.md",
+    "expected_sha256": "801faac95918f725aec140df38a5ba6d8c50dc8bd60d246d851131b2af5a3f4e"
+  },
+  {
+    "name": "handover.md",
+    "expected_sha256": "697ba310c667e9033bf28055aa39db00bafe7d376bd2ea85c689cf9dba327f7f"
+  },
+  {
+    "name": "progress.md",
+    "expected_sha256": "f7023570589457d06d588752453d06521e2f001113fd102f58384e5494ea014e"
+  }
+]

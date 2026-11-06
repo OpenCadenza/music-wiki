@@ -1,0 +1,38 @@
+[
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\README.md",
+    "before_sha256": "8f5c9883e906ed0105ef44ef4fcff4f08150a554b379f89442a933e362ba708e",
+    "after_sha256": "24ecc192256b4ce04b66ebeec43735cbe5d9e490ad9f6ebae022c55cec847617",
+    "verified": true
+  },
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\writing-rules.md",
+    "before_sha256": "6c1e22a57d6136757b911df709cffc6b62eb92badbfda01b689ab1cde7e2e3bf",
+    "after_sha256": "7d3dda6affc86cb9e6edea8295ed4237f3deb6ab8537685742db9385e69b15db",
+    "verified": true
+  },
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\sources.md",
+    "before_sha256": "c609f57a61876f678f4cb0e05ce55ac19f22010eeef80f4d2a8941ee514892a3",
+    "after_sha256": "63ac14a89786e74773b024bd4454c1176824a42b2c32d3804cafea14dd61bbb4",
+    "verified": true
+  },
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\score-pipeline.md",
+    "before_sha256": "d3fe581a2053a00c10c94c8331d396e823a0c2265c473920a7a37cb7ca77e6bb",
+    "after_sha256": "801faac95918f725aec140df38a5ba6d8c50dc8bd60d246d851131b2af5a3f4e",
+    "verified": true
+  },
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\handover.md",
+    "before_sha256": "0e71454c1fcae1e31ca1e1d5e5356223abadfda16c63a9cc956684bdc9483ec2",
+    "after_sha256": "697ba310c667e9033bf28055aa39db00bafe7d376bd2ea85c689cf9dba327f7f",
+    "verified": true
+  },
+  {
+    "file": "E:\\github\\opencadenza-dev-doc\\music-wiki-知识生产\\progress.md",
+    "before_sha256": "fea7c1b6febaa35e3bbdc139afb38523b534611eef2a4dbcb69b2cb7b285ff9f",
+    "after_sha256": "f7023570589457d06d588752453d06521e2f001113fd102f58384e5494ea014e",
+    "verified": true
+  }
+]

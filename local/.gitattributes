@@ -1,0 +1,4 @@
+docs/历史/** -text -whitespace
+docs/实施记录/**/设计修改前/** -text -whitespace
+docs/实施记录/**/团队文档修改前/** -text -whitespace
+docs/实施记录/**/公共规范修改前.md -text -whitespace

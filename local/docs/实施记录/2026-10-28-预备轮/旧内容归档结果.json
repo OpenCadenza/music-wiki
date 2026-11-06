@@ -1,0 +1,1542 @@
+{
+  "status": "verified",
+  "archive": "E:/github/music-wiki/local/archive/2026-10-28-before-rebuild",
+  "content_files": 255,
+  "markdown_files": 48,
+  "articles": 37,
+  "directory_introductions": 11,
+  "retained_working_content": true,
+  "reason": "正式库替换按计划等待正式轮首批文章就绪；本轮停在预备轮，不发布空库。",
+  "files": [
+    {
+      "path": "composers/beethoven/chamber/cello-piano-dialogue.md",
+      "bytes": 10001,
+      "sha256": "b070b6e3b84340fb752a05e0cbcd8fde849da3c70bd65d26c07a3c9caef3c548",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/five-voice-fugue.md",
+      "bytes": 13449,
+      "sha256": "73a6a9e45982064537cdcaa7512a143f75ce9ddfd57bfe5a1fc2f380b142a8b5",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/horn-sonata-writing.md",
+      "bytes": 11985,
+      "sha256": "0fd81646cbe2033bc8fcba439f90c0527ac0251b97640e10c03d4b78288ec880",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/index.md",
+      "bytes": 1869,
+      "sha256": "1b928104110fed62dd79d1aa0751e119ddb9be7d20a33cdf40c193d01ef9324c",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/piano-trio-balance.md",
+      "bytes": 11349,
+      "sha256": "1ac97e66348a79ba2d9de524e398f2552c12a403dc503f7b9c819999fb8fcd52",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/slow-intro-to-allegro.md",
+      "bytes": 12490,
+      "sha256": "82e40e22aa9b08239855e3f23778fa2b386e35cc1492af61e8d59f598a886bc8",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/chamber/violin-sonata-equality.md",
+      "bytes": 11645,
+      "sha256": "cc231304192cb521808508d8846dfaf6023aac2037a4195ec8c5ba53df66892b",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/concertos/double-exposition.md",
+      "bytes": 12205,
+      "sha256": "6577e3bcb30da5ea353e994aca34df95fb34e16dbc6c097a996756ce3e1c9b62",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/concertos/index.md",
+      "bytes": 1629,
+      "sha256": "15e40211da8fdde281f30c9cdd62a66488d4c169eeab75fef4a354b770964747",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/concertos/solo-versus-tutti.md",
+      "bytes": 15717,
+      "sha256": "538eed2633150d41b5e433b9459464d40b3b303c28e06d0ebb26c7bb42b97596",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/index.md",
+      "bytes": 2713,
+      "sha256": "2018c4a45358a149fce2fe6bad835fa4aaa3824656f9374b714a35f8bb45004a",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/overtures/index.md",
+      "bytes": 1221,
+      "sha256": "4b0a421ebf8206f4d9b49dfd6fd391a50b6f72e996d9e00369029e37b5b2c91b",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/overtures/overture-in-one-breath.md",
+      "bytes": 13303,
+      "sha256": "68e13e5501ec0f423190e0606707ac099a8bd49647f9ef92d994d818c16c99db",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/index.md",
+      "bytes": 1545,
+      "sha256": "12b04bc5957a9b47a37ce8a826a22a39d5c56c28d1bde49ef46a1b807f112a9c",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/accompaniment-as-form.md",
+      "bytes": 11488,
+      "sha256": "205ea9742207e6f6eab6ac596b6537ada29525404b02103d23dc4d75b7cf5873",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/development-techniques.md",
+      "bytes": 12412,
+      "sha256": "a06d40aa8840b924d401f7f1c7e30b16366f83b9b27e541a61e6853dd5d88845",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/early-experiments.md",
+      "bytes": 10528,
+      "sha256": "67dbc788ee09d543a7e93d2661a059eab6f7a31f92fa32edde2d36cc78240659",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/exposition-closure.md",
+      "bytes": 9552,
+      "sha256": "8329dca65252b406503c0abde4ee3a6e4462990bb6b9ccf607a8c8e389a8f4c9",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/finale-choice.md",
+      "bytes": 9481,
+      "sha256": "368362c320272d08f851f24720112ef7db88aef7331d1b101f041683b28f1b7d",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/fugue-or-fugato.md",
+      "bytes": 8554,
+      "sha256": "9a91cec9ad9878bfa8f036ec5bab90554601748835a2fe050f19e53418c7927d",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/index.md",
+      "bytes": 3332,
+      "sha256": "4709f1db9cafb7bf6d7797acb07cfcc709c84f73a67e33f88349a46ae1b3e21a",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/late-texture.md",
+      "bytes": 6535,
+      "sha256": "2b29ccc7b220f3ec408457a680b3c4637be15493b9d94254ca59ce0eac9aba4a",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/motive-tasks.md",
+      "bytes": 10176,
+      "sha256": "c16d9e7d8f8504c9494ab36cf4faf914a717ed3a313d466b873da45631d46146",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/op90-two-movements.md",
+      "bytes": 10951,
+      "sha256": "91c6fe92598503477ca59f57f47687c21beb792fba23c52c0ee785853f1357b8",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/opening-gestures.md",
+      "bytes": 12732,
+      "sha256": "8b4f786b4cc0f19287291aa7e4f27a0714e5c05f3afe201f51b6a2afd1256ba1",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/scherzo-replaces-minuet.md",
+      "bytes": 10399,
+      "sha256": "3c186e39818ff8bebaad1c067d8f5965ea1897823fac2e3d37dfa74246edf7fd",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/secondary-theme.md",
+      "bytes": 12562,
+      "sha256": "40a6a75c4583a91a78ff2c9d11cea0317f707977bbd2a3aff17d5e89c0aaae4e",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/slow-movement-types.md",
+      "bytes": 11002,
+      "sha256": "01441e657de2a694fabb9c50c612305c61d1157816532e4df72089d052254ac8",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/slow-movement-variation.md",
+      "bytes": 9229,
+      "sha256": "3f5a808d6a3ea9f5a597095df30843dfbfdd61cf8633f6590bbad25767fa08b5",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/sonatina-position.md",
+      "bytes": 11081,
+      "sha256": "7465b30e973d204012e14c08b88745e66d147eb217a84fdec53453a8585e6e34",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/transition.md",
+      "bytes": 8091,
+      "sha256": "40e2e16312a9d5f4425de176805acbe60f77dbafd03d727a7054a413e519251c",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/piano/sonatas/two-movement-sonata.md",
+      "bytes": 10384,
+      "sha256": "a4cd440b30d16375d176180247a17f1bc91899c0b29a7ddc9b356e1ad972e980",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/cello-melody.md",
+      "bytes": 6489,
+      "sha256": "e21564b970e5556b1b73796be86abea95c148f9c44e591bc3e706eabbae14190",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/index.md",
+      "bytes": 2428,
+      "sha256": "09f1d93c8c9bd62df4d4f10d1b4f24357d0c5683587606b5234d887995df031f",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/inner-voices.md",
+      "bytes": 11986,
+      "sha256": "a4460c1c8d03ac89bff0c4bf9b5e2a079e75df9d3e6b287fd9ee18b83d120105",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/late-quartet-cycles.md",
+      "bytes": 6200,
+      "sha256": "7c4a2734ee637235271623d31fa2484f44abff00f3bbe89fcb5df11e4d1a677f",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/quartet-fugue.md",
+      "bytes": 8830,
+      "sha256": "327c83035e11b6e1eaf4ad581c78dbc2f8d938c0b527902c988543b3400006a6",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/quartet-texture.md",
+      "bytes": 10581,
+      "sha256": "c41c9951b4cf2f073b21f5183c687c5d240405fa6bb0282234ba827589a2a27f",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/quartets/voice-roles.md",
+      "bytes": 13093,
+      "sha256": "fcf28afe8527d018cdf8577368a1223c5cf28fe31c824f576ddb463f1cb180d7",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/symphonies/index.md",
+      "bytes": 2175,
+      "sha256": "d52c9a6111f10e510526c121317d1f643a39ed776394e5c2fa79f2c8ddc90d0b",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/symphonies/motivic-cell.md",
+      "bytes": 12852,
+      "sha256": "48bc68d8e9d9b1b963591ab87ce31bfdac6f94194ed9ddf56b80b86d4667d9e2",
+      "match": true
+    },
+    {
+      "path": "composers/beethoven/symphonies/orchestration-layers.md",
+      "bytes": 11481,
+      "sha256": "a6f90df16a40a878403397d66778468722f2cb0bdc5fef8c2d4103c4b893ae02",
+      "match": true
+    },
+    {
+      "path": "composers/index.md",
+      "bytes": 1062,
+      "sha256": "6add45c477919ba00358c193bb71a1f8b40d1dafbbf002ca50ce61e95ce27501",
+      "match": true
+    },
+    {
+      "path": "index.md",
+      "bytes": 2011,
+      "sha256": "cc50e8e1419ab89764b449d5d31916d3f7a3c4246baccb35f898dc9c19fc3b4f",
+      "match": true
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 387,
+      "sha256": "13ed6a8b3eb18cfb60c7803d4fe343189275312629b5f7983e0ce7c60a5272bd",
+      "match": true
+    },
+    {
+      "path": "public/logo.svg",
+      "bytes": 387,
+      "sha256": "13ed6a8b3eb18cfb60c7803d4fe343189275312629b5f7983e0ce7c60a5272bd",
+      "match": true
+    },
+    {
+      "path": "public/notation/manifest.json",
+      "bytes": 104477,
+      "sha256": "8625c5d741c02d1dab1bfd750c035f5abf743c41c787c780af43e0a40541f5ba",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.cello-piano-dialogue.1/audio.mp3",
+      "bytes": 305990,
+      "sha256": "cd88ea0d0742a9a25c4f828fa76cb721732b44986ab5228a143dca5e5b3e7b0f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.cello-piano-dialogue.1/metadata.json",
+      "bytes": 2193,
+      "sha256": "33195e5059c8a2a4af41cacb87f10fa35d57517fe6c592cd30fb6931210099c4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.cello-piano-dialogue.1/page-1.svg",
+      "bytes": 101173,
+      "sha256": "81f8e750427b5d6fb8f062df1200d3bf56852aac201c1a3124a59c121e1ed816",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.cello-piano-dialogue.1/source.ly",
+      "bytes": 1626,
+      "sha256": "7b9ebdd3e5af32bfda4431981fe1b6ccf797a8d5b3a9d99b5d276ceba7207f85",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.five-voice-fugue.1/audio.mp3",
+      "bytes": 305572,
+      "sha256": "dfeca3bc08710a637f0324ebf0386c65ab768eeebf719ff92af02a734de0ba22",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.five-voice-fugue.1/metadata.json",
+      "bytes": 2240,
+      "sha256": "10db9c91b1f2496eca3005f2de2beec61bb729df9688d253870244ef9d0326c4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.five-voice-fugue.1/page-1.svg",
+      "bytes": 227546,
+      "sha256": "aa5b6b3f4917452d453ae80f25ca882f30d945f980d7c9d4736364004f5d8c5f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.five-voice-fugue.1/source.ly",
+      "bytes": 3207,
+      "sha256": "15905144c00fdbf61e181f53942e30e587aa8b4ebc5f47528cca8f8a8cd3a286",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.1/audio.mp3",
+      "bytes": 265866,
+      "sha256": "adef9ee62ec029ac932fb56fa48a01ac5e3a817ed92d37f32d838b5839b46c18",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.1/metadata.json",
+      "bytes": 2192,
+      "sha256": "2722f9c962a9684c980886880e5d4a7d34254f77455f5df02de43d93fcedef6e",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.1/page-1.svg",
+      "bytes": 114343,
+      "sha256": "8e4b1458aed7d1541e40dbc67b5da50ec517a5d6f91f66d558f873e3d1f0088c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.1/source.ly",
+      "bytes": 1564,
+      "sha256": "2f851676a3ec74d6a0c20b128fba964a20ddfef9e94e8169be922e7b206c72ed",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.2/audio.mp3",
+      "bytes": 376625,
+      "sha256": "5b71893e495c9ffc8c762f662c581b03e8fba0b28d5e52d2f711d641cb4cc52c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.2/metadata.json",
+      "bytes": 2214,
+      "sha256": "86ed10c2527b27147bfa3a3bd59cf3987b68e53a98622d662b7ed326645c5dc0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.2/page-1.svg",
+      "bytes": 150624,
+      "sha256": "6832899ec389dbcfb949488de00e3e8c3689dc6970be37cf2203bcfdb8c90b73",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.horn-sonata-writing.2/source.ly",
+      "bytes": 1895,
+      "sha256": "57c6319c971ee0101f037fdfb986277665c0d8d296cb911a69ec3678ca08ee1b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.piano-trio-balance.1/audio.mp3",
+      "bytes": 425108,
+      "sha256": "31b8c42fafa47f292145b3566c1a236d392cd348e687c241ac834141d67ffd57",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.piano-trio-balance.1/metadata.json",
+      "bytes": 2214,
+      "sha256": "2235a045983b6e1668a93aaaa2ccb5332b30c356c5e31c1331745d49f1deb553",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.piano-trio-balance.1/page-1.svg",
+      "bytes": 181810,
+      "sha256": "b511b14d0697c30e1722b76ca0a1ca254f5538bde4fe44b86e3590253bd61647",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.piano-trio-balance.1/source.ly",
+      "bytes": 2963,
+      "sha256": "4425692bc12093741f31231727ec67a0db0f409a5207fae93127f3043f73c4ef",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.1/audio.mp3",
+      "bytes": 689258,
+      "sha256": "086fe618976c2911eee3dfdcc893729be83501edf140afd2f9711fff2cb1b81a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.1/metadata.json",
+      "bytes": 2192,
+      "sha256": "4779584bde59892e58115b251d2be92c909aa438421cbcdc80c39b6b63526b53",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.1/page-1.svg",
+      "bytes": 130234,
+      "sha256": "4d4f4e23a48c76a1b8bc7e947fb9a298e72f1cbed4cb8bfd91af5b804ec61e3c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.1/source.ly",
+      "bytes": 1851,
+      "sha256": "2e0bfd3aa1c0460f7f476b4ae235ca91975e60b3fe50f12b890c4046fe991fd9",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.2/audio.mp3",
+      "bytes": 351129,
+      "sha256": "c185c318783d47ed53f3c22d021ce1f06e0adbe7adf74ed3f4dff9dd37dc34c9",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.2/metadata.json",
+      "bytes": 2240,
+      "sha256": "86fc099be55cb800979d88898d783ab0dc42a2964e15b490968e1bd3dcb17c73",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.2/page-1.svg",
+      "bytes": 161449,
+      "sha256": "a06fe8de34b29ca29234aa18c701f1a8cf8eee3ea51dff039748948a87c7d01b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.slow-intro-to-allegro.2/source.ly",
+      "bytes": 2227,
+      "sha256": "7764fb88da27c2ad0f93a5db44905853cdf53b8af55a7e7468a7a24655ea7d80",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.1/audio.mp3",
+      "bytes": 1082140,
+      "sha256": "9d1510db6d23c8e75cd65da65954c070e695161176478b22d259f529f2bea95b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.1/metadata.json",
+      "bytes": 2184,
+      "sha256": "022ac92224e4477e1e71ef4e9da2eff3e0ee3efce20de5e228afaa305b0ef1fa",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.1/page-1.svg",
+      "bytes": 141182,
+      "sha256": "5a4ee3cd787a81be1ec7a00b76329d3cca02698d129557ddbb272e47ebc8859b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.1/source.ly",
+      "bytes": 1894,
+      "sha256": "31aaf816c44c00b643567bb437bbbd2bf14a4182fe1e8252099999b69acc4d07",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.2/audio.mp3",
+      "bytes": 114146,
+      "sha256": "486221d75f1cca545ce425809fa9d1f03d394d5b1791b0f892b608d4bba5152d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.2/metadata.json",
+      "bytes": 2180,
+      "sha256": "56958e6b054525513cec02f6137b0554d463d7c1b799bf568e862f9ce5a575b2",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.2/page-1.svg",
+      "bytes": 78027,
+      "sha256": "7a498def01fd4bbe3e86ccb6d753095d603ba02a10d877fb8212661087dd6df1",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.chamber.violin-sonata-equality.2/source.ly",
+      "bytes": 1568,
+      "sha256": "d5660f96bf7d4b3e64c88dc5f31ca027b7a0605df8fa86a4bfca04c8092ee147",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.1/audio.mp3",
+      "bytes": 209859,
+      "sha256": "f4a7f6ef531e0f8af36a2d95187898b71f1f4636a9266b132ca06e9bf1207458",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.1/metadata.json",
+      "bytes": 2216,
+      "sha256": "92503f819ea5347f895d38ed373853eb35a765f592623ab448aa55f6f1fb87ab",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.1/page-1.svg",
+      "bytes": 101118,
+      "sha256": "9c21d27249ea99e21654cf743c3f08519e1562a483db8efd8deeb302343bb5ec",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.1/source.ly",
+      "bytes": 2346,
+      "sha256": "f3868208508bd9b61ec301181fe8995c5dda9faca4411bfa7a5c55cc1cf00218",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.2/audio.mp3",
+      "bytes": 262104,
+      "sha256": "7d225e61d29c1f6c52232936b13cb6332770d70c5e527f5730d7ff921f86bdf7",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.2/metadata.json",
+      "bytes": 2171,
+      "sha256": "88b25866202ff8c4a1e82f07f66f2510b3732f9f04121764dc131ea8e8463d8d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.2/page-1.svg",
+      "bytes": 121028,
+      "sha256": "0e15461c3169c4be0e21c4a60f59eef075a4dbd1f478a6548af54318daab546d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.double-exposition.2/source.ly",
+      "bytes": 2065,
+      "sha256": "f1012285dfd6ebddddcd1780788b925fbaa31bc51f70f59bf2055e11983d8d3f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.1/audio.mp3",
+      "bytes": 603577,
+      "sha256": "0536dc69ff5ebe0a888e83208e1a93a3ed8fd198a300a26936f328d930727007",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.1/metadata.json",
+      "bytes": 2344,
+      "sha256": "219a3d0a666f9060cd8ec1ec4384c7eb269e21473df0794b8bbc5d5f017189dc",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.1/page-1.svg",
+      "bytes": 327364,
+      "sha256": "f109044120b892d0e59a13c00ffd996c1c08ab1c09f9d0f82b793574a60947b1",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.1/source.ly",
+      "bytes": 5039,
+      "sha256": "1ece4abf1b706bfe3ac9877f75d6656db570a15a17aaa52d5e5a7dd568a46ca1",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.2/audio.mp3",
+      "bytes": 339844,
+      "sha256": "ac6bbb81dd7f84e949f0997bf63b48d818bcb8ff6f527e7024c84b77b4867ac4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.2/metadata.json",
+      "bytes": 2232,
+      "sha256": "41b0ab440a394692cb9625fe8f69d1284c64228efbfa2824ef433f4d2772c923",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.2/page-1.svg",
+      "bytes": 167999,
+      "sha256": "b1091c142bfd2914638753b5b2e71b79fe206bcbeefc468d8176133188df27d8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.concertos.solo-versus-tutti.2/source.ly",
+      "bytes": 2967,
+      "sha256": "d9a1b0d60830b2d92b53b5ad11b3c7125da7cabd0780a91ae361b592c361d116",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.overtures.overture-in-one-breath.1/audio.mp3",
+      "bytes": 410897,
+      "sha256": "48bb2c7466b35464d39da1cf25d4f8d8bb5902506fe25172008d9620fb6e31d8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.overtures.overture-in-one-breath.1/metadata.json",
+      "bytes": 2266,
+      "sha256": "3f1e70667bfc457f2b3825e02f9feb959fac6e02fb710931c76dafb41a8f240b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.overtures.overture-in-one-breath.1/page-1.svg",
+      "bytes": 209496,
+      "sha256": "f1968aef0892caeb58c7442024e1fe6b1a4b266cf1933536923943ae2b610b19",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.overtures.overture-in-one-breath.1/source.ly",
+      "bytes": 3874,
+      "sha256": "447bef4ef7b8207624ecfb493f9f96caef21ac6e5aa6dc22adf6cef6c61cefec",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.accompaniment-as-form.1/audio.mp3",
+      "bytes": 569722,
+      "sha256": "babca0688647f37f0eeb4e325707dd048a489a80682de8e6b2b72aeaee3acfdc",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.accompaniment-as-form.1/metadata.json",
+      "bytes": 2194,
+      "sha256": "1daf7b85b86d6ef79b759d10efcda0878183113fd6bb7bd8124e093e73267320",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.accompaniment-as-form.1/page-1.svg",
+      "bytes": 149209,
+      "sha256": "dfe459c61527648294d97771b9af47a67d73535ac30ea49be33be3b9d71c951f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.accompaniment-as-form.1/source.ly",
+      "bytes": 2199,
+      "sha256": "a40dc91dd4eeb41d13ae0e3ada573ff62e239f79921c36bc8898f585f417b034",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.1/audio.mp3",
+      "bytes": 228667,
+      "sha256": "fcb237b705a5d99b533151754008493a349ebd3cf97997630c37ae4484c1bcee",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.1/metadata.json",
+      "bytes": 2199,
+      "sha256": "8eb869446fb53e2e5b7bcb5e165e42b028ebaf631b401511d7eb53f6a912947a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.1/page-1.svg",
+      "bytes": 104654,
+      "sha256": "7ad611bcb33700162179902c06821ab5a547d2ec9a449a6d5b6d8d4824d8efcd",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.1/source.ly",
+      "bytes": 1468,
+      "sha256": "cf61f872b68c7ce5df95c0d5749747b72d515a5f7156e37de08a560342b1705b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.2/audio.mp3",
+      "bytes": 208187,
+      "sha256": "3813211f690818a07628d99052b4411cfd848405a4b11f053853cd67c63810d8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.2/metadata.json",
+      "bytes": 2183,
+      "sha256": "18ebf05c881cc26410bc7272a9c06ddfcc5fcaad89aaf047a7ca6d7699803b1b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.2/page-1.svg",
+      "bytes": 206675,
+      "sha256": "7e4a83c36062f788a981b0382a57f6c682f48c22c3b3d25faf7fabbaca96237d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.development-techniques.2/source.ly",
+      "bytes": 2216,
+      "sha256": "97e60e8bfacbdaf976817e7d2332ae25bbdf9ecadc22b8b3b684e23c0395cbd6",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.early-experiments.1/audio.mp3",
+      "bytes": 307662,
+      "sha256": "6bd62e9a6c76598490a06fd4fa3bd53f1f85d349fbd06ab17a57f311306f26cf",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.early-experiments.1/metadata.json",
+      "bytes": 2175,
+      "sha256": "97611c5b629e675bbd5700557ff1a74bfe546c749a3abea5483abe585a81fb51",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.early-experiments.1/page-1.svg",
+      "bytes": 116641,
+      "sha256": "2fa123f48998e1bd2bbcf027198f562187aa275a23f547dd622dd0048ae87fd3",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.early-experiments.1/source.ly",
+      "bytes": 1717,
+      "sha256": "97c392ca1aca262b7c9db644b609ca12f94fd5744c363a6356edd1672f6c4dec",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.1/audio.mp3",
+      "bytes": 308079,
+      "sha256": "b0fde8f9b5146ad5a1f6d06e8145e6a0326b357e6361b934884c473e0c3a1ff2",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.1/metadata.json",
+      "bytes": 2173,
+      "sha256": "03f29533515ba724b20fd6dc3ce1186be5b1e88129ff4c66cb4cf444c9500932",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.1/page-1.svg",
+      "bytes": 133944,
+      "sha256": "df6222de8e620159396f8fa620daba3ed3b25822cfd2f113ae95b5525dffb59a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.1/source.ly",
+      "bytes": 1794,
+      "sha256": "b433cd49a7c52668b897b1433f1857981306f4be5c67bbdbc01d248272d91166",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.2/audio.mp3",
+      "bytes": 146747,
+      "sha256": "b111f621bd32edb3f0c8a144e5f65b6cdce54513180ab3e8489de09ee07fcffe",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.2/metadata.json",
+      "bytes": 2166,
+      "sha256": "51481f6ffe6c59fc94074ce090495e9e6e8c0f2f4cb055d10107757e8058959c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.2/page-1.svg",
+      "bytes": 84643,
+      "sha256": "fb6d8d7548fe7a3585a973b9c71bc368135120b4639fe0328cb73abd75d22c23",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.exposition-closure.2/source.ly",
+      "bytes": 1426,
+      "sha256": "dd20d7bd351a045730af7b43f3108c154f56c0a26ffea5d10fe690986a6587c8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.1/audio.mp3",
+      "bytes": 131283,
+      "sha256": "c321f5f4e35383e3f48920d6b2fa2ba75d856baebfb1c93e9f14b880d9664217",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.1/metadata.json",
+      "bytes": 2169,
+      "sha256": "9dfc2e1436491b921eafcd6bba627e87c81ffd6cf7f573d48b32ca2ee10ecbb0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.1/page-1.svg",
+      "bytes": 90575,
+      "sha256": "e945642534e12f7c30ec69e22324fe9557627d58aa96a9a3368ccb2cfde4cff0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.1/source.ly",
+      "bytes": 1090,
+      "sha256": "c744f8aff33a16e6942a6934826e02bd772fc9d4a175266625858d0d6e9d1fb4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.2/audio.mp3",
+      "bytes": 258342,
+      "sha256": "a105b5e4a81cbe6c1d86f31c90b4081304b2e7de2a2b799ac085dbfe40e4c20e",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.2/metadata.json",
+      "bytes": 2179,
+      "sha256": "a78a6997414372d355e440afbf95d340485e187a14e13a676943222c1282da35",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.2/page-1.svg",
+      "bytes": 103576,
+      "sha256": "9968509aab7efa308f949d269516b56414e649974c7b1fd20fc71f8878a76735",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.finale-choice.2/source.ly",
+      "bytes": 1347,
+      "sha256": "975abdc6b06af1438144f41f8e8f13f5a5459db0eed69db520a83952565a0abc",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.fugue-or-fugato.1/audio.mp3",
+      "bytes": 245804,
+      "sha256": "b2808c9cc9a0296d4fd9be54aabcd8ec17e27837ea3d5c6af6a73c5c71549c44",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.fugue-or-fugato.1/metadata.json",
+      "bytes": 2164,
+      "sha256": "546d88267eb4b84bedabb772103b1699733ad8fcb31efba8a4ae71922f5ecd3f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.fugue-or-fugato.1/page-1.svg",
+      "bytes": 130609,
+      "sha256": "ee2a3bd44e30678555611bc43458dbe7c9669584f0ff56c7f801eb213a9b30dd",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.fugue-or-fugato.1/source.ly",
+      "bytes": 1873,
+      "sha256": "8f24ae66b7d2cf22fa17d789ad0f378b33670ef1f5a6cd914fd357f86bdef35b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.motive-tasks.1/audio.mp3",
+      "bytes": 288017,
+      "sha256": "235f4fa6c7d99bf5b790d839ae9b6f9994c32c6b34dc92404a4d0f82276be1c9",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.motive-tasks.1/metadata.json",
+      "bytes": 2157,
+      "sha256": "2ad38f4d974abca603c67062f74dc49f0c58ebca4a802ba3f22be6ac050b5873",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.motive-tasks.1/page-1.svg",
+      "bytes": 147307,
+      "sha256": "f081be3d9484971afa4acd65f7bee09d5352d0a01b88ae6abb17d3801c3a9da3",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.motive-tasks.1/source.ly",
+      "bytes": 2825,
+      "sha256": "59918772243f0002d16bf22df5120012b19b481fd4637c18158f842baed9b023",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.1/audio.mp3",
+      "bytes": 296377,
+      "sha256": "47cff63914db7605d679071f8d400b26a3589c3536f1de6ad21130e7a8f8aa14",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.1/metadata.json",
+      "bytes": 2164,
+      "sha256": "5abd596cd3617e0e1dc0da756edae66007e454c1de17d77c3acddb71e7cc1619",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.1/page-1.svg",
+      "bytes": 117661,
+      "sha256": "6381578b3d7beb76f557f44adf3d04474296f5b98a021ab8eddc353ab26c9d03",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.1/source.ly",
+      "bytes": 1775,
+      "sha256": "0049307b465e9b921290658b047c5ede882849776335bff65bdea69504a2272f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.2/audio.mp3",
+      "bytes": 419257,
+      "sha256": "2abe1444b725680c28b9e9835db3fd6298a9a8847582a814941cbecd5e26d644",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.2/metadata.json",
+      "bytes": 2184,
+      "sha256": "9db921fd885fe35c0cdbbd3980dc1314f263449a3c79de168e9d1e96856471b6",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.2/page-1.svg",
+      "bytes": 174611,
+      "sha256": "741361d6190949dd270efff14adbce6062451f0f551a6faf9930966ce3ddaae0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.op90-two-movements.2/source.ly",
+      "bytes": 1734,
+      "sha256": "d374d22793261ebe7d406de6e2081021bf4b40350022ad1bfce163ab30e29e10",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.opening-gestures.1/audio.mp3",
+      "bytes": 1163642,
+      "sha256": "cff57cdd6655f0bd3c2f9b619878688a368cebc8c607b29f88676ec58def81f1",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.opening-gestures.1/metadata.json",
+      "bytes": 2198,
+      "sha256": "724f284f2ff2281df2594a69c267ceba8566a01fe6a142def88bd92bec243709",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.opening-gestures.1/page-1.svg",
+      "bytes": 390443,
+      "sha256": "382160d4c79abf918155b15a691033faec3cc305d15a1bdba8281cac02f78850",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.opening-gestures.1/source.ly",
+      "bytes": 3223,
+      "sha256": "d903bd9a7e35e2900271a374bc692f7de9016c572909039256ad925e58375c77",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.1/audio.mp3",
+      "bytes": 280076,
+      "sha256": "fad1714009138117f0387a4fd9062a9a87b415138732169550952312cc3054e0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.1/metadata.json",
+      "bytes": 2221,
+      "sha256": "5a2e36470141b07d8cf9455a6933f0a0b6140cfea8b16b4f945ead320c11896e",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.1/page-1.svg",
+      "bytes": 104796,
+      "sha256": "c37d7263010a03a79bf220cc83f33698203c3fef92429a5a020bed23a4134aea",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.1/source.ly",
+      "bytes": 1397,
+      "sha256": "71132613bc8b34a56f99074eeeec85158ea18d7ffa08152a1bd64f2ec0db5eef",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.2/audio.mp3",
+      "bytes": 178094,
+      "sha256": "8aa439905529168c784c9980f95fdf2b7870eff05c756736608b47c7cbe6c29f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.2/metadata.json",
+      "bytes": 2201,
+      "sha256": "d97b654f3f12ad629e80e0c97953ace89d18783b8325a8d82d2148d39fe7364c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.2/page-1.svg",
+      "bytes": 62853,
+      "sha256": "8e7349c7257bac55b2910856ee52961d7efbe294ccf343be2244c1ad6fdf3765",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.scherzo-replaces-minuet.2/source.ly",
+      "bytes": 914,
+      "sha256": "92c2a6f081879ebbfd124b26fcc8b59fc8ecde230d4ced026dbb96de3feb716f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.1/audio.mp3",
+      "bytes": 265030,
+      "sha256": "0c9037796f51e4b7035b8f0280224d40df8e6710a7b9305ef18741285682d507",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.1/metadata.json",
+      "bytes": 2165,
+      "sha256": "2a659dd4e6ffcd66d8f6a0e6fadfecad7c643ae814e1ff71ef5dee4fd1bdaeb0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.1/page-1.svg",
+      "bytes": 150480,
+      "sha256": "5340223ca6542a19d5c35cd444c25e4d92994d930aa997ee6d019d4d4f91ff2c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.1/source.ly",
+      "bytes": 1638,
+      "sha256": "d7568fd6008c07d5af08b134176bc88752df1041c58043012737274473d3f37b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.2/audio.mp3",
+      "bytes": 173079,
+      "sha256": "386ce8e02e66a9c9e528f7cffb6996aca42bd287765889e45b63c936fab200ba",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.2/metadata.json",
+      "bytes": 2161,
+      "sha256": "bf21a84e67817cba19516a59ee97c3efd931768f50ee3252043270ba9688cac7",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.2/page-1.svg",
+      "bytes": 134337,
+      "sha256": "32a2a2579831e7be0af3b77354a78469d77612e6bf7c1fa1e2b8a013b8672956",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.secondary-theme.2/source.ly",
+      "bytes": 2189,
+      "sha256": "54c1f8adaee374f6448faf1c3ee6df4b743c08ceae077afbc4a7f2f743280be0",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.1/audio.mp3",
+      "bytes": 779537,
+      "sha256": "53d5157e77d224a53c330daacbc4f89b1210601e0dbfa3034fe92cd630567c3d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.1/metadata.json",
+      "bytes": 2171,
+      "sha256": "d8424bc0977f677633ad6ddc12192b15449175e8f4c3f6a77729b7c3aa5338fa",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.1/page-1.svg",
+      "bytes": 108009,
+      "sha256": "2c9e6c6eb456bbb1880c1e7373183403a9f4e945fed20aff0fe9be6f99e9adce",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.1/source.ly",
+      "bytes": 1377,
+      "sha256": "3fc77187fadd76569eed29a19300976be22715ec0e76f8ffc88054c60ce5cc2a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.2/audio.mp3",
+      "bytes": 214875,
+      "sha256": "fdedc24f753bfda7cecee3c45929dcd18d8bc67a21bfcf66440fdbfeca4b6df8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.2/metadata.json",
+      "bytes": 2206,
+      "sha256": "1914ab34baef449a34cf56a043fe85430e111bc909ec24e41e0a6c0b7681d1db",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.2/page-1.svg",
+      "bytes": 92220,
+      "sha256": "b57c8759d6163f2a1705bcf6ce43468ad1198b5d4387b77f79a059cd87bac58a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-types.2/source.ly",
+      "bytes": 1061,
+      "sha256": "ebe655b6026321503e3388f951f3b2e5543ab7cb4138b9be6d3fd50ba39cd31a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-variation.1/audio.mp3",
+      "bytes": 504938,
+      "sha256": "3d48ab259eb4aaca58a804ba454cd7827a974d2942ac2586b2dfd5435a3131e2",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-variation.1/metadata.json",
+      "bytes": 2166,
+      "sha256": "9c4606567d84225566ddafe58f81f077667783b823d7d875f297ec7cedfa940f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-variation.1/page-1.svg",
+      "bytes": 147804,
+      "sha256": "fb61ac11d4b76e477fd17ff077eadb2ccfed54012f1c2639ebe7435d5b75020e",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.slow-movement-variation.1/source.ly",
+      "bytes": 1912,
+      "sha256": "9de944a87a11918794f29f846411b0410f1f46c7f02a58e23d70f62bf942e5d4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.1/audio.mp3",
+      "bytes": 163048,
+      "sha256": "3885a34349e7c21783460c5684a4d4e282680d66671a593e8c6f771460720b98",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.1/metadata.json",
+      "bytes": 2175,
+      "sha256": "c95a5abca6f22a389fdc7bf00cb22713794d5071e7dda0c54d2f11e6d7a4dde3",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.1/page-1.svg",
+      "bytes": 58629,
+      "sha256": "02f990e8b71e711a78192ef7c3ab31c58e9515f906a15d9f88467d3a12c8c84a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.1/source.ly",
+      "bytes": 957,
+      "sha256": "5d48973fa165d90c99e5437a49056e69d934118e5cb6ff1b00c1557a4e213f4b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.2/audio.mp3",
+      "bytes": 171825,
+      "sha256": "bc635442599bd2b95b9917702b04f3d843ea358a1a7b742b977baa68654152da",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.2/metadata.json",
+      "bytes": 2188,
+      "sha256": "3228b51de9b61f4889063b0dd7a482b17770778b399d846f84fa483eeda872d3",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.2/page-1.svg",
+      "bytes": 73380,
+      "sha256": "3754e4d28f2f2d64a6685774b756c6a1a7806c94994a243420681e1decf340ad",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.sonatina-position.2/source.ly",
+      "bytes": 1108,
+      "sha256": "07050014363481705e56a4a56a410a09d43bda05fdc06efa03268f6400f16f52",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.transition.1/audio.mp3",
+      "bytes": 224070,
+      "sha256": "ab6a18a6b43283c2aca8a6cee26ceb29ec7e74117e544dc63b73bc78a3960cd2",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.transition.1/metadata.json",
+      "bytes": 2169,
+      "sha256": "f7460d5fca0b90bbb8ccfd8c3a9991b71e3647f35add3885674c21a17e35e5c4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.transition.1/page-1.svg",
+      "bytes": 85173,
+      "sha256": "90ce2bb275f4bb0cdfa2e7d7a97ea1e051a5a22c1ccf071ae056e637369d40f3",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.transition.1/source.ly",
+      "bytes": 1700,
+      "sha256": "1ec0e6bd73e075b68a2a1ef42ad01ce4ca480b4c24b53ad7c4a52151cce768d7",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.two-movement-sonata.1/audio.mp3",
+      "bytes": 263776,
+      "sha256": "cd1f73c747bbefa364d3fa642563edf30904b9e813f7d9e28610cb57662c2b2b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.two-movement-sonata.1/metadata.json",
+      "bytes": 2183,
+      "sha256": "7fa10c5fbdde0eac8e502adbf6df09b655277bc5cff392ea76007095e856eb9d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.two-movement-sonata.1/page-1.svg",
+      "bytes": 82544,
+      "sha256": "d95b28d368f82948c21c5463a9e2adaa575248b3999f050b2d0aed031baf46fb",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.piano.sonatas.two-movement-sonata.1/source.ly",
+      "bytes": 1614,
+      "sha256": "fbe5adfde1c5cd7bf138348f322be2c4091e7cdded3d482602c99f81b364b5ef",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.inner-voices.1/audio.mp3",
+      "bytes": 445170,
+      "sha256": "f32aa2cb9d6ecd3c19e916fbb75726177b7b6540756d4d918bf57343b422d4a9",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.inner-voices.1/metadata.json",
+      "bytes": 2192,
+      "sha256": "e97475cf1b05abc527449c5825cf0a26ce69c66f5e94493d835a14289f18e38a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.inner-voices.1/page-1.svg",
+      "bytes": 347372,
+      "sha256": "2ede4630fc656bec6a5b70b8074ba93d09e3f54f1ba3657a5d40b37781992617",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.inner-voices.1/source.ly",
+      "bytes": 4540,
+      "sha256": "b336066cd306cd945a26e38a9926715bed705b4fbf3729d06d1cfed313cc2246",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-fugue.1/audio.mp3",
+      "bytes": 744429,
+      "sha256": "ed30d63f8f9096f43349c5e690416e9bf5ac9bf3032631ea862cc4b92c8abbca",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-fugue.1/metadata.json",
+      "bytes": 2193,
+      "sha256": "80c13e7e3bcb23d86069da2465aefdbf285a2bf08701a7e1cc10cc5ea8eb50c4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-fugue.1/page-1.svg",
+      "bytes": 165147,
+      "sha256": "7a4658494ecce14f1e9bbcfe376f2a98524962b3c252b2e38567631fcf5b4229",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-fugue.1/source.ly",
+      "bytes": 2123,
+      "sha256": "75306f1d69d544e75cf968385c5873554892450f7c8c84a0faa7e7277c5770ba",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-texture.1/audio.mp3",
+      "bytes": 680063,
+      "sha256": "d1ade1b0336741b55a98add387084830af2e06612aaf1c7d6fd3e275c9a71a06",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-texture.1/metadata.json",
+      "bytes": 2184,
+      "sha256": "d6a220bb7d5bdb9f8df3043a17cad2678af25f933d178aac9592c89a9c2ce132",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-texture.1/page-1.svg",
+      "bytes": 236646,
+      "sha256": "8730995f37747409fbcfa9df7d0743a00ce548d8ba4ba202024d351d124c0405",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.quartet-texture.1/source.ly",
+      "bytes": 2612,
+      "sha256": "140f89a57db14fb7eecaaa88bb7f0d4b857edfd64aa2d64f8fe659032e5bc0c2",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.voice-roles.1/audio.mp3",
+      "bytes": 488638,
+      "sha256": "ee89de8b757d2a21e903fd4be3bdd780de1580c9c8fd35580f5ad204ada07e43",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.voice-roles.1/metadata.json",
+      "bytes": 2198,
+      "sha256": "e57529454205bff9975c7fdd9cc038b44337424788de42e9f8025acbfc05ac3d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.voice-roles.1/page-1.svg",
+      "bytes": 322560,
+      "sha256": "bcb5e648153a974c328e6e09e1687abfaba607e24331418283b411636f76a813",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.quartets.voice-roles.1/source.ly",
+      "bytes": 3531,
+      "sha256": "2d94bb2071b2dabb0e12cd659e36060807062672bb761a5f660be4a135662453",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.motivic-cell.1/audio.mp3",
+      "bytes": 161376,
+      "sha256": "76b8a2bb819959295c89fb9d20c5de44db22a617dc9fe863aeca1ead5cac9666",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.motivic-cell.1/metadata.json",
+      "bytes": 2285,
+      "sha256": "ee4b97578cb6c93f80daac81fe1730a2e908e0ac48e411622ac9c0931fa8ec37",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.motivic-cell.1/page-1.svg",
+      "bytes": 272348,
+      "sha256": "7cc8f5878db38e0cf2f759824b3e59a27d91ce00f4f5298ebfeeb975ace7a3a6",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.motivic-cell.1/source.ly",
+      "bytes": 4712,
+      "sha256": "b6c8282637b8db2ed7d955802270dc3925d9ec724c0aa423d385c3ff563f422d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.orchestration-layers.1/audio.mp3",
+      "bytes": 527508,
+      "sha256": "49cdd7643963418c910431f25bcc08eb2d17438184dd345a33b4a2d013466f0e",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.orchestration-layers.1/metadata.json",
+      "bytes": 2300,
+      "sha256": "081b94840d6278004c7106ef0369d359101428d71aacefe998d1dbb529d59f5c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.orchestration-layers.1/page-1.svg",
+      "bytes": 271563,
+      "sha256": "accaad5e3bcae67a05f2e43ea48a9476a3a119e3f6ebadeeec46f22121c04260",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.composers.beethoven.symphonies.orchestration-layers.1/source.ly",
+      "bytes": 5150,
+      "sha256": "9792c1da8cac22863e49af57e3f64d41cb045b4eb64d624ea7b3929ccda1e916",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.1/audio.mp3",
+      "bytes": 196484,
+      "sha256": "1989ab42eaa71eba02e4ced13e35306b518761d4c7dd228acc7300222b9e4fc9",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.1/metadata.json",
+      "bytes": 2177,
+      "sha256": "98d5b5dacd7ba880189f8c154b5400bf22d7ff0653fe4ab05aa92d5f15f33a8a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.1/page-1.svg",
+      "bytes": 122258,
+      "sha256": "93108c81ce466e2311b8d4d1f73d7f485cb0887a1a45706dcd2c2933bb53f33d",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.1/source.ly",
+      "bytes": 1698,
+      "sha256": "8532683c7ba4b9480b5f814995178f75acf5d53c1f88c6026b7d8e60c142cfc7",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.2/audio.mp3",
+      "bytes": 224906,
+      "sha256": "44fd9d927a3e9af3da9b09617ee3e91ed6ee47d94e6452050558570da56ea473",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.2/metadata.json",
+      "bytes": 2188,
+      "sha256": "6abb741f928d8f758be5812a1246daa9ec57b10d5f994d74cc5aea5f4e233467",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.2/page-1.svg",
+      "bytes": 172626,
+      "sha256": "bc7778fe68c4bd032e7464d6427687215def594c016fc08a71b6ca31d75dfd8f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.motivic-transformation.2/source.ly",
+      "bytes": 2286,
+      "sha256": "916d6383a3cbc5cd181135ddf1aa333b40a344b5b5c54d275cd4d735d4789655",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.1/audio.mp3",
+      "bytes": 180184,
+      "sha256": "90398906ad328232134dafb2cc9cd53ff91da3f9868771ae164c6d652c94902c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.1/metadata.json",
+      "bytes": 2151,
+      "sha256": "dc62ded94c6f58eea5cc37e9c379e5ad2ece69c289c1f9844a818f7b5845a93a",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.1/page-1.svg",
+      "bytes": 103403,
+      "sha256": "89dc3d692b665b22fac0b7e00edc0eb13183d1c74ac3239899d481930accb6f4",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.1/source.ly",
+      "bytes": 1564,
+      "sha256": "d39106e1d47df15cfdd3e838dd17c73d143fbda05f8621b77406e6656b097277",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.2/audio.mp3",
+      "bytes": 224070,
+      "sha256": "f45e1da81e31d9065d11c32a7173e6d327ea2db4a914f1a247400e1d3d0b71ca",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.2/metadata.json",
+      "bytes": 2166,
+      "sha256": "01c90905d40dd94ae67c56cb24e9b57297b92e297f748a9d1e582c88c90f7bf8",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.2/page-1.svg",
+      "bytes": 302855,
+      "sha256": "518af9745cae925802c4b8353ce8a8da0efc2d5b02951b685d18b526377c713f",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.postponing-the-cadence.2/source.ly",
+      "bytes": 1975,
+      "sha256": "af395ed43f2fce4cec70235954ea726cbd9b6f9a6b502de5a8f54c54bb1d7e32",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.1/audio.mp3",
+      "bytes": 341934,
+      "sha256": "bc159a386f261f02a93399742456f8fabe6135f068a1ad550ac3d53046640e2b",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.1/metadata.json",
+      "bytes": 2167,
+      "sha256": "3c8a99133c58c94ea54462d33ed29ffcb08509bf3e387d3620761a9d32d03c9c",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.1/page-1.svg",
+      "bytes": 154623,
+      "sha256": "f0287a46b0e99d7e08d92d24f9a092eab2e67a77934fe2a3ca143b2048b85ffe",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.1/source.ly",
+      "bytes": 2014,
+      "sha256": "d415492507128e98e01341bd8b6780090d3bf6f87a7ac8edc5ef13befef0f847",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.2/audio.mp3",
+      "bytes": 174333,
+      "sha256": "5d07ce9f684a498d1b285b7362dd640e9418f97ce42bd52c4d99c832af5a98c6",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.2/metadata.json",
+      "bytes": 2153,
+      "sha256": "ca5519ca3a7aa5e0f1f54a24316c8bc6344f47e8193549467626b6a4e06f15a7",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.2/page-1.svg",
+      "bytes": 109807,
+      "sha256": "5d11999baa6ada0872ecca6432c76a6037f5a23ff10b121d30caaf2f3ab78346",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.2/source.ly",
+      "bytes": 1127,
+      "sha256": "ae9913d088394bd9ee0759b09663f9b7b1cf643376e1dedfdcae88f5fd778862",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.3/audio.mp3",
+      "bytes": 423018,
+      "sha256": "073fb4f70ee302cd6480fb3b8a458ac287365547599190e00749516f02da58ad",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.3/metadata.json",
+      "bytes": 2193,
+      "sha256": "de0f8ecd41892e187b2cf409323ddceec28f4e978e9d9f7d0deb5dde071449da",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.3/page-1.svg",
+      "bytes": 297783,
+      "sha256": "d9a6f102ea584f8f0b30e9e0766a88f00d73ee61f410ab48a33a6e0915f58dea",
+      "match": true
+    },
+    {
+      "path": "public/notation/notation.techniques.variation-technique.3/source.ly",
+      "bytes": 4117,
+      "sha256": "eb74095efe5174b4bb507e4f1c2bfe758468944b3e970619bbdbe9e1eda9ed75",
+      "match": true
+    },
+    {
+      "path": "techniques/index.md",
+      "bytes": 1509,
+      "sha256": "8f9c43458f1306d1fedb4959e51ffa0a037d5d96812dd0267de79515e202cd1b",
+      "match": true
+    },
+    {
+      "path": "techniques/motivic-transformation.md",
+      "bytes": 11370,
+      "sha256": "2c1a3554f6e9d6c6a29207edef8998bf2d87f74862062f4dd8d2e0761da14e3d",
+      "match": true
+    },
+    {
+      "path": "techniques/postponing-the-cadence.md",
+      "bytes": 11666,
+      "sha256": "93f264a2fe0f744103fb737b5549001d131ce8021c1404cd59eb9154b7f4c1b7",
+      "match": true
+    },
+    {
+      "path": "techniques/variation-technique.md",
+      "bytes": 16929,
+      "sha256": "fdaa8ad42b2b5cadf782c3c2abf4773bb56bc99ada379bd2528d6e3c79baafad",
+      "match": true
+    }
+  ]
+}
