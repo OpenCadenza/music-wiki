@@ -1,7 +1,7 @@
 # 音乐知识库
 
 > **音乐学者子代理方案开发分支**：代码与研究文档由同一个仓库管理。
-> 接手前请先阅读 [local/README.md](local/README.md)，取得并校验资料包，解压到仓库根目录后继续工作。
+> 接手前请先阅读 [local/README.md](local/README.md)，从[Google Drive下载资料包](https://drive.google.com/file/d/18csDqCQFRM1LOUsRHQzZy98XmUS_deS2/view?usp=sharing)，校验并解压到仓库根目录后继续工作。
 > 本分支不整体合并到main；正式发布另行选择审核通过的正文改动。当前仅完成交接准备，尚未启动正式写作。
 
 > 当前处于资料预备与重建阶段。旧 content 已保存完整本地归档，正式轮首批就绪后替换；

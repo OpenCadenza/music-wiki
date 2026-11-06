@@ -13,7 +13,7 @@ cd music-wiki
 
 已有克隆则先处理自己的未提交改动，再 fetch 并切换这个分支。一个仓库同时维护多个方案时，使用独立工作目录，不覆盖其他分支的研究资料。
 
-向维护者取得 `music-wiki-resources-2026-11-07.zip`。文件名、字节数、SHA-256、目录数量和基线提交见[资料包.json](资料包.json)。压缩包使用 ZIP64；推荐下面的 Python 脚本处理，不依赖各平台解压软件对长路径和大ZIP的支持。
+资料包已由维护者上传到[Google Drive下载页面](https://drive.google.com/file/d/18csDqCQFRM1LOUsRHQzZy98XmUS_deS2/view?usp=sharing)。打开页面并下载，保存为 `music-wiki-resources-2026-11-07.zip`；随后按第2节校验并解压到仓库根目录，再接手工作。文件名、字节数、SHA-256、目录数量和基线提交见[资料包.json](资料包.json)。压缩包使用 ZIP64；推荐下面的 Python 脚本处理，不依赖各平台解压软件对长路径和大ZIP的支持。
 
 ## 2. 校验并解压，然后接手工作
 
@@ -82,9 +82,9 @@ python local/workbench/tools/handoff_bundle.py verify --archive "D:/收到的资
 git push -u origin 音乐学者子代理方案-开发分支
 ```
 
-将资料包单独发送给有权访问资料的团队成员，同时指向本分支此版本的资料包描述。GitHub只同步文档、研究记录、工具、轻量索引和正文。
+向团队成员发送上面的Google Drive下载链接，同时指向本分支此版本的资料包描述；维护者应确保接手成员有权访问该云盘文件。GitHub只同步文档、研究记录、工具、轻量索引和正文。
 
-当前一份版本化压缩包适合首次交接。后续多人频繁新增资料时，可以把资料包放到团队共享存储，固定文件名版本与SHA-256并提供稳定下载链接；仅同步新增资料或定期出新包。资料库再持续增长时再考虑DVC／对象存储，不必现在把4.34GB资料及每次变动都放进普通Git历史。
+当前版本化压缩包通过Google Drive共享，适合首次交接。后续多人频繁新增资料时，继续固定资料包版本与SHA-256，并更新下载链接；仅同步新增资料或定期出新包。资料库再持续增长时再考虑DVC／对象存储，不必现在把4.34GB资料及每次变动都放进普通Git历史。
 
 
 已核对的GitHub限制：普通Git拒绝大于100MiB的文件（[官方说明](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository)）；Release每个附件必须小于2GiB（[官方说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)）。本包约3.85GB，不提交Git，也不能作为单个Release附件上传。当前直接发送或共享存储即可；确需Release时先分卷并提供重组与校验说明。

@@ -6,7 +6,7 @@
 
 ## 接手前先解压资料包
 
-仅克隆分支还没有资料全文。请取得 **music-wiki-resources-2026-11-07.zip**，按[团队接手步骤](docs/交接/README.md)校验并解压到**仓库根目录**，再接手研究工作。压缩包内已经含 `local/` 层级，不能解压到 `local/` 里，否则会多出一层 local/local。
+仅克隆分支还没有资料全文。请从[Google Drive下载资料包](https://drive.google.com/file/d/18csDqCQFRM1LOUsRHQzZy98XmUS_deS2/view?usp=sharing)，保存为 **music-wiki-resources-2026-11-07.zip**，按[团队接手步骤](docs/交接/README.md)校验并解压到**仓库根目录**，再接手研究工作。压缩包内已经含 `local/` 层级，不能解压到 `local/` 里，否则会多出一层 local/local。
 
 在仓库根目录运行（Python 3.10+，路径替换为收到的文件）：
 
