@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-07",
+  "formal_writing_started": false,
+  "pushed": false,
+  "archive_restore": {
+    "verified_files": 19973,
+    "restored": 19938,
+    "already_identical": 35,
+    "all_file_sha256_and_archive_sha256": "passed"
+  },
+  "bundle_tool_checks": [
+    "round trip",
+    "identical restore",
+    "preserves different local files",
+    "rejects unsafe extraction paths",
+    "rejects corrupt archive"
+  ],
+  "local_link_checks": {
+    "checked": 341,
+    "missing": 0
+  },
+  "git": {
+    "local_history_preserved": true,
+    "main_baseline_preserved": true,
+    "nested_local_git": false,
+    "tracked_resource_indexes": 35,
+    "heavy_resources_and_bundle_tracked": false,
+    "catalog_index_bytes_match_archive": true,
+    "staged_diff_check": "passed",
+    "content_changed": false,
+    "largest_tracked_files": [
+      {
+        "path": "local/docs/实施记录/2026-10-28-预备轮/导入摘要清单.jsonl",
+        "bytes": 3608211
+      },
+      {
+        "path": "local/docs/实施记录/2026-10-28-预备轮/原资料清单.json",
+        "bytes": 1808861
+      },
+      {
+        "path": "local/resources/catalog/parts/text/sources/mutopia.md",
+        "bytes": 1061937
+      },
+      {
+        "path": "local/resources/catalog/parts/text/index.json",
+        "bytes": 190695
+      },
+      {
+        "path": "local/docs/sources.md",
+        "bytes": 130991
+      }
+    ]
+  },
+  "original_checkout": "Preserved; main still has the pre-existing README.md modification"
+}

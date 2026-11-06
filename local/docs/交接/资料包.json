@@ -1,0 +1,31 @@
+{
+  "format": 1,
+  "created_date": "2026-11-07",
+  "archive": "music-wiki-resources-2026-11-07.zip",
+  "archive_bytes": 3849130259,
+  "archive_sha256": "0487ab33f71e093a7c25902bab5b3f1f48e8e478bd013ea4de7811fd98374743",
+  "manifest_path": "_handoff/materials-manifest.json",
+  "manifest_sha256": "1e0f89026babd32bd819af2d41368c4505df0e361fdd2af79c5ed3f665c69e7c",
+  "directories": {
+    "origin_resources": {
+      "files": 12945,
+      "bytes": 2962015986
+    },
+    "resources": {
+      "files": 7028,
+      "bytes": 1376307114
+    }
+  },
+  "total_files": 19973,
+  "total_uncompressed_bytes": 4338323100,
+  "extract_into": "repository root; preserves local/origin_resources and local/resources",
+  "excluded": [
+    "local/.git",
+    "local/materials",
+    "local/archive",
+    "OCR runtime logs",
+    "credentials"
+  ],
+  "source_main_commit": "bfc5f5759ad1f86bdf69a4c54cd0c4f224823de1",
+  "source_local_commit": "05279981ba5150e5603d2f8769248cb254afaf26"
+}

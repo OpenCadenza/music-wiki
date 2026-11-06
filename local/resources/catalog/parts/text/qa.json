@@ -1,0 +1,101 @@
+{
+  "scope": "五份本地可读性抽样；检查正文/谱编码、图像路径和来源映射，不做音乐学事实核验。",
+  "samples": [
+    {
+      "kind": "textbook_chapter",
+      "source": "open-music-theory",
+      "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo.md",
+      "origin": "sources/open-music-theory/raw/openmusictheory.github.io-master.zip :: openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+      "readable": true,
+      "listed_in_official_table_of_contents": true,
+      "linked_image": {
+        "markdown_target": "Graphics/BCModel.png",
+        "copy_exists": true,
+        "origin_member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png"
+      },
+      "note": "旧版 OMT 章节正文；本地化仅改写站内链接，原 ZIP 保留。"
+    },
+    {
+      "kind": "analysis_html",
+      "source": "music-theory-online",
+      "copy": "text/organized-html/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.md",
+      "raw_html_copy": "text/source-copies/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+      "origin": "sources/music-theory-online/raw/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+      "origin_exists": true,
+      "source_manifest_reference": {
+        "url": "https://mtosmt.org/ (作者论文；具体路径需从论文元数据核对)",
+        "status": "cached-copy",
+        "bytes": 158589,
+        "sha256": "1119934417edfd1ecc54b4c58be5f76ffd7ef163c5073c20372695641aa7ae0f"
+      },
+      "visible_text_chars": 86704,
+      "preview": "# MTO 22.2: Cohn, A Platonic Model of Funky Rhythms\n\n> 来源 HTML：[原件副本](../../source-copies/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.html)；[原始文件](../../../../origin_resources/sources/music-theory-online/raw/cohn-2016-funky",
+      "is_error_page": false,
+      "image_links": [],
+      "image_paths_valid": true,
+      "missing_local_image_refs": 36,
+      "readable": true
+    },
+    {
+      "kind": "instrument_html",
+      "source": "philharmonia",
+      "copy": "text/organized-html/philharmonia/instruments/flute.md",
+      "raw_html_copy": "text/source-copies/philharmonia/instruments/flute.html",
+      "origin": "sources/philharmonia/raw/instruments/flute.html",
+      "origin_exists": true,
+      "source_manifest_reference": {
+        "url": "https://philharmonia.co.uk/resources/instruments/flute/",
+        "status": "downloaded",
+        "bytes": 101928,
+        "sha256": "6100d93bdb6145f56b5bdd2184c4b0130e467c94e397d6bde7710712f698fdd5"
+      },
+      "visible_text_chars": 4251,
+      "preview": "# Flute | Philharmonia\n\n> 来源 HTML：[原件副本](../../../source-copies/philharmonia/instruments/flute.html)；[原始文件](../../../../../origin_resources/sources/philharmonia/raw/instruments/flute.html)。此整理副本保留标题、段落、列表、表格、图像和链接；原 HTML 保留供核对。\n\n# Flute\n\nTh",
+      "is_error_page": false,
+      "image_links": [],
+      "image_paths_valid": true,
+      "missing_local_image_refs": 0,
+      "readable": true
+    },
+    {
+      "kind": "work_version_html",
+      "source": "beethoven-analysis-keyboard",
+      "copy": "text/organized-html/beethoven-analysis-keyboard/barry-op131-teleology-1990.md",
+      "raw_html_copy": "text/source-copies/beethoven-analysis-keyboard/barry-op131-teleology-1990.html",
+      "origin": "sources/beethoven-analysis-keyboard/raw/barry-op131-teleology-1990.html",
+      "origin_exists": true,
+      "source_manifest_reference": {
+        "url": "https://symposium.music.org/30/articles/teleology-and-structural-determinants-in-beethovens-c-minor-quartet-op-131",
+        "status": "downloaded",
+        "bytes": 95940,
+        "sha256": "846a0b27a531eb1a47b2e8eebd749b57a32028b4d10351d98ee57859cf2b11f8",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "visible_text_chars": 43434,
+      "preview": "# Teleology and Structural Determinants in Beethoven's C# Minor Quartet, Op. 131 - College Music Symposium\n\n> 来源 HTML：[原件副本](../../source-copies/beethoven-analysis-keyboard/barry-op131-teleology-1990.html)；[原始文件](../../../../origin_resource",
+      "is_error_page": false,
+      "image_links": [],
+      "image_paths_valid": true,
+      "missing_local_image_refs": 0,
+      "readable": true
+    },
+    {
+      "kind": "kern_score",
+      "source": "beethoven-score-sources",
+      "copy": "scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/beethoven-piano-sonatas-main/kern/sonata01-1.krn",
+      "origin_archive": "sources/beethoven-score-sources/raw/beethoven-piano-sonatas-main.zip",
+      "archive_member": "beethoven-piano-sonatas-main/kern/sonata01-1.krn",
+      "copy_sha256": "3b0b9a193d2d5668bb0fb552014cb19902637065a8f2e4db0b56344828c7f6a2",
+      "has_kern_spine": true,
+      "has_note_tokens": true,
+      "readable": true
+    }
+  ],
+  "dcml_provenance": {
+    "matched_files": 351,
+    "unmatched_files": 0,
+    "manifest": "scores/dcml-abc/manifest.json"
+  },
+  "result": "pass"
+}

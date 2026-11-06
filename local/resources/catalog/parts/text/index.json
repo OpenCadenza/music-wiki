@@ -1,0 +1,3761 @@
+{
+  "scope": "初步整理和可发现性；不是全文阅读、音乐分析或逐条事实核验",
+  "source_root": "E:\\github\\music-wiki\\local\\origin_resources",
+  "counts": {
+    "sources": 26,
+    "readable_text_copies": 76,
+    "associated_image_assets": 9,
+    "readable_assets": 85,
+    "excluded_text_assets": 0,
+    "archives": 9,
+    "machine_readable_score_files": 2065,
+    "score_packages": 5,
+    "cleaned_html_documents": 58
+  },
+  "sources": [
+    {
+      "source": "abcnotation",
+      "entries": 5,
+      "statuses": {
+        "downloaded": 4,
+        "not-bulk-downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/abcnotation.md"
+    },
+    {
+      "source": "abcplus",
+      "entries": 42,
+      "statuses": {
+        "reused-existing": 41,
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/abcplus.md"
+    },
+    {
+      "source": "alan-belkin",
+      "entries": 3,
+      "statuses": {
+        "downloaded": 3
+      },
+      "card": "catalog/parts/text/sources/alan-belkin.md"
+    },
+    {
+      "source": "bach-digital",
+      "entries": 1,
+      "statuses": {
+        "blocked": 1
+      },
+      "card": "catalog/parts/text/sources/bach-digital.md"
+    },
+    {
+      "source": "beethoven-analysis-chamber",
+      "entries": 10,
+      "statuses": {
+        "downloaded": 5,
+        "unavailable": 2,
+        "unavailable_after_two_web_timeouts": 1,
+        "read_online_not_cached": 2
+      },
+      "card": "catalog/parts/text/sources/beethoven-analysis-chamber.md"
+    },
+    {
+      "source": "beethoven-analysis-keyboard",
+      "entries": 17,
+      "statuses": {
+        "downloaded": 9,
+        "failed": 2,
+        "read_online_not_cached": 5,
+        "available_in_project_corpus": 1
+      },
+      "card": "catalog/parts/text/sources/beethoven-analysis-keyboard.md"
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "entries": 26,
+      "statuses": {
+        "downloaded": 19,
+        "unavailable": 7
+      },
+      "card": "catalog/parts/text/sources/beethoven-analysis-orchestral.md"
+    },
+    {
+      "source": "beethoven-context",
+      "entries": 15,
+      "statuses": {
+        "failed": 7,
+        "cached": 8
+      },
+      "card": "catalog/parts/text/sources/beethoven-context.md"
+    },
+    {
+      "source": "beethoven-score-sources",
+      "entries": 11,
+      "statuses": {
+        "downloaded": 11
+      },
+      "card": "catalog/parts/text/sources/beethoven-score-sources.md"
+    },
+    {
+      "source": "chopin-online",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/chopin-online.md"
+    },
+    {
+      "source": "dcml",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/dcml.md"
+    },
+    {
+      "source": "humdrum",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/humdrum.md"
+    },
+    {
+      "source": "imslp",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/imslp.md"
+    },
+    {
+      "source": "josquin",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/josquin.md"
+    },
+    {
+      "source": "lilypond-snippets",
+      "entries": 5,
+      "statuses": {
+        "downloaded": 5
+      },
+      "card": "catalog/parts/text/sources/lilypond-snippets.md"
+    },
+    {
+      "source": "mit-ocw",
+      "entries": 10,
+      "statuses": {
+        "downloaded": 10
+      },
+      "card": "catalog/parts/text/sources/mit-ocw.md"
+    },
+    {
+      "source": "music-theory-online",
+      "entries": 12,
+      "statuses": {
+        "cached-copy": 12
+      },
+      "card": "catalog/parts/text/sources/music-theory-online.md"
+    },
+    {
+      "source": "mutopia",
+      "entries": 4241,
+      "statuses": {
+        "reused-existing": 4239,
+        "local-index": 1,
+        "cached": 1
+      },
+      "card": "catalog/parts/text/sources/mutopia.md"
+    },
+    {
+      "source": "open-music-theory",
+      "entries": 4,
+      "statuses": {
+        "downloaded": 1,
+        "failed": 3
+      },
+      "card": "catalog/parts/text/sources/open-music-theory.md"
+    },
+    {
+      "source": "openscore-lieder",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/openscore-lieder.md"
+    },
+    {
+      "source": "openscore-stringquartets",
+      "entries": 1,
+      "statuses": {
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/openscore-stringquartets.md"
+    },
+    {
+      "source": "partimenti",
+      "entries": 11,
+      "statuses": {
+        "downloaded": 9,
+        "unconfirmed_candidate": 2
+      },
+      "card": "catalog/parts/text/sources/partimenti.md"
+    },
+    {
+      "source": "pdmx",
+      "entries": 4,
+      "statuses": {
+        "cached": 3,
+        "downloaded": 1
+      },
+      "card": "catalog/parts/text/sources/pdmx.md"
+    },
+    {
+      "source": "philharmonia",
+      "entries": 12,
+      "statuses": {
+        "downloaded": 12
+      },
+      "card": "catalog/parts/text/sources/philharmonia.md"
+    },
+    {
+      "source": "rubin-composition",
+      "entries": 2,
+      "statuses": {
+        "failed": 2
+      },
+      "card": "catalog/parts/text/sources/rubin-composition.md"
+    },
+    {
+      "source": "the-session",
+      "entries": 2,
+      "statuses": {
+        "cached": 1,
+        "excluded": 1
+      },
+      "card": "catalog/parts/text/sources/the-session.md"
+    }
+  ],
+  "omt": {
+    "status": "extracted-readable-subset",
+    "count": 500,
+    "ignored": 153,
+    "ignored_reasons": {
+      "非阅读文本或图像格式": 153
+    },
+    "errors": [],
+    "guide": "text/open-music-theory/README.md",
+    "copies": [
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/404.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/404.md",
+        "bytes": 48
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/GDrive.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/GDrive.md",
+        "bytes": 562
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+        "bytes": 52160
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Bach1033.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Bach1033.png",
+        "bytes": 110472
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/C4toC3.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/C4toC3.png",
+        "bytes": 12068
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/C4toC5.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/C4toC5.png",
+        "bytes": 12864
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid1.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid1.png",
+        "bytes": 9564
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid1.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid1.svg",
+        "bytes": 42772
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid3.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid3.png",
+        "bytes": 10908
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid3.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-hybrid3.svg",
+        "bytes": 46285
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-sent.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-sent.png",
+        "bytes": 9718
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-sent.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16period-sent.svg",
+        "bytes": 39015
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16sentence.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16sentence.png",
+        "bytes": 17970
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16sentence.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/16sentence.svg",
+        "bytes": 43512
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid1.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid1.png",
+        "bytes": 12475
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid1.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid1.svg",
+        "bytes": 31904
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid2.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid2.png",
+        "bytes": 11257
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid2.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid2.svg",
+        "bytes": 33131
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid3.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid3.png",
+        "bytes": 6312
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid3.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid3.svg",
+        "bytes": 37032
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid4.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid4.png",
+        "bytes": 4899
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid4.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/hybrid4.svg",
+        "bytes": 34449
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/period.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/period.png",
+        "bytes": 3662
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/period.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/period.svg",
+        "bytes": 22491
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/sentence.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/sentence.png",
+        "bytes": 5197
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/sentence.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/sentence.svg",
+        "bytes": 24186
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallBinary.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallBinary.png",
+        "bytes": 3775
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallBinary.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallBinary.svg",
+        "bytes": 25061
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallTernary.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallTernary.png",
+        "bytes": 6036
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallTernary.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ClassicalThemes/smallTernary.svg",
+        "bytes": 27018
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/D7ofV.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/D7ofV.png",
+        "bytes": 10693
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/D7p.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/D7p.png",
+        "bytes": 8733
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/DMUDB.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/DMUDB.png",
+        "bytes": 108648
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/F3toG4-alto.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/F3toG4-alto.png",
+        "bytes": 12916
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Handouts/HarmoniesByBassScaleDegree.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Handouts/HarmoniesByBassScaleDegree.md",
+        "bytes": 7040
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/HaydnXVI27.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/HaydnXVI27.png",
+        "bytes": 87847
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/4-2chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/4-2chords.png",
+        "bytes": 17473
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/4-3chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/4-3chords.png",
+        "bytes": 17410
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/5-3chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/5-3chords.png",
+        "bytes": 14913
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-3chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-3chords.png",
+        "bytes": 16616
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-4chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-4chords.png",
+        "bytes": 17362
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-5chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/6-5chords.png",
+        "bytes": 17350
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/7chords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Inversions/7chords.png",
+        "bytes": 16062
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/K465-iv.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/K465-iv.png",
+        "bytes": 159013
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/KBtypesettingDemo.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/KBtypesettingDemo.ly",
+        "bytes": 3390
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/N-AugSixths.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/N-AugSixths.png",
+        "bytes": 74829
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Op109-iii.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Op109-iii.png",
+        "bytes": 274842
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Op119-1.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Op119-1.png",
+        "bytes": 60473
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Schemata/Haydn27fonte.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Schemata/Haydn27fonte.png",
+        "bytes": 64828
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Schemata/Haydn27fonteAnnotated.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/Schemata/Haydn27fonteAnnotated.png",
+        "bytes": 88771
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/accidentals.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/accidentals.png",
+        "bytes": 9674
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSBassLines-inClass.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSBassLines-inClass.ly",
+        "bytes": 3229
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSChords.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSChords.ly",
+        "bytes": 3164
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex1.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex1.png",
+        "bytes": 13791
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex2.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex2.png",
+        "bytes": 12926
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex3.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex3.png",
+        "bytes": 14396
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex4.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex4.png",
+        "bytes": 12469
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex5.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex5.png",
+        "bytes": 15661
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex6.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex6.png",
+        "bytes": 12469
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex7.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex7.png",
+        "bytes": 14465
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex8.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/alteredSExamples/Ex8.png",
+        "bytes": 12262
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/altoClef.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/altoClef.png",
+        "bytes": 8133
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/appliedChordBassLine.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/appliedChordBassLine.ly",
+        "bytes": 3031
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/appliedChordBassLine.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/appliedChordBassLine.png",
+        "bytes": 18927
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/bassClef.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/bassClef.png",
+        "bytes": 7471
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/beams.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/beams.png",
+        "bytes": 9722
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadences.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadences.ly",
+        "bytes": 3312
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64-7th.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64-7th.png",
+        "bytes": 19381
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64-full.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64-full.png",
+        "bytes": 19450
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Cadential64.png",
+        "bytes": 18815
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Compound43-full.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Compound43-full.png",
+        "bytes": 19651
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Compound43.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Compound43.png",
+        "bytes": 17625
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Double.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/cadences/Double.png",
+        "bytes": 20567
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/chromaticscale.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/chromaticscale.png",
+        "bytes": 19795
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/circleOfFifths-minor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/circleOfFifths-minor.png",
+        "bytes": 105709
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/circleOfFifths.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/circleOfFifths.png",
+        "bytes": 108996
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/clefs.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/clefs.png",
+        "bytes": 54391
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/counterpoint/CF-Schenker.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/counterpoint/CF-Schenker.png",
+        "bytes": 13876
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/counterpoint/cantusFirmi.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/counterpoint/cantusFirmi.ly",
+        "bytes": 3472
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/defaultFigures.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/defaultFigures.ly",
+        "bytes": 2946
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/defaultFigures.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/defaultFigures.png",
+        "bytes": 33165
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/dots.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/dots.png",
+        "bytes": 18562
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/duplets.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/duplets.png",
+        "bytes": 14902
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/durations.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/durations.png",
+        "bytes": 47066
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/INT.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/INT.png",
+        "bytes": 7344
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/anticipation.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/anticipation.png",
+        "bytes": 8052
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/appoggiatura.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/appoggiatura.png",
+        "bytes": 9888
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/doubleNeighbor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/doubleNeighbor.png",
+        "bytes": 8130
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/escapeTone.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/escapeTone.png",
+        "bytes": 10126
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/neighborTone.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/neighborTone.png",
+        "bytes": 7197
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/passingTone.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/passingTone.png",
+        "bytes": 7176
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/retardation.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/retardation.png",
+        "bytes": 9286
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/suspension.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/suspension.png",
+        "bytes": 8656
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/syncopatedNote.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/embellishingTones/syncopatedNote.png",
+        "bytes": 32778
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsAlto.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsAlto.png",
+        "bytes": 17439
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsBass.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsBass.png",
+        "bytes": 17374
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsTenor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsTenor.png",
+        "bytes": 17276
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsTreble.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/flatsTreble.png",
+        "bytes": 19338
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/Haydn27fonteAnnotated.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/Haydn27fonteAnnotated.png",
+        "bytes": 88771
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/TR.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/TR.png",
+        "bytes": 233390
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/ant_cad.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/ant_cad.xml",
+        "bytes": 72186
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/beethoven_18_2.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/beethoven_18_2.xml",
+        "bytes": 57371
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/beethovenop30.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/beethovenop30.xml",
+        "bytes": 33226
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/haydn, xv27.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/haydn, xv27.xml",
+        "bytes": 38589
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k284-ii.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k284-ii.xml",
+        "bytes": 95348
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k309.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k309.xml",
+        "bytes": 96921
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k330.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k330.xml",
+        "bytes": 113581
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k332.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k332.xml",
+        "bytes": 70949
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k498.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/k498.xml",
+        "bytes": 137832
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/mozart, k283.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/mozart, k283.xml",
+        "bytes": 2370507
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/mozart, k330,ii.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/mozart, k330,ii.xml",
+        "bytes": 51797
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/op2no3.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/op2no3.xml",
+        "bytes": 94498
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/sym101.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/sym101.xml",
+        "bytes": 28592
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/sym40.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/XML/sym40.xml",
+        "bytes": 108918
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/antecedent.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/antecedent.png",
+        "bytes": 71427
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/beethoven_18_2.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/beethoven_18_2.png",
+        "bytes": 117105
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/beethoven_op30.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/beethoven_op30.png",
+        "bytes": 103634
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/cadentialDeferral.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/cadentialDeferral.png",
+        "bytes": 223391
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/fonte.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/fonte.png",
+        "bytes": 67899
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/haydn-III-66-ii.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/haydn-III-66-ii.png",
+        "bytes": 116248
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/haydn-XVI-35-i.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/haydn-XVI-35-i.png",
+        "bytes": 143483
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k283-presentation.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k283-presentation.png",
+        "bytes": 73910
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k283.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k283.png",
+        "bytes": 152528
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k284-ii.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k284-ii.png",
+        "bytes": 337829
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k284.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k284.png",
+        "bytes": 438796
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k305.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k305.png",
+        "bytes": 1067254
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k309.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k309.png",
+        "bytes": 196127
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k330-ii.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k330-ii.png",
+        "bytes": 162165
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k330.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k330.png",
+        "bytes": 309441
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k332-ii.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k332-ii.png",
+        "bytes": 350994
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k332.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k332.png",
+        "bytes": 171455
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k494.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k494.png",
+        "bytes": 204313
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k498.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/k498.png",
+        "bytes": 495711
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/medialCaesura.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/medialCaesura.png",
+        "bytes": 240061
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/meyer.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/meyer.png",
+        "bytes": 51341
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/monte.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/monte.png",
+        "bytes": 79456
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/op18-2-iv.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/op18-2-iv.png",
+        "bytes": 91934
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/op2no3.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/op2no3.png",
+        "bytes": 136975
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/phraseExpansion.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/phraseExpansion.png",
+        "bytes": 514123
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/prinner.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/prinner.png",
+        "bytes": 52767
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/standingonV.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/standingonV.png",
+        "bytes": 447094
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/subphraseExpansion.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/subphraseExpansion.png",
+        "bytes": 171378
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/sym101.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/sym101.png",
+        "bytes": 73431
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/sym40.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/sym40.png",
+        "bytes": 305796
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/xv27.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/form/xv27.png",
+        "bytes": 132363
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/functions.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/functions.ly",
+        "bytes": 2986
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/Champagne.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/Champagne.png",
+        "bytes": 18639
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D4i.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D4i.png",
+        "bytes": 19122
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D5dropFifth.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D5dropFifth.png",
+        "bytes": 16695
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D5problem.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/D5problem.png",
+        "bytes": 16522
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/FunctionalBassFunctions.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/FunctionalBassFunctions.png",
+        "bytes": 47861
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/InterpretedFunctionalBass.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/InterpretedFunctionalBass.png",
+        "bytes": 45912
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/ParallelTenths.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/ParallelTenths.png",
+        "bytes": 18503
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/PinkChampagne.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/PinkChampagne.png",
+        "bytes": 18478
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/RNsFunctionalProlongation.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/RNsFunctionalProlongation.png",
+        "bytes": 46862
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/RNsIndividualFunctions.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/RNsIndividualFunctions.png",
+        "bytes": 47125
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/S4dropThird.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/S4dropThird.png",
+        "bytes": 18761
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/S4problem.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/S4problem.png",
+        "bytes": 18681
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/T1dropFifth.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/T1dropFifth.png",
+        "bytes": 16332
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/VE63.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/VE63.png",
+        "bytes": 17992
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/VE64.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/VE64.png",
+        "bytes": 18551
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/XVI-21-prolongation.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/XVI-21-prolongation.png",
+        "bytes": 105518
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/Data/Hardcover_bullet_black-13.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/Data/Hardcover_bullet_black-13.png",
+        "bytes": 7007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview-micro.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview-micro.jpg",
+        "bytes": 1101
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview-web.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview-web.jpg",
+        "bytes": 5117
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-RNs.pages/preview.jpg",
+        "bytes": 45565
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-functions.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-functions.png",
+        "bytes": 94587
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-leadSheet.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-leadSheet.png",
+        "bytes": 34606
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/Data/Hardcover_bullet_black-13.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/Data/Hardcover_bullet_black-13.png",
+        "bytes": 7007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview-micro.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview-micro.jpg",
+        "bytes": 920
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview-web.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview-web.jpg",
+        "bytes": 2591
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds-triads.pages/preview.jpg",
+        "bytes": 20453
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/Data/Hardcover_bullet_black-13.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/Data/Hardcover_bullet_black-13.png",
+        "bytes": 7007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview-micro.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview-micro.jpg",
+        "bytes": 909
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview-web.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview-web.jpg",
+        "bytes": 2368
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/circleOfThirds.pages/preview.jpg",
+        "bytes": 18521
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/deceptive.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/deceptive.png",
+        "bytes": 16417
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/deceptive7.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/deceptive7.png",
+        "bytes": 16878
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresAbbrev.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresAbbrev.png",
+        "bytes": 21580
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresBasic.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresBasic.ly",
+        "bytes": 3179
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresChrom.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresChrom.png",
+        "bytes": 20709
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresFull.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/figuresFull.png",
+        "bytes": 22590
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/k331-reduction.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/k331-reduction.ly",
+        "bytes": 5721
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/k331-reduction.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/k331-reduction.png",
+        "bytes": 184071
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/keyboardExercises.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/keyboardExercises.ly",
+        "bytes": 5062
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/modEx.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/modEx.png",
+        "bytes": 6960
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/modulationExample.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/modulationExample.ly",
+        "bytes": 3597
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/pivot.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/pivot.png",
+        "bytes": 11070
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/subsidiaryProgression.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/harmony/subsidiaryProgression.png",
+        "bytes": 44419
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/C4E4.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/C4E4.png",
+        "bytes": 10439
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/compound.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/compound.png",
+        "bytes": 10940
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/contrary.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/contrary.png",
+        "bytes": 17229
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/intervalTable.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/intervalTable.png",
+        "bytes": 27899
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/inversion.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/inversion.png",
+        "bytes": 10532
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/motionTypes.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/motionTypes.ly",
+        "bytes": 2451
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/oblique1.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/oblique1.png",
+        "bytes": 17158
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/oblique2.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/oblique2.png",
+        "bytes": 16378
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/parallel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/parallel.png",
+        "bytes": 17434
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/similar.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/similar.png",
+        "bytes": 17473
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/thirds.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/thirds.png",
+        "bytes": 11190
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-fourths.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-fourths.png",
+        "bytes": 13182007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-seconds.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-seconds.png",
+        "bytes": 13182007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-sevenths.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-sevenths.png",
+        "bytes": 13464937
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-thirds.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/intervals/wnm-thirds.png",
+        "bytes": 13182007
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/inversions.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/inversions.ly",
+        "bytes": 3672
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/keyboardlayout-small.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/keyboardlayout-small.png",
+        "bytes": 34214
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ledgerLines.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ledgerLines.png",
+        "bytes": 73215
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/majorscale.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/majorscale.png",
+        "bytes": 12706
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/melodyWithKS.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/melodyWithKS.png",
+        "bytes": 25810
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/melodyWithoutKS.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/melodyWithoutKS.png",
+        "bytes": 13183
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/minorscale.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/minorscale.png",
+        "bytes": 11060
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/noteillustration.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/noteillustration.png",
+        "bytes": 37594
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/octaveDesignations.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/octaveDesignations.ly",
+        "bytes": 2102
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/pitchesTenor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/pitchesTenor.png",
+        "bytes": 40161
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Ordered-Pitch-Interval.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Ordered-Pitch-Interval.jpg",
+        "bytes": 30641
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-Class-Interval.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-Class-Interval.jpg",
+        "bytes": 35421
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-Space.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-Space.jpg",
+        "bytes": 28424
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-class-Space.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Pitch-class-Space.jpg",
+        "bytes": 34929
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Unordered-Pitch-Interval.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/Unordered-Pitch-Interval.jpg",
+        "bytes": 26542
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/acoustic.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/acoustic.png",
+        "bytes": 11549
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/bartok.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/bartok.png",
+        "bytes": 63374
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/basicRow.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/basicRow.png",
+        "bytes": 33750
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-diatonic.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-diatonic.png",
+        "bytes": 14082
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-tetraChord.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-tetraChord.png",
+        "bytes": 8938
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-tetraChordInverted.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace-tetraChordInverted.png",
+        "bytes": 10158
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/clockFace.png",
+        "bytes": 4083
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/commonTonesUnderTransposition.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/commonTonesUnderTransposition.png",
+        "bytes": 44593
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/commonTonesUnderTransposition2.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/commonTonesUnderTransposition2.png",
+        "bytes": 53783
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/complementAndItsVector.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/complementAndItsVector.png",
+        "bytes": 19754
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/complements.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/complements.png",
+        "bytes": 31016
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/derivedRow.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/derivedRow.png",
+        "bytes": 80289
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/differences.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/differences.png",
+        "bytes": 30750
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/dualDiatonicFaFi.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/dualDiatonicFaFi.png",
+        "bytes": 11690
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/dualDiatonicTeTi.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/dualDiatonicTeTi.png",
+        "bytes": 11618
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/family.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/family.png",
+        "bytes": 79127
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/frenchSixth.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/frenchSixth.png",
+        "bytes": 10686
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/hexatonic.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/hexatonic.png",
+        "bytes": 11467
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/invariance.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/invariance.png",
+        "bytes": 42629
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/inversion.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/inversion.png",
+        "bytes": 188330
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/inversionallyRelated.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/inversionallyRelated.png",
+        "bytes": 22530
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/invertingWithAClock.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/invertingWithAClock.png",
+        "bytes": 70518
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/lower.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/lower.png",
+        "bytes": 15685
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/lowerSymmetry.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/lowerSymmetry.png",
+        "bytes": 26282
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/major.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/major.png",
+        "bytes": 10937
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/melodyDown.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/melodyDown.png",
+        "bytes": 10402
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/melodyUp.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/melodyUp.png",
+        "bytes": 10419
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/minor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/minor.png",
+        "bytes": 11074
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/aeolian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/aeolian.png",
+        "bytes": 10006
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/dorian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/dorian.png",
+        "bytes": 10059
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/ionian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/ionian.png",
+        "bytes": 13919
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/locrian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/locrian.png",
+        "bytes": 10202
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/lydian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/lydian.png",
+        "bytes": 9857
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/mixolydian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/mixolydian.png",
+        "bytes": 9956
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/phrygian.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/modes/phrygian.png",
+        "bytes": 9793
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/octatonic.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/octatonic.png",
+        "bytes": 12424
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/operations.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/operations.png",
+        "bytes": 55949
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pentatonicBlack.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pentatonicBlack.png",
+        "bytes": 11376
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pentatonicWhite.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pentatonicWhite.png",
+        "bytes": 10377
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pitchClassAxes.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/pitchClassAxes.png",
+        "bytes": 124698
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/postTonalCollections.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/postTonalCollections.ly",
+        "bytes": 2825
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/primeForm.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/primeForm.png",
+        "bytes": 92413
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/subjecdtAndReflection.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/subjecdtAndReflection.png",
+        "bytes": 218509
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/sums.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/sums.png",
+        "bytes": 33487
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/t4.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/t4.png",
+        "bytes": 2579
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/t4Measurement.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/t4Measurement.png",
+        "bytes": 23523
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/transposition.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/transposition.png",
+        "bytes": 354630
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/trichordsAndNonachords.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/trichordsAndNonachords.png",
+        "bytes": 94429
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/unorderedPitchClassInt.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/unorderedPitchClassInt.jpg",
+        "bytes": 18693
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/upper.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/upper.png",
+        "bytes": 15524
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/upperSymmetry.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/upperSymmetry.png",
+        "bytes": 25982
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/wholeTone.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/wholeTone.png",
+        "bytes": 11792
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/xCell.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/xCell.png",
+        "bytes": 10322
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/yCell.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/yCell.png",
+        "bytes": 10207
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/zCell.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/postTonal/zCell.png",
+        "bytes": 10383
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/demoMel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/demoMel.png",
+        "bytes": 10938
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/demoMelStaff.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/demoMelStaff.png",
+        "bytes": 10821
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple-Bb.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple-Bb.png",
+        "bytes": 9603
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple-G.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple-G.png",
+        "bytes": 9522
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/duple.png",
+        "bytes": 2686
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/dupleMel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/dupleMel.png",
+        "bytes": 7709
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/protoMelodies.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/protoMelodies.ly",
+        "bytes": 2760
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-Cis.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-Cis.png",
+        "bytes": 13189
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-Es.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-Es.png",
+        "bytes": 12375
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-F.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple-F.png",
+        "bytes": 11298
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadruple.png",
+        "bytes": 3227
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadrupleMel.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/quadrupleMel.png",
+        "bytes": 12101
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/triple.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/protonotation/triple.png",
+        "bytes": 3576
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/rests.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/rests.png",
+        "bytes": 47460
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-harmonicMinor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-harmonicMinor.png",
+        "bytes": 108226
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-melodicMinorAsc.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-melodicMinorAsc.png",
+        "bytes": 107281
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-melodicMinorDesc.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-melodicMinorDesc.png",
+        "bytes": 105253
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-naturalMinor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf-naturalMinor.png",
+        "bytes": 104672
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sdsf.png",
+        "bytes": 104507
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/seventhChordFunctions.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/seventhChordFunctions.png",
+        "bytes": 23151
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/seventhChordFunctionsSmall.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/seventhChordFunctionsSmall.png",
+        "bytes": 16838
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsAlto.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsAlto.png",
+        "bytes": 17212
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsBass.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsBass.png",
+        "bytes": 16232
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsTenor.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsTenor.png",
+        "bytes": 17291
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsTreble.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/sharpsTreble.png",
+        "bytes": 19456
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/susChordExample.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/susChordExample.png",
+        "bytes": 42600
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/eighthToSixteenth-large.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/eighthToSixteenth-large.png",
+        "bytes": 17457
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/eighthToSixteenth.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/eighthToSixteenth.png",
+        "bytes": 15630
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeSextuplets.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeSextuplets.png",
+        "bytes": 6059
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeTripletsBar.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeTripletsBar.png",
+        "bytes": 5609
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeTripletsHalfBar.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/fakeTripletsHalfBar.png",
+        "bytes": 6019
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/halfToQuarter-large.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/halfToQuarter-large.png",
+        "bytes": 16292
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/halfToQuarter.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/halfToQuarter.png",
+        "bytes": 11996
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/quarterToEighth-large.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/quarterToEighth-large.png",
+        "bytes": 15345
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/quarterToEighth.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/quarterToEighth.png",
+        "bytes": 11476
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/syncopationGraphics.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/syncopation/syncopationGraphics.ly",
+        "bytes": 2778
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/tenorClef.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/tenorClef.png",
+        "bytes": 8635
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ties.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/ties.png",
+        "bytes": 12542
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/trebleClef.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/trebleClef.png",
+        "bytes": 12287
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadFunctions.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadFunctions.png",
+        "bytes": 22469
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadFunctionsSmall.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadFunctionsSmall.png",
+        "bytes": 17365
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfSteps-triad.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfSteps-triad.png",
+        "bytes": 9132
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-seventhRTFS.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-seventhRTFS.png",
+        "bytes": 17186
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-seventhRTFS.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-seventhRTFS.svg",
+        "bytes": 15395
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triad.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triad.svg",
+        "bytes": 230186
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triadRTF.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triadRTF.png",
+        "bytes": 9454
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triadRTF.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/circleOfThirds-triadRTF.svg",
+        "bytes": 12175
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/triads-LS.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/triads-LS.png",
+        "bytes": 7793
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/triads.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triadsSeventhChords/triads.png",
+        "bytes": 7363
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triplets.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/triplets.png",
+        "bytes": 14608
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/unfiguredBass1.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/unfiguredBass1.ly",
+        "bytes": 2992
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/unfiguredBass2.ly",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/unfiguredBass2.ly",
+        "bytes": 3194
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/withoutbeams.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/withoutbeams.png",
+        "bytes": 14455
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Icons.json",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Icons.json",
+        "bytes": 1002846
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/KBVLschemata.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/KBVLschemata.md",
+        "bytes": 6087
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/MinuetForm.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/MinuetForm.md",
+        "bytes": 5889
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/Modulation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Modulation.md",
+        "bytes": 4421
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/README.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/README.md",
+        "bytes": 190
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/RNfromFB.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/RNfromFB.md",
+        "bytes": 2916
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-exposition.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-exposition.md",
+        "bytes": 4774
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-intro.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-intro.md",
+        "bytes": 9322
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-modules.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-modules.md",
+        "bytes": 10351
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/TBDemo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/TBDemo.md",
+        "bytes": 497
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/VAT.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/VAT.md",
+        "bytes": 837
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_config.yml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_config.yml",
+        "bytes": 1790
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_includes/footer.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_includes/footer.html",
+        "bytes": 2588
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_includes/head-dark.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_includes/head-dark.html",
+        "bytes": 2823
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_includes/head.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_includes/head.html",
+        "bytes": 2849
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/404.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/404.html",
+        "bytes": 442
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/home.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/home.html",
+        "bytes": 1084
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/page.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/page.html",
+        "bytes": 1140
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-index.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-index.html",
+        "bytes": 1084
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-light-feature.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-light-feature.html",
+        "bytes": 2283
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-no-feature.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post-no-feature.html",
+        "bytes": 2262
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post.html",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/_layouts/post.html",
+        "bytes": 2345
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/about.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/about.md",
+        "bytes": 7788
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/addCC.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/addCC.md",
+        "bytes": 293
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/alteredSubdominants.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/alteredSubdominants.md",
+        "bytes": 6611
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/analyzingPoetry.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/analyzingPoetry.md",
+        "bytes": 3529
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/appliedChords.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/appliedChords.md",
+        "bytes": 9673
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/assets/css/fonts/Icons.dev.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/assets/css/fonts/Icons.dev.svg",
+        "bytes": 14999
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/assets/css/fonts/Icons.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/assets/css/fonts/Icons.svg",
+        "bytes": 14233
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/assets/fonts/icomoon.dev.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/assets/fonts/icomoon.dev.svg",
+        "bytes": 11135
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/assets/fonts/icomoon.svg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/assets/fonts/icomoon.svg",
+        "bytes": 10762
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/atonal.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/atonal.md",
+        "bytes": 8402
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/atonalGlossary.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/atonalGlossary.md",
+        "bytes": 4827
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/basicNotation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/basicNotation.md",
+        "bytes": 2380
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo-history.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo-history.md",
+        "bytes": 3734
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo.md",
+        "bytes": 3561
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/beams.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/beams.md",
+        "bytes": 1558
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/beams.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/beams.png",
+        "bytes": 8311
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/cadenceTypes.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/cadenceTypes.md",
+        "bytes": 6464
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/cantusFirmus.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/cantusFirmus.md",
+        "bytes": 5298
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/chromaticSolfege.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/chromaticSolfege.md",
+        "bytes": 5070
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/classicalThemes.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/classicalThemes.md",
+        "bytes": 2299
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/commonTonesUnderTransposition.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/commonTonesUnderTransposition.md",
+        "bytes": 1864
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/complements.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/complements.md",
+        "bytes": 1322
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/compoundPeriod.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/compoundPeriod.md",
+        "bytes": 3669
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/compoundSentence.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/compoundSentence.md",
+        "bytes": 2500
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/contents-hidden.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/contents-hidden.md",
+        "bytes": 7402
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/contents.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/contents.md",
+        "bytes": 6679
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/createGraphic.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/createGraphic.md",
+        "bytes": 692
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/embellishingTones.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/embellishingTones.md",
+        "bytes": 6055
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/externalExpansions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/externalExpansions.md",
+        "bytes": 3227
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/firstSpecies.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/firstSpecies.md",
+        "bytes": 7799
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/fivePartRondo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/fivePartRondo.md",
+        "bytes": 817
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/fourthSpecies.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/fourthSpecies.md",
+        "bytes": 7055
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/functions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/functions.md",
+        "bytes": 2086
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/harmonicAnalysis.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/harmonicAnalysis.md",
+        "bytes": 3912
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/harmonicFunctions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/harmonicFunctions.md",
+        "bytes": 11301
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/harmonicSyntax1.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/harmonicSyntax1.md",
+        "bytes": 7835
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/harmonicSyntax2.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/harmonicSyntax2.md",
+        "bytes": 11550
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/humans.txt",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/humans.txt",
+        "bytes": 456
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/hybridThemes.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/hybridThemes.md",
+        "bytes": 5741
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/avatar.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/avatar.png",
+        "bytes": 11352
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/categories.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/categories.png",
+        "bytes": 144
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/cdStack.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/cdStack.jpg",
+        "bytes": 105331
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/favicon.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/favicon.png",
+        "bytes": 290
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/filler.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/filler.png",
+        "bytes": 111
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/filler@2x.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/filler@2x.png",
+        "bytes": 120
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/gatsby.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/gatsby.jpg",
+        "bytes": 461911
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/gramophone.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/gramophone.jpg",
+        "bytes": 95560
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/handStaff.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/handStaff.jpg",
+        "bytes": 118124
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/menu-dark.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/menu-dark.png",
+        "bytes": 106
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/menu-dark@2x.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/menu-dark@2x.png",
+        "bytes": 107
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/menu.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/menu.png",
+        "bytes": 106
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/menu@2x.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/menu@2x.png",
+        "bytes": 107
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/money.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/money.jpg",
+        "bytes": 33237
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/money@2x.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/money@2x.jpg",
+        "bytes": 73077
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/og_image.gif",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/og_image.gif",
+        "bytes": 600
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/og_image.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/og_image.png",
+        "bytes": 386
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/openBooksOnPath.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/openBooksOnPath.jpg",
+        "bytes": 225104
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/radioTubes.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/radioTubes.jpg",
+        "bytes": 113977
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/search.png",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/search.png",
+        "bytes": 527
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/soft-trees.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/soft-trees.jpg",
+        "bytes": 253593
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/sticker-mule.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/sticker-mule.jpg",
+        "bytes": 95386
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/sticker-mule@2x.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/sticker-mule@2x.jpg",
+        "bytes": 234335
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/typewriter.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/typewriter.jpg",
+        "bytes": 1205858
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/images/violinMusic.jpg",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/images/violinMusic.jpg",
+        "bytes": 146531
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/index.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/index.md",
+        "bytes": 974
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/internalExpansions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/internalExpansions.md",
+        "bytes": 6212
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/interval(Class).md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/interval(Class).md",
+        "bytes": 3316
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/intervals.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/intervals.md",
+        "bytes": 10531
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/inversion.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/inversion.md",
+        "bytes": 1978
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/keySignatures.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/keySignatures.md",
+        "bytes": 3292
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/linkToTwitter.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/linkToTwitter.md",
+        "bytes": 275
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/melodicDictationDemo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/melodicDictationDemo.md",
+        "bytes": 1028
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/melodicKB.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/melodicKB.md",
+        "bytes": 446
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/melodicKeyboardStyle.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/melodicKeyboardStyle.md",
+        "bytes": 1913
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/melodicSequentials.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/melodicSequentials.md",
+        "bytes": 2110
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/meter.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/meter.md",
+        "bytes": 8318
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/minuet.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/minuet.md",
+        "bytes": 4364
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/mod12.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/mod12.md",
+        "bytes": 2377
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/modalMixture.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/modalMixture.md",
+        "bytes": 2446
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/motionTypes.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/motionTypes.md",
+        "bytes": 1718
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/normalOrder.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/normalOrder.md",
+        "bytes": 1872
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/params.json",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/params.json",
+        "bytes": 2030
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/period.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/period.md",
+        "bytes": 3271
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/pitch(Class).md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/pitch(Class).md",
+        "bytes": 3524
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/pitches.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/pitches.md",
+        "bytes": 2403
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-containers.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-containers.md",
+        "bytes": 8348
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-functions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-functions.md",
+        "bytes": 12057
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-notation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-notation.md",
+        "bytes": 2096
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-terms.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockForm-terms.md",
+        "bytes": 5894
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockForm.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockForm.md",
+        "bytes": 8551
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem2.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem2.md",
+        "bytes": 2507
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem3.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem3.md",
+        "bytes": 1343
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem4.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem4.md",
+        "bytes": 821
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem5.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-EverettSystem5.md",
+        "bytes": 1457
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-blues.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-blues.md",
+        "bytes": 2371
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-dooWop.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-dooWop.md",
+        "bytes": 1556
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-fifths.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-fifths.md",
+        "bytes": 2055
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-lament.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-lament.md",
+        "bytes": 1011
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-minor.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-minor.md",
+        "bytes": 2017
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-pachelbel.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-pachelbel.md",
+        "bytes": 1872
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-plagal.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-plagal.md",
+        "bytes": 2624
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-puff.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-puff.md",
+        "bytes": 913
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-sscp.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony-sscp.md",
+        "bytes": 3364
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/popRockHarmony.md",
+        "bytes": 5776
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/postTonalAnalysis.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/postTonalAnalysis.md",
+        "bytes": 5391
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/protonotation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/protonotation.md",
+        "bytes": 4966
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/rhythmicValues.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/rhythmicValues.md",
+        "bytes": 1929
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/robots.txt",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/robots.txt",
+        "bytes": 24
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/rondo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/rondo.md",
+        "bytes": 2170
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/scales.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/scales.md",
+        "bytes": 5205
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/scales2.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/scales2.md",
+        "bytes": 7801
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/schemata-improv.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/schemata-improv.md",
+        "bytes": 7332
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/schemataContinuationPatterns.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/schemataContinuationPatterns.md",
+        "bytes": 4582
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/schemataOpensAndCloses.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/schemataOpensAndCloses.md",
+        "bytes": 5114
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/schemataSummary.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/schemataSummary.md",
+        "bytes": 7334
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/secondSpecies.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/secondSpecies.md",
+        "bytes": 11721
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sentence.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sentence.md",
+        "bytes": 3970
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/setClassAndPrimeForm1.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/setClassAndPrimeForm1.md",
+        "bytes": 3093
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/setClassAndPrimeForm2.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/setClassAndPrimeForm2.md",
+        "bytes": 2260
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sightSinging.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sightSinging.md",
+        "bytes": 2127
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sitemap.xml",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sitemap.xml",
+        "bytes": 305
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/smallBinary.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/smallBinary.md",
+        "bytes": 2513
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/smallTernary.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/smallTernary.md",
+        "bytes": 5036
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataDevelopment.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataDevelopment.md",
+        "bytes": 3665
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataFramingModules.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataFramingModules.md",
+        "bytes": 6753
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataRecap.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataRecap.md",
+        "bytes": 4391
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataRondo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataRondo.md",
+        "bytes": 943
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataStructuralPointsOfArrival.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataStructuralPointsOfArrival.md",
+        "bytes": 4059
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/sonataThematicModules.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataThematicModules.md",
+        "bytes": 6341
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/speciesIntro.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/speciesIntro.md",
+        "bytes": 5135
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/symmetryAndCentricity.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/symmetryAndCentricity.md",
+        "bytes": 2815
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/syncopation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/syncopation.md",
+        "bytes": 6682
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/tendency.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/tendency.md",
+        "bytes": 3779
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/tendencyTonesFunctionalDissonances.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/tendencyTonesFunctionalDissonances.md",
+        "bytes": 5021
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/thematicFunctionInRondo.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/thematicFunctionInRondo.md",
+        "bytes": 5145
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/thematicStructureInTheClassicalStyle.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/thematicStructureInTheClassicalStyle.md",
+        "bytes": 1956
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/themeFunctions.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/themeFunctions.md",
+        "bytes": 3746
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/thirdSpecies.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/thirdSpecies.md",
+        "bytes": 7259
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/thoroughbassFigures.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/thoroughbassFigures.md",
+        "bytes": 6927
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/transposition.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/transposition.md",
+        "bytes": 2066
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/triads.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/triads.md",
+        "bytes": 10903
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/trinket.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/trinket.md",
+        "bytes": 2570
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveTone.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveTone.md",
+        "bytes": 5202
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveToneBasics.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveToneBasics.md",
+        "bytes": 3212
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveToneIntervallicStructure.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveToneIntervallicStructure.md",
+        "bytes": 1487
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveToneMusicDerivation.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveToneMusicDerivation.md",
+        "bytes": 1354
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveToneMusicInvariance.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveToneMusicInvariance.md",
+        "bytes": 2015
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/twelveToneOperations.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/twelveToneOperations.md",
+        "bytes": 1982
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/typesettingKBStyle.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/typesettingKBStyle.md",
+        "bytes": 1097
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/unfiguredBass.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/unfiguredBass.md",
+        "bytes": 934
+      },
+      {
+        "member": "openmusictheory-openmusictheory.github.io-a907aa0/whiteKeyMethod.md",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/whiteKeyMethod.md",
+        "bytes": 1775
+      }
+    ]
+  },
+  "omt_navigation": {
+    "rewritten": 378,
+    "unresolved": [
+      {
+        "file": "thematicStructureInTheClassicalStyle.md",
+        "url": "sonata.html"
+      }
+    ],
+    "unresolved_count": 1
+  },
+  "existing_omt_comparison": {
+    "matched": 130,
+    "different": [],
+    "missing": []
+  },
+  "dcml": {
+    "status": "copied-existing-materials",
+    "count": 351,
+    "verified_source_matches": 351,
+    "unmatched": [],
+    "excluded_reviewed": 70,
+    "copy_root": "E:/github/music-wiki/local/resources/scores/dcml-abc",
+    "origin_reference": "local/materials/theory/dcml-abc",
+    "archive": "sources/dcml/raw/ABC-main.zip"
+  },
+  "score_packages": [
+    {
+      "source": "beethoven-score-sources",
+      "archive": "sources/beethoven-score-sources/raw/beethoven-piano-sonatas-main.zip",
+      "archive_name": "beethoven-piano-sonatas-main.zip",
+      "status": "extracted",
+      "score_files": 103,
+      "bytes": 2645112,
+      "formats": [
+        ".krn"
+      ],
+      "manifest": "scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/manifest.json",
+      "errors": []
+    },
+    {
+      "source": "beethoven-score-sources",
+      "archive": "sources/beethoven-score-sources/raw/beethoven-string-quartets-main.zip",
+      "archive_name": "beethoven-string-quartets-main.zip",
+      "status": "extracted",
+      "score_files": 71,
+      "bytes": 3369925,
+      "formats": [
+        ".krn"
+      ],
+      "manifest": "scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/manifest.json",
+      "errors": []
+    },
+    {
+      "source": "humdrum",
+      "archive": "sources/humdrum/raw/bach-370-chorales-main.zip",
+      "archive_name": "bach-370-chorales-main.zip",
+      "status": "extracted",
+      "score_files": 370,
+      "bytes": 1028693,
+      "formats": [
+        ".krn"
+      ],
+      "manifest": "scores/source-packages/humdrum/bach-370-chorales-main/manifest.json",
+      "errors": []
+    },
+    {
+      "source": "josquin",
+      "archive": "sources/josquin/raw/jrp-scores-main.zip",
+      "archive_name": "jrp-scores-main.zip",
+      "status": "extracted",
+      "score_files": 1381,
+      "bytes": 17333048,
+      "formats": [
+        ".krn"
+      ],
+      "manifest": "scores/source-packages/josquin/jrp-scores-main/manifest.json",
+      "errors": []
+    },
+    {
+      "source": "dcml",
+      "archive": "sources/dcml/raw/ABC-main.zip",
+      "archive_name": "ABC-main.zip",
+      "status": "extracted",
+      "score_files": 140,
+      "bytes": 217881291,
+      "formats": [
+        ".mscx"
+      ],
+      "manifest": "scores/source-packages/dcml/ABC-main/manifest.json",
+      "errors": []
+    }
+  ],
+  "archives": [
+    {
+      "origin": "sources/beethoven-score-sources/raw/beethoven-piano-sonatas-main.zip",
+      "bytes": 57319427,
+      "member_count": 208,
+      "text_candidates": 104,
+      "score_candidates": 103,
+      "status": "已按类型解包机器可读谱文件",
+      "extracted_score_files": 103
+    },
+    {
+      "origin": "sources/beethoven-score-sources/raw/beethoven-string-quartets-main.zip",
+      "bytes": 714102,
+      "member_count": 76,
+      "text_candidates": 72,
+      "score_candidates": 71,
+      "status": "已按类型解包机器可读谱文件",
+      "extracted_score_files": 71
+    },
+    {
+      "origin": "sources/dcml/raw/ABC-main.zip",
+      "bytes": 97449169,
+      "member_count": 989,
+      "text_candidates": 777,
+      "score_candidates": 140,
+      "status": "已按类型解包机器可读谱文件",
+      "extracted_score_files": 140
+    },
+    {
+      "origin": "sources/humdrum/raw/bach-370-chorales-main.zip",
+      "bytes": 584230,
+      "member_count": 376,
+      "text_candidates": 372,
+      "score_candidates": 370,
+      "status": "已按类型解包机器可读谱文件",
+      "extracted_score_files": 370
+    },
+    {
+      "origin": "sources/josquin/raw/jrp-scores-main.zip",
+      "bytes": 5541981,
+      "member_count": 1398,
+      "text_candidates": 1384,
+      "score_candidates": 1381,
+      "status": "已按类型解包机器可读谱文件",
+      "extracted_score_files": 1381
+    },
+    {
+      "origin": "sources/mit-ocw/raw/21m.301-spring-2005.zip",
+      "bytes": 39106324,
+      "member_count": 546,
+      "text_candidates": 263,
+      "score_candidates": 6,
+      "status": "只检查目录；未解包"
+    },
+    {
+      "origin": "sources/open-music-theory/raw/openmusictheory.github.io-master.zip",
+      "bytes": 38917643,
+      "member_count": 653,
+      "text_candidates": 180,
+      "score_candidates": 35,
+      "status": "已抽取可读文本和图像子集",
+      "extracted_readable_items": 500
+    },
+    {
+      "origin": "sources/openscore-lieder/raw/Lieder-main.zip",
+      "bytes": 191547791,
+      "member_count": 8703,
+      "text_candidates": 3255,
+      "score_candidates": 1352,
+      "status": "只检查目录；未解包"
+    },
+    {
+      "origin": "sources/openscore-stringquartets/raw/StringQuartets-main.zip",
+      "bytes": 612504588,
+      "member_count": 1635,
+      "text_candidates": 254,
+      "score_candidates": 122,
+      "status": "只检查目录；未解包"
+    }
+  ],
+  "html_reading_copies": [
+    {
+      "source": "abcnotation",
+      "origin": "sources/abcnotation/raw/abc-2.1-standard.html",
+      "html_copy": "text/source-copies/abcnotation/abc-2.1-standard.html",
+      "reading_copy": "text/organized-html/abcnotation/abc-2.1-standard.md",
+      "title": "abc:standard:v2.1    [abc wiki]",
+      "visible_text_chars": 176561,
+      "image_links": 15,
+      "missing_local_image_refs": 15,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "abcnotation",
+      "origin": "sources/abcnotation/raw/copyright.html",
+      "html_copy": "text/source-copies/abcnotation/copyright.html",
+      "reading_copy": "text/organized-html/abcnotation/copyright.md",
+      "title": "abc | tune search copyright",
+      "visible_text_chars": 9164,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "abcnotation",
+      "origin": "sources/abcnotation/raw/index.html",
+      "html_copy": "text/source-copies/abcnotation/index.html",
+      "reading_copy": "text/organized-html/abcnotation/index.md",
+      "title": "abc | home",
+      "visible_text_chars": 4349,
+      "image_links": 1,
+      "missing_local_image_refs": 1,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "abcnotation",
+      "origin": "sources/abcnotation/raw/search-help.html",
+      "html_copy": "text/source-copies/abcnotation/search-help.html",
+      "reading_copy": "text/organized-html/abcnotation/search-help.md",
+      "title": "abc | tune search help",
+      "visible_text_chars": 35279,
+      "image_links": 10,
+      "missing_local_image_refs": 10,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "abcplus",
+      "origin": "sources/abcplus/raw/index.html",
+      "html_copy": "text/source-copies/abcplus/index.html",
+      "reading_copy": "text/organized-html/abcplus/index.md",
+      "title": "The ABC Plus project",
+      "visible_text_chars": 23396,
+      "image_links": 4,
+      "missing_local_image_refs": 3,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "alan-belkin",
+      "origin": "sources/alan-belkin/raw/mini-courses-index.html",
+      "html_copy": "text/source-copies/alan-belkin/mini-courses-index.html",
+      "reading_copy": "text/organized-html/alan-belkin/mini-courses-index.md",
+      "title": "Two Orchestration Mini-Courses – Alan Belkin Music",
+      "visible_text_chars": 3661,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "alan-belkin",
+      "origin": "sources/alan-belkin/raw/orchestration-index.html",
+      "html_copy": "text/source-copies/alan-belkin/orchestration-index.html",
+      "reading_copy": "text/organized-html/alan-belkin/orchestration-index.md",
+      "title": "Orchestration – Presentation – Alan Belkin Music",
+      "visible_text_chars": 2750,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-chamber",
+      "origin": "sources/beethoven-analysis-chamber/raw/raiser-op74-galant-introduction-2018.html",
+      "html_copy": "text/source-copies/beethoven-analysis-chamber/raiser-op74-galant-introduction-2018.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-chamber/raiser-op74-galant-introduction-2018.md",
+      "title": "ZGMTH - Das galante Modell als kreativer Raum",
+      "visible_text_chars": 36120,
+      "image_links": 16,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-keyboard",
+      "origin": "sources/beethoven-analysis-keyboard/raw/barry-op131-teleology-1990.html",
+      "html_copy": "text/source-copies/beethoven-analysis-keyboard/barry-op131-teleology-1990.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-keyboard/barry-op131-teleology-1990.md",
+      "title": "Teleology and Structural Determinants in Beethoven's C# Minor Quartet, Op. 131 - College Music Symposium",
+      "visible_text_chars": 43021,
+      "image_links": 102,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/beethovenhaus-pc5-sketch.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/beethovenhaus-pc5-sketch.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/beethovenhaus-pc5-sketch.md",
+      "title": "Ludwig van Beethoven, Skizzenblatt zum Klavierkonzert Nr. 5 op. 73, 1. Satz, Autograph",
+      "visible_text_chars": 1510,
+      "image_links": 7,
+      "missing_local_image_refs": 5,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/bso-piano-concerto-5.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/bso-piano-concerto-5.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/bso-piano-concerto-5.md",
+      "title": "BSO | Beethoven - Piano Concerto No. 5 in E-flat, Opus 73, Emperor",
+      "visible_text_chars": 4947,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-home.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-home.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-home.md",
+      "title": "Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 30110,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-inheritance.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-inheritance.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-inheritance.md",
+      "title": "Beethoven’s Classical Inheritance: the Symphony and the Orchestra – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 53501,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-1.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-1.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-1.md",
+      "title": "Symphony No. 1 in C, Op. 21 (1800) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 29192,
+      "image_links": 1,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-2.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-2.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-2.md",
+      "title": "Symphony No. 2 in D, Op. 36 (1802) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 36939,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-3.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-3.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-3.md",
+      "title": "Symphony No. 3 in E-flat, Op. 55 “Eroica” (1804) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 48626,
+      "image_links": 1,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-4.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-4.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-4.md",
+      "title": "Symphony No. 4 in B-flat, Op. 60 (1806) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 36178,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-5.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-5.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-5.md",
+      "title": "Symphony No. 5 in C minor, Op. 67 (1808) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 53437,
+      "image_links": 12,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-6.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-6.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-6.md",
+      "title": "Symphony No. 6 in F, Op. 68 “Pastoral” (1808) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 41944,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-7.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-7.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-7.md",
+      "title": "Symphony No. 7 in A, Op. 92 (1812) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 36587,
+      "image_links": 3,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-8.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-8.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-8.md",
+      "title": "Symphony No. 8 in F, Op. 93 (1813) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 38913,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-symphony-9.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-symphony-9.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-symphony-9.md",
+      "title": "Symphony No. 9 in D minor, Op. 125 “Choral” (1824) – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 83220,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-analysis-orchestral",
+      "origin": "sources/beethoven-analysis-orchestral/raw/eastman-transition.html",
+      "html_copy": "text/source-copies/beethoven-analysis-orchestral/eastman-transition.html",
+      "reading_copy": "text/organized-html/beethoven-analysis-orchestral/eastman-transition.md",
+      "title": "From Classical to Romantic Symphony:  A New Way, the Heroic Narrative, and the Sublime – Beethoven Symphony Basics at ESM - Eastman School of Music",
+      "visible_text_chars": 38165,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/haus-archive.html",
+      "html_copy": "text/source-copies/beethoven-context/haus-archive.html",
+      "reading_copy": "text/organized-html/beethoven-context/haus-archive.md",
+      "title": "Archiv - Beethoven-Haus Bonn",
+      "visible_text_chars": 4055,
+      "image_links": 5,
+      "missing_local_image_refs": 3,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/haus-studies.html",
+      "html_copy": "text/source-copies/beethoven-context/haus-studies.html",
+      "reading_copy": "text/organized-html/beethoven-context/haus-studies.md",
+      "title": "Studies | Beethoven-Haus Bonn",
+      "visible_text_chars": 9281,
+      "image_links": 8,
+      "missing_local_image_refs": 4,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/lockwood-nottebohm.html",
+      "html_copy": "text/source-copies/beethoven-context/lockwood-nottebohm.html",
+      "reading_copy": "text/organized-html/beethoven-context/lockwood-nottebohm.md",
+      "title": "V. Gustav Nottebohm (1817-1882) | Center for Beethoven Research",
+      "visible_text_chars": 2488,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/lockwood-procedures.html",
+      "html_copy": "text/source-copies/beethoven-context/lockwood-procedures.html",
+      "reading_copy": "text/organized-html/beethoven-context/lockwood-procedures.md",
+      "title": "I. Sources of knowledge of Beethoven’s compositional procedures | Center for Beethoven Research",
+      "visible_text_chars": 2928,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/lockwood-sketches.html",
+      "html_copy": "text/source-copies/beethoven-context/lockwood-sketches.html",
+      "reading_copy": "text/organized-html/beethoven-context/lockwood-sketches.md",
+      "title": "Beethoven’s Sketches: the State of our Knowledge | Center for Beethoven Research",
+      "visible_text_chars": 1163,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "beethoven-context",
+      "origin": "sources/beethoven-context/raw/lockwood-stages.html",
+      "html_copy": "text/source-copies/beethoven-context/lockwood-stages.html",
+      "reading_copy": "text/organized-html/beethoven-context/lockwood-stages.md",
+      "title": "III. Stages of Knowledge of Sources | Center for Beethoven Research",
+      "visible_text_chars": 1757,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "chopin-online",
+      "origin": "sources/chopin-online/raw/homepage.html",
+      "html_copy": "text/source-copies/chopin-online/homepage.html",
+      "reading_copy": null,
+      "title": "Homepage | Chopin Online",
+      "visible_text_chars": 1338,
+      "image_links": 3,
+      "missing_local_image_refs": 3,
+      "status": "directory-or-short-page",
+      "source_exists": true
+    },
+    {
+      "source": "imslp",
+      "origin": "sources/imslp/raw/music-theory-category.html",
+      "html_copy": "text/source-copies/imslp/music-theory-category.html",
+      "reading_copy": "text/organized-html/imslp/music-theory-category.md",
+      "title": "Category:Music theory - IMSLP",
+      "visible_text_chars": 52304,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "lilypond-snippets",
+      "origin": "sources/lilypond-snippets/raw/snippets-index.html",
+      "html_copy": "text/source-copies/lilypond-snippets/snippets-index.html",
+      "reading_copy": "text/organized-html/lilypond-snippets/snippets-index.md",
+      "title": "LilyPond — Snippets (LilyPond snippets)",
+      "visible_text_chars": 259943,
+      "image_links": 0,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "mit-ocw",
+      "origin": "sources/mit-ocw/raw/course-download-index.html",
+      "html_copy": "text/source-copies/mit-ocw/course-download-index.html",
+      "reading_copy": "text/organized-html/mit-ocw/course-download-index.md",
+      "title": "Resources | Harmony and Counterpoint I | Music | MIT OpenCourseWare",
+      "visible_text_chars": 2966,
+      "image_links": 30,
+      "missing_local_image_refs": 30,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/butterfield-2006-anacrusis-925fd5fd6ae18339.html",
+      "html_copy": "text/source-copies/music-theory-online/butterfield-2006-anacrusis-925fd5fd6ae18339.html",
+      "reading_copy": "text/organized-html/music-theory-online/butterfield-2006-anacrusis-925fd5fd6ae18339.md",
+      "title": "MTO 12.4: Butterfield, The Power of Anacrusis",
+      "visible_text_chars": 92427,
+      "image_links": 25,
+      "missing_local_image_refs": 23,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/callahan-2013-songbook-eccb660de9096bae.html",
+      "html_copy": "text/source-copies/music-theory-online/callahan-2013-songbook-eccb660de9096bae.html",
+      "reading_copy": "text/organized-html/music-theory-online/callahan-2013-songbook-eccb660de9096bae.md",
+      "title": "MTO 19.3: Callahan, Sentential Lyric-Types in the Great American Songbook",
+      "visible_text_chars": 155349,
+      "image_links": 29,
+      "missing_local_image_refs": 28,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/carter-2025-beyond-strophic-fed87a54548fd8e6.html",
+      "html_copy": "text/source-copies/music-theory-online/carter-2025-beyond-strophic-fed87a54548fd8e6.html",
+      "reading_copy": "text/organized-html/music-theory-online/carter-2025-beyond-strophic-fed87a54548fd8e6.md",
+      "title": "MTO 31.1: Carter, Beyond Strophic",
+      "visible_text_chars": 122997,
+      "image_links": 46,
+      "missing_local_image_refs": 45,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+      "html_copy": "text/source-copies/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+      "reading_copy": "text/organized-html/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.md",
+      "title": "MTO 22.2: Cohn, A Platonic Model of Funky Rhythms",
+      "visible_text_chars": 85360,
+      "image_links": 37,
+      "missing_local_image_refs": 36,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/geary-2024-drum-form-b456dd257b4adbee.html",
+      "html_copy": "text/source-copies/music-theory-online/geary-2024-drum-form-b456dd257b4adbee.html",
+      "reading_copy": "text/organized-html/music-theory-online/geary-2024-drum-form-b456dd257b4adbee.md",
+      "title": "MTO 30.2: Geary, Formal Functions of Drum Patterns",
+      "visible_text_chars": 91258,
+      "image_links": 34,
+      "missing_local_image_refs": 33,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/mcclimon-2017-ii-v-space-f5e0615fd8e97111.html",
+      "html_copy": "text/source-copies/music-theory-online/mcclimon-2017-ii-v-space-f5e0615fd8e97111.html",
+      "reading_copy": "text/organized-html/music-theory-online/mcclimon-2017-ii-v-space-f5e0615fd8e97111.md",
+      "title": "MTO 23.1: McClimon, Transformations in Tonal Jazz",
+      "visible_text_chars": 97873,
+      "image_links": 36,
+      "missing_local_image_refs": 35,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/nobile-2011-beatles-form-896fedffc7b2d8ce.html",
+      "html_copy": "text/source-copies/music-theory-online/nobile-2011-beatles-form-896fedffc7b2d8ce.html",
+      "reading_copy": "text/organized-html/music-theory-online/nobile-2011-beatles-form-896fedffc7b2d8ce.md",
+      "title": "MTO 17.3: Nobile, Form and Voice Leading in Early Beatles Songs",
+      "visible_text_chars": 48740,
+      "image_links": 33,
+      "missing_local_image_refs": 32,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/nobile-2022-teleology-8bd39cf06d0420e6.html",
+      "html_copy": "text/source-copies/music-theory-online/nobile-2022-teleology-8bd39cf06d0420e6.html",
+      "reading_copy": "text/organized-html/music-theory-online/nobile-2022-teleology-8bd39cf06d0420e6.md",
+      "title": "MTO 28.3: Nobile, Teleology in Verse–Prechorus–Chorus Form",
+      "visible_text_chars": 103136,
+      "image_links": 36,
+      "missing_local_image_refs": 35,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/smith-2021-continuous-edm-e5c1cc07614f99f3.html",
+      "html_copy": "text/source-copies/music-theory-online/smith-2021-continuous-edm-e5c1cc07614f99f3.html",
+      "reading_copy": "text/organized-html/music-theory-online/smith-2021-continuous-edm-e5c1cc07614f99f3.md",
+      "title": "MTO 27.2: Smith, Continuous Processes in Contemporary Electronic Dance Music",
+      "visible_text_chars": 99381,
+      "image_links": 24,
+      "missing_local_image_refs": 23,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/smither-2019-guide-tone-space-7de83ed3d933d645.html",
+      "html_copy": "text/source-copies/music-theory-online/smither-2019-guide-tone-space-7de83ed3d933d645.html",
+      "reading_copy": "text/organized-html/music-theory-online/smither-2019-guide-tone-space-7de83ed3d933d645.md",
+      "title": "MTO 25.2: Smither, Guide-Tone Space",
+      "visible_text_chars": 92268,
+      "image_links": 34,
+      "missing_local_image_refs": 33,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/smither-2024-referents-37cd613f85f6fad8.html",
+      "html_copy": "text/source-copies/music-theory-online/smither-2024-referents-37cd613f85f6fad8.html",
+      "reading_copy": "text/organized-html/music-theory-online/smither-2024-referents-37cd613f85f6fad8.md",
+      "title": "MTO 30.3: Smither, Referents in the Palimpsests of Jazz",
+      "visible_text_chars": 137710,
+      "image_links": 22,
+      "missing_local_image_refs": 21,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "music-theory-online",
+      "origin": "sources/music-theory-online/raw/stroud-2022-postchorus-8de2b66247c586ab.html",
+      "html_copy": "text/source-copies/music-theory-online/stroud-2022-postchorus-8de2b66247c586ab.html",
+      "reading_copy": "text/organized-html/music-theory-online/stroud-2022-postchorus-8de2b66247c586ab.md",
+      "title": "MTO 28.2: Stroud, Codetta and Anthem Postchorus Types",
+      "visible_text_chars": 75320,
+      "image_links": 18,
+      "missing_local_image_refs": 17,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "partimenti",
+      "origin": "sources/partimenti/raw/about-parti.html",
+      "html_copy": "text/source-copies/partimenti/about-parti.html",
+      "reading_copy": null,
+      "title": "About Partimenti",
+      "visible_text_chars": 1325,
+      "image_links": 8,
+      "missing_local_image_refs": 8,
+      "status": "directory-or-short-page",
+      "source_exists": true
+    },
+    {
+      "source": "partimenti",
+      "origin": "sources/partimenti/raw/collections-index.html",
+      "html_copy": "text/source-copies/partimenti/collections-index.html",
+      "reading_copy": "text/organized-html/partimenti/collections-index.md",
+      "title": "Collections of Partimenti",
+      "visible_text_chars": 2146,
+      "image_links": 12,
+      "missing_local_image_refs": 12,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "partimenti",
+      "origin": "sources/partimenti/raw/partimenti-index.html",
+      "html_copy": "text/source-copies/partimenti/partimenti-index.html",
+      "reading_copy": null,
+      "title": "Monuments of Partimenti",
+      "visible_text_chars": 245,
+      "image_links": 1,
+      "missing_local_image_refs": 1,
+      "status": "directory-or-short-page",
+      "source_exists": true
+    },
+    {
+      "source": "partimenti",
+      "origin": "sources/partimenti/raw/solfeggi-series.html",
+      "html_copy": "text/source-copies/partimenti/solfeggi-series.html",
+      "reading_copy": "text/organized-html/partimenti/solfeggi-series.md",
+      "title": "About the Series",
+      "visible_text_chars": 2045,
+      "image_links": 1,
+      "missing_local_image_refs": 1,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments.html",
+      "html_copy": "text/source-copies/philharmonia/instruments.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments.md",
+      "title": "Instruments | Philharmonia",
+      "visible_text_chars": 3430,
+      "image_links": 24,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/bassoon.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/bassoon.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/bassoon.md",
+      "title": "Bassoon | Philharmonia",
+      "visible_text_chars": 2746,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/cello.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/cello.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/cello.md",
+      "title": "Cello | Philharmonia",
+      "visible_text_chars": 5425,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/clarinet.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/clarinet.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/clarinet.md",
+      "title": "Clarinet | Philharmonia",
+      "visible_text_chars": 2421,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/flute.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/flute.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/flute.md",
+      "title": "Flute | Philharmonia",
+      "visible_text_chars": 4140,
+      "image_links": 7,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/horn.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/horn.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/horn.md",
+      "title": "Horn | Philharmonia",
+      "visible_text_chars": 3794,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/oboe.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/oboe.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/oboe.md",
+      "title": "Oboe | Philharmonia",
+      "visible_text_chars": 2981,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/percussion.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/percussion.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/percussion.md",
+      "title": "Percussion | Philharmonia",
+      "visible_text_chars": 12872,
+      "image_links": 15,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/trombone.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/trombone.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/trombone.md",
+      "title": "Trombone | Philharmonia",
+      "visible_text_chars": 3741,
+      "image_links": 7,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/trumpet.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/trumpet.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/trumpet.md",
+      "title": "Trumpet | Philharmonia",
+      "visible_text_chars": 3277,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/tuba.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/tuba.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/tuba.md",
+      "title": "Tuba | Philharmonia",
+      "visible_text_chars": 4076,
+      "image_links": 5,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    },
+    {
+      "source": "philharmonia",
+      "origin": "sources/philharmonia/raw/instruments/violin.html",
+      "html_copy": "text/source-copies/philharmonia/instruments/violin.html",
+      "reading_copy": "text/organized-html/philharmonia/instruments/violin.md",
+      "title": "Violin | Philharmonia",
+      "visible_text_chars": 6217,
+      "image_links": 6,
+      "missing_local_image_refs": 0,
+      "status": "cleaned-body",
+      "source_exists": true
+    }
+  ],
+  "qa": {
+    "scope": "五份本地可读性抽样；检查正文/谱编码、图像路径和来源映射，不做音乐学事实核验。",
+    "samples": [
+      {
+        "kind": "textbook_chapter",
+        "source": "open-music-theory",
+        "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/bassoContinuo.md",
+        "origin": "sources/open-music-theory/raw/openmusictheory.github.io-master.zip :: openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+        "readable": true,
+        "listed_in_official_table_of_contents": true,
+        "linked_image": {
+          "markdown_target": "Graphics/BCModel.png",
+          "copy_exists": true,
+          "origin_member": "openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png",
+          "copy": "text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/Graphics/BCModel.png"
+        },
+        "note": "旧版 OMT 章节正文；本地化仅改写站内链接，原 ZIP 保留。"
+      },
+      {
+        "kind": "analysis_html",
+        "source": "music-theory-online",
+        "copy": "text/organized-html/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.md",
+        "raw_html_copy": "text/source-copies/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+        "origin": "sources/music-theory-online/raw/cohn-2016-funky-rhythms-1119934417edfd1e.html",
+        "origin_exists": true,
+        "source_manifest_reference": {
+          "url": "https://mtosmt.org/ (作者论文；具体路径需从论文元数据核对)",
+          "status": "cached-copy",
+          "bytes": 158589,
+          "sha256": "1119934417edfd1ecc54b4c58be5f76ffd7ef163c5073c20372695641aa7ae0f"
+        },
+        "visible_text_chars": 86704,
+        "preview": "# MTO 22.2: Cohn, A Platonic Model of Funky Rhythms\n\n> 来源 HTML：[原件副本](../../source-copies/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.html)；[原始文件](../../../../origin_resources/sources/music-theory-online/raw/cohn-2016-funky",
+        "is_error_page": false,
+        "image_links": [],
+        "image_paths_valid": true,
+        "missing_local_image_refs": 36,
+        "readable": true
+      },
+      {
+        "kind": "instrument_html",
+        "source": "philharmonia",
+        "copy": "text/organized-html/philharmonia/instruments/flute.md",
+        "raw_html_copy": "text/source-copies/philharmonia/instruments/flute.html",
+        "origin": "sources/philharmonia/raw/instruments/flute.html",
+        "origin_exists": true,
+        "source_manifest_reference": {
+          "url": "https://philharmonia.co.uk/resources/instruments/flute/",
+          "status": "downloaded",
+          "bytes": 101928,
+          "sha256": "6100d93bdb6145f56b5bdd2184c4b0130e467c94e397d6bde7710712f698fdd5"
+        },
+        "visible_text_chars": 4251,
+        "preview": "# Flute | Philharmonia\n\n> 来源 HTML：[原件副本](../../../source-copies/philharmonia/instruments/flute.html)；[原始文件](../../../../../origin_resources/sources/philharmonia/raw/instruments/flute.html)。此整理副本保留标题、段落、列表、表格、图像和链接；原 HTML 保留供核对。\n\n# Flute\n\nTh",
+        "is_error_page": false,
+        "image_links": [],
+        "image_paths_valid": true,
+        "missing_local_image_refs": 0,
+        "readable": true
+      },
+      {
+        "kind": "work_version_html",
+        "source": "beethoven-analysis-keyboard",
+        "copy": "text/organized-html/beethoven-analysis-keyboard/barry-op131-teleology-1990.md",
+        "raw_html_copy": "text/source-copies/beethoven-analysis-keyboard/barry-op131-teleology-1990.html",
+        "origin": "sources/beethoven-analysis-keyboard/raw/barry-op131-teleology-1990.html",
+        "origin_exists": true,
+        "source_manifest_reference": {
+          "url": "https://symposium.music.org/30/articles/teleology-and-structural-determinants-in-beethovens-c-minor-quartet-op-131",
+          "status": "downloaded",
+          "bytes": 95940,
+          "sha256": "846a0b27a531eb1a47b2e8eebd749b57a32028b4d10351d98ee57859cf2b11f8",
+          "content_type": "text/html; charset=utf-8"
+        },
+        "visible_text_chars": 43434,
+        "preview": "# Teleology and Structural Determinants in Beethoven's C# Minor Quartet, Op. 131 - College Music Symposium\n\n> 来源 HTML：[原件副本](../../source-copies/beethoven-analysis-keyboard/barry-op131-teleology-1990.html)；[原始文件](../../../../origin_resource",
+        "is_error_page": false,
+        "image_links": [],
+        "image_paths_valid": true,
+        "missing_local_image_refs": 0,
+        "readable": true
+      },
+      {
+        "kind": "kern_score",
+        "source": "beethoven-score-sources",
+        "copy": "scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/beethoven-piano-sonatas-main/kern/sonata01-1.krn",
+        "origin_archive": "sources/beethoven-score-sources/raw/beethoven-piano-sonatas-main.zip",
+        "archive_member": "beethoven-piano-sonatas-main/kern/sonata01-1.krn",
+        "copy_sha256": "3b0b9a193d2d5668bb0fb552014cb19902637065a8f2e4db0b56344828c7f6a2",
+        "has_kern_spine": true,
+        "has_note_tokens": true,
+        "readable": true
+      }
+    ],
+    "dcml_provenance": {
+      "matched_files": 351,
+      "unmatched_files": 0,
+      "manifest": "scores/dcml-abc/manifest.json"
+    },
+    "result": "pass"
+  },
+  "excluded": []
+}

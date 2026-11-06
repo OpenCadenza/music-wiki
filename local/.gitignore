@@ -1,6 +1,8 @@
 /materials/
 /origin_resources/
-/resources/
+/resources/*
+!/resources/README.md
+!/resources/catalog/
 /archive/
 /workbench/ocr-runtime/
 /workbench/migration-runtime/
