@@ -63,7 +63,7 @@
 | `composers/beethoven/piano/sonatas/finale-choice.md` | Op.57 iii mm.8–16；Op.49 No.2 ii mm.1–12；Op.111 ii 待补 | `mutopia-937`、`mutopia-777`、`mutopia-1022` |
 | `composers/beethoven/piano/sonatas/development-techniques.md` | Op.10 No.1 i mm.106–118；Op.31 No.2 i mm.100–111 | `mutopia-778`、`mutopia-1509` |
 | `composers/beethoven/piano/sonatas/op90-two-movements.md` | Op.90 i mm.1–15；Op.90 ii mm.1–15 | `mutopia-906`、`mutopia-909` |
-| `composers/beethoven/piano/sonatas/slow-movement-variation.md` | Op.57 ii mm.1–16；Op.109 iii 待补 | `mutopia-288` |
+| `composers/beethoven/piano/sonatas/slow-movement-variation.md` | Op.57 ii mm.1–16；Op.109 iii 复用曲式专题的变奏谱例 | `mutopia-288` |
 | `composers/beethoven/piano/sonatas/late-texture.md` | Op.111 i、Op.101 i、Op.106 i 均待补（`\cadenzaOn` 排版，小节号需重对齐） | `mutopia-1022` |
 | `composers/beethoven/piano/sonatas/fugue-or-fugato.md` | Op.2 No.1 i mm.49–60；Op.110 iii mm.136–174、Op.106 iv mm.1–32 待补 | `mutopia-1211` |
 | `composers/beethoven/quartets/voice-roles.md` | Op.18 No.4 i mm.1–16 | `mutopia-sq-op18no4` |
@@ -105,6 +105,23 @@
 | 震音 | 贝多芬 Op.13 i mm.11–18 | [Peters 第 145 页](https://vmirror.imslp.org/files/imglnks/usimg/f/fb/IMSLP30364-PMLP01410-Beethoven_Sonaten_Piano_Band1_Peters_Op13.pdf)，公有领域，另核对 [Craig Stuart Sapp 的音符编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata08-1.krn) |
 | 震音 | 拉威尔 M.40 i mm.1–8 | 核对 [Durand，1905，罗切斯特大学馆藏](https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemVersionId=19375)。截取并重排自 [Noctave 版](https://noctavepiano.com/en/sheet-music/ravel-sonatine-1/)，Noctave, d’après la saisie MuseScore de Y.Murakami@TYO (CC0) / jeu de données PDMX，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | 重复音 | 贝多芬 Op.53 i mm.1–8 | Paul Dukas 编，Durand，1915，公有领域。根据 [Craig Stuart Sapp 依据该版录入的音符](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata21-1.krn)重排 |
+
+## 古典大曲式结构
+
+| 条目 | 作品和小节 | 底本与许可 |
+| --- | --- | --- |
+| 一部曲式 | 莫扎特 K. 1a 全曲 mm.1–10 | [利奥波德·莫扎特抄本](https://imslp.org/wiki/Andante%2C_KV_1a_%28Mozart%2C_Wolfgang_Amadeus%29)，公有领域。谱例据 [Noctave 整理的 CC0 音符编码](https://noctavepiano.com/en/free-library/mozart-andante-in-c-major-k-1a/) 重排。 |
+| 二部曲式 | 莫扎特 K. 15f 全曲 mm.1–18 | 按 [Neue Mozart-Ausgabe IX/27/1，第 104 页](https://dme.mozarteum.at/DME/objs/pdf/nma_201_104_104.pdf) 核对公有领域乐谱音符，采用正文读法，另排谱面。 |
+| 三部曲式 | 莫扎特 K. 331 ii Menuetto mm.1–8、31–38，Trio 自计 mm.1–8 | Breitkopf & Härtel，Stelios Samelis 的 [Mutopia-613](https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=613)，Public Domain，截取并重排。 |
+| 奏鸣曲式 | 贝多芬 Op. 90 i mm.53–67、85–92、110–117、129–148、196–205、232–245 | 主部开头沿用 `mutopia-906`，新增段落据 Durand 版与 [Craig Stuart Sapp 的音符编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata27-1.krn) 重排，并对照 [Mutopia 公有领域版](https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=906)。段落读法参照 [Schenkerian Performance and Analysis in Dialogue](https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/QMM/TC-QMM-114549.pdf) 第 58–71 页。 |
+| 回旋曲式 | 莫扎特 K. 545 iii 弱起及 mm.1–16、17–24、29–36、49–60 | 改编自 [Craig Stuart Sapp 的编码](https://github.com/craigsapp/mozart-piano-sonatas/blob/main/kern/sonata15-3.krn)，按 [Breitkopf & Härtel，1878 年版](https://s9.imslp.org/files/imglnks/usimg/a/a9/IMSLP56442-PMLP01855-Mozart_Werke_Breitkopf_Serie_20_KV545.pdf) 核读。截取并转换为 LilyPond，衍生谱例沿用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。 |
+| 变奏曲式 | 贝多芬 Op. 109 iii mm.1–8、17–24、33–40、65–72、97–104、113–120、153–160、161–168、188–195 | Durand，Paul Dukas 编，1915，公有领域。按 [Craig Stuart Sapp 的编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata30-3.krn) 重排，核对 [贝多芬手稿](https://www.loc.gov/item/ihas.200033155/) 和 [Monteiro、Aguilar 的分段及小节号](https://www.anppom.com.br/revista/index.php/opus/article/download/opus2021c2714/pdf)。 |
+| 自由发展 | 莫扎特 K. 397 mm.1–15 | Andrés Necochea 的 [Mutopia-2034](https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2034)，Public Domain。末尾补笔说明参照 [Neue Mozart-Ausgabe 前言](https://dme.mozarteum.at/DME/objs/pdf/nma_202_-40_-3_eng.pdf)。 |
+| 自由发展 | 莫扎特 K. 475 mm.1–3、161–163 | [Breitkopf & Härtel，1878，Mozarts Werke XX](https://imslp.org/wiki/Fantasia_in_C_minor%2C_K.475_%28Mozart%2C_Wolfgang_Amadeus%29)，公有领域。 |
+| 自由发展 | 贝多芬 Op. 106 iv Largo 至 Allegro risoluto 开头、Op. 110 iii 两次咏叹调和两次赋格的入口 | Durand，Paul Dukas 编，1915，公有领域。分别据 Craig Stuart Sapp 的 [Op. 106 编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata29-4.krn) 和 [Op. 110 编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata31-3.krn) 重排。Op. 106 的引子按速度段定位。 |
+| 自由发展 | 贝多芬 Op. 125 iv mm.92–99 低弦、655–663 女高音和女低音 | 取自 [OpenScore CC0 总谱](https://s9.imslp.org/files/imglnks/usimg/b/b8/IMSLP929853-PMLP1607-Beethoven_Symphony_No._9_Op._125.pdf)，总谱第 110、156–157 页。核对 [连续小节编号](https://eprints.hud.ac.uk/id/eprint/35023/1/FINAL%20THESIS%20-%20CRACKLE.pdf)。 |
+
+本专题只截取分析涉及的段落。K. 1a 和 K. 15f 是用于识别完整结构的公有领域短曲，因此收录全曲。仅有文字速度的谱例用数值设置音频播放速度。
 
 ## 编辑约定
 

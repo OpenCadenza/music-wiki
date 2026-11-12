@@ -33,3 +33,5 @@
 改完听一遍，再决定下一步。
 
 可以从[贝多芬的钢琴奏鸣曲](composers/beethoven/piano/sonatas/index.md)按作品读，也可以到[横向主调织体案例库](texture/index.md)按织体和舞曲形式比较谱例。
+
+也可以从[古典大曲式结构](form/index.md)对照段落边界、主题回归与调性走向。
