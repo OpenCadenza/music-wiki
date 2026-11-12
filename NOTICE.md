@@ -48,6 +48,9 @@
 | `mutopia-685` | 贝多芬 Op.69 大提琴奏鸣曲第三乐章 | Breitkopf & Härtel（Stelios Samelis 转录） | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=685> |
 | `mutopia-934` | 贝多芬 Op.76 六首变奏曲（主题与变奏） | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=934> |
 | `mutopia-1198` | 贝多芬 Op.11 钢琴三重奏第三乐章 | Breitkopf & Härtel (1862–1865) | Stelios Samelis | Public Domain | <https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1198> |
+| `imslp-70999` | 马勒 第四交响曲 | Ludwig Doblinger（1902），版号 31，Universal Edition 重印，版号 U.E. 952 | 本库据总谱转录 | Public Domain | [IMSLP 总谱扫描](https://s9.imslp.org/files/imglnks/usimg/4/40/IMSLP70999-PMLP58739-Mahler_-_Symphony_No._4_%28orch._score%29.pdf) |
+| `imslp-514284` | 马勒 第六交响曲 | C. F. Kahnt Nachfolger（1906），版号 4526 | 本库据总谱转录 | Public Domain | [IMSLP 总谱扫描](https://s9.imslp.org/files/imglnks/usimg/a/ad/IMSLP514284-PMLP10553-Mahler_-_Symphony_No.6.pdf) |
+| `imslp-415756` | 马勒 第七交响曲 | Bote & Bock（1909），版号 B. & B. 16867 | 本库据总谱转录 | Public Domain | [IMSLP 总谱扫描](https://s9.imslp.org/files/imglnks/usimg/f/f6/IMSLP415756-PMLP30475-GMahler_Symphony_No.7_fullscore_fe.pdf) |
 
 ## 按文章登记
 
@@ -89,6 +92,13 @@
 | `techniques/motivic-transformation.md` | Op.10 No.1 i mm.1–16（钢琴）；Op.18 No.4 i mm.17–24（四重奏） | `mutopia-778`、`mutopia-sq-op18no4` |
 | `composers/beethoven/concertos/double-exposition.md` | Op.37 i mm.1–8；mm.110–118 | `mutopia-899` |
 | `techniques/variation-technique.md` | Op.76 Tema mm.1–16、Var. I mm.18–25（钢琴）；Op.11 iii Tema mm.1–16（单簧管 in B♭） | `mutopia-934`、`mutopia-1198` |
+| `composers/mahler/symphonies/melodic-ninth.md` | 第六交响曲终乐章，排练号 107 后，总谱第 157 页第 2–6 小节（第一大管） | `imslp-514284` |
+| `composers/mahler/symphonies/uncanny-scherzo.md` | 第四交响曲第二乐章 mm.6–8（升弦独奏小提琴、独奏中提琴、独奏大提琴，总谱第 275 页）；第六交响曲谐谑曲排练号 88 起七小节（第一小提琴、第一竖琴，总谱第 129–130 页）；第七交响曲第三乐章弱起及 mm.1–8（定音鼓、大提琴，总谱第 119 页） | `imslp-70999`、`imslp-514284`、`imslp-415756` |
+
+上述马勒谱例保留底本的文字速度标记。谱例中的节拍器数值用于试听。升弦独奏的音频按实音播放，
+采用普通 MIDI 小提琴音色。弱音器标记保留在谱面，拨弦采用通用 MIDI 拨弦音色。
+
+九度选段参考 John G. Williamson 的 [The Development of Mahler’s Symphonic Technique](https://ora.ox.ac.uk/objects/uuid%3A2ba68f26-b6e5-4e04-be4d-62bd60286967/files/mabbfdab70446d736eb866bac9d743dc7)，正文第 110 页。
 
 ## 横向主调织体案例库
 
