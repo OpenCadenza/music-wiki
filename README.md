@@ -204,3 +204,12 @@ PR 自动执行，任一失败都不应合入：
 谱例来源与许可集中在仓库根 `NOTICE.md`，按文章分组记录作品、乐章、小节、取用渠道与许可
 类型，站点页脚提供入口。`content/` 内不重复登记来源或许可。构建通过只证明代码可编译，
 不证明音乐学内容或版权判断正确——谱例的截取范围与许可需要人工复核。
+
+## 横向主调织体案例库的 YAML
+
+`content/texture/` 中每个形式页使用 `kind: form` 和 `schema_version: 1`。用 `topic_name`、`question` 分别保存形式名和写作问题，页首的 `title` 和正文 H1 都写成「形式名｜具体写作问题」。`form_id` 是稳定标识，`category` 可填 `texture` 或 `dance`，`aliases` 可列中文别名和外文名。
+
+- `accent` 描述形式的重拍、典型强调和分组。舞曲可补 `typical_meters`、`downbeat_beat` 和 `emphasis_beats`，拍位从 1 起算。`pattern` 记录该形式的音序、交替或复击单位、步态等专属属性。
+- `cases[]` 的每条记录保存 `id`、`question`、`composer`、`work`、可选 `section`、`measures.start`、`measures.end`、`meter`、`tempo`、`observed_accent` 和 `feel`。小节从 1 起算，首尾均含。速度的 `source` 用 `score` 表示底本数字，用 `playback` 表示为试听设置的速度。
+- `tension.level` 用 `low`、`medium` 或 `high`，`tension.evidence` 用小节和拍位说明发音密度、速度、错位或留空。听感另写在 `feel`。`notation.format` 和 `notation.id` 定位对应的 LilyPond 或 ABC 围栏，`cases[].id` 用于站内直达。
+- 库页筛选以此处的 YAML 为数据源。拍号、作品和紧张度等案例条件落在同一条 `cases[]` 记录上。

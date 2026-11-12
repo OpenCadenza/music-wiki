@@ -30,3 +30,5 @@
 - [终止式：把终止推迟的四种手段](postponing-the-cadence.md)
 - [动机变形：改哪个参数还算同一个动机](motivic-transformation.md)
 - [变奏：改哪个参数才叫另一个变奏](variation-technique.md)
+
+[横向主调织体案例库](../texture/index.md)按具体形式介绍伴奏音型与舞曲拍感。每种形式先梳理分组和重拍，再用一个或多个谱例说明实际的节奏安排。

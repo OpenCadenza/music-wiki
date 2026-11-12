@@ -5,7 +5,7 @@
 
 ## 许可总述
 
-- 本项目使用的谱例一律取自**公有领域**乐谱的再排版，或 CC0 编码的乐谱。
+- 本项目优先采用**公有领域**乐谱的再排版或 CC0 编码。另有许可的谱例在对应条目注明。
 - 贝多芬作品本身早已进入公有领域。下列条目记录的是所用**排版版本**的出处与排版者。
 - 每段谱例只截取数小节用于教学分析，不构成完整乐谱的再分发。
 
@@ -89,6 +89,22 @@
 | `techniques/motivic-transformation.md` | Op.10 No.1 i mm.1–16（钢琴）；Op.18 No.4 i mm.17–24（四重奏） | `mutopia-778`、`mutopia-sq-op18no4` |
 | `composers/beethoven/concertos/double-exposition.md` | Op.37 i mm.1–8；mm.110–118 | `mutopia-899` |
 | `techniques/variation-technique.md` | Op.76 Tema mm.1–16、Var. I mm.18–25（钢琴）；Op.11 iii Tema mm.1–16（单簧管 in B♭） | `mutopia-934`、`mutopia-1198` |
+
+## 横向主调织体案例库
+
+下列小节为节奏与织体教学截取，并按仓库谱例规范重排。底本只有速度术语时，音频使用案例中标为「播放」的数值。
+
+| 形式 | 作品和小节 | 底本与许可 |
+| --- | --- | --- |
+| 阿尔贝蒂低音 | 莫扎特 K.545 i mm.1–12 | Breitkopf & Härtel，1878，[《莫扎特全集》扫描](https://s9.imslp.org/files/imglnks/usimg/a/a9/IMSLP56442-PMLP01855-Mozart_Werke_Breitkopf_Serie_20_KV545.pdf)，公有领域 |
+| 玛祖卡 | 肖邦 Op.6 No.1，弱起及 mm.1–8 | G. Schirmer，1894。改写自 Ryan Prince 的 [Mutopia-1687](https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1687)，[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)。截取、迁移并简化指法与排版 |
+| 波尔卡 | 斯美塔那 JB 1:107 No.2 mm.1–8 | [《捷克舞曲》第一集扫描 #13468，第 6 页](https://imslp.org/wiki/Czech_Dances_I_(Smetana,_Bed%C5%99ich))，公有领域乐谱 |
+| 向上分解和弦 | 舒曼 Op.18，弱起及 mm.1–8 | Clara Schumann 编，Breitkopf & Härtel，1887，[R.S. 56 扫描 #289794](https://imslp.org/wiki/Arabeske,_Op.18_(Schumann,_Robert))，公有领域 |
+| 向上分解和弦 | 勃拉姆斯 Op.76 No.7 mm.9–16（第一结尾） | Emil von Sauer 编，Peters，1910，[Op.76，谱面第 25 页](https://s9.imslp.org/files/imglnks/usimg/f/f6/IMSLP08444-Brahms_-_Klavierstucke_Op.76_-_Sauer.pdf)，公有领域 |
+| 圣咏式和弦织体 | 舒曼 Op.18 Minore I mm.41–48 | Clara Schumann 编，Breitkopf & Härtel，1887，[R.S. 56 扫描 #289794](https://imslp.org/wiki/Arabeske,_Op.18_(Schumann,_Robert))，公有领域 |
+| 震音 | 贝多芬 Op.13 i mm.11–18 | [Peters 第 145 页](https://vmirror.imslp.org/files/imglnks/usimg/f/fb/IMSLP30364-PMLP01410-Beethoven_Sonaten_Piano_Band1_Peters_Op13.pdf)，公有领域，另核对 [Craig Stuart Sapp 的音符编码](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata08-1.krn) |
+| 震音 | 拉威尔 M.40 i mm.1–8 | 核对 [Durand，1905，罗切斯特大学馆藏](https://urresearch.rochester.edu/institutionalPublicationPublicView.action?institutionalItemVersionId=19375)。截取并重排自 [Noctave 版](https://noctavepiano.com/en/sheet-music/ravel-sonatine-1/)，Noctave, d’après la saisie MuseScore de Y.Murakami@TYO (CC0) / jeu de données PDMX，[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| 重复音 | 贝多芬 Op.53 i mm.1–8 | Paul Dukas 编，Durand，1915，公有领域。根据 [Craig Stuart Sapp 依据该版录入的音符](https://github.com/craigsapp/beethoven-piano-sonatas/blob/main/kern/sonata21-1.krn)重排 |
 
 ## 编辑约定
 
