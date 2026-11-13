@@ -66,7 +66,7 @@ jobs:
       - name: Install pinned FFmpeg
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends build-essential pkg-config nasm libmp3lame-dev
+          sudo apt-get install -y --no-install-recommends libmp3lame0
           bash scripts/install-ffmpeg.sh
 
       - name: Build pinned abcMIDI
