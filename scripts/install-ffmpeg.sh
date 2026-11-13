@@ -3,10 +3,10 @@ set -euo pipefail
 
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 tools="$root/.tools"
-prefix="$tools/ffmpeg-8.1.3"
-archive="$tools/ffmpeg-8.1.3-linux64-gpl.tar.xz"
-url="https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-10-26-14-25/ffmpeg-n8.1.3-24-g92611900bb-linux64-gpl-8.1.tar.xz"
-expected_hash="d113aa5b57ab0dcfee171d835240ce3ea5db826a0ee80ed7528c8d26a61e87a4"
+prefix="$tools/ffmpeg-8.1.3-source"
+archive="$tools/ffmpeg-8.1.3.tar.xz"
+url="https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz"
+expected_hash="7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3"
 
 if [[ ! -x "$prefix/bin/ffmpeg" || ! -x "$prefix/bin/ffprobe" ]]; then
   mkdir -p "$tools"
@@ -18,18 +18,20 @@ if [[ ! -x "$prefix/bin/ffmpeg" || ! -x "$prefix/bin/ffprobe" ]]; then
     echo "FFmpeg archive hash mismatch: $actual_hash" >&2
     exit 1
   }
-  mkdir -p "$prefix"
-  tar -xJf "$archive" --strip-components=1 -C "$prefix"
+  source_dir="$(mktemp -d)"
+  trap 'rm -rf "$source_dir"' EXIT
+  tar -xJf "$archive" --strip-components=1 -C "$source_dir"
+  (cd "$source_dir" && ./configure --prefix="$prefix" --enable-libmp3lame --disable-doc --disable-debug && make -j"$(nproc)" && make install)
   rm -f "$archive"
 fi
 
 ffmpeg_version="$("$prefix/bin/ffmpeg" -version | sed -n '1p')"
 ffprobe_version="$("$prefix/bin/ffprobe" -version | sed -n '1p')"
-[[ "$ffmpeg_version" == *"n8.1.3"* ]] || {
+[[ "$ffmpeg_version" == *"8.1.3"* ]] || {
   echo "FFmpeg 8.1.3 is required: $ffmpeg_version" >&2
   exit 1
 }
-[[ "$ffprobe_version" == *"n8.1.3"* ]] || {
+[[ "$ffprobe_version" == *"8.1.3"* ]] || {
   echo "FFprobe 8.1.3 is required: $ffprobe_version" >&2
   exit 1
 }
