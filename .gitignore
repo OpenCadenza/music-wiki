@@ -8,3 +8,5 @@ soundfonts/
 content/public/
 playwright-report/
 test-results/
+.vitepress/cache
+.DS_Store

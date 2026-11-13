@@ -20,7 +20,8 @@ const pages = [
   ['贝多芬', 'composers/beethoven/index.html', false],
   ['奏鸣曲目录', 'composers/beethoven/piano/sonatas/index.html', false],
   ['开头', 'composers/beethoven/piano/sonatas/opening-gestures.html', true],
-  ['动机', 'composers/beethoven/piano/sonatas/motive-tasks.html', true]
+  ['动机', 'composers/beethoven/piano/sonatas/motive-tasks.html', true],
+  ['横向主调织体案例库', 'texture/index.html', false]
 ]
 
 for (const [name, relativePath, expectScore] of pages) {
@@ -38,7 +39,18 @@ for (const [name, relativePath, expectScore] of pages) {
   }
 }
 
+const textureDirectory = 'texture/'
+const textureCatalog = await readFile(join(distRoot, textureDirectory, 'index.html'), 'utf8')
 for (const block of manifest.blocks) {
+  if (block.sourcePath?.startsWith(textureDirectory)) {
+    const page = block.sourcePath.replace(/\.md$/, '.html')
+    const html = await readFile(join(distRoot, page), 'utf8')
+    if (!html.includes(`data-score-id="${block.id}"`) ||
+        !html.includes(`id="${block.id}" class="texture-facts"`) ||
+        !textureCatalog.includes(`/music-wiki/${page}#${block.id}"`)) {
+      throw new Error(`${block.id}: missing score player, case facts or catalog link`)
+    }
+  }
   const artifacts =
     block.artifacts ||
     [...block.svg, block.audio, block.source].map((name) => ({
