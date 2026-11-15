@@ -1,5 +1,5 @@
 ---
-title: 横向主调织体案例库
+title: 织体（待重整）
 description: 按具体织体与舞曲形式查找伴奏音型、重拍安排和真实谱例。
 schema_version: 1
 collection: horizontal-homophony
@@ -10,7 +10,7 @@ kind: collection
 import TextureCatalog from "../../.vitepress/theme/TextureCatalog.vue"
 </script>
 
-# 横向主调织体案例库
+# 织体（待重整）
 
 这里从一条能辨认的旋律出发，观察陪衬它的音何时进入、怎样成组、在哪里留空。用既定的和声音高，可以写出每两拍回到低音的阿尔贝蒂低音，也可以把伴奏压缩成短促的上行音群。选择哪种形式，取决于旋律需要怎样的落脚和多少空间。
 

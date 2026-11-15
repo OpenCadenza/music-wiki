@@ -134,7 +134,6 @@ const siteConfig = {
     },
     nav: [
       { text: 'OpenCadenza', link: 'https://opencadenza.github.io/' },
-      { text: '作曲家', link: '/composers/' },
       {
         text: '来源与许可',
         link: 'https://github.com/OpenCadenza/music-wiki/blob/main/NOTICE.md'
