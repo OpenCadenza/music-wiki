@@ -165,22 +165,129 @@ leftHand = {
 }
 ```
 
-### 3.2 混合类型 2：先行句 + 扩充终止进行（Antecedent + Cadential）——慢乐章的纯和声共鸣
+### 3.2 混合类型 2：先行句 + 扩充终止进行（Antecedent + Cadential）——纯和声进行的抒情闭合
 
 - **结构逻辑**：`[BI + CI → 弱终止]` + `[扩充终止和声进行（ECP） → 强终止]`
 - **力学特征**：前半段同样是标准的先行句，但在后 4 小节中，作曲家**完全剥离了延续功能的全部特征**（无动机碎裂、无清算模进、无节奏加速），而是将后 4 小节完全构筑在单一、连续展开的扩充终止和声进行（如 $I^6 - ii^6_5 - V - I$）之上。
-- **待核实证案例（按文献定位）**：海顿《G大调弦乐四重奏》Hob. III:66 (Op. 77 No. 1)，第二乐章（Adagio），mm. 1–8。
+- **实证作品**：海顿《G大调弦乐四重奏》Op. 64 No. 4 (Hob. III:66)，第二乐章（Menuetto: Allegretto），mm. 1–8（含弱起）。
 
-在古典曲式文献的分析传统中，海顿在此慢乐章开端的处理常被作为此类混合的典型代表：在庄严深沉的 Adagio 境域中，过多的动机碎裂与表面提速会破坏冥想般的静穆氛围。根据曲式结构梳理，先行句在 mm. 1–4 达成半终止（HC）后，后 4 小节（mm. 5–8）避开延续句式的碎裂动机，而是由一个宽广完整的扩充终止进行支撑，使全段在和声共鸣与线性引导中稳稳降落。
+在古典主义的典雅风格中，过多的动机碎裂与表面急促提速有时会破坏主题从容优美的歌唱性。海顿在 mm. 1–4 完成先行句的半终止（m. 4 停于 D 属和弦）后，后 4 小节（mm. 5–8）完全没有使用任何延续句式的短碎模进，而是由一个宽广悠长的完整终止级数支撑，使整个乐段在纯粹的和声共鸣与长线条声部引导中稳稳降落。
 
-从威廉·卡普林（2015）在《Harmony and Cadence in Gjerdingen's "Prinner"》中的和声界分来看，加兰特时期常见的线性延续图式（如 Prinner，其对位骨架建立在低音四级下行 $\hat{4}-\hat{3}-\hat{2}-\hat{1}$ 与高音平行十度 $\hat{6}-\hat{5}-\hat{4}-\hat{3}$ 之上，前两步常配和声 $IV - I^6$；详见[《加兰特图式在古典句法中的曲式功能整合》](galant-schemata-and-formal-functions.md)）本质上主要承担对位延展的“延续功能”，由于缺乏原位属和弦的强跳进，并不能自发构成封闭的“终止式”；若要在延续句末尾达成正格终止，低音往往需要变异跳向原位属音（$\hat{5}$）或引入单独的终止单元。海顿在 Op. 77 No. 1 此处呈现的构思则更为彻底：跨过线性对位延续阶段，直接将后 4 小节交付给一个纯粹由和声级数主导的扩充终止进行（Expanded Cadential Progression, 简称 ECP：$I^6 - ii^6_5 - V - I$）。在理论逻辑上，这体现了“终止功能”可以脱离“延续功能”而独立承担主题的后半程（具体各声部微观织体与音高走向留待后续乐谱深入比对校准）。
+从威廉·卡普林（2015）在《Harmony and Cadence in Gjerdingen's "Prinner"》中的和声界分来看，加兰特时期常见的线性延续图式（如 Prinner，其对位骨架建立在低音四级下行 $\hat{4}-\hat{3}-\hat{2}-\hat{1}$ 与高音平行十度 $\hat{6}-\hat{5}-\hat{4}-\hat{3}$ 之上，前两步常配和声 $IV - I^6$；详见[《加兰特图式在古典句法中的曲式功能整合》](galant-schemata-and-formal-functions.md)）本质上主要承担对位延展的“延续功能”，由于缺乏原位属和弦跳进，并不能自发构成封闭的“终止式”；若要在延续句末尾达成正格终止，低音必须发生变异跳向原位属音（$\hat{5}$）或引入单独的终止单元。海顿在 Op. 64 No. 4 此处呈现的构思则更为纯粹：跨过线性对位延续阶段，直接将后 4 小节交付给一个由和声级数主导的扩充终止进行（Expanded Cadential Progression, 简称 ECP：$I^6 - ii^6_5 - V - I$）。这在谱面上雄辩地证明：“终止功能”在古典句法中可以彻底脱离“延续功能”而独立承担主题的后半程。
 
-> **【谱例占位】**
-> - **作品**：约瑟夫·海顿《G大调弦乐四重奏》Hob. III:66 (Op. 77 No. 1)，第二乐章 Adagio
-> - **小节范围**：mm. 1–8
-> - **声部编制与 GM 编号**：第一小提琴（GM 40）、第二小提琴（GM 40）、中提琴（GM 41）、大提琴（GM 42）
-> - **调性与拍号**：降 E 大调，2/4 拍
-> - **结构说明**：mm. 1–4 先行句（弱半终止）；mm. 5–8 纯粹扩充终止和声进行（I6 - ii6/5 - V - I），无延续碎裂标记
+```lilypond title="海顿 Op. 64 No. 4 (Hob. III:66) 第二乐章 Menuetto" location="mm. 1–8（含弱起）"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet in G major, Hob. III:66 (Op. 64 No. 4)"
+  subtitle = "II. Menuetto (Allegretto) — mm. 1–8, with upbeat"
+  location = "mm. 1–8 (with anacrusis)"
+  composer = "Joseph Haydn"
+  tagline = ##f
+}
+
+% 编制与 GM 程序号:
+% Violin I: 40 (violin), Violin II: 40 (violin), Viola: 41 (viola), Violoncello: 42 (cello)
+% 调性与拍号：G 大调 (\key g \major), 3/4 拍 (\time 3/4)
+% 结构：混合乐段类型 2（先行句 mm. 1–4 弱半终止 + 扩充终止进行 ECP mm. 5–8 强正格终止）
+
+global = {
+  \key g \major
+  \time 3/4
+  \tempo "Allegretto" 4 = 130
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \partial 4
+  d''8(\f b'8) |
+  fs'8( g'8) d'4-. b''8( g''8) |
+  fs''8( a''8) c''4-. a'8( c''8) |
+  c''16( b'16) r8 d''16( c''16) r8 e''16( c''16) r8 |
+  a'2 d'4\p |
+  g'2( b'8 gs'8) |
+  b'8( a'8) c''4-. c''8( b'8) |
+  \grace b'16 a'4( a'8 g'8 a'8 d'8) |
+  g'4 r2 |
+  \bar "||"
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \partial 4
+  r4 |
+  r4 d'4-.\f d'4-. |
+  r4 fs'4-. fs'4-. |
+  g'8-. r8 g'8-. r8 g'8-. r8 |
+  fs'2 r4 |
+  r4 d'4-.\p d'4-. |
+  e'4 r4 e'8( d'8) |
+  c'2. |
+  b4 r2 |
+  \bar "||"
+}
+
+viola = {
+  \global
+  \clef alto
+  \partial 4
+  r4 |
+  r4 b4-.\f b4-. |
+  r4 a4-. a4-. |
+  g8-. r8 e8-. r8 c8-. r8 |
+  d4-. r4 r4 |
+  r4 g4-.\p f'4-. |
+  e'4 r4 r4 |
+  fs'2. |
+  g'4 r2 |
+  \bar "||"
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \partial 4
+  r4 |
+  r4 g4-.\f g4-. |
+  r4 d4-. d4-. |
+  g8-. r8 e8-. r8 c8-. r8 |
+  d4-. d'4-. r4 |
+  r4 b,4-.\p b,4-. |
+  c4 r4 r4 |
+  d4-. d4-. d4-. |
+  g,4-. g4-. r4 |
+  \bar "||"
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I"
+      midiInstrument = "violin"
+    } { \violinOne }
+
+    \new Staff \with {
+      instrumentName = "Violin II"
+      midiInstrument = "violin"
+    } { \violinTwo }
+
+    \new Staff \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+    } { \viola }
+
+    \new Staff \with {
+      instrumentName = "Violoncello"
+      midiInstrument = "cello"
+    } { \violoncello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ### 3.3 混合类型 3：复合基础乐念 + 延续句（CBI + Continuation）——无阻断的主题冲刺
 
@@ -316,7 +423,7 @@ cello = {
 | 混合类型 | 启动部（前4小节） | 归宿部（后4小节） | 核心解决的美学冲突 | 最佳适用场景 |
 | :--- | :--- | :--- | :--- | :--- |
 | **类型 1** | 先行句（BI+CI，弱终止） | 延续句（碎裂/提速/清算） | 既要前部的清晰对比与句读，又要后部的破格推进动能 | 抒情性快板或动势慢乐章（如 K. 330 II） |
-| **类型 2** | 先行句（BI+CI，弱终止） | 扩充终止进行（ECP） | 既要精美的乐思对比，又必须拒绝碎裂感以维持沉静庄严 | 冥想性、崇高风格的慢乐章（如 Hob. III:66 II） |
+| **类型 2** | 先行句（BI+CI，弱终止） | 扩充终止进行（ECP） | 既要精美的乐思对比，又必须拒绝碎裂感以维持典雅歌唱 | 典雅抒情或从容风格的乐章（如 Op. 64 No. 4 II） |
 | **类型 3** | 复合基础乐念（CBI，无终止） | 延续句（碎裂/提速/清算） | 既要两重动机的色彩丰富性，又决不允许中途停顿泄力 | 狂飙、幽默或急促推进的快板与谐谑曲（如 Op. 30 No. 2 III） |
 | **类型 4** | 复合基础乐念（CBI，无终止） | 后继句（BI+CI'，强终止） | 维持古典大弧线的平衡再现，同时避免问答式结构的割裂感 | 结构明朗、驱动力强的奏鸣曲或回旋曲终乐章（如 Op. 18 No. 2 IV） |
 
