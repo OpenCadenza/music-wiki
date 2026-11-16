@@ -3,6 +3,8 @@ import branches from '../../branches.json'
 
 type BranchEntry = { label: string; branch: string; slug: string }
 
+withDefaults(defineProps<{ variant?: 'navbar' | 'screen' }>(), { variant: 'navbar' })
+
 const base = import.meta.env.BASE_URL
 // "/music-wiki/dev/<slug>/" -> "/music-wiki/"
 const siteRoot = base.replace(/dev\/[^/]+\/$/, '')
@@ -21,8 +23,9 @@ function onChange(event: Event) {
 </script>
 
 <template>
-  <label class="branch-switcher" title="切换分支站点">
+  <label class="branch-switcher" :class="`branch-switcher--${variant}`" title="切换分支站点">
     <svg
+      v-if="variant === 'navbar'"
       class="branch-switcher-icon"
       viewBox="0 0 16 16"
       width="14"
@@ -37,6 +40,7 @@ function onChange(event: Event) {
         <path d="M10.5 5.4c0 2.2-1.6 2.9-4.2 3.6" />
       </g>
     </svg>
+    <span v-else class="branch-switcher-label">分支</span>
     <select
       class="branch-switcher-select"
       aria-label="切换分支站点"
@@ -61,6 +65,9 @@ function onChange(event: Event) {
   align-items: center;
   flex-shrink: 0;
   gap: 6px;
+}
+
+.branch-switcher--navbar {
   height: 40px;
   padding: 0 8px 0 10px;
   border: 1px solid transparent;
@@ -70,8 +77,8 @@ function onChange(event: Event) {
   transition: border-color 0.25s;
 }
 
-.branch-switcher:hover,
-.branch-switcher:focus-within {
+.branch-switcher--navbar:hover,
+.branch-switcher--navbar:focus-within {
   border-color: var(--vp-c-brand-1);
 }
 
@@ -81,37 +88,23 @@ function onChange(event: Event) {
   transition: color 0.25s;
 }
 
-.branch-switcher:hover .branch-switcher-icon,
-.branch-switcher:focus-within .branch-switcher-icon {
+.branch-switcher--navbar:hover .branch-switcher-icon,
+.branch-switcher--navbar:focus-within .branch-switcher-icon {
   color: var(--vp-c-text-1);
 }
 
 .branch-switcher-select {
   appearance: none;
   -webkit-appearance: none;
-  padding: 0 16px 0 0;
   border: none;
+  border-radius: 0;
   background-color: transparent;
   background-image:
     linear-gradient(45deg, transparent 50%, var(--vp-c-text-2) 50%),
     linear-gradient(135deg, var(--vp-c-text-2) 50%, transparent 50%);
-  background-position:
-    calc(100% - 5px) calc(50% - 1px),
-    calc(100% - 1px) calc(50% - 1px);
-  background-size: 4px 4px, 4px 4px;
   background-repeat: no-repeat;
-  color: var(--vp-c-text-2);
   font-family: inherit;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 20px;
   cursor: pointer;
-  transition: color 0.25s;
-}
-
-.branch-switcher:hover .branch-switcher-select,
-.branch-switcher:focus-within .branch-switcher-select {
-  color: var(--vp-c-text-1);
 }
 
 .branch-switcher-select:focus {
@@ -123,16 +116,59 @@ function onChange(event: Event) {
   background-color: var(--vp-c-bg);
 }
 
-@media (max-width: 767px) {
-  .branch-switcher {
-    height: 34px;
-    padding: 0 6px 0 8px;
-    gap: 4px;
-  }
+.branch-switcher--navbar .branch-switcher-select {
+  padding: 0 16px 0 0;
+  background-position:
+    calc(100% - 5px) calc(50% - 1px),
+    calc(100% - 1px) calc(50% - 1px);
+  background-size: 4px 4px, 4px 4px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color 0.25s;
+}
 
-  .branch-switcher-select {
-    max-width: 96px;
-    font-size: 12px;
+.branch-switcher--navbar:hover .branch-switcher-select,
+.branch-switcher--navbar:focus-within .branch-switcher-select {
+  color: var(--vp-c-text-1);
+}
+
+.branch-switcher--screen {
+  margin: 12px 24px 4px;
+  padding: 0;
+}
+
+.branch-switcher--screen .branch-switcher-label {
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+
+.branch-switcher--screen .branch-switcher-select {
+  flex-grow: 1;
+  height: 40px;
+  padding: 0 28px 0 12px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-alt);
+  background-position:
+    calc(100% - 16px) calc(50% - 1px),
+    calc(100% - 12px) calc(50% - 1px);
+  background-size: 4px 4px, 4px 4px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .branch-switcher--navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .branch-switcher--screen {
+    display: none;
   }
 }
 </style>
@@ -141,15 +177,17 @@ function onChange(event: Event) {
 <style>
 .VPNavBar .content-body > .search {
   order: 1;
+  flex-grow: 0;
 }
 
 .VPNavBar .content-body > .branch-switcher {
   order: 2;
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
 .VPNavBar .content-body > .menu {
   order: 3;
+  margin-left: auto;
 }
 
 .VPNavBar .content-body > .translations {
@@ -170,11 +208,5 @@ function onChange(event: Event) {
 
 .VPNavBar .content-body > .hamburger {
   order: 8;
-}
-
-@media (max-width: 767px) {
-  .VPNavBar .content-body > .branch-switcher {
-    margin-left: 8px;
-  }
 }
 </style>
