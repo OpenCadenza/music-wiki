@@ -15,6 +15,7 @@
 - [beethoven-analysis-orchestral](sources/beethoven-analysis-orchestral.md)（清单条目 26）
 - [beethoven-context](sources/beethoven-context.md)（清单条目 15）
 - [beethoven-score-sources](sources/beethoven-score-sources.md)（清单条目 11）
+- [caplin-gjerdingen](sources/caplin-gjerdingen.md)（清单条目 3，古典句法与加兰特图式研究文献）
 - [chopin-online](sources/chopin-online.md)（清单条目 1）
 - [dcml](sources/dcml.md)（清单条目 1）
 - [humdrum](sources/humdrum.md)（清单条目 1）
@@ -38,6 +39,7 @@
 - [OMT 旧版教材阅读入口](../../../text/open-music-theory/README.md)：官方 GitHub 旧版源码，非 OMT2。抽取 500 项；现有 Markdown 与官方源码同路径 SHA-256 一致 130 项；已改写 378 个可解析的站内链接，另有 1 个源链接目标未取得或未识别。
 - [DCML 标注 TSV 说明](../../../scores/dcml-abc/README.md)：[阅读副本目录](../../../scores/dcml-abc/)，纳入 351 项，排除未登记来源的 `_reviewed.tsv` 70 项；需结合 ABC 原件及数据字典使用。
 - [整理后的 HTML 正文阅读入口](../../../text/organized-html/README.md)：58 篇正文；原始 HTML 副本仍在 [source-copies](../../../text/source-copies/)，目录、摘要和错误页未作为正文。
+- [Caplin 与 Gjerdingen 研究文献入口](../../../text/caplin-gjerdingen/caplin-2015-prinner-cadence-guide.md)：Caplin (2015)《Harmony and Cadence in Gjerdingen’s “Prinner”》全文导读、原件 PDF 与图式认知文献元数据。
 
 - [机器可读谱包副本](../../../scores/source-packages/README.md)：从 Beethoven Kern、Bach 370 Chorales、Josquin、DCML ABC 指定原包解出 2065 个原生谱文件；不编译或转换。
 
