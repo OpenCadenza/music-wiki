@@ -7,6 +7,28 @@ import MarkdownIt from 'markdown-it'
 
 const manifestPath = resolve('public/notation/manifest.json')
 
+/** Production base. Development previews override it through `MUSIC_WIKI_BASE`. */
+const productionBase = '/music-wiki/'
+
+function resolveBase(value: string | undefined) {
+  const configured = value?.trim()
+  if (!configured) return productionBase
+  const path = configured.replace(/^\/+|\/+$/g, '')
+  return path ? `/${path}/` : '/'
+}
+
+const base = resolveBase(process.env.MUSIC_WIKI_BASE)
+const isPreview = base !== productionBase
+
+const head: Array<[string, Record<string, string>]> = [
+  ['meta', { name: 'theme-color', content: '#f5f1ec' }],
+  ['link', { rel: 'icon', href: `${base}favicon.svg` }]
+]
+
+if (isPreview) {
+  head.push(['meta', { name: 'robots', content: 'noindex, nofollow' }])
+}
+
 type NotationBlock = {
   hash: string
   id: string
@@ -104,19 +126,16 @@ function notationMarkdownPlugin(md: MarkdownIt) {
 }
 
 const siteConfig = {
-  title: 'Music Wiki',
+  title: isPreview ? 'Music Wiki（开发预览）' : 'Music Wiki',
   description: '作曲、乐理与 ABC/LilyPond 谱例知识库',
   lang: 'zh-CN',
-  base: '/music-wiki/',
+  base,
   srcDir: 'content',
   publicDir: 'public',
   outDir: 'dist',
   cleanUrls: false,
   lastUpdated: true,
-  head: [
-    ['meta', { name: 'theme-color', content: '#f5f1ec' }],
-    ['link', { rel: 'icon', href: '/music-wiki/favicon.svg' }]
-  ],
+  head,
   markdown: {
     config: notationMarkdownPlugin,
     lineNumbers: true,
@@ -127,7 +146,7 @@ const siteConfig = {
   },
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'Music Wiki',
+    siteTitle: isPreview ? 'Music Wiki（dev）' : 'Music Wiki',
     outline: {
       level: [2, 3],
       label: '本页目录'

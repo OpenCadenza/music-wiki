@@ -4,6 +4,7 @@
 谱例在 CI 中编译为可缩放乐谱、可播放 MP3 和可下载源码。
 
 - 在线站点：<https://opencadenza.github.io/music-wiki/>
+- 开发预览：<https://opencadenza.github.io/music-wiki/dev/dsh-c6ded6ed-82bb/>（`dsh-c6ded6ed-82bb` 的 `content/`，随主站同一次部署发布）
 - 协作仓库：<https://github.com/OpenCadenza/music-wiki>
 - 内容镜像：`viking://resources/music-wiki/`
 
@@ -33,7 +34,7 @@
 3. 向 `OpenCadenza/music-wiki:main` 提交 Pull Request。
 4. PR 会运行完整构建检查，但不会部署。
 5. 维护者评审并合入。
-6. 合入 `main` 后自动重新构建并部署 GitHub Pages。
+6. 合入 `main` 后自动重新构建并部署 GitHub Pages；主站与开发预览在同一次部署中一起发布。
 
 正常流程不需要手动触发 Actions，`workflow_dispatch` 只用于服务异常时重跑。首次贡献者的
 工作流可能需要维护者批准；若 `github-pages` 环境配置了审批规则，部署会停在等待审批。
@@ -46,7 +47,8 @@
 | `content/` | 公开知识正文，唯一通过 PR 维护的目录 |
 | `NOTICE.md` | 谱例来源、版本与许可登记 |
 | `.vitepress/` | 站点配置、主题与播放器组件 |
-| `.github/workflows/deploy.yml` | PR 检查与 `main` 自动部署 |
+| `.github/workflows/deploy.yml` | PR 检查、`main` 与开发预览的部署编排 |
+| `.github/workflows/build-site.yml` | 复用构建：主站与开发预览共用同一条流水线 |
 | `public/` | 站点公共静态资源；生成的 SVG、MIDI、MP3 与 manifest 不提交 |
 
 本地开发、工具链安装与单机发布步骤由团队文档库（`OpenCadenza/opencadenza-dev-doc`）维护，
