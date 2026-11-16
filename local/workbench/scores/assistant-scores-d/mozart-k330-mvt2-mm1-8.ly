@@ -18,77 +18,77 @@ global = {
   \tempo "Andante cantabile" 4 = 80
 }
 
-rightHand = \relative c'' {
+rightHand = {
   \global
   \clef treble
   \partial 4.
-  c8-.\(^\markup { \italic dolce } c-. c-.\) |
-  c8. \grace { \teeny d16( c b c) } f16 c8 a( c e) |
+  c''8-.\(^\markup { \italic dolce } c''-. c''-.\) |
+  c''8. \grace { \teeny d''16( c'' b' c'') } f''16 c''8 a'8( c''8 e'8) |
   <<
     {
-      g4( f8) f\f([ <e g> <f a>)] |
+      g'4( f'8) f'8\f([ <e' g'> <f' a'>)] |
     }
     \\
     {
-      s4. c4 c8 |
+      s4. c'4 c'8 |
     }
   >> |
   <<
     {
-      bf8.( c32 d c8) f( e f) |
+      bf'8.( c''32 d'' c''8) f'8( e' f') |
     }
     \\
     {
-      f4. r8 b,4\p |
+      f'4. r8 b4\p |
     }
   >> |
   <<
     {
-      <f a>4( <e g>8) g[ g g] |
+      <f' a'>4( <e' g'>8) g'8[ g'8 g'8] |
     }
     \\
     {
-      c,2 s4 |
+      c'2 s4 |
     }
   >> |
   <<
     {
-      \appoggiatura g'16 g'8.[ d32( b32] g8) g-.( g-. g-.) |
+      \appoggiatura g'16 g''8.[ d''32( b'32] g'8) g'8-.( g'8-. g'8-.) |
     }
     \\
     {
-      <b, d f>2 <c e>4 |
+      <b d' f'>2 <c' e'>4 |
     }
   >> |
-  \appoggiatura g'16 g'4 ~ g'16.[ a'64( b'64 c''16) b'16-.] a'16-.( g'-. f'-. e'-.) |
+  \appoggiatura g'16 g''4 ~ g''16.[ a''64( b''64 c'''16) b''16-.] a''16-.( g''-. f''-. e''-.) |
   <<
     {
-      cs'16[( d' f' a')] c'4. e'16[( d')] |
+      cs''16[( d'' f'' a'')] c''4. e''16[( d'')] |
     }
     \\
     {
-      s2 s8 b8 |
+      s2 s8 b'8 |
     }
   >> |
-  c'4 r2 | \bar "||"
+  c''4 r2 | \bar "||"
 }
 
-leftHand = \relative c {
+leftHand = {
   \global
   \clef bass
   \partial 4.
   r8 r4 |
-  <f, a, c>2\p <c, g, bf,>4 |
+  <f a c'>2\p <c g bf>4 |
   <<
     {
-      bf'4 a8( <a, a>[ <g, g> <f, f>]) |
+      bf4 a8( <a, a>8[ <g, g> <f, f>]) |
     }
     \\
     {
       d4. s4. |
     }
   >> |
-  <d d'>8[ <bf, bf>] <a, a> r d4 |
+  <d d'>8[ <bf, bf>8] <a, a>8 r8 d4 |
   c2 \clef treble <c' e'>4\f |
   R2. |
   \clef bass <d f b>4 <e g c'>4 r4 |
