@@ -106,3 +106,15 @@
   3. 关于“Meyer 终止在三音导致弱终结力，从而天然契合呈示句主和弦延长”以及“时值压缩引发和声节奏倍增驱动碎裂”的核心论断，明确在正文中以“我据此推断”形式标明为理论推导，不假托文献原文；
   4. 谱例严格采用真实作品定位占位，未编造任何小节号；占位块已规范调整为引用说明文本（明确作品名、作品号、乐章、精确小节范围、声部编制与 GM 编号、待助手交付状态），避免 lilypond 围栏在构建期触发空编译或校验报错；全局 `node scripts/validate-content.mjs` 验证 100% 通过（54 Markdown files, 13 directories, 51 notation blocks）。
 
+---
+
+## 7. 真实谱例嵌入与第二版复核记录（2026-11-16）
+
+- **谱例来源与交付**：资料助手自本地 Mutopia、Humdrum 及 OMT 谱源完成 3 处核心谱例编译交付（task-12 / task-4），涵盖海顿 Hob. XVI:27 III (mm. 1–8)、莫扎特 K. 283 I (mm. 1–10) 及贝多芬 Op. 74 I (mm. 1–9)；
+- **嵌入规范执行**：
+  * 围栏严格按标准标注 `title` 与 `location` 属性（如 `title="Keyboard Sonata No. 42 in G Major, Hob. XVI:27" location="III. Presto, mm. 1–8"`）；
+  * 围栏内恰好一处 `\version "2.26.0"`，保留完整声部与 GM 程序号声明（钢琴 0，弦乐四重奏 40/40/41/42）；
+  * 围栏紧邻上方无多余加粗标题行；正文行文未假托"该片段已核对"，保持学术严谨性（待谱例助手独立核验）；
+- **全库自动化校验**：运行 `node scripts/validate-content.mjs`，通过 55 Markdown files, 13 directories, 54 notation blocks，0 错误退出（exit code 0）。
+
+
