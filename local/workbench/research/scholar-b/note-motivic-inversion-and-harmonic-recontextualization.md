@@ -12,10 +12,10 @@
 本课题直接生长于对底层机器可读谱源（Kern、LilyPond）与 DCML 标注数据的实际研读与跨文本比对，具体包括：
 
 1. **贝多芬《F大调第16弦乐四重奏》Op. 135 第四乐章（Der schwer gefaßte Entschluß）**：
-   - 现存可编译 LilyPond 样本：
-     * `local/resources/scores/beethoven-op135/beethoven-op135-mvt4-mm1-4-grave.ly`（Grave ma non troppo tratto, 3/2拍, mm. 1–4，“Muss es sein?”）
-     * `local/resources/scores/beethoven-op135/beethoven-op135-mvt4-mm12-16-allegro.ly`（Allegro, 4/4拍, mm. 12–16，“Es muss sein!”）
-   - 原生 Kern 总谱：
+   - 现存旧 LilyPond 样本（注：经独立核验判定全部不合格，存在 m.4 旋律臆造、八度倒错等问题，仅作工程警示，不作分析依据）：
+     * `local/resources/scores/beethoven-op135/beethoven-op135-mvt4-mm1-4-grave.ly`
+     * `local/resources/scores/beethoven-op135/beethoven-op135-mvt4-mm12-16-allegro.ly`
+   - 原生 Kern 总谱（唯一可靠谱源）：
      * `local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet16-4.krn`
      * 重点研读行段：
        - mm. 1–4（Lines 24–63）：Grave 开篇问句对位与叹息声部。
@@ -29,9 +29,10 @@
        - mm. 165–168（Lines 323–331）：第二次 Grave 中标记了 `V64` -> `V6` -> `III+`（增三和弦）-> `III+6` 以及 `VI+7`。
 
 2. **舒伯特艺术歌曲《魔王》D. 328（Erlkönig, Op. 1）**：
-   - 现存可编译 LilyPond 样本：
-     * `local/resources/scores/schubert-d328/schubert-d328-mm1-5-prelude.ly`（前奏 mm. 1–5，右手三连音马蹄律动与左手低音阶梯爬升）
-     * `local/resources/scores/schubert-d328/schubert-d328-mm72-76-mein-vater.ly`（儿子的第一次惊呼“Mein Vater, mein Vater!”，mm. 72–76）
+   - 现存旧 LilyPond 样本（注：经独立核验判定全部不合格，存在马蹄断奏被篡改为保持音、独唱漏音、左手时值缩短等严重缺陷，仅作工程警示，不作分析依据）：
+     * `local/resources/scores/schubert-d328/schubert-d328-mm1-5-prelude.ly`
+     * `local/resources/scores/schubert-d328/schubert-d328-mm72-76-mein-vater.ly`
+   - 权威谱源依据：Mutopia 整理工程原件（基于 C.F. Peters Band I 原谱，`local/origin_resources/corpus/lilypond/SchubertF/D328/Erlkoenig/Erlkoenig.ly`）。
    - 重点研读音程与声部对抗：
      * 高音独唱声部固定在 Eb5（ef''），而钢琴右手八度三连音持续猛击 D4/D5（<d' d''>8），制造尖锐刺耳的小二度/小九度摩擦。
      * 低音副属/导七和弦推进（Bb -> B -> C -> A -> F#），并结合全曲三次呼喊的调性升高（g小调 -> a小调 -> c小调）。

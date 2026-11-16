@@ -83,7 +83,7 @@ tags:
 
 ### 3. 大全奏到极弱的听觉适应缓冲（强奏乐器延留现象）
 贝尔金在行 518 强调了人类听觉的物理适应机制：**在经历高能量的强奏全奏（Tutti *ff*）后，人耳鼓膜与神经需要数个节拍的恢复时间。若音乐立刻无缓冲地切入极弱（*p*），最初的数个弱奏音符往往会被耳朵完全漏听。**
-- *工程规范*：从全奏突然刹车到室内乐弱奏时，可采用贝尔金所述的强奏延留处理（行 518：*one or two instruments will be held over from the fortissimo passage for a few beats*，本文简称为延留音 / holdover），由一至两件中音域乐器在强奏收尾处保留半拍至一拍的极弱持续长音，充当听觉缓冲垫。
+- *工程规范*：从全奏突然刹车到室内乐弱奏时，可采用贝尔金所述现象（行 518：*one or two instruments will be held over from the fortissimo passage for a few beats*，下文称 holdover／延留），由一至两件中音域乐器在强奏收尾处保留半拍至一拍的极弱持续长音，充当听觉缓冲垫。
 
 ---
 

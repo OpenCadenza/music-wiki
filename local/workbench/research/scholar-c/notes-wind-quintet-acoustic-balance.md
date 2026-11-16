@@ -154,3 +154,16 @@
      * Horn: 衰减 -1.0（降至 *mf*，防止声能爆表吞噬木管）
 3. **织体稀疏度监控**：
    - 持续 16 小节以上 5 件乐器全开时，触发预警，强制拆解为 2–3 件乐器的室内乐子编制。
+
+---
+
+## 七、成稿与交付记录（2026-11-16）
+
+- **正文交付**：`content/ensembles/wind-quintet-acoustic-balance.md`
+- **编制轴导引**：`content/ensembles/index.md`
+- **总入口注册**：`content/index.md`（开辟顶层 `ensembles/` 编制轴）
+- **研究归档**：`local/docs/研究归档/wind-quintet-acoustic-balance.md`
+- **对应看板任务**：关联 S 卡 `task-19`，已建 R 卡 `task-20`（谱例请求），成稿 A 卡待创建。
+- **校验状态**：`node scripts/validate-content.mjs` 验证通过（14 Markdown files, 6 directories, 3 notation blocks, 0 errors）。
+- **状态**：`已成稿，待本批复读`
+

@@ -1,0 +1,30 @@
+# 研究归档：管乐五重奏的声学失衡与多维平衡机制
+
+- **学者**：scholar-c
+- **选题**：管乐五重奏的声学失衡与多维平衡机制（Acoustic Imbalance and Multidimensional Balance in the Wind Quintet）
+- **所属顶层轴**：`content/ensembles/`（开辟知识库编制轴第一篇）
+- **中心论证**：管乐五重奏拼合了开管边棱音、窄圆锥双簧、圆柱闭管单簧、宽圆锥双簧与圆锥铜管四种截然相反的发音激励机制，在动态响应、起音包络与泛音共振峰上具有天然的极端异质性。作曲家通过摒弃机械的音阶顺序叠置（Stacking），运用交错排布（Interlocking）与包围排布（Enclosure）构建和声声学嵌合，运用圆号在中音声部（Alto voice, G3–C5）的黄金粘合定位化解木管空洞，并将异质性转化为零认知负荷的听觉流分离复调对位、色彩接力与子编制轮转，实现室内乐的动态平衡。
+- **实际采用的资料范围（严格限制在本地真实研读文献）**：
+  - Alan Belkin: *Artistic Orchestration* (`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)：
+    - pp. 7–10（行 150–210）：木管乐器音区分裂律（“每一件木管乐器相当于三件乐器”，行 152）、四音和弦四音色陷阱（行 161）、和弦排布的三种几何模型（叠置/并置、交错/重叠、包围，行 161–177）、双簧管的破坏性染色（行 173）、同类管乐齐奏的小型合唱质变（行 154）；
+    - pp. 11–13（行 211–263）：铜管组的均质性、圆号中音声部（Alto voice）近距密集排列黄金法则（行 221）、高低圆号生理分工（行 229）、自然泛音列开放音程遗存（行 233–246）、极低踏板音迟缓性（行 231）；
+  - Philharmonia Orchestra 乐器学档案 (`local/resources/text/organized-html/philharmonia/instruments/`)：
+    - `flute.md`（行 36–56）：66 cm 三节金属开管构造、261 Hz – 2.1 kHz 频率范围、低音天鹅绒弱声压与高音银亮穿透；
+    - `oboe.md`（行 20–36）：62 cm 窄圆锥双簧管构造、233 Hz – 1.6 kHz 频响、1–3 kHz 鼻音共振峰与低音起音生硬门槛；
+    - `clarinet.md`（行 20–36）：60 cm 圆柱闭管单簧管物理机制、奇数次泛音与夏卢摩/喉音/克拉里昂三大音区、极宽动态控制域（ppp 至全奏）；
+    - `bassoon.md`（行 20–40）：254 cm 宽圆锥大双簧管构造、十指操作机制、低音蜂鸣丰厚与高音紧绷抒情；
+    - `horn.md`（行 20–40）：270 cm 圆锥铜管声学能量、深漏斗号嘴融合度与跨家族中音桥梁属性；
+  - 乐谱文献与作品案例：
+    - 安东·雷哈（Anton Reicha）：《降E大调管乐五重奏》Op. 88 No. 2 第一乐章 Lento - Allegro moderato（交错排布和声模型与圆号中音支架）；
+    - 卡尔·尼尔森（Carl Nielsen）：《管乐五重奏》Op. 43 第一乐章 Allegro ben moderato（乐器性格拟人化解耦与极弱动态下的声学避让）。
+- **正文位置**：
+  - 正文：`content/ensembles/wind-quintet-acoustic-balance.md`
+  - 编制轴目录导引：`content/ensembles/index.md`
+  - 知识库主入口更新：`content/index.md`（注册编制轴入口）
+- **谱例现状与占位清单**：
+  - 安东·雷哈 Op. 88 No. 2 第一乐章 mm. 1–8（声部摘录占位，长笛、双簧管、单簧管、大管、圆号，GM 73/68/71/70/60）；
+  - 卡尔·尼尔森 Op. 43 第一乐章 mm. 1–12（声部摘录占位，单簧管、圆号、大管、长笛、双簧管，GM 71/60/70/73/68）；
+  - 谱例制作流水线：关联 `task-20`（已建立资料请求卡）；正文中采用文本引用块规范占位，无空 `lilypond` 围栏，确保构建脚本全绿通过。
+- **工程与内容校验**：
+  - 运行 `node scripts/validate-content.mjs`，通过校验（14 Markdown files, 6 directories, 3 notation blocks, 0 errors）。
+- **状态**：`已成稿，待本批复读`
