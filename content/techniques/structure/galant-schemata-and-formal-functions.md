@@ -181,7 +181,7 @@ leftHand = \relative c' {
   <a c>4-.\p <g b>4-. <fs a>4-. |
   <g b>4 r4 <e g>4 |
   r4 << { g4 c4 } \\ { d,2 } >> |
-  <g b>4 g,4 r4 \bar "||"
+  <g b>4 g,4 r4 | \bar "||"
 }
 
 \score {
@@ -242,7 +242,7 @@ violinOne = {
   d''2 ef''4 c''8( f''8) |
   ef''4( d''4 c''4 bf'4) |
   bf'4( af'8) r8 af'4( g'8) r8 |
-  g'4~\fp g'16( f'16 e'16 f'16 e'16 f'16 g'16 f'16 e''16 f''16 g''16 f''16) | |
+  g'4~\fp g'16( f'16 e'16 f'16 e'16 f'16 g'16 f'16 e''16 f''16 g''16 f''16) |
   \bar "||"
 }
 
