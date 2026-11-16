@@ -11,7 +11,7 @@
 
 - **学术期刊论文（Music Theory Online, MTO 原文整理副本）**：
   * `local/resources/text/organized-html/music-theory-online/cohn-2016-funky-rhythms-1119934417edfd1e.md`（Richard Cohn: *A Platonic Model of Funky Rhythms*, MTO 22.2, 2016。核心论点：三单位生成 3-generation 模型、离心力 Centrifugal 与向心力 Centripetal 的数论与动力学博弈、节拍绑架 Hijacking、失重 Floatation 与重锁 Relock 理论）；
-  * `local/resources/text/organized-html/music-theory-online/butterfield-2006-anacrusis-925fd5fd6ae18339.md`（Matthew W. Butterfield: *The Power of Anacrusis*, MTO 12.4, 2006。核心论点：Christopher Hasty《Meter as Rhythm》的节拍投影 Metric Projection 理论、投影势能 Projective Potential 与被投射阶段 Projected Phase、弱起与反拍重音的知觉机制）；
+  * `local/resources/text/organized-html/music-theory-online/butterfield-2006-anacrusis-925fd5fd6ae18339.md`（Matthew W. Butterfield: *The Power of Anacrusis*, MTO 12.4, 2006。核心论点：系统转述 Christopher Hasty 1997 的节拍投影 Metric Projection 理论，见其 §II 与脚注 8–11 对应论述，剖析投影势能 Projective Potential 与被投射阶段 Projected Phase、弱起与反拍重音的知觉机制）；
 - **Open Music Theory (OMT) 教学文献源码**：
   * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/meter.md`（单节拍、复节拍与二分/三分层级脉冲模型）；
   * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/internalExpansions.md`（William Rothstein 乐句节奏理论与 19 世纪四小节方整性难题）；
@@ -20,8 +20,8 @@
   * 莫扎特《g小调第40交响曲》K. 550 第三乐章 Menuetto（mm. 1–14，三小节超节拍与复调海米奥拉交错）；
   * 贝多芬《降E大调第三交响曲“英雄”》Op. 55 第一乐章（mm. 123–131，全管弦乐连续二度重音狂轰与离心风暴）；
 - **引证与推论纪律说明**：
-  * 本文严格立足于上述实际阅读的 MTO 论文与 OMT 章节，严禁任何未读专著页码的假托；
-  * 节拍投影与三单位生成力学模型忠实转述自 Hasty、Butterfield 与 Cohn；
+  * 本文严格立足于上述实际阅读的 MTO 论文与 OMT 章节，严禁任何未读专著页码的假托（明确说明 Hasty 理论系转引自 Butterfield 2006 第 II 节与脚注 8–11，本地无 Hasty 原著）；
+  * 节拍投影与三单位生成力学模型忠实转述自 Butterfield 与 Cohn；
   * 谱例小节、节拍、调号与编制严格核对谱面；
   * 关于海米奥拉作为“终止前虚拟减速阻尼器”与“结构性离心失重风暴”的演进脉络，以及与第二篇动机解耦、与 scholar-b2 那不勒斯和弦结构对抗的跨篇力学同构性，在正文中明确注明为笔者的分析推导。
 

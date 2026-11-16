@@ -1,0 +1,59 @@
+# 研究归档：巴赫众赞歌终止式的声部时钟与相位解耦机制
+
+- **学者**：scholar-b2
+- **选题**：巴赫众赞歌终止式的声部时钟与相位解耦机制（Cadential Voice Clock and Phase Decoupling in Bach's Chorales）
+- **中心论证**：四部合唱终止式绝非四声部在同一强拍同时撞线的垂直瞬时切片，而是一套精密运转的声部时钟系统；通过微观时钟相位差，巴赫实现了女高音提前半拍先现锚定、内声部跨小节线 4–3 挂留故意滞后推力、旋律全音符提前锚定下的下方三声部二次和声变轨、以及终局落地为满足严格倾向音解决而主动省略五音的“三倍根音 + 单三音”留白声学。
+- **状态**：`已成稿，待本批复读`
+
+---
+
+## 1. 实际采用的资料范围
+
+- **权威理论教材与规约（Open Music Theory）**：
+  * `cadenceTypes.md`：正格终止（PAC/IAC）、半终止（HC）、阻碍终止与弗里吉亚终止的曲式标点功能；
+  * `embellishingTones.md`：先现音（Anticipation，早到锚定）与挂留音（Suspension，迟到滞留）的时钟力学解耦；
+  * `fourthSpecies.md`：终束对位中的斜向进行与外声部声部走向规约。
+
+- **底层机器可读原生谱源（Humdrum Kern `bach-370-chorales-main`）逐音核验**：
+  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor001.krn`（BWV 269）：
+    - Lines 34–42（mm. 3–4）：女高音在第 3 小节第 3 拍后半拍提前切入八分音符 $A4$（`8a`），在下方三声部仍处于 G 音和弦背景中抢先到达，并在第 4 小节下拍与 D 大调属三和弦汇合（半拍先现音）；
+  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor002.krn`（BWV 347）：
+    - Lines 37–48（mm. 3–4）：中音声部跨小节线延留二分音符 $E4$（`[2e` $\to$ `4e]`），在第 4 小节强拍对低音属音 $B2$ 构成四度挂留，故意迟到整整一拍至第 2 拍才解决至升 $D4$（`4d#`，重属导音），随后在第 3 拍完成 E 大调半终止；
+  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor010.krn`（BWV 38/6）：
+    - Lines 87–93（mm. 12–13）：第 13 小节女高音以全音符 $E4$（`1e;`）提前整整 4 拍静态锚定；下方三声部在其长音覆盖下，相继经历第 1 拍升 G 减和弦、第 2 拍 a 小调阻碍和弦，直到第 3 拍才最终收束于 E 大调主三和弦（旋律与下方声部时钟错动两拍）；
+  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor021.krn`（BWV 153/5）：
+    - Lines 39–43（mm. 3–4）：第 4 小节下拍 a 小调完全正格终止落地和弦彻底省略五音 $E$，由低音 $A2$、次中音 $A3$、女高音 $A4$ 构成三倍根音，中音 $C4$ 构成单三音；实证证明线性声部导向（导音升G上行至A、七音D下行至C、旋律B下行至A）对垂直和弦音完整的压倒性优势。
+
+---
+
+## 2. 正文位置与目录拓展
+
+- **核心正文**：`content/composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md`
+- **目录实质导论**：
+  * `content/composers/index.md`（全新开辟工坊与体裁导向的 composers 顶层轴）
+  * `content/composers/bach/index.md`（系统阐明巴赫的复调建筑、声部工坊与神学修辞）
+  * `content/composers/bach/chorale/index.md`（四部众赞歌的定旋律自洽、调式功能融合与乐句时钟控制）
+- **顶层总索引更新**：`content/index.md`（正式纳入 composers/ 轴入口）
+
+---
+
+## 3. 谱例占位与交付状态
+
+全文严格执行工程硬规则，绝不使用空 `lilypond` 围栏，全部采用规范文本引用块占位：
+1. **J. S. 巴赫：四部合唱《从心底深处》BWV 269，mm. 3–4**（SATB 四部，GM 52）
+   - 实证事实：女高音先现音提前半拍落入 A4 锚定半终止。
+2. **J. S. 巴赫：四部合唱《我感谢你，亲爱的主》BWV 347，mm. 3–4**（SATB 四部，GM 52）
+   - 实证事实：中音声部跨小节线二分音符延留 E4，在 B2 属音上制造 4–3 挂留并延迟一拍解决至升 D4。
+3. **J. S. 巴赫：四部合唱《自深处我向你呼求》BWV 38/6，mm. 12–13**（SATB 四部，GM 52）
+   - 实证事实：女高音全音符 E4 提前锚定，下方三声部完成减和弦—阻碍三和弦—E大调主和弦二次变轨。
+4. **J. S. 巴赫：四部合唱《我心所愿》BWV 153/5，mm. 3–4**（SATB 四部，GM 52）
+   - 实证事实：完全正格终止落地三倍根音（A2/A3/A4）+ 单三音（C4），五音彻底留白以保全严格线性声部导向。
+
+*交付状态*：已在 task-34 方案与正文中完整登记，待后续统一向谱例助手下发 R 卡进行代码编码与独立核验。
+
+---
+
+## 4. 未解决的缺口与局限
+
+- **当前缺口**：四处谱例均以规范文本引用块占位，待后续谱例助手完成 LilyPond 2.26.0 代码交付与独立逐音核验后做无缝替换。
+- **学术局限**：本文聚焦于纯人声四部众赞歌中的正格终止与半终止，尚未扩展至器乐协同康塔塔合唱中带有华丽交响加花与持续低音复奏（Basso Continuo Ritornello）的复合终束结构，留待 chorale 专题后续纵深挖掘。
