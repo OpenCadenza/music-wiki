@@ -120,6 +120,7 @@ gh run view <run-id>                            # 三个作业：Read branches.j
 | build 全部成功，deploy 0 步失败 | 环境的部署分支策略没放行该分支 |
 | 页面 404 | `slug` 写错，或 `branches.json` 不在 `main` 的最新提交里 |
 | 下拉框没有新条目 | 只改了分支，没有改 `main` 的 `branches.json` |
+| 改完 branches.json，下拉框仍是旧列表 | 站点构建缓存 key 未把 branches.json 计入哈希（build-site.yml 的 site-dist 缓存）——v1 起已计入；仍复现则确认此次部署真的重建了 main（看 Actions 里 Build 作业是缓存命中还是冷构建） |
 | 预览内容没变化 | 分支变了但这次部署没有重建它；检查 `gh run` 里该分支作业是否走了缓存（缓存命中说明内容哈希未变） |
 
 ## 五、约束与维护
