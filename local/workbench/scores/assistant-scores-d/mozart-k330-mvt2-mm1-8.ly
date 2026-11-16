@@ -4,12 +4,23 @@
 \header {
   title = "Keyboard Sonata No. 10 in C Major, K. 330 (300h)"
   subtitle = "II. Andante cantabile (mm. 1–8)"
+  location = "mm. 1–8"
   composer = "Wolfgang Amadeus Mozart"
   tagline = ##f
 }
 
-% 依据 Open Music Theory (Graphics/form/XML/mozart, k330,ii.xml 与 k330-ii.png)
-% 及 Humdrum Kern (0041-41-Piano Sonata No. 10 in C major, K 330 (300h), mvmt. 2.abc) 严格对齐编码。
+% 严格按原谱与可靠谱源核对：
+% 作品：Wolfgang Amadeus Mozart - Keyboard Sonata No. 10 in C Major, K. 330 (300h)
+% 乐章：II. Andante cantabile (mm. 1–8)
+% 谱源出处：
+% 1. Open Music Theory (Graphics/form/XML/mozart, k330,ii.xml 与 Graphics/form/k330-ii.png)
+% 2. Humdrum Kern 数据库 (0041-41-Piano Sonata No. 10 in C major, K 330 (300h), mvmt. 2.abc)
+% 3. 新莫扎特全集 (NMA) 权威乐谱
+% 编制与 GM 程序号 (0–127 基准):
+% Piano: 0 (acoustic grand)
+% 调性与拍号：F 大调 (\key f \major), 3/4 拍 (\time 3/4)
+% 速度：Andante cantabile (4 = 80)
+% 结构：混合乐段类型 1（先行句 mm. 1–4 达成半终止 + 延续句 mm. 5–8 达成正格终止）
 % 小节范围：弱起三拍八分音符 (\partial 4.) + mm. 1–8。
 
 global = {
