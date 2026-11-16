@@ -7,7 +7,7 @@ on:
     # github-pages environment (see README).
     branches:
       - main
-      - dsh-c6ded6ed-82bb
+      - scholar-agent-dev
   pull_request:
     branches: [main]
   workflow_dispatch:
