@@ -25,7 +25,7 @@ def ly_per_measure(display, names, bar_len, partial):
             else:
                 m = int((t - partial) / bar_len + 1e-9) + 1
                 onset = round(t - partial - (m - 1) * bar_len, 4)
-            out.setdefault(m, []).append((round(onset, 4), p, name))
+            out.setdefault(m, []).append((round(onset, 4), p, round(d, 4), name))
     for m in out:
         out[m].sort()
     return out
@@ -62,7 +62,7 @@ def xml_per_measure(path, maxm, part_filter=None):
                 dur = int(el.findtext("duration") or 0) / div
                 voice = el.findtext("voice") or "1"
                 staff = el.findtext("staff") or "1"
-                key = (staff, voice)
+                key = voice
                 t = prev_onset if chord else cursors.get(key, 0.0)
                 if el.find("rest") is not None:
                     if not grace and not chord:
@@ -75,7 +75,8 @@ def xml_per_measure(path, maxm, part_filter=None):
                         + int(p.findtext("alter") or 0))
                 if grace:
                     continue
-                out.setdefault(mi, []).append((round(t, 4), midi, f"p{part.get('id')}s{staff}v{voice}"))
+                out.setdefault(mi, []).append((round(t, 4), midi, round(dur, 4),
+                                               f"p{part.get('id')}s{staff}v{voice}"))
                 if not chord:
                     cursors[key] = t + dur
                     prev_onset = t
@@ -84,12 +85,11 @@ def xml_per_measure(path, maxm, part_filter=None):
     return out
 
 
-def abc_per_measure(path, first_line, last_line, unit=0.5, key_alters=None):
-    """返回 {小节下标(0=弱起): [(小节内 onset, midi, 声部标签)]}。"""
+def abc_per_measure(path, first_line, last_line, unit=0.5, key_alters=None, only_v=None):
+    """返回 {小节下标(0=弱起): [(小节内 onset, midi, 时值, 声部标签)]}。"""
     import re
     key_alters = key_alters or {}
     lines = Path(path).read_text(encoding="utf-8", errors="replace").splitlines()
-    running = {}
     counter = {}
     out = {}
     for idx in range(first_line - 1, last_line):
@@ -97,6 +97,8 @@ def abc_per_measure(path, first_line, last_line, unit=0.5, key_alters=None):
         if not m:
             continue
         v = int(m.group(1))
+        if only_v is not None and v != only_v:
+            continue
         text = m.group(2)
         for piece in split_bars(text):
             if not piece.strip(" |:"):
@@ -108,8 +110,7 @@ def abc_per_measure(path, first_line, last_line, unit=0.5, key_alters=None):
                 for onset, midi, dur in ev:
                     if midi is None:
                         continue
-                    out.setdefault(n - 1, []).append((round(onset, 4), midi, f"V{v}"))
-            running[v] = running.get(v, 0.0) + total
+                    out.setdefault(n - 1, []).append((round(onset, 4), midi, round(dur, 4), f"V{v}"))
     for k in out:
         out[k].sort()
     return out
@@ -136,34 +137,43 @@ def dcml_per_measure(path, maxm):
             continue
         if r["gracenote"]:
             continue
-        onset = float(Fraction(r["mc_onset"]))
+        onset = float(Fraction(r["mc_onset"])) * 4.0   # DCML 的 mc_onset 以全音符为单位
         out.setdefault(mc, []).append((round(onset, 4), int(r["midi"]),
+                                       round(float(Fraction(r["duration_qb"])), 4),
                                        f"st{r['staff']}v{r['voice']}"))
     for k in out:
         out[k].sort()
     return out
 
 
-def diff(actual, source, label, ms):
+def diff(actual, source, label, ms, with_dur=False):
+    def key(ev):
+        return (round(ev[0], 3), ev[1], round(ev[2], 3)) if with_dur else (round(ev[0], 3), ev[1])
+
     bad = []
     for m in ms:
-        a = sorted((o, p) for o, p, *_ in actual.get(m, []))
-        s = sorted((o, p) for o, p, *_ in source.get(m, []))
+        a = sorted(key(x) for x in actual.get(m, []))
+        s = sorted(key(x) for x in source.get(m, []))
         if a != s:
-            only_a = [x for x in a if a.count(x) > s.count(x)]
-            only_s = [x for x in s if s.count(x) > a.count(x)]
-            # 计数差
             from collections import Counter
             ca, cs = Counter(a), Counter(s)
-            extra = list((ca - cs).elements())
             missing = list((cs - ca).elements())
+            extra = list((ca - cs).elements())
             bad.append((m, missing, extra))
     print(f"### {label}: 不一致小节 {len(bad)}/{len(ms)}")
+    def fmt(items):
+        out = []
+        for it in items:
+            o, p = it[0], it[1]
+            if with_dur and len(it) > 2:
+                out.append(f"{nm(p)}({p})@{o:g}+{it[2]:g}")
+            else:
+                out.append(f"{nm(p)}({p})@{o:g}")
+        return ", ".join(out) or "-"
+
     for m, missing, extra in bad:
-        ms_txt = ", ".join(f"{nm(p)}({p})@{o:g}" for o, p in missing) or "-"
-        ex_txt = ", ".join(f"{nm(p)}({p})@{o:g}" for o, p in extra) or "-"
-        print(f"  m.{m}: 源有而实测无: {ms_txt}")
-        print(f"        实测有而源无: {ex_txt}")
+        print(f"  m.{m}: 源有而实测无: {fmt(missing)}")
+        print(f"        实测有而源无: {fmt(extra)}")
     return bad
 
 

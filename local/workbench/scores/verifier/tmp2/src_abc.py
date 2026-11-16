@@ -42,16 +42,23 @@ def parse_acc(s, i):
     return c * (j - i), j
 
 
-def pitch(letter, acc, octs, key_alters):
+def pitch(letter, acc, octs, key_alters, state=None):
     base = SEMI[letter.upper()]
     octave = 4 if letter.isupper() else 5      # ABC: C = 中央 C(C4), c = C5
     octave += octs.count("'") - octs.count(",")
     if acc == "":
-        alter = key_alters.get(letter.upper(), 0)
+        if state is not None and (letter, octave) in state:
+            alter = state[(letter, octave)]
+        else:
+            alter = key_alters.get(letter.upper(), 0)
     elif acc == "=":
         alter = 0
+        if state is not None:
+            state[(letter, octave)] = 0
     else:
         alter = (1 if acc[0] == "^" else -1) * len(acc)
+        if state is not None:
+            state[(letter, octave)] = alter
     return 12 * (octave + 1) + base + alter
 
 
@@ -59,6 +66,7 @@ def parse_field(text, unit, key_alters, t0=0.0):
     """返回 [voice_events,...]（每个声部 [(onset, midi|None, dur)], 相对 t0），和首个声部总长。"""
     voices = [[]]
     t = t0
+    state = {}
     i, n = 0, len(text)
     next_scale = 1.0
     while i < n:
@@ -106,7 +114,7 @@ def parse_field(text, unit, key_alters, t0=0.0):
                 while m < len(inner) and inner[m] in "',":
                     octs += inner[m]
                     m += 1
-                pitches.append(pitch(letter, acc, octs, key_alters))
+                pitches.append(pitch(letter, acc, octs, key_alters, state))
                 d, m2 = parse_len(inner, m, unit)
                 if m2 > m:
                     last_len = d
@@ -170,7 +178,7 @@ def parse_field(text, unit, key_alters, t0=0.0):
         dur, i = parse_len(text, i, unit)
         dur *= next_scale
         next_scale = 1.0
-        voices[-1].append((t, pitch(letter, acc, octs, key_alters), dur))
+        voices[-1].append((t, pitch(letter, acc, octs, key_alters, state), dur))
         t += dur
     return voices, t - t0
 

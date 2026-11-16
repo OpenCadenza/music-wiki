@@ -53,7 +53,22 @@ def parse_midi(path):
         while cursor < end:
             delta, cursor = read_vlq(data, cursor)
             tick += delta
+            if cursor >= end:
+                break
             status = data[cursor]
+            if status == 0xFF:            # meta 事件：0xFF、类型字节、VLQ 长度、数据
+                cursor += 1
+                cursor += 1               # 跳过 meta 类型字节
+                length, cursor = read_vlq(data, cursor)
+                cursor += length
+                running = None            # meta 事件会清除 running status
+                continue
+            if status in (0xF0, 0xF7):    # sysex：0xF0/F7、VLQ 长度、数据
+                cursor += 1
+                length, cursor = read_vlq(data, cursor)
+                cursor += length
+                running = None
+                continue
             if status & 0x80:
                 cursor += 1
                 running = status
