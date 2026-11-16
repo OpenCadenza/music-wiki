@@ -26,11 +26,13 @@ tags:
 
 ### 2. 听觉注意力局限与层级分工
 贝尔金在《艺术化配器法》中明确指出了人类听觉感知的生理与心理边界：
-- **听觉注意力的单焦点规律**：“听众无法在任何较长时间内对多个音乐声部保持同等的注意力。即使在严密的复调对位中，耳朵也是在各个声部之间不断跳跃，而不是同时追踪所有声部”（*the listener cannot pay equal attention to several musical strands for any length of time. Even in contrapuntal music, the ear jumps from one part to another rather than following all the parts continuously*，见 Belkin 约行 785）；
-- **音区与前景的感知优先级**：“最高声部通常自然吸引最多的注意力”（*The top line normally attracts the most attention*，见 Belkin 行 707）；
-- **前景的凸显原则**：“前景必须从其他所有音乐元素中脱颖而出。因此它通常具有更大的响度、极具特征性的强烈音色，以及处于显著的位置（例如置于高音区）”（*The foreground must stand out from the other elements. Therefore it is usually louder, in a timbre with a strongly characteristic color, and prominently placed*，见 Belkin 行 809–811）。
+- **听觉注意力的单焦点规律**：“听众无法在任何较长时间内对多个音乐声部保持同等的注意力。即使在严密的复调对位中，耳朵也是在各个声部之间不断跳跃，而不是同时追踪所有声部”（*the listener cannot pay equal attention to several musical strands for any length of time. Even in contrapuntal music, the ear jumps from one part to another rather than following all the parts continuously*）；
+- **音区与前景的感知优先级**：“最高声部通常自然吸引最多的注意力”（*The top line normally attracts the most attention*）；
+- **前景的凸显原则**：“前景必须从其他所有音乐元素中脱颖而出。因此它通常具有更大的响度、极具特征性的强烈音色，以及处于显著的位置（例如置于高音区）”（*The foreground must stand out from the other elements. Therefore it is usually louder, in a timbre with a strongly characteristic color, and prominently placed*）。
 
 基于这种知觉规律，作曲家必须对总谱中每一个音响平面的功能角色拥有极其清醒的判断；如果作曲家未能确立层级、在同一声场中铺设多条同等强度的线条，听觉系统将不可避免地陷入混乱（*otherwise, confusion will result*），最终退化为声学上的相互干扰与浑浊。
+
+需要说明的是，背景平面在理论模型中通常以“运动”与“共鸣”两族为核心范型，但在实际管弦乐总谱中，作曲家可根据声学与曲式功能进一步自由细分（例如低音平面、打击乐点描平面或空间回响平面等），音响平面的划分具有高度的功能弹性。
 
 ---
 
@@ -59,7 +61,7 @@ tags:
 ### 3. 异质音色的交错与包围
 - **弦乐家族与铜管家族**内部具有极高的音色同质性，声部交叉（Crossing）几乎不会破坏整体的融合感；
 - **木管组的融合困境**：木管乐器（长笛、双簧管、单簧管、大管）在声学发声原理与泛音分布上高度异质。尤其如双簧管（Oboe），其锥形管与双簧结构产生极其丰富的中高频谐波，穿透力极强（见 Philharmonia 乐器档案：233 Hz – 1.6 kHz 频段能量集中）。若简单地按音高顺序将和弦纵向堆叠（如上方两音长笛、下方两音双簧管），双簧管的刺耳泛音会破坏整体融合；
-- **古典解决策略**：贝尔金在论述木管和弦时指出，古典配器中由里姆斯基-科萨科夫等人总结的**交错配置（Interlocking / Overlapping）**与**包围配置（Enclosure）**做法，其精妙之处在于打乱人耳对声源边界的精确定位，使得听众难以分辨各乐器的具体归属，从而“在效果上欺骗了耳朵”（*in effect fooling the ear*，见 Belkin 行 161–172），将原本容易冲突的异质木管和弦融合为一个协调的整体。
+- **古典解决策略**：贝尔金在论述木管和弦时指出，古典配器中由里姆斯基-科萨科夫等人总结的**交错配置（Interlocking / Overlapping）**与**包围配置（Enclosure）**做法，其精妙之处在于打乱人耳对声源边界的精确定位，使得听众难以分辨各乐器的具体归属，从而“在效果上欺骗了耳朵”（*in effect fooling the ear*），将原本容易冲突的异质木管和弦融合为一个协调的整体。
 
 ---
 
@@ -109,7 +111,7 @@ tags:
 ### 1. 运动平面（Movement）：声学生机与动能
 静态的长和弦容易让织体变得呆滞。通过引入次级运动平面，可以在保持底层和声稳定的同时，为整个总谱注入流动的光泽与推进力。
 
-运动平面的四种基本声学原型（见 Belkin 约行 821–845）：
+运动平面的四种基本声学原型：
 1. **颤音与震音（Trills / Tremolos）**：高频颤动制造紧张感或闪烁的自然光斑，常用于弦乐高音区或木管组；
 2. **反复音型（Repeated Notes）**：以断续的脉冲提供节拍骨架与微观推进力，同时由于音高不频繁变化，不干扰前景的旋律走向；
 3. **音阶跑动（Scales）**：在主要主题下方或上方进行快速的上下贯穿，赋予音乐巨大的物理动量（Momentum）；
@@ -121,7 +123,7 @@ tags:
 共鸣平面是管弦乐声场中**动态最弱、声学活动最少**的层次，但它决定了音乐是否有“空间感”与“温度”。
 
 - **乐器学中的和声填充（Harmonic Filling）**：如 Philharmonia 乐器档案所载，圆号（Horn）在交响乐队中扮演着至关重要的“和声粘合剂”角色。圆号柔和、醇厚且具有包容性的音色，置于中低音区（62 Hz – 698 Hz）演奏极弱长音时，能够在低音提琴的低音线条与高音木管/小提琴之间搭建一座无形的共鸣桥梁，将整个乐队粘合成一个温暖的整体；
-- **对位配器中的持续尾音（Trailers）**：在严格对位或模仿对位中，各乐器声部若在唱完句尾后骤然休止，织体会呈现干瘪破碎的听感（Dryness）。贝尔金指出，高明的配器家常让前一个出场的乐器在声部结束处**留下一个轻柔的持续长音（Trailer）**，延留一至两拍后自然衰减（见 Belkin 行 915–920）。这一尾音不仅构成了局部的微观共鸣平面，更填补了声部交替时的声学真空。
+- **对位配器中的持续尾音（Trailers）**：在严格对位或模仿对位中，各乐器声部若在唱完句尾后骤然休止，织体会呈现干瘪破碎的听感（Dryness）。贝尔金指出，高明的配器家常让前一个出场的乐器在声部结束处**留下一个轻柔的持续长音（Trailer）**，并根据实际节拍速度建议延留一至两拍后自然衰减（延留拍数为本文操作化建议）。这一尾音不仅构成了局部的微观共鸣平面，更填补了声部交替时的声学真空。
 
 ---
 
