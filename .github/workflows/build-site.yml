@@ -1,0 +1,242 @@
+name: Build Music Wiki site
+
+# Reusable build: the main site and the development preview share this workflow
+# so both are validated and compiled by exactly the same pipeline.
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: 'Ref that supplies the site configuration, theme and build scripts.'
+        required: false
+        type: string
+        default: main
+      content_ref:
+        description: 'Optional branch whose content/ replaces the checked-out content.'
+        required: false
+        type: string
+        default: ''
+      base:
+        description: 'VitePress base path, for example /music-wiki/.'
+        required: true
+        type: string
+      artifact:
+        description: 'Name of the uploaded site artifact.'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build ${{ inputs.artifact }}
+    runs-on: ubuntu-24.04
+    # A cold run compiles every notation block; the cache makes later runs short.
+    timeout-minutes: 90
+    steps:
+      - name: Check out site source
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.ref }}
+          fetch-depth: 0
+
+      - name: Check out content source
+        if: inputs.content_ref != ''
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.content_ref }}
+          path: content-source
+          fetch-depth: 1
+
+      - name: Use content from the requested branch
+        if: inputs.content_ref != ''
+        run: |
+          set -euo pipefail
+          test -d content-source/content
+          rm -rf content
+          cp -a content-source/content content
+          rm -rf content-source
+          echo "content from \`${{ inputs.content_ref }}\`" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.3.4
+          run_install: false
+
+      - name: Set up Node.js
+        id: node-cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Restore pnpm metadata cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pnpm
+          key: pnpm-metadata-v1-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-metadata-v1-${{ runner.os }}-
+
+      - name: Restore toolchain cache
+        uses: actions/cache@v4
+        with:
+          path: .tools
+          key: toolchain-v3-${{ runner.os }}-${{ hashFiles('toolchains.json', 'scripts/install-toolchain.sh', 'scripts/install-ffmpeg.sh', '.github/workflows/build-site.yml') }}
+          restore-keys: |
+            toolchain-v3-${{ runner.os }}-
+
+      # Reuse the finished site when nothing that feeds it changed, so a branch
+      # that did not change is not rebuilt on every deployment.
+      - name: Restore built site cache
+        id: site-cache
+        uses: actions/cache@v4
+        with:
+          path: dist
+          key: site-dist-v1-${{ inputs.artifact }}-${{ runner.os }}-${{ hashFiles('content/**', '.vitepress/**', 'scripts/**', 'toolchains.json', 'package.json', 'pnpm-lock.yaml', '.github/workflows/build-site.yml') }}
+          restore-keys: |
+            site-dist-v1-${{ inputs.artifact }}-${{ runner.os }}-
+
+      - name: Restore notation cache
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        uses: actions/cache@v4
+        with:
+          path: public/notation
+          key: notation-v4-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/build-notation.mjs', 'scripts/notation-info.mjs', 'toolchains.json', 'package.json', 'pnpm-lock.yaml') }}
+          restore-keys: |
+            notation-v4-${{ runner.os }}-
+
+      - name: Install pinned FFmpeg
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libmp3lame0
+          bash scripts/install-ffmpeg.sh
+
+      - name: Build pinned abcMIDI
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          if [ ! -x .tools/bin/abc2midi ]; then
+            commit=7ba0b738e9bcd504288758472380e1597208a7a8
+            mkdir -p .tools .tools/bin
+            curl -fL --retry 3 --retry-all-errors \
+              "https://github.com/keryell/abcmidi/archive/${commit}.tar.gz" \
+              -o .tools/abcmidi.tar.gz
+            tar -xzf .tools/abcmidi.tar.gz -C .tools
+            make -C ".tools/abcmidi-${commit}" abc2midi
+            cp ".tools/abcmidi-${commit}/abc2midi" .tools/bin/abc2midi
+          fi
+          echo "$PWD/.tools/bin" >> "$GITHUB_PATH"
+          .tools/bin/abc2midi -ver | head -n 1
+
+      - name: Build pinned FluidSynth 2.6.1
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          fluidsynth_root="$PWD/.tools/fluidsynth-2.6.1"
+          if [ ! -x "$fluidsynth_root/bin/fluidsynth" ]; then
+            sudo apt-get install -y --no-install-recommends \
+              build-essential \
+              cmake \
+              curl \
+              libasound2-dev \
+              libglib2.0-dev \
+              libsndfile1-dev \
+              ninja-build \
+              pkg-config
+            mkdir -p .tools
+            curl -fL --retry 3 \
+              https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz \
+              -o .tools/fluidsynth-2.6.1.tar.gz
+            tar -xzf .tools/fluidsynth-2.6.1.tar.gz -C .tools
+            cmake -S .tools/fluidsynth-2.6.1 -B .tools/fluidsynth-build \
+              -G Ninja \
+              -DCMAKE_BUILD_TYPE=Release \
+              -DCMAKE_INSTALL_PREFIX="$PWD/.tools/fluidsynth-2.6.1" \
+              -Denable-dbus=0 \
+              -Denable-jack=0 \
+              -Denable-network=0 \
+              -Denable-pipewire=0 \
+              -Denable-pulseaudio=0 \
+              -Denable-readline=0 \
+              -Denable-sdl2=0 \
+              -Denable-systemd=0
+            cmake --build .tools/fluidsynth-build
+            cmake --install .tools/fluidsynth-build
+          fi
+          while IFS= read -r dependency; do
+            name="$(basename "$dependency")"
+            case "$name" in
+              ld-linux*|libc.so*|libdl.so*|libgcc_s.so*|libm.so*|libpthread.so*|librt.so*|libstdc++.so*)
+                ;;
+              *)
+                if [ ! -e "$fluidsynth_root/lib/$name" ]; then
+                  cp -Lf "$dependency" "$fluidsynth_root/lib/$name"
+                fi
+                ;;
+            esac
+          done < <(LD_LIBRARY_PATH="$fluidsynth_root/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" \
+            ldd "$fluidsynth_root/bin/fluidsynth" |
+            awk '$2 == "=>" && $3 ~ /^\// { print $3 }')
+          export LD_LIBRARY_PATH="$fluidsynth_root/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+          "$fluidsynth_root/bin/fluidsynth" --version | head -n 1
+          echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH" >> "$GITHUB_ENV"
+
+      - name: Install pinned LilyPond and soundfont
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        env:
+          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
+        run: bash scripts/install-toolchain.sh
+
+      - name: Install JavaScript dependencies
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          if [[ "${{ steps.node-cache.outputs.cache-hit }}" == "true" ]]; then
+            if pnpm install --frozen-lockfile --offline; then
+              exit 0
+            fi
+            echo "Offline pnpm cache was incomplete; retrying with network access" >&2
+          fi
+          pnpm install --frozen-lockfile
+
+      - name: Validate source content
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: pnpm validate
+
+      - name: Compile and verify notation
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        env:
+          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
+        run: pnpm notation
+
+      - name: Validate notation manifest
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        run: pnpm validate:notation
+
+      - name: Build VitePress
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        env:
+          MUSIC_WIKI_BASE: ${{ inputs.base }}
+        run: pnpm build:site
+
+      - name: Smoke-test built site
+        if: steps.site-cache.outputs.cache-hit != 'true'
+        env:
+          MUSIC_WIKI_BASE: ${{ inputs.base }}
+          MUSIC_WIKI_SMOKE: ${{ inputs.content_ref != '' && 'preview' || 'full' }}
+        run: pnpm smoke:site
+
+      - name: Report reused build
+        if: steps.site-cache.outputs.cache-hit == 'true'
+        run: echo "reused cached site for ${{ inputs.artifact }} (no content or configuration change)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.artifact }}
+          path: dist
+          retention-days: 2

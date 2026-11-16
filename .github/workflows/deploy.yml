@@ -2,183 +2,59 @@ name: Build and deploy Music Wiki
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - dsh-c6ded6ed-82bb
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      dev_ref:
+        description: '开发预览分支：其 content/ 会发布到 /music-wiki/dev/<分支>/'
+        required: false
+        default: dsh-c6ded6ed-82bb
+        type: string
 
 permissions:
   contents: read
+
+env:
+  DEV_BRANCH: ${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}
+  PROD_BASE: /music-wiki/
 
 concurrency:
   group: pages-${{ github.event_name == 'pull_request' && github.ref || 'main' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  build:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 30
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+  build-main:
+    name: Build main site
+    uses: ./.github/workflows/build-site.yml
+    with:
+      # Pull requests validate the pulled commit; pushes and manual runs build main.
+      ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
+      base: /music-wiki/
+      artifact: site-main
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 12.3.4
-          run_install: false
-
-      - name: Set up Node.js
-        id: node-cache
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-
-      - name: Restore pnpm metadata cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pnpm
-          key: pnpm-metadata-v1-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            pnpm-metadata-v1-${{ runner.os }}-
-
-      - name: Restore toolchain cache
-        id: toolchain-cache
-        uses: actions/cache@v4
-        with:
-          path: .tools
-          key: toolchain-v2-${{ runner.os }}-${{ hashFiles('toolchains.json', 'scripts/install-toolchain.sh', 'scripts/install-ffmpeg.sh', '.github/workflows/deploy.yml') }}
-          restore-keys: |
-            toolchain-v2-${{ runner.os }}-
-
-      - name: Restore notation cache
-        uses: actions/cache@v4
-        with:
-          path: public/notation
-          key: notation-v4-${{ runner.os }}-${{ hashFiles('content/**/*.md', 'scripts/build-notation.mjs', 'scripts/notation-info.mjs', 'toolchains.json', 'package.json', 'pnpm-lock.yaml') }}
-          restore-keys: |
-            notation-v4-${{ runner.os }}-
-
-      - name: Install pinned FFmpeg
-        run: bash scripts/install-ffmpeg.sh
-
-      - name: Build pinned abcMIDI
-        run: |
-          set -euo pipefail
-          if [ ! -x .tools/bin/abc2midi ]; then
-            commit=7ba0b738e9bcd504288758472380e1597208a7a8
-            mkdir -p .tools .tools/bin
-            curl -fL --retry 3 --retry-all-errors \
-              "https://github.com/keryell/abcmidi/archive/${commit}.tar.gz" \
-              -o .tools/abcmidi.tar.gz
-            tar -xzf .tools/abcmidi.tar.gz -C .tools
-            make -C ".tools/abcmidi-${commit}" abc2midi
-            cp ".tools/abcmidi-${commit}/abc2midi" .tools/bin/abc2midi
-          fi
-          echo "$PWD/.tools/bin" >> "$GITHUB_PATH"
-          .tools/bin/abc2midi -ver | head -n 1
-
-      - name: Build pinned FluidSynth 2.6.1
-        run: |
-          set -euo pipefail
-          fluidsynth_root="$PWD/.tools/fluidsynth-2.6.1"
-          if [ ! -x "$fluidsynth_root/bin/fluidsynth" ]; then
-            sudo apt-get install -y --no-install-recommends \
-              build-essential \
-              cmake \
-              curl \
-              libasound2-dev \
-              libglib2.0-dev \
-              libsndfile1-dev \
-              ninja-build \
-              pkg-config
-            mkdir -p .tools
-            curl -fL --retry 3 \
-              https://github.com/FluidSynth/fluidsynth/archive/refs/tags/v2.6.1.tar.gz \
-              -o .tools/fluidsynth-2.6.1.tar.gz
-            tar -xzf .tools/fluidsynth-2.6.1.tar.gz -C .tools
-            cmake -S .tools/fluidsynth-2.6.1 -B .tools/fluidsynth-build \
-              -G Ninja \
-              -DCMAKE_BUILD_TYPE=Release \
-              -DCMAKE_INSTALL_PREFIX="$PWD/.tools/fluidsynth-2.6.1" \
-              -Denable-dbus=0 \
-              -Denable-jack=0 \
-              -Denable-network=0 \
-              -Denable-pipewire=0 \
-              -Denable-pulseaudio=0 \
-              -Denable-readline=0 \
-              -Denable-sdl2=0 \
-              -Denable-systemd=0
-            cmake --build .tools/fluidsynth-build
-            cmake --install .tools/fluidsynth-build
-          fi
-          while IFS= read -r dependency; do
-            name="$(basename "$dependency")"
-            case "$name" in
-              ld-linux*|libc.so*|libdl.so*|libgcc_s.so*|libm.so*|libpthread.so*|librt.so*|libstdc++.so*)
-                ;;
-              *)
-                if [ ! -e "$fluidsynth_root/lib/$name" ]; then
-                  cp -Lf "$dependency" "$fluidsynth_root/lib/$name"
-                fi
-                ;;
-            esac
-          done < <(LD_LIBRARY_PATH="$fluidsynth_root/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}" \
-            ldd "$fluidsynth_root/bin/fluidsynth" |
-            awk '$2 == "=>" && $3 ~ /^\// { print $3 }')
-          export LD_LIBRARY_PATH="$fluidsynth_root/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
-          "$fluidsynth_root/bin/fluidsynth" --version | head -n 1
-          echo "LD_LIBRARY_PATH=$LD_LIBRARY_PATH" >> "$GITHUB_ENV"
-
-      - name: Install pinned LilyPond and soundfont
-        env:
-          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
-        run: bash scripts/install-toolchain.sh
-
-      - name: Install JavaScript dependencies
-        run: |
-          set -euo pipefail
-          if [[ "${{ steps.node-cache.outputs.cache-hit }}" == "true" ]]; then
-            if pnpm install --frozen-lockfile --offline; then
-              exit 0
-            fi
-            echo "Offline pnpm cache was incomplete; retrying with network access" >&2
-          fi
-          pnpm install --frozen-lockfile
-
-      - name: Validate source content
-        run: pnpm validate
-
-      - name: Compile and verify notation
-        env:
-          FLUIDSYNTH_PATH: ${{ github.workspace }}/.tools/fluidsynth-2.6.1/bin/fluidsynth
-        run: pnpm notation
-
-      - name: Validate notation manifest
-        run: pnpm validate:notation
-
-      - name: Build VitePress
-        run: pnpm build:site
-
-      - name: Smoke-test built site
-        run: pnpm smoke:site
-
-      - name: Configure GitHub Pages
-        if: github.event_name != 'pull_request'
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
+  # The development preview is published next to the main site. It is built by
+  # the same workflow from main's configuration, with only the branch's
+  # content/ swapped in, so the preview cannot drift from the public pipeline.
+  build-dev:
+    name: Build dev preview
+    if: github.event_name != 'pull_request'
+    uses: ./.github/workflows/build-site.yml
+    with:
+      ref: main
+      content_ref: ${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}
+      base: /music-wiki/dev/${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}/
+      artifact: site-dev
 
   deploy:
-    if: github.event_name != 'pull_request'
+    name: Publish GitHub Pages
+    # A broken development branch must never block the public site.
+    if: always() && github.event_name != 'pull_request' && needs.build-main.result == 'success'
+    needs: [build-main, build-dev]
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
@@ -186,9 +62,45 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04
-    needs: build
     steps:
+      - name: Download main site
+        uses: actions/download-artifact@v4
+        with:
+          name: site-main
+          path: dist
+
+      - name: Download dev preview
+        id: dev-site
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: site-dev
+          path: dev-site
+
+      - name: Publish dev preview under /dev/<branch>/
+        if: steps.dev-site.outcome == 'success'
+        run: |
+          set -euo pipefail
+          target="dist/dev/${DEV_BRANCH}"
+          mkdir -p "$target"
+          cp -a dev-site/. "$target/"
+          test -f "$target/index.html"
+          echo "dev preview: ${PROD_BASE}dev/${DEV_BRANCH}/" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Report missing dev preview
+        if: steps.dev-site.outcome != 'success'
+        run: |
+          echo "::warning::site-dev artifact is missing; publishing the main site without a dev preview"
+          echo "dev preview skipped: no site-dev artifact" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
