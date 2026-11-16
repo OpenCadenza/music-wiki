@@ -58,68 +58,15 @@
 
 海顿在此展现了加兰特图式驱动 8 小节原型句型的典范笔法：
 
-```lilypond title="Keyboard Sonata No. 42 in G Major, Hob. XVI:27" location="III. Presto, mm. 1–8"
-\version "2.26.0"
-\language "english"
-
-\header {
-  title = "Keyboard Sonata No. 42 in G Major, Hob. XVI:27"
-  subtitle = "III. Presto (mm. 1–8)"
-  composer = "Franz Joseph Haydn"
-  tagline = ##f
-}
-
-global = {
-  \key g \major
-  \time 2/4
-  \tempo "Presto" 4 = 132
-}
-
-rightHand = \relative c'' {
-  \global
-  \clef treble
-  \partial 8 d8\p |
-  g8( b8 d8 g,8) |
-  g4( fs8) d8 |
-  a'8( c8 e8 <a, c>8) |
-  <a c>4( <g b>8\noBeam b8) |
-  b'8( g8 ds8 e8) |
-  a8( fs8 cs8 d!8) |
-  e8( g4) cs,8 |
-  d4\mordent r8 \bar "||"
-}
-
-leftHand = \relative c' {
-  \global
-  \clef bass
-  \partial 8 r8 |
-  <g b>4 r8 <b d>8 |
-  <a c>4 r4 |
-  r4 r8 fs8 |
-  g4 g,8 r8 |
-  \clef treble
-  g'4 r8 g8 |
-  fs4 r8 fs8 |
-  g4 a4 |
-  \clef bass
-  d,4 d,8 \bar "||"
-}
-
-\score {
-  \new PianoStaff \with {
-    instrumentName = "Piano"
-    midiInstrument = "acoustic grand"
-  } <<
-    \new Staff = "upper" { \rightHand }
-    \new Staff = "lower" { \leftHand }
-  >>
-  \layout { }
-  \midi { }
-}
-```
+> **【谱例占位 · 待资料助手交付】**
+> - **作品**：约瑟夫·海顿《G大调第42钢琴奏鸣曲》Hob. XVI:27，第三乐章 Presto
+> - **小节范围**：mm. 1–8
+> - **拟含声部与 GM 编号**：钢琴双手（高音声部与低音声部），GM 编号：0（Acoustic Grand Piano）
+> - **调性与拍号**：G 大调，2/4 拍
+> - **状态**：交付核验未通过，重编码中
 
 #### 谱面实证分析：
-- **mm. 1–4（呈示句）**：海顿以极其活泼轻巧的织体呈现 Meyer 图式。
+- **mm. 1–4（呈示句）**：海顿以极其活泼轻巧的织体呈现 Meyer 图式（待谱例复核：涉及双手具体音区对应与弱起高度）。
   - mm. 1–2：两小节基础乐念（BI），旋律下行至导音，低音予以支撑；
   - mm. 3–4：该乐念被整体向上二度模进复述，旋律收束于三音 B。外声部清晰勾勒出 Meyer 的动力轮廓，调性保持在主和弦延长范围内。
 - **mm. 5–6（延续句前半）**：海顿并未接续一个完整的从容图式，而是采用了压缩的 **Passo Indietro**。
@@ -133,69 +80,12 @@ leftHand = \relative c' {
 
 莫扎特展示了古典句型在延续功能阶段如何实现结构扩张（4 小节呈示 + 6 小节延续）：
 
-```lilypond title="Keyboard Sonata No. 5 in G Major, K. 283 (189h)" location="I. Allegro, mm. 1–10"
-\version "2.26.0"
-\language "english"
-
-\header {
-  title = "Keyboard Sonata No. 5 in G Major, K. 283 (189h)"
-  subtitle = "I. Allegro (mm. 1–10)"
-  composer = "Wolfgang Amadeus Mozart"
-  tagline = ##f
-}
-
-global = {
-  \key g \major
-  \time 3/4
-  \tempo "Allegro" 4 = 120
-}
-
-rightHand = \relative c'' {
-  \global
-  \clef treble
-  \partial 4 d8.(\p b16) |
-  d4 r4 g,4 |
-  fs4 r4 a'8.( fs16) |
-  a4 r4 c,4 |
-  b4 r4 g'8.(\f fs16) |
-  fs8( e8) e4 g8.( e16) |
-  e8( d8) d4 g8.( d16) |
-  d4-.\p d4-. d4-. |
-  d16( e fs g a b c d c b a g) |
-  fs16( e d c b d b g a c a fs) |
-  g4 r4 \bar "||"
-}
-
-leftHand = \relative c {
-  \global
-  \clef bass
-  \partial 4 r4 |
-  g8(\p b d b d b) |
-  a8( c d c d c) |
-  fs,8( a d a d a) |
-  g8( b d b) g4\f |
-  \clef treble
-  <c' e g>2. |
-  <b d g>2. |
-  \clef bass
-  <a, c>4-.\p <g b>4-. <fs a>4-. |
-  <g b>4 r4 <e g>4 |
-  r4 <g b>4 <fs c'>4 |
-  <g, b>4 g,4 r4 \bar "||"
-}
-
-\score {
-  \new PianoStaff \with {
-    instrumentName = "Piano"
-    midiInstrument = "acoustic grand"
-  } <<
-    \new Staff = "upper" { \rightHand }
-    \new Staff = "lower" { \leftHand }
-  >>
-  \layout { }
-  \midi { }
-}
-```
+> **【谱例占位 · 待资料助手交付】**
+> - **作品**：沃尔夫冈·阿马德乌斯·莫扎特《G大调第5钢琴奏鸣曲》K. 283 (189h)，第一乐章 Allegro
+> - **小节范围**：mm. 1–10
+> - **拟含声部与 GM 编号**：钢琴双手（高音声部与低音声部），GM 编号：0（Acoustic Grand Piano）
+> - **调性与拍号**：G 大调，3/4 拍
+> - **状态**：交付核验未通过，重编码中
 
 #### 谱面实证分析：
 - **mm. 1–4（呈示句）**：
@@ -203,10 +93,10 @@ leftHand = \relative c {
   - mm. 3–4 变化复述。整个 4 小节建立在声部延留与对位延留和弦上（$\text{I} - \text{V}^{4}_{3} - \text{V}^{6}_{5} - \text{I}$），严格履行呈示句的主和弦延长功能。
 - **mm. 5–8（延续句动力构建）**：
   - 从第 5 小节弱起开始，两小节的单位被**碎裂（Fragmentation）**为 1 小节短促构件，并以下行二度做**模进重复（Sequential repetition）**；
-  - 织体上，右手十六分音符密集成流，左手在第 7 小节出现半音化级进与交错节奏（Hemiola 效果），形成表面节奏与和声节奏的双重加速。
+  - 织体上，右手十六分音符密集成流，左手伴奏形成动力支撑（待谱例复核：涉及 mm. 5–6 左手双音织体与第 3 拍休止细节），形成表面节奏与和声节奏的双重加速。
 - **mm. 8–10（动机融解与终止式）**：
   - mm. 5–7 中具有鲜明辨识度的特征音程在此处被彻底**融解（Liquidation）**，退化为普适性的下行琶音与音阶线条；
-  - 低音落实在明确的终止四六和弦上，通过 $\text{I} - \text{IV}^6 - \text{Cad.}^{6}_{4} - \text{V}^7 - \text{I}$ 完成完全正格终止，验证了句法由个性动机向公规格终止手势过渡的必然逻辑。
+  - 低音落实在明确的终止四六和弦上，通过 $\text{I} - \text{IV}^6 - \text{Cad.}^{6}_{4} - \text{V}^7 - \text{I}$ 完成完全正格终止（待谱例复核：涉及 m. 10 终止低音音区），验证了句法由个性动机向公规格终止手势过渡的必然逻辑。
 
 ---
 
@@ -214,117 +104,12 @@ leftHand = \relative c {
 
 在 19 世纪初的维也纳器乐创作中，作曲家进一步超越了图式的常规句法拼接。音乐理论家约翰内斯·赖泽（Johannes Raiser, 2018）在考察贝多芬《降E大调第10弦乐四重奏“竖琴”》（Op. 74）第一乐章慢引子（Poco Adagio，mm. 1–9）时指出：贝多芬将加兰特模型视作一种**“创造性空间”（Kreativer Raum）**，并结合埃马努埃尔·阿洛伊斯·弗斯特（Emanuel Aloys Förster, 1805）的低音理论，对图式进行了深度的去程式化重构。
 
-```lilypond title="String Quartet No. 10 in E-flat Major, Op. 74 ('Harp')" location="I. Poco adagio, mm. 1–9"
-\version "2.26.0"
-\language "english"
-
-\header {
-  title = "String Quartet No. 10 in E-flat Major, Op. 74 (\"Harp\")"
-  subtitle = "I. Poco adagio (mm. 1–9)"
-  composer = "Ludwig van Beethoven"
-  tagline = ##f
-}
-
-global = {
-  \key ef \major
-  \time 2/2
-  \tempo "Poco adagio" 4 = 72
-}
-
-violinOne = {
-  \global
-  \clef treble
-  ef''2\p g'4. af'8 |
-  df''4\fp r4 r2 |
-  ef''2\p g'4. af'8 |
-  df''1~\fp |
-  df''2. d''4~ |
-  d''2 ef''4 c''8( f''8) |
-  ef''4( d''4 c''4 bf'4) |
-  bf'4( af'8) r8 af'4( g'8) r8 |
-  g'4~\fp g'16( f'16 e'16 f'16 e'16 f'16 g'16 f'16 e''16 f''16 g''16 f''16) |
-  \bar "||"
-}
-
-violinTwo = {
-  \global
-  \clef treble
-  g'2\p ef'4. ef'8 |
-  ef'4\fp r4 r2 |
-  g'2\p ef'4. ef'8 |
-  e'4\fp r4 bf''2~ |
-  bf''2 af''2~ |
-  af''2 g''4 f''8( f'8) |
-  f'2 af'4( g'4) |
-  g'4( f'8) r8 bf4( bf8) r8 |
-  c'4\fp r4 r2 |
-  \bar "||"
-}
-
-viola = {
-  \global
-  \clef alto
-  bf2\p bf4. af8 |
-  g4\fp r4 r2 |
-  bf2\p bf4. af8 |
-  bf4\fp r4 r4 e'4~ |
-  e'2 f'2~ |
-  f'4 cf'4( bf4 c4) |
-  af2 d4. ef8 |
-  e4 f4 d4 ef4 |
-  af4\fp r4 r4 af4~ |
-  \bar "||"
-}
-
-cello = {
-  \global
-  \clef bass
-  ef2\p df4. c8 |
-  bf,4\fp r4 r2 |
-  ef2\p df4. c8 |
-  g,4\fp r4 r2 |
-  f,2. bf,4 |
-  ef,2. a,,4 |
-  bf,,1 |
-  c2 f,4. g,8 |
-  af,4\fp r4 r4 f,4~ |
-  \bar "||"
-}
-
-\score {
-  \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Violin I"
-      midiInstrument = "violin"
-      midiMinimumVolume = #0.2
-      midiMaximumVolume = #0.9
-    } { \violinOne }
-
-    \new Staff \with {
-      instrumentName = "Violin II"
-      midiInstrument = "violin"
-      midiMinimumVolume = #0.2
-      midiMaximumVolume = #0.9
-    } { \violinTwo }
-
-    \new Staff \with {
-      instrumentName = "Viola"
-      midiInstrument = "viola"
-      midiMinimumVolume = #0.2
-      midiMaximumVolume = #0.9
-    } { \viola }
-
-    \new Staff \with {
-      instrumentName = "Violoncello"
-      midiInstrument = "cello"
-      midiMinimumVolume = #0.2
-      midiMaximumVolume = #0.9
-    } { \cello }
-  >>
-  \layout { }
-  \midi { }
-}
-```
+> **【谱例占位 · 待资料助手交付】**
+> - **作品**：路德维希·凡·贝多芬《降E大调第10弦乐四重奏“竖琴”》Op. 74，第一乐章 Poco adagio
+> - **小节范围**：mm. 1–9
+> - **拟含声部与 GM 编号**：第一小提琴（GM 40: Violin）、第二小提琴（GM 40: Violin）、中提琴（GM 41: Viola）、大提琴（GM 42: Cello）
+> - **调性与拍号**：降 E 大调，2/2 拍
+> - **状态**：交付核验未通过，重编码中
 
 #### Raiser 2018 论证的核心要点：
 1. **开端模型与外声部对位变异**：
@@ -334,7 +119,7 @@ cello = {
    - 依据 Förster 1805 年《通奏低音指南》中“和弦坐落”的原理，特定和弦结构在调式中具有严格的级数归属性。在第 4 小节，开端模型的重复并未按惯例解决，而是将低音 G 上的和弦重构为**减七和弦的第一转位（五六和弦）**。
    - **Raiser 明确指出**：低音 G 本是开端模型中作为降 A 大调第七级的导音，但通过这一不协和转位处理，它成为了一个**调性枢纽（Scharnier）**——它不再导向降 A 大调，而是被重释为指向降 E 大调（及 f 小调）的动力源，并随即在 mm. 4–8 引发一连串急促的 Fonte 模进。
 3. **声部置换与 10-8-6 反向对位模型**：
-   - 至第 8 小节，原先小提琴的开端动机被下移至大提琴低音区，与上方中提琴形成一种**10-8-6 的线性反向运动模型（Gegenbewegungsmodell）**。加兰特音级骨架在此脱离了固定的音区与角色，成为多声部自由对位博弈的活体动机。
+   - 至第 8 小节，原先小提琴的开端动机被下移至大提琴低音区（待谱例复核：涉及大提琴具体八度音区与声部交错），与上方中提琴形成一种**10-8-6 的线性反向运动模型（Gegenbewegungsmodell）**。而在第 9 小节引向主部快板的过渡中，第一小提琴的琶音展开（待谱例复核：临时降号与调性倾向）亦展现了调性延伸。加兰特音级骨架在此脱离了固定的音区与角色，成为多声部自由对位博弈的活体动机。
 
 ---
 

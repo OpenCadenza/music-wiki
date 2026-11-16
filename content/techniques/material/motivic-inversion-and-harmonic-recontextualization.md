@@ -31,7 +31,7 @@
 > - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Grave ma non troppo tratto (3/2拍), mm. 1–4
 > - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：中提琴与大提琴八度齐奏 $G-E-A\flat$（Muss es sein?），第一小提琴第 3 拍 $fp$ 切入并级进叹息下行
-> - **交付状态**：待资料助手完成核验后替换嵌入
+> - **交付状态**：原旧工程文件 `beethoven-op135-mvt4-mm1-4-grave.ly` 经核验判定不合格（存在第 4 小节大提琴旋律臆造及休止符不符等严重差异）；当前以真实小节定位规范占位，待资料助手基于 Kern/DCML 重新编码交付
 
 ---
 
@@ -62,7 +62,7 @@
 > - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Allegro (4/4拍), mm. 12 (弱起) – 16
 > - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：第一、第二小提琴八度弱起跳进 $A-C-G$ 与 $G-B\flat-F$（Es muss sein!），大提琴与中提琴断音级进爬升
-> - **交付状态**：待资料助手完成核验后替换嵌入
+> - **交付状态**：原旧工程文件 `beethoven-op135-mvt4-mm12-16-allegro.ly` 经核验判定不合格（存在中提琴与大提琴音区八度倒错、m.16 音高错误等严重差异）；当前以真实小节定位规范占位，待资料助手基于 Kern/DCML 重新编码交付
 
 ---
 
