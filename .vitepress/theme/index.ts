@@ -2,6 +2,7 @@ import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import BranchSwitcher from './BranchSwitcher.vue'
+import Mermaid from './Mermaid.vue'
 import ScoreExample from './ScoreExample.vue'
 import './custom.css'
 
@@ -14,6 +15,7 @@ export default {
     })
   },
   enhanceApp({ app }) {
+    app.component('Mermaid', Mermaid)
     app.component('ScoreExample', ScoreExample)
   }
 } satisfies Theme
