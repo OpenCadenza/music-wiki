@@ -8,3 +8,11 @@
 /workbench/migration-runtime/
 /workbench/tmp/
 __pycache__/
+/workbench/scores/*/tmp/
+/workbench/scores/*/tmp2/
+/workbench/scores/*/tmp3/
+/workbench/scores/*/*.pdf
+/workbench/scores/*/*.mid
+/workbench/scores/*/*.mxl
+/workbench/tools/_probe/*.pdf
+/workbench/tools/_probe/*.mid
