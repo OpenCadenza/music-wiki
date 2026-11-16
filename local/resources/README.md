@@ -9,6 +9,7 @@
 - [OCR 文献与图像目录](catalog/ocr-conversions.md)：真实转换状态、页数、Markdown与原件链接。
 - [OCR验收与限制](catalog/parts/ocr/index.md)：物理页记录核对、图像引用检查及空文字结果。
 - [已解包谱源入口](scores/source-packages/README.md)：Kern与DCML原生谱文件。
+- [谱例交付履历与谱源追溯表](catalog/score-deliveries.md)：已核验与交付给学者的自包含 LilyPond 谱例清单、谱源精确取音定位与编译状态。
 - [完整加工索引](catalog/index.json)：机器可读的来源与处理状态。
 
 ## 当前预备整理
