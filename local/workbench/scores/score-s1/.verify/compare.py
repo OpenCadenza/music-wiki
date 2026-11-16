@@ -85,12 +85,14 @@ def parse_kern(path):
             continue
         for i, tk in enumerate(toks):
             r = parse_kern_token(tk)
-            if r is None:
+            if not r:
                 continue
-            midi, dur, is_rest, tie = r
-            if not is_rest:
-                out.setdefault((meas, i), []).append((round(beat[i], 3), midi, dur, tie))
-            beat[i] += dur
+            step = 0.0
+            for (midi, dur, is_rest, tie) in r:
+                step = max(step, dur)
+                if not is_rest:
+                    out.setdefault((meas, i), []).append((round(beat[i], 3), midi, dur, tie))
+            beat[i] += step
     return out
 
 # ---------------- LilyPond ----------------
@@ -131,12 +133,12 @@ def parse_ly(path):
             for tk in bar.split():
                 if tk.startswith('<') and not inchord:
                     inchord = True; acc = tk
-                    if tk.endswith('>'):
+                    if '>' in tk:
                         merged.append(acc); inchord = False; acc = ''
                     continue
                 if inchord:
                     acc += ' ' + tk
-                    if tk.endswith('>'):
+                    if '>' in tk:
                         merged.append(acc); inchord = False; acc = ''
                     continue
                 merged.append(tk)

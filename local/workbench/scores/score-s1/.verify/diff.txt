@@ -39,60 +39,15 @@
   --> ����С��: 0
 ========================================================================
 ### op74-mvt1-mm18-24-adagio.ly  vs  quartet10-1.krn  m.18..24
-  [DIFF] violinOne m.18
-     Kern: b0:D4(1.5) | b1.5:Eb4(0.5)
-     .ly : b0:B4(2) | b2:D4(1.5) | b3.5:Eb4(0.5)
-  [DIFF] violinOne m.19
-     Kern: b0:E4(0.5) | b0.5:F4(0.5)
-     .ly : b0:Eb4(1.5) | b1.5:E4(0.5) | b2:E4(1.5) | b3.5:F4(0.5)
-  [DIFF] violinOne m.20
-     Kern: b0:F#4(0.5) | b0.5:G4(0.5)
-     .ly : b0:F4(1.5) | b1.5:F#4(0.5) | b2:F#4(1.5) | b3.5:G4(0.5)
-  [DIFF] violinOne m.21
-     Kern: b0:Ab4(0.5) | b0.5:A4(0.5)
-     .ly : b0:G4(1.5) | b1.5:Ab4(0.5) | b2:Ab4(1.5) | b3.5:A4(0.5)
-  [DIFF] violinOne m.22
-     Kern: b0:Bb4(0.5) | b0.5:B4(0.5)
-     .ly : b0:A4(1.5) | b1.5:Bb4(0.5) | b2:Bb4(1.5) | b3.5:B4(0.5)
-  [DIFF] violinOne m.23
-     Kern: b0:C5(0.5) | b0.5:C#5(2)
-     .ly : b0:B4(1.5) | b1.5:C5(0.5) | b2:C#5(2)
-  [DIFF] violinOne m.24
-     Kern: b0:D5(0.5) | b0.5:Eb5(0.5)
-     .ly : b0:C#5(1.5) | b1.5:D5(0.5) | b2:D5(1.5) | b3.5:Eb5(0.5)
-  [DIFF] violinTwo m.21
-     Kern: b0:Eb4(0.5) | b0.5:F#4(0.5)
-     .ly : b0:C#4(1.5) | b1.5:Eb4(0.5) | b2:F4(1.5) | b3.5:F#4(0.5)
   [DIFF] violinTwo m.22
-     Kern: b0:G4(0.5) | b0.5:B3(1)
+     Kern: b0:F#4(1.5) | b1.5:G4(0.5) | b2:C#4(1) | b3:B3(1)
      .ly : b0:F#4(1.5) | b1.5:G4(0.5) | b2:C#4(1.5) | b3.5:B3(0.5)
   [DIFF] violinTwo m.24
-     Kern: b0:F4(0.5) | b0.5:Bb3(1.5) | b2:Bb3(0.5)
-     .ly : b0:E4(1.5) | b1.5:F4(0.5)   <<С�ںϼ� 2/4>>
-  [DIFF] viola m.21
-     Kern: b0:B3(0.5) | b0.5:C4(0.5)
-     .ly : b0:Bb3(1.5) | b1.5:B3(0.5) | b2:B3(1.5) | b3.5:C4(0.5)
-  [DIFF] viola m.22
-     Kern: b0:C#4(0.5) | b0.5:Eb4(0.5)
-     .ly : b0:C4(1.5) | b1.5:C#4(0.5) | b2:E4(1.5) | b3.5:Eb4(0.5)
-  [DIFF] viola m.23
-     Kern: b1:G3(2)
-     .ly : b1:F#3(1) | b2:G3(2)
-  [DIFF] viola m.24
-     Kern: b0:Ab3(0.5) | b0.5:G3(0.5)
-     .ly : b0:G3(1.5) | b1.5:Ab3(0.5) | b2:Ab3(1.5) | b3.5:G3(0.5)
+     Kern: b0:E4(1.5) | b1.5:F4(0.5) | b2:Bb3(1.5) | b2:F4(1.5) | b3.5:Bb3(0.5) | b3.5:Eb4(0.5)
+     .ly : b0:E4(1.5) | b1.5:F4(0.5) | b2:Bb3/F4(1.5) | b3.5:Bb3/Eb4(0.5)
   [DIFF] cello m.21
-     Kern: b0:D2(1.5) | b1.5:Eb2(0.5)
+     Kern: b0:Ab2(2) | b2:D2(1.5) | b3.5:Eb2(0.5)
      .ly : b0:Ab2(2) | b2:D2(1.5) | b3.5:Eb3(0.5)
-  [DIFF] cello m.22
-     Kern: b0:G2(1.5) | b1.5:Ab2(0.5)
-     .ly : b0:Eb3(2) | b2:G2(1.5) | b3.5:Ab2(0.5)
-  [DIFF] cello m.23
-     Kern: b0:A2(1.5) | b1.5:Bb2(0.5)
-     .ly : b0:F#3(2) | b2:A2(1.5) | b3.5:Bb2(0.5)
-  [DIFF] cello m.24
-     Kern: b0:Bb2(2) | b2:Eb3(0.5)
-     .ly : b0:Bb2(2) | b2:Bb2(1.5) | b3.5:Eb3(0.5)
-  --> ����С��: 18
+  --> ����С��: 3
 
-�ܼƲ���С��: 24
+�ܼƲ���С��: 9
