@@ -20,9 +20,9 @@ violinoI = {
   \set Staff.midiInstrument = "violin"
   \p
   % m.6
-  a'4 e#'4 fs'4 a'4 |
+  a'4 es'4 fs'4 a'4 |
   % m.7
-  g'4 e#'2 e#''4 |
+  g'4 es'2 es''4 |
   % m.8
   fs''2 e''4 ds''4~ |
   % m.9
@@ -30,7 +30,7 @@ violinoI = {
   % m.10
   e''4 ds''2 e''4~ |
   % m.11
-  e''2.~ d''4 |
+  e''2. d''4 |
 }
 
 violinoII = {

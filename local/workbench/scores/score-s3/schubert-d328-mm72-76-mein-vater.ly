@@ -26,12 +26,13 @@ global = {
   \key g \minor
   \time 4/4
   \tempo "Schnell" 4 = 154
+  \set Score.currentBarNumber = #72
 }
 
 voice = {
   \global
   \clef treble
-  bf'2 r4 d''4 |                        % m.72
+  bf'2 r4^\f d''4 |                     % m.72 (f from 3rd beat per Mutopia dynamics layer)
   ef''2 ef''4. ef''8 |                  % m.73
   ef''8( d''8) d''4 r4 d''4 |           % m.74
   ef''2 ef''4. ef''8 |                  % m.75

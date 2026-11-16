@@ -1,0 +1,179 @@
+===== Beethoven, Ludwig van (1770-1827) =====
+
+^Opus^Nr. in Opus^Satz-Nr.^Jahr^Tonart^Werktitel^
+|Op.2 |1-3 |1-4 |1793-95 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_1-3_1-4_PianoSonat_003_00003.xml|Piano Sonata No. 1 in F minor - Allegro, Mvmt. 1]] |
+|Op.2 |1-3 |2-4 |1793-95 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_1-3_2-4_PianoSonat_003_00004.xml|Piano Sonata No. 1 in F minor - Adagio, Mvmt. 2]] |
+|Op.2 |1-3 |3-4 |1793-95 |F-Dur trio: F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_1-3_3-4_PianoSonat_003_00005.xml|Piano Sonata No. 1 in F minor - Minuetto: Allegretto, Mvmt. 3]] |
+|Op.2 |1-3 |4-4 |1793-95 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_1-3_4-4_PianoSonat_003_00006.xml|Piano Sonata No. 1 in F minor - Prestissimo, Mvmt. 4]] |
+|Op.2 |2-3 |1-4 |1794-95 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_2-3_1-4_PianoSonat_003_00007.xml|Piano Sonata No. 2 in A major - Allegro vivace, Mvmt. 1]] |
+|Op.2 |2-3 |2-4 |1794-95 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_2-3_2-4_PianoSonat_003_00008.xml|Piano Sonata No. 2 in A major - Largo appassionato, Mvmt. 2]] |
+|Op.2 |2-3 |3-4 |1794-95 |A-Dur - Trio: A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_2-3_3-4_PianoSonat_003_00009.xml|Piano Sonata No. 2 in A major - Scherzo: Allegretto, Mvmt. 3]] |
+|Op.2 |2-3 |4-4 |1794-95 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_2-3_4-4_PianoSonat_003_00010.xml|Piano Sonata No. 2 in A major - Rondo: Grazioso, Mvmt. 4]] |
+|Op.2 |3-3 |1-4 |1794-95 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_3-3_1-4_PianoSonat_003_00011.xml|Piano Sonata No. 3 in C major - Allegro con brio, Mvmt. 1]] |
+|Op.2 |3-3 |2-4 |1794-95 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_3-3_2-4_PianoSonat_003_00012.xml|Piano Sonata No. 3 in C major - Adagio, Mvmt. 2]] |
+|Op.2 |3-3 |3-4 |1794-95 |C-Dur trio: A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_3-3_3-4_PianoSonat_003_00013.xml|Piano Sonata No. 3 in C major - Scherzo: Allegro, Mvmt. 3]] |
+|Op.2 |3-3 |4-4 |1794-95 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op2_3-3_4-4_PianoSonat_003_00014.xml|Piano Sonata No. 3 in C major - Allegro assai, Mvmt. 4]] |
+|Op.7 |COM |1-4 |1796-97 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op7_COM_1-4_PianoSonat_003_00015.xml|Piano Sonata No. 4 in E-flat major - Allegro molto con brio, Mvmt. 1]] |
+|Op.7 |COM |2-4 |1796-97 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op7_COM_2-4_PianoSonat_003_00016.xml|Piano Sonata No. 4 in E-flat major - Largo, con gran expressione, Mvmt. 2]] |
+|Op.7 |COM |3-4 |1796-97 |Es-Dur trio:Es-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op7_COM_3-4_PianoSonat_003_00017.xml|Piano Sonata No. 4 in E-flat major - Allegro, Mvmt. 3]] |
+|Op.7 |COM |4-4 |1796-97 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op7_COM_4-4_PianoSonat_003_00018.xml|Piano Sonata No. 4 in E-flat major - Rondo: Poco allegretto e grazioso, Mvmt. 4]] |
+|Op.10 |1-3 |1-3 |1795-97 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_1-3_1-3_PianoSonat_003_00019.xml|Piano Sonata No. 5 in C minor - Allegro molto e con brio, Mvmt. 1]] |
+|Op.10 |1-3 |2-3 |1795-97 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_1-3_2-3_PianoSonat_003_00020.xml|Piano Sonata No. 5 in C minor - Adagio molto, Mvmt. 2]] |
+|Op.10 |1-3 |3-3 |1795-97 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_1-3_3-3_PianoSonat_003_00021.xml|Piano Sonata No. 5 in C minor - Finale: Prestissimo, Mvmt. 3]] |
+|Op.10 |2-3 |2-3 |1796-98 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_2-3_2-3_PianoSonat_003_00023.xml|Piano Sonata No. 6 in F major - Allegretto, Mvmt. 2]] |
+|Op.10 |2-3 |3-3 |1796-98 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_2-3_3-3_PianoSonat_003_00024.xml|Piano Sonata No. 6 in F major - Presto, Mvmt. 3]] |
+|Op.10 |3-3 |1-4 |1797-98 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_3-3_1-4_PianoSonat_003_00025.xml|Piano Sonata No. 7 in D major - Presto, Mvmt. 1]] |
+|Op.10 |3-3 |2-4 |1797-98 |D-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_3-3_2-4_PianoSonat_003_00026.xml|Piano Sonata No. 7 in D major - Largo e mesto, Mvmt. 2]] |
+|Op.10 |3-3 |3-4 |1797-98 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_3-3_3-4_PianoSonat_003_00027.xml|Piano Sonata No. 7 in D major - Minuetto: Allegro, Mvmt. 3]] |
+|Op.10 |3-3 |4-4 |1797-98 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op10_3-3_4-4_PianoSonat_003_00028.xml|Piano Sonata No. 7 in D major - Rondo: Allegro, Mvmt. 4]] |
+|Op.13 |COM |1-3 |1798 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op13_COM_1-3_PianoSonat_003_00029.xml|Piano Sonata No. 8 in C minor - Tempo primo, Mvmt. 1]] |
+|Op.13 |COM |2-3 |1798 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op13_COM_2-3_PianoSonat_003_00030.xml|Piano Sonata No. 8 in C minor - Adagio cantabile, Mvmt. 2]] |
+|Op.13 |COM |3-3 |1798 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op13_COM_3-3_PianoSonat_003_00031.xml|Piano Sonata No. 8 in C minor - Allegro, Mvmt. 3]] |
+|Op.14 |1-2 |1-3 |1798 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_1-2_1-3_PianoSonat_003_00032.xml|Piano Sonata No. 9 in E major - Allegro, Mvmt. 1]] |
+|Op.14 |1-2 |2-3 |1798 |E-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_1-2_2-3_PianoSonat_003_00033.xml|Piano Sonata No. 9 in E major - Allegretto, Mvmt. 2]] |
+|Op.14 |1-2 |3-3 |1798 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_1-2_3-3_PianoSonat_003_00034.xml|Piano Sonata No. 9 in E major - Rondo: Allegro commodo, Mvmt. 3]] |
+|Op.14 |2-2 |1-3 |1798-99 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_2-2_1-3_PianoSonat_003_00035.xml|Piano Sonata No. 10 in G major - Allegro, Mvmt. 1]] |
+|Op.14 |2-2 |2-3 |1798-99 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_2-2_2-3_PianoSonat_003_00036.xml|Piano Sonata No. 10 in G major - Andante, Mvmt. 2]] |
+|Op.14 |2-2 |3-3 |1798-99 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op14_2-2_3-3_PianoSonat_003_00037.xml|Piano Sonata No. 10 in G major - Scherzo: Allegro assai, Mvmt. 3]] |
+|Op.18 |1-6 |1-4 |1799 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_1-6_1-4_StringQuar_003_00104.xml|String Quartet No. 1 in F major, Op. 18, No. 1 - Allegro con brio, Mvmt. 1]] |
+|Op.18 |1-6 |2-4 |1799 |D-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_1-6_2-4_StringQuar_003_00105.xml|String Quartet No. 1 in F major, Op. 18, No. 1 - Adagio affettuoso ed appassionato, Mvmt. 2]] |
+|Op.18 |1-6 |3-4 |1799 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_1-6_3-4_StringQuar_003_00106.xml|String Quartet No. 1 in F major, Op. 18, No. 1 - Scherzo: Allegro molto, Mvmt. 3]] |
+|Op.18 |1-6 |4-4 |1799 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_1-6_4-4_StringQuar_003_00107.xml|String Quartet No. 1 in F major, Op. 18, No. 1 - Allegro, Mvmt. 4]] |
+|Op.18 |2-6 |1-4 |1799 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_2-6_1-4_StringQuar_003_00108.xml|String Quartet No. 2 in G major, Op. 18, No. 2 - Allegro, Mvmt. 1]] |
+|Op.18 |2-6 |2-4 |1799 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_2-6_2-4_StringQuar_003_00109.xml|String Quartet No. 2 in G major, Op. 18, No. 2 - Adagio cantabile, Mvmt. 2]] |
+|Op.18 |2-6 |3-4 |1799 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_2-6_3-4_StringQuar_003_00110.xml|String Quartet No. 2 in G major, Op. 18, No. 2 - Scherzo Allegro, Mvmt. 3]] |
+|Op.18 |2-6 |4-4 |1799 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_2-6_4-4_StringQuar_003_00111.xml|String Quartet No. 2 in G major, Op. 18, No. 2 - Allegro molto, quasi presto, Mvmt. 4]] |
+|Op.18 |3-6 |1-4 |1798-99 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_3-6_1-4_StringQuar_003_00112.xml|String Quartet No. 3 in D major, Op. 18, No. 3 - Allegro, Mvmt. 1]] |
+|Op.18 |3-6 |2-4 |1798-99 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_3-6_2-4_StringQuar_003_00113.xml|String Quartet No. 3 in D major, Op. 18, No. 3 - Andante con moto, Mvmt. 2]] |
+|Op.18 |3-6 |3-4 |1798-99 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_3-6_3-4_StringQuar_003_00114.xml|String Quartet No. 3 in D major, Op. 18, No. 3 - Allegro, Mvmt. 3]] |
+|Op.18 |3-6 |4-4 |1798-99 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_3-6_4-4_StringQuar_003_00115.xml|String Quartet No. 3 in D major, Op. 18, No. 3 - Presto, Mvmt. 4]] |
+|Op.18 |4-6 |1-4 |1799-1800 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_4-6_1-4_StringQuar_003_00116.xml|String Quartet No. 4 in C minor, Op. 18, No. 4 - Allegro ma non tanto, Mvmt. 1]] |
+|Op.18 |4-6 |2-4 |1799-1800 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_4-6_2-4_StringQuar_003_00117.xml|String Quartet No. 4 in C minor, Op. 18, No. 4 - Scherzo: Andante scherzoso quasi Allegretto, Mvmt. 2]] |
+|Op.18 |4-6 |3-4 |1799-1800 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_4-6_3-4_StringQuar_003_00118.xml|String Quartet No. 4 in C minor, Op. 18, No. 4 - Menuetto, Mvmt. 3]] |
+|Op.18 |4-6 |4-4 |1799-1800 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_4-6_4-4_StringQuar_003_00119.xml|String Quartet No. 4 in C minor, Op. 18, No. 4 - Allegro, Mvmt. 4]] |
+|Op.18 |5-6 |1-4 |1799 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_5-6_1-4_StringQuar_003_00120.xml|String Quartet No. 5 in A major, Op. 18, No. 5 - Allegro, Mvmt. 1]] |
+|Op.18 |5-6 |2-4 |1799 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_5-6_2-4_StringQuar_003_00121.xml|String Quartet No. 5 in A major, Op. 18, No. 5 - Menuetto, Mvmt. 2]] |
+|Op.18 |5-6 |3-4 |1799 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_5-6_3-4_StringQuar_003_00122.xml|String Quartet No. 5 in A major, Op. 18, No. 5 - Andante cantabile, Mvmt. 3]] |
+|Op.18 |5-6 |4-4 |1799 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_5-6_4-4_StringQuar_003_00123.xml|String Quartet No. 5 in A major, Op. 18, No. 5 - Allegro, Mvmt. 4]] |
+|Op.18 |6-6 |1-5 |1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_6-6_1-5_StringQuar_003_00124.xml|String Quartet No. 6 in B-flat major, Op. 18, No. 6 - Allegro con brio, Mvmt. 1]] |
+|Op.18 |6-6 |2-5 |1800 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_6-6_2-5_StringQuar_003_00125.xml|String Quartet No. 6 in B-flat major, Op. 18, No. 6 - Adagio ma non troppo, Mvmt. 2]] |
+|Op.18 |6-6 |3-5 |1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_6-6_3-5_StringQuar_003_00126.xml|String Quartet No. 6 in B-flat major, Op. 18, No. 6 - Scherzo. Allegro, Mvmt. 3]] |
+|Op.18 |6-6 |4-5 |1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_6-6_4-5_StringQuar_003_00127.xml|String Quartet No. 6 in B-flat major, Op. 18, No. 6 - La Malinconia. Adagio, Mvmt. 4]] |
+|Op.18 |6-6 |5-5 |1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op18_6-6_5-5_StringQuar_003_00128.xml|String Quartet No. 6 in B-flat major, Op. 18, No. 6 - Allegretto quasi Allegro, Mvmt. 5]] |
+|Op.22 |COM |1-4 |1799-1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op22_COM_1-4_PianoSonat_003_00038.xml|Piano Sonata No. 11 in B-flat major - Allegro con brio, Mvmt. 1]] |
+|Op.22 |COM |2-4 |1799-1800 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op22_COM_2-4_PianoSonat_003_00039.xml|Piano Sonata No. 11 in B-flat major - Adagio con molt' espressione, Mvmt. 2]] |
+|Op.22 |COM |3-4 |1799-1800 |G-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op22_COM_3-4_PianoSonat_003_00040.xml|Piano Sonata No. 11 in B-flat major - Minuetto, Mvmt. 3]] |
+|Op.22 |COM |4-4 |1799-1800 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op22_COM_4-4_PianoSonat_003_00041.xml|Piano Sonata No. 11 in B-flat major - Rondo: Allegretto, Mvmt. 4]] |
+|Op.26 |COM |1-4 |1800-01 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op26_COM_1-4_PianoSonat_003_00042.xml|Piano Sonata No. 12 in A-flat major - Andante, Mvmt. 1]] |
+|Op.26 |COM |2-4 |1800-01 |As-Dur/Des-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op26_COM_2-4_PianoSonat_003_00043.xml|Piano Sonata No. 12 in A-flat major - Allegro molto, Mvmt. 2]] |
+|Op.26 |COM |3-4 |1800-01 |As-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op26_COM_3-4_PianoSonat_003_00044.xml|Piano Sonata No. 12 in A-flat major - Maestoso andante, Mvmt. 3]] |
+|Op.26 |COM |4-4 |1800-01 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op26_COM_4-4_PianoSonat_003_00045.xml|Piano Sonata No. 12 in A-flat major - Allegro, Mvmt. 4]] |
+|Op.27 |1-2 |1-4 |1800-01 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_1-2_1-4_PianoSonat_003_00046.xml|Piano Sonata No. 13 in E-flat major - Tempo 1<sup>o</sup> (Andante), Mvmt. 1]] |
+|Op.27 |1-2 |2-4 |1800-01 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_1-2_2-4_PianoSonat_003_00047.xml|Piano Sonata No. 13 in E-flat major - Allegro molto e vivace, Mvmt. 2]] |
+|Op.27 |1-2 |3-4 |1800-01 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_1-2_3-4_PianoSonat_003_00048.xml|Piano Sonata No. 13 in E-flat major - Adagio, Mvmt. 3]] |
+|Op.27 |1-2 |4-4 |1800-01 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_1-2_4-4_PianoSonat_003_00049.xml|Piano Sonata No. 13 in E-flat major - Finale: Allegro vivace, Mvmt. 4]] |
+|Op.27 |2-2 |1-3 |1802 |Cis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_2-2_1-3_PianoSonat_003_00050.xml|Piano Sonata No. 14 in C-sharp minor - Adagio sostenuto, Mvmt. 1]] |
+|Op.27 |2-2 |2-3 |1802 |Des-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_2-2_2-3_PianoSonat_003_00051.xml|Piano Sonata No. 14 in C-sharp minor - Allegretto, Mvmt. 2]] |
+|Op.27 |2-2 |3-3 |1802 |Cis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op27_2-2_3-3_PianoSonat_003_00052.xml|Piano Sonata No. 14 in C-sharp minor ("Moonlight") - Tempo 1o, Mvmt. 3]] |
+|Op.28 |COM |2-4 |1801 |D-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op28_COM_2-4_PianoSonat_003_00053.xml|Piano Sonata No. 15 in D major - Andante, Mvmt. 2]] |
+|Op.28 |COM |3-4 |1801 |D-Dur/H-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op28_COM_3-4_PianoSonat_003_00054.xml|Piano Sonata No. 15 in D major - Scherzo: Allego vivace, Mvmt. 3]] |
+|Op.28 |COM |4-4 |1801 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op28_COM_4-4_PianoSonat_003_00055.xml|Piano Sonata No. 15 in D major - Rondo: Allegro non troppo, Mvmt. 4]] |
+|Op.29 |COM |1-4 |1801 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op29_COM_1-4_StringQuin_003_00175.xml|String Quintet in C major, Op. 29 - Allegro moderato, Mvmt. 1]] |
+|Op.29 |COM |2-4 |1801 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op29_COM_2-4_StringQuin_003_00176.xml|String Quintet in C major, Op. 29 - Adagio molto expressivo, Mvmt. 2]] |
+|Op.29 |COM |3-4 |1801 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op29_COM_3-4_StringQuin_003_00177.xml|String Quintet in C major, Op. 29 - Scherzo: Allegro, Mvmt. 3]] |
+|Op.31 |1-3 |1-3 |1801-02 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_1-3_1-3_PianoSonat_003_00056.xml|Piano Sonata No. 16 in G major - Allegro vivace, Mvmt. 1]] |
+|Op.31 |1-3 |2-3 |1801-02 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_1-3_2-3_PianoSonat_003_00057.xml|Piano Sonata No. 16 in G major - Adagio grazioso, Mvmt. 2]] |
+|Op.31 |1-3 |3-3 |1801-02 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_1-3_3-3_PianoSonat_003_00058.xml|Piano Sonata No. 16 in G major - Presto, Mvmt. 3]] |
+|Op.31 |2-3 |1-3 |1801-02 |D-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_2-3_1-3_PianoSonat_003_00059.xml|Piano Sonata No. 17 in D minor - Largo - Allegro, Mvmt. 1]] |
+|Op.31 |2-3 |2-2 |1801-02 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_2-3_2-2_PianoSonat_003_00060.xml|Piano Sonata No. 17 in D minor - Adagio, Mvmt. 2]] |
+|Op.31 |2-3 |3-3 |1801-02 |D-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_2-3_3-3_PianoSonat_003_00061.xml|Piano Sonata No. 17 in D minor - Allegretto, Mvmt. 3]] |
+|Op.31 |3-3 |1-4 |1801-02 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_3-3_1-4_PianoSonat_003_00062.xml|Piano Sonata No. 18 in E-flat major - Allegro, Mvmt. 1]] |
+|Op.31 |3-3 |2-4 |1801-02 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_3-3_2-4_PianoSonat_003_00063.xml|Piano Sonata No. 18 in E-flat major - Scherzo: Allegretto vivace, Mvmt. 2]] |
+|Op.31 |3-3 |3-4 |1801-02 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_3-3_3-4_PianoSonat_003_00064.xml|Piano Sonata No. 18 in E-flat major - Menuetto: Moderato e grazioso, Mvmt. 3]] |
+|Op.31 |3-3 |4-4 |1801-02 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op31_3-3_4-4_PianoSonat_003_00065.xml|Piano Sonata No. 18 in E-flat major - Presto con fuoco, Mvmt. 4]] |
+|Op.49 |1-2 |1-2 |1797 |G-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op49_1-2_1-2_PianoSonat_003_00066.xml|Piano Sonata No. 19 in G minor - Andante, Mvmt. 1]] |
+|Op.49 |1-2 |2-2 |1797 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op49_1-2_2-2_PianoSonat_003_00067.xml|Piano Sonata No. 19 in G minor - Rondo: Allegro, Mvmt. 2]] |
+|Op.49 |2-2 |1-2 |1795-96 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op49_2-2_1-2_PianoSonat_003_00068.xml|Piano Sonata No. 20 in G major - Allegro ma non troppo, Mvmt. 1]] |
+|Op.49 |2-2 |2-2 |1795-96 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op49_2-2_2-2_PianoSonat_003_00069.xml|Piano Sonata No. 20 in G major - Tempo di minuetto, Mvmt. 2]] |
+|Op.53 |COM |1-4 |1803-04 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op53_COM_1-4_PianoSonat_003_00070.xml|Piano Sonata No. 21 in C major - Allegro con brio, Mvmt. 1]] |
+|Op.53 |COM |2-4 |1803-04 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op53_COM_2-4_PianoSonat_003_00071.xml|Piano Sonata No. 21 in C major - Introduzione: Adagio molto, Mvmt. 2]] |
+|Op.53 |COM |3-4 |1803-04 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op53_COM_3-4_PianoSonat_003_00072.xml|Piano Sonata No. 21 in C major - Rondo: Allegretto moderato, Mvmt. 3]] |
+|Op.53 |COM |4-4 |1803-04 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op53_COM_4-4_PianoSonat_003_00073.xml|Piano Sonata No. 21 in C major - Prestissimo, Mvmt. 4]] |
+|Op.54 |COM |1-2 |1804 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op54_COM_1-2_PianoSonat_003_00074.xml|Piano Sonata No. 22 in F major - In tempo d'un menuetto, Mvmt. 1]] |
+|Op.54 |COM |2-2 |1804 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op54_COM_2-2_PianoSonat_003_00075.xml|Piano Sonata No. 22 in F major - Allegretto, Mvmt. 2]] |
+|Op.57 |COM |1-3 |1804-06 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op57_COM_1-3_PianoSonat_003_00076.xml|Piano Sonata No. 23 in F minor - Allegro assai, Mvmt. 1]] |
+|Op.57 |COM |2-3 |1804-06 |Des-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op57_COM_2-3_PianoSonat_003_00077.xml|Piano Sonata No. 23 in F minor - Andante con moto, Mvmt. 2]] |
+|Op.57 |COM |3-3 |1804-06 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op57_COM_3-3_PianoSonat_003_00078.xml|Piano Sonata No. 21 in C major - Prestissimo, Mvmt. 3]] |
+|Op.59 |1-3 |1-4 |1806 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_1-3_1-4_StringQuar_003_00129.xml|String Quartet No. 7 in F major, Op. 59, No. 1 - Allegro, Mvmt. 1]] |
+|Op.59 |1-3 |2-4 |1806 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_1-3_2-4_StringQuar_003_00130.xml|String Quartet No. 7 in F major, Op. 59, No. 1 - Allegretto vivace e sempre scherzando, Mvmt. 2]] |
+|Op.59 |1-3 |3-4 |1806 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_1-3_3-4_StringQuar_003_00131.xml|String Quartet No. 7 in F major, Op. 59, No. 1 - Adagio molto e mesto, Mvmt. 3]] |
+|Op.59 |1-3 |4-4 |1806 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_1-3_4-4_StringQuar_003_00132.xml|String Quartet No. 7 in F major, Op. 59, No. 1 - Allegro (Theme russe), Mvmt. 4]] |
+|Op.59 |2-3 |1-4 |1806 |E-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_2-3_1-4_StringQuar_003_00133.xml|String Quartet No. 8 in E minor, Op. 59, No. 2 - Allegro, Mvmt. 1]] |
+|Op.59 |2-3 |2-4 |1806 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_2-3_2-4_StringQuar_003_00134.xml|String Quartet No. 8 in E minor, Op. 59, No. 2 - Molto adagio, Mvmt. 2]] |
+|Op.59 |2-3 |3-4 |1806 |E-Moll/E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_2-3_3-4_StringQuar_003_00135.xml|String Quartet No. 8 in E minor, Op. 59, No. 2 - Allegretto, Mvmt. 3]] |
+|Op.59 |2-3 |4-4 |1806 |E-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_2-3_4-4_StringQuar_003_00136.xml|String Quartet No. 8 in E minor, Op. 59, No. 2 - Finale: Presto, Mvmt. 4]] |
+|Op.59 |3-3 |1-4 |1806 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_3-3_1-4_StringQuar_003_00137.xml|String Quartet No. 9 in C major, Op. 59, No. 3 - Andante con moto.  Allegro vivace, Mvmt. 1]] |
+|Op.59 |3-3 |2-4 |1806 |A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_3-3_2-4_StringQuar_003_00138.xml|String Quartet No. 9 in C major, Op. 59, No. 3 - Andante con moto quasi Allegretto, Mvmt. 2]] |
+|Op.59 |3-3 |3-4 |1806 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_3-3_3-4_StringQuar_003_00139.xml|String Quartet No. 9 in C major, Op. 59, No. 3 - Menuet and Trio, Mvmt. 3]] |
+|Op.59 |3-3 |4-4 |1806 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op59_3-3_4-4_StringQuar_003_00140.xml|String Quartet No. 9 in C major, Op. 59, No. 3 - Allegro molto, Mvmt. 4]] |
+|Op.67 |COM |1-4 |1807-8 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op67_COM_1-4_SymphonyNo_003_00002.xml|Symphony No. 5 in C minor, Mvmt. 1]] |
+|Op.74 |COM |1-4 |1809 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op74_COM_1-4_StringQuar_003_00141.xml|String Quartet No. 10 in E-flat major, Op. 74 - Poco Adagio. Allegro, Mvmt. 1]] |
+|Op.74 |COM |2-4 |1809 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op74_COM_2-4_StringQuar_003_00142.xml|String Quartet No. 10 in E-flat major, Op. 74 - Adagio ma non troppo, Mvmt. 2]] |
+|Op.74 |COM |3-4 |1809 |C-Moll/C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op74_COM_3-4_StringQuar_003_00143.xml|String Quartet No. 10 in E-flat major, Op. 74 - Presto, Mvmt. 3]] |
+|Op.74 |COM |4-4 |1809 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op74_COM_4-4_StringQuar_003_00144.xml|String Quartet No. 10 in E-flat major, Op. 74 - Allegretto con Variazioni, Mvmt. 4]] |
+|Op.78 |COM |1-2 |1809 |Fis-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op78_COM_1-2_PianoSonat_003_00079.xml|Piano Sonata No. 24 in F-sharp major - Adagio cantabile, Mvmt. 1]] |
+|Op.78 |COM |2-2 |1809 |Fis-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op78_COM_2-2_PianoSonat_003_00080.xml|Piano Sonata No. 24 in F-sharp major - Allegro assai, Mvmt. 2]] |
+|Op.79 |COM |1-3 |1809 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op79_COM_1-3_PianoSonat_003_00081.xml|Piano Sonata No. 25 in G major - Presto alla tedesca, Mvmt. 1]] |
+|Op.79 |COM |2-3 |1809 |G-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op79_COM_2-3_PianoSonat_003_00082.xml|Piano Sonata No. 25 in G major - Andante, Mvmt. 2]] |
+|Op.79 |COM |3-3 |1809 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op79_COM_3-3_PianoSonat_003_00083.xml|Piano Sonata No. 25 in G major - Vivace, Mvmt. 3]] |
+|Op.81a |COM |1-2 |1809-10 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op81a_COM_1-2_PianoSonat_003_00084.xml|Piano Sonata No. 26 in E-flat major - Les Adieux: Adagio, Mvmt. 1]] |
+|Op.81a |COM |2-2 |1809-10 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op81a_COM_2-2_PianoSonat_003_00085.xml|Piano Sonata No. 26 in E-flat major - L'Absence: Andante espressivo, Mvmt. 2]] |
+|Op.81a |COM |3-3 |1809-10 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op81a_COM_3-3_PianoSonat_003_00086.xml|Piano Sonata No. 26 in E-flat major - Le Retour: Vivacissimamente, Mvmt. 3]] |
+|Op.90 |COM |1-2 |1814 |E-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op90_COM_1-2_PianoSonat_003_00087.xml|Piano Sonata No. 27 in E minor - With liveliness and with feeling and expression throughout, Mvmt. 1]] |
+|Op.90 |COM |2-2 |1814 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op90_COM_2-2_PianoSonat_003_00088.xml|Piano Sonata No. 27 in E minor - Rondo: Non troppo presto e molto cantabile, Mvmt. 2]] |
+|Op.95 |COM |1-4 |1810 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op95_COM_1-4_StringQuar_003_00145.xml|String Quartet No. 11 in F minor, Op. 95 (Serioso) - Allegro con brio, Mvmt. 1]] |
+|Op.95 |COM |2-4 |1810 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op95_COM_2-4_StringQuar_003_00146.xml|String Quartet No. 11 in F minor, Op. 95 (Serioso) - Allegretto ma non troppo, Mvmt. 2]] |
+|Op.95 |COM |3-4 |1810 |F-Moll/D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op95_COM_3-4_StringQuar_003_00147.xml|String Quartet No. 11 in F minor, Op. 95 (Serioso) - Allegro assai vivace ma serioso, Mvmt. 3]] |
+|Op.95 |COM |4-4 |1810 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op95_COM_4-4_StringQuar_003_00148.xml|String Quartet No. 11 in F minor, Op. 95 (Serioso) - Larghetto expressivo - Allegretto agitato, Mvmt. 4]] |
+|Op.101 |COM |1-4 |1815-16 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op101_COM_1-4_PianoSonat_003_00089.xml|Piano Sonata No. 28 in A major - Allegretto ma non troppo, Mvmt. 1]] |
+|Op.101 |COM |2-4 |1815-16 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op101_COM_2-4_PianoSonat_003_00090.xml|Piano Sonata No. 28 in A major - Vivace alla marcia, Mvmt. 2]] |
+|Op.101 |COM |3-4 |1815-16 |A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op101_COM_3-4_PianoSonat_003_00091.xml|Piano Sonata No. 28 in A major - Adagio ma non troppo con affetto, Mvmt. 3]] |
+|Op.101 |COM |4-4 |1815-16 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op101_COM_4-4_PianoSonat_003_00092.xml|Piano Sonata No. 28 in A major - Allegro, Mvmt. 4]] |
+|Op.106 |COM |1-4 |1817-18 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op106_COM_1-4_PianoSonat_003_00093.xml|Piano Sonata No. 29 in B-flat major - Allegro, Mvmt. 1]] |
+|Op.106 |COM |2-4 |1817-18 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op106_COM_2-4_PianoSonat_003_00094.xml|Piano Sonata No. 29 in B-flat major - Scherzo: Assai vivace, Mvmt. 2]] |
+|Op.106 |COM |3-4 |1817-18 |Fis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op106_COM_3-4_PianoSonat_003_00095.xml|Piano Sonata No. 29 in B-flat major - Adagio sostenuto, Mvmt. 3]] |
+|Op.106 |COM |4-4 |1817-18 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op106_COM_4-4_PianoSonat_003_00096.xml|Piano Sonata No. 29 in B-flat major - Introduzione: Largo - Fuga: Allegro risoluto, Mvmt. 4]] |
+|Op.109 |COM |1-2 |1820 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op109_COM_1-2_PianoSonat_003_00097.xml|Piano Sonata No. 30 in E major - Vivace ma non troppo, Mvmt. 1]] |
+|Op.109 |COM |2-2 |1820 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op109_COM_2-2_PianoSonat_003_00098.xml|Piano Sonata No. 30 in E major - Prestissimo, Mvmt. 2]] |
+|Op.110 |COM |1-3 |1821 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op110_COM_1-3_PianoSonat_003_00099.xml|Piano Sonata No. 31 in A-flat major - Moderato cantabile molto espressivo, Mvmt. 1]] |
+|Op.110 |COM |2-3 |1821 |F-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op110_COM_2-3_PianoSonat_003_00100.xml|Piano Sonata No. 31 in A-flat major - Scherzo: Allegro molto, Mvmt. 2]] |
+|Op.110 |COM |3-3 |1821 |B-Moll/As-Moll/As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op110_COM_3-3_PianoSonat_003_00101.xml|Piano Sonata No. 31 in A-flat major - Adagio ma non troppo, Mvmt. 3]] |
+|Op.111 |COM |1-2 |1821-22 |C-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op111_COM_1-2_PianoSonat_003_00102.xml|Piano Sonata No. 32 in C minor - Maestoso - Allegro con brio ed appassionato, Mvmt. 1]] |
+|Op.111 |COM |2-2 |1821-22 |C-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op111_COM_2-2_PianoSonat_003_00103.xml|Piano Sonata No. 32 in C minor - Arietta: Adagio molto, semplice e cantabile, Mvmt. 2]] |
+|Op.127 |COM |1-4 |1823-24 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op127_COM_1-4_StringQuar_003_00149.xml|String Quartet No. 12 in E-flat major, Op. 127 - Maestoso - Allegro, Mvmt. 1]] |
+|Op.127 |COM |2-4 |1823-24 |As-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op127_COM_2-4_StringQuar_003_00150.xml|String Quartet No. 12 in E-flat major, Op. 127 - Adagio, ma non troppo e molto cantabile, Mvmt. 2]] |
+|Op.127 |COM |3-4 |1823-24 |Es-Dur/Es-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op127_COM_3-4_StringQuar_003_00151.xml|String Quartet No. 12 in E-flat major, Op. 127 - Scherzando vivace - Presto, Mvmt. 3]] |
+|Op.127 |COM |4-4 |1823-24 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op127_COM_4-4_StringQuar_003_00152.xml|String Quartet No. 12 in E-flat major, Op. 127 - Finale - Allegro con moto, Mvmt. 4]] |
+|Op.129  |COM |COM |1795 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op129_COM_COM_Rondoacapr_003_00001.xml|Rondo a capriccio (Rage over a Lost Penny) - Allegro vivace]] |
+|Op.130 |COM |1-6 |1825 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_1-6_StringQuar_003_00153.xml|String Quartet No. 13 in B-flat major, Op. 130 - Adagio ma non troppo - Allegro, Mvmt. 1]] |
+|Op.130 |COM |2-6 |1825 |B-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_2-6_StringQuar_003_00154.xml|String Quartet No. 13 in B-flat major, Op. 130 - Presto, Mvmt. 2]] |
+|Op.130 |COM |3-6 |1825 |Des-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_3-6_StringQuar_003_00155.xml|String Quartet No. 13 in B-flat major, Op. 130 - Andante con moto ma non troppo, Mvmt. 3]] |
+|Op.130 |COM |4-6 |1825 |G-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_4-6_StringQuar_003_00156.xml|String Quartet No. 13 in B-flat major, Op. 130 - Alla danza tedesca: Allegro assai, Mvmt. 4]] |
+|Op.130 |COM |5-6 |1825 |Es-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_5-6_StringQuar_003_00157.xml|String Quartet No. 13 in B-flat major, Op. 130 - Cavatina: Adagio molto espressivo, Mvmt. 5]] |
+|Op.130 |COM |6-6 |1825 |B-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op130_COM_6-6_StringQuar_003_00158.xml|String Quartet No. 13 in B-flat major, Op. 130 - Finale: Allegro, Mvmt. 6]] |
+|Op.131 |COM |1-7 |1826 |Cis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_1-7_StringQuar_003_00159.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Adagio ma non troppo e molto cantabile, Mvmt. 1]] |
+|Op.131 |COM |2-7 |1826 |D-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_2-7_StringQuar_003_00160.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Allegro molto vivace, Mvmt. 2]] |
+|Op.131 |COM |3-7 |1826 |Cis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_3-7_StringQuar_003_00161.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Allegro moderato - Adagio, Mvmt. 3]] |
+|Op.131 |COM |4-7 |1826 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_4-7_StringQuar_003_00162.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Adagio ma non troppo e molto espressivo, Mvmt. 4]] |
+|Op.131 |COM |5-7 |1826 |E-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_5-7_StringQuar_003_00163.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Presto, Mvmt. 5]] |
+|Op.131 |COM |6-7 |1826 |Gis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_6-7_StringQuar_003_00164.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Adagio quasi un poco andante, Mvmt. 6]] |
+|Op.131 |COM |7-7 |1826 |Cis-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op131_COM_7-7_StringQuar_003_00165.xml|String Quartet No. 14 in C-sharp minor, Op. 131 - Allegro, Mvmt. 7]] |
+|Op.132 |COM |1-5 |1823-25 |A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op132_COM_1-5_StringQuar_003_00166.xml|String Quartet No. 15 in A minor, Op. 132 - Assai sostenuto, Mvmt. 1]] |
+|Op.132 |COM |2-5 |1823-25 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op132_COM_2-5_StringQuar_003_00167.xml|String Quartet No. 15 in A minor, Op. 132 - Allegro ma non tanto, Mvmt. 2]] |
+|Op.132 |COM |3-5 |1823-25 |A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op132_COM_3-5_StringQuar_003_00168.xml|String Quartet No. 15 in A minor, Op. 132 - Molto adagio -- Andante, Mvmt. 3]] |
+|Op.132 |COM |4-5 |1823-25 |A-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op132_COM_4-5_StringQuar_003_00169.xml|String Quartet No. 15 in A minor, Op. 132 - Alla Marcia, assai vivace, Mvmt. 4]] |
+|Op.132 |COM |5-5 |1823-25 |A-Moll |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op132_COM_5-5_StringQuar_003_00170.xml|String Quartet No. 15 in A minor, Op. 132 - Allegro appassionato, Mvmt. 5]] |
+|Op.135 |COM |1-4 |1826 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op135_COM_1-4_StringQuar_003_00171.xml|String Quartet No. 16 in F major, Op. 135 - Allegretto, Mvmt. 1]] |
+|Op.135 |COM |2-4 |1826 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op135_COM_2-4_StringQuar_003_00172.xml|String Quartet No. 16 in F major, Op. 135 - Vivace, Mvmt. 2]] |
+|Op.135 |COM |3-4 |1826 |Des-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op135_COM_3-4_StringQuar_003_00173.xml|String Quartet No. 16 in F major, Op. 135 - Lento assai, cantante e tranquillo, Mvmt. 3]] |
+|Op.135 |COM |4-4 |1826 |F-Dur |[[https://analyse.hfm-weimar.de/database/03/BeLuva_Op135_COM_4-4_StringQuar_003_00174.xml|String Quartet No. 16 in F major, Op. 135 - Der schwer gefaßte Entschluß, Mvmt. 4]] |

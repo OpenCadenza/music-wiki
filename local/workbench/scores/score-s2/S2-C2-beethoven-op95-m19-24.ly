@@ -65,7 +65,7 @@ viola = {
   % m.23
   df'2.~ c'4 |
   % m.24
-  df4 \tuplet 3/2 { df8 f8 gf8 } af4 \tuplet 3/2 { af8 c'8 df'8 } |
+  df4~ \tuplet 3/2 { df8 f8 gf8 } af4~ \tuplet 3/2 { af8 c'8 df'8 } |
 }
 
 violoncello = {

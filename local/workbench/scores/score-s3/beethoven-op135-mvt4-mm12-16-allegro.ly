@@ -22,13 +22,13 @@
 global = {
   \key f \minor
   \time 3/2
-  \tempo "Grave ma non troppo tratto" 2 = 40
   \set Score.currentBarNumber = #12
 }
 
 violinOne = {
   \global
   \clef treble
+  \tempo "Grave ma non troppo tratto" 2 = 40
   r2 c''8 c''8 c''4~ c''4 \tempo "Allegro" 2 = 80 a''4 |   % m.12 (3/2); a''4 = Allegro anacrusis
   \time 4/4 \key f \major
   c'''2 g''2 |                               % m.13 (A -> C -> G)

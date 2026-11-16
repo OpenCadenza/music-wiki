@@ -1,0 +1,157 @@
+=====List of composers=====
+
+Each composer leads to a separate subpage, where the available repertoire is listed. \\ 
+
+More information about the sheet music database, the sheet music files and the file names can be found [[datenbank|here]].
+
+[[AdAd|Adam, Adolphe (1803-1856)]]
+
+[[AdJa|Adlung, Jakob (1699-1762)]]
+
+[[AgAl|Agricola, Alexander (1446-1506)]]
+
+[[AlIs|Albeniz, Isaac (1869-1909)]]
+
+[[AlJoFr|Alberti, Johann Friedrich (1642-1710)]]
+
+[[AlTo|Albinoni, Tomaso (1671-1751)]]
+
+[[AlJoGe|Albrechtsberger, Johann Georg (1736-1809)]]
+
+[[AlChaVa|Alkan, Charles-Valentin (1813-1888)]]
+
+[[BaCaPhE|Bach, Carl Philipp Emanuel (1714-1788)]]
+
+[[BaJoSe|Bach, Johann Sebastian (1685-1750)]]
+
+[[BaAdPse|Banchieri, Adriano, Pseudonyme (1568-1634)]]
+
+[[BaBe|Bartók, Béla (1881-1945)]]
+
+[[BeLuva|Beethoven, Ludwig van (1770-1827)]]
+
+[[BeVi|Bellini, Vincenzo (1801-1835)]]
+
+[[BeAl|Berg, Alban (1885-1935)]]
+
+[[BeHe|Berlioz, Hector (1803-1869)]]
+
+[[BiGe|Bizet, Georges (1838-1875)]]
+
+[[BoLu|Bocherini, Luigi (1743-1805)]]
+
+[[BoAl|Borodin, Aleksandr (1833-1887)]]
+
+[[BoMaEn|Bossi, Marco Enrico (1861-1925)]]
+
+[[BraJo|Brahms, Johannes (1833-1897)]]
+
+[[BrMa|Bruch, Max (1838-1920)]]
+
+[[BrAn|Bruckner, Anton (1824-1896)]]
+
+[[BrumAn|Brumel, Antoine (1460-1512)]]
+
+[[BuAn|Busnoys, Antoine (1435-1492)]]
+
+[[BuDi|Buxtehude, Dietrich (1637-1707)]]
+
+[[ByWi|Byrd, William (1540-1623)]]
+
+[[CaSe|Calvisius, Sethus (1556-1615)]]
+
+[[ChFrFr|Chopin, Fryderyk Franciszek (1810-1849)]]
+
+[[CleMu|Clementi, Muzio (1752-1832)]]
+
+[[CoLo|Compère, Loyset (1440/1445-1518)]]
+
+[[CoAr|Corelli, Arcangelo (1653-1713)]]
+
+[[DaLu|Daser, Ludwig (1526-1589)]]
+
+[[DeCl|Debussy, Claude (1862-1918)]]
+
+[[DoGa|Donizetti, Gaetano (1797-1848)]]
+
+[[DuGui|Dufay, Guillaume (1397-1474)]]
+
+[[DvoAn|Dvorak, Antonin (1841-1904)]]
+
+[[ElEd|Elgar, Edward (1857-1934)]]
+
+[[FaMa|Falla, Manuel de (1876-1946)]]
+
+[[FaGa|Faure, Gabriel (1845-1924)]]
+
+[[FeAn|Févin, Antoine de (1470-1511)]]
+
+[[FrCe|Frank, Cesar (1822-1890)]]
+
+[[FrWa|Frye, Walter (1445-1475)]]
+
+[[GeGe|Gershwin, George (1898-1937)]]
+
+[[GrEd|Grieg, Edvard (1843-1907)]]
+
+[[HaGeFr|Haendel, Georg Friedrich (1685-1759)]]
+
+[[HaAddela|Halle, Adam de la (ca.1250-ca.1300)]]
+
+[[HayFraJo|Haydn, Franz Joseph (1732-1809)]]
+
+[[HoGu|Holst, Gustav (1874-1934)]]
+
+[[IsHe|Isaac, Heinrich (1450-1517)]]
+
+[[JaLe|Janacek, Leos (1854-1928)]]
+
+[[JaJe|Japart, Jean (1450-1500)]]
+
+[[PrJode|Josquin des Prez (1450/1455-1521)]]
+
+[[LiFra|Liszt, Franz (1811-1886)]]
+
+[[MahGu|Mahler, Gustav (1860-1911)]]
+
+[[MaJo|Martini, Johannes (1430/1440-1497)]]
+
+[[MeFe|Mendelssohn-Bartholdy, Felix (1809-1847)]]
+
+[[MonCla|Monteverdi, Claudio (1567-1643)]]
+
+[[MoWo|Mozart, Wolfgang Amadeus (1756-1791)]]
+
+[[ObJa|Obrecht, Jacob (1457/1458-1505)]]
+
+[[OcJo|Ockeghem, Johannes (1420/1425-1497)]]
+
+[[OrMa|Orto, Marbrianus de (1460-1529)]]
+
+[[PiMa|Pipelare, Matthaeus (1450-1510/1516)]]
+
+[[PuGi|Puccini, Giacomo (1858-1924)]]
+
+[[ReJo|Regis, Johannes (1425-1496)]]
+
+[[RKNi|Rimsky-Korsakov, Nikolay (1844-1908)]]
+
+[[RuPi|Rue, Pierre de la (1452-1518)]]
+
+[[SSCa|Saint-Saens, Camille (1835-1921)]]
+
+[[ScFr|Schubert, Franz (1797-1828)]]
+
+[[ScRo|Schumann, Robert (1810-1856)]]
+
+[[SkAlNi|Skrjabin, Aleksandr Nikolaevič (1871-1915)]]
+
+[[TcPy|Tchaikovsky, Pyotr (1840-1893)]]
+
+[[TiJo|Tinctoris, Johannes (1435-1511)]]
+
+[[UNKN|Unknown]]
+
+[[ViAn|Vivaldi, Antonio (1678-1741)]]
+
+[[WeGa|Weerbeke, Gaspar van (1445-1517)]]
