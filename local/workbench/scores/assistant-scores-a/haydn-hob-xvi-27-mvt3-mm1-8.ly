@@ -31,7 +31,7 @@ rightHand = \relative c' {
   b'8( g8 ds8 e8) |
   a8( fs8 cs8 d!8) |
   e8( g4) cs,8 |
-  d4 r8 \bar "||"
+  d4\mordent r8 \bar "||"
 }
 
 leftHand = \relative c' {

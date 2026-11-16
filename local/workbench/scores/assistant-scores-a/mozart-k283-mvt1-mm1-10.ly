@@ -34,10 +34,10 @@ rightHand = \relative c'' {
   d4-.\p d4-. d4-. |
   d16( e fs g a b c d c b a g) |
   fs16( e d c b d b g a c a fs) |
-  g4 r4 \bar "||"
+  g4 r4 g8. fs16 | \bar "||"
 }
 
-leftHand = \relative c {
+leftHand = \relative c' {
   \global
   \clef bass
   \partial 4 r4 |
@@ -46,10 +46,10 @@ leftHand = \relative c {
   fs,8( a d a d a) |
   g8( b d b) g4\f |
   \clef treble
-  <c' g'>2\fp r4 |
+  <c g'>2\fp r4 |
   <b g'>2\fp r4 |
   \clef bass
-  <a c'>4-.\p <g b>4-. <fs a>4-. |
+  <a c>4-.\p <g b>4-. <fs a>4-. |
   <g b>4 r4 <e g>4 |
   r4 << { g4 c4 } \\ { d,2 } >> |
   <g b>4 g,4 r4 \bar "||"
