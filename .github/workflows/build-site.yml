@@ -95,7 +95,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: dist
-          key: site-dist-v1-${{ inputs.artifact }}-${{ runner.os }}-${{ hashFiles('content/**', '.vitepress/**', 'scripts/**', 'toolchains.json', 'package.json', 'pnpm-lock.yaml', '.github/workflows/build-site.yml') }}
+          key: site-dist-v1-${{ inputs.artifact }}-${{ runner.os }}-${{ hashFiles('content/**', '.vitepress/**', 'scripts/**', 'branches.json', 'toolchains.json', 'package.json', 'pnpm-lock.yaml', '.github/workflows/build-site.yml') }}
           restore-keys: |
             site-dist-v1-${{ inputs.artifact }}-${{ runner.os }}-
 
