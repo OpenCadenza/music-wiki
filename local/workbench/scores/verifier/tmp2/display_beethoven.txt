@@ -1,0 +1,85 @@
+
+{
+  { \key g \major
+    \time 2/4
+    \tempo "Allegro molto quasi presto" 4 = #192
+    } \clef "treble"
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  d'4-.\p g'4-. |
+  b'4.( a'16 g'16) |
+  fs'8-. a'8-. g'8-. e'8-. |
+  d'8 r8 r4 |
+  \bar "||"
+ 
+}
+
+{
+  { \key g \major
+    \time 2/4
+    \tempo "Allegro molto quasi presto" 4 = #192
+    } \clef "treble"
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  b4-.\p d'4-. |
+  g'4.( fs'16 e'16) |
+  d'8-. d'8-. cs'8-. cs'8-. |
+  d'8 r8 r4 |
+  \bar "||"
+ 
+}
+
+{
+  { \key g \major
+    \time 2/4
+    \tempo "Allegro molto quasi presto" 4 = #192
+    } \clef "alto"
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  b4-.\p b4-. |
+  g4.( a16 b16) |
+  a8-. fs8-. e8-. g8-. |
+  fs8 r8 r4 |
+  \bar "||"
+ 
+}
+
+{
+  { \key g \major
+    \time 2/4
+    \tempo "Allegro molto quasi presto" 4 = #192
+    } \clef "bass"
+  d4-.\p g4-. |
+  b4.( a16 g16) |
+  fs8-. g8-. a8-. b8-. |
+  c'8 r8 r4 |
+  g4-.\p g4-. |
+  e4.( fs16 g16) |
+  a8-. a,8-. a,8-. a,8-. |
+  d8 r8 r4 |
+  \bar "||"
+ 
+}
+
+-----STDERR-----
+GNU LilyPond 2.26.0 (running Guile 3.0)
+Processing `probe_beethoven.ly'
+Parsing...
+Interpreting music...[8]
+Preprocessing graphical objects...
+Interpreting music...[8]
+Preprocessing graphical objects...
+Interpreting music...[8]
+Preprocessing graphical objects...
+Interpreting music...[8]
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Success: compilation successfully completed

@@ -1,0 +1,116 @@
+
+GNU LilyPond 2.26.0 (running Guile 3.0)
+Processing `probe_beethoven_violinOne.ly'
+Parsing...
+beethoven_violinOne.ily:4:3: error: syntax error, unexpected MULTI_MEASURE_REST
+  
+  R2 |
+
+probe_beethoven_violinOne.ly:5:19: error: unknown command: `\violinOne'
+\displayLilyMusic 
+                  \violinOne
+
+probe_beethoven_violinOne.ly:5:19: error: wrong type for argument 2.  Expecting music, found "violinOne"
+\displayLilyMusic 
+                  \violinOne
+
+Interpreting music...
+beethoven_violinOne.ily:2:3: warning: skipping zero-duration score
+  
+  { \key g \major }
+
+beethoven_violinOne.ily:2:3: warning: to suppress this, consider adding a spacer rest
+  
+  { \key g \major }
+
+Interpreting music...
+beethoven_violinOne.ily:3:3: warning: skipping zero-duration score
+  
+  \clef treble
+
+beethoven_violinOne.ily:3:3: warning: to suppress this, consider adding a spacer rest
+  
+  \clef treble
+
+Interpreting music...
+beethoven_violinOne.ily:4:6: warning: skipping zero-duration score
+  R2 
+     |
+
+beethoven_violinOne.ily:4:6: warning: to suppress this, consider adding a spacer rest
+  R2 
+     |
+
+Interpreting music...
+beethoven_violinOne.ily:5:6: warning: skipping zero-duration score
+  R2 
+     |
+
+beethoven_violinOne.ily:5:6: warning: to suppress this, consider adding a spacer rest
+  R2 
+     |
+
+Interpreting music...
+beethoven_violinOne.ily:6:6: warning: skipping zero-duration score
+  R2 
+     |
+
+beethoven_violinOne.ily:6:6: warning: to suppress this, consider adding a spacer rest
+  R2 
+     |
+
+Interpreting music...
+beethoven_violinOne.ily:7:6: warning: skipping zero-duration score
+  R2 
+     |
+
+beethoven_violinOne.ily:7:6: warning: to suppress this, consider adding a spacer rest
+  R2 
+     |
+
+Interpreting music...
+beethoven_violinOne.ily:8:17: warning: skipping zero-duration score
+  d'4-.\p g'4-. 
+                |
+
+beethoven_violinOne.ily:8:17: warning: to suppress this, consider adding a spacer rest
+  d'4-.\p g'4-. 
+                |
+
+Interpreting music...
+beethoven_violinOne.ily:9:18: warning: skipping zero-duration score
+  b'4.( a'16 g') 
+                 |
+
+beethoven_violinOne.ily:9:18: warning: to suppress this, consider adding a spacer rest
+  b'4.( a'16 g') 
+                 |
+
+Interpreting music...
+beethoven_violinOne.ily:10:28: warning: skipping zero-duration score
+  fs'8-. a'8-. g'8-. e'8-. 
+                           |
+
+beethoven_violinOne.ily:10:28: warning: to suppress this, consider adding a spacer rest
+  fs'8-. a'8-. g'8-. e'8-. 
+                           |
+
+Interpreting music...
+beethoven_violinOne.ily:11:13: warning: skipping zero-duration score
+  d'8 r8 r4 
+            | \bar "||"
+
+beethoven_violinOne.ily:11:13: warning: to suppress this, consider adding a spacer rest
+  d'8 r8 r4 
+            | \bar "||"
+
+Interpreting music...
+beethoven_violinOne.ily:11:15: warning: skipping zero-duration score
+  d'8 r8 r4 | 
+              \bar "||"
+
+beethoven_violinOne.ily:11:15: warning: to suppress this, consider adding a spacer rest
+  d'8 r8 r4 | 
+              \bar "||"
+
+fatal error: failed files: "probe_beethoven_violinOne.ly"

@@ -1,0 +1,195 @@
+
+GNU LilyPond 2.26.0 (running Guile 3.0)
+Processing `probe_mozart_rightHand.ly'
+Parsing...
+mozart_rightHand.ily:5:3: error: syntax error, unexpected NOTENAME_PITCH
+  
+  c''8-.\(^\markup { \italic dolce } c''-. c''-.\) |
+
+mozart_rightHand.ily:5:38: error: syntax error, unexpected NOTENAME_PITCH
+  c''8-.\(^\markup { \italic dolce } 
+                                     c''-. c''-.\) |
+
+mozart_rightHand.ily:6:46: error: syntax error, unexpected NOTENAME_PITCH
+  c''8. \grace { \teeny d''16( c'' b' c'') } 
+                                             f''16 c''8 a'8( c''8 e'8) |
+
+mozart_rightHand.ily:43:22: error: syntax error, unexpected NOTENAME_PITCH
+  \appoggiatura g'16 
+                     g''4 ~ g''16.[ a''64( b''64 c'''16) b''16-.] a''16-.( g''-. f''-. e''-.) |
+
+mozart_rightHand.ily:53:3: error: syntax error, unexpected NOTENAME_PITCH
+  
+  c''4 r2 | \bar "||"
+
+probe_mozart_rightHand.ly:5:19: error: unknown command: `\rightHand'
+\displayLilyMusic 
+                  \rightHand
+
+probe_mozart_rightHand.ly:5:19: error: wrong type for argument 2.  Expecting music, found "rightHand"
+\displayLilyMusic 
+                  \rightHand
+
+Interpreting music...
+mozart_rightHand.ily:2:3: warning: skipping zero-duration score
+  
+  { \key f \major }
+
+mozart_rightHand.ily:2:3: warning: to suppress this, consider adding a spacer rest
+  
+  { \key f \major }
+
+Interpreting music...
+mozart_rightHand.ily:3:3: warning: skipping zero-duration score
+  
+  \clef treble
+
+mozart_rightHand.ily:3:3: warning: to suppress this, consider adding a spacer rest
+  
+  \clef treble
+
+Interpreting music...
+mozart_rightHand.ily:4:3: warning: skipping zero-duration score
+  
+  \partial 4.
+
+mozart_rightHand.ily:4:3: warning: to suppress this, consider adding a spacer rest
+  
+  \partial 4.
+
+Interpreting music...
+mozart_rightHand.ily:5:52: warning: skipping zero-duration score
+  c''8-.\(^\markup { \italic dolce } c''-. c''-.\) 
+                                                   |
+
+mozart_rightHand.ily:5:52: warning: to suppress this, consider adding a spacer rest
+  c''8-.\(^\markup { \italic dolce } c''-. c''-.\) 
+                                                   |
+
+Interpreting music...
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:6:72: warning: skipping zero-duration score
+  c''8. \grace { \teeny d''16( c'' b' c'') } f''16 c''8 a'8( c''8 e'8) 
+                                                                       |
+
+mozart_rightHand.ily:6:72: warning: to suppress this, consider adding a spacer rest
+  c''8. \grace { \teeny d''16( c'' b' c'') } f''16 c''8 a'8( c''8 e'8) 
+                                                                       |
+
+Interpreting music...
+mozart_rightHand.ily:9:43: warning: bar check failed at: 3/4
+      g'4( f'8) f'8\f([ <e' g'> <f' a'>)] 
+                                          |
+
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:15:6: warning: skipping zero-duration score
+  >> 
+     |
+
+mozart_rightHand.ily:15:6: warning: to suppress this, consider adding a spacer rest
+  >> 
+     |
+
+Interpreting music...
+mozart_rightHand.ily:18:42: warning: bar check failed at: 3/4
+      bf'8.( c''32 d'' c''8) f'8( e' f') 
+                                         |
+
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:24:6: warning: skipping zero-duration score
+  >> 
+     |
+
+mozart_rightHand.ily:24:6: warning: to suppress this, consider adding a spacer rest
+  >> 
+     |
+
+Interpreting music...
+mozart_rightHand.ily:27:41: warning: bar check failed at: 3/4
+      <f' a'>4( <e' g'>8) g'8[ g'8 g'8] 
+                                        |
+
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:33:6: warning: skipping zero-duration score
+  >> 
+     |
+
+mozart_rightHand.ily:33:6: warning: to suppress this, consider adding a spacer rest
+  >> 
+     |
+
+Interpreting music...
+mozart_rightHand.ily:36:71: warning: bar check failed at: 3/4
+      \appoggiatura g'16 g''8.[ d''32( b'32] g'8) g'8-.( g'8-. g'8-.) 
+                                                                      |
+
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:42:6: warning: skipping zero-duration score
+  >> 
+     |
+
+mozart_rightHand.ily:42:6: warning: to suppress this, consider adding a spacer rest
+  >> 
+     |
+
+Interpreting music...
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:43:95: warning: skipping zero-duration score
+  \appoggiatura g'16 g''4 ~ g''16.[ a''64( b''64 c'''16) b''16-.] a''16-.( g''-. f''-. e''-.) 
+                                                                                              |
+
+mozart_rightHand.ily:43:95: warning: to suppress this, consider adding a spacer rest
+  \appoggiatura g'16 g''4 ~ g''16.[ a''64( b''64 c'''16) b''16-.] a''16-.( g''-. f''-. e''-.) 
+                                                                                              |
+
+Interpreting music...
+mozart_rightHand.ily:46:50: warning: bar check failed at: 3/4
+      cs''16[( d'' f'' a'')] c''4. e''16[( d'')] 
+                                                 |
+
+Preprocessing graphical objects...
+Interpreting music...
+mozart_rightHand.ily:52:6: warning: skipping zero-duration score
+  >> 
+     |
+
+mozart_rightHand.ily:52:6: warning: to suppress this, consider adding a spacer rest
+  >> 
+     |
+
+Interpreting music...
+mozart_rightHand.ily:53:11: warning: skipping zero-duration score
+  c''4 r2 
+          | \bar "||"
+
+mozart_rightHand.ily:53:11: warning: to suppress this, consider adding a spacer rest
+  c''4 r2 
+          | \bar "||"
+
+Interpreting music...
+mozart_rightHand.ily:53:13: warning: skipping zero-duration score
+  c''4 r2 | 
+            \bar "||"
+
+mozart_rightHand.ily:53:13: warning: to suppress this, consider adding a spacer rest
+  c''4 r2 | 
+            \bar "||"
+
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+programming error: bounds of this piece aren't breakable.
+continuing, cross fingers
+E:/GreenSoftware/lilypond-2.26.0/share/lilypond/2.26.0/ly/grace-init.ly:33:7: programming error: bounds of this piece aren't breakable.
+    <>
+      \startGraceSlur
+E:/GreenSoftware/lilypond-2.26.0/share/lilypond/2.26.0/ly/grace-init.ly:33:7: continuing, cross fingers
+programming error: bounds of this piece aren't breakable.
+continuing, cross fingers
+fatal error: failed files: "probe_mozart_rightHand.ly"

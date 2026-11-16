@@ -1,0 +1,116 @@
+
+GNU LilyPond 2.26.0 (running Guile 3.0)
+Processing `probe_beethoven_cello.ly'
+Parsing...
+beethoven_cello.ily:4:3: error: syntax error, unexpected NOTENAME_PITCH
+  
+  d4-.\p g4-. |
+
+probe_beethoven_cello.ly:5:19: error: unknown command: `\cello'
+\displayLilyMusic 
+                  \cello
+
+probe_beethoven_cello.ly:5:19: error: wrong type for argument 2.  Expecting music, found "cello"
+\displayLilyMusic 
+                  \cello
+
+Interpreting music...
+beethoven_cello.ily:2:3: warning: skipping zero-duration score
+  
+  { \key g \major }
+
+beethoven_cello.ily:2:3: warning: to suppress this, consider adding a spacer rest
+  
+  { \key g \major }
+
+Interpreting music...
+beethoven_cello.ily:3:3: warning: skipping zero-duration score
+  
+  \clef bass
+
+beethoven_cello.ily:3:3: warning: to suppress this, consider adding a spacer rest
+  
+  \clef bass
+
+Interpreting music...
+beethoven_cello.ily:4:15: warning: skipping zero-duration score
+  d4-.\p g4-. 
+              |
+
+beethoven_cello.ily:4:15: warning: to suppress this, consider adding a spacer rest
+  d4-.\p g4-. 
+              |
+
+Interpreting music...
+beethoven_cello.ily:5:15: warning: skipping zero-duration score
+  b4.( a16 g) 
+              |
+
+beethoven_cello.ily:5:15: warning: to suppress this, consider adding a spacer rest
+  b4.( a16 g) 
+              |
+
+Interpreting music...
+beethoven_cello.ily:6:24: warning: skipping zero-duration score
+  fs8-. g8-. a8-. b8-. 
+                       |
+
+beethoven_cello.ily:6:24: warning: to suppress this, consider adding a spacer rest
+  fs8-. g8-. a8-. b8-. 
+                       |
+
+Interpreting music...
+beethoven_cello.ily:7:13: warning: skipping zero-duration score
+  c'8 r8 r4 
+            |
+
+beethoven_cello.ily:7:13: warning: to suppress this, consider adding a spacer rest
+  c'8 r8 r4 
+            |
+
+Interpreting music...
+beethoven_cello.ily:8:15: warning: skipping zero-duration score
+  g4-.\p g4-. 
+              |
+
+beethoven_cello.ily:8:15: warning: to suppress this, consider adding a spacer rest
+  g4-.\p g4-. 
+              |
+
+Interpreting music...
+beethoven_cello.ily:9:16: warning: skipping zero-duration score
+  e4.( fs16 g) 
+               |
+
+beethoven_cello.ily:9:16: warning: to suppress this, consider adding a spacer rest
+  e4.( fs16 g) 
+               |
+
+Interpreting music...
+beethoven_cello.ily:10:26: warning: skipping zero-duration score
+  a8-. a,8-. a,8-. a,8-. 
+                         |
+
+beethoven_cello.ily:10:26: warning: to suppress this, consider adding a spacer rest
+  a8-. a,8-. a,8-. a,8-. 
+                         |
+
+Interpreting music...
+beethoven_cello.ily:11:12: warning: skipping zero-duration score
+  d8 r8 r4 
+           | \bar "||"
+
+beethoven_cello.ily:11:12: warning: to suppress this, consider adding a spacer rest
+  d8 r8 r4 
+           | \bar "||"
+
+Interpreting music...
+beethoven_cello.ily:11:14: warning: skipping zero-duration score
+  d8 r8 r4 | 
+             \bar "||"
+
+beethoven_cello.ily:11:14: warning: to suppress this, consider adding a spacer rest
+  d8 r8 r4 | 
+             \bar "||"
+
+fatal error: failed files: "probe_beethoven_cello.ly"
