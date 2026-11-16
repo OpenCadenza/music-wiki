@@ -1,0 +1,12 @@
+[
+  {
+    "label": "主分支",
+    "branch": "main",
+    "slug": ""
+  },
+  {
+    "label": "agent开发分支1",
+    "branch": "dsh-c6ded6ed-82bb",
+    "slug": "dsh-c6ded6ed-82bb"
+  }
+]

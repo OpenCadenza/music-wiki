@@ -47,12 +47,64 @@
 | `content/` | 公开知识正文，唯一通过 PR 维护的目录 |
 | `NOTICE.md` | 谱例来源、版本与许可登记 |
 | `.vitepress/` | 站点配置、主题与播放器组件 |
-| `.github/workflows/deploy.yml` | PR 检查、`main` 与开发预览的部署编排 |
+| `.github/workflows/deploy.yml` | PR 检查、`main` 与各开发分支的部署编排 |
 | `.github/workflows/build-site.yml` | 复用构建：主站与开发预览共用同一条流水线 |
+| `branches.json` | 顶栏分支下拉与部署矩阵的唯一来源清单 |
 | `public/` | 站点公共静态资源；生成的 SVG、MIDI、MP3 与 manifest 不提交 |
 
 本地开发、工具链安装与单机发布步骤由团队文档库（`OpenCadenza/opencadenza-dev-doc`）维护，
 不属于公共协作说明。
+
+## 部署与分支
+
+站点是「一个仓库、一次部署、多个分支页面」：
+
+| 页面 | 地址 | 构建方式 |
+| --- | --- | --- |
+| 主站 | `/music-wiki/` | `main` 的代码 + `main` 的 `content/` |
+| 开发预览 | `/music-wiki/dev/<slug>/` | `main` 的代码 + 该分支的 `content/` |
+
+顶栏的分支下拉框由仓库根目录的 `branches.json` 生成，部署矩阵也读同一份文件，所以新增分支
+只需要改这一个清单加两处仓库设置。
+
+### 新增一个开发分支
+
+以把 `feature/foo` 发布为 `agent开发分支2`、地址 `/music-wiki/dev/feature-foo/` 为例：
+
+1. **登记分支**：在 `branches.json` 追加一条，`label` 是下拉框显示名，`slug` 是网址路径段
+   （只能用小写字母、数字、连字符），`branch` 是真实分支名：
+
+   ```json
+   { "label": "agent开发分支2", "branch": "feature/foo", "slug": "feature-foo" }
+   ```
+
+2. **允许推送触发**：把 `feature/foo` 加进 `.github/workflows/deploy.yml` 的
+   `on.push.branches`。不加也能部署，但要手动 Run workflow。
+3. **让分支带上同版构建配置**：`push` 事件执行的是**被推分支里那份 workflow**，所以新分支要
+   先同步这两个文件，再推内容：
+
+   ```bash
+   git checkout main -- .github/workflows/deploy.yml .github/workflows/build-site.yml
+   ```
+
+4. **允许该分支部署到 Pages 环境**：仓库 `github-pages` 环境的部署分支策略默认只放行 `main`，
+   需要追加新分支（维护者执行，或到 Settings → Environments → github-pages → Deployment
+   branches 里添加）：
+
+   ```bash
+   gh api -X POST /repos/OpenCadenza/music-wiki/environments/github-pages/deployment-branch-policies \
+     -f name=feature/foo -f type=branch
+   ```
+
+5. **推送验证**：推送后 `gh run list --branch feature/foo` 应出现一次运行，完成后
+   `/music-wiki/dev/feature-foo/` 可访问，顶栏下拉会自动多出「agent开发分支2」。
+
+### 维护约定
+
+- 开发分支只提供 `content/`；主题、脚本、工具链都取自 `main`，预览不会和主站跑偏。
+- 未改动的分支在部署时复用上次构建产物（按内容哈希缓存），不会被重新构建。
+- 一个分支构建失败不会阻止主站发布，该分支的预览页会保持上次成功的内容。
+- 删除分支时，同时删掉 `branches.json` 里对应条目，预览页会在下一次部署消失。
 
 ## 目录与选题
 

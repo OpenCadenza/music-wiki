@@ -1,10 +1,17 @@
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
+import BranchSwitcher from './BranchSwitcher.vue'
 import ScoreExample from './ScoreExample.vue'
 import './custom.css'
 
 export default {
   extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'nav-bar-content-after': () => h(BranchSwitcher)
+    })
+  },
   enhanceApp({ app }) {
     app.component('ScoreExample', ScoreExample)
   }

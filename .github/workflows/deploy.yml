@@ -2,24 +2,20 @@ name: Build and deploy Music Wiki
 
 on:
   push:
+    # Every branch that should redeploy on push. Development preview branches
+    # must also be listed in branches.json and allowed to deploy to the
+    # github-pages environment (see README).
     branches:
       - main
       - dsh-c6ded6ed-82bb
   pull_request:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      dev_ref:
-        description: '开发预览分支：其 content/ 会发布到 /music-wiki/dev/<分支>/'
-        required: false
-        default: dsh-c6ded6ed-82bb
-        type: string
 
 permissions:
   contents: read
 
 env:
-  DEV_BRANCH: ${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}
   PROD_BASE: /music-wiki/
 
 concurrency:
@@ -27,6 +23,22 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  # branches.json is the single source of truth for which branches get a site.
+  config:
+    name: Read branches.json
+    runs-on: ubuntu-24.04
+    outputs:
+      dev: ${{ steps.read.outputs.dev }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          # The branch list is owned by main, whatever ref triggered the run.
+          ref: main
+      - name: Collect development branches
+        id: read
+        run: echo "dev=$(node scripts/branch-sites.mjs)" >> "$GITHUB_OUTPUT"
+
   build-main:
     name: Build main site
     uses: ./.github/workflows/build-site.yml
@@ -36,24 +48,27 @@ jobs:
       base: /music-wiki/
       artifact: site-main
 
-  # The development preview is published next to the main site. It is built by
-  # the same workflow from main's configuration, with only the branch's
-  # content/ swapped in, so the preview cannot drift from the public pipeline.
-  build-dev:
-    name: Build dev preview
-    if: github.event_name != 'pull_request'
+  # One job per development branch: main's pipeline, that branch's content/.
+  build-branches:
+    name: Build ${{ matrix.branch.label }}
+    needs: config
+    if: github.event_name != 'pull_request' && needs.config.outputs.dev != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: ${{ fromJSON(needs.config.outputs.dev) }}
     uses: ./.github/workflows/build-site.yml
     with:
       ref: main
-      content_ref: ${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}
-      base: /music-wiki/dev/${{ github.event.inputs.dev_ref || 'dsh-c6ded6ed-82bb' }}/
-      artifact: site-dev
+      content_ref: ${{ matrix.branch.branch }}
+      base: /music-wiki/dev/${{ matrix.branch.slug }}/
+      artifact: site-dev-${{ matrix.branch.slug }}
 
   deploy:
     name: Publish GitHub Pages
     # A broken development branch must never block the public site.
     if: always() && github.event_name != 'pull_request' && needs.build-main.result == 'success'
-    needs: [build-main, build-dev]
+    needs: [config, build-main, build-branches]
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -69,29 +84,34 @@ jobs:
           name: site-main
           path: dist
 
-      - name: Download dev preview
-        id: dev-site
+      - name: Download development sites
+        id: dev-sites
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
-          name: site-dev
-          path: dev-site
+          pattern: site-dev-*
+          path: dev-artifacts
 
-      - name: Publish dev preview under /dev/<branch>/
-        if: steps.dev-site.outcome == 'success'
+      - name: Publish development previews under /dev/<slug>/
+        if: steps.dev-sites.outcome == 'success'
         run: |
           set -euo pipefail
-          target="dist/dev/${DEV_BRANCH}"
-          mkdir -p "$target"
-          cp -a dev-site/. "$target/"
-          test -f "$target/index.html"
-          echo "dev preview: ${PROD_BASE}dev/${DEV_BRANCH}/" >> "$GITHUB_STEP_SUMMARY"
+          shopt -s nullglob
+          for dir in dev-artifacts/site-dev-*; do
+            [ -d "$dir" ] || continue
+            slug="${dir##*site-dev-}"
+            target="dist/dev/${slug}"
+            mkdir -p "$target"
+            cp -a "$dir"/. "$target"/
+            test -f "$target/index.html"
+            echo "dev preview: ${PROD_BASE}dev/${slug}/" >> "$GITHUB_STEP_SUMMARY"
+          done
 
-      - name: Report missing dev preview
-        if: steps.dev-site.outcome != 'success'
+      - name: Report missing development previews
+        if: steps.dev-sites.outcome != 'success'
         run: |
-          echo "::warning::site-dev artifact is missing; publishing the main site without a dev preview"
-          echo "dev preview skipped: no site-dev artifact" >> "$GITHUB_STEP_SUMMARY"
+          echo "::warning::no site-dev-* artifacts were produced; publishing the main site only"
+          echo "dev previews skipped" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
