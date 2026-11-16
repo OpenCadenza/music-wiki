@@ -4,7 +4,7 @@
 谱例在 CI 中编译为可缩放乐谱、可播放 MP3 和可下载源码。
 
 - 在线站点：<https://opencadenza.github.io/music-wiki/>
-- 开发预览：<https://opencadenza.github.io/music-wiki/dev/dsh-c6ded6ed-82bb/>（`dsh-c6ded6ed-82bb` 的 `content/`，随主站同一次部署发布）
+- 开发预览：<https://opencadenza.github.io/music-wiki/dev/scholar-agent-dev/>（`scholar-agent-dev` 的 `content/`，随主站同一次部署发布）
 - 协作仓库：<https://github.com/OpenCadenza/music-wiki>
 - 内容镜像：`viking://resources/music-wiki/`
 

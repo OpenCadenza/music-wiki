@@ -53,7 +53,7 @@
 ```yaml
     branches:
       - main
-      - dsh-c6ded6ed-82bb
+      - scholar-agent-dev
       - feature/foo
 ```
 

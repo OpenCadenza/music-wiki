@@ -5,8 +5,9 @@
     "slug": ""
   },
   {
-    "label": "agent开发分支1",
-    "branch": "dsh-c6ded6ed-82bb",
-    "slug": "dsh-c6ded6ed-82bb"
+    "label": "scholar-agent-dev",
+    "branch": "scholar-agent-dev",
+    "slug": "scholar-agent-dev"
   }
 ]
+
