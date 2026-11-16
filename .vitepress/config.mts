@@ -98,6 +98,13 @@ function notationMarkdownPlugin(md: MarkdownIt) {
   md.renderer.rules.fence = (tokens, index, options, env, self) => {
     const token = tokens[index]
     const language = token.info.trim().split(/\s+/, 1)[0].toLowerCase()
+
+    // ```mermaid fences render in the browser through the Mermaid component;
+    // the diagram source is shown until JavaScript replaces it.
+    if (language === 'mermaid') {
+      return `<Mermaid code="${escapeAttribute(token.content)}" />\n`
+    }
+
     if (!['abc', 'lilypond', 'ly'].includes(language)) {
       return defaultFence(tokens, index, options, env, self)
     }
