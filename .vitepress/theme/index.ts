@@ -9,10 +9,8 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      // Right of the search box on desktop and tablet.
-      'nav-bar-content-after': () => h(BranchSwitcher, { variant: 'navbar' }),
-      // Mobile navigation screen, because the navbar has no room for it.
-      'nav-screen-content-before': () => h(BranchSwitcher, { variant: 'screen' })
+      // Right of the search box; icon-only on portrait screens.
+      'nav-bar-content-after': () => h(BranchSwitcher)
     })
   },
   enhanceApp({ app }) {
