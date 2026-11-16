@@ -2,7 +2,7 @@
 
 - **学者**：scholar-a2
 - **选题**：从外部门厅到戏剧母体：贝多芬钢琴奏鸣曲中慢引子的结构内嵌与动机渗透（From Antechamber to Dramatic Matrix: Structural Integration and Motivic Infiltration of Slow Introductions in Beethoven's Piano Sonatas）
-- **中心论证**：在海顿/莫扎特的古典常规中，慢引子（Slow Introduction / P0）大多扮演外在“门厅（Antechamber）”与装饰性前奏的角色，进入快板后便功成身退。贝多芬在钢琴奏鸣曲中发动了彻底的结构革命：通过“动机母体化与时值压缩”将慢引子转化为快板主部的主题基因库，通过“跨越曲式边界的暴力内嵌”在呈示部末尾、展开部与尾声处原速召回慢引子冻结时间流，并通过核心和声矛盾（减七和弦、阻碍终止、半音阶下行）实现全乐章的调性全息统摄；实证考察其在 Op. 13《悲怆》（早期突入式）、Op. 81a《告别》（中期全息泛化式）与 Op. 111（晚期复调母体式）中的深刻演进。
+- **中心论证**：在海顿/莫扎特的古典常规中，慢引子（Slow Introduction）作为置于奏鸣曲本体之外的“辅助模块（Auxiliary Module）”，大多扮演外在“门厅（Antechamber）”与装饰性前奏的角色，进入快板后便功成身退。贝多芬在钢琴奏鸣曲中发动了彻底的结构革命：通过“动机母体化与时值压缩”将慢引子转化为快板主部的主题基因库，通过“跨越曲式边界的暴力内嵌”在呈示部末尾、展开部与尾声处原速召回慢引子冻结时间流，并通过核心和声矛盾（减七和弦、阻碍终止、半音阶下行）实现全乐章的调性全息统摄；实证考察其在 Op. 13《悲怆》（早期突入式）、Op. 81a《告别》（中期全息泛化式）与 Op. 111（晚期复调母体式）中的深刻演进。
 - **状态**：`已成稿，待本批复读`
 
 ---
@@ -14,15 +14,15 @@
   * `local/resources/text/organized-html/beethoven-context/lockwood-procedures.md` 与 `lockwood-stages.md`（Lewis Lockwood 关于贝多芬单行草稿本、总谱草稿到手稿定稿中动机浓缩与结构演进的权威文献）；
   * `local/resources/text/organized-html/beethoven-analysis-orchestral/eastman-inheritance.md`（Eastman School of Music: *Beethoven’s Classical Inheritance: the Symphony and the Orchestra*。梳理 18 世纪晚期古典交响与奏鸣曲引子传统、J. A. P. Schulz 理论界定与 Topical states 情感修辞）；
 - **Open Music Theory (OMT) 教学文献源码**：
-  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-intro.md`（奏鸣曲理论导论、Auxiliary Modules 引子与尾声定位、Defaults 默认级与 Deformations 形变界定）；
-  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataThematicModules.md`（P0 引子功能、P 主部模块与展开部戏剧推进）；
+  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/SonataTheory-intro.md`（奏鸣曲理论导论、Auxiliary Modules 引子辅助模块定位、Defaults 默认级与 Deformations 形变界定）；
+  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/sonataThematicModules.md`（引子与主部模块功能与展开部戏剧推进）；
 - **实证总谱研读**：
   * 贝多芬《c小调第8钢琴奏鸣曲“悲怆”》Op. 13 第一乐章（Grave mm. 1–10 动机孵化，mm. 133–136 与 mm. 295–298 两次原速暴力内嵌打断快板狂飙）；
   * 贝多芬《降E大调第26钢琴奏鸣曲“告别”》Op. 81a 第一乐章（Adagio mm. 1–16 Le-be-wohl 下行三音级与阻碍和弦，mm. 17–25 快板主部时值压缩与 m. 223 起 40 小节宏大尾声的双重圆号泛化）；
   * 贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第一乐章（Maestoso mm. 1–16 减七大跳与震音蓄能，m. 19 起 Allegro 二重赋格对位的完全破茧而出）；
 - **引证与推论纪律说明**：
-  * 本文严格立足于上述实际阅读的 ZGMTH 论文、Lockwood 研究、Eastman 专论与 OMT 章节，严禁任何未读原著页码的假托；
-  * 慢引子的外部门厅界定与形变理论忠实依据 Hepokoski & Darcy / OMT 框架；
+  * 本文严格立足于上述实际阅读的 ZGMTH 论文、Lockwood 研究、Eastman 专论与 OMT 章节，严禁任何未读原著页码的假托（术语引证严格依托 OMT 的 SonataTheory-intro.md 之 Auxiliary modules 章节）；
+  * 慢引子的辅助模块界定与形变理论忠实依据 OMT 体系；
   * 谱例小节、节拍、调号与声部织体严格依据原谱；
   * 关于慢引子动机母体化、暴力内嵌的时间冻结效应，以及早、中、晚期三大范式的创作决策对照，在正文中明确注明为笔者的分析推导。
 
