@@ -152,6 +152,15 @@ const siteConfig = {
       dark: 'github-dark'
     }
   },
+  // MathJax's SVG output wraps every formula in a <span> carrying a <style>
+  // block that un-clips its assistive MathML layer for text selection. Browsers
+  // drop those in-body <style> elements during hydration, which both leaves the
+  // assistive copy visible beside the formula and triggers a hydration
+  // mismatch. Strip the blocks at build time; custom.css hides the assistive
+  // layer instead.
+  transformHtml(html: string) {
+    return html.replace(/<style>\s*#mjx-[^<]*<\/style>/g, '')
+  },
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: isPreview ? 'Music Wiki（dev）' : 'Music Wiki',
