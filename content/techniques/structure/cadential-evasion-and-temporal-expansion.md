@@ -109,7 +109,7 @@ lower = {
 }
 
 \score {
-  \new PianoStaff \with { instrumentName = "Piano" } <<
+  \new PianoStaff  <<
     \new Staff = "upper" \with { midiInstrument = "acoustic grand" } { \upper }
     \new Staff = "lower" \with { midiInstrument = "acoustic grand" } { \lower }
   >>
@@ -158,7 +158,7 @@ D = \tweak Stem.direction #DOWN \etc
 U = \tweak Stem.direction #UP \etc
 
 \score {
-  \new PianoStaff \with { instrumentName = "Piano" } <<
+  \new PianoStaff  <<
     \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
     { \voiceOne {
   \clef "treble" \numericTimeSignature \time 4/4 \key c \major \oneVoice \tempo "Allegro con brio" \U <c'

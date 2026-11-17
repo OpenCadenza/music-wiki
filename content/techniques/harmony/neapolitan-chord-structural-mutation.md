@@ -119,10 +119,10 @@ violoncello = {
 
 \score {
   <<
-    \new Staff \with { instrumentName = "Violino I" } \violinoI
-    \new Staff \with { instrumentName = "Violino II" } \violinoII
-    \new Staff \with { instrumentName = "Viola" } \viola
-    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+    \new Staff  \violinoI
+    \new Staff  \violinoII
+    \new Staff  \viola
+    \new Staff  \violoncello
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -244,10 +244,10 @@ violoncello = {
 
 \score {
   <<
-    \new Staff \with { instrumentName = "Violino I" } \violinoI
-    \new Staff \with { instrumentName = "Violino II" } \violinoII
-    \new Staff \with { instrumentName = "Viola" } \viola
-    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+    \new Staff  \violinoI
+    \new Staff  \violinoII
+    \new Staff  \viola
+    \new Staff  \violoncello
   >>
   \layout { ragged-right = ##f }
   \midi { }

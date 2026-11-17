@@ -166,7 +166,7 @@ fagotto = {
 
 \score {
   <<
-    \new Staff \with { instrumentName = "Fagotto" } \fagotto
+    \new Staff  \fagotto
   >>
   \layout { ragged-right = ##f }
   \midi { }

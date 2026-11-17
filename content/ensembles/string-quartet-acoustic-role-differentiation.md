@@ -252,22 +252,10 @@ cello = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Violin I (GM 40)"
-      midiInstrument = "violin"
-    } { \violinOne }
-    \new Staff \with {
-      instrumentName = "Violin II (GM 40)"
-      midiInstrument = "violin"
-    } { \violinTwo }
-    \new Staff \with {
-      instrumentName = "Viola (GM 41)"
-      midiInstrument = "viola"
-    } { \viola }
-    \new Staff \with {
-      instrumentName = "Violoncello (GM 42)"
-      midiInstrument = "cello"
-    } { \cello }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -366,22 +354,10 @@ cello = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Violin I (GM 40)"
-      midiInstrument = "violin"
-    } { \violinOne }
-    \new Staff \with {
-      instrumentName = "Violin II (GM 40)"
-      midiInstrument = "violin"
-    } { \violinTwo }
-    \new Staff \with {
-      instrumentName = "Viola (GM 41)"
-      midiInstrument = "viola"
-    } { \viola }
-    \new Staff \with {
-      instrumentName = "Violoncello (GM 42)"
-      midiInstrument = "cello"
-    } { \cello }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
   >>
   \layout { ragged-right = ##f }
   \midi { }

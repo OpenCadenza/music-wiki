@@ -291,15 +291,15 @@ cembaloLower = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with { instrumentName = "Flauto" midiInstrument = "flute" } { \flauto }
-    \new Staff \with { instrumentName = "Vl. principale" midiInstrument = "violin" } { \violinoPrincipale }
-    \new Staff \with { instrumentName = "Vl. di ripieno" midiInstrument = "violin" } { \violinoRipieno }
-    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
-    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \violoncello }
-    \new Staff \with { instrumentName = "Violone" midiInstrument = "contrabass" } { \violone }
+    \new Staff { \set Staff.midiInstrument = "flute" \flauto }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinoPrincipale }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinoRipieno }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \violoncello }
+    \new Staff { \set Staff.midiInstrument = "contrabass" \violone }
     \new PianoStaff <<
-      \new Staff \with { instrumentName = "Cembalo" midiInstrument = "harpsichord" } { \cembaloUpper }
-      \new Staff \with { midiInstrument = "harpsichord" } { \cembaloLower }
+      \new Staff { \set Staff.midiInstrument = "harpsichord" \cembaloUpper }
+      \new Staff { \set Staff.midiInstrument = "harpsichord" \cembaloLower }
     >>
   >>
   \layout { ragged-right = ##f }
@@ -446,11 +446,11 @@ bass = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with { instrumentName = "Violino I" midiInstrument = "violin" } { \violinOne }
-    \new Staff \with { instrumentName = "Violino II" midiInstrument = "violin" } { \violinTwo }
-    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
-    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
-    \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+    \new Staff { \set Staff.midiInstrument = "contrabass" \bass }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -579,18 +579,18 @@ bass = { \global \clef bass |
 
 \score {
   \new StaffGroup <<
-    \new Staff \with { instrumentName = "Flauto I" midiInstrument = "flute" } { \flautoOne }
-    \new Staff \with { instrumentName = "Flauto II" midiInstrument = "flute" } { \flautoTwo }
-    \new Staff \with { instrumentName = "Oboe I" midiInstrument = "oboe" } { \oboeOne }
-    \new Staff \with { instrumentName = "Oboe II" midiInstrument = "oboe" } { \oboeTwo }
-    \new Staff \with { instrumentName = "Corno I in D" midiInstrument = "french horn" } { \cornoOne }
-    \new Staff \with { instrumentName = "Corno II in D" midiInstrument = "french horn" } { \cornoTwo }
-    \new Staff \with { instrumentName = "Timpani" midiInstrument = "timpani" } { \timpani }
-    \new Staff \with { instrumentName = "Violino I" midiInstrument = "violin" } { \violinOne }
-    \new Staff \with { instrumentName = "Violino II" midiInstrument = "violin" } { \violinTwo }
-    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
-    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
-    \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
+    \new Staff { \set Staff.midiInstrument = "flute" \flautoOne }
+    \new Staff { \set Staff.midiInstrument = "flute" \flautoTwo }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeTwo }
+    \new Staff { \set Staff.midiInstrument = "french horn" \cornoOne }
+    \new Staff { \set Staff.midiInstrument = "french horn" \cornoTwo }
+    \new Staff { \set Staff.midiInstrument = "timpani" \timpani }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+    \new Staff { \set Staff.midiInstrument = "contrabass" \bass }
   >>
   \layout { ragged-right = ##f }
   \midi { }

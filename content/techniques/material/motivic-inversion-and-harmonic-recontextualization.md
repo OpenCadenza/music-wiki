@@ -79,25 +79,13 @@ cello = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Violin I"
-      midiInstrument = "violin"
-    } { \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
 
-    \new Staff \with {
-      instrumentName = "Violin II"
-      midiInstrument = "violin"
-    } { \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
 
-    \new Staff \with {
-      instrumentName = "Viola"
-      midiInstrument = "viola"
-    } { \viola }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
 
-    \new Staff \with {
-      instrumentName = "Violoncello"
-      midiInstrument = "cello"
-    } { \cello }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -189,25 +177,13 @@ cello = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Violin I"
-      midiInstrument = "violin"
-    } { \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
 
-    \new Staff \with {
-      instrumentName = "Violin II"
-      midiInstrument = "violin"
-    } { \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
 
-    \new Staff \with {
-      instrumentName = "Viola"
-      midiInstrument = "viola"
-    } { \viola }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
 
-    \new Staff \with {
-      instrumentName = "Violoncello"
-      midiInstrument = "cello"
-    } { \cello }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -301,28 +277,24 @@ cello = {
 \score {
   \new StaffGroup <<
     \new Staff \with {
-      instrumentName = "Violin I"
       midiInstrument = "violin"
       midiMinimumVolume = #0.2
       midiMaximumVolume = #0.9
     } { \violinOne }
 
     \new Staff \with {
-      instrumentName = "Violin II"
       midiInstrument = "violin"
       midiMinimumVolume = #0.2
       midiMaximumVolume = #0.9
     } { \violinTwo }
 
     \new Staff \with {
-      instrumentName = "Viola"
       midiInstrument = "viola"
       midiMinimumVolume = #0.2
       midiMaximumVolume = #0.9
     } { \viola }
 
     \new Staff \with {
-      instrumentName = "Violoncello"
       midiInstrument = "cello"
       midiMinimumVolume = #0.2
       midiMaximumVolume = #0.9
@@ -392,13 +364,8 @@ pianoLower = {
 
 \score {
   \new PianoStaff <<
-    \new Staff \with {
-      instrumentName = "Piano"
-      midiInstrument = "acoustic grand"
-    } { \pianoUpper }
-    \new Staff \with {
-      midiInstrument = "acoustic grand"
-    } { \pianoLower }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -456,19 +423,11 @@ pianoLower = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Voice"
-      midiInstrument = "voice oohs"
-    } { \voice }
+    \new Staff { \set Staff.midiInstrument = "voice oohs" \voice }
 
     \new PianoStaff <<
-      \new Staff \with {
-        instrumentName = "Piano"
-        midiInstrument = "acoustic grand"
-      } { \pianoUpper }
-      \new Staff \with {
-        midiInstrument = "acoustic grand"
-      } { \pianoLower }
+      \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+      \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
     >>
   >>
   \layout { ragged-right = ##f }

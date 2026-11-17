@@ -242,21 +242,15 @@ pianoLH = {
 
 \score {
   \new StaffGroup <<
-    \new Staff = "violin" \with {
-      instrumentName = "Violin"
-    } {
+    \new Staff = "violin"  {
       \set Staff.midiInstrument = "violin"
       \violin
     }
-    \new Staff = "cello" \with {
-      instrumentName = "Violoncello"
-    } {
+    \new Staff = "cello"  {
       \set Staff.midiInstrument = "cello"
       \cello
     }
-    \new PianoStaff = "piano" \with {
-      instrumentName = "Piano"
-    } <<
+    \new PianoStaff = "piano"  <<
       \new Staff = "pianoRH" {
         \set Staff.midiInstrument = "acoustic grand"
         \pianoRH

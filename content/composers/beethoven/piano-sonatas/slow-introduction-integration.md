@@ -77,7 +77,7 @@ D = \tweak Stem.direction #DOWN \etc
 U = \tweak Stem.direction #UP \etc
 
 \score {
-  \new PianoStaff \with { instrumentName = "Piano" } <<
+  \new PianoStaff  <<
     \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
     { \voiceOne {
   \clef "treble" \time 4/4 \key c \minor \oneVoice \tempo "Grave" \U <ef ~ g ~ c' ~>4 \U <ef g
@@ -239,7 +239,7 @@ D = \tweak Stem.direction #DOWN \etc
 U = \tweak Stem.direction #UP \etc
 
 \score {
-  \new PianoStaff \with { instrumentName = "Piano" } <<
+  \new PianoStaff  <<
     \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
     { \voiceOne {
   \clef "treble" \time 2/4 \key ef \major \oneVoice \tempo "Adagio" \U <ef' g'>4 \U <bf f'>4 | % 1
@@ -390,7 +390,7 @@ D = \tweak Stem.direction #DOWN \etc
 U = \tweak Stem.direction #UP \etc
 
 \score {
-  \new PianoStaff \with { instrumentName = "Piano" } <<
+  \new PianoStaff  <<
     \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
     { \voiceOne {
   \clef "treble" \numericTimeSignature \time 4/4 \key c \minor \partial 32 \tempo "Maestoso"

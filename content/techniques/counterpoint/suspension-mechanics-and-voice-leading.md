@@ -116,22 +116,10 @@ bass = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Soprano (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \soprano }
-    \new Staff \with {
-      instrumentName = "Alto (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \alto }
-    \new Staff \with {
-      instrumentName = "Tenor (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef "treble_8" \tenor }
-    \new Staff \with {
-      instrumentName = "Bass (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef bass \bass }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \soprano }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \alto }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef "treble_8" \tenor }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef bass \bass }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -197,22 +185,10 @@ bass = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Soprano (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \soprano }
-    \new Staff \with {
-      instrumentName = "Alto (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \alto }
-    \new Staff \with {
-      instrumentName = "Tenor (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef "treble_8" \tenor }
-    \new Staff \with {
-      instrumentName = "Bass (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef bass \bass }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \soprano }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \alto }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef "treble_8" \tenor }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef bass \bass }
   >>
   \layout { ragged-right = ##f }
   \midi { }
@@ -278,22 +254,10 @@ bass = {
 
 \score {
   \new StaffGroup <<
-    \new Staff \with {
-      instrumentName = "Soprano (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \soprano }
-    \new Staff \with {
-      instrumentName = "Alto (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \alto }
-    \new Staff \with {
-      instrumentName = "Tenor (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef "treble_8" \tenor }
-    \new Staff \with {
-      instrumentName = "Bass (GM 52)"
-      midiInstrument = "choir aahs"
-    } { \clef bass \bass }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \soprano }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \alto }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef "treble_8" \tenor }
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \clef bass \bass }
   >>
   \layout { ragged-right = ##f }
   \midi { }
