@@ -8,12 +8,17 @@
 %  1) 本地 Humdrum/Kern：quartet16-3.krn（craigsapp/beethoven-string-quartets）
 %     文件头：Mvmt. 3；Lento assai, cantante e tranquillo；*D-:；*M6/8；*MM40
 %  2) 本地 DCML annotations：n16op135_03.notes.tsv（midi/duration_qb 逐音对照）
-%  3) OpenScore String Quartets（CC0）sq12397213.mxl（MuseScore 转写，
-%     用于裁定 m.7 次中音时值：A3 为附点四分）
+%  3) OpenScore String Quartets（CC0）sq12397213.mxl（MuseScore 转写，第三方比对用）
 % 声部：Violin I (GM 40), Violin II (GM 40), Viola (GM 41), Violoncello (GM 42)
 % 拍/调：6/8，降 D 大调
-% 速度：Lento assai, cantante e tranquillo（文章记八分音符 = 50）
+% 速度：Lento assai, cantante e tranquillo。数字按 **四分音符 = 50** 记（推定）：
+%       OpenScore <sound tempo="52.5"> 与 kern *MM40 都是四分音符口径；若按八分音符口径
+%       写 8 = 50，每小节将达 7.2 s，与源相差近一倍 —— 待核。
 % 记谱：绝对音高（c' = C4）；大提琴 mm.3–5 为双声部（低声部为进行低音，上声部为持续 A♭2）
+% 变音记号：LilyPond 音名与调号无关（\key 只决定谱面调号，不改变音高），
+%       裸写 a / d 即 A♮ / D♮；本谱所有降号均显式写作 df / ef / gf / af / bf。
+% 附：m.7 次中音（Vn2）三源一致为「附点四分 + 音高 A♮」（kern `4.An`；DCML midi 57；
+%       OpenScore 57）；不存在“kern 缺附点、须取 A♭ 附点四分”的情形。
 % 说明：Kern 未附力度层，本谱不添加力度记号（文章所述 sotto voce/pp 为叙述性描述）。
 % ============================================================
 
@@ -27,7 +32,8 @@
 global = {
   \key df \major
   \time 6/8
-  \tempo "Lento assai, cantante e tranquillo" 8 = 50
+  % 待核：原记 8 = 50（每小节 7.2 s，明显过慢），按源速度口径改为 4 = 50。
+  \tempo "Lento assai, cantante e tranquillo" 4 = 50
 }
 
 violinOne = {
@@ -42,7 +48,7 @@ violinOne = {
   f'4 f'8 f'8( df'8 bf8) |
   bf'4 bf'8 bf'8( gf'8 ef'8) |
   af'4 af'8 af'8( f'8 df'8) |
-  af'8( f'8 ef'8) df'4. |
+  af8( f'8 ef'8) df'4. |
   df'4( c'8) df'8( f'8 gf'8) |
   af'8( f''8 ef''8) df''8( bf'8 gf'8) |
 }

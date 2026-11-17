@@ -141,7 +141,45 @@ tags:
 > **历史谱例片段 1：贝多芬《第五交响曲》第二乐章前景与运动背景分离**
 > - **作品定位**：L. v. Beethoven, *Symphony No. 5 in C minor*, Op. 67, Mov. II (Andante con moto), mm. 205–218
 > - **声部构成**：大管（前景旋律，GM 70 Bassoon）、第一小提琴/中提琴（反复跳音运动背景，GM 40/41）、大提琴（低音点缀，GM 42）
-> - **交付状态**：规范文本引用块占位，待后续谱例助手完成总谱切片编码
+> - **摘录说明：只收录大管主题变体；弦乐的带休止反复和弦与低音点状短音未收录（无可逐音置信的四声部源）。**
+
+```lilypond title="贝多芬 Op.67 第二乐章 第 205–209 小节（大管声部摘录）" location="mm. 205–209"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Symphony No. 5 in C minor, Op. 67"
+  subtitle = "II. Andante con moto — mm. 205–209（摘录：大管主题变体）"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+
+global = {
+  \key af \major
+  \time 3/8
+  \tempo "Andante con moto" 4. = 92
+}
+
+fagotto = {
+  \global
+  \clef tenor
+  \set Staff.midiInstrument = "bassoon"
+  r4 c'16 ef'16 |
+  gf'8 gf'16 f'16 ef'16 gf'16 |
+  f'4 df'16 ef'16 |
+  ff'8 ff'16 ef'16 df'16 ff'16 |
+  ef'4 r8 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Fagotto" } \fagotto
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

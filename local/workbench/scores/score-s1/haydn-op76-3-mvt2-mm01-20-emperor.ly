@@ -13,7 +13,8 @@
 %       数据交叉提取（本地 _haydn 工作副本）。
 % 声部：Violin I (GM 40), Violin II (GM 40), Viola (GM 41), Violoncello (GM 42)
 % 拍/调：2/2，G 大调
-% 速度：Poco adagio; cantabile（文章记四分音符 = 56；本谱记 4 = 56）
+% 速度：Poco adagio; cantabile。数字 4 = 56 为**推定值**（源无 <metronome>，
+%       仅有播放用 <sound tempo="80">），非源数据，引用时勿当作原谱标记。
 % 记谱：绝对音高（c' = C4）。
 % 范围说明：本片段为“主题呈示”段（前导弱起 + mm.1–20），非全乐章；
 %       变奏一（mm.21–40）等未含。
@@ -29,6 +30,8 @@
 global = {
   \key g \major
   \time 2/2
+  % 待核：4 = 56 无谱面依据（OpenScore 源无 <metronome>，仅 <sound tempo="80">），
+  % 此处按“推定”保留，供排版示意；正文引用时请说明为推定值。
   \tempo "Poco adagio; cantabile" 4 = 56
 }
 
@@ -100,8 +103,8 @@ viola = {
   a4 b4 e'4 g4 |
   fs2 d'4 d'4 |
   d'4 r4 a4 g8 b8 |
-  d'4 r4 d'4 e8 fs8 |
-  g'4 g4 e'4 e8 d8 |
+  d'4 r4 d'4 e'8 fs'8 |
+  g'4 g4 e'4 e'8 d'8 |
   d'2 <g d'>2 |
   e'8. fs'16 g'4 g'4. g'8 |
   <d' a'>4 <d' b'>4 d'2 |
@@ -130,12 +133,12 @@ cello = {
   d4 r4 b,4 c8 d8 |
   e2 a,4 a,4 |
   d2 b4. b8 |
-  c'4 g4 c,4. g8 |
-  d4 g4 c,2 |
+  c'4 g4 c4. g8 |
+  d4 g4 c2 |
   b,4 c4 d4 d4 |
   g,2 b4. b8 |
-  c'4 g4 c,4. g8 |
-  d4 g4 c,2 |
+  c'4 g4 c4. g8 |
+  d4 g4 c2 |
   b,4 c4 d4 d4 |
   g,2 \once \omit Rest r2 |
 }

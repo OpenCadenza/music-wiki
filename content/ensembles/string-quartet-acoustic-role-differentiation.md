@@ -132,10 +132,160 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
   - **第一小提琴完全解耦**：彻底放弃旋律职能，大幅跃升至极高音区，以连续不断的轻巧十六分音符跳跃音型（运动平面）自上而下倾泻，如水晶般包裹第二小提琴；
   - **声学留白**：中提琴与大提琴在此段**完全保持休止（Tacet）**！海顿通过编制减员制造了巨大的中低频真空，使两把小提琴在高音区展开绝对清澈、零掩蔽的双声部对位对话。
 
-> **【待填装谱例片段：海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 mm. 1–40（声部摘录）】**
+> **谱面定位**
 > - **乐章与速度**：II. Poco adagio, cantabile（四分音符 = 56），2/2 拍，G 大调
 > - **包含声部**：第一小提琴（主题呈示及变奏一高音十六分音符织体加花，GM 40）、第二小提琴（变奏一中音主旋律接棒，GM 40）、中提琴/大提琴（开篇圣咏和声支撑，GM 41/42）
-> - **当前交付状态**：乐谱定位已核定，待谱例助手提供自包含 LilyPond 2.26.0 谱例代码后替换。
+> - **范围说明：文章论述的 40 小节中，本谱例取主题呈示的 mm.1–20；变奏一（mm.21 起）未收录。**
+
+```lilypond title="海顿 Op.76 No.3《皇帝》第二乐章 第 1–20 小节（主题呈示）" location="mm. 1–20（含弱起）"
+\version "2.26.0"
+\language "english"
+
+
+\header {
+  title = "String Quartet in C major, Hob.III:77, Op. 76 No. 3 (\"Emperor\")"
+  subtitle = "II. Poco adagio; cantabile — theme, mm. 1–20 (with upbeat)"
+  composer = "Joseph Haydn"
+  tagline = ##f
+}
+
+global = {
+  \key g \major
+  \time 2/2
+  \tempo "Poco adagio; cantabile" 4 = 56
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \partial 2
+  g'4. a'8 |
+  b'4 a'4 c''4 b'4 |
+  a'8 fs'8 g'4 e''4 d''4 |
+  c''4 b'4 a'4 b'8 g'8 |
+  d''2 g'4. a'8 |
+  b'4 a'4 c''4 b'4 |
+  a'8 fs'8 g'4 e''4 d''4 |
+  c''4 b'4 a'4 b'8 g'8 |
+  d''2 a'4 b'4 |
+  a'8 fs'8 d'4 c''4 b'4 |
+  a'8 fs'8 d'4 d''4 c''4 |
+  b'4. b'8 cs''4 cs''8 d''8 |
+  d''2\fermata g''4.\fz fs''8 |
+  fs''8 e''8 d''4 e''4. d''8 |
+  d''8 c''8 b'4 a'4.\p b'16 c''16 |
+  d''8 e''8 c''8 a'8 g'4 \grace b'8 a'8 g'8 |
+  g'2 g''4.\fz fs''8 |
+  fs''8 e''8 d''4 e''4. d''8 |
+  d''8 c''8 b'4 a'4. b'16 c''16 |
+  d''8 e''8 c''8 a'8 g'4 \grace b'8 a'8 g'8 |
+  g'2 \once \omit Rest r2 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \partial 2
+  b4. d'8 |
+  g'4 fs'4 a'4 g'4 |
+  c'4 b4 c''4 b'4 |
+  fs'4 g'4 e'2 |
+  d'2 b4. d'8 |
+  g'4 fs'4 a'4 g'4 |
+  c'4 b4 c''4 b'4 |
+  fs'4 g'4 e'2 |
+  d'2 fs'4 g'4 |
+  fs'4 r4 fs'4 g'4 |
+  fs'4 r4 b'4 a'4 |
+  g'2. g'8 fs'8 |
+  fs'2 <g g'>4. g'8 |
+  g'8. a'16 b'4 c''4. b'8 |
+  fs'4 g'4 fs'4. g'16 a'16 |
+  g'4 e'8 a'8 g'4 fs'4 |
+  g'2 <g g'>4. g'8 |
+  g'8. a'16 b'4 c''4. b'8 |
+  fs'4 g'4 fs'4. g'16 a'16 |
+  g'4 e'8 a'8 g'4 fs'4 |
+  g'2 \once \omit Rest r2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \partial 2
+  g4 r4 |
+  r2 d'4 d'4 |
+  fs8 a8 g4 r2 |
+  a4 b4 e'4 g4 |
+  fs2 g4 r4 |
+  r2 d'4 d'4 |
+  fs8 a8 g4 r2 |
+  a4 b4 e'4 g4 |
+  fs2 d'4 d'4 |
+  d'4 r4 a4 g8 b8 |
+  d'4 r4 d'4 e'8 fs'8 |
+  g'4 g4 e'4 e'8 d'8 |
+  d'2 <g d'>2 |
+  e'8. fs'16 g'4 g'4. g'8 |
+  <d' a'>4 <d' b'>4 d'2 |
+  g4 e'8 c'8 b4 \grace d'8 c'4 |
+  b2 <g d'>2 |
+  e'8. fs'16 g'4 g'4. g'8 |
+  <d' a'>4 <d' b'>4 d'2 |
+  g4 e'8 c'8 b4 \grace d'8 c'4 |
+  b2 \once \omit Rest r2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \partial 2
+  g4 r4 |
+  r2 f4 g4 |
+  d4 g,4 r2 |
+  d4 g4 c4 cs4 |
+  d2 g4 r4 |
+  r2 f4 g4 |
+  d4 g,4 r2 |
+  d4 g4 c4 cs4 |
+  d2 d4 d4 |
+  d4 r4 d4 d4 |
+  d4 r4 b,4 c8 d8 |
+  e2 a,4 a,4 |
+  d2 b4. b8 |
+  c'4 g4 c4. g8 |
+  d4 g4 c2 |
+  b,4 c4 d4 d4 |
+  g,2 b4. b8 |
+  c'4 g4 c4. g8 |
+  d4 g4 c2 |
+  b,4 c4 d4 d4 |
+  g,2 \once \omit Rest r2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I (GM 40)"
+      midiInstrument = "violin"
+    } { \violinOne }
+    \new Staff \with {
+      instrumentName = "Violin II (GM 40)"
+      midiInstrument = "violin"
+    } { \violinTwo }
+    \new Staff \with {
+      instrumentName = "Viola (GM 41)"
+      midiInstrument = "viola"
+    } { \viola }
+    \new Staff \with {
+      instrumentName = "Violoncello (GM 42)"
+      midiInstrument = "cello"
+    } { \cello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -149,10 +299,120 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
   - 为了防止密集和声塌陷为一团灰暗泥浆，贝多芬引入了极其严密的**微观发音法切分**：第一小提琴拉奏如泣如诉的四小节大连线主旋律（*legato*）；下方第二小提琴与中提琴则以极其轻柔的弱拍切分音（Syncopated held chords）持续呼吸，形成“连绵线条”与“微观脉冲和声垫”的时域解耦；
   - 大提琴则在深沉的低音区给出极弱的点状支撑，四件同质乐器在极低声能下展现出层次分明的空间景深。
 
-> **【待填装谱例片段：贝多芬《F大调第16弦乐四重奏》Op. 135 第三乐章 mm. 1–12（声部摘录）】**
+> **谱面定位**
 > - **乐章与速度**：III. Lento assai, cantante e tranquillo（八分音符 = 50），6/8 拍，降 D 大调
 > - **包含声部**：第一小提琴（sotto voce 中低音区主旋律，GM 40）、第二小提琴/中提琴（弱拍切分持续长音垫，GM 40/41）、大提琴（低音踏板骨架，GM 42）
-> - **当前交付状态**：乐谱定位已核定，待谱例助手提供自包含 LilyPond 2.26.0 谱例代码后替换。
+> - **速度与力度说明：源工程无节拍机与力度层，速度按 Kern 与 DCML 的播放值取四分音符 = 50（待与印刷谱核对）。**
+
+```lilypond title="贝多芬 Op.135 第三乐章 第 1–12 小节" location="mm. 1–12"
+\version "2.26.0"
+\language "english"
+
+
+\header {
+  title = "String Quartet No. 16 in F major, Op. 135"
+  subtitle = "III. Lento assai, cantante e tranquillo (mm. 1–12)"
+  composer = "Ludwig van Beethoven"
+  tagline = ##f
+}
+
+global = {
+  \key df \major
+  \time 6/8
+  \tempo "Lento assai, cantante e tranquillo" 4 = 50
+}
+
+violinOne = {
+  \global
+  \clef treble
+  r2. |
+  df'4.~ <df' f'>4. |
+  df'8( c'8 bf8 af8 bf8 c'8) |
+  df'8( ef'8 f'8) ef'4. |
+  df'8( c'8 bf8 af8 bf8 c'8) |
+  df'8( ef'8 f'8) f'8( ef'4) |
+  f'4 f'8 f'8( df'8 bf8) |
+  bf'4 bf'8 bf'8( gf'8 ef'8) |
+  af'4 af'8 af'8( f'8 df'8) |
+  af8( f'8 ef'8) df'4. |
+  df'4( c'8) df'8( f'8 gf'8) |
+  af'8( f''8 ef''8) df''8( bf'8 gf'8) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  r4 r8 af4.~ |
+  af4.~ af4. |
+  af2.~ |
+  af2. |
+  af2.~ |
+  af4. af8( c'8 bf8) |
+  a4. bf4. |
+  f'4 bf8~ bf4. |
+  ef'4 <af ef'>8 af4. |
+  df'4 c'8 af4.~ |
+  af4. af8 df'4 |
+  f'8 af'8 gf'8 f'8 df'8 df'8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  f2.~ |
+  f4.~ f4. |
+  f4.( gf4.) |
+  f4. gf4. |
+  f4.( gf4.) |
+  f4 df8 c4 ef8~ |
+  ef4 c8 df4. |
+  d4 f8 gf4. |
+  gf4 ef8 f4. |
+  f4 gf8 f4. |
+  f4 gf8 f4 df8 |
+  df4 c8 f8 gf8 ef8 |
+}
+
+cello = {
+  \global
+  \clef bass
+  r2. |
+  r4 r8 <df, df>4. |
+  << { af,2. } \\ { df,4. ef,4. } >> |
+  << { af,2. } \\ { df,4. c,4. } >> |
+  << { af,2. } \\ { df,4. ef,4. } >> |
+  <df, af,>4. af,4 gf,8 |
+  f,4. bf,4. |
+  d,4. ef,4. |
+  c,4. df,4 f,8 |
+  af,4. df8 f,8 gf,8 |
+  af,8 f8 ef8 df4 bf,8 |
+  af,4. df8 df8 df8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I (GM 40)"
+      midiInstrument = "violin"
+    } { \violinOne }
+    \new Staff \with {
+      instrumentName = "Violin II (GM 40)"
+      midiInstrument = "violin"
+    } { \violinTwo }
+    \new Staff \with {
+      instrumentName = "Viola (GM 41)"
+      midiInstrument = "viola"
+    } { \viola }
+    \new Staff \with {
+      instrumentName = "Violoncello (GM 42)"
+      midiInstrument = "cello"
+    } { \cello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

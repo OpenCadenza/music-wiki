@@ -25,3 +25,15 @@ __pycache__/
 /workbench/scores/verifier/build*/
 /workbench/scores/score-s5/_pdmx/
 /worktrees-tmp/
+
+# 2026-11-17 追加：探针目录与二进制
+/workbench/scores/*/_probe/
+/workbench/scores/*/tmp/
+/workbench/scores/**/*.mid
+/workbench/scores/**/*.pdf
+/workbench/scores/**/*.mxl
+/workbench/scores/**/*.xml
+/workbench/scores/**/*.png
+/workbench/scores/**/*.eps
+/workbench/scores/**/*.bin
+/workbench/scores/**/*.csv
