@@ -65,7 +65,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
   \new PianoStaff <<
     \new Staff = "upper" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \set Score.currentBarNumber = #41
       \key e \minor
       \time 2/4
@@ -87,7 +86,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
     }
     \new Staff = "lower" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \set Score.currentBarNumber = #41
       \key e \minor
       \time 2/4

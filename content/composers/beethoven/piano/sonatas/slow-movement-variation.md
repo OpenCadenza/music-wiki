@@ -14,7 +14,6 @@ Op.57《热情》第二乐章（Andante con moto）提供了一个干净的样�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef "bass"
       \key df \major
       \time 2/4
@@ -43,7 +42,6 @@ Op.57《热情》第二乐章（Andante con moto）提供了一个干净的样�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef "bass"
       \key df \major
       \time 2/4

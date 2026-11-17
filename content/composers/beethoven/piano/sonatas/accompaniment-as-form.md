@@ -10,7 +10,6 @@ Op.27 No.2 的第一乐章只有一个织体动作：右手一条旋律，加上
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key cs \minor
       \time 2/2
@@ -51,7 +50,6 @@ Op.27 No.2 的第一乐章只有一个织体动作：右手一条旋律，加上
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key cs \minor
       \time 2/2

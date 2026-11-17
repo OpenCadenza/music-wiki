@@ -25,7 +25,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Andante molto cantabile ed espressivo" 4 = 84 \time 3/4 \voiceOne gs'4^\markup { \italic "mezza voce" }( e'4. fs'8 |
         \oneVoice <fs ds'>4 <fs a b>2) |
@@ -49,7 +48,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 \oneVoice e,4( gs,4 a,4 |
         \oneVoice b,4 cs4 ds4) |
@@ -89,7 +87,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Molto espressivo" 4 = 84 \set Score.currentBarNumber = #17 \time 3/4 \oneVoice \grace { b'8(\p } b''2->)( e''8. fs''16 |
         \oneVoice e''4 ds''4)~ ds''8. b'16 |
@@ -113,7 +110,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 \oneVoice e,4 <b, e gs b>4 <b, e gs b>4 |
         \oneVoice fs,4 <b, fs a b>4 <b, fs a b>4 |
@@ -153,7 +149,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Leggiermente" 4 = 84 \set Score.currentBarNumber = #33 \time 3/4 r16\p b16( gs'16) r16 r16 e'16( b16) r16 r16 cs'16( fs'16) r16 |
         r16 ds'16( fs16) r16 r16 \change Staff = "down" e16 b16 \change Staff = "up" r16 r16 \change Staff = "down" b16 fs16 \change Staff = "up" r16 |
@@ -167,7 +162,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 e,16 r16 r16 e16( gs16) r16 r16 gs,16( a,16) r16 r16 a16( |
         b16) r16 r16 b,16 cs16 r16 r16 cs'16 ds'16 r16 r16 ds16 |
@@ -197,7 +191,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Allegro vivace" 4 = 144 \set Score.currentBarNumber = #65 \time 2/4 e'8\f r8 gs'8 r8 |
         b'8 r8 ds''8 r8 |
@@ -211,7 +204,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 2/4 gs16 b16 a16 gs16 e16 gs16 fs16 e16 |
         ds16 fs16 e16 ds16 b,16 ds16 cs16 b,16 |
@@ -241,7 +233,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Un poco meno andante" 4 = 72 \set Score.currentBarNumber = #97 \time 9/8 \oneVoice b'16( ds''16 e''16 gs'16 a'16 b'16) e'4.~ e'8( gs'8 fs'8) |
         \bar ".|:" \voiceOne r4 r8 a'4.~ a'8( cs''8 b'8) |
@@ -265,7 +256,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \time 9/8 \voiceOne gs'4 r8 \clef "bass" gs16( a16 b16 e16 fs16 gs16)~ gs4. |
         \voiceOne a16( b16 cs'16 fs16 gs16 a16) b,4. b,,4 r8 |
@@ -305,7 +295,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \set Score.tempoHideNote = ##t \tempo "Allegro ma non troppo" 4 = 112 \set Score.currentBarNumber = #113 \time 4/4 \oneVoice gs2\f e2 |
         \voiceOne a2 fs2 |
@@ -329,7 +318,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 4/4 \oneVoice r4 e,4-. gs,2\sf |
         \oneVoice gs,4 fs,4-. a,2\sf |
@@ -379,7 +367,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Tempo I del tema" 4 = 84 \set Score.currentBarNumber = #153 \time 3/4 \voiceOne b'4-.^\markup { \italic "cantabile" }(\p b'4-. b'4-.) |
         \voiceOne b'4-.( b'4-. b'4-.) |
@@ -403,7 +390,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 \voiceOne b,4-.( b,4-. b,4-.) |
         \voiceOne b,4-.( b,4-. b,4-.) |
@@ -439,7 +425,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo 4 = 84 \set Score.currentBarNumber = #161 \time 3/4 \set Timing.measureLength = #1/4 \voiceOne b''4^\markup { \italic "cresc." } |
         \set Timing.measureLength = #3/4 \voiceOne b'32^\markup { \italic "poco" } cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 b'32 cs''32 |
@@ -463,7 +448,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 \set Timing.measureLength = #1/4 \voiceOne b,,32( b,32 b,,32 b,32) b,,32( b,32 b,,32 b,32) |
         \set Timing.measureLength = #3/4 \voiceOne b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 b,32 cs32 |
@@ -499,7 +483,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \major \set Score.tempoHideNote = ##t \tempo "Tempo I del tema" 4 = 84 \set Score.currentBarNumber = #188 \time 3/4 \voiceOne gs'4^\markup { \italic "cantabile" }^\markup { \italic "sempre legato" }( e'4. fs'8 |
         \oneVoice <fs ds'>4 \change Staff = "down" <fs a b>2) \change Staff = "up" |
@@ -523,7 +506,6 @@ E 大调主题有两个各八小节的部分，各有反复。以下七段都截
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \major \time 3/4 \oneVoice e,4( gs,4 a,4 |
         \oneVoice b,4 cs4 ds4) |

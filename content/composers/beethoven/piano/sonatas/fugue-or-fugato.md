@@ -94,12 +94,10 @@ f8 f' f f' ef' f' ef' f'
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \upper
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \lower
     }
   >>

@@ -13,7 +13,6 @@
     \new Staff = "one" {
       \set Staff.instrumentName = "Violoncello"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef tenor \key e \major \time 2/4
       \tempo "Adagio cantabile" 8 = 46
       % m.1
@@ -36,7 +35,6 @@
     \new Staff = "two" {
       \set Staff.instrumentName = "Pianoforte"
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key e \major \time 2/4
       % m.1
       b'4\p( e''16 ds'' e'' gs')
@@ -58,7 +56,6 @@
     }
     \new Staff = "three" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key e \major \time 2/4
       % m.1
       e16\p( b gs b e b gs b)
@@ -122,7 +119,6 @@ m.1 的全部内容是钢琴的：右手一句话，左手八分音符流动。�
     \new Staff = "one" {
       \set Staff.instrumentName = "Violoncello"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef tenor \key e \major \time 2/4
       \tempo "Adagio cantabile" 8 = 46
       \new Voice { \cadenzaOn
@@ -148,7 +144,6 @@ m.1 的全部内容是钢琴的：右手一句话，左手八分音符流动。�
     \new Staff = "two" {
       \set Staff.instrumentName = "Pianoforte"
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key e \major \time 2/4
       \new Voice { \cadenzaOn <e gs b d'>8 s4 s8 r8 s8 r4^\fermata s4 \cadenzaOff }
       \bar "||"
@@ -168,7 +163,6 @@ m.1 的全部内容是钢琴的：右手一句话，左手八分音符流动。�
     }
     \new Staff = "three" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key e \major \time 2/4
       \new Voice { \cadenzaOn <e, gs, b, d>8 s4 s8 r8 s8 r4^\fermata s4 \cadenzaOff }
       \bar "||"

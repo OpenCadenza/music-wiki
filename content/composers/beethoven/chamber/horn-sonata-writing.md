@@ -16,7 +16,6 @@ LilyPond 里写圆号声部，必须加一行 `\transposition f`。它不改变�
   \new StaffGroup <<
     \new Staff = "horn" \relative c'' {
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition f
       \clef treble \time 4/4 \tempo 4 = 120
       \partial 4 g8.\f g16^\markup { \bold "Allegro moderato" }
@@ -30,7 +29,6 @@ LilyPond 里写圆号声部，必须加一行 `\transposition f`。它不改变�
     \new PianoStaff <<
       \new Staff = "pianoRH" \relative c'' {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble \key f \major \time 4/4
         \partial 4 r4
         R1 |
@@ -46,7 +44,6 @@ LilyPond 里写圆号声部，必须加一行 `\transposition f`。它不改变�
       }
       \new Staff = "pianoLH" \relative c'' {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass \key f \major \time 4/4
         \partial 4 r4
         R1 R1 |
@@ -102,7 +99,6 @@ c、g、c′、e′、g′、b♭′、c″、d″、e″、f″、g″、a″�
   \new StaffGroup <<
     \new Staff = "horn" \relative c'' {
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition f
       \clef treble \time 2/4 \tempo 4 = 42
       \partial 8 c16.\p c32^\markup { \bold "Poco Adagio, quasi Andante" }
@@ -118,7 +114,6 @@ c、g、c′、e′、g′、b♭′、c″、d″、e″、f″、g″、a″�
     \new PianoStaff <<
       \new Staff = "pianoRH" \relative c' {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \key f \minor \time 2/4
         \clef bass
         \partial 8 r8
@@ -134,7 +129,6 @@ c、g、c′、e′、g′、b♭′、c″、d″、e″、f″、g″、a″�
       }
       \new Staff = "pianoLH" \relative c, {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \key f \minor \time 2/4
         \clef bass
         \partial 8 r8

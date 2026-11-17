@@ -44,7 +44,6 @@
   <<
     \new Staff = "cello" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass
       \key a \major
       \time 2/2
@@ -64,7 +63,6 @@
     \new PianoStaff <<
       \new Staff = "pianoright" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble
         \key a \major
         \time 2/2
@@ -82,7 +80,6 @@
       }
       \new Staff = "pianoleft" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass
         \key a \major
         \time 2/2

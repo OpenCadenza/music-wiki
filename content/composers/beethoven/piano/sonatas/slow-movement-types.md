@@ -12,7 +12,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key bf \major \time 3/4 \tempo 4 = 40
       <d f bf>2.\p\arpeggio^\markup { \large "Adagio." }
       \clef treble d''8..( ef''32) f''4 \clef bass <d f bf>4 <ef f a>2. \clef treble a''8..( bf''32) c'''4 <c' ef'>4
@@ -23,7 +22,6 @@
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key bf \major \time 3/4
       <bf,, f, bf,>2.\p\arpeggio r4 r <bf,, f, bf,>4 <c, f, c>2. r4 r <a, f>4 <bf, f>2. s2 s8
       r4 r <d b>4
@@ -59,7 +57,6 @@ Op.90 第二乐章的速度标记是 Nicht zu geschwind und sehr singbar vorgetr
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key e \major \time 2/4 \tempo 4 = 72
       <as' as''>4( <e'' e'''> |
       <ds'' ds'''>4.) <a'! a''!>8( |
@@ -72,7 +69,6 @@ Op.90 第二乐章的速度标记是 Nicht zu geschwind und sehr singbar vorgetr
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key e \major \time 2/4
       cs16 as fs cs fs, as fs cs |
       b, b fs ds b, b cs a! |

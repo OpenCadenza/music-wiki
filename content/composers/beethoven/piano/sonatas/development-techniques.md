@@ -38,7 +38,6 @@ c 小调，3/4，Allegro molto e con brio。呈示部在第 105 小节收住（�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key c \minor
       \time 3/4
@@ -62,7 +61,6 @@ c 小调，3/4，Allegro molto e con brio。呈示部在第 105 小节收住（�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key c \minor
       \time 3/4
@@ -114,7 +112,6 @@ c 小调，3/4，Allegro molto e con brio。呈示部在第 105 小节收住（�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key d \minor
       \time 4/4
@@ -138,7 +135,6 @@ c 小调，3/4，Allegro molto e con brio。呈示部在第 105 小节收住（�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key d \minor
       \time 4/4

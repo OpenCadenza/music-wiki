@@ -62,7 +62,6 @@ Op.10 No.2 是 F 大调，三个乐章：Allegro、Allegretto、Presto。三个�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key f \major
       \time 2/4
@@ -86,7 +85,6 @@ Op.10 No.2 是 F 大调，三个乐章：Allegro、Allegretto、Presto。三个�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key f \major
       \time 2/4

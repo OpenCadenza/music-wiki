@@ -14,7 +14,6 @@ Op.90 是贝多芬中期最短的奏鸣曲之一，只有两个乐章：e 小调
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key e \minor
       \time 3/4
@@ -33,7 +32,6 @@ Op.90 是贝多芬中期最短的奏鸣曲之一，只有两个乐章：e 小调
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key e \minor
       \time 3/4
@@ -72,7 +70,6 @@ E 大调在第一乐章里始终是这个身份：借来的颜色，亮一拍就
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key e \major
       \time 2/4
@@ -90,7 +87,6 @@ E 大调在第一乐章里始终是这个身份：借来的颜色，亮一拍就
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key e \major
       \time 2/4

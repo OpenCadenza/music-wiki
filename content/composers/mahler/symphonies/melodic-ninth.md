@@ -18,7 +18,6 @@
   \new Staff {
     \set Staff.instrumentName = "Fagott 1"
     \set Staff.midiInstrument = "bassoon"
-    % GM 70
     \clef bass
     \key ef \major
     \time 4/4

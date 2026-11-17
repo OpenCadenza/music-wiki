@@ -38,7 +38,6 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key c \minor
       \time 3/4
@@ -57,7 +56,6 @@ Op.10 No.1 第一乐章（c 小调，3/4）第 91–92 小节。右手是一条�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key c \minor
       \time 3/4
@@ -96,7 +94,6 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
@@ -111,7 +108,6 @@ Op.2 No.1 第一乐章（f 小调，4/4）的结束部（第 41–48 小节）�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key f \minor
       \time 4/4

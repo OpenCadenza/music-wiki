@@ -27,7 +27,6 @@ description: 开头建立一个段落，中段形成对比，最后回归开头�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key a \major \time 3/4
       \set Score.tempoHideNote = ##t
       \tempo "Menuetto" 4 = 134
@@ -42,7 +41,6 @@ description: 开头建立一个段落，中段形成对比，最后回归开头�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key a \major \time 3/4
       <a, a>2( <e, e>4) |
       <cs cs'>4( <a, a>4) r4 |
@@ -67,7 +65,6 @@ description: 开头建立一个段落，中段形成对比，最后回归开头�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key a \major \time 3/4 \set Score.currentBarNumber = #31
       \set Score.tempoHideNote = ##t
       \tempo "Menuetto" 4 = 134
@@ -82,7 +79,6 @@ description: 开头建立一个段落，中段形成对比，最后回归开头�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key a \major \time 3/4
       <a, a>2( <e, e>4) |
       <cs cs'>4( <a, a>4) r4 |
@@ -109,7 +105,6 @@ Trio 的开头另起一层。弹到全段末尾的 D.C. 时，回到第一张谱
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key d \major \time 3/4
       \set Score.tempoHideNote = ##t
       \tempo "Trio" 4 = 134 \voiceTwo
@@ -124,7 +119,6 @@ Trio 的开头另起一层。弹到全段末尾的 D.C. 时，回到第一张谱
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key d \major \time 3/4
       <d, d>2.~ |
       <d, d>4 r r |

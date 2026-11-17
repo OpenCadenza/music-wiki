@@ -23,7 +23,6 @@
     \new Staff = "v1" {
       \set Staff.instrumentName = "Violino I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \tempo "Allegro con brio" 4 = 132
       % m.1
@@ -40,7 +39,6 @@
     \new Staff = "ob" {
       \set Staff.instrumentName = "Oboi"
       \set Staff.midiInstrument = "oboe"
-      % GM 68
       \clef treble \key c \minor \time 4/4
       % m.1–4
       R1*4
@@ -56,7 +54,6 @@
     \new Staff = "fg" {
       \set Staff.instrumentName = "Fagotti"
       \set Staff.midiInstrument = "bassoon"
-      % GM 70
       \clef bass \key c \minor \time 4/4
       % m.1–4
       R1*4
@@ -73,7 +70,6 @@
     \new Staff = "co" {
       \set Staff.instrumentName = "Corni in E-flat"
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition ef
       \clef treble \key c \major \time 4/4
       % m.1–4
@@ -90,7 +86,6 @@
     \new Staff = "bs" {
       \set Staff.instrumentName = "Bassi"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 4/4
       % m.1
       c2\p ef
@@ -126,7 +121,6 @@ mm.5–8 弦乐停住，木管与圆号接：双簧管把同一条轮廓**提高
     \new Staff = "v1" {
       \set Staff.instrumentName = "Violino I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \tempo "Allegro con brio" 4 = 132
       \set Score.currentBarNumber = #110
@@ -140,7 +134,6 @@ mm.5–8 弦乐停住，木管与圆号接：双簧管把同一条轮廓**提高
     \new Staff = "p+rh" {
       \set Staff.instrumentName = "Pianoforte"
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \minor \time 4/4
       % m.110–111
       R1
@@ -162,7 +155,6 @@ mm.5–8 弦乐停住，木管与圆号接：双簧管把同一条轮廓**提高
     }
     \new Staff = "p-lh" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \minor \time 4/4
       % m.110
       R1

@@ -28,7 +28,6 @@ Op.2 的三部、Op.7、Op.10 No.3、Op.22 都是四乐章；Op.10 No.1 和 Op.1
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key g \minor
       \time 2/4
@@ -45,7 +44,6 @@ Op.2 的三部、Op.7、Op.10 No.3、Op.22 都是四乐章；Op.10 No.1 和 Op.1
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key g \minor
       \time 2/4
@@ -85,7 +83,6 @@ Op.2 的三部、Op.7、Op.10 No.3、Op.22 都是四乐章；Op.10 No.1 和 Op.1
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key g \major
       \time 3/4
@@ -104,7 +101,6 @@ Op.2 的三部、Op.7、Op.10 No.3、Op.22 都是四乐章；Op.10 No.1 和 Op.1
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key g \major
       \time 3/4

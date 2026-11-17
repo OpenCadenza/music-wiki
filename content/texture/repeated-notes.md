@@ -65,7 +65,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
   \new PianoStaff <<
     \new Staff = "upper" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \key c \major
       \time 4/4
       \set Score.tempoHideNote = ##t
@@ -84,7 +83,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
     }
     \new Staff = "lower" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \key c \major
       \time 4/4
       \clef bass

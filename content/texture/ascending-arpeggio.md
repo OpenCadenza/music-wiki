@@ -85,7 +85,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
   \new PianoStaff <<
     \new Staff = "upper" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \partial 16*5
       \key c \major
       \time 2/4
@@ -104,7 +103,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
     }
     \new Staff = "lower" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \partial 16*5
       \key c \major
       \time 2/4
@@ -157,7 +155,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
   \new PianoStaff <<
     \new Staff = "upper" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \set Score.currentBarNumber = #9
       \key a \minor
       \defaultTimeSignature \time 2/2
@@ -189,7 +186,6 @@ import TextureFacts from "../../.vitepress/theme/TextureFacts.vue"
     }
     \new Staff = "lower" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \set Score.currentBarNumber = #9
       \key a \minor
       \defaultTimeSignature \time 2/2

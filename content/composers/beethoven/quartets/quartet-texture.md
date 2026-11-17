@@ -66,7 +66,6 @@
   \new StaffGroup <<
     \new Staff = "v1" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key a \minor \time 6/8 \tempo 4 = 68
   % m.1
   r8 r8 e'8 \p ( a' [ b' c'' ] )
@@ -103,7 +102,6 @@
     }
     \new Staff = "v2" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key a \minor \time 6/8
   % m.1
   R2.
@@ -140,7 +138,6 @@
     }
     \new Staff = "va" {
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key a \minor \time 6/8
   % m.1
   R2.
@@ -177,7 +174,6 @@
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key a \minor \time 6/8
   % m.1
   e,4 \f r8 e,4 \p r8

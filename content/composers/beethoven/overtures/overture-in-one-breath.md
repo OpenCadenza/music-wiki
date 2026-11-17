@@ -13,7 +13,6 @@
     \new Staff = "flauti" {
       \set Staff.instrumentName = "Flauto I"
       \set Staff.midiInstrument = "flute"
-      % GM 73
       \clef treble \key c \minor \time 4/4
       \tempo "Allegro con brio" 4 = 150
       \relative c {
@@ -42,7 +41,6 @@
     \new Staff = "clarinetti" {
       \set Staff.instrumentName = "Clarinetto I in B"
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition as
       \clef treble \key d \minor \time 4/4
       \relative c {
@@ -61,7 +59,6 @@
     \new Staff = "corni" {
       \set Staff.instrumentName = "Corno I in E-flat"
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition ds'
       \clef treble \key c \major \time 4/4
       \relative c {
@@ -80,7 +77,6 @@
     \new Staff = "timpani" {
       \set Staff.instrumentName = "Timpani in C, G"
       \set Staff.midiInstrument = "timpani"
-      % GM 47
       \clef bass \key c \minor \time 4/4
       \relative c {
         R1*2
@@ -98,7 +94,6 @@
     \new Staff = "violino1" {
       \set Staff.instrumentName = "Violino I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \relative c {
         c'1\ff ~
@@ -123,7 +118,6 @@
     \new Staff = "violino2" {
       \set Staff.instrumentName = "Violino II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \relative c {
         c'1\ff ~
@@ -146,7 +140,6 @@
     \new Staff = "violoncello" {
       \set Staff.instrumentName = "Violoncello"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 4/4
       \relative c {
         c1\ff ~
@@ -170,7 +163,6 @@
     \new Staff = "contrabasso" {
       \set Staff.instrumentName = "Contrabasso"
       \set Staff.midiInstrument = "contrabass"
-      % GM 43
       \transposition c
       \clef bass \key c \minor \time 4/4
       \relative c {

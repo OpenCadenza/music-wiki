@@ -12,7 +12,6 @@
   \new StaffGroup <<
     \new Staff = "violin" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key a \major \time 3/4 \tempo 4 = 32
       <a e' cs'' a''>4\f^\markup { \bold "Adagio sostenuto." }( <d'' fs''>\p <b' d''>)
       <gs' b'>4( <e' e''>4. <d' gs'>8)
@@ -28,7 +27,6 @@
     \new PianoStaff <<
       \new Staff = "pianoRH" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble \key a \major \time 3/4
         R2. R2. R2. R2.
         <a' cs'' e'' a''>4\fp( <f' a' d'' f''> <d' a' d''>)
@@ -42,7 +40,6 @@
       }
       \new Staff = "pianoLH" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass \key a \major \time 3/4
         R2. R2. R2. R2.
         <a,, a,>4\fp( <d, d> <f, f>)
@@ -90,7 +87,6 @@
   \new StaffGroup <<
     \new Staff = "violin" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key a \minor \time 4/4 \tempo 2 = 142
       \partial 4 e''4( f''2.\sf^\markup { \bold "Presto." })
       a'4 gs'4\staccato e'\staccato e'\staccato gs'\staccato
@@ -102,7 +98,6 @@
     \new PianoStaff <<
       \new Staff = "pianoRH" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble \key a \minor \time 4/4
         \partial 4 r4 <a d' f'>2.\sf
         <a d'>4 <gs b e'>4 r r2
@@ -114,7 +109,6 @@
       }
       \new Staff = "pianoLH" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass \key a \minor \time 4/4
         \partial 4 r4 <d, d>2.\sf
         <f, f>4 <e, e>4 r r2

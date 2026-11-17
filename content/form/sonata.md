@@ -39,7 +39,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #53 \time 3/4 <fs' as' cs'' e'' fs''>8\ff( <g' as' cs'' e'' g''>8) <g' as' cs'' e'' g''>8-. <g' as' cs'' e'' g''>8-. <g' as' cs'' e'' g''>8 <g' as' cs'' e'' g''>8 |
         <g' as' cs'' e'' g''>8^\markup { \italic "dim." }^\markup { \italic "Rit." } <g' as' cs'' e'' g''>8 <g' as' cs'' e'' g''>8 <g' as' cs'' e'' g''>8 <g' as' cs'' e'' g''>8 <g' as' cs'' e'' g''>8 |
@@ -60,7 +59,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \minor \time 3/4 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 |
         <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 <fs as cs' e'>8 |
@@ -99,7 +97,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #85 \time 3/4 \voiceOne a''4.( g''8) fs''8 r8 |
         \voiceOne <g'' b''>4 r4 <g'' b''>4 |
@@ -123,7 +120,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \time 3/4 \oneVoice <fs' a'>4 r4 <fs' a'>8 r8 |
         \oneVoice <e' g'>4 r4 <e' g'>4 |
@@ -159,7 +155,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #110 \time 3/4 g'4 c''4( a'4 |
         g'4 f'4) f'4~ |
@@ -173,7 +168,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key e \minor \time 3/4 <c' e'>4 c'4 cs'4 |
         d'4 a4 bf4 |
@@ -199,7 +193,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #129 \time 3/4 \oneVoice cs''16 g'16 cs''16 e''16 cs''16 g'16 cs''16 e''16 cs''16 g'16 cs''16 e''16 |
         \oneVoice b'16 g'16 b'16 e''16 g''16 fs''16 e''16 ds''16 e''16 ds''16 e''16 fs''16 \bar "||" |
@@ -247,7 +240,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \time 3/4 \voiceOne s4 g'2 |
         \voiceOne b4 e'4 g'4 |
@@ -316,7 +308,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #196 \time 3/4 \oneVoice <b' b''>8( <c'' c'''>8) <c'' c'''>8-. <c'' c'''>8-. <c'' c'''>8-. <c'' c'''>8-. |
         \oneVoice <c'' c'''>8^\markup { \italic "dim." } <c'' c'''>8 <c'' c'''>8 <c'' c'''>8 <c'' c'''>8 <c'' c'''>8 |
@@ -344,7 +335,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \time 3/4 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 |
         <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 <b ds' fs' a'>8 \clef "bass" |
@@ -376,7 +366,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \set Score.tempoHideNote = ##t \tempo 4 = 156 \set Score.currentBarNumber = #232 \time 3/4 \oneVoice <e'' g''>4.( <ds'' fs''>8 e''4) |
         \oneVoice <fs'' a''>4^\markup { \italic "Ritardando" } r4 <fs'' a''>4 |
@@ -412,7 +401,6 @@ description: 呈示部建立调性对比，展开部发展材料，再现部通�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key e \minor \time 3/4 <e' g'>4.( <fs' a'>8 g'4) |
         <d' fs' a'>4 r4 d''4 |

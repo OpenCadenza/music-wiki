@@ -18,7 +18,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key f \minor \time 4/4 \tempo 4 = 190
       <e'' e'''>4\pp\staccato r4 r2 |
       R1 |
@@ -32,7 +31,6 @@
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key f \minor \time 4/4
       c'4\pp\staccato c'\staccato c'\staccato c'\staccato |
       c'\staccato c'\staccato c'\staccato c'\staccato |
@@ -70,7 +68,6 @@
   \new StaffGroup <<
     \new Staff = "v1" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4 \tempo 4 = 138
       b'8( g''8) d''!8( g''8) fs''8( g''8) f''8( g''8) |
       ef''8( g''8) r4 r4 g'8( g''8) |
@@ -83,7 +80,6 @@
     }
     \new Staff = "v2" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \repeat unfold 16 { d'16 } |
       \repeat unfold 16 { ef'16 } |
@@ -96,7 +92,6 @@
     }
     \new Staff = "va" {
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key c \minor \time 4/4
       \repeat unfold 16 { b16 } |
       b16 b16 b16 b16 \repeat unfold 12 { c'16 } |
@@ -109,7 +104,6 @@
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 4/4
       g,4\staccato b,\staccato d!\staccato g\staccato |
       g,4 r4 r2 |
