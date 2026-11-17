@@ -21,7 +21,7 @@
 | 编码 | `\version "2.26.0"` 恰好一次，`\language "english"`，代码块自包含 |
 | 标题 | 代码围栏属性 `title="作曲家 作品号 乐章"` + `location="mm.起–止"` |
 | 速度 | 写 `\tempo`，照抄来源乐章 |
-| 乐器 | 每个 `\new Staff` 写 `midiInstrument` + `% GM <编号>` |
+| 乐器 | 每个 `\new Staff` 写标准 General MIDI 乐器名的 `midiInstrument` |
 | 复用 | 同一段谱例全库只出现一次，别处用链接 |
 | 来源 | 一律写进仓库根 `NOTICE.md`，正文不写 |
 
@@ -177,27 +177,28 @@
 
 不写的话 LilyPond 默认 60，播放会明显偏慢。速度值照抄来源乐谱的 `\tempo`。
 
-### 乐器与 GM 编号（必填）
+### 乐器（必填）
 
-每个 `\new Staff` 都要声明 MIDI 乐器，并在紧邻的一行写出 General MIDI 编号：
+每个 `\new Staff` 都要声明 MIDI 乐器，`midiInstrument` 必须使用标准 General MIDI 乐器名：
 
 ```lilypond
 \new Staff = "up" {
   \set Staff.midiInstrument = "violin"
-  % GM 41
   ...
 }
 ```
 
-`midiInstrument` 决定 LilyPond 的名字映射，`% GM <编号>` 是给构建脚本的权威值：脚本按注释
-里的编号设置该声部的 MIDI 程序号，两者不一致时以编号为准。**不写编号会退回钢琴音色**，
-非钢琴作品（弦乐四重奏、管弦乐、声乐）尤其要注意。
+构建脚本按乐器名解析 General MIDI 程序号，名字就是唯一的权威值；`pnpm validate` 会拒绝
+非标准名称。非标准乐器请取最接近的标准名称（例如民族乐器取音色相近的管弦乐器），
+不要自造名字。
+
+乐器名要写 LilyPond 认可的写法（与 LilyPond `scm/lily/midi.scm` 的 128 个 GM 名称一致）：
+钢琴 `"acoustic grand"`（**不是** `"acoustic grand piano"`），小提琴 `"violin"`，
+中提琴 `"viola"`，大提琴 `"cello"`，圆号 `"french horn"`，竖琴 `"orchestral harp"`。
+名字写错会有 `no such MIDI instrument` 警告，并静默退回钢琴。
 
 移调乐器的 `\transposition` 也按 `\language "english"` 的音名写：B♭ 调写 `\transposition bf`、
 E♭ 调写 `ef`、D 调写 `d`。写成 `bes` 会在 english 下报 `Expecting pitch, found bes`。
-乐器名要写 LilyPond 认可的写法：钢琴 `"acoustic grand"`（**不是** `"acoustic grand piano"`），
-小提琴 `"violin"`，中提琴 `"viola"`，大提琴 `"cello"`。名字写错会有 `no such MIDI instrument`
-警告，并静默退回钢琴。
 
 ### 长度与截取
 

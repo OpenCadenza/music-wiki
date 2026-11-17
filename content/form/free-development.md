@@ -21,7 +21,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key d \minor \time 2/2
       \set Score.tempoHideNote = ##t
       \tempo "Andante" 2 = 40
@@ -48,7 +47,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key d \minor \time 2/2
       \relative c, {
         <<
@@ -101,7 +99,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \major \time 4/4
       \set Score.tempoHideNote = ##t
       \tempo "Adagio" 4 = 52
@@ -111,7 +108,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \major \time 4/4
       <c, c>4.( <ef, ef>8 <fs, fs> <g, g> <af, af> <c, c>) |
       <b,, b,>8 r8 \clef treble fs'8( g'16) r16 af'8( g'16) r16 r4 \clef bass |
@@ -131,7 +127,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \major \time 4/4 \set Score.currentBarNumber = #161
       \set Score.tempoHideNote = ##t
       \tempo "Tempo primo" 4 = 52
@@ -141,7 +136,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \major \time 4/4
       <c, c>4.( <ef, ef>8 <fs, fs> <g, g> <af, af> <c, c>) |
       <b,, b,>8 r8 \clef treble fs'8( g'16) r16 af'8( g'16) r16 r4 \clef bass |
@@ -167,7 +161,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key bf \major \set Score.tempoHideNote = ##t \tempo "Largo" 4 = 40 \omit Staff.TimeSignature \time 6/4 \oneVoice r16\p \tuplet 3/2 { r32 r32 f32( } \tuplet 3/2 { f'32) r32 r32 } \tuplet 3/2 { f''32 f'''32~ f'''32~ } <f'' f'''>16.\fermata <f''~ f'''~>32 <f'' f'''>16 r16 r16. <f''~ af''~ df'''~ f'''~>32 <f'' af'' df''' f'''>16 r16 r16. <f''~ bf''~ df'''~ f'''~>32 <f'' bf'' df''' f'''>16 r16 r16. <gf''~ bf''~ df'''~ gf'''~>32 <gf''~ bf''~ df'''~ gf'''~>8 <gf'' bf'' df''' gf'''>32\fermata( df''32 gf''32 df''32 gf''32 df''32 gf''32 bf'32) \bar "" |
         \voiceOne ef''4^\markup { \italic "cresc." }^\markup { \italic "decresc." }\p ef''16 df''8 cf''16 bf'16 <bff' ef''>16 af'16~ af'32. bf'64 r4 r4 r4 |
@@ -215,7 +208,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key bf \major \omit Staff.TimeSignature \time 6/4 \oneVoice r16 \tuplet 3/2 { f,32 f32 r32 } \tuplet 3/2 { r32 \clef "treble" f'32 f''32 } \clef "bass" \tuplet 3/2 { r32 r32 <f,,~ f,~>32 } <f,, f,>16.\fermata r32 r16 <f, f>16 r16 r16 r16 <df, df>16 r16 r16 r16 <bf,, bf,>16 r16 r16 r16 <gf,,~ gf,~>16 <gf,, gf,>32\fermata r32 r16 r8 |
         \oneVoice r4 r32 f32( af32 f32 af32 f32 af32 df32) gf16( c16 df16 gf,16) r16 <gf, gf>16 r16 r16 r16 <ef, ef>16 r16 r16 <b,, b,>32\fermata r32 r16 r8 |
@@ -281,7 +273,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key gf \major \set Score.tempoHideNote = ##t \tempo "Arioso dolente" 4 = 60 \set Score.currentBarNumber = #9 \time 12/16 ef''8.\p~ ef''8( df''16~ df''8 cf''16 bf'16 cf''16 af'16) |
         af'8.( g'8.)~ g'8( ff''16~ ff''8 ef''16) |
@@ -295,7 +286,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key gf \major \time 12/16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 <af, cf ef>16 |
         <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef>16 <bf, df ef g>16 |
@@ -321,7 +311,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key g \minor \set Score.tempoHideNote = ##t \tempo "L’istesso tempo di Arioso" 4 = 60 \set Score.currentBarNumber = #116 \time 12/16 \grace { d'16(\p } d''8.)~ d''8 c''16 c''16( bf'16) r32 a'32 a'16( bf'16) r32 g'32 |
         g'8^\markup { \italic "cresc." }(^\markup { \italic "decresc." } fs'16~ fs'8 ef''16) r16 ef''16( f''32 ef''32) r16 d''16( ef''32 d''32) |
@@ -335,7 +324,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key g \minor \time 12/16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 <g, bf, d>16 |
         <a, c d>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 <a, c d fs>16 |
@@ -361,7 +349,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key gf \major \set Score.tempoHideNote = ##t \tempo "Fuga. Allegro ma non troppo" 4 = 110 \set Score.currentBarNumber = #28 \time 6/8 \partial 1*3/8 r4 r8 |
         \set Timing.measureLength = #3/4 \set Score.currentBarNumber = #28 R1*3/4 |
@@ -376,7 +363,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key gf \major \time 6/8 \partial 1*3/8 af4.( |
         \set Timing.measureLength = #3/4 df'4. bf4. |
@@ -403,7 +389,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key gf \major \set Score.tempoHideNote = ##t \tempo "L’istesso tempo della Fuga" 4 = 110 \set Score.currentBarNumber = #137 \time 6/8 \partial 1*3/8 \oneVoice d''4. |
         \set Timing.measureLength = #3/4 \set Score.currentBarNumber = #137 \oneVoice a'4.( c''4. |
@@ -429,7 +414,6 @@ description: 主题变形、调性目标、速度和织体共同组织长程发�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key gf \major \time 6/8 \partial 1*3/8 r4 r8 |
         \set Timing.measureLength = #3/4 R1*3/4 |
@@ -474,7 +458,6 @@ joy = {
   \new StaffGroup <<
     \new Staff \with { instrumentName = "Violoncello" } {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass
       \set Score.currentBarNumber = #92
       \tempo "Allegro assai" 2 = 80
@@ -482,7 +465,6 @@ joy = {
     }
     \new Staff \with { instrumentName = "Contrabbasso" } {
       \set Staff.midiInstrument = "contrabass"
-      % GM 43
       \clef "bass_8"
       \transpose c c, \joy
     }
@@ -500,7 +482,6 @@ joy = {
   \new ChoirStaff <<
     \new Staff \with { instrumentName = "Soprano" } {
       \set Staff.midiInstrument = "choir aahs"
-      % GM 52
       \clef treble \key d \major \time 6/4
       \set Score.currentBarNumber = #655
       \tempo "Allegro energico, sempre ben marcato" 2. = 84
@@ -518,7 +499,6 @@ joy = {
     }
     \new Staff \with { instrumentName = "Alto" } {
       \set Staff.midiInstrument = "choir aahs"
-      % GM 52
       \clef treble \key d \major \time 6/4
       \partial 2.
       d''2.\f^\markup { \italic "Seid umschlungen" }~ |

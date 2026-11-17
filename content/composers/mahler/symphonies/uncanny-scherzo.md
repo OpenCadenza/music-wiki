@@ -20,7 +20,6 @@ B₄–E♭₅–G₅，第一个音可以直接用重新调高的 A 弦空弦�
     \new Staff {
       \set Staff.instrumentName = "Solo-Violine"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \transposition d'
       \key bf \minor
       \time 3/8
@@ -34,7 +33,6 @@ B₄–E♭₅–G₅，第一个音可以直接用重新调高的 A 弦空弦�
     \new Staff {
       \set Staff.instrumentName = "Viola solo"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto
       \key c \minor
       R4. | R4. |
@@ -43,7 +41,6 @@ B₄–E♭₅–G₅，第一个音可以直接用重新调高的 A 弦空弦�
     \new Staff {
       \set Staff.instrumentName = "Violoncello solo"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef tenor
       \key c \minor
       R4. | R4. |
@@ -84,7 +81,6 @@ meters = {
     \new Staff {
       \set Staff.instrumentName = "Violine I"
       \set Staff.midiInstrument = "pizzicato strings"
-      % GM 45
       \key d \major
       \tempo "Poco meno mosso" 8 = 144
       << \meters {
@@ -97,7 +93,6 @@ meters = {
     \new Staff {
       \set Staff.instrumentName = "Harfe I"
       \set Staff.midiInstrument = "orchestral harp"
-      % GM 46
       \key d \major
       << \meters {
         R4. | R4. |
@@ -131,7 +126,6 @@ meters = {
     \new Staff {
       \set Staff.instrumentName = "Pauken"
       \set Staff.midiInstrument = "timpani"
-      % GM 47
       \clef bass
       \time 3/4
       \tempo "Schattenhaft. Fließend, aber nicht schnell." 4 = 132
@@ -142,7 +136,6 @@ meters = {
     \new Staff {
       \set Staff.instrumentName = "Violoncelli"
       \set Staff.midiInstrument = "pizzicato strings"
-      % GM 45
       \clef bass
       \key d \minor
       r4

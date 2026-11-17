@@ -30,7 +30,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key c \major \set Score.tempoHideNote = ##t \tempo "Allegretto" 4 = 112 \time 2/4 \partial 1*1/4 <e'' g''>8-.\mf <e'' g''>8-. |
         \set Timing.measureLength = #1/2 \set Score.currentBarNumber = #1 <c'' e''>8-. r8 <d'' f''>8-. <d'' f''>8-. |
@@ -54,7 +53,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key c \major \time 2/4 \partial 1*1/4 \oneVoice r4 |
         \set Timing.measureLength = #1/2 \oneVoice <a c'>8-. <a c'>8-. <f a>8-. r8 |
@@ -110,7 +108,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key c \major \set Score.tempoHideNote = ##t \tempo "Allegretto" 4 = 112 \set Score.currentBarNumber = #17 \time 2/4 d''8-. r8 b'16( c''16 d''16 e''16 |
         f''8-.) r8 d''16( e''16 f''16 g''16 |
@@ -125,7 +122,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key c \major \time 2/4 <g b>8-. g,8-. r4 |
         <g b>8-. g,8-. r4 |
@@ -152,7 +148,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key c \major \set Score.tempoHideNote = ##t \tempo "Allegretto" 4 = 112 \set Score.currentBarNumber = #29 \time 2/4 e''16( ds''16 f''16 e''16) r4 |
         e''16( ds''16 f''16 e''16) <e'' c'''>8-. <e'' c'''>8-. |
@@ -166,7 +161,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key c \major \time 2/4 \oneVoice <a c'>8-. r8 <b d'>8-. <b d'>8-. |
         \oneVoice <gs b>8-. r8 r4 |
@@ -202,7 +196,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
   \new PianoStaff <<
     \new Staff = "up" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "treble" \key c \major \set Score.tempoHideNote = ##t \tempo "Allegretto" 4 = 112 \set Score.currentBarNumber = #49 \time 2/4 a'8 r8 gs'16( d''16 b'16 gs'16 |
         a'8) r8 gs'16( d''16 b'16 gs'16 |
@@ -220,7 +213,6 @@ description: 主调叠句在不同插部之间反复回来，典型五部布局�
     >>
     \new Staff = "down" <<
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \new Voice {
         \clef "bass" \key c \major \time 2/4 a16 c'16 e'16 c'16 e16 b16 d'16 b16 |
         a16 c'16 e'16 c'16 e16 b16 d'16 b16 |

@@ -5,6 +5,7 @@ import { dirname, extname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import MarkdownIt from 'markdown-it'
 import { parseNotationFenceInfo } from './notation-info.mjs'
+import { gmProgramFor, midiInstrumentNames } from './gm-instruments.mjs'
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const contentRoot = join(root, 'content')
@@ -170,6 +171,27 @@ for (const path of files) {
       } else if (versions[0] !== targetVersion) {
         errors.push(
           `${rel}:${line}: LilyPond version ${versions[0]} is not ${targetVersion}`
+        )
+      }
+
+      // 乐器只认 \midiInstrument 名称：每个声部都要写，且必须是 LilyPond 的
+      // 标准 General MIDI 名称（非标准乐器取最接近的标准名）。
+      const instruments = midiInstrumentNames(token.content)
+      if (instruments.length === 0) {
+        errors.push(
+          `${rel}:${line}: every staff needs \\set Staff.midiInstrument with a General MIDI name`
+        )
+      }
+      for (const name of instruments) {
+        if (gmProgramFor(name) === undefined) {
+          errors.push(
+            `${rel}:${line}: "${name}" is not a General MIDI instrument name; use the closest standard name`
+          )
+        }
+      }
+      if (/%\s*GM\s+\d+/i.test(token.content)) {
+        errors.push(
+          `${rel}:${line}: remove instrument number comments; every staff is described by its \\set Staff.midiInstrument name`
         )
       }
     }

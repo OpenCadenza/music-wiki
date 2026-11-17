@@ -21,7 +21,6 @@ description: 两个主要段落完成一次调性走向，第二段可以在内�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \major \time 3/4
       \set Score.tempoHideNote = ##t
       \tempo 4 = 108
@@ -50,7 +49,6 @@ description: 两个主要段落完成一次调性走向，第二段可以在内�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \major \time 3/4
       \repeat volta 2 {
         c16 d e f g8 f g16 f e d |

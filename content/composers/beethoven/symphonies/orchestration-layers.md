@@ -16,7 +16,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "flauti" {
       \set Staff.instrumentName = "Flauto"
       \set Staff.midiInstrument = "flute"
-      % GM 73
       
       \clef treble \key a \major \time 4/4
   % m.1
@@ -35,7 +34,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "oboi" {
       \set Staff.instrumentName = "Oboe"
       \set Staff.midiInstrument = "oboe"
-      % GM 68
       
       \clef treble \key a \major \time 4/4
   % m.1
@@ -46,7 +44,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "clarinetti" {
       \set Staff.instrumentName = "Clarinetto in A"
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition a
       \clef treble \key c \major \time 4/4
   % m.1
@@ -59,7 +56,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "fagotti" {
       \set Staff.instrumentName = "Fagotto"
       \set Staff.midiInstrument = "bassoon"
-      % GM 70
       
       \clef bass \key a \major \time 4/4
   % m.1
@@ -82,7 +78,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "corni" {
       \set Staff.instrumentName = "Corno in A"
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition a
       \clef treble \key c \major \time 4/4
   % m.1
@@ -99,7 +94,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "trombe" {
       \set Staff.instrumentName = "Tromba in D"
       \set Staff.midiInstrument = "trumpet"
-      % GM 56
       \transposition d
       \clef treble \key c \major \time 4/4
   % m.1
@@ -122,7 +116,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "timpani" {
       \set Staff.instrumentName = "Timpani"
       \set Staff.midiInstrument = "timpani"
-      % GM 47
       
       \clef bass \key c \major \time 4/4
   % m.1
@@ -145,7 +138,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "violinoone" {
       \set Staff.instrumentName = "Violino I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       
       \clef treble \key a \major \time 4/4
   % m.1
@@ -168,7 +160,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "violinotwo" {
       \set Staff.instrumentName = "Violino II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       
       \clef treble \key a \major \time 4/4
   % m.1
@@ -191,7 +182,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "viola" {
       \set Staff.instrumentName = "Viola"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       
       \clef alto \key a \major \time 4/4
   % m.1
@@ -214,7 +204,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "cello" {
       \set Staff.instrumentName = "Violoncello"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       
       \clef bass \key a \major \time 4/4
   % m.1
@@ -237,7 +226,6 @@ Op.92 第七交响曲的引子（Poco sostenuto）第一小节就是一次极端
     \new Staff = "basso" {
       \set Staff.instrumentName = "Basso"
       \set Staff.midiInstrument = "contrabass"
-      % GM 43
       
       \clef bass \key a \major \time 4/4
   % m.1

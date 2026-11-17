@@ -20,7 +20,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key f \minor
       \time 2/4
@@ -40,7 +39,6 @@
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key f \minor
       \time 2/4
@@ -78,7 +76,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key g \major
       \time 3/4
@@ -101,7 +98,6 @@
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key g \major
       \time 3/4

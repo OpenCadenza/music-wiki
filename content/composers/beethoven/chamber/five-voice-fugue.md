@@ -60,7 +60,6 @@ Op.137 是 D 大调，3/8，标着 Allegretto，八十三小节。第一小提�
   \new StaffGroup <<
     \new Staff = "vlnI" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble
       \key d \major
       \time 3/8
@@ -84,7 +83,6 @@ Op.137 是 D 大调，3/8，标着 Allegretto，八十三小节。第一小提�
     }
     \new Staff = "vlnII" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble
       \key d \major
       \time 3/8
@@ -107,7 +105,6 @@ Op.137 是 D 大调，3/8，标着 Allegretto，八十三小节。第一小提�
     }
     \new Staff = "vlaI" {
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto
       \key d \major
       \time 3/8
@@ -130,7 +127,6 @@ Op.137 是 D 大调，3/8，标着 Allegretto，八十三小节。第一小提�
     }
     \new Staff = "vlaII" {
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto
       \key d \major
       \time 3/8
@@ -153,7 +149,6 @@ Op.137 是 D 大调，3/8，标着 Allegretto，八十三小节。第一小提�
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass
       \key d \major
       \time 3/8

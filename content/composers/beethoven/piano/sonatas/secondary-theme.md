@@ -54,7 +54,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key f \minor
       \time 4/4
@@ -70,7 +69,6 @@
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key f \minor
       \time 4/4
@@ -111,7 +109,6 @@ Op.31 No.2 第一乐章（d 小调，4/4）的副部区用的是相反的算法�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key d \minor
       \time 4/4
@@ -131,7 +128,6 @@ Op.31 No.2 第一乐章（d 小调，4/4）的副部区用的是相反的算法�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key d \minor
       \time 4/4

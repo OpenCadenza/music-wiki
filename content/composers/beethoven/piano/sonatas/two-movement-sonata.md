@@ -10,7 +10,6 @@ Op.78 是三十二首钢琴奏鸣曲里最短的一首，只有两个乐章，�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key fs \major
       \time 2/4
@@ -42,7 +41,6 @@ Op.78 是三十二首钢琴奏鸣曲里最短的一首，只有两个乐章，�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key fs \major
       \time 2/4

@@ -12,7 +12,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Flauto"
       \set Staff.shortInstrumentName = "Fl"
       \set Staff.midiInstrument = "flute"
-      % GM 73
       \clef treble \key d \major \time 4/4
       \tempo "Allegro, ma non troppo" 4 = 102
       R1*16
@@ -21,7 +20,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Oboi"
       \set Staff.shortInstrumentName = "Ob"
       \set Staff.midiInstrument = "oboe"
-      % GM 68
       \clef treble \key d \major \time 4/4
       R1 |
       << { a''2( b'' a''4 g''2) } \\ { d''1\p( cs''2.) } >>
@@ -37,7 +35,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Clarinetti in A."
       \set Staff.shortInstrumentName = "Cl"
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition a
       \clef treble \key f \major \time 4/4
       R1 |
@@ -56,7 +53,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Fagotti"
       \set Staff.shortInstrumentName = "Fg"
       \set Staff.midiInstrument = "bassoon"
-      % GM 70
       \clef bass \key d \major \time 4/4
       R1 |
       << { d'1\p~ d'2. } \\ { d'1~ d'2. } >>
@@ -71,7 +67,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Corni in D."
       \set Staff.shortInstrumentName = "Co"
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition d
       \clef treble \key c \major \time 4/4
       R1*16
@@ -80,7 +75,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Trombe in D."
       \set Staff.shortInstrumentName = "Tb"
       \set Staff.midiInstrument = "trumpet"
-      % GM 56
       \transposition d
       \clef treble \key c \major \time 4/4
       R1*16
@@ -89,7 +83,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = \markup \column { "Timpani" "in D.A." }
       \set Staff.shortInstrumentName = "Ti"
       \set Staff.midiInstrument = "timpani"
-      % GM 47
       \clef bass \key c \major \time 4/4
       d4\p d d d |
       d4 r r2 |
@@ -106,7 +99,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = \markup \column { "Violino" "principale" }
       \set Staff.shortInstrumentName = "Vn pr"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       R1*16
     }
@@ -114,7 +106,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violino I."
       \set Staff.shortInstrumentName = "Vn I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       R1*9 |
       ds'8\p r ds' r ds' r ds' r |
@@ -128,7 +119,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violino II."
       \set Staff.shortInstrumentName = "Vn II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       R1*10 |
       g1\f |
@@ -141,7 +131,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key d \major \time 4/4
       R1*10 |
       e1\f |
@@ -154,7 +143,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violoncello"
       \set Staff.shortInstrumentName = "Vc"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key d \major \time 4/4
       R1*10 |
       a,8\f r a, r a, r a, r |
@@ -168,7 +156,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Basso"
       \set Staff.shortInstrumentName = "Cb"
       \set Staff.midiInstrument = "contrabass"
-      % GM 43
       \clef bass \key d \major \time 4/4
       R1*10 |
       a,8\f r a, r a, r a, r |
@@ -224,7 +211,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = \markup \column { "Clarinetti" "in A." }
       \set Staff.shortInstrumentName = "Cl"
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition a
       \clef treble \key f \major \time 4/4
       \set Score.currentBarNumber = #88
@@ -241,7 +227,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = \markup \column { "Violino" "principale" }
       \set Staff.shortInstrumentName = "Vn pr"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       \override TupletNumber.transparent = ##t
       \override TupletBracket.transparent = ##t
@@ -259,7 +244,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violino I."
       \set Staff.shortInstrumentName = "Vn I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       r4 g''4\p( e'' cs'') |
       g'1~ |
@@ -273,7 +257,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violino II."
       \set Staff.shortInstrumentName = "Vn II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key d \major \time 4/4
       r4 g'4\p( e' cs') |
       g1~ |
@@ -287,7 +270,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key d \major \time 4/4
       r4 e'4\p( cs' g) |
       e1~ |
@@ -301,7 +283,6 @@ Op.61 第一乐章。协奏曲的分工常被说成"独奏与伴奏"，但谱面
       \set Staff.instrumentName = "Violoncello"
       \set Staff.shortInstrumentName = "Vc"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key d \major \time 4/4
       a,1~ |
       a,1~ |

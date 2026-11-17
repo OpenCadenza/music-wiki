@@ -21,7 +21,6 @@ description: 一个完整乐段承担全曲的结构，内部可以有多个乐�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \major \time 3/4
       \set Score.tempoHideNote = ##t
       \tempo "Andante" 4 = 67
@@ -39,7 +38,6 @@ description: 一个完整乐段承担全曲的结构，内部可以有多个乐�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \major \time 3/4
       c'8 e'16 c' d'4 g |
       c'8 e'16 c' d'4 g |

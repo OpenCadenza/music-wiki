@@ -12,7 +12,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Flauti"
       \set Staff.shortInstrumentName = "Fl"
       \set Staff.midiInstrument = "flute"
-      % GM 73
       \clef treble \key c \minor \time 2/4
       \tempo "Allegro con brio" 2 = 96
       r2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 | R2 | \break
@@ -22,7 +21,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Oboi"
       \set Staff.shortInstrumentName = "Ob"
       \set Staff.midiInstrument = "oboe"
-      % GM 68
       \clef treble \key c \minor \time 2/4
       R2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 | R2 |
       R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 |
@@ -31,7 +29,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Clarinetti in B."
       \set Staff.shortInstrumentName = "Cl"
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition bf
       \clef treble \key d \minor \time 2/4
       r8 a'8\ff[ a' a' ] | f'2^\fermata | r8 g'8[ g' g' ] | e'2~ | e'2^\fermata | R2 | R2 |
@@ -41,7 +38,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Fagotti"
       \set Staff.shortInstrumentName = "Fg"
       \set Staff.midiInstrument = "bassoon"
-      % GM 70
       \clef bass \key c \minor \time 2/4
       R2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 |
       c'2\p~ | c'2~ | c'2~ | c'2 | b2~ | b2~ | b2~ | b2 | c'2 | b2 |
@@ -50,7 +46,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Corni in Es."
       \set Staff.shortInstrumentName = "Co"
       \set Staff.midiInstrument = "french horn"
-      % GM 60
       \transposition ef
       \clef treble \key c \major \time 2/4
       R2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 | R2 |
@@ -60,7 +55,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Trombe in Es."
       \set Staff.shortInstrumentName = "Tb"
       \set Staff.midiInstrument = "trumpet"
-      % GM 56
       \transposition ef
       \clef treble \key c \major \time 2/4
       R2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 | R2 |
@@ -70,7 +64,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Timpani in C.G."
       \set Staff.shortInstrumentName = "Ti"
       \set Staff.midiInstrument = "timpani"
-      % GM 47
       \clef bass \key c \major \time 2/4
       R2 | r2^\fermata | R2 | R2 | r2^\fermata | R2 | R2 |
       R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 |
@@ -79,7 +72,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Violino I."
       \set Staff.shortInstrumentName = "Vn I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 2/4
       r8 g'8\ff[ g' g' ] | ef'2^\fermata | r8 f'8[ f' f' ] | d'2~ | d'2^\fermata | R2 | R2 |
       r8 ef''8\p[ ef'' ef'' ] | c''2~ | c''4 r4 | R2 |
@@ -89,7 +81,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Violino II."
       \set Staff.shortInstrumentName = "Vn II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 2/4
       r8 g'8\ff[ g' g' ] | ef'2^\fermata | r8 f'8[ f' f' ] | d'2~ | d'2^\fermata | r8 g'8\p[ g' g' ] |
       ef'2~ | ef'2~ | ef'2~ | ef'8[ g' g' g' ] |
@@ -99,7 +90,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key c \minor \time 2/4
       r8 g8\ff[ g g ] | ef2^\fermata | r8 f8[ f f ] | d2~ | d2^\fermata | R2 | r8 af'8\p[ af' af' ] |
       g'2~ | g'2~ | g'4 r4 | r8 af'8[ af' af' ] | g'2 | d'2~ | d'2 | ef'8[ ef' ef' f' ] | g'2~ |
@@ -108,7 +98,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Violoncello"
       \set Staff.shortInstrumentName = "Vc"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 2/4
       r8 g,8\ff[ g, g, ] | ef,2^\fermata | r8 f,8[ f, f, ] | d,2~ | d,2^\fermata | R2 |
       c'2\p~ | c'2~ | c'2~ | c'2 | b2~ | b2~ | b2~ | b2 | c'2 | b2 |
@@ -117,7 +106,6 @@ Op.67 第一乐章开头的十六个小节，段落边界不是和声划出来�
       \set Staff.instrumentName = "Basso"
       \set Staff.shortInstrumentName = "Cb"
       \set Staff.midiInstrument = "contrabass"
-      % GM 43
       \transposition c
       \clef bass \key c \minor \time 2/4
       r8 g8\ff[ g g ] | ef2^\fermata | r8 f8[ f f ] | d2~ | d2^\fermata | R2 | R2 |

@@ -34,7 +34,6 @@ Op.49 No.2 的第二乐章是标准的小步舞曲。一拍弱起 `g'8.( fs'16)`
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key f \minor \time 3/4 \tempo 4 = 168 \partial 4 <c' af'>4\p\staccato^\markup { "Menuetto." }
       <df' bf'>4( <bf g'>) r4
       <c' af'>( <af f'>) <c' f'>( <c' e'> <c' f'> <c' g'>)
@@ -51,7 +50,6 @@ Op.49 No.2 的第二乐章是标准的小步舞曲。一拍弱起 `g'8.( fs'16)`
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key f \minor \time 3/4 \partial 4 r4
       r4 r f4
       r4 r <f af>( <g bf> <f af> <e g>)
@@ -91,7 +89,6 @@ Op.49 No.2 的第二乐章是标准的小步舞曲。一拍弱起 `g'8.( fs'16)`
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key f \major \time 3/4 \tempo 4 = 168 \partial 4 c'4\p^\markup { "Trio." }
       a'8([ g' a' f' g' a'] bf'[ a' bf' g' a' bf'])
       c''([ b' c'' d'' c'' bf'] a'[ g' a' bf' a' f'])
@@ -102,7 +99,6 @@ Op.49 No.2 的第二乐章是标准的小步舞曲。一拍弱起 `g'8.( fs'16)`
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key f \major \time 3/4 \partial 4 r4
       f4( a c'
       d' g f

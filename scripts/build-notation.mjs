@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url'
 import midiPackage from '@tonejs/midi'
 import MarkdownIt from 'markdown-it'
 import { parseNotationFenceInfo } from './notation-info.mjs'
+import { gmProgramFor, midiInstrumentNames } from './gm-instruments.mjs'
 
 const { Midi } = midiPackage
 
@@ -25,37 +26,15 @@ const workRoot = join(root, '.notation-work')
 const toolchain = JSON.parse(await readFile(join(root, 'toolchains.json'), 'utf8'))
 const targetVersion = toolchain.lilypond.version
 const generatorVersion = '4'
-const cacheSchema = 4
+const cacheSchema = 5
 const checkOnly = process.argv.includes('--check')
 const force = process.argv.includes('--force')
 
 const markdown = new MarkdownIt({ html: true })
-const instrumentPrograms = new Map(
-  Object.entries({
-    piano: 0,
-    'acoustic grand piano': 0,
-    harpsichord: 6,
-    celesta: 8,
-    organ: 19,
-    guitar: 24,
-    violin: 40,
-    viola: 41,
-    cello: 42,
-    contrabass: 43,
-    strings: 48,
-    'string ensemble': 48,
-    trumpet: 56,
-    trombone: 57,
-    tuba: 58,
-    'french horn': 60,
-    saxophone: 65,
-    flute: 73,
-    oboe: 68,
-    clarinet: 71,
-    bassoon: 70
-  })
-)
-
+// LilyPond's General MIDI instrument names, as listed in
+// share/lilypond/*/scm/lily/midi.scm, mapped to zero-based program numbers.
+// Content must use one of these names in every staff; the build maps the name
+// to the MIDI program directly, so the name is the single source of truth.
 function digest(data) {
   return createHash('sha256').update(data).digest('hex')
 }
@@ -574,19 +553,23 @@ async function renderAbc(block, workDirectory, outputDirectory) {
   return { svg, midi, sourceName: 'source.abc' }
 }
 
-function gmProgramsFromCode(code) {
-  return [...code.matchAll(/%\s*GM\s+(\d{1,3})\b/gi)]
-    .map((match) => Number(match[1]))
-    .filter((value) => Number.isInteger(value) && value >= 0 && value <= 127)
-}
-
 function requestedInstrument(block) {
-  // % GM <编号> 是权威值：LilyPond 只认乐器名，名字对不上会静默退回钢琴。
-  const programs = gmProgramsFromCode(block.code)
-  if (programs.length > 0) {
+  // The \midiInstrument name is authoritative: it is one of LilyPond's GM names,
+  // so the build can map it to an exact MIDI program without extra comments.
+  const names = midiInstrumentNames(block.code)
+  if (names.length > 0) {
+    const programs = names.map((name) => {
+      const program = gmProgramFor(name)
+      if (program === undefined) {
+        throw new Error(
+          `${block.stableId}: unknown General MIDI instrument "${name}"; use one of LilyPond's GM instrument names`
+        )
+      }
+      return program
+    })
     return {
-      strategy: 'gm-comment',
-      label: `GM ${programs.join('/')}`,
+      strategy: 'midiInstrument',
+      label: names.join('/'),
       program: programs.length === 1 ? programs[0] : null,
       programs
     }
@@ -597,19 +580,19 @@ function requestedInstrument(block) {
     if (Number.isInteger(numeric) && numeric >= 0 && numeric <= 127) {
       return { strategy: 'metadata', label: String(requested), program: numeric }
     }
-    const program = instrumentPrograms.get(String(requested).toLowerCase())
+    const program = gmProgramFor(requested)
     if (program === undefined) {
       throw new Error(`${block.stableId}: unknown General MIDI instrument ${requested}`)
     }
     return { strategy: 'metadata', label: String(requested), program }
   }
   const embedded =
-    block.language === 'lilypond'
-      ? /midiInstrument|Staff\.midiInstrument/.test(block.code)
-      : /^%%MIDI\s+(?:program|voice\b.*instrument=)/im.test(block.code)
+    block.language === 'abc'
+      ? /^%%MIDI\s+(?:program|voice\b.*instrument=)/im.test(block.code)
+      : false
   return embedded
     ? { strategy: 'score', label: 'score MIDI program', program: null }
-    : { strategy: 'default', label: 'acoustic grand piano', program: 0 }
+    : { strategy: 'default', label: 'acoustic grand', program: 0 }
 }
 
 async function readMidi(path) {

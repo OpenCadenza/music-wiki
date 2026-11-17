@@ -24,7 +24,6 @@ D 大调，2/4，`\tempo 4 = 88`，标着 Allegro risoluto。主题十六小节�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key d \major
       \time 2/4
@@ -48,7 +47,6 @@ D 大调，2/4，`\tempo 4 = 88`，标着 Allegro risoluto。主题十六小节�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass
       \key d \major
       \time 2/4
@@ -91,7 +89,6 @@ D 大调，2/4，`\tempo 4 = 88`，标着 Allegro risoluto。主题十六小节�
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key d \major
       \time 2/4
@@ -107,7 +104,6 @@ D 大调，2/4，`\tempo 4 = 88`，标着 Allegro risoluto。主题十六小节�
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble
       \key d \major
       \time 2/4
@@ -150,7 +146,6 @@ Op.11 第三乐章（主题是《Pria ch'io l'impegno》）给了最干净的对
   <<
     \new Staff = "clar" {
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition bf
       \clef treble
       \key c \major
@@ -176,7 +171,6 @@ Op.11 第三乐章（主题是《Pria ch'io l'impegno》）给了最干净的对
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass
       \key bf \major
       \time 4/4
@@ -201,7 +195,6 @@ Op.11 第三乐章（主题是《Pria ch'io l'impegno》）给了最干净的对
     \new PianoStaff <<
       \new Staff = "prh" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble
         \key bf \major
         \time 4/4
@@ -225,7 +218,6 @@ Op.11 第三乐章（主题是《Pria ch'io l'impegno》）给了最干净的对
       }
       \new Staff = "plh" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass
         \key bf \major
         \time 4/4

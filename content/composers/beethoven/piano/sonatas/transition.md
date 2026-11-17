@@ -10,7 +10,6 @@
   \new PianoStaff <<
     \new Staff = "up" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key f \minor \time 4/4 \tempo 4 = 190
       \set Score.currentBarNumber = #9
 % ===== m.9 =====
@@ -38,7 +37,6 @@ g'4 <ef' ef''>4 \f ( <df'! df''!> <c' c''> ) ~
     }
     \new Staff = "down" {
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key f \minor \time 4/4
 % ===== m.9 =====
 c \staccato ef! \staccato g \staccato c' \staccato

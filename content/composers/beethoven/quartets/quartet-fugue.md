@@ -120,22 +120,18 @@ cello = \relative cs {
   <<
   \new Staff = "v1" {
     \set Staff.midiInstrument = "violin"
-    % GM 40
     \violinI
   }
   \new Staff = "v2" {
     \set Staff.midiInstrument = "violin"
-    % GM 40
     \violinII
   }
   \new Staff = "va" {
     \set Staff.midiInstrument = "viola"
-    % GM 41
     \viola
   }
   \new Staff = "vc" {
     \set Staff.midiInstrument = "cello"
-    % GM 42
     \cello
   }
   >>

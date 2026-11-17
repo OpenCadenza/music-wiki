@@ -78,7 +78,6 @@
   \new StaffGroup <<
     \new Staff = "v1" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4 \tempo 4 = 138 \set Score.currentBarNumber = #54
   % m.53
   g'4 \staccato bf'4. \sf \staccato bf'8 \staccato d'' \staccato ef'' \staccato
@@ -115,7 +114,6 @@
     }
     \new Staff = "v2" {
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
   % m.53
   ef'4 \p \staccato ef'4. \sf ef'8 \staccato af' \staccato g' \staccato
@@ -152,7 +150,6 @@
     }
     \new Staff = "va" {
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key c \minor \time 4/4
   % m.53
   bf4 \p \staccato bf4. \sf bf8 \staccato bf \staccato bf \staccato
@@ -189,7 +186,6 @@
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 4/4
   % m.53
   ef4 \p \staccato g4. \sf g8 \staccato f \staccato ef \staccato

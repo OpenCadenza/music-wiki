@@ -13,7 +13,6 @@
     \new Staff = "up" {
       \set Staff.instrumentName = "Piano"
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef treble \key c \minor \time 3/4
       \tempo "Allegro molto e con brio" 2. = 76
       <ef' g' c''>4.\f r16 g'16([ ef''8. c''16] |
@@ -37,7 +36,6 @@
     \new Staff = "down" {
       \set Staff.instrumentName = ""
       \set Staff.midiInstrument = "acoustic grand"
-      % GM 0
       \clef bass \key c \minor \time 3/4
       <c ef g c'>4.\f r8 r4 |
       R2. |
@@ -124,7 +122,6 @@
       \set Staff.instrumentName = "Violino I."
       \set Staff.shortInstrumentName = "Vn I"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       \tempo 4 = 138
       \set Score.currentBarNumber = #17
@@ -142,7 +139,6 @@
       \set Staff.instrumentName = "Violino II."
       \set Staff.shortInstrumentName = "Vn II"
       \set Staff.midiInstrument = "violin"
-      % GM 40
       \clef treble \key c \minor \time 4/4
       r4 g'4\ff( a' b') |
       c''( ef' f' g') |
@@ -157,7 +153,6 @@
       \set Staff.instrumentName = "Viola"
       \set Staff.shortInstrumentName = "Va"
       \set Staff.midiInstrument = "viola"
-      % GM 41
       \clef alto \key c \minor \time 4/4
       r4 g\ff( a b) |
       c'( ef f g) |
@@ -172,7 +167,6 @@
       \set Staff.instrumentName = "Violoncello"
       \set Staff.shortInstrumentName = "Vc"
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass \key c \minor \time 4/4
       ef2\ff( d |
       c bf,) |

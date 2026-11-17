@@ -42,7 +42,6 @@ Op.11 第一乐章前十六小节把这件事分两步做完。第 1 到第 4 �
   <<
     \new Staff = "clar" {
       \set Staff.midiInstrument = "clarinet"
-      % GM 71
       \transposition bf
       \clef treble
       \key c \major
@@ -67,7 +66,6 @@ Op.11 第一乐章前十六小节把这件事分两步做完。第 1 到第 4 �
     }
     \new Staff = "vc" {
       \set Staff.midiInstrument = "cello"
-      % GM 42
       \clef bass
       \key bf \major
       \time 4/4
@@ -91,7 +89,6 @@ Op.11 第一乐章前十六小节把这件事分两步做完。第 1 到第 4 �
     \new PianoStaff <<
       \new Staff = "prh" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef treble
         \key bf \major
         \time 4/4
@@ -113,7 +110,6 @@ Op.11 第一乐章前十六小节把这件事分两步做完。第 1 到第 4 �
       }
       \new Staff = "plh" {
         \set Staff.midiInstrument = "acoustic grand"
-        % GM 0
         \clef bass
         \key bf \major
         \time 4/4
