@@ -296,3 +296,28 @@ html.dark .score-sheet img {
     transition: none;
   }
 }
+
+/* MathJax renders formulas as SVG plus an assistive MathML layer. Keep that
+   layer for screen readers but take it out of the visual flow, otherwise it
+   shows up as a second, selectable copy of the formula. */
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  display: block !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/* Wide display formulas scroll inside the column instead of overflowing it.
+   MathJax marks display math with display="true" in the SVG output. */
+mjx-container[display='true'],
+mjx-container[display='block'] {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
