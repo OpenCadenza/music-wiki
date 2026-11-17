@@ -144,6 +144,7 @@ const siteConfig = {
   lastUpdated: true,
   head,
   markdown: {
+    math: true,
     config: notationMarkdownPlugin,
     lineNumbers: true,
     theme: {

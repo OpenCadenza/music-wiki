@@ -11,6 +11,13 @@ const copied = ref(false)
 
 let instanceSeq = 0
 let copyTimer: ReturnType<typeof setTimeout> | undefined
+let renderedOnce = false
+
+// Must match the site font stack literally: mermaid measures label widths with
+// this stack, and a CSS variable resolves to the fallback font in its detached
+// measuring element, which produced boxes smaller than the painted text.
+const fontStack =
+  '"Inter", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif'
 
 /** Mermaid keys its styles and temporary DOM by id, so every render needs a unique one. */
 function nextRenderId() {
@@ -32,40 +39,67 @@ function showFallback() {
   host.value.innerHTML = `<pre class="mermaid-fallback">${escapeHtml(props.code)}</pre>`
 }
 
+function fitViewBox(svgEl: SVGSVGElement) {
+  const box = svgEl.viewBox.baseVal
+  let minX = box.x
+  let minY = box.y
+  let maxX = box.x + box.width
+  let maxY = box.y + box.height
+  try {
+    const content = svgEl.getBBox()
+    minX = Math.min(minX, content.x)
+    minY = Math.min(minY, content.y)
+    maxX = Math.max(maxX, content.x + content.width)
+    maxY = Math.max(maxY, content.y + content.height)
+  } catch {
+    // getBBox can fail on detached/hidden SVG; the mermaid viewBox still works.
+  }
+  const pad = 4
+  minX -= pad
+  minY -= pad
+  maxX += pad
+  maxY += pad
+  svgEl.setAttribute('viewBox', `${minX} ${minY} ${maxX - minX} ${maxY - minY}`)
+  svgEl.setAttribute('width', String(Math.ceil(maxX - minX)))
+  svgEl.setAttribute('height', String(Math.ceil(maxY - minY)))
+}
+
 async function renderDiagram() {
   if (!host.value) return
   try {
     const mermaid = (await import('mermaid')).default
+    // Wait for webfonts before mermaid measures label sizes.
+    await document.fonts.ready
     mermaid.initialize({
       startOnLoad: false,
       securityLevel: 'strict',
-      // Keep each diagram at its natural size; the block scrolls horizontally
-      // when a figure is wider than the content area, like a code block. Tall
-      // figures are not clipped: the page scrolls, as it does for code.
+      // Natural size; the block scrolls horizontally when wider than the column.
       useMaxWidth: false,
       theme: isDark.value ? 'dark' : 'default',
       themeVariables: {
         fontSize: '15px',
         actorFontSize: '15px',
         messageFontSize: '15px',
-        fontFamily: 'var(--vp-font-family-base)'
+        fontFamily: fontStack,
+        // Opaque background so long edge labels do not let arrows show through.
+        edgeLabelBackground: isDark.value ? '#1b1b1f' : '#ffffff'
+      },
+      flowchart: {
+        htmlLabels: true,
+        nodeSpacing: 40,
+        rankSpacing: 64,
+        padding: 8
       }
     })
     const { svg } = await mermaid.render(nextRenderId(), props.code)
-    if (host.value) {
-      host.value.innerHTML = svg
-      // Pin each SVG to its natural size (from the viewBox) so figures keep
-      // their own proportions instead of collapsing to the container width.
-      const svgEl = host.value.querySelector('svg')
-      if (svgEl) {
-        const box = svgEl.viewBox?.baseVal
-        if (box && box.width > 0 && box.height > 0) {
-          svgEl.removeAttribute('style')
-          svgEl.setAttribute('width', String(box.width))
-          svgEl.setAttribute('height', String(box.height))
-        }
-      }
+    if (!host.value) return
+    host.value.innerHTML = svg
+    const svgEl = host.value.querySelector('svg')
+    if (svgEl) {
+      svgEl.removeAttribute('style')
+      fitViewBox(svgEl as SVGSVGElement)
     }
+    renderedOnce = true
   } catch (error) {
     console.error('mermaid render failed:', error)
     showFallback()
@@ -85,9 +119,18 @@ async function copySource() {
   }
 }
 
-onMounted(() => {
+onMounted(async () => {
   showFallback()
-  void renderDiagram()
+  await renderDiagram()
+  // A font that finishes loading after the first pass changes label widths.
+  if (!renderedOnce) return
+  if (document.fonts?.addEventListener) {
+    document.fonts.addEventListener(
+      'loadingdone',
+      () => void renderDiagram(),
+      { once: true }
+    )
+  }
 })
 
 watch(isDark, () => void renderDiagram())
@@ -185,12 +228,17 @@ onBeforeUnmount(() => {
   margin: 0 auto;
   max-width: none;
   height: auto;
-  font-family: var(--vp-font-family-base);
 }
 
-.mermaid-scroll :deep(.nodeLabel),
-.mermaid-scroll :deep(.edgeLabel) {
-  font-family: var(--vp-font-family-base);
+/* VitePress styles every <p> inside .vp-doc (line-height 28px, vertical
+   margins), and mermaid labels are <p> inside foreignObject. Those styles make
+   rendered labels taller than mermaid measured them, which clips the text, so
+   restore mermaid's own metrics inside diagrams. */
+.mermaid-scroll :deep(foreignObject p) {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.5;
 }
 
 .mermaid-fallback {
