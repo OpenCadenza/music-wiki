@@ -62,7 +62,7 @@ lower = {
       b4 fs4 b,8 a,8) | % 4
       gs,4 gs4 a,4 | % 5
       <b, fs>4 <cs e>4 <ds fs>4 | % 6
-      e4 e2 | % 7
+      s4 e2 | % 7
       e,4( g,4 b,4) | % 8
     }
     \new Voice = "lh2" {
@@ -73,7 +73,7 @@ lower = {
       s2. | % 4
       gs,2 s4 | % 5
       s2. | % 6
-      s4 <cs, cs>4 <c, c>4 | % 7
+      e4( <cs, cs>4 <c, c>4) | % 7
       c,2 b,,4 | % 8
     }
   >>

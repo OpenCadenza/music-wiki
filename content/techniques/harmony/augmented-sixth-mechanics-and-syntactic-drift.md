@@ -185,13 +185,116 @@ violoncello = {
 - **张力跨越**：这一德六和弦并非一闪而过，而是被延留跨越小节线，强力压迫至 m. 8 拍头，随后经过精妙的声部导向，平稳释放在宽广深远的 B 大调半终止长音之中；
 - 贝多芬在此雄辩地证明：增六和弦不仅是戏剧性快板乐章中的爆破装置，更能在极静谧的慢板中凝聚起崇高的哲学张力。
 
-> **【谱例占位 · 待资料助手交付】**
+> **谱面定位**
 > - **作品**：路德维希·凡·贝多芬《E大调第30钢琴奏鸣曲》Op. 109，第三乐章 Andante molto cantabile ed espressivo
 > - **小节范围**：mm. 1–8
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
 > - **调性与拍号**：E 大调，3/4 拍
 > - **结构说明**：mm. 1–6 萨拉班德风格如歌先行句；m. 7 拍尾至 m. 8 拍头引入饱满德国六和弦（Ger.），跨小节线强力加压，最终在 m. 8 释放于半终止 HC
 > - **状态**：待制作真实 LilyPond 围栏与独立核验
+> - **速度与力度来源**：`4 = 84` 与 m.8 的 *p* 均据 Kern，DCML 该段没有节拍机与力度标记。
+
+```lilypond title="贝多芬 Op.109 第三乐章 第 1–8 小节" location="mm. 1–8"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Piano Sonata No. 30 in E major, Op. 109"
+  subtitle = "III. Andante molto cantabile ed espressivo — Tema, mm. 1–8"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key e \major
+  \time 3/4
+  \tempo "Andante molto cantabile ed espressivo" 4 = 84
+}
+
+upper = {
+  \clef treble
+  <<
+    \new Voice = "rh1" {
+      \voiceOne
+      gs'4( e'4. fs'8) | % 1
+      \oneVoice <fs ds'>4 <fs a b>2 | % 2
+      \voiceOne
+      <gs b gs'>4( e'4. fs'8) | % 3
+      \oneVoice <ds' fs'>4( <cs' e' as'>4 <ds' fs' b'>4) | % 4
+      \voiceOne \grace { b32[( e'32 gs'32]) } b'4( e'4. gs'16 fs'16) | % 5
+      \oneVoice ds'4( b4 \grace { a32[ b32 a32 gs32] } a4) | % 6
+      \voiceOne gs4 e'4.->( as8) | % 7
+      \oneVoice \clef bass as2\p( b4) | % 8
+    }
+    \new Voice = "rh2" {
+      \voiceTwo
+      b4 b4 cs'4 | % 1
+      s2. | % 2
+      r4 b4 cs'4 | % 3
+      s2. | % 4
+      r4 b4 cs'4 | % 5
+      s2. | % 6
+      s2. | % 7
+      g4( e4 ds4) | % 8
+    }
+  >>
+}
+
+lower = {
+  \clef bass
+  <<
+    \new Voice = "lh1" {
+      \voiceOne
+      e,4( gs,4 a,4 | % 1
+      b,4 cs4 ds4) | % 2
+      e4( gs4 as4 | % 3
+      b4 fs4 b,8 a,8) | % 4
+      gs,4 gs4 a,4 | % 5
+      <b, fs>4 <cs e>4 <ds fs>4 | % 6
+      s4 e2 | % 7
+      e,4( g,4 b,4) | % 8
+    }
+    \new Voice = "lh2" {
+      \voiceTwo
+      s2. | % 1
+      s2. | % 2
+      s2. | % 3
+      s2. | % 4
+      gs,2 s4 | % 5
+      s2. | % 6
+      e4( <cs, cs>4 <c, c>4) | % 7
+      c,2 b,,4 | % 8
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" \with { midiInstrument = "acoustic grand" } {
+      \global
+      \upper
+    }
+    \new Staff = "LH" \with { midiInstrument = "acoustic grand" } {
+      \global
+      \clef bass
+      \lower
+    }
+  >>
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.common-shortest-duration =
+        #(ly:make-moment 1/16)
+    }
+  }
+  \midi {
+    \context {
+      \Score
+      midiMergeUnisons = ##f
+    }
+  }
+}
+```
 
 ---
 

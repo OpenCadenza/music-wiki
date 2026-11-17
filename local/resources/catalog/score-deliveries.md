@@ -92,3 +92,6 @@
 ### 缺口（确认无可靠机器可读源）
 
 HWV 348 Air、K.550 III、Op.55 I、Op.67 IV、Reicha Op.88/2、Nielsen Op.43、Op.97、D.929、Hess 34、Op.125 I、Mahler 4 II、K.494。详见 `local/docs/实施记录/2026-11-16-DSH首批/批次日志.md` M19/M20 与各助手 `缺口报告.md`。
+
+| SCR-036 | 贝多芬 Op.109 III mm.1–8 | S6 | 核验一致（m.7 左手连音线已按核验补），已入正文 |
+| SCR-037 | 舒伯特 D.960 I mm.18–48 | S6 | 未交付：DCML/kern/Mutopia 均无舒伯特钢琴奏鸣曲语料，已登记缺口 |
