@@ -150,12 +150,15 @@ XML 大管：m.5 起 `C` 谱 4 线（次中音谱号），m.7 回 `F` 谱 4 线�
 
 ### 4.2 我独立取得的决定性证据：谱面本身就是 5/4
 
-**校勘版谱面直接给出了拍号变化。** M. L. Spence《Carl Nielsen's Quintet for Winds, Op. 43: A Critical Edition》（UNT 1995，据尼尔森手稿校订；论文明确写"manuscript score is in agreement with the published score"）的谱面（PDF 第 106 页 = 印刷页码 94）第一行从**第 6 小节**起：
+**校勘版谱面直接给出了拍号变化。** M. L. Spence《Carl Nielsen's Quintet for Winds, Op. 43: A Critical Edition》（UNT 1995，据尼尔森手稿校订；论文明确写"manuscript score is in agreement with the published score"）的谱面（PDF 第 106 页 = 印刷页码 94）第一行从**第 6 小节**起，逐字可读：
 
-- 第 7 小节开头：**`5/4` 拍号**（图像裁切 `tmp/sig_A.png`，放大后 5 与 4 两个数字清晰可辨）；
-- 第 8 小节开头：**`4/4` 拍号**（数字形式，非 common 记号；裁切 `tmp/sig_B.png`）。
+- 行首小节号 **`6`**（无拍号 ⇒ 承接前面的 4/4）；
+- 第一道小节线处：**`5/4`** 拍号（`5` 在上、`4` 在下），五个声部同时印出；进入该小节后大管/长笛的记谱是「二分休止 + 八分休止 + 十六分音型」；
+- 第二道小节线处：**`4/4`** 拍号（数字形式，非 common 记号）。
 
-这与 XML 完全一致：`m.7 → <time>5/4</time>`、`m.8 → <time symbol="common">4/4</time>`。
+放大裁切：`tmp/sys1_full.png`（整行 480 dpi）、`tmp/sig54.png`（5/4 竖切）、`tmp/sig44.png`（4/4 竖切）。
+
+这与 XML 完全一致：`m.7 → <time>5/4</time>`、`m.8 → <time symbol="common">4/4</time>`；连该小节的休止形态也对得上（生产者在 `核对记录.md` §4 表格里记录的"二分休止 + 八分休止 + …"正是谱面原样）。
 
 ### 4.3 其它证据的一致性
 
@@ -184,7 +187,17 @@ global = { \time 4/4 \partial 4 \tempo "Allegro ben moderato" 4 = 100 ... }
 %   圆号          句尾 r2（现为 r4）
 ```
 
-（更省事的写法：在 `global` 之外，于各声部第 7 小节前写 `\time 5/4`、第 8 小节前写 `\time 4/4`；LilyPond 会把拍号画在每个声部上，与谱面一致。若只想在总谱上画一次，用 `\set Timing.breakableItems`/`\time` 的 stencil 处理，但这属排版细节。）
+具体到五个声部（`.ly` 现文 → 应改为）：
+
+| 声部 | 现文（小节 7） | 应改为 |
+|---|---|---|
+| flute | `r4 r8\mp c'''16…` | `\time 5/4 r2 r8\mp c'''16…`，小节 8 前加 `\time 4/4` |
+| oboe | `r4 r8 \pp a''16…` | `\time 5/4 r2 r8 \pp a''16…`，小节 8 前加 `\time 4/4` |
+| clarinet | `r4 r4 g'16…` | `\time 5/4 r2 r4 g'16…`，小节 8 前加 `\time 4/4` |
+| horn | `…b'4 r4 \|` | `\time 5/4 …b'4 r2 \|`，小节 8 前加 `\time 4/4`（圆号本小节内音不动） |
+| bassoon | `r4 e'2.~( \|` | `\time 5/4 r2 e'2.~( \|`，小节 8 前加 `\time 4/4` |
+
+拍号印在各声部：谱面正是五个声部同时印 5/4 与 4/4，所以直接写在每个声部里即可，不需要 `\set Timing` 之类的隐藏处理。改完 barcheck（`\|`）会随新拍号自动校验小节时值，正好可以当作自制检查。
 
 ---
 
@@ -291,5 +304,6 @@ LilyPond 的产物与此**部分吻合**：`.ly` 打印出的号是 `(1)`（弱�
 | `pdfpng.py` / `pdftext.py` / `crop_pdf.py` / `vlines.py` | PDF 渲染、取字带坐标、裁切、竖线（小节线）定位 |
 | `barnumprobe*.ly/.pdf`、`vA.ly`、`vB.ly` | 小节号行为的最小复现实验 |
 | `shipped-1.png`、`shipped-2.png` | 交付 PDF 的两页渲染 |
-| `sp_p105.png`、`sp_p106.png`、`sig_A.png`、`sig_B.png` | 校勘版谱面：`Allegro ben moderato` 标题页、第 7 小节 **5/4**、第 8 小节 **4/4** |
+| `sp_p105.png`、`sp_p106.png` | 校勘版谱面：`Allegro ben moderato` 标题页、印刷页 94（第 6–12 小节） |
+| `sys1_full.png`、`sig54.png`、`sig44.png` | **决定性证据**：印刷页 94 第一行整行 480 dpi；第 7 小节 **5/4** 竖切；第 8 小节 **4/4** 竖切 |
 | `graceprobe.ly/.mid`、`transp/` | 装饰音 MIDI 行为、`\transposition` 不影响谱面的实验 |

@@ -99,3 +99,10 @@ HWV 348 Air、K.550 III、Op.55 I、Op.67 IV、Reicha Op.88/2、Nielsen Op.43、
 **2026-11-17 返修与复核结果**：SCR-032（海顿 Op.76/3）与 SCR-033（Op.135 III）已返修并入正文；SCR-035（Op.67 II）已改降号拼写、改名 m205-209，以"大管声部摘录"入正文；SCR-034（勃拉姆斯）核验与返修结论冲突未决，暂不入正文。另经主控最小探针复核：核验员对 Op.135 III 三处"应改 A♮/D♮"的判定系测量脚本按调号误算，实际原文件已正确。
 
 **2026-11-17 编制篇四件复核**：Reicha Op.88/2、Nielsen Op.43、Beethoven Op.97、Schubert D.929 经 7 条路线穷尽溯源后确认**当前无可用机器可读源**（详见 `local/workbench/scores/score-s7/缺口报告.md`）。唯一可行路径：Zenodo 的 PDMX `mxl.tar.gz`（约 1.8 GB，内含真实 MusicXML；已备好 5 个成员的精确取件清单 `score-s7/_probe/expect_mxl.tsv`）。
+
+| SCR-038 | 尼尔森 管乐五重奏 Op.43 第一乐章 开头 12 小节 | S8 | **核验未过、返修中**：速度文字应为 Allegro ben moderato；第 7 小节原为 5/4（校勘版谱面证实），交付件误归一为 4/4；另有小节号幽灵号与编号表述问题 |
+| SCR-039 | 舒伯特 D.929 第二乐章 mm.1–21 | S9 | 核验通过（补 13 条力度、修 m.16 连音线、隐藏节拍机后），已入正文 |
+
+### 新增谱源：PDMX MusicXML（2026-11-17）
+
+Zenodo 记录 15571083 的 `mxl.tar.gz`（1,894,335,797 B）已取回并解包，5 份 MusicXML 归档在 `scholar-plan-dev/local/resources/scores/pdmx/`（附 README）：Nielsen Op.43 全曲、Nielsen Kvintet 另一转录、Schubert D.929 二乐章三份转录。归档结构为 `mxl/<两位hex>/<两位hex>/<hash>.mxl`，与 `score-s7` 清单里的 `PDMX/mxl/...` 写法不同，按 `members-map.json` 的文件名前缀匹配解出。
