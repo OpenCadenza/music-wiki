@@ -97,3 +97,5 @@ HWV 348 Air、K.550 III、Op.55 I、Op.67 IV、Reicha Op.88/2、Nielsen Op.43、
 | SCR-037 | 舒伯特 D.960 I mm.18–48 | S6 | 未交付：DCML/kern/Mutopia 均无舒伯特钢琴奏鸣曲语料，已登记缺口 |
 
 **2026-11-17 返修与复核结果**：SCR-032（海顿 Op.76/3）与 SCR-033（Op.135 III）已返修并入正文；SCR-035（Op.67 II）已改降号拼写、改名 m205-209，以"大管声部摘录"入正文；SCR-034（勃拉姆斯）核验与返修结论冲突未决，暂不入正文。另经主控最小探针复核：核验员对 Op.135 III 三处"应改 A♮/D♮"的判定系测量脚本按调号误算，实际原文件已正确。
+
+**2026-11-17 编制篇四件复核**：Reicha Op.88/2、Nielsen Op.43、Beethoven Op.97、Schubert D.929 经 7 条路线穷尽溯源后确认**当前无可用机器可读源**（详见 `local/workbench/scores/score-s7/缺口报告.md`）。唯一可行路径：Zenodo 的 PDMX `mxl.tar.gz`（约 1.8 GB，内含真实 MusicXML；已备好 5 个成员的精确取件清单 `score-s7/_probe/expect_mxl.tsv`）。
