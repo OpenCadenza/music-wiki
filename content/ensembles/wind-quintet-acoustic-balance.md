@@ -148,10 +148,161 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 
 - **单簧管夏卢摩区与圆号对话（mm. 1–4）**：乐章开篇由单簧管在低音区（Chalumeau）与圆号低声交涉，大管随后以极弱的断奏加入。长笛与双簧管完全保持休止，完全避开了高频共振峰对幽暗气氛的破坏；
 - **动态避让与进场补偿（mm. 5–12）**：当长笛以弱奏（*p*）接入主题时，圆号立刻收敛为持续的背景极弱踏板长音（*pp*），大管则在中高音区以清脆跳音陪伴，为主部主题创造了通透无阻的声学通道。
+```lilypond title="卡尔·尼尔森 管乐五重奏 Op.43 第一乐章" location="Allegro ben moderato，mm.1–11（含 1 拍弱起）"
+\version "2.26.0"
+\language "english"
 
-**卡尔·尼尔森《管乐五重奏》Op. 43 第一乐章 mm. 1–12（声部摘录）**
+global = {
+  \time 4/4
+  \partial 4
+  \tempo "Allegro ben moderato" 4 = 100
+  \set Score.barNumberVisibility = #all-bar-numbers-visible
+  \override Score.BarNumber.break-visibility = #end-of-line-invisible
+  \once \override Score.BarNumber.stencil = ##f
+}
 
-> 谱例待补：卡尔·尼尔森《管乐五重奏》Op. 43 第一乐章 mm. 1–12（声部摘录）。
+flute = {
+  \global
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r8\mp b''16( a''16 gs''16 a''16 b''16) r16
+      \grace { a''16( b''16 } a''8-> gs''16) r16
+      \grace { a''16( b''16 } a''8-> gs''16) r16 |
+  fs''8( b''8-.) b''8-. b''8-. b''2~( |
+  b''2 e'''2) |
+  \time 5/4
+  r2 r8\mp c'''16( b''16 a''8 e''8 a''8 e''8 |
+  \time 4/4
+  a''2) e'''8( b''16 a''16 g''8 fs''8 |
+  e''8 ds''8 e''8 ds''8 e''8 fs''8 g''8 a''8 |
+  b''8 cs'''8 d'''8 \f e'''8 fs'''4 e'''4 |
+  d'''4 cs'''4 \textMark \markup \italic "calando" b''2) |
+}
+
+oboe = {
+  \global
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r8 \pp gs''16( fs''16 e''16 fs''16 gs''16) r16
+      \grace { fs''16( gs''16 } fs''8-> e''16) r16
+      \grace { fs''16( gs''16 } fs''8-> e''16) r16 |
+  ds''8( b'8-.) b'8-. b'8-. b'2~( |
+  b'2 e''2) |
+  \time 5/4
+  r2 r8 \pp a''16( e''16 c''8 b'8 c''8 b'8 |
+  \time 4/4
+  c''8 d''8 e''8 fs''8 g''16 a''16 g''16 fs''16 e''8 b'8 |
+  c''8 b'8 c''8 b'8 c''8 d''8 e''8 fs''8 |
+  g''8 a''8 b''8 \pp cs'''8 d'''4~ d'''16 cs'''16 b''16 d'''16 |
+  cs'''16 b''16 a''16 cs'''16 b''16 a''16 g''16 b''16
+      a''16 g''16 fs''16 a''16 g''4) |
+}
+
+clarinet = {
+  \global
+  \transposition a
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r8 \p g''16( d''16 e''16 d''16 g''16) r16
+      f''8(-> d''16) r16 e''8(-> d''16) r16 |
+  r8 a''16( g''16 fs''16 g''16 a''16) r16
+      \grace { g''16( a''16 } g''8-> fs''16) r16
+      \grace { g''16( a''16 } g''8-> fs''16) r16 |
+  \grace { f''16( g''16 } f''8-> d''16) r16 \grace { f''16( g''16 } f''8-> d''16) r16 e''2 |
+  \time 5/4
+  r2 r4 g'16( a'16) bf'16-. bf'16-. bf'4~( |
+  \time 4/4
+  bf'4. c''8 d''2~ |
+  d''16 c''16 bf'16 c''16 a'4 bf'16 c''16 d''16 ef''16 f''16 c''16 a'16 f'16 |
+  c''16 g'16 e'16 c'16 g'8) r8 d'''16( a''16 f''16 d''16 g''4~ |
+  g''2.~ g''16 f''16 e''16 g''16) |
+}
+
+horn = {
+  \global
+  \transposition f
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  fs'1\p->~ |
+  fs'1~ |
+  fs'2~ fs'8 gs'16( fs'16 e'16 b16) e'16-. e'16-. |
+  \time 5/4
+  e'16(-> b16) e'16-. e'16-. fs'16(-> gs'16) b'16-. b'16-. b'4 r2 |
+  \time 4/4
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+bassoon = {
+  \global
+  \clef bass
+  b8\mp( gs8 |
+  e4-.) e4-. e8( ds8 e8 ds8 |
+  e8 fs8 gs8 a8 b8 cs'8 ds'8 e'8 |
+  f'4\mf~ f'16 e'16 d'16 f'16 e'16 d'16 c'16 e'16 d'16 c'16 b16 d'16 |
+  b4) r4 r2 |
+  \clef tenor
+  r8 \p a'16( gs'16 fs'16 gs'16 a'16) r16
+      \grace { gs'16 a'16 } gs'8-> fs'16 r16
+      \grace { gs'16 a'16 } gs'8-> fs'8 |
+  \grace { f'16( g'16 } f'8-> d'16) r16 \grace { f'16( g'16 } f'8-> d'16) r16 e'2 |
+  \clef bass
+  \time 5/4
+  r2 e'2.~( |
+  \time 4/4
+  e'8 d'16 c'16 b16 a16 g16 fs16 e4 e,4 |
+  fs,4. b,8 e,4) r4 |
+  r4 \p e'16( b16 g16 e16 b8) r8 r4 |
+  r1 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff  {
+      \set Staff.midiInstrument = "flute"
+      \clef treble
+      \key e \major
+      \flute
+    }
+    \new Staff  {
+      \set Staff.midiInstrument = "oboe"
+      \clef treble
+      \key e \major
+      \oboe
+    }
+    \new Staff  {
+      \set Staff.midiInstrument = "clarinet"
+      \clef treble
+      \key g \major
+      \clarinet
+    }
+    \new Staff  {
+      \set Staff.midiInstrument = "french horn"
+      \clef treble
+      \key b \major
+      \horn
+    }
+    \new Staff  {
+      \set Staff.midiInstrument = "bassoon"
+      \clef bass
+      \key e \major
+      \bassoon
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

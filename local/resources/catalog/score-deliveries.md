@@ -100,7 +100,7 @@ HWV 348 Air、K.550 III、Op.55 I、Op.67 IV、Reicha Op.88/2、Nielsen Op.43、
 
 **2026-11-17 编制篇四件复核**：Reicha Op.88/2、Nielsen Op.43、Beethoven Op.97、Schubert D.929 经 7 条路线穷尽溯源后确认**当前无可用机器可读源**（详见 `local/workbench/scores/score-s7/缺口报告.md`）。唯一可行路径：Zenodo 的 PDMX `mxl.tar.gz`（约 1.8 GB，内含真实 MusicXML；已备好 5 个成员的精确取件清单 `score-s7/_probe/expect_mxl.tsv`）。
 
-| SCR-038 | 尼尔森 管乐五重奏 Op.43 第一乐章 开头 12 小节（弱起 + 印刷谱 mm.1–11） | S8 | 第 2 版已改：速度文字 Allegro ben moderato、恢复第 7 小节 5/4、修小节号与注释；**待核验员复核四处后回填** |
+| SCR-038 | 尼尔森 管乐五重奏 Op.43 第一乐章 开头 12 小节（弱起 + 印刷谱 mm.1–11） | S8 | 第 2 版核验**可放行**（5/4 恢复、速度文字、小节号、注释四处均过），已按新乐器契约回填正文 |
 | SCR-039 | 舒伯特 D.929 第二乐章 mm.1–21 | S9 | 核验通过（补 13 条力度、修 m.16 连音线、隐藏节拍机后），已入正文 |
 
 ### 新增谱源：PDMX MusicXML（2026-11-17）
