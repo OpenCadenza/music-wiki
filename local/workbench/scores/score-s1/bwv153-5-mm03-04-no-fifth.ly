@@ -29,7 +29,7 @@ global = {
 
 soprano = {
   \global
-  cs''4 cs''4 b'4 b'4 |
+  c''4 c''4 b'4 b'4 |
   a'2.\fermata \once \omit Rest r4 |
 }
 

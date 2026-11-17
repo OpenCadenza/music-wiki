@@ -26,12 +26,98 @@
 - 开篇第 1 小节的和弦被明确标注为 `#viio6` $\to$ `i6`。
 - 这一标注揭示了关键的音乐实质：贝多芬完全打破了古典奏鸣乐章以主和弦奠定调性基础的惯例，直接以悬浮、紧张的**导音减和弦第一转位**切入。细胞内部的 $E$ 与 $A\flat$ 构成了减七和弦骨架，使整个疑问动机悬置在半空调性场中，赋予听觉强烈的动荡感与解决渴望。
 
-> **乐谱例证 1：待交付谱例定位（真实小节规范）**
+> **乐谱例证 1：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
 > - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Grave ma non troppo tratto (3/2拍), mm. 1–4
 > - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：中提琴与大提琴八度齐奏 $G-E-A\flat$（Muss es sein?），第一小提琴第 3 拍 $fp$ 切入并级进叹息下行
-> - **交付状态**：原旧工程文件 `beethoven-op135-mvt4-mm1-4-grave.ly` 经核验判定不合格（存在第 4 小节大提琴旋律臆造及休止符不符等严重差异）；当前以真实小节定位规范占位，待资料助手基于 Kern/DCML 重新编码交付
+
+```lilypond title="贝多芬 Op.135 第四乐章 第 1–4 小节（Grave）" location="mm. 1–4"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 16 in F Major, Op. 135"
+  subtitle = "IV. Der schwer gefaßte Entschluß — Grave ma non troppo tratto, mm. 1–4"
+  location = "Score example 1: mm. 1–4 (Muss es sein?)"
+  composer = "Ludwig van Beethoven"
+  tagline = ##f
+}
+
+
+global = {
+  \key f \minor
+  \time 3/2
+  \tempo "Grave ma non troppo tratto" 2 = 40
+  \set Score.currentBarNumber = #1
+}
+
+violinOne = {
+  \global
+  \clef treble
+  r2 r2 c''2^\fp~ |                            % m.1
+  c''8( bf'8 af'8 g'8 f'8 af'8 c''8 e''8 f''4) r4 |  % m.2
+  r2 r2 f''2~ |                              % m.3
+  f''8( ef''8 df''8 c''8 bf'8 df''8 f''8 a''8 bf''4) r4 |  % m.4
+  \bar "|."
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  r1. |                                     % m.1
+  r2 c''2~ c''8( bf'8 af'8 g'8) |            % m.2
+  f'4 r4 r2 r2 |                            % m.3
+  f'2~ f'8( ef'8 df'8 c'8 bf8 d'8 f'8 bf'8) |   % m.4
+  \bar "|."
+}
+
+viola = {
+  \global
+  \clef alto
+  g4. e8 af2 r2 |                           % m.1
+  c'2~ c'8( bf8 af8 g8 f8 af8 c'8 f'8) |    % m.2
+  c'4. a8 df'2 r2 |                         % m.3
+  r2 f'2~ f'8 f'8( d'8 bf8) |               % m.4
+  \bar "|."
+}
+
+cello = {
+  \global
+  \clef bass
+  g,4. e,8 af,2 r2 |                        % m.1
+  r1. |                                     % m.2
+  c4. a,8 df2 r2 |                          % m.3
+  r2 r2 af2 |                               % m.4
+  \bar "|."
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I"
+      midiInstrument = "violin"
+    } { \violinOne }
+
+    \new Staff \with {
+      instrumentName = "Violin II"
+      midiInstrument = "violin"
+    } { \violinTwo }
+
+    \new Staff \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+    } { \viola }
+
+    \new Staff \with {
+      instrumentName = "Violoncello"
+      midiInstrument = "cello"
+    } { \cello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -57,12 +143,106 @@
 - mm. 15–16 在大提琴冲向主音时被标注为明确的 `I`。
 - 这一和声进程表明，答句动机的音程反转与属到主（$V \to I$）的强功能解决形成了完全共振。和声不再是开篇的悬浮导音，而是提供了无懈可击的功能支撑。
 
-> **乐谱例证 2：待交付谱例定位（真实小节规范）**
+> **乐谱例证 2：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
 > - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Allegro (4/4拍), mm. 12 (弱起) – 16
 > - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：第一、第二小提琴八度弱起跳进 $A-C-G$ 与 $G-B\flat-F$（Es muss sein!），大提琴与中提琴断音级进爬升
-> - **交付状态**：原旧工程文件 `beethoven-op135-mvt4-mm12-16-allegro.ly` 经核验判定不合格（存在中提琴与大提琴音区八度倒错、m.16 音高错误等严重差异）；当前以真实小节定位规范占位，待资料助手基于 Kern/DCML 重新编码交付
+
+```lilypond title="贝多芬 Op.135 第四乐章 第 12–16 小节（Allegro）" location="mm. 12–16"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 16 in F Major, Op. 135"
+  subtitle = "IV. Der schwer gefaßte Entschluß — Allegro, mm. 12 (Auftakt) – 16"
+  location = "Score example 2: mm. 12 (anacrusis) – 16 (Es muss sein!)"
+  composer = "Ludwig van Beethoven"
+  tagline = ##f
+}
+
+
+global = {
+  \key f \minor
+  \time 3/2
+  \set Score.currentBarNumber = #12
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \tempo "Grave ma non troppo tratto" 2 = 40
+  r2 c''8 c''8 c''4~ c''4 \tempo "Allegro" 2 = 80 a''4 |   % m.12 (3/2); a''4 = Allegro anacrusis
+  \time 4/4 \key f \major
+  c'''2 g''2 |                               % m.13 (A -> C -> G)
+  r2 r4 g''4 |                               % m.14 (anacrusis G; 3 beats rest)
+  bf''2 f''2 |                               % m.15 (G -> Bb -> F)
+  r1 |                                       % m.16
+  \bar "|."
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  r2 c'8 c'8 c'4~ c'4 a'4 |                  % m.12
+  \time 4/4 \key f \major
+  c''2 g'2 |                                 % m.13
+  r2 r4 g'4 |                                % m.14 (3 beats rest)
+  bf'2 f'2 |                                 % m.15
+  r1 |                                       % m.16
+  \bar "|."
+}
+
+viola = {
+  \global
+  \clef alto
+  c8 c8 c4 r2 r4 r4 |                        % m.12
+  \time 4/4 \key f \major
+  r4 c4 e4 g4 |                              % m.13 (C–E–G)
+  c'4 d'4 ef'4 e'4 |                         % m.14 (C–D–Eb–E)
+  f'4 a'4 c''4 f'4 |                         % m.15 (F–A–C)
+  f'4 f'4 f'4 a'4 |                          % m.16
+  \bar "|."
+}
+
+cello = {
+  \global
+  \clef bass
+  c,8 c,8 c,4 r2 r4 r4 |                     % m.12
+  \time 4/4 \key f \major
+  r4 c,4 e,4 g,4 |                           % m.13
+  c4 d4 ef4 e4 |                             % m.14
+  f4 a4 c'4 d'4 |                            % m.15
+  ef'4 e'4 f'4 f'4 |                         % m.16
+  \bar "|."
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I"
+      midiInstrument = "violin"
+    } { \violinOne }
+
+    \new Staff \with {
+      instrumentName = "Violin II"
+      midiInstrument = "violin"
+    } { \violinTwo }
+
+    \new Staff \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+    } { \viola }
+
+    \new Staff \with {
+      instrumentName = "Violoncello"
+      midiInstrument = "cello"
+    } { \cello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -81,12 +261,122 @@
 - 此处的 `III+` 正是由低音问句落音 $A\flat$ 与高音震音中的持续音 $C$、$E$ 所共同构成的**增三和弦**（$A\flat - C - E$）。
 - 在传统功能和声中，增三和弦由于其对称性与模糊性，具有极强的不稳定性。贝多芬在此处通过高音尖锐震音与增三和弦的碰撞，彻底剥夺了问句动机在呈示部的哲学哀伤，将其异化为面对命运崩溃时的惊悚与绝望。同一动机细胞在此完成了从“古典式疑问”向“浪漫式惊惧”的极限和声再语境化。
 
-> **乐谱例证 3：待交付谱例定位（真实小节规范）**
+> **乐谱例证 3：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
 > - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Grave ma non troppo tratto (3/2拍), mm. 165–172
 > - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：中低音声部重现 $G-E-A\flat$ 问句动机，上方两把小提琴极高音区十六分音符震音摩擦 $C-E$，构成增三和弦（III+）
-> - **交付状态**：已由学者建立 task-11 申请资料助手编写交付，当前以真实小节定位占位
+
+```lilypond title="贝多芬 Op.135 第四乐章 第 165–172 小节（Grave）" location="mm. 165–172"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 16 in F Major, Op. 135"
+  subtitle = "IV. Der schwer gefaßte Entschluß (Grave, mm. 165–172)"
+  location = "mm. 165–172"
+  composer = "Ludwig van Beethoven"
+  tagline = ##f
+}
+
+
+global = {
+  \key f \minor
+  \time 3/2
+  \tempo "Grave ma non troppo tratto" 2 = 40
+  \set Score.currentBarNumber = #165
+}
+
+violinOne = {
+  \global
+  \clef treble
+  c'''2:16\ff c'''2:16 c'''2:16 |
+  c'''2:16\> c'''2:16 c'''2:16 |
+  c'''2:16\ff c'''2:16 c'''4..:16\! r16 |
+  c'''2:16\> c'''2:16 bf''2:16 |
+  bf''2:16\f bf''2:16 bf''2:16\> |
+  <df'' bf''>2:16\f <df'' bf''>2:16 <df'' bf''>4 r4 |
+  r2 <df'' bf''>2:16\f <df'' bf''>4 r4 |
+  r2 <df'' bf''>2:16\f\> <df'' bf''>4\dim r4\! |
+  \bar "||"
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  <c'' e''>2:16\ff <c'' e''>2:16 <c'' e''>2:16 |
+  <c'' e''>2:16\> <c'' e''>2:16 <c'' f''>2:16 |
+  <a' f''>2:16\ff <a' f''>2:16 <a' f''>2:16\! |
+  <a' f''>2:16\> <a' f''>2:16 <bf' f''>2:16 |
+  <df'' f''>2:16\f <df'' g''>2:16 <df'' g''>2:16\> |
+  <e'' g''>2:16\f <e'' g''>2:16 <e'' g''>4 r4 |
+  r2 <e'' g''>2:16\f <e'' g''>4 r4 |
+  r2 <e'' g''>2:16\f\> <e'' g''>4\dim r4\! |
+  \bar "||"
+}
+
+viola = {
+  \global
+  \clef alto
+  g4.\ff e8-. af2~ <af c'>2 |
+  <af c'>8( bf af g af c' f' g' af' f' c' af) |
+  c'4.\ff a8-. df'2 r2 |
+  r2 r2 ( df'8 f' bf' df'' ) |
+  df'4.\f bf8-. e'2 r2 |
+  df2:16\f df4 r4 r2 |
+  df2:16\f c4 r4 r2 |
+  c2:16\f\> c4\dim r4 r2\! |
+  \bar "||"
+}
+
+cello = {
+  \global
+  \clef bass
+  g,4.\ff e,8-. af,2 r2 |
+  R1. |
+  c4.\ff a,8-. df2 f2~\sf |
+  f8( ef df c df f bf c' df'4) r4 |
+  df4.\f bf,8-. e2 r2 |
+  df,2:16\f df,4 r4 r2 |
+  df,2:16\f c,4 r4 r2 |
+  c,2:16\f\> c,4\dim r4 r2\! |
+  \bar "||"
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Violin I"
+      midiInstrument = "violin"
+      midiMinimumVolume = #0.2
+      midiMaximumVolume = #0.9
+    } { \violinOne }
+
+    \new Staff \with {
+      instrumentName = "Violin II"
+      midiInstrument = "violin"
+      midiMinimumVolume = #0.2
+      midiMaximumVolume = #0.9
+    } { \violinTwo }
+
+    \new Staff \with {
+      instrumentName = "Viola"
+      midiInstrument = "viola"
+      midiMinimumVolume = #0.2
+      midiMaximumVolume = #0.9
+    } { \viola }
+
+    \new Staff \with {
+      instrumentName = "Violoncello"
+      midiInstrument = "cello"
+      midiMinimumVolume = #0.2
+      midiMaximumVolume = #0.9
+    } { \cello }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -108,12 +398,152 @@ $$G \to A \to B\flat \to C \to D \to E\flat \to D$$
 
 更为精妙的是，在后续的情节发展中，舒伯特将这个包含持续音小二度摩擦的惊呼细胞，依次在 g 小调（$E\flat-D$）、a 小调（$F-E$）与 c 小调（$A\flat-G$）中**连续抬升调性台阶**。动机细胞的核心音程没有改变，但每一次和声重设与音高攀升，都将戏剧冲突推向更高维度的窒息感。
 
-> **乐谱例证 4：待交付谱例定位（真实小节规范）**
+> **乐谱例证 4：谱面定位**
 > - **作品**：Franz Schubert - Erlkönig, D. 328 (Op. 1)
 > - **小节范围**：mm. 1–5（前奏马蹄律动与低音半音爬升）及 mm. 72–76（儿子惊呼中的小二度/小九度对撞）
 > - **编制**：独唱声部（Voice: GM 54）与钢琴伴奏（Piano: GM 0）
 > - **谱面特征**：高音独唱固定唱 $E\flat 5$，钢琴右手八度三连音强奏撞击 $D4/D5$，左手半音副属推进
-> - **交付状态**：原旧工程文件（`schubert-d328-mm1-5-prelude.ly` 与 `schubert-d328-mm72-76-mein-vater.ly`）经独立核验判定不合格（存在马蹄断奏被篡改为保持音、独唱漏音及左手时值错误等严重缺陷，见旧谱核验报告）；当前以真实小节定位规范占位，待资料助手基于权威源（Mutopia/Peters 原谱）重新编码交付
+
+```lilypond title="舒伯特 D.328《魔王》钢琴前奏 第 1–5 小节" location="mm. 1–5"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Erlkönig, D. 328 (Op. 1)"
+  subtitle = "Piano introduction: mm. 1–5 (Schnell)"
+  location = "Score example 4a: mm. 1–5 (prelude, piano solo)"
+  composer = "Franz Schubert"
+  tagline = ##f
+}
+
+
+global = {
+  \key g \minor
+  \time 4/4
+  \tempo "Schnell" 4 = 152
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] }
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } |   % m.1
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] }
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } |   % m.2
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] }
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } |   % m.3
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] }
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } |   % m.4
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] }
+  \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } \tuplet 3/2 { <g g'>8[ <g g'> <g g'>] } |   % m.5
+  \bar "|."
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  R1 |                                                                  % m.1 (rest)
+  \tuplet 3/2 { g,8( a,8 bf,8 } \tuplet 3/2 { c8 d8 ef8) } d4-. bf,4-. |  % m.2
+  g,4-. r4 r2 |                                                        % m.3
+  \tuplet 3/2 { g,8( a,8 bf,8 } \tuplet 3/2 { c8 d8 ef8) } d4-. bf,4-. |  % m.4
+  g,4-. r4 r2 |                                                        % m.5
+  \bar "|."
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff \with {
+      instrumentName = "Piano"
+      midiInstrument = "acoustic grand"
+    } { \pianoUpper }
+    \new Staff \with {
+      midiInstrument = "acoustic grand"
+    } { \pianoLower }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+```lilypond title="舒伯特 D.328《魔王》第 72–76 小节" location="mm. 72–76"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Erlkönig, D. 328 (Op. 1)"
+  subtitle = "„Mein Vater, mein Vater, und hörest du nicht?“ — mm. 72–76"
+  location = "Score example 4b: mm. 72–76 (son: E♭5 against pedal D)"
+  composer = "Franz Schubert"
+  tagline = ##f
+}
+
+
+global = {
+  \key g \minor
+  \time 4/4
+  \tempo "Schnell" 4 = 152
+  \set Score.currentBarNumber = #72
+}
+
+voice = {
+  \global
+  \clef treble
+  bf'2 r4^\f d''4 |                     % m.72 (f from 3rd beat per Mutopia dynamics layer)
+  ef''2 ef''4. ef''8 |                  % m.73
+  ef''8( d''8) d''4 r4 d''4 |           % m.74
+  ef''2 ef''4. ef''8 |                  % m.75
+  d''2 r4 a'4 |                         % m.76
+  \bar "|."
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \tuplet 3/2 { <d f bf>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] }
+  \f \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } |   % m.72
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] }
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } |   % m.73
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] }
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } |   % m.74
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] }
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } |   % m.75
+  \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] }
+  \p \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } \tuplet 3/2 { <d' d''>8[ <d' d''> <d' d''>] } |   % m.76
+  \bar "|."
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  <bf,, bf,>4 r2 <b, b>4 |             % m.72
+  <c c'>2 <a, a>2 |                    % m.73
+  <fs, fs>2 r4 <b, b>4 |               % m.74
+  <c c'>2 <a, a>2 |                    % m.75
+  <fs, fs>2 r4 fs4 |                  % m.76
+  \bar "|."
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Voice"
+      midiInstrument = "voice oohs"
+    } { \voice }
+
+    \new PianoStaff <<
+      \new Staff \with {
+        instrumentName = "Piano"
+        midiInstrument = "acoustic grand"
+      } { \pianoUpper }
+      \new Staff \with {
+        midiInstrument = "acoustic grand"
+      } { \pianoLower }
+    >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

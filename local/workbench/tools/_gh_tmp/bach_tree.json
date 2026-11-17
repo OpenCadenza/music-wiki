@@ -1,0 +1,238 @@
+{
+  "sha": "ec7aa22c9f2748351a9fc2e3015a62a89f157d87",
+  "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/trees/ec7aa22c9f2748351a9fc2e3015a62a89f157d87",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "073b963da9e1172e57b9a5db441e4eef90716ae9",
+      "size": 160,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/073b963da9e1172e57b9a5db441e4eef90716ae9"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2817e31167e5cc5b88a992c87c247639cc135a56",
+      "size": 4565,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/2817e31167e5cc5b88a992c87c247639cc135a56"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8baaec00483a2f196ce7603451a89e0024cb2886",
+      "size": 17772,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/8baaec00483a2f196ce7603451a89e0024cb2886"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f91d2dcf096ae33eba7d5472331bd249535ef83",
+      "size": 2235,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/9f91d2dcf096ae33eba7d5472331bd249535ef83"
+    },
+    {
+      "path": "README.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbec3051c87ce2473fe229cf9e68ba912f023bbe",
+      "size": 3502,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/cbec3051c87ce2473fe229cf9e68ba912f023bbe"
+    },
+    {
+      "path": "kern",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b15e30ba131fc884c062114a82f6e7c0389caeb3",
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/trees/b15e30ba131fc884c062114a82f6e7c0389caeb3"
+    },
+    {
+      "path": "kern/.kernscores",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b780d91e2b1497d7d4d77f59b667770dc89df2c",
+      "size": 16,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/8b780d91e2b1497d7d4d77f59b667770dc89df2c"
+    },
+    {
+      "path": "kern/.ref",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a9a4b768a01a0877f2c781a91f7dc52d4cba2df",
+      "size": 1569,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/7a9a4b768a01a0877f2c781a91f7dc52d4cba2df"
+    },
+    {
+      "path": "kern/bwv1046a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15037d8fd0247379b7cd90641effffba8e6ddbd5",
+      "size": 76473,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/15037d8fd0247379b7cd90641effffba8e6ddbd5"
+    },
+    {
+      "path": "kern/bwv1046b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47c38e32d3ff4411f9018414346469edd72765d3",
+      "size": 21102,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/47c38e32d3ff4411f9018414346469edd72765d3"
+    },
+    {
+      "path": "kern/bwv1046c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2de9a42177c82943b909d65231e59d27df148c04",
+      "size": 85917,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/2de9a42177c82943b909d65231e59d27df148c04"
+    },
+    {
+      "path": "kern/bwv1046d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8bd7dc31c42e795bfc6c84b49cf0d2010490f05",
+      "size": 11368,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/e8bd7dc31c42e795bfc6c84b49cf0d2010490f05"
+    },
+    {
+      "path": "kern/bwv1046e.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d443e915399d63a5c15e08217b5f2a0eb9900c6e",
+      "size": 3314,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/d443e915399d63a5c15e08217b5f2a0eb9900c6e"
+    },
+    {
+      "path": "kern/bwv1046f.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "084e27965df8d46f02afd37b3d00dc443e71addb",
+      "size": 7148,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/084e27965df8d46f02afd37b3d00dc443e71addb"
+    },
+    {
+      "path": "kern/bwv1046g.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2928927f150e2fff9029c7039742aefb0ef7eacd",
+      "size": 3773,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/2928927f150e2fff9029c7039742aefb0ef7eacd"
+    },
+    {
+      "path": "kern/bwv1047a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b99f8f653ce4b27e4bf4b916a008a3fa262622ef",
+      "size": 88447,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/b99f8f653ce4b27e4bf4b916a008a3fa262622ef"
+    },
+    {
+      "path": "kern/bwv1047b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e536f9fa0cd4006484d7634dce844c1e3fed1647",
+      "size": 12224,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/e536f9fa0cd4006484d7634dce844c1e3fed1647"
+    },
+    {
+      "path": "kern/bwv1047c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c614fff4ac72e27b8c83bbf0b555203ab181097",
+      "size": 47725,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/9c614fff4ac72e27b8c83bbf0b555203ab181097"
+    },
+    {
+      "path": "kern/bwv1048a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2301b252cb2fc2a70cd8e257a10f88fbb2e4719c",
+      "size": 96653,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/2301b252cb2fc2a70cd8e257a10f88fbb2e4719c"
+    },
+    {
+      "path": "kern/bwv1048b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc35ef0e2f963e95bdb875013d56c39c0fdf8797",
+      "size": 52981,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/fc35ef0e2f963e95bdb875013d56c39c0fdf8797"
+    },
+    {
+      "path": "kern/bwv1049a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc1dbf55dae926da8d95c7d27314444b5e9fcc0e",
+      "size": 109881,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/bc1dbf55dae926da8d95c7d27314444b5e9fcc0e"
+    },
+    {
+      "path": "kern/bwv1049b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adf8b8e792a95b28e00fac4dc14db59dc272e338",
+      "size": 19653,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/adf8b8e792a95b28e00fac4dc14db59dc272e338"
+    },
+    {
+      "path": "kern/bwv1049c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee6c4796016e13db52a9f35c4be6d3f8381aa921",
+      "size": 69340,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/ee6c4796016e13db52a9f35c4be6d3f8381aa921"
+    },
+    {
+      "path": "kern/bwv1050a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d5bf4b8cd4061e28df65069f8775cc1177ec61e",
+      "size": 136347,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/3d5bf4b8cd4061e28df65069f8775cc1177ec61e"
+    },
+    {
+      "path": "kern/bwv1050b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d97ddb9ff60be0b2301200c0c7a0e2e876801d",
+      "size": 14748,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/09d97ddb9ff60be0b2301200c0c7a0e2e876801d"
+    },
+    {
+      "path": "kern/bwv1050c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0245e9308de41044025d523ddbebe73301993db",
+      "size": 87949,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/d0245e9308de41044025d523ddbebe73301993db"
+    },
+    {
+      "path": "kern/bwv1051a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e214358f2814000d7d05b26e1ed2a6658f55ffe",
+      "size": 65634,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/0e214358f2814000d7d05b26e1ed2a6658f55ffe"
+    },
+    {
+      "path": "kern/bwv1051b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80b173fb71d49212539047a867e9c7c8a54d0e82",
+      "size": 17710,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/80b173fb71d49212539047a867e9c7c8a54d0e82"
+    },
+    {
+      "path": "kern/bwv1051c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a3d2d4407f4e2bf372df73da7609dd199e5bf6a",
+      "size": 55747,
+      "url": "https://api.github.com/repos/musedata/humdrum-bach-brandenburg/git/blobs/9a3d2d4407f4e2bf372df73da7609dd199e5bf6a"
+    }
+  ],
+  "truncated": false
+}

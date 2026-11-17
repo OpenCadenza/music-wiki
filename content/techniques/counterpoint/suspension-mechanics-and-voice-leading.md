@@ -76,12 +76,81 @@
   * 低音下沉至大字组 $A2$（`4AA`），次中音经过至 $G3$；
   * $D4 \to C\sharp 4$ 的解决瞬间确立了 A 大调属三和弦的纯正结构（$A - C\sharp - E$），随后在第 3 拍毫无阻碍地收束于主音和弦 $D$。
 
-> **乐谱例证 1：待交付谱例定位（真实小节规范）**
+> **乐谱例证 1：谱面定位**
 > - **作品**：Johann Sebastian Bach - Chorale "Jesu, meine Freude", BWV 87/7
 > - **乐章与小节**：mm. 1–3（A 乐段开篇与半终止）
 > - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
 > - **谱面特征**：m. 1 拍 4 女低音在 d 小调主和弦上准备 D4，跨小节线延留至 m. 2 强拍，在低音 A 上形成四度重音挂留，弱拍下行级进解决至导音升 C4，完成 $V^{4-3}$ 经典半终止
-> - **交付状态**：已登记于 task-26 研究方案，以真实小节定位规范占位，待谱例助手基于 Kern 原谱 `chor096.krn` 编码交付
+
+```lilypond title="BWV 87/7 第 1–3 小节" location="mm. 1–3"
+\version "2.26.0"
+\language "english"
+
+
+\header {
+  title = "Chorale \"Jesu, meine Freude\""
+  subtitle = "BWV 87/7 (mm. 1–3)"
+  composer = "Johann Sebastian Bach"
+  tagline = ##f
+}
+
+global = {
+  \key d \minor
+  \time 4/4
+  \tempo "Choral" 4 = 100
+}
+
+soprano = {
+  \global
+  a'4 a'4 g'4 f'4 |
+  e'2 d'2\fermata |
+  a'4 a'4 b'4 cs''4 |
+}
+
+alto = {
+  \global
+  f'4 f'4 e'4 d'4 |
+  d'4 cs'4 a2\fermata |
+  f'4 f'4 f'8 d'8 g'4 |
+}
+
+tenor = {
+  \global
+  d'4 d'4 d'8 cs'8 d'4 |
+  a8 bf8 a8 g8 f2\fermata |
+  d'4 d'4 d'8 b8 e'4 |
+}
+
+bass = {
+  \global
+  d8 e8 f8 d8 bf4 a8 g8 |
+  a4 a,4 d2\fermata |
+  d8 e8 f8 d8 g4 f8 e8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Soprano (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \soprano }
+    \new Staff \with {
+      instrumentName = "Alto (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \alto }
+    \new Staff \with {
+      instrumentName = "Tenor (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef "treble_8" \tenor }
+    \new Staff \with {
+      instrumentName = "Bass (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef bass \bass }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -102,12 +171,81 @@
   * 四个声部同时释放至 G 大调纯净主和弦（`2GG; 2B; 2d; 2g;`，带延长记号）。
   * 这里的 $G4 \to F\sharp 4$ 挂留消除了终止前和声的空洞感，赋予了属和弦强大的向心凝聚力。
 
-> **乐谱例证 2：待交付谱例定位（真实小节规范）**
+> **乐谱例证 2：谱面定位**
 > - **作品**：Johann Sebastian Bach - Chorale "Aus meines Herzens Grunde", BWV 269
 > - **乐章与小节**：mm. 5–7（完全正格终止乐句）
 > - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
 > - **谱面特征**：第 6 小节女低音保持 G4（二分音符），第 3 拍低音切入属音 D3 形成 $4–3$ 挂留，弱拍顺畅解决至升 F4，在第 7 小节锁定 G 大调主三和弦
-> - **交付状态**：已登记于 task-26 研究方案，以真实小节定位规范占位，待谱例助手基于 Kern 原谱 `chor001.krn` 编码交付
+
+```lilypond title="BWV 269 第 5–7 小节" location="mm. 5–7"
+\version "2.26.0"
+\language "english"
+
+
+\header {
+  title = "Chorale \"Aus meines Herzens Grunde\""
+  subtitle = "BWV 269 (mm. 5–7)"
+  composer = "Johann Sebastian Bach"
+  tagline = ##f
+}
+
+global = {
+  \key g \major
+  \time 3/4
+  \tempo "Choral" 4 = 100
+}
+
+soprano = {
+  \global
+  d''2 c''4 |
+  b'4 a'2 |
+  g'2\fermata \once \omit Rest r4 |
+}
+
+alto = {
+  \global
+  d'4 e'4 fs'4 |
+  g'2 fs'4 |
+  d'2\fermata \once \omit Rest r4 |
+}
+
+tenor = {
+  \global
+  a4 b4 c'4 |
+  d'4 e'4 d'8 c'8 |
+  b2\fermata \once \omit Rest r4 |
+}
+
+bass = {
+  \global
+  fs,4 g,4 a,4 |
+  b,4 c4 d4 |
+  g,2\fermata \once \omit Rest r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Soprano (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \soprano }
+    \new Staff \with {
+      instrumentName = "Alto (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \alto }
+    \new Staff \with {
+      instrumentName = "Tenor (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef "treble_8" \tenor }
+    \new Staff \with {
+      instrumentName = "Bass (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef bass \bass }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -124,12 +262,85 @@
   * 女低音声部在第 1 拍以附点四分音符挂留 $G\sharp 4$（`4.g#`），随后在弱拍下行级进至 $A4$；紧接着在第 3–4 拍以八分音符形成 $G\sharp \to F\sharp \to G\sharp \to E$ 的交织；
   * 第 4 拍女高音更是突发还原 $D$（`4ddnX`），与低音的 $C\sharp/B$ 构成刺耳的二度/七度碰撞，整座四部架构宛如一座由错位齿轮相互咬合的张力风暴，最终在第 4 小节释放至 A 大调纯粹和弦。
 
-> **乐谱例证 3：待交付谱例定位（真实小节规范）**
+> **乐谱例证 3：谱面定位**
 > - **作品**：Johann Sebastian Bach - Chorale "Es ist genug!", BWV 60/5
 > - **乐章与小节**：mm. 1–4（开篇三全音呼告与半音阶下行挂留网）
 > - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
 > - **谱面特征**：开篇女高音全音阶跳升至 D#5 制造三全音休止；m. 3 低音展开 9 音八度半音阶下行，上方三声部通过多重切分与还原 D 挂留交织成极端复调张力网
-> - **交付状态**：已登记于 task-26 研究方案，以真实小节定位规范占位，待谱例助手基于 Kern 原谱 `chor216.krn` 编码交付
+
+```lilypond title="BWV 60/5 第 1–4 小节" location="mm. 1–4"
+\version "2.26.0"
+\language "english"
+
+
+\header {
+  title = "Chorale \"Es ist genug! so nimm Herr\""
+  subtitle = "BWV 60/5 (mm. 1–4)"
+  composer = "Johann Sebastian Bach"
+  tagline = ##f
+}
+
+global = {
+  \key a \major
+  \time 4/4
+  \tempo "Choral" 4 = 100
+}
+
+soprano = {
+  \global
+  a'2 b'4 cs''4 |
+  ds''2\fermata r4 ds''4 |
+  e''4 b'4 b'4 d''4 |
+  cs''2.\fermata b'4 |
+}
+
+alto = {
+  \global
+  e'2 e'4 d'8 cs'8 |
+  gs'2\fermata r4 gs'4 |
+  gs'4. a'8 gs'8 fs'8 gs'8 e'8 |
+  a'2.\fermata gs'4 |
+}
+
+tenor = {
+  \global
+  cs'2 b4 fs'4 |
+  fs'2\fermata r4 bs4 |
+  cs'8 ds'8 e'4 e'4 e'4 |
+  e'2.\fermata e'4 |
+}
+
+bass = {
+  \global
+  a2 gs4 as4 |
+  bs2\fermata r4 gs4 |
+  cs'8 b16 a16 gs8 fs8 e8 d8 cs8 b,8 |
+  a,2.\fermata e4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with {
+      instrumentName = "Soprano (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \soprano }
+    \new Staff \with {
+      instrumentName = "Alto (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \alto }
+    \new Staff \with {
+      instrumentName = "Tenor (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef "treble_8" \tenor }
+    \new Staff \with {
+      instrumentName = "Bass (GM 52)"
+      midiInstrument = "choir aahs"
+    } { \clef bass \bass }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -147,12 +358,9 @@
 3. **声部功能逆转：低音（大提琴）成为挂留主角（Vorhaltsstimme）**：
    在慢引子即将步入 Allegro 快板主部（m. 25）的最后两小节（mm. 23–24），大提琴抓取了开篇的引子问句动机。然而大提琴在此处不再是坚实的低音支柱，它所奏出的音符充当了整部四重奏最核心的**长挂留声部**，与上方小提琴提前进入的先现音发生剧烈位移，最终才汇流至降 E 大调的属功能大门。
 
-> **乐谱例证 4：待交付谱例定位（真实小节规范）**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 10 in E-flat Major, Op. 74 ("Harp")
-> - **乐章与小节**：I. Poco Adagio, mm. 18–24（慢引子尾声半音攀升与多重挂留和声链，衔接 m. 25 Allegro）
-> - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：开篇动机转化为 as 小调半音阶爬升，四件乐器形成长达附点四分音符的多重变音挂留，解决音连续接入减七/属七和弦，大提琴化身为承载挂留的核心旋律线
-> - **交付状态**：已登记于 task-26 研究方案，以真实小节定位规范占位，待谱例助手基于 Kern 原谱 `quartet10-1.krn` 编码交付
+> **乐谱例证 4：见同库另一篇的同一段谱例**
+>
+> 本段 Op. 74 第一乐章 mm. 18–24 的谱例已嵌入[《结构功能化的半音挂留》](../../composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md)（该篇从和声链与调性拓扑角度分析同一片段）。全库同一段谱例只保留一份，此处不重复收录，读者可在该篇查看完整四声部乐谱。
 
 ---
 

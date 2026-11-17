@@ -85,13 +85,96 @@
 3. **声学爆发**：超主音与升四级音构成的双重三全音骤然撕裂了明亮的 C 大调纯净空间，将乐句的张力瞬间推至最高负荷；
 4. **终止顺导（mm. 15–16）**：法国六和弦顺势卸力于终止四六和弦（$Cad^6_4$），最终在原位属和弦的驱动下，于 m. 16 毫无悬念地达成雷霆般的完全正格终止（PAC）。
 
-> **【谱例占位 · 待资料助手交付】**
+> **谱面定位**
 > - **作品**：沃尔夫冈·阿玛多伊斯·莫扎特《C大调第19弦乐四重奏“不协和”》K. 465，第四乐章 Allegro molto
 > - **小节范围**：mm. 10–16
 > - **声部编制与 GM 编号**：第一小提琴（GM 40）、第二小提琴（GM 40）、中提琴（GM 41）、大提琴（GM 42）
 > - **调性与拍号**：C 大调，2/4 拍
 > - **结构说明**：mm. 10–12 主题动机推进；m. 13 温和下属和弦 IV6；m. 14 第 2 拍爆发法国六和弦（Fr.）；mm. 15–16 经 Cad6/4 达成完全正格终止 PAC
 > - **状态**：待制作真实 LilyPond 围栏与独立核验
+> - **编号基准**：小节号按 OpenScore 的零基计数（弱起 = 第 0 小节）；若按「弱起算第 1 小节」的通行计法，对应印刷谱 mm. 11–17。
+
+```lilypond title="莫扎特 K.465 第四乐章 第 10–16 小节" location="mm. 10–16"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 19 in C major, K. 465 “Dissonance”"
+  subtitle = "IV. Allegro molto — mm. 10–16"
+  composer = "Wolfgang Amadeus Mozart (1756–1791)"
+  tagline = ##f
+}
+
+
+global = {
+  \key c \major
+  \time 2/4
+  \tempo "Allegro" 4 = 144
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  b''4. f''8 |
+  e''8 c''8 a'8 d''8 |
+  c''8 b'8 c''8 c''8 |
+  d''8 d''8 e''8 e''8 |
+  f''8 f''8 fs''8 f''8 |
+  g''8 e''8 \grace { g''16 } f''8 e''16 d''16 |
+  c''8 r8 c'8 c'8 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  f'16 d'16 f'16 d'16 f'8 r8 |
+  r8 g'8 c'8 a'8 |
+  e'8 d'8 c'8 c'8 |
+  c'8 c'8 c'8 c'8 |
+  c''8 c''8 c''8 c''8 |
+  c''4 \grace { e''16 } d''8 c''16 b'16 |
+  c''8 r8 c'8 c'8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  d'16 b16 d'16 b16 d'8 r8 |
+  R2 |
+  r4 g8 g8 |
+  a8 a8 bf8 bf8 |
+  c'8 c'8 d'8 d'8 |
+  e'8 c'8 g'8 g'8 |
+  e'8 r8 c'8 c'8 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  g8 g8 g8 r8 |
+  c'8 e8 f8 fs8 |
+  g8 f8 e8 e8 |
+  f8 f8 g8 g8 |
+  a8 a8 af8 af8 |
+  g8 g8 g8 g8 |
+  c8 r8 c8 c8 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ### 3.2 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章（mm. 1–8）
 

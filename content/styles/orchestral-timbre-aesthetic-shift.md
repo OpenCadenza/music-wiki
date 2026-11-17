@@ -150,24 +150,479 @@ description: 深入解构 18 至 19 世纪初西方管弦乐微观声学组织�
 > - **声部构成**：Flauto traverso, Violino principale, Cembalo concertato, Violino di ripieno, Viola, Violoncello, Violone
 > - **声学机制**：外声部极性对峙（Fl./Vl. 主题对位 vs Vc./Violone 低音跳进），中频依靠羽管键琴密集拨弦和弦锚定和声；展示通奏低音退出历史前夕的临界织体形态
 > - **GM 设定**：Flute (73), Violin (40), Harpsichord (6), Viola (41), Cello (42), Acoustic Bass (32)
-> - **交付状态**：规范文本引用块占位，待后续谱例助手完成总谱切片编码
+
+```lilypond title="巴赫 BWV 1050 第一乐章 第 1–9 小节（通奏低音与主奏并置）" location="mm. 1–9"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Brandenburg Concerto No. 5 in D major, BWV 1050"
+  subtitle = "I. Allegro — mm. 1–9 (tutti, baroque polarity and continuo scaffolding)"
+  location = "Score example 1: mm. 1–9"
+  composer = "Johann Sebastian Bach"
+  tagline = ##f
+}
+
+
+global = {
+  \key d \major
+  \time 2/2
+  \tempo "Allegro" 2 = 66
+}
+
+flauto = {
+  \global
+  \clef treble
+  |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r8 d''8 cs''8 b'8 a'2
+  \bar "|."
+}
+
+violinoPrincipale = {
+  \global
+  \clef treble
+  |
+  d'16 d'16 fs'16 fs'16 a'16 a'16 d''16 d''16 cs''16 d''16 cs''16 b'16 a'16 g'16 fs'16 e'16 |
+  d'16 d'16 fs'16 fs'16 a'16 a'16 d''16 d''16 e''8 a'8 r8 e''8 |
+  fs''16 fs''16 e''16 e''16 g''16 g''16 fs''16 fs''16 b''16 b''16 a''16 a''16 cs''16 cs''16 d''16 d''16 |
+  g'16 g'16 fs'16 fs'16 b'16 b'16 a'16 a'16 cs'16 cs'16 d'16 d'16 a16 a16 g'16 g'16 |
+  fs'16 e'16 fs'16 d'16 e'16 e'16 a16 a16 d'16 e'16 fs'16 g'16 a'16 b'16 cs''16 a'16 |
+  d''16 d''16 cs''16 cs''16 e''16 e''16 d''16 d''16 g''16 g''16 fs''16 fs''16 b''16 b''16 a''16 a''16 |
+  g''16 fs''16 e''16 d''16 e''8 a'16 b'16 c''16 a'16 b'16 d''16 cs''16 e''16 a'16 g'16 |
+  fs'16 d'16 e'16 g'16 fs'16 a'16 d'16 cs'16 b16 g'16 fs'16 e'16 e'8. d'16 |
+  d'8 r8 r4 r8 fs''8 e''8 d''8
+  \bar "|."
+}
+
+violinoRipieno = {
+  \global
+  \clef treble
+  |
+  d'16 d'16 fs'16 fs'16 a'16 a'16 d''16 d''16 cs''16 d''16 cs''16 b'16 a'16 g'16 fs'16 e'16 |
+  d'16 d'16 fs'16 fs'16 a'16 a'16 d''16 d''16 e''8 a'8 r8 e''8 |
+  fs''16 fs''16 e''16 e''16 g''16 g''16 fs''16 fs''16 b''16 b''16 a''16 a''16 cs''16 cs''16 d''16 d''16 |
+  g'16 g'16 fs'16 fs'16 b'16 b'16 a'16 a'16 cs'16 cs'16 d'16 d'16 a16 a16 g'16 g'16 |
+  fs'16 e'16 fs'16 d'16 e'16 e'16 a16 a16 d'16 e'16 fs'16 g'16 a'16 b'16 cs''16 a'16 |
+  d''16 d''16 cs''16 cs''16 e''16 e''16 d''16 d''16 g''16 g''16 fs''16 fs''16 b''16 b''16 a''16 a''16 |
+  g''16 fs''16 e''16 d''16 e''8 a'16 b'16 c''16 a'16 b'16 d''16 cs''16 e''16 a'16 g'16 |
+  fs'16 d'16 e'16 g'16 fs'16 a'16 d'16 cs'16 b16 g'16 fs'16 e'16 e'8. d'16 |
+  d'8 r8 r4 r2
+  \bar "|."
+}
+
+viola = {
+  \global
+  \clef alto
+  |
+  fs'4 r8 fs'8 e'8 d'8 e'8 cs'8 |
+  d'8 a8 d'8 fs'8 cs'8 d'8 e'8 cs'8 |
+  d'8 a'8 d''8 cs''8 d''8 d'8 g'8 fs'8 |
+  e'8 d'8 d'8 d'8 g'8 fs'8 e'8 a8 |
+  a8 d'8 b8 cs'8 d'16 e'16 fs'16 g'16 a'16 b'16 cs''16 a'16 |
+  d''8 fs'8 b'8 a'8 cs'8 d'8 e'8 cs'8 |
+  d'8 a'8 b'8 cs''8 a'8 g'16 fs'16 e'8 e'8 |
+  a8 a8 a8 a8 d8 d'8 cs'8 g'8 |
+  fs'8 r8 r4 r2
+  \bar "|."
+}
+
+violoncello = {
+  \global
+  \clef bass
+  |
+  d4 r8 d8 a8 b8 cs'8 a8 |
+  fs8 e8 fs8 d8 a8 b8 cs'8 a8 |
+  d'8 cs'8 b8 a8 g8 fs8 e8 d8 |
+  cs8 d8 g,8 fs,8 e,8 d,8 cs,8 cs8 |
+  d8 b,8 g,8 a,8 b,16 cs16 d16 e16 fs16 g16 a16 fs16 |
+  b8 a8 g8 fs8 e8 d8 cs8 a,8 |
+  d8 fs8 g8 a16 g16 fs8 g8 r8 cs16 cs16 |
+  d16 d16 cs16 cs16 d16 d16 fs,16 fs,16 g,8 g8 a8 a,8 |
+  d4 r4 r2
+  \bar "|."
+}
+
+violone = {
+  \global
+  \clef bass
+  |
+  d,4 r8 d,8 a,8 b,8 cs8 a,8 |
+  fs,8 e,8 fs,8 d,8 a,8 b,8 cs8 a,8 |
+  d8 cs8 b,8 a,8 g,8 fs,8 e,8 d,8 |
+  cs,8 d,8 g,8 fs,8 e,8 d,8 cs,8 a,,8 |
+  d,8 b,,8 g,,8 a,,8 b,,16 cs,16 d,16 e,16 fs,16 g,16 a,16 fs,16 |
+  b,8 a,8 g,8 fs,8 e,8 d,8 cs,8 a,,8 |
+  d,8 fs,8 g,8 a,16 g,16 fs,8 g,8 r8 cs,16 cs,16 |
+  d,16 d,16 cs,16 cs,16 d,16 d,16 fs,,16 fs,,16 g,,8 g,8 a,8 a,,8 |
+  d,,4 r4 r2
+  \bar "|."
+}
+
+cembaloUpper = {
+  \global
+  \clef treble
+  |
+  <d'' a' fs' d'>4 r4 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r16 a''32 g''32 fs''16 a''16 e''16 a''16 d''16 a''16 cs''16 a''16 d''16 a''16 cs''16 a''16 b'16 a''16
+  \bar "|."
+}
+
+cembaloLower = {
+  \global
+  \clef bass
+  |
+  d4 r8 d8 a8 b8 cs'8 a8 |
+  fs8 e8 fs8 d8 a8 b8 cs'8 a8 |
+  d'8 cs'8 b8 a8 g8 fs8 e8 d8 |
+  cs8 d8 g,8 fs,8 e,8 d,8 cs,8 cs8 |
+  d8 b,8 g,8 a,8 b,16 cs16 d16 e16 fs16 g16 a16 fs16 |
+  b8 a8 g8 fs8 e8 d8 cs8 a,8 |
+  d8 fs8 g8 a16 g16 fs8 g8 r8 cs16 cs16 |
+  d16 d16 cs16 cs16 d16 d16 fs,16 fs,16 g,8 g8 a8 a,8 |
+  d4 r4 r2
+  \bar "|."
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with { instrumentName = "Flauto" midiInstrument = "flute" } { \flauto }
+    \new Staff \with { instrumentName = "Vl. principale" midiInstrument = "violin" } { \violinoPrincipale }
+    \new Staff \with { instrumentName = "Vl. di ripieno" midiInstrument = "violin" } { \violinoRipieno }
+    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
+    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \violoncello }
+    \new Staff \with { instrumentName = "Violone" midiInstrument = "contrabass" } { \violone }
+    \new PianoStaff <<
+      \new Staff \with { instrumentName = "Cembalo" midiInstrument = "harpsichord" } { \cembaloUpper }
+      \new Staff \with { midiInstrument = "harpsichord" } { \cembaloLower }
+    >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
 ### 2. 案例二：古典初期“8件套”管弦乐队的功能性加倍与圆号声学踏板
 - **作品**：J. 海顿（J. Haydn）- 《第104交响曲“伦敦”》（Hob. I:104），第一乐章 Allegro（mm. 17–32）
-- **编制（按总谱全曲编制）**：2 长笛、2 双簧管、2 单簧管、2 大管、2 圆号（D管）、2 小号、定音鼓、弦乐组（注：快板主题呈示段 mm. 17–32 中，单簧管、小号、定音鼓与长笛休止，实际参奏为双簧管、圆号、大管与弦乐组）
+- **编制（按总谱全曲编制）**：2 长笛、2 双簧管、2 单簧管、2 大管、2 圆号（D管）、2 小号、定音鼓、弦乐组（注：快板主题呈示段 mm. 17–32 实际只有弦乐组参奏；双簧管、圆号、定音鼓与长笛全部休止，全奏自 m. 33 才进入）
 - **声学组织机制（待谱例交付验证）**：
   - **主题弱奏呈示（mm. 17–24）**：第一小提琴呈示明快的快板主题，第二小提琴与中提琴以八分音符同音反复构成中频脉冲，大提琴与低音提琴演奏断奏低音；管乐完全休止，展现弦乐家族自给自足的古典清澈性；
-  - **全奏爆发与功能性加倍（mm. 25–32）**：全奏强奏时双簧管加入并加倍第一小提琴，大管加倍低音；两支自然圆号吹奏持续的八度 D 音（长音踏板）；
+  - **全奏爆发与功能性加倍（mm. 33 起）**：全奏强奏时双簧管加入并加倍第一小提琴，长笛进入高音区；两支自然圆号吹奏持续的八度 D 音（长音踏板），定音鼓以 D 音踏板锁定调性；
   - **圆号声学胶水**：圆号的长音踏板有效封闭了弦乐跳跃留出的中频声学间隙，双簧管则增强了旋律的高频能量，展现了“8件套”编制在没有羽管键琴辅助下实现声场饱满的经典配器法则。
 
 > **历史谱例片段 2：古典中期管弦乐功能性加倍与圆号踏板**
-> - **作品定位**：J. Haydn, *Symphony No. 104 in D major ("London")*, Hob. I:104, Mov. I, mm. 17–32
+> - **作品定位**：J. Haydn, *Symphony No. 104 in D major ("London")*, Hob. I:104, Mov. I, mm. 17–31（弦乐）与 mm. 32–39（全奏）
 > - **参奏声部**：Oboes 1-2, Horns in D 1-2, Bassoons 1-2, Violins 1-2, Viola, Cello, Double Bass
-> - **声学机制**：mm. 17–24 弦乐弱奏呈现清澈室内乐质感；mm. 25–32 全奏强奏时双簧管加倍旋律，两支自然圆号演奏中频持续长音踏板锚定和声，大管加倍低音
+> - **声学机制**：mm. 17–31（弦乐）与 mm. 32–39（全奏） 弦乐弱奏呈现清澈室内乐质感；m. 33 起全奏强奏，双簧管加倍旋律、长笛进入高音，两支自然圆号演奏中频持续长音踏板锚定和声
 > - **GM 设定**：Oboe (68), French Horn (60), Bassoon (70), String Ensemble 1 (48), Cello (42), Contrabass (43)
-> - **交付状态**：规范文本引用块占位，待后续谱例助手完成总谱切片编码
+
+```lilypond title="海顿 Hob.I:104 第一乐章 第 17–31 小节（弦乐弱奏）" location="mm. 17–31"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Symphony No. 104 in D major („London“), Hob. I:104"
+  subtitle = "I. Allegro — mm. 17–32 (strings excerpt; horns rest in this passage)"
+  location = "Score example 2: mm. 17–32, excerpt (strings only)"
+  composer = "Franz Joseph Haydn"
+  tagline = ##f
+}
+
+
+global = {
+  \key d \major
+  \set Score.currentBarNumber = #17
+  \time 2/2
+  \tempo "Allegro" 2 = 120
+}
+
+violinOne = {
+  \global
+  \clef treble
+  |
+  fs'2\p g'4 e'4 |
+  d'2 d'8 e'8 fs'8 g'8 |
+  a'4 a'4 a'4 a'4 |
+  b'2 a'2 |
+  d''2 cs''2 |
+  b'2 a'2 |
+  a'8 g'8 b'8 a'8 g'4 fs'4 |
+  a'4. fs'8 e'4 r4 |
+  fs'2 g'4 e'4 |
+  d'2 d'8 e'8 fs'8 g'8 |
+  a'4 a'4 a'4 a'4 |
+  b'2 a'2 |
+  d''2 e''2 |
+  fs''2 g''2 |
+  g''8 fs''8 g''8 e''8 d''4 cs''4
+  \bar "|."
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  |
+  a2 b4 cs'4 |
+  d'2. r4 |
+  g'1 |
+  fs'2. a'4 |
+  a'4 g'2 fs'4 |
+  fs'4 e'2 d'4 |
+  cs'2. d'4 |
+  fs'4. d'8 cs'4 r4 |
+  a2 b4 cs'4 |
+  d'2. r4 |
+  g'1 |
+  fs'1 |
+  a4 b2 cs'4 |
+  cs'4 d'2 e'4 |
+  e'8 d'8 b'8 g'8 fs'4 e'4
+  \bar "|."
+}
+
+viola = {
+  \global
+  \clef alto
+  |
+  a2 b4 g4 |
+  fs2. r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  d4 fs4 a4 r4 |
+  a2 b4 g4 |
+  fs2. r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1
+  \bar "|."
+}
+
+cello = {
+  \global
+  \clef bass
+  |
+  d1 |
+  d2. r4 |
+  cs'1 |
+  d'2. cs'4 |
+  b2 a2 |
+  g2 fs2 |
+  e2. d4 |
+  a,2 r2 |
+  d1 |
+  d2. r4 |
+  cs'1 |
+  d'1 |
+  fs4 g2 a4 |
+  a4 b2 cs'4 |
+  d'4 g4 a4 a,4
+  \bar "|."
+}
+
+bass = {
+  \global
+  \clef bass
+  |
+  d,1 |
+  d,2. r4 |
+  cs1 |
+  d2. cs4 |
+  b,2 a,2 |
+  g,2 fs,2 |
+  e,2. d,4 |
+  a,,2 r2 |
+  d,1 |
+  d,2. r4 |
+  cs1 |
+  d1 |
+  fs,4 g,2 a,4 |
+  a,4 b,2 cs4 |
+  d4 g,4 a,4 a,,4
+  \bar "|."
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with { instrumentName = "Violino I" midiInstrument = "violin" } { \violinOne }
+    \new Staff \with { instrumentName = "Violino II" midiInstrument = "violin" } { \violinTwo }
+    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
+    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
+    \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
+  >>
+  \layout { }
+  \midi { }
+}
+```
+
+```lilypond title="海顿 Hob.I:104 第一乐章 第 32–39 小节（全奏，圆号八度 D 长音）" location="mm. 32–39"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Symphony No. 104 in D major („London“), Hob. I:104"
+  subtitle = "I. Allegro — mm. 32–39 (tutti: horns/oboes/flutes/timpani on D pedal)"
+  location = "Score example 2b: mm. 32–39, tutti excerpt"
+  composer = "Franz Joseph Haydn"
+  tagline = ##f
+}
+
+
+global = {
+  \key d \major
+  \time 2/2
+  \tempo "Allegro" 2 = 120
+  \set Score.currentBarNumber = #32
+}
+
+flautoOne = { \global \clef treble |
+d'''2\ff b''4 g''4 |
+  a''4 r4 r2 |
+  d'''2 b''4 g''4 |
+  a''4 r4 r2 |
+  b''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  a''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  b''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  a''4 d''16 cs''16 d''16 cs''16 d''4 d''4 \bar "|." }
+flautoTwo = { \global \clef treble |
+d'''2\ff b''4 g''4 |
+  a''4 r4 r2 |
+  d'''2 b''4 g''4 |
+  a''4 r4 r2 |
+  b''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  a''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  b''4 d''16 cs''16 d''16 cs''16 d''4 d''4 |
+  a''4 d''16 cs''16 d''16 cs''16 d''4 d''4 \bar "|." }
+oboeOne = { \global \clef treble |
+a''2\ff b''4 g''4 |
+  a''2 r2 |
+  a''2 b''4 g''4 |
+  a''2 r2 |
+  b''2 r2 |
+  a''2 r2 |
+  b''1 |
+  a''1 \bar "|." }
+oboeTwo = { \global \clef treble |
+fs''2\ff g''4 e''4 |
+  fs''2 r2 |
+  fs''2 g''4 e''4 |
+  fs''2 r2 |
+  g''2 r2 |
+  fs''2 r2 |
+  g''1 |
+  fs''1 \bar "|." }
+cornoOne = { \global \clef treble | \transposition d
+c''2\f c''4 c''4 |
+  c''2 r2 |
+  c''2 c''4 c''4 |
+  c''2 r2 |
+  c''2 r2 |
+  c''2 r2 |
+  c''1~ |
+  c''1 \bar "|." }
+cornoTwo = { \global \clef treble | \transposition d
+c'2\f c'4 c'4 |
+  c'2 r2 |
+  c'2 c'4 c'4 |
+  c'2 r2 |
+  c'2 r2 |
+  c'2 r2 |
+  c'1~ |
+  c'1 \bar "|." }
+timpani = { \global \clef bass |
+  c'2 c'4 c'4 |
+  c'4 r4 r2 |
+  c'2 c'4 c'4 |
+  c'4 r4 r2 |
+  c'2 r2 |
+  c'2 r2 |
+  c'2 c'4 c'4 |
+  c'2 c'4 c'4 \bar "|." }
+violinOne = { \global \clef treble |
+  d'''2 b''4 g''4 |
+  a''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  d'''2 b''4 g''4 |
+  a''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  b''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  a''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  b''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  a''4 d'16 cs'16 d'16 cs'16 d'4 d'4 \bar "|." }
+violinTwo = { \global \clef treble |
+  <fs'' a' d'>2 g''4 e''4 |
+  fs''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  fs''2 g''4 e''4 |
+  fs''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  g''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  fs''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  g''4 d'16 cs'16 d'16 cs'16 d'4 d'4 |
+  fs''4 d'16 cs'16 d'16 cs'16 d'4 d'4 \bar "|." }
+viola = { \global \clef alto |
+  <fs' a>2 <g' b>4 <e' g>4 |
+  <fs' a>1 |
+  <fs' a>2 <g' b>4 <e' g>4 |
+  <fs' a>1 |
+  <g' b>1 |
+  <fs' a>1 |
+  <g' b>1 |
+  <fs' a>1 \bar "|." }
+cello = { \global \clef bass |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 |
+  d,4 c'4 c'4 c'4 \bar "|." }
+bass = { \global \clef bass |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 |
+  d,,4 d,4 d,4 d,4 \bar "|." }
+
+\score {
+  \new StaffGroup <<
+    \new Staff \with { instrumentName = "Flauto I" midiInstrument = "flute" } { \flautoOne }
+    \new Staff \with { instrumentName = "Flauto II" midiInstrument = "flute" } { \flautoTwo }
+    \new Staff \with { instrumentName = "Oboe I" midiInstrument = "oboe" } { \oboeOne }
+    \new Staff \with { instrumentName = "Oboe II" midiInstrument = "oboe" } { \oboeTwo }
+    \new Staff \with { instrumentName = "Corno I in D" midiInstrument = "french horn" } { \cornoOne }
+    \new Staff \with { instrumentName = "Corno II in D" midiInstrument = "french horn" } { \cornoTwo }
+    \new Staff \with { instrumentName = "Timpani" midiInstrument = "timpani" } { \timpani }
+    \new Staff \with { instrumentName = "Violino I" midiInstrument = "violin" } { \violinOne }
+    \new Staff \with { instrumentName = "Violino II" midiInstrument = "violin" } { \violinTwo }
+    \new Staff \with { instrumentName = "Viola" midiInstrument = "viola" } { \viola }
+    \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
+    \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -188,7 +643,7 @@ description: 深入解构 18 至 19 世纪初西方管弦乐微观声学组织�
 > - **声部构成**：Ottavino, Flauti 1-2, Oboi 1-2, Clarinetti in C 1-2, Fagotti 1-2, Contrafagotto, Corni in C 1-2, Trombe in C 1-2, Tromboni (Alto, Tenore, Basso), Timpani, Violini 1-2, Viole, Violoncelli, Contrabbassi
 > - **声学机制**：短笛开启超高频穿透层；长号组与低音大管构建厚重中低频铜管和声平面；木管组自洽闭合；弦乐组全速演奏前景运动平面。各音响平面纵向分层极其清晰
 > - **GM 设定**：Piccolo (72), Flute (73), Oboe (68), Clarinet (71), Bassoon (70), French Horn (60), Trumpet (56), Trombone (57), Timpani (47), String Ensemble 1 (48)
-> - **交付状态**：规范文本引用块占位，待后续谱例助手完成总谱切片编码
+> - **交付状态**：未交付。本地无可靠机器可读源（IMSLP 仅扫描且被 bot check 拦截；PDMX 该曲 17 声部转录自相矛盾、拍号与原作冲突，判定为不可用）。正文保留真实定位，待有可靠源时补齐。
 
 ---
 

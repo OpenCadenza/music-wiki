@@ -17,11 +17,11 @@
 - **功能定性**：“作为变音下属和弦，它始终表达下属功能（Subdominant function, S）”；
 - **解决逻辑**：低音保持在稳定的第 4 级音上，上方声部的降第 2 级（*ra*）顺畅下行级进至导音（*ti*）或通过主四六和弦（$I^6_4$）平滑消解，其存在是为了在进入属和弦前注入局部的半音阶色彩，但绝不破坏调性向心力。
 
-> **乐谱例证 1：待交付谱例定位（规范前属对照模型）**
+> **乐谱例证 1：教科书规范前属模型（非真实作品原谱）**
 > - **来源与出处**：Open Music Theory (OMT) - Chromatically Altered Subdominants 规范句法
 > - **调性与和声**：g 小调 / f 小调标准终止式：$i \to N^6 \to V^7 \to i$
 > - **声部导向特征**：低音保持为第 4 级音并重复；高音声部降第 2 级下行二度解决至导音；低音平滑级进至属音
-> - **交付状态**：待资料助手核验理论代码后替换嵌入
+> - **说明**：这是教材式规范句法模型（i → N⁶ → V⁷ → i），不是任何一部作品的原谱，因此不按真实作品编码，留待作者决定是否改为示意性谱例或删除。
 
 ---
 
@@ -49,12 +49,100 @@
 1. **原位（Root Position）而非转位**：标注清晰确认为 `bII` 而非带有斜杠下标的 `bII6`。低音直接是基础根音 $G\flat$（`bass_note: -5`），彻底摧毁了古典第一转位依赖低音第 4 级（$B\flat$）维持线性平滑性的声学伪装；
 2. **调性板块平移（Tonal Block）**：$\flat\text{II}$ 在此处不再充当依附于属和弦的前属装饰，而是跨越两个完整小节将主部主题完整搬迁至降二级领域。它与主调 $f$ 小调之间构成了不共戴天的半音阶对抗。
 
-> **乐谱例证 2：待交付谱例定位（真实小节规范）**
+> **乐谱例证 2：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 11 in F Minor, Op. 95 (Serioso)
 > - **乐章与小节**：I. Allegro con brio (4/4拍), mm. 1–8
 > - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：mm. 1–2 全奏齐奏 f 小调主题；m. 5 属半终止；mm. 6–7 大提琴突发低音 $G\flat$ 移位主题并带动全奏确立原位 $G\flat$ 大和弦（bII，持续 8 个四分音符）；m. 8 减七和弦（viio2/V）暴力扭转
-> - **交付状态**：待资料助手核验全谱声部后替换嵌入
+
+```lilypond title="贝多芬 Op.95 第一乐章 第 1–8 小节" location="mm. 1–8"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 11 in F minor, Op. 95 “Serioso”"
+  subtitle = "I. Allegro con brio — mm. 1–8"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key f \minor
+  \time 4/4
+  \tempo "Allegro con brio" 4 = 120
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \f
+  f'16 g'16 af'16 g'16 f'8-. ef'8-. df'8-. c'8-. d'8-. e'8-. |
+  f'4 r2. |
+  r8 r16 c''16 c'''4 c'''8 r16 c'''16 c''4 |
+  c''8 r16 c''16 c'8 r16 c'16 c''8 r16 c''16 c'''8 r16 c''16 |
+  c'''8 r16 c''16 c'4 r2 |
+  r4 df''2.~ |
+  \p df''2 gf''2 |
+  b'2. df''4 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \f
+  f'16 g'16 af'16 g'16 f'8-. ef'8-. df'8-. c'8-. d'8-. e'8-. |
+  f'4 r2. |
+  g4 r8 r16 g16 af4 r8 r16 af16 |
+  g8 r16 e'16 f'8 r16 f'16 e'8 r16 g'16 af'8 r16 af'16 |
+  g'8 r16 c'16 c'4 r2 |
+  r4 bf'2.~ |
+  \p bf'2 gf'2 |
+  f'1 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \f
+  f16 g16 af16 g16 f8-. ef8-. df8-. c8-. d8-. e8-. |
+  f4 r2. |
+  e4 r8 r16 e16 f4 r8 r16 f16 |
+  e8 r16 g16 af8 r16 af16 g8 r16 e'16 f'8 r16 f'16 |
+  e'8 r16 c'16 c4 r2 |
+  r4 gf'2. |
+  \p df'2 bf2 |
+  b1 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  \f
+  f,16 g,16 af,16 g,16 f,8-. ef,8-. df,8-. c,8-. d,8-. e,8-. |
+  f,4 r2. |
+  c4 r8 r16 c16 c4 r8 r16 c16 |
+  c8 r16 c16 f8 r16 f16 c8 r16 c16 f,8 r16 f,16 |
+  c,8 r16 c16 c4 r2 |
+  gf16 af16 bf16 af16 gf8 f8 ef8 df8 ef8 f8 |
+  \p gf1 |
+  af1 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -111,12 +199,88 @@
 
 贝多芬通过在开篇埋下原位 $\flat\text{II}$ 的伏笔，使后续向降VI级（$D\flat$）的转调获得了浑然天成的结构合理性。原本看似不可理喻的开篇和声裂痕，最终成为了统摄全乐章宏观调性循环的核心枢纽。
 
-> **乐谱例证 3：待交付谱例定位（真实小节规范）**
+> **乐谱例证 3：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 11 in F Minor, Op. 95 (Serioso)
 > - **乐章与小节**：I. Allegro con brio (4/4拍), mm. 19–24
 > - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
 > - **谱面特征**：m. 19 再次突发 bII；m. 21 经由 V6/VI 和弦过渡；m. 22 顺畅滑入降VI级（Db 大调）副部主题
-> - **交付状态**：待资料助手核验全谱声部后替换嵌入
+
+```lilypond title="贝多芬 Op.95 第一乐章 第 19–24 小节" location="mm. 19–24"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 11 in F minor, Op. 95 “Serioso”"
+  subtitle = "I. Allegro con brio — mm. 19–24"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key f \minor
+  \time 4/4
+  \tempo "Allegro con brio" 4 = 120
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \f f'16 g'16 af'16 g'16 f'4 gf'16 af'16 bf'16 af'16 gf'4 |
+  \ff g'16 af'16 bf'16 c''16 df''16 ef''16 df''16 c''16 bf'16 c''16 bf'16 af'16 g'16 f'16 ef'16 df'16 |
+  \p c'8 af'8 af''4 af''4 gf''4 |
+  f''4 df''8 c''8 bf'2~ |
+  bf'4 af'4 g'4 af'4 |
+  af'1 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \f f'16 g'16 af'16 g'16 f'4 gf'16 af'16 bf'16 af'16 gf'4 |
+  \ff g'16 af'16 bf'16 c''16 df''16 ef''16 df''16 c''16 bf'16 c''16 bf'16 af'16 g'16 f'16 ef'16 df'16 |
+  \p c'4 c'4 df'8 ef'8 |
+  f'4 gf'8 af'8 bf'4 ef'4~ |
+  ef'2.~ ef'4 |
+  f'4 af4 f'4 af4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \f f16 g16 af16 g16 f4 gf16 af16 bf16 af16 gf4 |
+  \ff g16 af16 bf16 c'16 df'16 ef'16 df'16 c'16 bf16 c'16 bf16 af16 g16 f16 ef16 df16 |
+  \p c4 af4 bf8 c'8 |
+  df'1~ |
+  df'2.~ c'4 |
+  df4~ \tuplet 3/2 { df8 f8 gf8 } af4~ \tuplet 3/2 { af8 c'8 df'8 } |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  \f f,16 g,16 af,16 g,16 f,4 gf,16 af,16 bf,16 af,16 gf,4 |
+  \ff g,16 af,16 bf,16 c16 df16 ef16 df16 c16 bf,16 c16 bf,16 af,16 g,16 f,16 ef,16 df,16 |
+  \p c,4 r2. |
+  df4 ef8 f8 gf2~ |
+  gf4 af4 a4 af4 |
+  af4 r2. |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

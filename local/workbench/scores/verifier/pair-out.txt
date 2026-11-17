@@ -1,0 +1,211 @@
+### op13 mvt1 mm1-19
+  P1 staff0: xml 307 (main 307 + grace 0) midi 307 | unmatched 0 leftover 0 | total 75.998 span 75.25
+    duration deviations (58):
+       {'mnum': '3', 'pitch': 62, 'xml_on': 11.0, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '3', 'pitch': 67, 'xml_on': 11.0, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '3', 'pitch': 74, 'xml_on': 11.0, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '4', 'pitch': 68, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '4', 'pitch': 72, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '4', 'pitch': 77, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '5', 'pitch': 63, 'xml_on': 16.0, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '9', 'pitch': 83, 'xml_on': 33.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '9', 'pitch': 83, 'xml_on': 33.25, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '9', 'pitch': 77, 'xml_on': 33.5, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 83, 'xml_on': 33.5, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 77, 'xml_on': 33.75, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 83, 'xml_on': 33.75, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 80, 'xml_on': 37.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 80, 'xml_on': 37.25, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 80, 'xml_on': 37.5, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 80, 'xml_on': 37.75, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '11', 'pitch': 58, 'xml_on': 42.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '11', 'pitch': 64, 'xml_on': 42.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 56, 'xml_on': 43.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 65, 'xml_on': 43.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 64, 'xml_on': 44.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 67, 'xml_on': 44.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 65, 'xml_on': 45.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 68, 'xml_on': 45.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 62, 'xml_on': 46.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '12', 'pitch': 71, 'xml_on': 46.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '13', 'pitch': 63, 'xml_on': 47.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '13', 'pitch': 72, 'xml_on': 47.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '13', 'pitch': 70, 'xml_on': 50.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '13', 'pitch': 76, 'xml_on': 50.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 68, 'xml_on': 51.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 77, 'xml_on': 51.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 76, 'xml_on': 52.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 79, 'xml_on': 52.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 77, 'xml_on': 53.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 80, 'xml_on': 53.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 74, 'xml_on': 54.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '14', 'pitch': 83, 'xml_on': 54.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '15', 'pitch': 72, 'xml_on': 55.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 75, 'xml_on': 55.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 79, 'xml_on': 55.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 84, 'xml_on': 55.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 67, 'xml_on': 57.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 71, 'xml_on': 57.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 77, 'xml_on': 57.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '15', 'pitch': 79, 'xml_on': 57.998, 'xml_dur': 2.0, 'mid_dur': 0.062}
+       {'mnum': '16', 'pitch': 67, 'xml_on': 59.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 72, 'xml_on': 59.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 75, 'xml_on': 59.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 65, 'xml_on': 61.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 68, 'xml_on': 61.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 74, 'xml_on': 61.998, 'xml_dur': 2.0, 'mid_dur': 0.125}
+       {'mnum': '19', 'pitch': 60, 'xml_on': 71.998, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '19', 'pitch': 63, 'xml_on': 71.998, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '19', 'pitch': 72, 'xml_on': 71.998, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '19', 'pitch': 58, 'xml_on': 74.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '19', 'pitch': 64, 'xml_on': 74.998, 'xml_dur': 1.0, 'mid_dur': 0.25}
+  P2 staff1: xml 320 (main 320 + grace 0) midi 320 | unmatched 0 leftover 0 | total 76.0 span 76.0
+    duration deviations (15):
+       {'mnum': '2', 'pitch': 51, 'xml_on': 7.875, 'xml_dur': 0.125, 'mid_dur': 0.062}
+       {'mnum': '3', 'pitch': 59, 'xml_on': 11.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '4', 'pitch': 56, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '4', 'pitch': 60, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '4', 'pitch': 65, 'xml_on': 14.0, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 67, 'xml_on': 33.5, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 74, 'xml_on': 33.5, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 67, 'xml_on': 33.75, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '9', 'pitch': 74, 'xml_on': 33.75, 'xml_dur': 0.25, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 53, 'xml_on': 37.5, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '10', 'pitch': 60, 'xml_on': 37.5, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '10', 'pitch': 62, 'xml_on': 37.5, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '10', 'pitch': 53, 'xml_on': 37.75, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '10', 'pitch': 60, 'xml_on': 37.75, 'xml_dur': 0.25, 'mid_dur': 0.031}
+       {'mnum': '10', 'pitch': 62, 'xml_on': 37.75, 'xml_dur': 0.25, 'mid_dur': 0.031}
+### op81a mvt1 mm1-25
+  P1 staff0: xml 188 (main 188 + grace 0) midi 188 | unmatched 0 leftover 0 | total 68.0 span 66.25
+    duration deviations (9):
+       {'mnum': '21', 'pitch': 67, 'xml_on': 48.0, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '21', 'pitch': 70, 'xml_on': 48.0, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '21', 'pitch': 79, 'xml_on': 48.0, 'xml_dur': 1.0, 'mid_dur': 0.125}
+       {'mnum': '21', 'pitch': 70, 'xml_on': 50.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '21', 'pitch': 82, 'xml_on': 50.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '25', 'pitch': 58, 'xml_on': 64.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '25', 'pitch': 70, 'xml_on': 64.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '25', 'pitch': 70, 'xml_on': 66.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '25', 'pitch': 82, 'xml_on': 66.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+  P2 staff1: xml 170 (main 170 + grace 0) midi 170 | unmatched 0 leftover 0 | total 68.0 span 68.0
+    duration deviations (0):
+### op111 mvt1 mm0-25
+  P1 staff0: xml 304 (main 298 + grace 6) midi 304 | unmatched 0 leftover 6 | total 100.125 span 100.125
+    LEFTOVER MIDI: [{'onset': 6.039, 'pitch': 62, 'dur': 0.026}, {'onset': 6.068, 'pitch': 67, 'dur': 0.026}, {'onset': 6.096, 'pitch': 71, 'dur': 0.026}, {'onset': 14.039, 'pitch': 67, 'dur': 0.026}, {'onset': 14.068, 'pitch': 72, 'dur': 0.026}, {'onset': 14.096, 'pitch': 76, 'dur': 0.026}]
+    graces xml 6 midi 6  pitch-sets-equal=True
+    duration deviations (23):
+       {'mnum': '10', 'pitch': 60, 'xml_on': 38.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 65, 'xml_on': 38.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 72, 'xml_on': 38.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 60, 'xml_on': 39.125, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 65, 'xml_on': 39.125, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 72, 'xml_on': 39.125, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 60, 'xml_on': 39.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 66, 'xml_on': 39.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '10', 'pitch': 72, 'xml_on': 39.625, 'xml_dur': 0.5, 'mid_dur': 0.062}
+       {'mnum': '20', 'pitch': 48, 'xml_on': 76.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '20', 'pitch': 51, 'xml_on': 77.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 48, 'xml_on': 80.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 51, 'xml_on': 81.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 56, 'xml_on': 83.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 55, 'xml_on': 84.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 53, 'xml_on': 84.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 51, 'xml_on': 85.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 50, 'xml_on': 85.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 56, 'xml_on': 87.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 55, 'xml_on': 88.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 53, 'xml_on': 88.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 51, 'xml_on': 89.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 50, 'xml_on': 89.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+  P2 staff1: xml 336 (main 322 + grace 14) midi 336 | unmatched 0 leftover 14 | total 100.125 span 100.125
+    LEFTOVER MIDI: [{'onset': 5.927, 'pitch': 35, 'dur': 0.026}, {'onset': 5.956, 'pitch': 38, 'dur': 0.026}, {'onset': 5.984, 'pitch': 43, 'dur': 0.026}, {'onset': 6.01, 'pitch': 47, 'dur': 0.026}, {'onset': 6.039, 'pitch': 50, 'dur': 0.026}, {'onset': 6.068, 'pitch': 55, 'dur': 0.026}, {'onset': 6.096, 'pitch': 59, 'dur': 0.026}, {'onset': 13.927, 'pitch': 40, 'dur': 0.026}, {'onset': 13.956, 'pitch': 43, 'dur': 0.026}, {'onset': 13.984, 'pitch': 48, 'dur': 0.026}, {'onset': 14.01, 'pitch': 52, 'dur': 0.026}, {'onset': 14.039, 'pitch': 55, 'dur': 0.026}, {'onset': 14.068, 'pitch': 60, 'dur': 0.026}, {'onset': 14.096, 'pitch': 64, 'dur': 0.026}]
+    graces xml 14 midi 14  pitch-sets-equal=True
+    duration deviations (22):
+       {'mnum': '10', 'pitch': 43, 'xml_on': 38.125, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 55, 'xml_on': 38.125, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 44, 'xml_on': 38.625, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 56, 'xml_on': 38.625, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 44, 'xml_on': 39.125, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 56, 'xml_on': 39.125, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 32, 'xml_on': 39.625, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '10', 'pitch': 44, 'xml_on': 39.625, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '20', 'pitch': 36, 'xml_on': 76.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '20', 'pitch': 39, 'xml_on': 77.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 36, 'xml_on': 80.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 39, 'xml_on': 81.125, 'xml_dur': 1.0, 'mid_dur': 0.5}
+       {'mnum': '21', 'pitch': 44, 'xml_on': 83.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 43, 'xml_on': 84.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 41, 'xml_on': 84.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 39, 'xml_on': 85.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 38, 'xml_on': 85.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '22', 'pitch': 44, 'xml_on': 87.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 43, 'xml_on': 88.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 41, 'xml_on': 88.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 39, 'xml_on': 89.125, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '23', 'pitch': 38, 'xml_on': 89.625, 'xml_dur': 0.5, 'mid_dur': 0.25}
+### op2no3 mvt1 mm1-13
+  P1 staff0: xml 105 (main 105 + grace 0) midi 104 | unmatched 1 leftover 0 | total 52.0 span 52.0
+    UNMATCHED XML: [{'mnum': '7', 'pitch': 62, 'onset': 26.0}]
+    duration deviations (21):
+       {'mnum': '1', 'pitch': 62, 'xml_on': 3.0, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '1', 'pitch': 65, 'xml_on': 3.0, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '1', 'pitch': 60, 'xml_on': 3.5, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '1', 'pitch': 64, 'xml_on': 3.5, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '2', 'pitch': 59, 'xml_on': 4.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 62, 'xml_on': 4.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 59, 'xml_on': 5.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 67, 'xml_on': 5.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '3', 'pitch': 64, 'xml_on': 11.0, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '3', 'pitch': 67, 'xml_on': 11.0, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '3', 'pitch': 62, 'xml_on': 11.5, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '3', 'pitch': 65, 'xml_on': 11.5, 'xml_dur': 0.5, 'mid_dur': 0.125}
+       {'mnum': '4', 'pitch': 60, 'xml_on': 12.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 64, 'xml_on': 12.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 64, 'xml_on': 13.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 72, 'xml_on': 13.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '5', 'pitch': 74, 'xml_on': 19.0, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '5', 'pitch': 71, 'xml_on': 19.5, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '6', 'pitch': 74, 'xml_on': 23.0, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '6', 'pitch': 71, 'xml_on': 23.5, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '7', 'pitch': 62, 'xml_on': 26.0, 'xml_dur': 1.0, 'mid_dur': 2.0}
+  P2 staff1: xml 71 (main 71 + grace 0) midi 70 | unmatched 1 leftover 0 | total 52.0 span 52.0
+    UNMATCHED XML: [{'mnum': '12', 'pitch': 42, 'onset': 44.0}]
+    duration deviations (18):
+       {'mnum': '2', 'pitch': 43, 'xml_on': 4.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 55, 'xml_on': 4.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 43, 'xml_on': 5.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '2', 'pitch': 55, 'xml_on': 5.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 48, 'xml_on': 12.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 55, 'xml_on': 12.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 48, 'xml_on': 13.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '4', 'pitch': 55, 'xml_on': 13.0, 'xml_dur': 1.0, 'mid_dur': 0.25}
+       {'mnum': '8', 'pitch': 53, 'xml_on': 31.0, 'xml_dur': 0.333, 'mid_dur': 0.167}
+       {'mnum': '8', 'pitch': 52, 'xml_on': 31.333, 'xml_dur': 0.333, 'mid_dur': 0.167}
+       {'mnum': '8', 'pitch': 50, 'xml_on': 31.667, 'xml_dur': 0.333, 'mid_dur': 0.167}
+       {'mnum': '9', 'pitch': 55, 'xml_on': 33.0, 'xml_dur': 3.0, 'mid_dur': 2.5}
+       {'mnum': '9', 'pitch': 50, 'xml_on': 35.0, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '9', 'pitch': 47, 'xml_on': 35.5, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '10', 'pitch': 55, 'xml_on': 37.0, 'xml_dur': 3.0, 'mid_dur': 2.5}
+       {'mnum': '10', 'pitch': 50, 'xml_on': 39.0, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '10', 'pitch': 47, 'xml_on': 39.5, 'xml_dur': 0.5, 'mid_dur': 0.25}
+       {'mnum': '11', 'pitch': 42, 'xml_on': 43.0, 'xml_dur': 1.0, 'mid_dur': 2.0}
+### k309 mvt3 mm9-19
+  P1 staff0: xml 69 (main 55 + grace 14) midi 69 | unmatched 0 leftover 14 | total 22.0 span 22.055
+    LEFTOVER MIDI: [{'onset': 0.0, 'pitch': 77, 'dur': 0.055}, {'onset': 1.969, 'pitch': 71, 'dur': 0.026}, {'onset': 2.026, 'pitch': 74, 'dur': 0.026}, {'onset': 2.055, 'pitch': 72, 'dur': 1.5}, {'onset': 3.997, 'pitch': 83, 'dur': 0.055}, {'onset': 5.969, 'pitch': 76, 'dur': 0.026}, {'onset': 6.026, 'pitch': 79, 'dur': 0.026}, {'onset': 6.055, 'pitch': 77, 'dur': 1.5}, {'onset': 7.997, 'pitch': 81, 'dur': 0.055}, {'onset': 9.997, 'pitch': 79, 'dur': 0.055}, {'onset': 11.997, 'pitch': 77, 'dur': 0.055}, {'onset': 13.997, 'pitch': 81, 'dur': 0.055}, {'onset': 15.997, 'pitch': 79, 'dur': 0.055}, {'onset': 17.997, 'pitch': 77, 'dur': 0.055}]
+    graces xml 14 midi 14  pitch-sets-equal=True
+    duration deviations (12):
+       {'mnum': '9', 'pitch': 72, 'xml_on': 1.5, 'xml_dur': 0.5, 'mid_dur': 0.414}
+       {'mnum': '10', 'pitch': 72, 'xml_on': 2.0, 'xml_dur': 1.5, 'mid_dur': 0.026}
+       {'mnum': '11', 'pitch': 77, 'xml_on': 5.5, 'xml_dur': 0.5, 'mid_dur': 0.414}
+       {'mnum': '12', 'pitch': 77, 'xml_on': 6.0, 'xml_dur': 1.5, 'mid_dur': 0.026}
+       {'mnum': '16', 'pitch': 88, 'xml_on': 15.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '16', 'pitch': 85, 'xml_on': 15.25, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '17', 'pitch': 86, 'xml_on': 17.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '17', 'pitch': 83, 'xml_on': 17.25, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '18', 'pitch': 76, 'xml_on': 19.0, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '18', 'pitch': 79, 'xml_on': 19.25, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '18', 'pitch': 77, 'xml_on': 19.5, 'xml_dur': 0.25, 'mid_dur': 0.125}
+       {'mnum': '18', 'pitch': 74, 'xml_on': 19.75, 'xml_dur': 0.25, 'mid_dur': 0.125}
+  P1 staff1: xml 85 (main 85 + grace 0) midi 85 | unmatched 0 leftover 0 | total 22.0 span 22.055
+    duration deviations (0):

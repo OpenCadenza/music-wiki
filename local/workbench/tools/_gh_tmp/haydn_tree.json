@@ -1,0 +1,238 @@
+{
+  "sha": "fa453a295003bb13d6f75fb920064c1dcdb80be5",
+  "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/trees/fa453a295003bb13d6f75fb920064c1dcdb80be5",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e43b0f988953ae3a84b00331d0ccf5f7d51cb3cf",
+      "size": 10,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/e43b0f988953ae3a84b00331d0ccf5f7d51cb3cf"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6142184098efa2409dc6aebd282d76f1d7e7cf83",
+      "size": 4406,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/6142184098efa2409dc6aebd282d76f1d7e7cf83"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66f6dd1fd94c1e7713f35e0d64a40146ec23fc87",
+      "size": 4517,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/66f6dd1fd94c1e7713f35e0d64a40146ec23fc87"
+    },
+    {
+      "path": "kern",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1cb6156be268b9d781619f0c13cbf889169c420b",
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/trees/1cb6156be268b9d781619f0c13cbf889169c420b"
+    },
+    {
+      "path": "kern/sym099a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "492c2000e813b8210ed5224930229fcb5dddfc76",
+      "size": 125575,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/492c2000e813b8210ed5224930229fcb5dddfc76"
+    },
+    {
+      "path": "kern/sym099b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b85578cfbf58804b2fe0d8c14ad0f557d972ec38",
+      "size": 70967,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/b85578cfbf58804b2fe0d8c14ad0f557d972ec38"
+    },
+    {
+      "path": "kern/sym099c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89301c6a49ec9227ac4eb821af8f303362e78d9d",
+      "size": 39749,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/89301c6a49ec9227ac4eb821af8f303362e78d9d"
+    },
+    {
+      "path": "kern/sym099d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6071ab360d220b76d59bc67277053c01e9c819cc",
+      "size": 123820,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/6071ab360d220b76d59bc67277053c01e9c819cc"
+    },
+    {
+      "path": "kern/sym100a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b30fa2ca03d3ea1e23488ba7748050138a30d6cb",
+      "size": 126479,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/b30fa2ca03d3ea1e23488ba7748050138a30d6cb"
+    },
+    {
+      "path": "kern/sym100b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284092e76323c79f1b5a39bb24b0248ad84b5dbf",
+      "size": 100633,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/284092e76323c79f1b5a39bb24b0248ad84b5dbf"
+    },
+    {
+      "path": "kern/sym100c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5665888587cd1c607912fcafd8b2529dcc48c8d3",
+      "size": 37165,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/5665888587cd1c607912fcafd8b2529dcc48c8d3"
+    },
+    {
+      "path": "kern/sym100d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9669af0dccc9cb4d153e671f900aed90f4cc71d7",
+      "size": 131002,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/9669af0dccc9cb4d153e671f900aed90f4cc71d7"
+    },
+    {
+      "path": "kern/sym101a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf54d2049bf815a38cc341092f067efbec5d1b90",
+      "size": 146582,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/cf54d2049bf815a38cc341092f067efbec5d1b90"
+    },
+    {
+      "path": "kern/sym101b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eb70bf93b484a161fe9561897e612ced2ad832f",
+      "size": 105159,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/7eb70bf93b484a161fe9561897e612ced2ad832f"
+    },
+    {
+      "path": "kern/sym101c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3151d2d13ffdf1d1b0ec61c5c666c17ede0076fe",
+      "size": 55079,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/3151d2d13ffdf1d1b0ec61c5c666c17ede0076fe"
+    },
+    {
+      "path": "kern/sym101d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5af697df0f4f1605d37a49ea551e32e437d4c041",
+      "size": 124219,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/5af697df0f4f1605d37a49ea551e32e437d4c041"
+    },
+    {
+      "path": "kern/sym102a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b8b6a58fd03513e44ed814fa23728581a20395d",
+      "size": 144414,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/9b8b6a58fd03513e44ed814fa23728581a20395d"
+    },
+    {
+      "path": "kern/sym102b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70894fdc0101b8e79bee83c9e6df40fc6783cdf8",
+      "size": 51009,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/70894fdc0101b8e79bee83c9e6df40fc6783cdf8"
+    },
+    {
+      "path": "kern/sym102c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c3a95416cc3346fcc2ec605787ff8842a7b99da",
+      "size": 34037,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/6c3a95416cc3346fcc2ec605787ff8842a7b99da"
+    },
+    {
+      "path": "kern/sym102d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3c8b2d9e0dc27a37820a7d802895a95639922bc",
+      "size": 118430,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/a3c8b2d9e0dc27a37820a7d802895a95639922bc"
+    },
+    {
+      "path": "kern/sym103a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e955cf289968a40fde18a5c8eafdccb07612ef42",
+      "size": 124492,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/e955cf289968a40fde18a5c8eafdccb07612ef42"
+    },
+    {
+      "path": "kern/sym103b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51e44355c3113d68e5fb2823249bf6d9471be012",
+      "size": 111091,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/51e44355c3113d68e5fb2823249bf6d9471be012"
+    },
+    {
+      "path": "kern/sym103c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8b7b7dbc7b416d2f3f66d25d7ff24aebfe5034b",
+      "size": 33633,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/f8b7b7dbc7b416d2f3f66d25d7ff24aebfe5034b"
+    },
+    {
+      "path": "kern/sym103d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df8e48afa8f8b14e95d19bae95f551e618eb9ec2",
+      "size": 144196,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/df8e48afa8f8b14e95d19bae95f551e618eb9ec2"
+    },
+    {
+      "path": "kern/sym104a.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6118123606a1f0b4f5a84532136a3cea4398310",
+      "size": 135525,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/b6118123606a1f0b4f5a84532136a3cea4398310"
+    },
+    {
+      "path": "kern/sym104b.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a43ad762a6a6a9ae6b3ea26460fafb0187cbd8",
+      "size": 82950,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/b5a43ad762a6a6a9ae6b3ea26460fafb0187cbd8"
+    },
+    {
+      "path": "kern/sym104c.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aff9fb9483f80984db5bd99b2e3f36c60b021c5",
+      "size": 42918,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/2aff9fb9483f80984db5bd99b2e3f36c60b021c5"
+    },
+    {
+      "path": "kern/sym104d.krn",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b999f74ba1f9af226c8ceea2546e31da3302e9ad",
+      "size": 130430,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/b999f74ba1f9af226c8ceea2546e31da3302e9ad"
+    },
+    {
+      "path": "kern_hlp.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5650390bf7996f664cf1bc4b8c50326e7bf0bfb8",
+      "size": 55754,
+      "url": "https://api.github.com/repos/musedata/humdrum-haydn-symphonies/git/blobs/5650390bf7996f664cf1bc4b8c50326e7bf0bfb8"
+    }
+  ],
+  "truncated": false
+}

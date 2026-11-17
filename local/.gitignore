@@ -16,3 +16,12 @@ __pycache__/
 /workbench/scores/*/*.mxl
 /workbench/tools/_probe/*.pdf
 /workbench/tools/_probe/*.mid
+
+# 2026-11-17 谱例战役临时产物（不纳入版本跟踪）
+# 2026-11-17 谱例战役临时产物（相对 local/ 的路径）
+/workbench/scores/*/downloads/
+/workbench/scores/verifier/mxl/
+/workbench/scores/verifier/src-brahms/
+/workbench/scores/verifier/build*/
+/workbench/scores/score-s5/_pdmx/
+/worktrees-tmp/

@@ -1,0 +1,28 @@
+=== Op.74 m.6–9: kern vs DCML notes.tsv 逐音 ===
+  [Vln I] 起点 12.0: kern=['G4']/1.25  dcml=['G4']/1.0  ← 差异
+  [Vln I] 起点 13.0: kern=None dcml=[(67, 0.25, 'G4', '-1')]  ← 单侧缺失
+  [Vln I] 起点 15.0: kern=['Eb5']/0.25  dcml=['E5']/0.25  ← 差异
+  [Vln I] 有差异（kern 24 起点 / dcml 25 起点）
+  [Vln II] ✓ 两源一致（kern 12 起点 / dcml 12 起点）
+  [Viola] ✓ 两源一致（kern 13 起点 / dcml 13 起点）
+  [Vc] ✓ 两源一致（kern 8 起点 / dcml 8 起点）
+
+=== 文章校勘点（DCML midi 值）===
+  m.6 VlnII: Ab55 midi=80 dur=2.0
+  m.6 VlnII: G55 midi=79 dur=1.0
+  m.6 VlnII: F55 midi=77 dur=0.5
+  m.6 VlnII: F44 midi=65 dur=0.5
+  m.7 Vc: Bb22 midi=46 dur=4.0  ← 应为 Bb2 / 46
+  m.9 VlnI: G44 midi=67 qb=32 d=1.0 tie=1
+  m.9 VlnI: G44 midi=67 qb=33 d=0.25 tie=-1
+  m.9 VlnI: F44 midi=65 qb=133/4 d=0.25 tie=
+  m.9 VlnI: E44 midi=64 qb=67/2 d=0.25 tie=
+  m.9 VlnI: F44 midi=65 qb=135/4 d=0.25 tie=
+  m.9 VlnI: E44 midi=64 qb=34 d=0.25 tie=
+  m.9 VlnI: F44 midi=65 qb=137/4 d=0.25 tie=
+  m.9 VlnI: G44 midi=67 qb=69/2 d=0.25 tie=
+  m.9 VlnI: F44 midi=65 qb=139/4 d=0.25 tie=
+  m.9 VlnI: E55 midi=76 qb=35 d=0.25 tie=
+  m.9 VlnI: F55 midi=77 qb=141/4 d=0.25 tie=
+  m.9 VlnI: G55 midi=79 qb=71/2 d=0.25 tie=
+  m.9 VlnI: F55 midi=77 qb=143/4 d=0.25 tie=

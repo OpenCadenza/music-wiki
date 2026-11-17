@@ -1,0 +1,1941 @@
+[
+ {
+  "name": "op13 mvt1 mm1-19",
+  "staffs": [
+   {
+    "part": "P1",
+    "staff": 0,
+    "n_xml": 307,
+    "n_midi": 307,
+    "xml_total": 75.998,
+    "midi_span": 75.25,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "1",
+      "pitch": 51,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "1",
+      "pitch": 55,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "1",
+      "pitch": 60,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "2",
+      "pitch": 59,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "2",
+      "pitch": 62,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "2",
+      "pitch": 65,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 66,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 69,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 72,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 62,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 11.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 67,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 11.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 74,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 11.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 68,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 72,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 77,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 80,
+      "xml_dur": 0.5,
+      "mid_dur": 0.625,
+      "xml_on": 14.5
+     },
+     {
+      "mnum": "5",
+      "pitch": 63,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 16.0
+     },
+     {
+      "mnum": "5",
+      "pitch": 63,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 16.5
+     },
+     {
+      "mnum": "5",
+      "pitch": 75,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 16.5
+     },
+     {
+      "mnum": "6",
+      "pitch": 65,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 20.5
+     },
+     {
+      "mnum": "6",
+      "pitch": 77,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 20.5
+     },
+     {
+      "mnum": "7",
+      "pitch": 69,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 24.5
+     },
+     {
+      "mnum": "7",
+      "pitch": 81,
+      "xml_dur": 0.5,
+      "mid_dur": 0.875,
+      "xml_on": 24.5
+     },
+     {
+      "mnum": "9",
+      "pitch": 77,
+      "xml_dur": 0.5,
+      "mid_dur": 0.625,
+      "xml_on": 32.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 89,
+      "xml_dur": 0.5,
+      "mid_dur": 0.625,
+      "xml_on": 32.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 83,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 33.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 83,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 33.25
+     },
+     {
+      "mnum": "9",
+      "pitch": 77,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.5
+     },
+     {
+      "mnum": "9",
+      "pitch": 83,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.5
+     },
+     {
+      "mnum": "9",
+      "pitch": 77,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.75
+     },
+     {
+      "mnum": "9",
+      "pitch": 83,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.75
+     },
+     {
+      "mnum": "10",
+      "pitch": 84,
+      "xml_dur": 0.5,
+      "mid_dur": 0.625,
+      "xml_on": 36.0
+     },
+     {
+      "mnum": "10",
+      "pitch": 80,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 37.0
+     },
+     {
+      "mnum": "10",
+      "pitch": 80,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 37.25
+     },
+     {
+      "mnum": "10",
+      "pitch": 80,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 37.5
+     },
+     {
+      "mnum": "10",
+      "pitch": 80,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 37.75
+     },
+     {
+      "mnum": "11",
+      "pitch": 58,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 42.998
+     },
+     {
+      "mnum": "11",
+      "pitch": 64,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 42.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 56,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 43.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 65,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 43.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 64,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 44.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 67,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 44.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 65,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 45.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 68,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 45.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 62,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 46.998
+     },
+     {
+      "mnum": "12",
+      "pitch": 71,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 46.998
+     },
+     {
+      "mnum": "13",
+      "pitch": 63,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 47.998
+     },
+     {
+      "mnum": "13",
+      "pitch": 72,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 47.998
+     },
+     {
+      "mnum": "13",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 50.998
+     },
+     {
+      "mnum": "13",
+      "pitch": 76,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 50.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 68,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 51.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 77,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 51.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 76,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 52.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 79,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 52.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 77,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 53.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 80,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 53.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 74,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 54.998
+     },
+     {
+      "mnum": "14",
+      "pitch": 83,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 54.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 72,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 55.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 75,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 55.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 79,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 55.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 84,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 55.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 67,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 57.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 71,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 57.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 77,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 57.998
+     },
+     {
+      "mnum": "15",
+      "pitch": 79,
+      "xml_dur": 2.0,
+      "mid_dur": 0.062,
+      "xml_on": 57.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 67,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 59.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 72,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 59.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 75,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 59.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 65,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 61.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 68,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 61.998
+     },
+     {
+      "mnum": "16",
+      "pitch": 74,
+      "xml_dur": 2.0,
+      "mid_dur": 0.125,
+      "xml_on": 61.998
+     },
+     {
+      "mnum": "17",
+      "pitch": 63,
+      "xml_dur": 4.0,
+      "mid_dur": 6.0,
+      "xml_on": 63.998
+     },
+     {
+      "mnum": "17",
+      "pitch": 72,
+      "xml_dur": 4.0,
+      "mid_dur": 6.0,
+      "xml_on": 63.998
+     },
+     {
+      "mnum": "19",
+      "pitch": 60,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 71.998
+     },
+     {
+      "mnum": "19",
+      "pitch": 63,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 71.998
+     },
+     {
+      "mnum": "19",
+      "pitch": 72,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 71.998
+     },
+     {
+      "mnum": "19",
+      "pitch": 58,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 74.998
+     },
+     {
+      "mnum": "19",
+      "pitch": 64,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 74.998
+     }
+    ],
+    "measures_with_dev": {
+     "1": 3,
+     "2": 3,
+     "3": 6,
+     "4": 4,
+     "5": 3,
+     "6": 2,
+     "7": 2,
+     "9": 8,
+     "10": 5,
+     "11": 2,
+     "12": 8,
+     "13": 4,
+     "14": 8,
+     "15": 8,
+     "16": 6,
+     "17": 2,
+     "19": 5
+    }
+   },
+   {
+    "part": "P2",
+    "staff": 1,
+    "n_xml": 320,
+    "n_midi": 320,
+    "xml_total": 76.0,
+    "midi_span": 76.0,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "1",
+      "pitch": 36,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "1",
+      "pitch": 39,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "1",
+      "pitch": 43,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "1",
+      "pitch": 48,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "2",
+      "pitch": 56,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "2",
+      "pitch": 51,
+      "xml_dur": 1.0,
+      "mid_dur": 1.5,
+      "xml_on": 6.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 63,
+      "xml_dur": 1.0,
+      "mid_dur": 1.375,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "3",
+      "pitch": 59,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 11.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 56,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 60,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "4",
+      "pitch": 65,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 67,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.5
+     },
+     {
+      "mnum": "9",
+      "pitch": 74,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.5
+     },
+     {
+      "mnum": "9",
+      "pitch": 67,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.75
+     },
+     {
+      "mnum": "9",
+      "pitch": 74,
+      "xml_dur": 0.25,
+      "mid_dur": 0.062,
+      "xml_on": 33.75
+     },
+     {
+      "mnum": "10",
+      "pitch": 53,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.5
+     },
+     {
+      "mnum": "10",
+      "pitch": 60,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.5
+     },
+     {
+      "mnum": "10",
+      "pitch": 62,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.5
+     },
+     {
+      "mnum": "10",
+      "pitch": 53,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.75
+     },
+     {
+      "mnum": "10",
+      "pitch": 60,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.75
+     },
+     {
+      "mnum": "10",
+      "pitch": 62,
+      "xml_dur": 0.25,
+      "mid_dur": 0.031,
+      "xml_on": 37.75
+     }
+    ],
+    "measures_with_dev": {
+     "1": 4,
+     "2": 2,
+     "3": 2,
+     "4": 3,
+     "9": 4,
+     "10": 6
+    }
+   }
+  ]
+ },
+ {
+  "name": "op81a mvt1 mm1-25",
+  "staffs": [
+   {
+    "part": "P1",
+    "staff": 0,
+    "n_xml": 188,
+    "n_midi": 188,
+    "xml_total": 68.0,
+    "midi_span": 66.25,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "6",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 1.167,
+      "xml_on": 10.0
+     },
+     {
+      "mnum": "10",
+      "pitch": 70,
+      "xml_dur": 0.5,
+      "mid_dur": 1.0,
+      "xml_on": 19.5
+     },
+     {
+      "mnum": "21",
+      "pitch": 67,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 48.0
+     },
+     {
+      "mnum": "21",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 48.0
+     },
+     {
+      "mnum": "21",
+      "pitch": 79,
+      "xml_dur": 1.0,
+      "mid_dur": 0.125,
+      "xml_on": 48.0
+     },
+     {
+      "mnum": "21",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 50.0
+     },
+     {
+      "mnum": "21",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 50.0
+     },
+     {
+      "mnum": "22",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 4.0,
+      "xml_on": 55.0
+     },
+     {
+      "mnum": "22",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 4.0,
+      "xml_on": 55.0
+     },
+     {
+      "mnum": "25",
+      "pitch": 58,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 64.0
+     },
+     {
+      "mnum": "25",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 64.0
+     },
+     {
+      "mnum": "25",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 66.0
+     },
+     {
+      "mnum": "25",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 0.25,
+      "xml_on": 66.0
+     }
+    ],
+    "measures_with_dev": {
+     "6": 1,
+     "10": 1,
+     "21": 5,
+     "22": 2,
+     "25": 4
+    }
+   },
+   {
+    "part": "P2",
+    "staff": 1,
+    "n_xml": 170,
+    "n_midi": 170,
+    "xml_total": 68.0,
+    "midi_span": 68.0,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "6",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 1.5,
+      "xml_on": 10.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 54,
+      "xml_dur": 0.5,
+      "mid_dur": 1.0,
+      "xml_on": 17.5
+     },
+     {
+      "mnum": "10",
+      "pitch": 52,
+      "xml_dur": 0.5,
+      "mid_dur": 1.0,
+      "xml_on": 19.5
+     }
+    ],
+    "measures_with_dev": {
+     "6": 1,
+     "9": 1,
+     "10": 1
+    }
+   }
+  ]
+ },
+ {
+  "name": "op111 mvt1 mm0-25",
+  "staffs": [
+   {
+    "part": "P1",
+    "staff": 0,
+    "n_xml": 304,
+    "n_midi": 304,
+    "xml_total": 100.125,
+    "midi_span": 100.125,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "1",
+      "pitch": 63,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "1",
+      "pitch": 69,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "1",
+      "pitch": 72,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "1",
+      "pitch": 75,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 62,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 71,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 68,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 74,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 77,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 80,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 67,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 76,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 73,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 77,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 85,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "6",
+      "pitch": 73,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 21.125
+     },
+     {
+      "mnum": "6",
+      "pitch": 75,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 21.125
+     },
+     {
+      "mnum": "6",
+      "pitch": 82,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 21.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 70,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 75,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 78,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "8",
+      "pitch": 68,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 29.125
+     },
+     {
+      "mnum": "8",
+      "pitch": 73,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 29.125
+     },
+     {
+      "mnum": "8",
+      "pitch": 77,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 29.125
+     },
+     {
+      "mnum": "9",
+      "pitch": 68,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 33.125
+     },
+     {
+      "mnum": "9",
+      "pitch": 72,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 33.125
+     },
+     {
+      "mnum": "9",
+      "pitch": 75,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 33.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 60,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 38.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 65,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 38.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 72,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 38.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 60,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 65,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 72,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 60,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 66,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 72,
+      "xml_dur": 0.5,
+      "mid_dur": 0.062,
+      "xml_on": 39.625
+     },
+     {
+      "mnum": "20",
+      "pitch": 48,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 76.125
+     },
+     {
+      "mnum": "20",
+      "pitch": 51,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 77.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 48,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 80.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 51,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 81.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 56,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 83.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 55,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 84.125
+     },
+     {
+      "mnum": "22",
+      "pitch": 53,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 84.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 51,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 85.125
+     },
+     {
+      "mnum": "22",
+      "pitch": 50,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 85.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 56,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 87.625
+     },
+     {
+      "mnum": "23",
+      "pitch": 55,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 88.125
+     },
+     {
+      "mnum": "23",
+      "pitch": 53,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 88.625
+     },
+     {
+      "mnum": "23",
+      "pitch": 51,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 89.125
+     },
+     {
+      "mnum": "23",
+      "pitch": 50,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 89.625
+     }
+    ],
+    "measures_with_dev": {
+     "1": 4,
+     "2": 2,
+     "3": 4,
+     "4": 2,
+     "5": 4,
+     "6": 3,
+     "7": 3,
+     "8": 3,
+     "9": 3,
+     "10": 9,
+     "20": 2,
+     "21": 3,
+     "22": 5,
+     "23": 4
+    }
+   },
+   {
+    "part": "P2",
+    "staff": 1,
+    "n_xml": 336,
+    "n_midi": 336,
+    "xml_total": 100.125,
+    "midi_span": 100.125,
+    "bad_onset": [
+     {
+      "mnum": "2",
+      "pitch": 35,
+      "xml_on": 6.125,
+      "mid_on": 5.927,
+      "d": -0.198
+     },
+     {
+      "mnum": "2",
+      "pitch": 35,
+      "xml_on": 6.125,
+      "mid_on": 5.956,
+      "d": -0.169
+     },
+     {
+      "mnum": "4",
+      "pitch": 40,
+      "xml_on": 14.125,
+      "mid_on": 13.927,
+      "d": -0.198
+     },
+     {
+      "mnum": "4",
+      "pitch": 40,
+      "xml_on": 14.125,
+      "mid_on": 13.956,
+      "d": -0.169
+     }
+    ],
+    "bad_dur": [
+     {
+      "mnum": "1",
+      "pitch": 42,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "1",
+      "pitch": 54,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 1.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 35,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 47,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 55,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "2",
+      "pitch": 59,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 6.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 47,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "3",
+      "pitch": 59,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 9.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 40,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 52,
+      "xml_dur": 0.5,
+      "mid_dur": 0.026,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 60,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "4",
+      "pitch": 64,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 14.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 41,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "5",
+      "pitch": 53,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 17.125
+     },
+     {
+      "mnum": "6",
+      "pitch": 55,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 21.125
+     },
+     {
+      "mnum": "6",
+      "pitch": 61,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 21.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 58,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 63,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "7",
+      "pitch": 66,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 25.125
+     },
+     {
+      "mnum": "8",
+      "pitch": 61,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 29.125
+     },
+     {
+      "mnum": "8",
+      "pitch": 65,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 29.125
+     },
+     {
+      "mnum": "9",
+      "pitch": 39,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 33.125
+     },
+     {
+      "mnum": "9",
+      "pitch": 51,
+      "xml_dur": 1.0,
+      "mid_dur": 1.875,
+      "xml_on": 33.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 43,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 38.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 55,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 38.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 44,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 38.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 56,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 38.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 44,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 39.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 56,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 39.125
+     },
+     {
+      "mnum": "10",
+      "pitch": 32,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 39.625
+     },
+     {
+      "mnum": "10",
+      "pitch": 44,
+      "xml_dur": 0.5,
+      "mid_dur": 0.125,
+      "xml_on": 39.625
+     },
+     {
+      "mnum": "12",
+      "pitch": 55,
+      "xml_dur": 0.5,
+      "mid_dur": 1.0,
+      "xml_on": 47.625
+     },
+     {
+      "mnum": "14",
+      "pitch": 43,
+      "xml_dur": 0.5,
+      "mid_dur": 1.0,
+      "xml_on": 55.625
+     },
+     {
+      "mnum": "20",
+      "pitch": 36,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 76.125
+     },
+     {
+      "mnum": "20",
+      "pitch": 39,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 77.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 36,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 80.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 39,
+      "xml_dur": 1.0,
+      "mid_dur": 0.5,
+      "xml_on": 81.125
+     },
+     {
+      "mnum": "21",
+      "pitch": 44,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 83.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 43,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 84.125
+     },
+     {
+      "mnum": "22",
+      "pitch": 41,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 84.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 39,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 85.125
+     },
+     {
+      "mnum": "22",
+      "pitch": 38,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 85.625
+     },
+     {
+      "mnum": "22",
+      "pitch": 44,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 87.625
+     },
+     {
+      "mnum": "23",
+      "pitch": 43,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 88.125
+     },
+     {
+      "mnum": "23",
+      "pitch": 41,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 88.625
+     },
+     {
+      "mnum": "23",
+      "pitch": 39,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 89.125
+     },
+     {
+      "mnum": "23",
+      "pitch": 38,
+      "xml_dur": 0.5,
+      "mid_dur": 0.25,
+      "xml_on": 89.625
+     }
+    ],
+    "measures_with_dev": {
+     "1": 2,
+     "2": 6,
+     "3": 2,
+     "4": 6,
+     "5": 2,
+     "6": 2,
+     "7": 3,
+     "8": 2,
+     "9": 2,
+     "10": 8,
+     "12": 1,
+     "14": 1,
+     "20": 2,
+     "21": 3,
+     "22": 5,
+     "23": 4
+    }
+   }
+  ]
+ },
+ {
+  "name": "op2no3 mvt1 mm1-13",
+  "staffs": [
+   {
+    "part": "P1",
+    "staff": 0,
+    "n_xml": 105,
+    "n_midi": 104,
+    "xml_total": 52.0,
+    "midi_span": 52.0,
+    "length_mismatch": true
+   },
+   {
+    "part": "P2",
+    "staff": 1,
+    "n_xml": 71,
+    "n_midi": 70,
+    "xml_total": 52.0,
+    "midi_span": 52.0,
+    "length_mismatch": true
+   }
+  ]
+ },
+ {
+  "name": "k309 mvt3 mm9-19",
+  "staffs": [
+   {
+    "part": "P1",
+    "staff": 0,
+    "n_xml": 69,
+    "n_midi": 69,
+    "xml_total": 22.0,
+    "midi_span": 22.055,
+    "bad_onset": [],
+    "bad_dur": [
+     {
+      "mnum": "9",
+      "pitch": 76,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "9",
+      "pitch": 77,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 0.0
+     },
+     {
+      "mnum": "10",
+      "pitch": 72,
+      "xml_dur": 1.5,
+      "mid_dur": 0.026,
+      "xml_on": 2.0
+     },
+     {
+      "mnum": "10",
+      "pitch": 74,
+      "xml_dur": 0.0,
+      "mid_dur": 1.5,
+      "xml_on": 2.0
+     },
+     {
+      "mnum": "11",
+      "pitch": 81,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "11",
+      "pitch": 83,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 4.0
+     },
+     {
+      "mnum": "12",
+      "pitch": 77,
+      "xml_dur": 1.5,
+      "mid_dur": 0.026,
+      "xml_on": 6.0
+     },
+     {
+      "mnum": "12",
+      "pitch": 79,
+      "xml_dur": 0.0,
+      "mid_dur": 1.5,
+      "xml_on": 6.0
+     },
+     {
+      "mnum": "13",
+      "pitch": 79,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "13",
+      "pitch": 81,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 8.0
+     },
+     {
+      "mnum": "14",
+      "pitch": 77,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 10.0
+     },
+     {
+      "mnum": "14",
+      "pitch": 79,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 10.0
+     },
+     {
+      "mnum": "15",
+      "pitch": 76,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 12.0
+     },
+     {
+      "mnum": "15",
+      "pitch": 77,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 12.0
+     },
+     {
+      "mnum": "16",
+      "pitch": 79,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "16",
+      "pitch": 81,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 14.0
+     },
+     {
+      "mnum": "16",
+      "pitch": 88,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 15.0
+     },
+     {
+      "mnum": "16",
+      "pitch": 85,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 15.25
+     },
+     {
+      "mnum": "17",
+      "pitch": 77,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 16.0
+     },
+     {
+      "mnum": "17",
+      "pitch": 79,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 16.0
+     },
+     {
+      "mnum": "17",
+      "pitch": 86,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 17.0
+     },
+     {
+      "mnum": "17",
+      "pitch": 83,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 17.25
+     },
+     {
+      "mnum": "18",
+      "pitch": 76,
+      "xml_dur": 0.5,
+      "mid_dur": 0.055,
+      "xml_on": 18.0
+     },
+     {
+      "mnum": "18",
+      "pitch": 77,
+      "xml_dur": 0.0,
+      "mid_dur": 0.5,
+      "xml_on": 18.0
+     },
+     {
+      "mnum": "18",
+      "pitch": 76,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 19.0
+     },
+     {
+      "mnum": "18",
+      "pitch": 79,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 19.25
+     },
+     {
+      "mnum": "18",
+      "pitch": 77,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 19.5
+     },
+     {
+      "mnum": "18",
+      "pitch": 74,
+      "xml_dur": 0.25,
+      "mid_dur": 0.125,
+      "xml_on": 19.75
+     }
+    ],
+    "measures_with_dev": {
+     "9": 2,
+     "10": 2,
+     "11": 2,
+     "12": 2,
+     "13": 2,
+     "14": 2,
+     "15": 2,
+     "16": 4,
+     "17": 4,
+     "18": 6
+    }
+   },
+   {
+    "part": "P1",
+    "staff": 1,
+    "n_xml": 85,
+    "n_midi": 85,
+    "xml_total": 22.0,
+    "midi_span": 22.055,
+    "bad_onset": [],
+    "bad_dur": [],
+    "measures_with_dev": {}
+   }
+  ]
+ }
+]

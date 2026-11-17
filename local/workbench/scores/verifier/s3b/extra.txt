@@ -1,0 +1,78 @@
+--- [BWV1050] kern 中的 tie（mm.1-9）---
+  Flauto          : 1 处 tie
+      m.9 @34     A4         dur=2 → ?
+  VlnPrinc        : 0 处 tie
+  VlnRip          : 0 处 tie
+  Viola           : 0 处 tie
+  Vc              : 0 处 tie
+  Violone         : 0 处 tie
+  Cemba3/Upper    : 0 处 tie
+  Cemba1/Lower    : 0 处 tie
+  合计 1 处
+
+--- [Haydn104] kern 中的 tie（mm.17-32）---
+  Vln I           : 3 处 tie
+      m.19 @5      D4         dur=2 → m.19 @7
+      m.23 @23     A4         dur=2 → m.24 @25
+      m.27 @37     D4         dur=2 → m.27 @39
+  Vln II          : 4 处 tie
+      m.21 @16     A4         dur=1 → m.22 @17
+      m.22 @20     F#4        dur=1 → m.23 @21
+      m.30 @52     C#4        dur=1 → m.31 @53
+      m.31 @56     E4         dur=1 → m.32 @57
+  Va              : 0 处 tie
+  Vc              : 3 处 tie
+      m.18 @1      D3         dur=4 → m.19 @5
+      m.26 @33     D3         dur=4 → m.27 @37
+      m.30 @52     A3         dur=1 → m.31 @53
+  Cb              : 3 处 tie
+      m.18 @1      D2         dur=4 → m.19 @5
+      m.26 @33     D2         dur=4 → m.27 @37
+      m.30 @52     A2         dur=1 → m.31 @53
+  合计 13 处
+
+--- [Op74] kern 中的 tie（mm.6-9）---
+  Vln I           : 1 处 tie
+      m.9 @12     G4         dur=1 → m.9 @13
+  Vln II          : 0 处 tie
+  Va              : 1 处 tie
+      m.9 @15     Ab3        dur=1 → ?
+  Vc              : 1 处 tie
+      m.9 @15     F2         dur=1 → ?
+  合计 3 处
+
+--- .ly 音域（MIDI 事件）---
+  [BWV1050]
+    flauto               A4    – D5     (69–74)  4 音
+    violinoPrincipale    A3    – B5     (57–83)  124 音
+    violinoRipieno       A3    – B5     (57–83)  121 音
+    viola                D3    – D5     (50–74)  68 音
+    violoncello          C#2   – D4     (37–62)  72 音
+    violone              D1    – D3     (26–50)  72 音
+    cembaloUpper         D4    – A5     (62–81)  20 音
+    cembaloLower         C#2   – D4     (37–62)  72 音
+    全体: D1 – B5, 共 553 音
+  [Haydn104]
+    violinOne            D4    – G5     (62–79)  51 音
+    violinTwo            A3    – B4     (57–71)  36 音
+    viola                D3    – B3     (50–59)  11 音
+    cello                A2    – D4     (45–62)  26 音
+    bass                 A1    – D3     (33–50)  26 音
+    全体: A1 – G5, 共 150 音
+  [Op74]
+    violinOne            E4    – G5     (64–79)  25 音
+    violinTwo            Bb3   – Ab5    (58–80)  12 音
+    viola                D3    – B4     (50–71)  13 音
+    cello                Eb2   – C3     (39–48)  8 音
+    全体: Eb2 – Ab5, 共 58 音
+
+--- BWV1050: kern 三行大键琴 mm.1-9 逐小节音集 ---
+  m.1: cemba1=['A3', 'B3', 'C#4', 'D3']  cemba2=['A3', 'F#3']  cemba3=['A4', 'D4', 'D5', 'F#4']  cemba2⊆(cemba1∪cemba3)? False
+  m.2: cemba1=['A3', 'B3', 'C#4', 'D3', 'E3', 'F#3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.3: cemba1=['A3', 'B3', 'C#4', 'D3', 'D4', 'E3', 'F#3', 'G3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.4: cemba1=['C#2', 'C#3', 'D2', 'D3', 'E2', 'F#2', 'G2']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.5: cemba1=['A2', 'A3', 'B2', 'C#3', 'D3', 'E3', 'F#3', 'G2', 'G3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.6: cemba1=['A2', 'A3', 'B3', 'C#3', 'D3', 'E3', 'F#3', 'G3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.7: cemba1=['A3', 'C#3', 'D3', 'F#3', 'G3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.8: cemba1=['A2', 'A3', 'C#3', 'D3', 'F#2', 'G2', 'G3']  cemba2=[]  cemba3=[]  cemba2⊆(cemba1∪cemba3)? True
+  m.9: cemba1=['D3']  cemba2=[]  cemba3=['A5', 'B4', 'C#5', 'D5', 'E5', 'F#5', 'G5']  cemba2⊆(cemba1∪cemba3)? True

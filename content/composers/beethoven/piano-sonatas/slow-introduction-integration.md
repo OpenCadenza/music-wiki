@@ -60,12 +60,154 @@ flowchart TD
 1. **呈示部收束与展开部交界处（mm. 133–136）**：按照古典惯例，呈示部在经过长达 120 小节的高压冲刺后，应顺畅划入展开部。然而贝多芬在正格终止的落音处骤然休止，在毫无防备的悬崖边缘，**Grave 原速原貌突然降临**！不仅速度骤降为极慢，调性更突兀切入远关系的 g 小调。它以四小节严酷的质问彻底粉碎了呈示部的胜利狂欢，成为整个展开部痛苦拷问的真正序幕；
 2. **再现部冲刺向全曲尾声处（mm. 295–298）**：在再现部主部与副部呼啸而过、直奔最后的凯旋时，快板动能再次被猛然切断，Grave 再次以原速凄厉现身于主调 c 小调之上。直到它在高音区留下两记悬空的单音，快板才在最后四小节以绝望的强奏完成最后的致命撞击。
 
-> **【谱例占位 · 待资料助手交付】**
+> **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《c小调第8钢琴奏鸣曲“悲怆”》Op. 13，第一乐章 Grave - Allegro di molto e con brio
 > - **小节范围**：mm. 1–19（开端 Grave 动机向 Allegro 主部第一主题的裂变衔接）
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
 > - **调性与拍号**：c 小调，Grave 4/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–10 慢引子（双重附点、减七和弦与六度跳跃叹息动机）；mm. 11–19 快板主部呈示（低音颤音，高音以 4 倍时值压缩倒影引子动机形成飞驰第一主题）
+
+```lilypond title="贝多芬 Op.13《悲怆》第一乐章 第 1–19 小节" location="mm. 1–19"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Beethoven: Piano Sonata No. 8 in C minor, Op. 13 “Pathétique”"
+  subtitle = "I. Grave — Allegro di molto e con brio · mm. 1–19"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+
+#(set-global-staff-size 17)
+
+D = \tweak Stem.direction #DOWN \etc
+U = \tweak Stem.direction #UP \etc
+
+\score {
+  \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "treble" \time 4/4 \key c \minor \oneVoice \tempo "Grave" \U <ef ~ g ~ c' ~>4 \U <ef g
+    c'>16. \U <g c'>32 [ \U <g b d'>16. \U <g c' ef'>32 ] \U <a c' ef'>4 ^(
+  _\=2( \U <b d'>8 ) \=2) r8 | % 1
+  \U <b ~ d' ~ f' ~>4 \U <b d' f'>16. \U <b d' f'>32 [ \U <b d' g'>16. \U <b d'
+    af'!>32 ] \U <b d' af'>4 _( ^\=2( _\=3( \U <c' ef' g'>8 ) \=2) \=3) r8 | % 2
+  \U <fs' ~ a' ~ c'' ~>4 _\fp \U <fs' a' c''>16. \U <fs' a' c''>32 [ \U <fs'
+    a' d''>16. \U <fs' a' ef''>32 ] \D <fs' a' ef''>4 _( _\=2( ^\=3( _\sf \U
+  <d' g' d''>16 ) \=2) \=3) -. -. -. r32 \U <fs' a' c''>32 [ \U <fs' a' d''>16.
+  \U <fs' a' ef''>32 ] | % 3
+  \D <fs' a' ef''>4 ^( _\sf _\> \U <d' g' d''>8 [ \! _\p \U <g' c'' e''>8 ] \D
+  <af'! c'' f''!>8 ) -. -. -. [ \D af''8 ~ ] _\sf \D af''32 [ \tweak
+  TupletBracket.stencil ##f \tuplet 3/2 {
+    \D g''64 ^( \D af''64 \D bf''64 }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D af''64 \D g''64 \D f''64 ] }
+  \D ef''64 [ \D d''64 \D c''64 \D bf'64 ] \tweak TupletBracket.stencil ##f
+  \tuplet 3/2 {
+    \U af'64 [ \U g'64 \U f'!64 }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U ef'64 \U d'64 \U f'64 }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U af'64 \U f'64 \U d'64 ) ] }
+  | % 4
+  \U ef'8 -. [ _\p \U <ef' ~ ef'' ~>8 ] \U <ef' ef''>16. \D <ef' ef''>32 [ \D
+  <f' f''>16. \D <g' g''>32 ] \D <g' g''>8 ^( [ \D <f' f''>16 ) ] r32 \clef
+  "bass" \D f'32 _\ff \D <f af b f'>16. \D <f af b f'>32 [ \D <f af c' f'>16. \D
+  <f af c' f'>32 ] | % 5
+  \D <f af d' f'>8 [ _\p \clef "treble" \D <f' ~ f'' ~>8 ] \D <f' f''>16. \D <f'
+    f''>32 [ \D <g' g''>16. \D <af' af''>32 ] \D <af' af''>8 ^( [ \D <g' g''>16
+  ) ] r32 \U <g cs' e' g'>32 \U <a cs' e' a'!>16. \U <a cs' e' a'>32 [ \U
+  <bf! cs' e' bf'!>16. \U <bf cs' e' bf'>32 ] | % 6
+  \U <a d' fs' a'>8 [ \U <a' ~ a''! ~>8 ] _\p \D <a' a''>16. \D <a' a''>32 [ \D
+  <b' b''!>16. \D <c''! c'''!>32 ] \D <c'' c'''>8 ^( [ \D <b' b''>16 ) ] r16 r8
+  \D <b' b''>16. [ \D <c'' c'''>32 ] | % 7
+  \D <cs'' cs'''>8 ^( [ \D <d'' d'''>8 ) ] r8 \D <d'' d'''>16. [ \D <ef''
+    ef'''>32 ] \D <e'' e'''!>8 ^( \D <f''! f'''!>4 ) \D <f'' f'''>8 | % 8
+  \D <f'' ~ f''' ~>8 ^( _\sfp \D <f'' f'''>32 [ \D ef'''!64 \D d'''64 \D f'''64
+  \D ef'''64 \D d'''64 \D c'''!64 ) ] \D b''16 ^( -. [ \D b''16 -. \D <f'' b''>16
+  -. -. \D <f'' b''>16 ) -. -. ] \D <ef'' c'''>8 r8 r4 | % 9
+
+  \barNumberCheck #10
+  \D c'''8 ~ ^( [ _\p \D c'''32 \D b''64 \D c'''64 ] \tweak
+  TupletBracket.stencil ##f \tuplet 3/2 {
+    \D d'''64 [ \D c'''64 \D bf''64 }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D af''64 \D g''64 \D bf''64 ) ] }
+  \D af''16 ^( -. [ \D af''16 -. \D af''16 -. \D af''16 ) -. ] \D g''16 ^( [ \D
+  ef'''16 ~ ] \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D ef'''64 [ \D d'''64 \D df'''64 }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D c'''64 \D b''64 \D bf''64 ] }
+  \tweak TupletBracket.stencil ##f \tuplet 7/4 {
+    \D a''64*119/120 [ \D af''64*119/120 \D g''64*119/120 \D fs''64*119/120 \D
+    f''64*119/120 \D e''64*119/120 \D ef''64*119/120 ] }
+  \U d''128 [ \U df''128 \U c''128 \U b'128 \U bf'128 \U a'128 \U af'128 \U g'128
+  \U fs'128 \U f'128 \U e'128 \U ef'128 \U d'128 \U df'128 \U c'128 \U b128 )
+  ] \U af'16. ^\fermata [ _\sf \U b32 ] s1*1/1920 | % 10
+  \tempo "Allegro di molto e con brio" \time 2/2 \U c'2. _\p \U <bf! e'>4 -. -. | % 11
+  \U <af f'>4 -. -. \U <e' g'>4 -. -. \U <f' af'>4 -. -. \U <d' b'>4 -. -. | % 12
+  \U <ef'! c''>4 -. -. \U <e' c''>2 \D <bf'! e''!>4 -. -. | % 13
+  \D <af' f''>4 -. -. \D <e'' g''>4 -. -. \D <f'' af''>4 -. -. \D <d'' b''>4 -.
+  -. | % 14
+  \D <c'' ef''! g'' c'''>2 -. -. -. -. \D <g' b' f'' g''>2 -. -. -. -. | % 15
+  \D <g' c'' ef''>2 -. -. -. \U <f' af' d''>2 -. -. -. | % 16
+  \voiceOne <ef' ~ c'' ~>1 _( ^\=2( | % 17
+  \oneVoice \U <ef' a' c''>2 \U <d' f' b'>2 ) \=2) | % 18
+  \U <c' ef' c''>4 -. -. -. _\p \U c'2 \U <bf! e'>4 -. -. } }
+    { \voiceTwo {
+    \clef "treble" \time 4/4 \key c \minor s32*151 \clef "bass" s32*13 \clef
+    "treble" s8*39 | % 10
+    \time 2/2 s1*6 | % 16
+    \D g'2 \D fs'2 } }
+  >>
+    \new Staff = "lh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+    \clef "bass" \time 4/4 \key c \minor \U <c, ~ ef, ~ g, ~ c ~>4 ^\fp \U <c,
+      ef, g, c>16. \U ef32 [ \U d16. \U c32 ] \D fs4 ^( \D g8 ) r16. \U af,32 | % 1
+    \D af4 ~ ^\fp \D af16. \D af32 [ \D g16. \D f!32 ] \D ef4 ~ \D ef8 r16. \D
+    ef32 -. | % 2
+    \D ef'4 ~ \D ef'16. \D ef'32 [ \D d'16. \D c'32 ] \D c'4 ^( \D b16 ) -. r32
+    \D ef'32 [ \D d'16. \D c'32 ] | % 3
+    \D c'4 _( \D b8 [ \D <bf c' e'>8 ] \D <af c' f'!>8 ) -. -. -. r8 \U <bf,,
+      bf,>4 ^\sf | % 4
+    \U <ef,! ef!>16 \D <ef g bf>16 [ \D <ef g bf>16 \D <ef g bf>16 ] \D <ef g
+      bf>16 [ \D <ef g bf>16 \D <ef g bf>16 \D <ef g bf>16 ] \D <ef af c'>16
+    [ \D <ef af c'>16 \D <ef af c'>16 \D <ef af c'>16 ] \U <d, d>16 [ \U <d, d>16
+    \U <c, c>16 \U <c, c>16 ] | % 5
+    \U <b,, b,>16 \D <b, d f af>16 [ \D <b, d f af>16 \D <b, d f af>16 ] \D
+    <bf, d f af>16 [ \D <bf, d f af>16 \D <bf, d f af>16 \D <bf, d f af>16 ]
+    \D <bf, cs e g>16 [ \D <bf, cs e g>16 \D <bf, cs e g>16 \D <bf, cs e
+      g>16 ] \U <a,, a,!>16 [ ^\ff \U <a,, a,>16 \U <g,, g,>16 \U <g,, g,>16 ] | % 6
+    \U <fs,, fs,>16 \D <fs! a d'>16 [ \D <fs a d'>16 \D <fs a d'>16 ] \D
+    <fs a d'>16 [ \D <fs a d'>16 \D <fs a d'>16 \D <fs a d'>16 ] \D <f af
+      d'>16 [ \D <f af d'>16 \D <f af d'>16 \D <f af d'>16 ] \D <d f b>16 [ \D
+    <d f b>16 \D <d f b>16 \D <d f b>16 ] | % 7
+    \D <b, d af>16 [ \D <b, d af>16 \D <b, d af>16 \D <b, d af>16 ] \U <af, b,
+      f>16 [ \U <af, b, f>16 \U <af, b, f>16 \U <af, b, f>16 ] \U <g, b, f>16 [
+    \U <g, b, f>16 \U <g, b, f>16 \U <g, b, f>16 ] \U <af, c f>16 [ \U <af, c f>16
+    \U <af, c f>16 \U <af, c f>16 ] | % 8
+    \U <g, b, f>8 r8 r8 \clef "treble" \D <g' d''>16 ^( -. -. [ \D <g' d''>16 )
+    -. -. ] \D <af' c''>8 r8 r4 | % 9
+
+    \barNumberCheck #10
+    r4 r8 \clef "bass" \D <f c' d'>16 -. -. -. [ \D <f c' d'>16 -. -. -. ] \D <g
+      c' ef'>8 r8 \U <g, d f>8 r8 ^\fermata | % 10
+    \time 2/2 \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] | % 11
+    \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] | % 12
+    \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] | % 13
+    \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] | % 14
+    \U c,8 [ \U c8 \U c,8 \U c8 ] \U d,8 [ \U d8 \U d,8 \U d8 ] | % 15
+    \U ef,8 [ \U ef8 \U ef,8 \U ef8 ] \U f,8 [ \U f8 \U f,8 \U f8 ] | % 16
+    \U g,8 [ \U g8 \U g,8 \U g8 ] \D af,8 [ \D af8 \D af,8 \D af8 ] | % 17
+    \U fs,8 [ \U fs!8 \U fs,8 \U fs8 ] \U g,8 [ \U g8 \U g,8 \U g8 ] | % 18
+    \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] } }
+  >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -88,12 +230,143 @@ flowchart TD
 2. **副部主题的对位潜流**：在属调（降 B 大调）呈示副部时，上方声部唱出抒情旋律，而内声部与低音则以极弱的音量悄然翻转再现“告别”三音级；
 3. **庞大尾声的双重圆号重叠**：最震撼的结构呼应出现在本乐章长达 40 小节的超大尾声（Coda，m. 223 起）中——整个尾声完全摒弃了快板的其他材料，整整 40 小节只专注于对“告别”三音级的重读：两组八度声部如同两只远近相隔的邮政圆号，在不同音区以交错的节拍重叠鸣响。慢引子在此不仅没有消失，反而反客为主，将整个快板的终点转化为了慢引子精神的绝对凯旋。
 
-> **【谱例占位 · 待资料助手交付】**
+> **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《降E大调第26钢琴奏鸣曲“告别”》Op. 81a，第一乐章 Adagio - Allegro
 > - **小节范围**：mm. 1–25
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
 > - **调性与拍号**：降 E 大调，Adagio 2/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–4 “Le-be-wohl” 下行三音级动机（$\hat{8}-\hat{7}-\hat{6}$）及落入 vi 级阻碍和弦；mm. 17–25 快板启动，告别动机时值压缩为切分跳跃演化为主部第一主题
+
+```lilypond title="贝多芬 Op.81a《告别》第一乐章 第 1–25 小节" location="mm. 1–25"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Beethoven: Piano Sonata No. 26 in E-flat major, Op. 81a “Les Adieux”"
+  subtitle = "I. Das Lebewohl: Adagio — Allegro · mm. 1–25"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+
+#(set-global-staff-size 17)
+
+D = \tweak Stem.direction #DOWN \etc
+U = \tweak Stem.direction #UP \etc
+
+\score {
+  \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "treble" \time 2/4 \key ef \major \oneVoice \tempo "Adagio" \U <ef' g'>4 \U <bf f'>4 | % 1
+  \U <g ef'>4. \U ef'16. _( [ \U af'32 ) ] | % 2
+  \U g'8 [ \U g'16. _( \U df''32 ) ] \U c''8 [ \U c''16. ^\turn \U d''32 ] | % 3
+  \voiceOne \U ef''8. \U c''16 \U b'8 \U g''16 ^( [ \U ef'''16 ) ] | % 4
+  \U ef'''8. [ _\< \U c'''16 ] \U b''8 [ \U bf''8 ] <>\! | % 5
+  \U bf''4 ~ _\sf _\> \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U bf''16 [ \! \oneVoice \U bf'16 _( \voiceOne \U c''16 ) ] }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U a'16 _( [ \U bf'16 ) \U af'16 ] }
+  | % 6
+  \oneVoice \U <bf df' e' g'>4 \U <af d'! f'>4 | % 7
+  \voiceOne \U ef'!4. \U gf'16. [ \U cf''32 ] | % 8
+  \U cf''8 [ \U bf'16. \U ff''32 ] \U ef''8 [ \U ef''16. \U f''32 ] | % 9
+
+  \barNumberCheck #10
+  \U gf''8. \U ef''16 \U d''8 \U df''16. ^\turn [ \U ef''32 ] | % 10
+  \U ff''8. [ \U ef''32 \U df''32 ] \U cf''8 [ _\< \U <bf' ef''>8 ] \! _\>
+  <>\! | % 11
+  \oneVoice \U <d'! af' bf' d''!>8 r8 r16 \U <d' af' bf' d''>16 _( [ \U <ef'
+    gf' bf' ef''>16 ) \U <ef' gf' bf' ef''>16 ] | % 12
+  \D <f' bf' f''>8 r8 r16 \D <bf' d''>16 ^( [ \D <bf' ef''>16 ) \D <bf'
+    ef''>16 ] | % 13
+  \D <bf' f''>8 r8 r16 \D <bf' f''>16 ^( [ _\< \D <bf' g''!>16 \! _\> \D <af'
+    af''>16 ) ] <>\! | % 14
+  \D <af' af''>8 r8 r16 \D <bf' f''>16 ^( [ _\< \D <bf' g''>16 \! _\> \D <af'
+    af''>16 ) ] <>\! | % 15
+  r8 \D <af' af''>8 r8 \D <af' af''>8 \bar "||" % 16
+  \tempo "Allegro" \break \time 2/2 \D <af' af''>2. _\f \voiceOne \U d''8 ^( [ \U g''8 ) ] | % 17
+  \U g''4 \U c''8 ^( [ \U f''8 ) ] \U f''4 \U bf'8 ^( [ \U ef''8 ) ] | % 18
+  \U ef''2 ^( _\sf _\> \U <af' bf' d''>4 \! \U <bf' ef''>4 | % 19
+
+  \barNumberCheck #20
+  \U f''4 \U g''4 \U af''4 \U bf''4 ) | % 20
+  \oneVoice \D <g' bf' g''>4 -. -. -. _\< r4 \D <bf' bf''>4 -. -. r4 <>\! | % 21
+  \D <bf'' bf'''>2. _\sf \D <bf' ~ bf'' ~>4 _\sfp | % 22
+  \D <bf' bf''>2. \D <g' g''>4 ^( | % 23
+  \D <f' f''>4 \D <d' d''>4 \U <cf' cf''!>4 \U <bf bf'>4 ) | % 24
+  \U <bf bf'>4 -. -. _\< r4 \D <bf' bf''>4 -. -. r4 <>\! } }
+    { \voiceTwo {
+  \clef "treble" \time 2/4 \key ef \major s1. | % 3
+  \D ef'8 [ \D <ef' fs'>8 ] \D <d' g'>8 d''8\rest | % 4
+  \D ef''8 [ \D <ef'' fs''>8 \D <d'' g''>8 \D <d'' g''>8 ] | % 5
+  \D d''8 [ \D ef''8 ] \tuplet 3/2 {
+    \D f''!16 s16 r16 }
+  g'8\rest s2 | % 7
+  \U gf4. \D ef'8 | % 8
+  \D ff'8 [ \D ff'8 ] \D ef'8 r8 | % 9
+
+  \barNumberCheck #10
+  \D c''!8 [ \D c''8 \D bf'8 \D bf'8 ~ ] | % 10
+  \D bf'8 [ \D bf'8 \D af'8 \D ef'8 ] s2*5 \bar "||" % 16
+  \time 2/2 s2. \D g'4 | % 17
+  \D g'4 \D f'4 \D f'4 \D ef'4 | % 18
+  \D <ef' af' bf'>2 \D d'4 \D ef'4 | % 19
+
+  \barNumberCheck #20
+  \D <f' bf'>4 \D <g' bf'>4 \D <af' bf'>4 \D bf'4 } }
+  >>
+    \new Staff = "lh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "bass" \time 2/4 \key ef \major \oneVoice R2 | % 1
+  \U <c, c>4. \U <c ef>8 | % 2
+  \U <bf, e>8 [ \U <bf, e>8 \U <a, f>8 \U <af, fs>8 ] | % 3
+  \voiceOne \U g8 _( [ \U a8 ] \U b8 ) \oneVoice g,8\rest | % 4
+  \clef "treble" \voiceOne \U g'8 [ \U a'8 \U b'8 \U bf'8 ] | % 5
+  \U bf'4 ~ \U bf'8 r8 | % 6
+  \clef "bass" \oneVoice r4 \U <bf,, bf,>4 | % 7
+  \U <cf, cf>4. \D <cf gf>8 | % 8
+  \D <df gf>8 [ \D <df gf>8 ] \D <cf gf>8 [ \D <bf, gf ~>8 ] | % 9
+
+  \barNumberCheck #10
+  \voiceOne \U gf8 [ \U f8 \U f8 \U ff8 ~ ] | % 10
+  \U ff8 [ \U ef8 \U ef8 \U gf8 ] | % 11
+  \oneVoice \U <f,! bf, f!>8 r8 r16 \U <f, bf, f>16 _( [ \U <ef, bf, ef>16 )
+  \U <ef, bf, ef>16 ] | % 12
+  \U <d, bf, d>8 r8 r16 \clef "treble" \U <f' af'>16 _( [ \U <ef' gf'>16 ) \U
+  <ef' gf'>16 ] | % 13
+  \U <d' f'>8 r8 r16 \U <d' f'>16 _( [ \U <df' ef'>16 \U <cf' ef'>16 ) ] | % 14
+  \U <cf' ef'>8 r8 r16 \U <d'! f'>16 _( [ \U <df' ef'>16 \U <c'! ef'>16 ) ] | % 15
+  r8 \U <c' ef'>8 r8 \U <c' ef'>8 \bar "||" % 16
+  \clef "bass" \time 2/2 \D <c' ef'>2. \D <b d'>8 ^( [ \D <bf df'>8 ) ] | % 17
+  \D <bf df'>4 \D <a c'>8 ^( [ \D <af cf'>8 ) ] \D <af cf'>4 \D <g bf>8 ^(
+  [ \D <fs a>8 ) ] | % 18
+  \D <f! af!>2. \D <ef g>4 | % 19
+
+  \barNumberCheck #20
+  \D <d f>4 \D <c ef>4 \D <bf, d>4 \D <bf, d f>4 | % 20
+  \D ef,8 [ \D bf,8 \D g8 \D bf,8 ] \D ef,8 [ \D bf,8 \D g8 \D bf,8 ] | % 21
+  \D f,8 [ \D bf,8 \D af8 \D bf,8 ] \D f,8 [ \D bf,8 \D af8 \D bf,8 ] | % 22
+  \D g,8 [ \D bf,8 \D bf8 \D bf,8 ] \D g,8 [ \D bf,8 \D bf8 \D bf,8 ] | % 23
+  \D af,8 [ \D bf,8 \D af8 \D bf,8 ] \D bf,,8 [ \D bf,8 \D f8 \D bf,8 ] | % 24
+  \D ef,8 [ \D bf,8 \D g8 \D bf,8 ] \D ef,8 [ \D bf,8 \D g8 \D bf,8 ] } }
+    { \voiceTwo {
+  \clef "bass" \time 2/4 \key ef \major s1. | % 3
+  \D g,4. s8 | % 4
+  \clef "treble" \D g4. \D g'8 | % 5
+  \D <f' af'!>8 [ \D <ef' g'>8 \D <d' f'>8 \D <bf d'>8 ] | % 6
+  \clef "bass" s1. | % 9
+
+  \barNumberCheck #10
+  \D a,4 \D bf,8 [ \D af,8 ] | % 10
+  \D g,!4 \D af,8 [ \D <gf, bf,>8 ] s16*13 \clef "treble" s16*27 \bar "||" % 16
+  \clef "bass" \time 2/2 } }
+  >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -116,12 +389,182 @@ flowchart TD
 
 在 Op. 111 中，慢引子与快板主部已融为一体，成为了不可分割的“意志搏斗本体”——唯有历经第一乐章慢引子与赋格快板在 c 小调地狱中的惨烈搏杀，第二乐章 Arietta 那神圣超验的 C 大调净土才具有说服全人类的救赎力量。
 
-> **【谱例占位 · 待资料助手交付】**
+> **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《c小调第32钢琴奏鸣曲》Op. 111，第一乐章 Maestoso - Allegro con brio ed appassionato
 > - **小节范围**：mm. 1–25
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
-> - **调性与拍号**：c 小调，Maestoso 4/4 拍 $\rightarrow$ Allegro 2/2 拍
+> - **调性与拍号**：c 小调，Maestoso 4/4 拍 $\rightarrow$ Allegro 也是 4/4 拍（全乐章只有一个拍号，速度加快而拍号不变）
 > - **结构说明**：mm. 1–5 Maestoso 极端强奏减七和弦大跳与附点下坠；mm. 11–16 低音区持续神秘震音蓄能；mm. 19–25 Allegro 爆发，减七跳跃动机裂变为赋格化主部主题
+
+```lilypond title="贝多芬 Op.111 第一乐章 第 1–25 小节" location="mm. 1–25"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Beethoven: Piano Sonata No. 32 in C minor, Op. 111"
+  subtitle = "I. Maestoso — Allegro con brio ed appassionato · mm. 1–25"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+
+#(set-global-staff-size 17)
+
+D = \tweak Stem.direction #DOWN \etc
+U = \tweak Stem.direction #UP \etc
+
+\score {
+  \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "treble" \numericTimeSignature \time 4/4 \key c \minor \partial 32 \tempo "Maestoso"
+  \oneVoice r32 e'8\rest c'16.\rest \U <ef' a' c'' ef''>32 \U <ef' ~ a' ~ c'' ~
+    ef'' ~>4 _\sf \U <ef' a' c'' ef''>8.. [ \U <a' c''>32 ] \voiceOne \U c''8.
+  ^\trill [ _\sf _\> \U b'32 \U c''32 ] <>\! | % 1
+  \oneVoice \U <g' b'>8 r8 \U <ef' g' c''>8 r8 \slashedGrace { \U d'32 [ \U g'32
+    \U b'32 ] } \U <d' g' d''>8 r8 r4 | % 2
+  r8.. \D <af' d'' f'' af''>32 \D <af' ~ d'' ~ f'' ~ af'' ~>4 _\sf \D <af' d''
+    f'' af''>8.. [ \D <d'' f''>32 ] \voiceOne \D d''4 _\sf <>\! | % 3
+  \oneVoice \D <g' e''>8 r8 \D <f' c'' f''>8 r8 \slashedGrace { \U g'32 [ \U c''32
+    \U e''32 ] } \D <g' c'' g''>8 r8 r4 | % 4
+  e'8..\rest \D <df'' f'' bf'' df'''!>32 \D <df'' ~ f'' ~ bf'' ~ df''' ~>4
+  _\sf \D <df'' f'' bf'' df'''>8.. [ \D <df'' bf''>32 ] \voiceOne \D df''4
+  _\sf _\> <>\! | % 5
+  \oneVoice \D <df'' ef'' bf''>8.. [ _\p \D <df'' ef'' bf''>32 ] \D <df'' ~
+    ef'' ~ bf'' ~>4 \D <df'' ef'' bf''>8.. [ \D <c'' ef'' af''>32 ] \D <c''
+    ef'' af''>8.. [ \D <c'' ef'' gf''>32 ] | % 6
+  \D <c'' ef'' gf''>8.. [ \D <bf' ef'' gf''>32 ] \D <bf' ~ ef'' ~ gf'' ~>4
+  \D <bf' ef'' gf''>8.. [ \D <a' ef'' gf''>32 ] \D <a' ef'' gf''>8.. [ \D
+  <a' ef'' gf''>32 ] | % 7
+  \D <a' ef'' gf''>8.. [ \D <af'! df'' f''>32 ] \D <af' ~ df'' ~ f'' ~>4 \D
+  <af' df'' f''>8.. [ \D <af' cf'' f''>32 ] \D <af' cf'' f''>8.. [ \D <af'
+    cf'' f''>32 ] | % 8
+  \D <af' cf'' f''>8.. [ \D <af' c''! ef''>32 ] \D <af' ~ c'' ~ ef'' ~>4 \D
+  <af' c'' ef''>8.. [ \D <af' c'' ef''>32 ] \D <af' c'' ef''>8.. [ \D <g'! bf'
+    df''>32 ] | % 9
+
+  \barNumberCheck #10
+  \U <g' bf' df''>8.. [ \U <f' bf' df''>32 ] \U <f' bf' df''>8.. [ \U <e'
+    bf' df''>32 ] \U <e' bf' df''>8 [ \U <c' f' c''>8 -. -. -. \U <c' f'
+    c''>8 -. -. -. \U <c' fs' c''>8 -. -. -. ] | % 10
+  \U <d'! g' b'>8 _\sf e'8\rest e'4\rest e'4\rest \voiceOne \U g'4 ^( _\p | % 11
+  \U a'4 \U b'4 \U c''4 ) \oneVoice \U <ef' a' c''>8.. ^( [ \U <d' g' b'>32 ) ]
+  | % 12
+  \U <d' g' b'>4. _\sf e'8\rest e'4\rest \clef "bass" \voiceOne \U g4 ^( _\p | % 13
+  \oneVoice \D <c fs a>4 \D <d f! b>4 \D <ef g c'>4 ) \voiceOne \U c'8.. ^( [
+  \U b32 ) ] | % 14
+  \oneVoice \D <d g b>2 \D <d g b>4.. \D <d g b>16 | % 15
+  <d g b>1 | % 16
+  \tempo "Allegro con brio ed appassionato" \break <d g b d'>1 | % 17
+  \clef "treble" \U <g b d' g'>16 [ \clef "bass" \U af,16 \U g,16 \U af,16 ] \U
+  g,16 [ \U af,16 \U g,16 \U af,16 ] \U g,16 [ \U af,16 \U g,16 \U af,16 ] \U g,16
+  [ \U af,16 \U g,16 \U a,32 \U b,32 ] \bar ".|" % 18
+  \U c4 r4 r4 r8 \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U g,16 [ \U a,16 \U b,16 ] }
+  | % 19
+
+  \barNumberCheck #20
+  \U c4 -. \D ef4 -. \U b,4. ^\fermata _\sf \tweak TupletBracket.stencil ##f
+  \tuplet 3/2 {
+    \U g,16 [ \U a,16 \U b,16 ] }
+  | % 20
+  \U c4 -. \D ef4 -. \U b,4. _\sf \D af!8 -. | % 21
+  \D g8 -. [ \D f8 -. \D ef8 -. \D d8 -. ] \D ef16 [ \D f16 \D ef16 \D d16 ] \D
+  c8 [ \D af8 ^( -. ] | % 22
+  \D g8 -. [ \D f8 -. \D ef8 -. \D d8 ) -. ] \D ef16 [ \D f16 \D ef16 \D d16 ]
+  \D c16 [ _\< \D af16 \D bf16 \D af16 ] | % 23
+  \D g16 [ \D af16 \D g16 \D f16 ] \D ef16 [ \D f16 \D ef16 \D d16 ] \D ef16 [
+  \D f16 \D ef16 \D d16 ] \D c16 [ \D g16 \D f16 \D ef16 ] | % 24
+  \D f16 [ \D g16 \D f16 \D ef16 ] \D d16 [ \D af16 \D g16 \D f16 ] \D g16 [ \D
+  af16 \D g16 \D f16 ] \D e16 [ \D bf16 \D af16 \D g16 ] } }
+    { \voiceTwo {
+  \clef "treble" \numericTimeSignature \time 4/4 \key c \minor \partial 32
+  s32*25 \D a'4 s1 | % 2
+  s2. \U f''8. ^\trill [ \U e''32 _\> \U f''32 ] s1 | % 4
+  s2. \U bf''8. ^\trill [ \U a''32 \U bf''32 ] s1*5 | % 10
+  s2. c'8\rest \D c'8 | % 11
+  \D <c' fs'>4 \D <d' f'>4 \D <ef' g'>4 s1 \clef "bass" r8 \D c8 s2. \D <ef a>8..
+  [ \D <d g>32 ] s1*3 | % 17
+  \clef "treble" s16 \clef "bass" s16*15 \bar ".|"
+} }
+  >>
+    \new Staff = "lh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "bass" \numericTimeSignature \time 4/4 \key c \minor \partial 32
+  \oneVoice \D <ef ef'>32 _\f \U <fs, fs>8.. [ \U <fs,,! fs,>32 ] \U <fs, ~
+    fs ~>4 \D <fs, fs>8.. [ \D <fs ef'>32 ] \D <fs ef'>4 | % 1
+  \D <g d'>8 r8 \D <c g c'>8 r8 \slashedGrace { \U b,,32 [ \U d,32 \U g,32 \U
+    b,!32 \U d32 \U g32 \U b!32 ] } \U <b,, b,>8 r8 r8.. \D <af af'>32 | % 2
+  \U <b, b>8.. [ _\sf \U <b,,! b,>32 ] \D <b, ~ b ~>4 \U <b, b>8.. [ \clef
+  "treble" \U <b af'>32 ] \U <b af'>4 | % 3
+  \clef "bass" \D <bf! df'>8 r8 \D <af c'>8 r8 \slashedGrace { \U e,32 [ \U g,32
+    \U c32 \U e!32 \U g32 \U c'32 \U e'!32 ] } \U <e, e>8 r8 r8.. \D <df! df'>32
+  | % 4
+  \U <e, e>8.. [ \U <f, f>32 ] \U <f, ~ f ~>4 \D <f, f>8.. [ \D <f bf df'>32 ]
+  \D <f bf df'>4 | % 5
+  \D <gf bf df'>8.. [ \D <g! bf df'>32 ] \D <g ~ bf df' ~>4 \D <g bf
+    df'>8.. [ \D <af c'>32 ] \D <af c'>8.. [ \D <a ef' gf'>32 ] | % 6
+  \D <a ef' gf'>8.. [ \D <bf ef' gf'>32 ] \D <bf ~ ef' ~ gf' ~>4 \D <bf
+    ef' gf'>8.. [ \D <cf' ef' gf'>32 ] \D <cf' ef' gf'>8.. [ \D <c' ef'
+    gf'>32 ] | % 7
+  \D <c' ef' gf'>8.. [ \D <df' f'>32 ] \D <df' ~ f' ~>4 \D <df' f'>8.. [ \D
+  <d' f'>32 ] \D <d' f'>8.. [ \D <d,! d!>32 ] | % 8
+  \U <d, d>8.. [ \U <ef, ef>32 ] \U <ef, ~ ef ~>4 \U <ef, ef>8.. [ \U <ef, ef>32
+  ] \U <ef, ef>8.. [ \U <e, e!>32 ] | % 9
+
+  \barNumberCheck #10
+  \U <e, e>8.. [ \U <f, f>32 ] \U <f, f>8.. [ \U <g, g>32 ] \U <g, g>8 -. -. [
+  \U <af, af>8 -. -. \U <af, af>8 -. -. \U <af,, af,>8 -. -. ] | % 10
+  \U <g,, g,>8 \D g8 [ _\sfp \D g8 \D <g af>8 ] _\sfp \D <f af>8 [ \D <f g>8
+  _\sfp \D <f g>8 \D <ef g>8 ] | % 11
+  \voiceOne \U g8 [ \U g8 \U g8 \U g8 ] \U g8 [ \U g8 \U g8 \U g8 ~ ] | % 12
+  \oneVoice \U <g, g>8 [ \U g,8 _\sfp \U g,8 \U <g, af,!>8 ] _\sfp \U <f, af,>8
+  [ \U <f, g,>8 _\sfp \U <f, g,>8 \U <ef, g,>8 ] | % 13
+  \voiceOne \U g,8 [ \U g,8 \U g,8 \U g,8 ] \U g,8 [ \U g,8 \U g,8 \U g,8 ~ ] | % 14
+  \U g,8 [ \U g,8 \U g,8 \U g,8 ] \U g,8 [ \U g,8 \U g,8 \U g,8 ] | % 15
+  \oneVoice \U g,,32 [ \U af,,32 \U g,,32 \U af,,32 \U g,,32 \U af,,32 \U g,,32
+  \U af,,32 ] \U g,,32 [ \U af,,32 \U g,,32 \U af,,32 \U g,,32 \U af,,32 \U g,,32
+  \U af,,32 ] \U g,,32 [ \U af,,32 \U g,,32 \U af,,32 \U g,,32 \U af,,32 \U g,,32
+  \U af,,32 ] \U g,,32 [ \U af,,32 \U g,,32 \U af,,32 \U g,,32 \U af,,32 \U g,,32
+  \U af,,32 ] | % 16
+  \U g,,16 [ \U af,,16 \U g,,16 \U af,,16 ] \U g,,16 [ \U af,,16 \U g,,16 \U
+  af,,16 ] \U g,,16 [ \U af,,16 \U g,,16 \U af,,16 ] \U g,,16 [ \U af,,16 \U g,,16
+  \U af,,16 ] | % 17
+  \U g,,16 [ \U af,,16 \U g,,16 \U af,,16 ] \U g,,16 [ \U af,,16 \U g,,16 \U
+  af,,16 ] \U g,,16 [ \U af,,16 \U g,,16 \U af,,16 ] \U g,,16 [ \U af,,16 \U g,,16
+  \U a,,32 \U b,,32 ] \bar ".|" % 18
+  \U c,4 r4 r4 r8 \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \U g,,16 [ \U a,,16 \U b,,16 ] }
+  | % 19
+
+  \barNumberCheck #20
+  \U c,4 -. \U ef,4 -. \U b,,4. ^\fermata \tweak TupletBracket.stencil ##f
+  \tuplet 3/2 {
+    \U g,,16 [ \U a,,16 \U b,,16 ] }
+  | % 20
+  \U c,4 -. \U ef,4 -. \U b,,4. \U af,!8 -. | % 21
+  \U g,8 -. [ \U f,8 -. \U ef,8 -. \U d,8 -. ] \U ef,16 [ \U f,16 \U ef,16 \U d,16
+  ] \U c,8 [ \U af,8 _( -. ] | % 22
+  \U g,8 -. [ \U f,8 -. \U ef,8 -. \U d,8 ) -. ] \U ef,16 [ \U f,16 \U ef,16 \U
+  d,16 ] \U c,16 [ \U af,16 \U bf,16 \U af,16 ] | % 23
+  \U g,16 [ \U af,16 \U g,16 \U f,16 ] \U ef,16 [ \U f,16 \U ef,16 \U d,16 ] \U
+  ef,16 [ \U f,16 \U ef,16 \U d,16 ] \U c,16 [ \U g,16 \U f,16 \U ef,16 ] | % 24
+  \U f,16 [ \U g,16 \U f,16 \U ef,16 ] \U d,16 [ \U af,16 \U g,16 \U f,16 ] \U
+  g,16 [ \U af,16 \U g,16 \U f,16 ] \U e,16 [ \U bf,16 \U af,16 \U g,16 ] } }
+    { \voiceTwo {
+  \clef "bass" \numericTimeSignature \time 4/4 \key c \minor \partial 32 s4*11
+  \clef "treble" s32*9 | % 3
+  \clef "bass" s1*8 | % 11
+  \D ef4 \D d4 \D c4 \D fs,8.. _( [ \D g,32 ) ] s1 | % 13
+  \D ef,4 \D d,4 \D c,4 \D fs,,8.. _( [ \D g,,32 ) ] | % 14
+  \D g,,2 \D g,,2 s1*3 \bar ".|"
+} }
+  >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

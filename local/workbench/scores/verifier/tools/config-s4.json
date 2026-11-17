@@ -1,0 +1,31 @@
+[
+ {"name":"op13 mvt1 mm1-19",
+  "xml":"E:/github/music-wiki/.agents/worktrees/scholar-plan-dev/local/origin_resources/downloads/2026-11-17/s4/dcml-08-1.musicxml",
+  "mid":"build/beethoven-op13-mvt1-mm1-19.mid",
+  "start":"1","count":19,
+  "staff":[["P1",null],["P2",null]]},
+
+ {"name":"op81a mvt1 mm1-25",
+  "xml":"E:/github/music-wiki/.agents/worktrees/scholar-plan-dev/local/origin_resources/downloads/2026-11-17/s4/dcml-26-1.musicxml",
+  "mid":"build/beethoven-op81a-mvt1-mm1-25.mid",
+  "start":"1","count":25,
+  "staff":[["P1",null],["P2",null]]},
+
+ {"name":"op111 mvt1 mm0-25",
+  "xml":"E:/github/music-wiki/.agents/worktrees/scholar-plan-dev/local/origin_resources/downloads/2026-11-17/s4/dcml-32-1.musicxml",
+  "mid":"build/beethoven-op111-mvt1-mm1-25.mid",
+  "start":"0","count":26,
+  "staff":[["P1",null],["P2",null]]},
+
+ {"name":"op2no3 mvt1 mm1-13",
+  "xml":"E:/github/music-wiki/.agents/worktrees/scholar-plan-dev/local/origin_resources/downloads/2026-11-17/s4/dcml-03-1.musicxml",
+  "mid":"build/beethoven-op2no3-mvt1-mm1-13.mid",
+  "start":"1","count":13,
+  "staff":[["P1",null],["P2",null]]},
+
+ {"name":"k309 mvt3 mm9-19",
+  "xml":"E:/github/music-wiki/.agents/worktrees/scholar-plan-dev/local/origin_resources/downloads/2026-11-17/s4/K309-3.musicxml",
+  "mid":"build/mozart-k309-mvt3-mm9-19.mid",
+  "start":"9","count":11,
+  "staff":[["P1",1],["P1",2]]}
+]

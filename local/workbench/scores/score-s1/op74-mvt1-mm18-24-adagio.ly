@@ -78,7 +78,7 @@ cello = {
   r1 |
   r1 |
   r1 |
-  af,2\p( d,4. ef8) |
+  af,2\p( d,4. ef,8) |
   ef2( g,4. af,8) |
   gf2( a,4. bf,8) |
   bf,2 bf,4.( ef8) |

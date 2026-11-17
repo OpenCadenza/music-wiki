@@ -1,0 +1,57 @@
+================================================================================
+[BWV1050]  kern 声部: ['!', '!', '! Possibly an F#4 in some sources ', '!', '!', '!', '!', '!', '!']
+  小节范围: m.1–m.9
+  [flauto] kern 13 事件 / ly 4 起点 → ✓ 完全一致
+  [violinoPrincipale] kern 128 事件 / ly 124 起点 → ✓ 完全一致
+  [violinoRipieno] kern 125 事件 / ly 121 起点 → ✓ 完全一致
+  [viola] kern 72 事件 / ly 68 起点 → ✓ 完全一致
+  [violoncello] kern 76 事件 / ly 72 起点 → ✓ 完全一致
+  [violone] kern 76 事件 / ly 72 起点 → ✓ 完全一致
+  [cembaloUpper] kern 27 事件 / ly 17 起点 → ✓ 完全一致
+  [cembaloLower] kern 76 事件 / ly 72 起点 → ✓ 完全一致
+  ⇒ BWV1050 结论: 一致
+================================================================================
+[Haydn104]  kern 声部: ['!Contrabasso', '!Violoncello', '!Viola', '!Violino II', '!Violino I', '!Timpani in D, A', '!Tromba 2 in D', '!Tromba 1 in D', '!Corno 2 in D', '!Corno 1 in D', '!Fagotto 2', '!Fagotto 1', '!Clarinetto 2 in A', '!Clarinetto 1 in A', '!Oboe 2', '!Oboe 1', '!Flauto 2', '!Flauto 1']
+  小节范围: m.17–m.32
+  [violinOne] kern 50 事件 / ly 51 起点 → ✗; .ly 多出起点(tie 拆分) 3 处: ['7', '25', '39']
+      起点 5: 时值 kern=2.5 ly=2.0
+      起点 23: 时值 kern=2.5 ly=2.0
+      起点 37: 时值 kern=2.5 ly=2.0
+  [violinTwo] kern 36 事件 / ly 36 起点 → ✗; .ly 多出起点(tie 拆分) 4 处: ['17', '21', '53', '57']
+      起点 16: 时值 kern=2.0 ly=1.0
+      起点 20: 时值 kern=2.0 ly=1.0
+      起点 52: 时值 kern=2.0 ly=1.0
+      起点 56: 时值 kern=1.5 ly=1.0
+  [viola] kern 25 事件 / ly 11 起点 → ✓ 完全一致
+  [cello] kern 27 事件 / ly 26 起点 → ✗; .ly 多出起点(tie 拆分) 3 处: ['5', '37', '53']
+      起点 1: 时值 kern=7.0 ly=4.0
+      起点 33: 时值 kern=7.0 ly=4.0
+      起点 52: 时值 kern=2.0 ly=1.0
+  [bass] kern 27 事件 / ly 26 起点 → ✗; .ly 多出起点(tie 拆分) 3 处: ['5', '37', '53']
+      起点 1: 时值 kern=7.0 ly=4.0
+      起点 33: 时值 kern=7.0 ly=4.0
+      起点 52: 时值 kern=2.0 ly=1.0
+  --- 非弦乐声部在范围内发声情况 ---
+    Timpani   : 有音符的 token 数 = 0  → 全区休止
+    Tromba2   : 有音符的 token 数 = 0  → 全区休止
+    Tromba1   : 有音符的 token 数 = 0  → 全区休止
+    Corno2    : 有音符的 token 数 = 0  → 全区休止
+    Corno1    : 有音符的 token 数 = 0  → 全区休止
+    Fagotto2  : 有音符的 token 数 = 0  → 全区休止
+    Fagotto1  : 有音符的 token 数 = 4  → 小节 [18, 19]
+    Clar2     : 有音符的 token 数 = 0  → 全区休止
+    Clar1     : 有音符的 token 数 = 0  → 全区休止
+    Oboe2     : 有音符的 token 数 = 0  → 全区休止
+    Oboe1     : 有音符的 token 数 = 0  → 全区休止
+    Flauto2   : 有音符的 token 数 = 0  → 全区休止
+    Flauto1   : 有音符的 token 数 = 0  → 全区休止
+  ⇒ Haydn104 结论: 存在差异
+================================================================================
+[Op74]  kern 声部: None
+  小节范围: m.6–m.9
+  [violinOne] kern 26 事件 / ly 25 起点 → ✗; .ly 多出起点(tie 拆分) 1 处: ['13']
+      起点 12: 时值 kern=1.25 ly=1.0
+  [violinTwo] kern 16 事件 / ly 12 起点 → ✓ 完全一致
+  [viola] kern 15 事件 / ly 13 起点 → ✓ 完全一致
+  [cello] kern 10 事件 / ly 8 起点 → ✓ 完全一致
+  ⇒ Op74 结论: 存在差异

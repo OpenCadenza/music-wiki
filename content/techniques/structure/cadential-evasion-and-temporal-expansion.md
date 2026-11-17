@@ -59,12 +59,71 @@ flowchart TD
    - 这次“重新冲刺”成功积聚了更强大的向心动能，最终在 m. 19 坚决落实于完全正格终止（I:PAC）；
    - **时间重构**：原本预期的 4 小节后继单元被生生拉伸为整整 11 小节的宏大延续群，创造了超越方整格律的悠长戏剧呼吸。
 
-> **【谱例占位】**
+> **谱例定位**
 > - **作品**：沃尔夫冈·阿玛多伊斯·莫扎特《C大调第9钢琴奏鸣曲》K. 309，第三乐章 Rondo: Allegretto grazioso
 > - **小节范围**：mm. 9–19
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
 > - **调性与拍号**：C 大调，2/4 拍
 > - **结构说明**：mm. 9–12 复合乐段大后继句呈示；mm. 13–15 延续冲刺并在 m. 15 遭遇导音未解决与规避 PAC；mm. 16–19 启动 One-More-Time 变奏重跑，终在 m. 19 闭合于 I:PAC
+
+```lilypond title="莫扎特 K.309 第三乐章 第 9–19 小节（NMA 印刷谱 10–20）" location="mm. 9–19"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Mozart: Piano Sonata No. 7 in C major, K. 309 (284b)"
+  subtitle = "III. Rondo: Allegretto grazioso · mm. 9–19"
+  composer = "Wolfgang Amadeus Mozart (1756–1791)"
+  tagline = ##f
+}
+
+
+#(set-global-staff-size 17)
+
+upper = {
+  \clef "treble"
+  \key c \major
+  \time 2/4
+  \set Score.currentBarNumber = #9
+  \grace { f''16 } e''8( d''16 c''16 c''8 c''8) |
+  \grace { b'32[ c''32 d''32] } c''4. c'''8 |
+  \grace { b''16 } a''8( g''16 f''16 f''8 f''8) |
+  \grace { e''32[ f''32 g''32] } f''4. a''8 |
+  \grace { a''16 } g''8( f''16 e''16 e''8) g''8 |
+  \grace { g''16 } f''8( e''16 d''16 d''8 f''8) |
+  \grace { f''16 } e''8( f''16 d''16) c''8 b'8\trill |
+  \grace { a''16 } g''8( f''16 e''16) e'''16\staccato cs'''16\staccato a''16 g''16 |
+  \grace { g''16 } f''8( e''16 d''16) d'''16\staccato b''16\staccato g''16 f''16 |
+  \grace { f''16 } e''8 a''16 f''16 e''16\staccato g''16\staccato f''16\staccato d''16\staccato |
+  c''8 r8 \f c'16 e'16 g'16 c''16 |
+}
+
+lower = {
+  \clef "bass"
+  \key c \major
+  \time 2/4
+  c'16 e'16 g'16 e'16 c'16 e'16 g'16 e'16 |
+  c'16 e'16 g'16 e'16 c'16 e'16 g'16 e'16 |
+  c'16 f'16 a'16 f'16 c'16 f'16 a'16 f'16 |
+  c'16 f'16 a'16 f'16 c'16 f'16 a'16 f'16 |
+  c'16 e'16 g'16 e'16 cs'16 e'16 a'16 e'16 |
+  d'16 f'16 a'16 f'16 b16 d'16 g'16 d'16 |
+  << { <c' g'>8 d'8 e'8 d'8 } \\ { r8 f8 g4 } >> |
+  c'16 e'16 g'16 e'16 cs'16 e'16 a'16 e'16 |
+  d'16 f'16 a'16 f'16 b16 d'16 g'16 d'16 |
+  << { <c' g'>8 d'8 c'8 b8 } \\ { r8 f8 g4 } >> |
+  c'8 <g, g>8 <e, e>8 <c, c>8 |
+}
+
+\score {
+  \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new Staff = "upper" \with { midiInstrument = "acoustic grand" } { \upper }
+    \new Staff = "lower" \with { midiInstrument = "acoustic grand" } { \lower }
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -89,12 +148,102 @@ flowchart TD
    - 最终，全曲在 m. 13 的强拍，以双手齐奏的原位主和弦轰鸣出绝对无可争议的 I:PAC；
    - **时间重构**：原本 8 小节的简单乐句被改写为一个长达 13 小节的高压爆发单元，展示了终止式如何作为弹簧反冲装置，重构交响化钢琴作品的结构张力。
 
-> **【谱例占位】**
+> **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《C大调第3钢琴奏鸣曲》Op. 2 No. 3，第一乐章 Allegro con brio
 > - **小节范围**：mm. 1–13
 > - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
 > - **调性与拍号**：C 大调，4/4 拍
 > - **结构说明**：mm. 1–4 乐句呈示（BI + 重复）；mm. 5–8 延续冲刺，m. 8 降落为弱 IAC（高音停在三音）；mm. 8–13 低音下行连接线触发高八度延续部 5 小节剧烈扩张，至 m. 13 达成强力 I:PAC
+
+```lilypond title="贝多芬 Op.2 No.3 第一乐章 第 1–13 小节" location="mm. 1–13"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "Beethoven: Piano Sonata No. 3 in C major, Op. 2 No. 3"
+  subtitle = "I. Allegro con brio · mm. 1–13"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+
+#(set-global-staff-size 17)
+
+D = \tweak Stem.direction #DOWN \etc
+U = \tweak Stem.direction #UP \etc
+
+\score {
+  \new PianoStaff \with { instrumentName = "Piano" } <<
+    \new Staff = "rh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "treble" \numericTimeSignature \time 4/4 \key c \major \oneVoice \tempo "Allegro con brio" \U <c'
+    e'>2 _\p \U <b d'>16 _( [ \U <c' e'>16 \U <b d'>16 \U <c' e'>16 ) ] \U <d'
+    f'>8 -. -. [ \U <c' e'>8 -. -. ] | % 1
+  \U <b d'>4 -. -. \U <b g'>4 -. -. r2 | % 2
+  \U <d' f'>2 \U <cs' e'>16 _( [ \U <d' f'>16 \U <cs' e'>16 \U <d' f'>16 ) ]
+  \U <e' g'>8 -. -. [ \U <d' f'>8 -. -. ] | % 3
+  \U <c'! e'>4 -. -. \U <e' c''>4 -. -. r2 | % 4
+  \voiceOne \U c''2 _\p \U b'16 ^( [ \U c''16 \U b'16 \U c''16 ) ] \U d''8 -. [
+  \U b'8 -. ] | % 5
+  \U g'4 \oneVoice \U <e' c''>4 _\sf \voiceOne \U b'16 ^( [ \U c''16 \U b'16 \U
+  c''16 ) ] \U d''8 -. [ \U b'8 -. ] | % 6
+  \oneVoice \U g'4 ^( \U c''4 \voiceOne \U d'4 \U a'4 ) | % 7
+  \U d'4 ^( \U g'4 \oneVoice \U <c' e'>4 ) e'4\rest | % 8
+  e'4\rest \voiceOne \U g'2 ^( _\sf \U f'4 ) | % 9
+
+  \barNumberCheck #10
+  \oneVoice \U <c' e'>4 \voiceOne \U g'2 ^( _\sf \U f'4 ) | % 10
+  \oneVoice \U <g c' e'>4 r4 \U <a c' e' a'>4 r4 | % 11
+  \U <g c' e' g'>4 r4 s4 r4 | % 12
+  \U c'16 [ _\ff \U e'16 \U g'16 \U c''16 ] \D e'16 [ \D e''16 \D e'16 \D e''16
+  ] \D e'16 [ \D g'16 \D c''16 \D e''16 ] \D g'16 [ \D g''16 \D g'16 \D g''16 ]
+} }
+    { \voiceTwo {
+  \clef "treble" \numericTimeSignature \time 4/4 \key c \major s1*4 | % 4
+  \D e'2 \D f'2 | % 5
+  e'4\rest s4 \D f'2 s2 \D <c' d'>2 | % 7
+  \D b2 s2. \D e'4 \D d'4 \D d'4 s4 \D e'4 \D d'4 \D d'4 } }
+  >>
+    \new Staff = "lh" \with { midiInstrument = "acoustic grand" } <<
+    { \voiceOne {
+  \clef "bass" \numericTimeSignature \time 4/4 \key c \major \oneVoice <c g>1 | % 1
+  \D <g, g>4 -. -. \D <g, g>4 -. -. r2 | % 2
+  <g, b>1 | % 3
+  \D <c g>4 -. -. \D <c g>4 -. -. r2 | % 4
+  \voiceOne g1 ~ | % 5
+  \U g4 \U g2. ~ | % 6
+  \U g2 \U a2 | % 7
+  \oneVoice \D g4 \U g,4 \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D c8 [ \D g8 \D fs8 ] }
+  \tweak TupletBracket.stencil ##f \tuplet 3/2 {
+    \D f8 -. [ \D e8 -. \D d8 -. ] }
+  | % 8
+  s4 _\sf \voiceOne \U g2 ~ \U g4 | % 9
+
+  \barNumberCheck #10
+  \U g4 \U g2 ~ _\sf \U g4 | % 10
+  \oneVoice \D g,4 \D c2 _\sf \D fs,4 | % 11
+  s2 \voiceOne \U <d f! g b>4 r4 | % 12
+  \oneVoice \U <c, e, g, c>4 \clef "treble" \U c'8 [ \U c'8 ] \U c'4 \U e'8 [ \U
+  e'8 ] } }
+    { \voiceTwo {
+  \clef "bass" \numericTimeSignature \time 4/4 \key c \major s1*4 | % 4
+  r4 \D c4 \D d4 \D g,4 | % 5
+  r4 \D c4 \D d4 \D g,4 | % 6
+  \D e4 \D c4 \D f4 \D d4 s1 | % 8
+  \oneVoice \D c2 \voiceTwo \D b,16 _( [ \D c16 \D b,16 \D c16 ) ] \D d8 -. [ \D
+  b,8 -. ] | % 9
+
+  \barNumberCheck #10
+  \D g,4 \D c4 \D b,16 _( [ \D c16 \D b,16 \D c16 ) ] \D d8 -. [ \D b,8 -. ] s1
+  | % 11
+  \oneVoice \D fs,4 \D g,2 ^\sf \voiceTwo \D <g,, g,>4 s4 \clef "treble" } }
+  >>
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

@@ -23,7 +23,7 @@
 global = {
   \key g \minor
   \time 4/4
-  \tempo "Schnell" 4 = 154
+  \tempo "Schnell" 4 = 152
 }
 
 pianoUpper = {

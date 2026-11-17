@@ -63,12 +63,92 @@
   * **声部角色颠覆**：此前承担挂留的大多是第一小提琴，但在第 21–24 小节，大提琴（Bass）彻底接管了引子开篇动机，在低音区展开长程半音阶逆向爬升，大提琴反客为主成为核心“挂留施压声部”（Vorhaltsstimme）；
   * 最终在第 24 小节第 4 拍，整个庞大的连锁悬置网在属和弦（$V^7$）与主和弦（$I$）的纯正敲击中瞬间收束，完美引爆第 25 小节灿烂的快板主部。
 
-> **乐谱例证 1：待交付谱例定位（真实小节规范）**
+> **乐谱例证 1：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 10 in E-flat major, Op. 74 "Harp", 1st Movement: Poco Adagio
 > - **乐章与小节**：mm. 18–24（慢引子尾声连环半音悬置链）
 > - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
 > - **谱面特征**：展示第 18–24 小节第一小提琴与内声部附点四分音符半音挂留（`iv(b6)`, `iv(6)`）、减七和弦链式滑移（`viio7`, `viio43/V`），以及大提琴反转为挂留主体的半音逆向爬升线
-> - **交付状态**：已在 task-39 中规划立项，以真实作品小节规范文本占位，待后续谱例助手基于 DCML 标注与总谱编码交付
+
+```lilypond title="贝多芬 Op.74 第一乐章 第 18–24 小节" location="mm. 18–24"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 10 in E-flat major, Op. 74 “Harp”"
+  subtitle = "I. Poco Adagio — mm. 18–24"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key ef \major
+  \time 2/2
+  \tempo "Poco Adagio" 2 = 72
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \p cf''2 d'4. ef'8 |
+  ef'4. ff'8 ff'4. f'8 |
+  f'4. gf'8 gf'4. g'8 |
+  g'4. af'8 af'4. a'8 |
+  a'4. bf'8 bf'4. cf''8 |
+  cf''4. c''8 df''2~ |
+  df''4. d''8 d''4. ef''8 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \p cf'1~ |
+  cf'1 |
+  df'1 |
+  df'4. ef'8 f'4. gf'8 |
+  gf'4. g'8 df'4. cf'8 |
+  ef'2 e'2~ |
+  e'4. f'8 <bf f'>4. <bf ef'>8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \p af1~ |
+  af1 |
+  bf1 |
+  bf4. cf'8 cf'4. c'8 |
+  c'4. df'8 ff'4. ef'8 |
+  r4 gf4 g2~ |
+  g4. af8 af4. g8 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  r1 |
+  r1 |
+  r1 |
+  \p af,2 d,4. ef,8 |
+  ef2 g,4. af,8 |
+  gf2 a,4. bf,8 |
+  bf,2 bf,4. ef8 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -93,12 +173,92 @@ $$C\sharp 4 \ (全音符) \longrightarrow B\sharp 3 \ (二分音符) \longrighta
 
 这一系列实证数据表明：在晚期贝多芬的复调语境中，**声部的横向线性冲力完全凌驾于垂直和弦的协和容忍度之上**；半音挂留不再是调性润滑油，而是作曲家有意嵌入的结构阻尼齿轮。
 
-> **乐谱例证 2：待交付谱例定位（真实小节规范）**
+> **乐谱例证 2：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 14 in C-sharp minor, Op. 131, 1st Movement: Adagio ma non troppo e molto espressivo
 > - **乐章与小节**：mm. 6–11（赋格呈示段内部特异挂留与那不勒斯和弦）
 > - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
 > - **谱面特征**：展现第 6 小节 `iv(4)` 下属挂留四音、第 7 小节 `bII(#2)` 原位那不勒斯和弦内叠置增二度挂留，以及第 11 小节下拍罕见的减七和弦二音位挂留四音 `#viio2(4)` 的严酷复调声部导向
-> - **交付状态**：已在 task-39 中规划立项，以真实作品小节规范文本占位，待后续谱例助手基于 DCML 标注与总谱编码交付
+
+```lilypond title="贝多芬 Op.131 第一乐章 第 6–11 小节" location="mm. 6–11"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 14 in C-sharp minor, Op. 131"
+  subtitle = "I. Adagio ma non troppo e molto espressivo — mm. 6–11"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key cs \minor
+  \time 2/2
+  \tempo "Adagio ma non troppo e molto espressivo" 4 = 69
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \p
+  a'4 es'4 fs'4 a'4 |
+  g'4 es'2 es''4 |
+  fs''2 e''4 ds''4~ |
+  ds''4 fs''4 e''4 e''4~ |
+  e''4 ds''2 e''4~ |
+  e''2. d''4 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \p
+  d'2. cs'4 |
+  b4 d'4 cs'4 b4 |
+  a4 b4 cs'4 bs4 |
+  ds'4 gs2 gs'4 |
+  bs'2 cs''4 b'4 |
+  as'4 cs''4 b'4 a4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \p
+  r1 |
+  r1 |
+  r2. gs4 |
+  bs2 cs'2 |
+  a2. gs4 |
+  fs4 a4 gs4 fs4 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  \p
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 
@@ -134,12 +294,96 @@ $$C\sharp 4 \ (全音符) \longrightarrow B\sharp 3 \ (二分音符) \longrighta
 
 在这一段落中，**半音挂留彻底摆脱了“从属于某个和弦”的卑微地位——它自己就是和弦的创生者**。每一个和弦的诞生，都是这四个半音阶原子在时间轴上相互追逐、推挤、碰撞时的即时物理切片。
 
-> **乐谱例证 3：待交付谱例定位（真实小节规范）**
+> **乐谱例证 3：谱面定位**
 > - **作品**：Ludwig van Beethoven - String Quartet No. 15 in A minor, Op. 132, 1st Movement: Assai sostenuto
 > - **乐章与小节**：mm. 1–8（Assai sostenuto 开篇四音半音动机卡农与密集挂留）
 > - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
 > - **谱面特征**：展示大提琴开端（Kern: G2-A2-F3-E3，标准型 [0, 1, 3, 5]）、第二小提琴、中提琴（[0, 1, 3, 4]）与第一小提琴（[0, 1, 4, 5]）卡农式进入的核心半音细胞；谱面清晰标出各声部进入时产生的小二度/减五度垂直挂留碰撞，以及第 8 小节德意志增六和弦（Ger43）向属和弦凝聚的完整过程
-> - **交付状态**：已在 task-39 中规划立项，以真实作品小节规范文本占位，待后续谱例助手基于 Kern 谱 `quartet15-1.krn` 与 DCML 标注编码交付
+
+```lilypond title="贝多芬 Op.132 第一乐章 第 1–8 小节" location="mm. 1–8"
+\version "2.26.0"
+\language "english"
+
+\header {
+  title = "String Quartet No. 15 in A minor, Op. 132"
+  subtitle = "I. Assai sostenuto — mm. 1–8"
+  composer = "Ludwig van Beethoven (1770–1827)"
+  tagline = ##f
+}
+
+global = {
+  \key a \minor
+  \time 2/2
+  \tempo "Assai sostenuto" 4 = 110
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \pp r1 |
+  r1 |
+  ds'2 e'2 |
+  c''2 b'2 |
+  gs''2 a''2 |
+  b''2 c'''2 |
+  c'''2 b''2 |
+  ds''2 e''4 f''4 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \pp r1 |
+  r2 b2 |
+  a2 gs2 |
+  <a fs'>2 gs'2 |
+  d'2 c'2 |
+  f'2 <e' c''>2 |
+  a'2 gs'2 |
+  f'4 fs'4 gs'4 <d' d''>4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \pp r1 |
+  a2 gs2 |
+  c'2 b2 |
+  ds2 e2 |
+  b'2 c''2 |
+  d'2 c'2 |
+  fs2 gs2 |
+  a2 gs4 <gs b>4 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  \pp gs,2 a,2 |
+  f2 e2 |
+  r1 |
+  r1 |
+  f2 e2 |
+  gs,2 a,2 |
+  ds,2 e,2 |
+  c2 b,4 b,4 |
+}
+
+\score {
+  <<
+    \new Staff \with { instrumentName = "Violino I" } \violinoI
+    \new Staff \with { instrumentName = "Violino II" } \violinoII
+    \new Staff \with { instrumentName = "Viola" } \viola
+    \new Staff \with { instrumentName = "Violoncello" } \violoncello
+  >>
+  \layout { }
+  \midi { }
+}
+```
 
 ---
 

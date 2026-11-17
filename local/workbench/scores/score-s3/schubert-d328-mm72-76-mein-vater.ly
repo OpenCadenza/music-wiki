@@ -25,7 +25,7 @@
 global = {
   \key g \minor
   \time 4/4
-  \tempo "Schnell" 4 = 154
+  \tempo "Schnell" 4 = 152
   \set Score.currentBarNumber = #72
 }
 
@@ -63,7 +63,7 @@ pianoLower = {
   <c c'>2 <a, a>2 |                    % m.73
   <fs, fs>2 r4 <b, b>4 |               % m.74
   <c c'>2 <a, a>2 |                    % m.75
-  <fs, fs>2 r4 fs'4 |                  % m.76
+  <fs, fs>2 r4 fs4 |                  % m.76
   \bar "|."
 }
 
