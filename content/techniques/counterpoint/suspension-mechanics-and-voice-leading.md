@@ -76,23 +76,9 @@
   * 低音下沉至大字组 $A2$（`4AA`），次中音经过至 $G3$；
   * $D4 \to C\sharp 4$ 的解决瞬间确立了 A 大调属三和弦的纯正结构（$A - C\sharp - E$），随后在第 3 拍毫无阻碍地收束于主音和弦 $D$。
 
-> **乐谱例证 1：谱面定位**
-> - **作品**：Johann Sebastian Bach - Chorale "Jesu, meine Freude", BWV 87/7
-> - **乐章与小节**：mm. 1–3（A 乐段开篇与半终止）
-> - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
-> - **谱面特征**：m. 1 拍 4 女低音在 d 小调主和弦上准备 D4，跨小节线延留至 m. 2 强拍，在低音 A 上形成四度重音挂留，弱拍下行级进解决至导音升 C4，完成 $V^{4-3}$ 经典半终止
-
-```lilypond title="BWV 87/7 第 1–3 小节" location="mm. 1–3"
+```lilypond title="巴赫 众赞歌 BWV 87/7" location="Choral，mm.1–3"
 \version "2.26.0"
 \language "english"
-
-
-\header {
-  title = "Chorale \"Jesu, meine Freude\""
-  subtitle = "BWV 87/7 (mm. 1–3)"
-  composer = "Johann Sebastian Bach"
-  tagline = ##f
-}
 
 global = {
   \key d \minor
@@ -147,7 +133,7 @@ bass = {
       midiInstrument = "choir aahs"
     } { \clef bass \bass }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -171,23 +157,9 @@ bass = {
   * 四个声部同时释放至 G 大调纯净主和弦（`2GG; 2B; 2d; 2g;`，带延长记号）。
   * 这里的 $G4 \to F\sharp 4$ 挂留消除了终止前和声的空洞感，赋予了属和弦强大的向心凝聚力。
 
-> **乐谱例证 2：谱面定位**
-> - **作品**：Johann Sebastian Bach - Chorale "Aus meines Herzens Grunde", BWV 269
-> - **乐章与小节**：mm. 5–7（完全正格终止乐句）
-> - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
-> - **谱面特征**：第 6 小节女低音保持 G4（二分音符），第 3 拍低音切入属音 D3 形成 $4–3$ 挂留，弱拍顺畅解决至升 F4，在第 7 小节锁定 G 大调主三和弦
-
-```lilypond title="BWV 269 第 5–7 小节" location="mm. 5–7"
+```lilypond title="巴赫 众赞歌 BWV 269" location="Choral，mm.5–7"
 \version "2.26.0"
 \language "english"
-
-
-\header {
-  title = "Chorale \"Aus meines Herzens Grunde\""
-  subtitle = "BWV 269 (mm. 5–7)"
-  composer = "Johann Sebastian Bach"
-  tagline = ##f
-}
 
 global = {
   \key g \major
@@ -242,7 +214,7 @@ bass = {
       midiInstrument = "choir aahs"
     } { \clef bass \bass }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -262,23 +234,9 @@ bass = {
   * 女低音声部在第 1 拍以附点四分音符挂留 $G\sharp 4$（`4.g#`），随后在弱拍下行级进至 $A4$；紧接着在第 3–4 拍以八分音符形成 $G\sharp \to F\sharp \to G\sharp \to E$ 的交织；
   * 第 4 拍女高音更是突发还原 $D$（`4ddnX`），与低音的 $C\sharp/B$ 构成刺耳的二度/七度碰撞，整座四部架构宛如一座由错位齿轮相互咬合的张力风暴，最终在第 4 小节释放至 A 大调纯粹和弦。
 
-> **乐谱例证 3：谱面定位**
-> - **作品**：Johann Sebastian Bach - Chorale "Es ist genug!", BWV 60/5
-> - **乐章与小节**：mm. 1–4（开篇三全音呼告与半音阶下行挂留网）
-> - **编制与声部**：SATB 四部合唱（Soprano: GM 52, Alto: GM 52, Tenor: GM 52, Bass: GM 52）
-> - **谱面特征**：开篇女高音全音阶跳升至 D#5 制造三全音休止；m. 3 低音展开 9 音八度半音阶下行，上方三声部通过多重切分与还原 D 挂留交织成极端复调张力网
-
-```lilypond title="BWV 60/5 第 1–4 小节" location="mm. 1–4"
+```lilypond title="巴赫 众赞歌 BWV 60/5" location="Choral，mm.1–4"
 \version "2.26.0"
 \language "english"
-
-
-\header {
-  title = "Chorale \"Es ist genug! so nimm Herr\""
-  subtitle = "BWV 60/5 (mm. 1–4)"
-  composer = "Johann Sebastian Bach"
-  tagline = ##f
-}
 
 global = {
   \key a \major
@@ -337,7 +295,7 @@ bass = {
       midiInstrument = "choir aahs"
     } { \clef bass \bass }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

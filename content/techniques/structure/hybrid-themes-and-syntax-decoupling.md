@@ -52,17 +52,9 @@
 
 莫扎特在此慢乐章开端展示了极为优雅的动能控制：先行句（mm. 1–4）以三个断奏（Staccato）重复音构成的基本乐念启动，随后以级进上行的对比乐念引入附点并在 m. 4 达成半终止（HC）。如果此处遵循传统乐段，后半段必将再次回到附点主题；但莫扎特在 m. 5 旋即切入延续功能，动机单位急剧碎裂，表面节奏显著加密，并在 m. 6 迅速将特征动机清算为下行标量音阶，最终以坚定的正格终止收束全段。这种处理既保全了慢乐章开端的典雅对称，又避免了后半程的平铺直叙。
 
-```lilypond title="莫扎特 K. 330 第二乐章" location="mm. 1–8"
+```lilypond title="莫扎特 K. 330 第二乐章" location="Andante cantabile，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Keyboard Sonata No. 10 in C Major, K. 330 (300h)"
-  subtitle = "II. Andante cantabile (mm. 1–8)"
-  location = "mm. 1–8"
-  composer = "Wolfgang Amadeus Mozart"
-  tagline = ##f
-}
 
 % 编制与 GM 程序号: Piano: 0 (acoustic grand)
 % 调性与拍号：F 大调 (\key f \major), 3/4 拍 (\time 3/4)
@@ -160,7 +152,7 @@ leftHand = {
     \new Staff = "upper" { \rightHand }
     \new Staff = "lower" { \leftHand }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -175,17 +167,9 @@ leftHand = {
 
 从威廉·卡普林（2015）在《Harmony and Cadence in Gjerdingen's "Prinner"》中的和声界分来看，加兰特时期常见的线性延续图式（如 Prinner，其对位骨架建立在低音四级下行 $\hat{4}-\hat{3}-\hat{2}-\hat{1}$ 与高音平行十度 $\hat{6}-\hat{5}-\hat{4}-\hat{3}$ 之上，前两步常配和声 $IV - I^6$；详见[《加兰特图式在古典句法中的曲式功能整合》](galant-schemata-and-formal-functions.md)）本质上主要承担对位延展的“延续功能”，由于缺乏原位属和弦跳进，并不能自发构成封闭的“终止式”；若要在延续句末尾达成正格终止，低音必须发生变异跳向原位属音（$\hat{5}$）或引入单独的终止单元。海顿在 Op. 64 No. 4 此处呈现的构思则更为纯粹：跨过线性对位延续阶段，直接将后 4 小节交付给一个由和声级数主导的扩充终止进行（Expanded Cadential Progression, 简称 ECP：$I^6 - ii^6_5 - V - I$）。这在谱面上雄辩地证明：“终止功能”在古典句法中可以彻底脱离“延续功能”而独立承担主题的后半程。
 
-```lilypond title="海顿 Op. 64 No. 4 (Hob. III:66) 第二乐章 Menuetto" location="mm. 1–8（含弱起）"
+```lilypond title="海顿 Op. 64 No. 4 (Hob. III:66) 第二乐章" location="Allegretto，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet in G major, Hob. III:66 (Op. 64 No. 4)"
-  subtitle = "II. Menuetto (Allegretto) — mm. 1–8, with upbeat"
-  location = "mm. 1–8 (with anacrusis)"
-  composer = "Joseph Haydn"
-  tagline = ##f
-}
 
 % 编制与 GM 程序号:
 % Violin I: 40 (violin), Violin II: 40 (violin), Viola: 41 (viola), Violoncello: 42 (cello)
@@ -284,7 +268,7 @@ violoncello = {
       midiInstrument = "cello"
     } { \violoncello }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -312,17 +296,9 @@ violoncello = {
 
 大提琴在弱奏中独自呈示前 4 小节的主题，先后展现了两个对比明显的旋律细胞（BI 与 CI）；然而在 m. 4，大提琴停留在一个非终止的四级音（C4）上，未形成主和弦或属和弦闭合（CBI）。从第 5 小节起，其余三件乐器在弱奏（$\textit{p}$）中整齐加入全奏进入后继句，重新陈述 BI 并将 CI 重构为极具冲击力的下行终止线条，在第 8 小节达成全段唯一的正格终止。
 
-```lilypond title="贝多芬 Op. 18 No. 2 第四乐章" location="mm. 1–8"
+```lilypond title="贝多芬 Op. 18 No. 2 第四乐章" location="Allegro molto quasi presto，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 2 in G Major, Op. 18, No. 2"
-  subtitle = "IV. Allegro molto quasi presto (mm. 1–8)"
-  location = "mm. 1–8"
-  composer = "Ludwig van Beethoven"
-  tagline = ##f
-}
 
 % 编制与 GM 程序号:
 % Violin I: 40 (violin), Violin II: 40 (violin), Viola: 41 (viola), Violoncello: 42 (cello)
@@ -409,7 +385,7 @@ cello = {
       midiInstrument = "cello"
     } { \cello }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

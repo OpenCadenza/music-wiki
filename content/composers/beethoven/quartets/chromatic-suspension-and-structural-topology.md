@@ -63,22 +63,9 @@
   * **声部角色颠覆**：此前承担挂留的大多是第一小提琴，但在第 21–24 小节，大提琴（Bass）彻底接管了引子开篇动机，在低音区展开长程半音阶逆向爬升，大提琴反客为主成为核心“挂留施压声部”（Vorhaltsstimme）；
   * 最终在第 24 小节第 4 拍，整个庞大的连锁悬置网在属和弦（$V^7$）与主和弦（$I$）的纯正敲击中瞬间收束，完美引爆第 25 小节灿烂的快板主部。
 
-> **乐谱例证 1：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 10 in E-flat major, Op. 74 "Harp", 1st Movement: Poco Adagio
-> - **乐章与小节**：mm. 18–24（慢引子尾声连环半音悬置链）
-> - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
-> - **谱面特征**：展示第 18–24 小节第一小提琴与内声部附点四分音符半音挂留（`iv(b6)`, `iv(6)`）、减七和弦链式滑移（`viio7`, `viio43/V`），以及大提琴反转为挂留主体的半音逆向爬升线
-
-```lilypond title="贝多芬 Op.74 第一乐章 第 18–24 小节" location="mm. 18–24"
+```lilypond title="贝多芬 Op.74 第一乐章" location="Poco Adagio，mm.18–24"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 10 in E-flat major, Op. 74 “Harp”"
-  subtitle = "I. Poco Adagio — mm. 18–24"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key ef \major
@@ -145,7 +132,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -173,22 +160,9 @@ $$C\sharp 4 \ (全音符) \longrightarrow B\sharp 3 \ (二分音符) \longrighta
 
 这一系列实证数据表明：在晚期贝多芬的复调语境中，**声部的横向线性冲力完全凌驾于垂直和弦的协和容忍度之上**；半音挂留不再是调性润滑油，而是作曲家有意嵌入的结构阻尼齿轮。
 
-> **乐谱例证 2：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 14 in C-sharp minor, Op. 131, 1st Movement: Adagio ma non troppo e molto espressivo
-> - **乐章与小节**：mm. 6–11（赋格呈示段内部特异挂留与那不勒斯和弦）
-> - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
-> - **谱面特征**：展现第 6 小节 `iv(4)` 下属挂留四音、第 7 小节 `bII(#2)` 原位那不勒斯和弦内叠置增二度挂留，以及第 11 小节下拍罕见的减七和弦二音位挂留四音 `#viio2(4)` 的严酷复调声部导向
-
-```lilypond title="贝多芬 Op.131 第一乐章 第 6–11 小节" location="mm. 6–11"
+```lilypond title="贝多芬 Op.131 第一乐章" location="Adagio ma non troppo e molto espressivo，mm.6–11"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 14 in C-sharp minor, Op. 131"
-  subtitle = "I. Adagio ma non troppo e molto espressivo — mm. 6–11"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key cs \minor
@@ -255,7 +229,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -294,22 +268,9 @@ violoncello = {
 
 在这一段落中，**半音挂留彻底摆脱了“从属于某个和弦”的卑微地位——它自己就是和弦的创生者**。每一个和弦的诞生，都是这四个半音阶原子在时间轴上相互追逐、推挤、碰撞时的即时物理切片。
 
-> **乐谱例证 3：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 15 in A minor, Op. 132, 1st Movement: Assai sostenuto
-> - **乐章与小节**：mm. 1–8（Assai sostenuto 开篇四音半音动机卡农与密集挂留）
-> - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Violoncello: GM 42）
-> - **谱面特征**：展示大提琴开端（Kern: G2-A2-F3-E3，标准型 [0, 1, 3, 5]）、第二小提琴、中提琴（[0, 1, 3, 4]）与第一小提琴（[0, 1, 4, 5]）卡农式进入的核心半音细胞；谱面清晰标出各声部进入时产生的小二度/减五度垂直挂留碰撞，以及第 8 小节德意志增六和弦（Ger43）向属和弦凝聚的完整过程
-
-```lilypond title="贝多芬 Op.132 第一乐章 第 1–8 小节" location="mm. 1–8"
+```lilypond title="贝多芬 Op.132 第一乐章" location="Assai sostenuto，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 15 in A minor, Op. 132"
-  subtitle = "I. Assai sostenuto — mm. 1–8"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key a \minor
@@ -380,7 +341,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

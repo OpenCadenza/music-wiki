@@ -85,26 +85,9 @@
 3. **声学爆发**：超主音与升四级音构成的双重三全音骤然撕裂了明亮的 C 大调纯净空间，将乐句的张力瞬间推至最高负荷；
 4. **终止顺导（mm. 15–16）**：法国六和弦顺势卸力于终止四六和弦（$Cad^6_4$），最终在原位属和弦的驱动下，于 m. 16 毫无悬念地达成雷霆般的完全正格终止（PAC）。
 
-> **谱面定位**
-> - **作品**：沃尔夫冈·阿玛多伊斯·莫扎特《C大调第19弦乐四重奏“不协和”》K. 465，第四乐章 Allegro molto
-> - **小节范围**：mm. 10–16
-> - **声部编制与 GM 编号**：第一小提琴（GM 40）、第二小提琴（GM 40）、中提琴（GM 41）、大提琴（GM 42）
-> - **调性与拍号**：C 大调，2/4 拍
-> - **结构说明**：mm. 10–12 主题动机推进；m. 13 温和下属和弦 IV6；m. 14 第 2 拍爆发法国六和弦（Fr.）；mm. 15–16 经 Cad6/4 达成完全正格终止 PAC
-> - **状态**：待制作真实 LilyPond 围栏与独立核验
-> - **编号基准**：小节号按 OpenScore 的零基计数（弱起 = 第 0 小节）；若按「弱起算第 1 小节」的通行计法，对应印刷谱 mm. 11–17。
-
-```lilypond title="莫扎特 K.465 第四乐章 第 10–16 小节" location="mm. 10–16"
+```lilypond title="莫扎特 K.465 第四乐章" location="Allegro，mm.10–16"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 19 in C major, K. 465 “Dissonance”"
-  subtitle = "IV. Allegro molto — mm. 10–16"
-  composer = "Wolfgang Amadeus Mozart (1756–1791)"
-  tagline = ##f
-}
-
 
 global = {
   \key c \major
@@ -171,7 +154,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -185,25 +168,9 @@ violoncello = {
 - **张力跨越**：这一德六和弦并非一闪而过，而是被延留跨越小节线，强力压迫至 m. 8 拍头，随后经过精妙的声部导向，平稳释放在宽广深远的 B 大调半终止长音之中；
 - 贝多芬在此雄辩地证明：增六和弦不仅是戏剧性快板乐章中的爆破装置，更能在极静谧的慢板中凝聚起崇高的哲学张力。
 
-> **谱面定位**
-> - **作品**：路德维希·凡·贝多芬《E大调第30钢琴奏鸣曲》Op. 109，第三乐章 Andante molto cantabile ed espressivo
-> - **小节范围**：mm. 1–8
-> - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
-> - **调性与拍号**：E 大调，3/4 拍
-> - **结构说明**：mm. 1–6 萨拉班德风格如歌先行句；m. 7 拍尾至 m. 8 拍头引入饱满德国六和弦（Ger.），跨小节线强力加压，最终在 m. 8 释放于半终止 HC
-> - **状态**：待制作真实 LilyPond 围栏与独立核验
-> - **速度与力度来源**：`4 = 84` 与 m.8 的 *p* 均据 Kern，DCML 该段没有节拍机与力度标记。
-
-```lilypond title="贝多芬 Op.109 第三乐章 第 1–8 小节" location="mm. 1–8"
+```lilypond title="贝多芬 Op.109 第三乐章" location="Andante molto cantabile ed espressivo，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Piano Sonata No. 30 in E major, Op. 109"
-  subtitle = "III. Andante molto cantabile ed espressivo — Tema, mm. 1–8"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key e \major

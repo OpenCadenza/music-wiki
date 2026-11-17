@@ -66,17 +66,9 @@ flowchart TD
 > - **调性与拍号**：C 大调，2/4 拍
 > - **结构说明**：mm. 9–12 复合乐段大后继句呈示；mm. 13–15 延续冲刺并在 m. 15 遭遇导音未解决与规避 PAC；mm. 16–19 启动 One-More-Time 变奏重跑，终在 m. 19 闭合于 I:PAC
 
-```lilypond title="莫扎特 K.309 第三乐章 第 9–19 小节（NMA 印刷谱 10–20）" location="mm. 9–19"
+```lilypond title="莫扎特 K.309 第三乐章" location="Allegretto grazioso，mm.9–19"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Mozart: Piano Sonata No. 7 in C major, K. 309 (284b)"
-  subtitle = "III. Rondo: Allegretto grazioso · mm. 9–19"
-  composer = "Wolfgang Amadeus Mozart (1756–1791)"
-  tagline = ##f
-}
-
 
 #(set-global-staff-size 17)
 
@@ -84,6 +76,7 @@ upper = {
   \clef "treble"
   \key c \major
   \time 2/4
+  \tempo "Allegretto grazioso" 4 = 120  % 播放值按 Allegretto grazioso 推定（源无节拍机）
   \set Score.currentBarNumber = #9
   \grace { f''16 } e''8( d''16 c''16 c''8 c''8) |
   \grace { b'32[ c''32 d''32] } c''4. c'''8 |
@@ -120,7 +113,7 @@ lower = {
     \new Staff = "upper" \with { midiInstrument = "acoustic grand" } { \upper }
     \new Staff = "lower" \with { midiInstrument = "acoustic grand" } { \lower }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -155,17 +148,9 @@ lower = {
 > - **调性与拍号**：C 大调，4/4 拍
 > - **结构说明**：mm. 1–4 乐句呈示（BI + 重复）；mm. 5–8 延续冲刺，m. 8 降落为弱 IAC（高音停在三音）；mm. 8–13 低音下行连接线触发高八度延续部 5 小节剧烈扩张，至 m. 13 达成强力 I:PAC
 
-```lilypond title="贝多芬 Op.2 No.3 第一乐章 第 1–13 小节" location="mm. 1–13"
+```lilypond title="贝多芬 Op.2 No.3 第一乐章" location="Allegro con brio，mm.1–13"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Beethoven: Piano Sonata No. 3 in C major, Op. 2 No. 3"
-  subtitle = "I. Allegro con brio · mm. 1–13"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
-
 
 #(set-global-staff-size 17)
 
@@ -240,7 +225,7 @@ U = \tweak Stem.direction #UP \etc
   \oneVoice \D fs,4 \D g,2 ^\sf \voiceTwo \D <g,, g,>4 s4 \clef "treble" } }
   >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

@@ -17,11 +17,9 @@
 - **功能定性**：“作为变音下属和弦，它始终表达下属功能（Subdominant function, S）”；
 - **解决逻辑**：低音保持在稳定的第 4 级音上，上方声部的降第 2 级（*ra*）顺畅下行级进至导音（*ti*）或通过主四六和弦（$I^6_4$）平滑消解，其存在是为了在进入属和弦前注入局部的半音阶色彩，但绝不破坏调性向心力。
 
-> **乐谱例证 1：教科书规范前属模型（非真实作品原谱）**
-> - **来源与出处**：Open Music Theory (OMT) - Chromatically Altered Subdominants 规范句法
-> - **调性与和声**：g 小调 / f 小调标准终止式：$i \to N^6 \to V^7 \to i$
-> - **声部导向特征**：低音保持为第 4 级音并重复；高音声部降第 2 级下行二度解决至导音；低音平滑级进至属音
-> - **说明**：这是教材式规范句法模型（i → N⁶ → V⁷ → i），不是任何一部作品的原谱，因此不按真实作品编码，留待作者决定是否改为示意性谱例或删除。
+> **教科书规范模型：g 小调／f 小调 i → N⁶ → V⁷ → i（非真实作品原谱）**
+
+> 谱例待补：这是教材式规范句法，不是任何一部作品的原谱；是否改为示意性谱例由作者决定。
 
 ---
 
@@ -49,22 +47,9 @@
 1. **原位（Root Position）而非转位**：标注清晰确认为 `bII` 而非带有斜杠下标的 `bII6`。低音直接是基础根音 $G\flat$（`bass_note: -5`），彻底摧毁了古典第一转位依赖低音第 4 级（$B\flat$）维持线性平滑性的声学伪装；
 2. **调性板块平移（Tonal Block）**：$\flat\text{II}$ 在此处不再充当依附于属和弦的前属装饰，而是跨越两个完整小节将主部主题完整搬迁至降二级领域。它与主调 $f$ 小调之间构成了不共戴天的半音阶对抗。
 
-> **乐谱例证 2：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 11 in F Minor, Op. 95 (Serioso)
-> - **乐章与小节**：I. Allegro con brio (4/4拍), mm. 1–8
-> - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：mm. 1–2 全奏齐奏 f 小调主题；m. 5 属半终止；mm. 6–7 大提琴突发低音 $G\flat$ 移位主题并带动全奏确立原位 $G\flat$ 大和弦（bII，持续 8 个四分音符）；m. 8 减七和弦（viio2/V）暴力扭转
-
-```lilypond title="贝多芬 Op.95 第一乐章 第 1–8 小节" location="mm. 1–8"
+```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.1–8"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 11 in F minor, Op. 95 “Serioso”"
-  subtitle = "I. Allegro con brio — mm. 1–8"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key f \minor
@@ -139,7 +124,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -199,22 +184,9 @@ violoncello = {
 
 贝多芬通过在开篇埋下原位 $\flat\text{II}$ 的伏笔，使后续向降VI级（$D\flat$）的转调获得了浑然天成的结构合理性。原本看似不可理喻的开篇和声裂痕，最终成为了统摄全乐章宏观调性循环的核心枢纽。
 
-> **乐谱例证 3：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 11 in F Minor, Op. 95 (Serioso)
-> - **乐章与小节**：I. Allegro con brio (4/4拍), mm. 19–24
-> - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：m. 19 再次突发 bII；m. 21 经由 V6/VI 和弦过渡；m. 22 顺畅滑入降VI级（Db 大调）副部主题
-
-```lilypond title="贝多芬 Op.95 第一乐章 第 19–24 小节" location="mm. 19–24"
+```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.19–24"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 11 in F minor, Op. 95 “Serioso”"
-  subtitle = "I. Allegro con brio — mm. 19–24"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
 
 global = {
   \key f \minor
@@ -277,7 +249,7 @@ violoncello = {
     \new Staff \with { instrumentName = "Viola" } \viola
     \new Staff \with { instrumentName = "Violoncello" } \violoncello
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

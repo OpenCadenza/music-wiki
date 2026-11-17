@@ -151,18 +151,9 @@ description: 深入解构 18 至 19 世纪初西方管弦乐微观声学组织�
 > - **声学机制**：外声部极性对峙（Fl./Vl. 主题对位 vs Vc./Violone 低音跳进），中频依靠羽管键琴密集拨弦和弦锚定和声；展示通奏低音退出历史前夕的临界织体形态
 > - **GM 设定**：Flute (73), Violin (40), Harpsichord (6), Viola (41), Cello (42), Acoustic Bass (32)
 
-```lilypond title="巴赫 BWV 1050 第一乐章 第 1–9 小节（通奏低音与主奏并置）" location="mm. 1–9"
+```lilypond title="巴赫 BWV 1050 第一乐章" location="Allegro，mm.1–9"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Brandenburg Concerto No. 5 in D major, BWV 1050"
-  subtitle = "I. Allegro — mm. 1–9 (tutti, baroque polarity and continuo scaffolding)"
-  location = "Score example 1: mm. 1–9"
-  composer = "Johann Sebastian Bach"
-  tagline = ##f
-}
-
 
 global = {
   \key d \major
@@ -311,7 +302,7 @@ cembaloLower = {
       \new Staff \with { midiInstrument = "harpsichord" } { \cembaloLower }
     >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -332,18 +323,9 @@ cembaloLower = {
 > - **声学机制**：mm. 17–31（弦乐）与 mm. 32–39（全奏） 弦乐弱奏呈现清澈室内乐质感；m. 33 起全奏强奏，双簧管加倍旋律、长笛进入高音，两支自然圆号演奏中频持续长音踏板锚定和声
 > - **GM 设定**：Oboe (68), French Horn (60), Bassoon (70), String Ensemble 1 (48), Cello (42), Contrabass (43)
 
-```lilypond title="海顿 Hob.I:104 第一乐章 第 17–31 小节（弦乐弱奏）" location="mm. 17–31"
+```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.17–31"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Symphony No. 104 in D major („London“), Hob. I:104"
-  subtitle = "I. Allegro — mm. 17–32 (strings excerpt; horns rest in this passage)"
-  location = "Score example 2: mm. 17–32, excerpt (strings only)"
-  composer = "Franz Joseph Haydn"
-  tagline = ##f
-}
-
 
 global = {
   \key d \major
@@ -470,23 +452,14 @@ bass = {
     \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
     \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
 
-```lilypond title="海顿 Hob.I:104 第一乐章 第 32–39 小节（全奏，圆号八度 D 长音）" location="mm. 32–39"
+```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.32–39"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Symphony No. 104 in D major („London“), Hob. I:104"
-  subtitle = "I. Allegro — mm. 32–39 (tutti: horns/oboes/flutes/timpani on D pedal)"
-  location = "Score example 2b: mm. 32–39, tutti excerpt"
-  composer = "Franz Joseph Haydn"
-  tagline = ##f
-}
-
 
 global = {
   \key d \major
@@ -619,7 +592,7 @@ bass = { \global \clef bass |
     \new Staff \with { instrumentName = "Violoncello" midiInstrument = "cello" } { \cello }
     \new Staff \with { instrumentName = "Contrabasso" midiInstrument = "contrabass" } { \bass }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

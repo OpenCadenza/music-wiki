@@ -26,24 +26,9 @@
 - 开篇第 1 小节的和弦被明确标注为 `#viio6` $\to$ `i6`。
 - 这一标注揭示了关键的音乐实质：贝多芬完全打破了古典奏鸣乐章以主和弦奠定调性基础的惯例，直接以悬浮、紧张的**导音减和弦第一转位**切入。细胞内部的 $E$ 与 $A\flat$ 构成了减七和弦骨架，使整个疑问动机悬置在半空调性场中，赋予听觉强烈的动荡感与解决渴望。
 
-> **乐谱例证 1：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
-> - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Grave ma non troppo tratto (3/2拍), mm. 1–4
-> - **编制与声部**：弦乐四重奏（Violin I: GM 40, Violin II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：中提琴与大提琴八度齐奏 $G-E-A\flat$（Muss es sein?），第一小提琴第 3 拍 $fp$ 切入并级进叹息下行
-
-```lilypond title="贝多芬 Op.135 第四乐章 第 1–4 小节（Grave）" location="mm. 1–4"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.1–4"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 16 in F Major, Op. 135"
-  subtitle = "IV. Der schwer gefaßte Entschluß — Grave ma non troppo tratto, mm. 1–4"
-  location = "Score example 1: mm. 1–4 (Muss es sein?)"
-  composer = "Ludwig van Beethoven"
-  tagline = ##f
-}
-
 
 global = {
   \key f \minor
@@ -114,7 +99,7 @@ cello = {
       midiInstrument = "cello"
     } { \cello }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -143,24 +128,9 @@ cello = {
 - mm. 15–16 在大提琴冲向主音时被标注为明确的 `I`。
 - 这一和声进程表明，答句动机的音程反转与属到主（$V \to I$）的强功能解决形成了完全共振。和声不再是开篇的悬浮导音，而是提供了无懈可击的功能支撑。
 
-> **乐谱例证 2：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
-> - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Allegro (4/4拍), mm. 12 (弱起) – 16
-> - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：第一、第二小提琴八度弱起跳进 $A-C-G$ 与 $G-B\flat-F$（Es muss sein!），大提琴与中提琴断音级进爬升
-
-```lilypond title="贝多芬 Op.135 第四乐章 第 12–16 小节（Allegro）" location="mm. 12–16"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Allegro，mm.12–16"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 16 in F Major, Op. 135"
-  subtitle = "IV. Der schwer gefaßte Entschluß — Allegro, mm. 12 (Auftakt) – 16"
-  location = "Score example 2: mm. 12 (anacrusis) – 16 (Es muss sein!)"
-  composer = "Ludwig van Beethoven"
-  tagline = ##f
-}
-
 
 global = {
   \key f \minor
@@ -239,7 +209,7 @@ cello = {
       midiInstrument = "cello"
     } { \cello }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -261,24 +231,9 @@ cello = {
 - 此处的 `III+` 正是由低音问句落音 $A\flat$ 与高音震音中的持续音 $C$、$E$ 所共同构成的**增三和弦**（$A\flat - C - E$）。
 - 在传统功能和声中，增三和弦由于其对称性与模糊性，具有极强的不稳定性。贝多芬在此处通过高音尖锐震音与增三和弦的碰撞，彻底剥夺了问句动机在呈示部的哲学哀伤，将其异化为面对命运崩溃时的惊悚与绝望。同一动机细胞在此完成了从“古典式疑问”向“浪漫式惊惧”的极限和声再语境化。
 
-> **乐谱例证 3：谱面定位**
-> - **作品**：Ludwig van Beethoven - String Quartet No. 16 in F Major, Op. 135
-> - **乐章与小节**：IV. Der schwer gefaßte Entschluß, Grave ma non troppo tratto (3/2拍), mm. 165–172
-> - **编制与声部**：弦乐四重奏（Violin I/II: GM 40, Viola: GM 41, Cello: GM 42）
-> - **谱面特征**：中低音声部重现 $G-E-A\flat$ 问句动机，上方两把小提琴极高音区十六分音符震音摩擦 $C-E$，构成增三和弦（III+）
-
-```lilypond title="贝多芬 Op.135 第四乐章 第 165–172 小节（Grave）" location="mm. 165–172"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.165–172"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "String Quartet No. 16 in F Major, Op. 135"
-  subtitle = "IV. Der schwer gefaßte Entschluß (Grave, mm. 165–172)"
-  location = "mm. 165–172"
-  composer = "Ludwig van Beethoven"
-  tagline = ##f
-}
-
 
 global = {
   \key f \minor
@@ -373,7 +328,7 @@ cello = {
       midiMaximumVolume = #0.9
     } { \cello }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -398,24 +353,9 @@ $$G \to A \to B\flat \to C \to D \to E\flat \to D$$
 
 更为精妙的是，在后续的情节发展中，舒伯特将这个包含持续音小二度摩擦的惊呼细胞，依次在 g 小调（$E\flat-D$）、a 小调（$F-E$）与 c 小调（$A\flat-G$）中**连续抬升调性台阶**。动机细胞的核心音程没有改变，但每一次和声重设与音高攀升，都将戏剧冲突推向更高维度的窒息感。
 
-> **乐谱例证 4：谱面定位**
-> - **作品**：Franz Schubert - Erlkönig, D. 328 (Op. 1)
-> - **小节范围**：mm. 1–5（前奏马蹄律动与低音半音爬升）及 mm. 72–76（儿子惊呼中的小二度/小九度对撞）
-> - **编制**：独唱声部（Voice: GM 54）与钢琴伴奏（Piano: GM 0）
-> - **谱面特征**：高音独唱固定唱 $E\flat 5$，钢琴右手八度三连音强奏撞击 $D4/D5$，左手半音副属推进
-
-```lilypond title="舒伯特 D.328《魔王》钢琴前奏 第 1–5 小节" location="mm. 1–5"
+```lilypond title="舒伯特 D.328《魔王》钢琴前奏" location="Schnell，mm.1–5"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Erlkönig, D. 328 (Op. 1)"
-  subtitle = "Piano introduction: mm. 1–5 (Schnell)"
-  location = "Score example 4a: mm. 1–5 (prelude, piano solo)"
-  composer = "Franz Schubert"
-  tagline = ##f
-}
-
 
 global = {
   \key g \minor
@@ -460,23 +400,14 @@ pianoLower = {
       midiInstrument = "acoustic grand"
     } { \pianoLower }
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
 
-```lilypond title="舒伯特 D.328《魔王》第 72–76 小节" location="mm. 72–76"
+```lilypond title="舒伯特 D.328《魔王》" location="Schnell，mm.72–76"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Erlkönig, D. 328 (Op. 1)"
-  subtitle = "„Mein Vater, mein Vater, und hörest du nicht?“ — mm. 72–76"
-  location = "Score example 4b: mm. 72–76 (son: E♭5 against pedal D)"
-  composer = "Franz Schubert"
-  tagline = ##f
-}
-
 
 global = {
   \key g \minor
@@ -540,7 +471,7 @@ pianoLower = {
       } { \pianoLower }
     >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```

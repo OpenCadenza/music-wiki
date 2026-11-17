@@ -67,17 +67,9 @@ flowchart TD
 > - **调性与拍号**：c 小调，Grave 4/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–10 慢引子（双重附点、减七和弦与六度跳跃叹息动机）；mm. 11–19 快板主部呈示（低音颤音，高音以 4 倍时值压缩倒影引子动机形成飞驰第一主题）
 
-```lilypond title="贝多芬 Op.13《悲怆》第一乐章 第 1–19 小节" location="mm. 1–19"
+```lilypond title="贝多芬 Op.13《悲怆》第一乐章" location="Grave，mm.1–19"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Beethoven: Piano Sonata No. 8 in C minor, Op. 13 “Pathétique”"
-  subtitle = "I. Grave — Allegro di molto e con brio · mm. 1–19"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
-
 
 #(set-global-staff-size 17)
 
@@ -204,7 +196,7 @@ U = \tweak Stem.direction #UP \etc
     \U c,8 [ \U c8 \U c,8 \U c8 ] \U c,8 [ \U c8 \U c,8 \U c8 ] } }
   >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -237,17 +229,9 @@ U = \tweak Stem.direction #UP \etc
 > - **调性与拍号**：降 E 大调，Adagio 2/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–4 “Le-be-wohl” 下行三音级动机（$\hat{8}-\hat{7}-\hat{6}$）及落入 vi 级阻碍和弦；mm. 17–25 快板启动，告别动机时值压缩为切分跳跃演化为主部第一主题
 
-```lilypond title="贝多芬 Op.81a《告别》第一乐章 第 1–25 小节" location="mm. 1–25"
+```lilypond title="贝多芬 Op.81a《告别》第一乐章" location="Adagio，mm.1–25"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Beethoven: Piano Sonata No. 26 in E-flat major, Op. 81a “Les Adieux”"
-  subtitle = "I. Das Lebewohl: Adagio — Allegro · mm. 1–25"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
-
 
 #(set-global-staff-size 17)
 
@@ -363,7 +347,7 @@ U = \tweak Stem.direction #UP \etc
   \clef "bass" \time 2/2 } }
   >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
@@ -396,17 +380,9 @@ U = \tweak Stem.direction #UP \etc
 > - **调性与拍号**：c 小调，Maestoso 4/4 拍 $\rightarrow$ Allegro 也是 4/4 拍（全乐章只有一个拍号，速度加快而拍号不变）
 > - **结构说明**：mm. 1–5 Maestoso 极端强奏减七和弦大跳与附点下坠；mm. 11–16 低音区持续神秘震音蓄能；mm. 19–25 Allegro 爆发，减七跳跃动机裂变为赋格化主部主题
 
-```lilypond title="贝多芬 Op.111 第一乐章 第 1–25 小节" location="mm. 1–25"
+```lilypond title="贝多芬 Op.111 第一乐章" location="Maestoso，mm.1–25"
 \version "2.26.0"
 \language "english"
-
-\header {
-  title = "Beethoven: Piano Sonata No. 32 in C minor, Op. 111"
-  subtitle = "I. Maestoso — Allegro con brio ed appassionato · mm. 1–25"
-  composer = "Ludwig van Beethoven (1770–1827)"
-  tagline = ##f
-}
-
 
 #(set-global-staff-size 17)
 
@@ -561,7 +537,7 @@ U = \tweak Stem.direction #UP \etc
 } }
   >>
   >>
-  \layout { }
+  \layout { ragged-right = ##f }
   \midi { }
 }
 ```
