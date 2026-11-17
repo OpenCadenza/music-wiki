@@ -1,0 +1,455 @@
+FILE: QmNdFNhQL2vjvNDcxXGAP3x7Gof9exBk8HDHriEsJ64fFu.xml
+MOVEMENT-TITLE: 'Trio pour piano violon et violoncelle op 100, 2e mvt'
+PARTS: [('P1', 'violon', '41'), ('P2', 'violoncelle', '43'), ('P3', 'Right Hand', '1'), ('P4', 'Left Hand', '1')]
+PART ELEMENTS: 4
+
+=== PART P1 (violon): 212 measures
+
+--- m.6
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.7
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.8
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.9
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.10
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.11
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.12
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.13
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.14
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.15
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.16
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.17
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.18
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.19
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.20
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.21
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G3(G0/3,m55)           type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=tenuto,accent slur=start1 tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.875    G#b3(A-1/3,m56)        type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=staccato slur=stop1 tie=- tm=-
+    NOTE =@1.875   F4(F0/4,m65)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+=== PART P2 (violoncelle): 212 measures
+
+--- m.6
+    NOTE @0        C4(C0/4,m60)           type=half   dots=0 dur=2 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+
+--- m.7
+    NOTE @0        C4(C0/4,m60)           type=quarter dots=1 dur=1.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+
+--- m.8
+    NOTE @0        C4(C0/4,m60)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @0.25     A#b3(B-1/3,m58)        type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+--- m.9
+    NOTE @0        G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @0.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1        B3(B0/3,m59)           type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=natural arts=- slur=start1 tie=- tm=-
+    NOTE @1.75     A3(A0/3,m57)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.875    B3(B0/3,m59)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+--- m.10
+    NOTE @0        C4(C0/4,m60)           type=half   dots=0 dur=2 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+
+--- m.11
+    NOTE @0        D#b4(E-1/4,m63)        type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @1        D4(D0/4,m62)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+--- m.12
+    NOTE @0        D4(D0/4,m62)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @0.25     G3(G0/3,m55)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=- tie=start,start tm=-
+    NOTE @0.5      G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=- slur=- tie=stop,stop tm=-
+    NOTE @1.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=staccato slur=stop1 tie=- tm=-
+
+--- m.13
+    NOTE @0        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @1        A3(A0/3,m57)           type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.75     G3(G0/3,m55)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+--- m.14
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        G3(G0/3,m55)           type=quarter dots=1 dur=1.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=staccato,accent slur=- tie=- tm=-
+
+--- m.15
+    NOTE @0        G2(G0/2,m43)           type=quarter dots=1 dur=1.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=staccato,accent slur=- tie=- tm=-
+
+--- m.16
+    NOTE @0        G2(G0/2,m43)           type=quarter dots=0 dur=1 v=1 st=None stem=up acc=None arts=- slur=- tie=start,start tm=-
+    NOTE @1        G2(G0/2,m43)           type=16th   dots=0 dur=0.25 v=1 st=None stem=up acc=None arts=- slur=- tie=stop,stop tm=-
+    NOTE @1.25     G2(G0/2,m43)           type=16th   dots=0 dur=0.25 v=1 st=None stem=up acc=None arts=staccato slur=start1 tie=- tm=-
+    NOTE @1.5      A2(A0/2,m45)           type=16th   dots=0 dur=0.25 v=1 st=None stem=up acc=natural arts=staccato slur=- tie=- tm=-
+    NOTE @1.75     B2(B0/2,m47)           type=16th   dots=0 dur=0.25 v=1 st=None stem=up acc=natural arts=staccato slur=stop1 tie=- tm=-
+
+--- m.17
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @0.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=accent slur=start1 tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1.75     D#b3(E-1/3,m51)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+
+--- m.18
+    NOTE @0        D3(D0/3,m50)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @0.5      D3(D0/3,m50)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=start1 tie=start,start tm=-
+    NOTE @1        D3(D0/3,m50)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=- tie=stop,stop tm=-
+    NOTE @1.25     D#b3(E-1/3,m51)        type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.375    F3(F0/3,m53)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1.5      D#b3(E-1/3,m51)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @1.75     D3(D0/3,m50)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+
+--- m.19
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @0.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=accent slur=start1 tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1.75     D#b3(E-1/3,m51)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+
+--- m.20
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        D3(D0/3,m50)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @0.5      D3(D0/3,m50)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=start1 tie=start,start tm=-
+    NOTE @1        D3(D0/3,m50)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=- tie=stop,stop tm=-
+    NOTE @1.25     D#b3(E-1/3,m51)        type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.375    F3(F0/3,m53)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1.5      D#b3(E-1/3,m51)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @1.75     D3(D0/3,m50)           type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=staccato slur=- tie=- tm=-
+
+--- m.21
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=tenuto,accent slur=start1 tie=- tm=-
+    NOTE @1.875    F2(F0/2,m41)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=staccato slur=stop1 tie=- tm=-
+
+=== PART P3 (Right Hand): 212 measures
+
+--- m.6
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=accent slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.875    C4(C0/4,m60)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.875   F4(F0/4,m65)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.875   G#b4(A-1/4,m68)        type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.7
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.8
+    NOTE @0        A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.9
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.10
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.11
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.12
+    NOTE @0        A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      A#b3(B-1/3,m58)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.13
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        A3(A0/3,m57)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=natural arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       A4(A0/4,m69)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.5      A3(A0/3,m57)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     A4(A0/4,m69)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.14
+    NOTE @0        B3(B0/3,m59)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=natural arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      B3(B0/3,m59)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        B3(B0/3,m59)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.15
+    NOTE @0        REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0.5      G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato,accent slur=- tie=- tm=-
+    NOTE @1        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.16
+    NOTE @0        REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato,accent slur=- tie=- tm=-
+    NOTE @1        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=up acc=None arts=- slur=- tie=start,start tm=-
+
+--- m.17
+    NOTE @0        G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=stop,stop tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.18
+    NOTE @0        D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       B4(B0/4,m71)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.5      F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     B4(B0/4,m71)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.19
+    NOTE @0        D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.20
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       B4(B0/4,m71)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.5      F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     B4(B0/4,m71)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.21
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       C5(C0/5,m72)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        REST                   type=quarter dots=0 dur=1 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+=== PART P4 (Left Hand): 212 measures
+
+--- m.6
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=16th   dots=1 dur=0.375 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.875    F2(F0/2,m41)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+
+--- m.7
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.8
+    NOTE @0        D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+
+--- m.9
+    NOTE @0        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.10
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.11
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        A#b2(B-1/2,m46)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      A#b2(B-1/2,m46)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.12
+    NOTE @0        D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D#b3(E-1/3,m51)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+
+--- m.13
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.14
+    NOTE @0        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.15
+    NOTE @0        REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=quarter dots=0 dur=1 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.16
+    NOTE @0        REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @1.5      F2(F0/2,m41)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.17
+    NOTE @0        D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @0.5      D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.18
+    NOTE @0        F2(F0/2,m41)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      F2(F0/2,m41)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.19
+    NOTE @0        G#b2(A-1/2,m44)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      G#b2(A-1/2,m44)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D#b2(E-1/2,m39)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.20
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        F2(F0/2,m41)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      F2(F0/2,m41)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.21
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        C2(C0/2,m36)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      REST                   type=eighth dots=0 dur=0.5 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        REST                   type=quarter dots=0 dur=1 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-

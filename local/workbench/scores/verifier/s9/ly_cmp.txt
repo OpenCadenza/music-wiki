@@ -1,0 +1,120 @@
+
+===== violin : ly measures parsed = 21, xml = 21
+  m.1 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.2 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.3 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.4 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.5 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.6 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.7 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.8 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.9 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.10 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.11 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.12 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.13 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.14 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.15 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.16 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.17 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.18 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.19 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.20 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.21 DIFF
+     ly : --
+     xml: @0 ['G3', 'D#4'] dur=1/2 dots=0 args=('staccato',) tie=False slurS=False slurE=False
+     ly : --
+     xml: @1/2 ['G3', 'D#4'] dur=1/2 dots=0 args=('staccato',) tie=False slurS=False slurE=False
+     ly : --
+     xml: @1 ['G3', 'D#4'] dur=1/2 dots=0 args=('staccato',) tie=False slurS=False slurE=False
+     ly : --
+     xml: @3/2 ['G3', 'D#4'] dur=3/8 dots=1 args=('accent', 'tenuto') tie=False slurS=True slurE=False
+     ly : --
+     xml: @15/8 ['G#3', 'F4'] dur=1/8 dots=0 args=('staccato',) tie=False slurS=False slurE=True
+  => 21 differing measure(s) total so far
+
+===== cello : ly measures parsed = 21, xml = 21
+  m.1 DIFF
+     ly : --
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.2 DIFF
+     ly : @0 ['G3'] dur=1/4 dots=0 args=('staccato',) tie=False slurS=False slurE=True
+     xml: @0 [] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.3 DIFF
+     ly : @0 ['G#3'] dur=1/16 dots=0 args=() tie=False slurS=False slurE=True
+     xml: @0 ['G3'] dur=1 dots=0 args=('staccato',) tie=False slurS=True slurE=False
+     ly : --
+     xml: @1 ['G3'] dur=1 dots=0 args=('staccato',) tie=False slurS=False slurE=True
+  m.4 DIFF
+     ly : @0 ['B3'] dur=1/32 dots=0 args=() tie=False slurS=False slurE=True
+     xml: @0 ['G#3'] dur=0 dots=0 args=() tie=False slurS=False slurE=False
+     ly : --
+     xml: @0 ['A#3'] dur=0 dots=0 args=() tie=False slurS=False slurE=False
+     ly : --
+     xml: @0 ['C4'] dur=3/2 dots=1 args=() tie=False slurS=True slurE=False
+     ly : --
+     xml: @3/2 ['A#3'] dur=1/4 dots=0 args=() tie=False slurS=False slurE=False
+     ly : --
+     xml: @7/4 ['G#3'] dur=1/4 dots=0 args=() tie=False slurS=False slurE=True
+  m.5 DIFF
+     ly : @0 ['C4'] dur=1/2 dots=0 args=() tie=False slurS=False slurE=False
+     xml: @0 ['G3'] dur=1/2 dots=0 args=() tie=False slurS=True slurE=False
+     ly : --
+     xml: @1/2 ['D#4'] dur=1/2 dots=0 args=() tie=False slurS=False slurE=True
+     ly : --
+     xml: @1 ['B3'] dur=3/4 dots=1 args=() tie=False slurS=True slurE=False
+     ly : --
+     xml: @7/4 ['A3'] dur=1/8 dots=0 args=() tie=False slurS=False slurE=False
+     ly : --
+     xml: @15/8 ['B3'] dur=1/8 dots=0 args=() tie=False slurS=False slurE=True
+  m.6 DIFF
+     ly : @0 ['C4'] dur=1/8 dots=0 args=() tie=False slurS=False slurE=False
+     xml: @0 ['C4'] dur=2 dots=0 args=() tie=False slurS=False slurE=False
+  m.7 DIFF
+     ly : @0 ['G3'] dur=1/4 dots=0 args=() tie=False slurS=False slurE=True
+     xml: @0 ['C4'] dur=3/2 dots=1 args=() tie=False slurS=False slurE=False
+     ly : --
+     xml: @3/2 ['C4'] dur=1/2 dots=0 args=() tie=False slurS=False slurE=False
+  m.8 DIFF
+     ly : @0 ['B3'] dur=1/32 dots=0 args=() tie=False slurS=False slurE=True
+     xml: @0 ['C4'] dur=1/4 dots=0 args=() tie=False slurS=True slurE=False

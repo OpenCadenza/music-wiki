@@ -1,0 +1,132 @@
+
+### A(98865)  x_a\QmV5tRHvqTCzu1ddppFBjhBCoxsM3Nxv6yDnHA5FKxpxYk.xml
+   title      'Trio pour piano violon et violoncelle op 100, 2e mvt'
+   software   'MuseScore 3.6.2'
+   date       '2025-01-14'
+   nparts     4
+   partnames  ['violon', 'violoncelle', 'Right Hand', 'Left Hand']
+   midiprogs  ['41', '43', '1', '1']
+   sound/metronome entries: 1
+       ('1', '40')
+   non-empty <words>: 1
+       ('1', 'Andante con moto')
+   non-regular barlines: [(0, '109', 'right', 'light-light'), (0, '195', 'right', 'light-light'), (0, '212', 'right', 'light-heavy'), (1, '109', 'right', 'light-light'), (1, '195', 'right', 'light-light'), (1, '212', 'right', 'light-heavy'), (2, '109', 'right', 'light-light'), (2, '195', 'right', 'light-light'), (2, '212', 'right', 'light-heavy'), (3, '109', 'right', 'light-light'), (3, '195', 'right', 'light-light'), (3, '212', 'right', 'light-heavy')]
+   key fifths seen: ['-3', '0']
+   key-change measures (part0): ['1', '110', '196']
+
+### B(99688)  x_b\QmNdFNhQL2vjvNDcxXGAP3x7Gof9exBk8HDHriEsJ64fFu.xml
+   title      'Trio pour piano violon et violoncelle op 100, 2e mvt'
+   software   'MuseScore 3.6.2'
+   date       '2025-01-14'
+   nparts     4
+   partnames  ['violon', 'violoncelle', 'Right Hand', 'Left Hand']
+   midiprogs  ['41', '43', '1', '1']
+   sound/metronome entries: 1
+       ('1', '40')
+   non-empty <words>: 1
+       ('1', 'Andante con moto')
+   non-regular barlines: [(0, '109', 'right', 'light-light'), (0, '195', 'right', 'light-light'), (0, '212', 'right', 'light-heavy'), (1, '109', 'right', 'light-light'), (1, '195', 'right', 'light-light'), (1, '212', 'right', 'light-heavy'), (2, '109', 'right', 'light-light'), (2, '195', 'right', 'light-light'), (2, '212', 'right', 'light-heavy'), (3, '109', 'right', 'light-light'), (3, '195', 'right', 'light-light'), (3, '212', 'right', 'light-heavy')]
+   key fifths seen: ['-3', '0']
+   key-change measures (part0): ['1', '110', '196']
+
+### C(125808)  x_c\Qma56B8k7VcG6itTacQmHVgUc4siFUjZngVfaHHnWJTUSU.xml
+   title      'Trio pour piano violon et violoncelle op 100, 2e mvt'
+   software   'MuseScore 3.6.2'
+   date       '2025-01-14'
+   nparts     4
+   partnames  ['violon', 'violoncelle', 'Right Hand', 'Left Hand']
+   midiprogs  ['41', '43', '1', '1']
+   sound/metronome entries: 1
+       ('1', '40')
+   non-empty <words>: 7621
+       ('1', 'Andante con moto')
+       ('21', 'Es\n')
+       ('21', 'G')
+       ('21', 'Es\n')
+       ('21', 'G')
+       ('21', 'Es\n')
+   non-regular barlines: [(0, '109', 'right', 'light-light'), (0, '195', 'right', 'light-light'), (0, '212', 'right', 'light-heavy'), (1, '109', 'right', 'light-light'), (1, '195', 'right', 'light-light'), (1, '212', 'right', 'light-heavy'), (2, '109', 'right', 'light-light'), (2, '195', 'right', 'light-light'), (2, '212', 'right', 'light-heavy'), (3, '109', 'right', 'light-light'), (3, '195', 'right', 'light-light'), (3, '212', 'right', 'light-heavy')]
+   key fifths seen: ['-3', '0']
+   key-change measures (part0): ['1', '110', '196']
+
+--- canonical note diff A(98865) vs B(99688)
+   differing measures: 0
+
+--- canonical note diff A(98865) vs C(125808)
+  DIFF part0 m.21
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+  DIFF part0 m.22
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+  DIFF part0 m.23
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+  DIFF part0 m.24
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+  DIFF part0 m.25
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'G'), None, None, False)
+  DIFF part0 m.26
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+  DIFF part0 m.27
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+  DIFF part0 m.28
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+  DIFF part0 m.29
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'G'), None, None, False)
+  DIFF part0 m.30
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('F\n', 'As'), None, None, False)
+  DIFF part0 m.31
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('D\n', 'G'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('G\n', 'G'), None, None, False)
+  DIFF part0 m.32
+    only-C(125808): ('direction', None, 'above', ('G\n', 'B'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('G\n', 'B'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('G\n', 'B'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('G\n', 'B'), None, None, False)
+  DIFF part0 m.33
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'C'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'C'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'C'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('Es\n', 'C'), None, None, False)
+  DIFF part0 m.34
+    only-C(125808): ('direction', None, 'above', ('D\n', 'H'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('D\n', 'H'), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('D\n', 'H'), None, None, False)
+  DIFF part0 m.35
+    only-C(125808): ('direction', None, 'above', ('G',), None, None, False)
+    only-C(125808): ('direction', None, 'above', ('G',), None, None, False)
+   differing measures: 794

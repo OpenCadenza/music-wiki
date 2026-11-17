@@ -1,0 +1,71 @@
+
+== part 0 (violon): XML sounding notes 10, MIDI note-on 10
+   onset+pitch in XML only : 0 []
+   onset+pitch in MIDI only: 0 []
+   duration ratio (midi/xml): full=0 half=6 quarter=0 other=4
+     OTHER m.21 @41.5 G3 xml=0.375 midi=0.25
+     OTHER m.21 @41.5 D#4 xml=0.375 midi=0.25
+     OTHER m.21 @41.875 G#3 xml=0.125 midi=0.25
+     OTHER m.21 @41.875 F4 xml=0.125 midi=0.25
+
+== part 1 (violoncelle): XML sounding notes 63, MIDI note-on 65
+   onset+pitch in XML only : 0 []
+   onset+pitch in MIDI only: 2 [(5.8854, 56), (5.9427, 58)]
+   duration ratio (midi/xml): full=0 half=0 quarter=0 other=63
+     OTHER m.3 @4.0 G3 xml=1.0 midi=0.3333
+     OTHER m.3 @5.0 G3 xml=1.0 midi=0.3333
+     OTHER m.4 @6.0 C4 xml=1.5 midi=0.0547
+     OTHER m.4 @7.5 A#3 xml=0.25 midi=0.0547
+     OTHER m.4 @7.75 G#3 xml=0.25 midi=0.0547
+     OTHER m.5 @8.0 G3 xml=0.5 midi=0.0547
+     OTHER m.5 @8.5 D#4 xml=0.5 midi=0.0547
+     OTHER m.5 @9.0 B3 xml=0.75 midi=0.0547
+     OTHER m.5 @9.75 A3 xml=0.125 midi=0.0547
+     OTHER m.5 @9.875 B3 xml=0.125 midi=0.0547
+     OTHER m.6 @10.0 C4 xml=2.0 midi=0.0547
+     OTHER m.7 @12.0 C4 xml=1.5 midi=0.0547
+     OTHER m.7 @13.5 C4 xml=0.5 midi=0.0547
+     OTHER m.8 @14.0 C4 xml=0.25 midi=0.0547
+     OTHER m.8 @14.25 A#3 xml=0.75 midi=0.0547
+     OTHER m.8 @15.0 G3 xml=1.0 midi=0.0547
+     OTHER m.9 @16.0 G3 xml=0.5 midi=0.0547
+     OTHER m.9 @16.5 D#4 xml=0.5 midi=0.0547
+     OTHER m.9 @17.0 B3 xml=0.75 midi=0.0547
+     OTHER m.9 @17.75 A3 xml=0.125 midi=0.0547
+
+== part 2 (RightHand): XML sounding notes 220, MIDI note-on 220
+   onset+pitch in XML only : 0 []
+   onset+pitch in MIDI only: 0 []
+   duration ratio (midi/xml): full=0 half=200 quarter=1 other=19
+     OTHER m.1 @1.5 C4 xml=0.375 midi=0.25
+     OTHER m.1 @1.5 D#4 xml=0.375 midi=0.25
+     OTHER m.1 @1.5 G4 xml=0.375 midi=0.25
+     OTHER m.1 @1.875 C4 xml=0.125 midi=0.25
+     OTHER m.1 @1.875 F4 xml=0.125 midi=0.25
+     OTHER m.1 @1.875 G#4 xml=0.125 midi=0.25
+     OTHER m.2 @3.5 C4 xml=0.375 midi=0.25
+     OTHER m.2 @3.5 D#4 xml=0.375 midi=0.25
+     OTHER m.2 @3.5 G4 xml=0.375 midi=0.25
+     OTHER m.2 @3.875 C4 xml=0.125 midi=0.25
+     OTHER m.2 @3.875 F4 xml=0.125 midi=0.25
+     OTHER m.2 @3.875 G#4 xml=0.125 midi=0.25
+     OTHER m.6 @11.5 C4 xml=0.375 midi=0.25
+     OTHER m.6 @11.5 D#4 xml=0.375 midi=0.25
+     OTHER m.6 @11.5 G4 xml=0.375 midi=0.25
+     OTHER m.6 @11.875 C4 xml=0.125 midi=0.25
+     OTHER m.6 @11.875 F4 xml=0.125 midi=0.25
+     OTHER m.6 @11.875 G#4 xml=0.125 midi=0.25
+     OTHER m.16 @31.0 G3 xml=1.5 midi=0.25
+
+== part 3 (LeftHand): XML sounding notes 80, MIDI note-on 80
+   onset+pitch in XML only : 0 []
+   onset+pitch in MIDI only: 0 []
+   duration ratio (midi/xml): full=73 half=1 quarter=0 other=6
+     OTHER m.1 @1.5 C3 xml=0.375 midi=0.5
+     OTHER m.1 @1.875 F2 xml=0.125 midi=0.5
+     OTHER m.2 @3.5 C3 xml=0.375 midi=0.5
+     OTHER m.2 @3.875 F2 xml=0.125 midi=0.5
+     OTHER m.6 @11.5 C3 xml=0.375 midi=0.5
+     OTHER m.6 @11.875 F2 xml=0.125 midi=0.5
+
+OVERALL: DIFFERENCES FOUND

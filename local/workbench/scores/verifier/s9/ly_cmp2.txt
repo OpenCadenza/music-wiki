@@ -1,0 +1,24 @@
+
+===== violin: ly measures 21 / xml measures 21
+  => IDENTICAL (all 21 measures)
+
+===== cello: ly measures 21 / xml measures 21
+  m.4  DIFFERENT
+     ly : @0 ['G#3'] dur=1/4 dots=0 args=[] tie=False slur=False/False grace=True
+     xml: @0 ['G#3'] dur=0 dots=0 args=[] tie=False slur=False/False grace=True
+     ly : @0 ['A#3'] dur=1/4 dots=0 args=[] tie=False slur=False/False grace=True
+     xml: @0 ['A#3'] dur=0 dots=0 args=[] tie=False slur=False/False grace=True
+  m.16  DIFFERENT
+     ly : @1 ['G2'] dur=1/4 dots=0 args=[] tie=False slur=True/False grace=False
+     xml: @1 ['G2'] dur=1/4 dots=0 args=[] tie=False slur=False/False grace=False
+     ly : @5/4 ['G2'] dur=1/4 dots=0 args=['staccato'] tie=False slur=False/False grace=False
+     xml: @5/4 ['G2'] dur=1/4 dots=0 args=['staccato'] tie=False slur=True/False grace=False
+  => 2 measure(s) differ
+
+===== pianoRH: ly measures 21 / xml measures 21
+  => IDENTICAL (all 21 measures)
+
+===== pianoLH: ly measures 21 / xml measures 21
+  => IDENTICAL (all 21 measures)
+
+TOTAL differing measures: 2

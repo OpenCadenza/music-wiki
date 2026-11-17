@@ -1,0 +1,100 @@
+FILE: QmNdFNhQL2vjvNDcxXGAP3x7Gof9exBk8HDHriEsJ64fFu.xml
+MOVEMENT-TITLE: 'Trio pour piano violon et violoncelle op 100, 2e mvt'
+PARTS: [('P1', 'violon', '41'), ('P2', 'violoncelle', '43'), ('P3', 'Right Hand', '1'), ('P4', 'Left Hand', '1')]
+PART ELEMENTS: 4
+
+=== PART P1 (violon): 212 measures
+
+--- m.3
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.4
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+--- m.5
+    NOTE @0        REST                   type=None   dots=0 dur=2 v=1 st=None stem=None acc=None arts=- slur=- tie=- tm=-
+
+=== PART P2 (violoncelle): 212 measures
+
+--- m.3
+    DIRECTION staff=None place=below words='' sound_tempo=None 
+    NOTE @0        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=staccato slur=start1 tie=- tm=-
+    NOTE @1        G3(G0/3,m55)           type=quarter dots=0 dur=1 v=1 st=None stem=down acc=None arts=staccato slur=stop1 tie=- tm=-
+
+--- m.4
+    NOTE G@0       G#b3(A-1/3,m56)        type=16th   dots=0 dur=0 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE G@0       A#b3(B-1/3,m58)        type=16th   dots=0 dur=0 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0        C4(C0/4,m60)           type=quarter dots=1 dur=1.5 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @1.5      A#b3(B-1/3,m58)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.75     G#b3(A-1/3,m56)        type=16th   dots=0 dur=0.25 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+--- m.5
+    NOTE @0        G3(G0/3,m55)           type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=start1 tie=- tm=-
+    NOTE @0.5      D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+    NOTE @1        B3(B0/3,m59)           type=eighth dots=1 dur=0.75 v=1 st=None stem=down acc=natural arts=- slur=start1 tie=- tm=-
+    NOTE @1.75     A3(A0/3,m57)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=natural arts=- slur=- tie=- tm=-
+    NOTE @1.875    B3(B0/3,m59)           type=32nd   dots=0 dur=0.125 v=1 st=None stem=down acc=None arts=- slur=stop1 tie=- tm=-
+
+=== PART P3 (Right Hand): 212 measures
+
+--- m.3
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.4
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G#b4(A-1/4,m68)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.5
+    NOTE @0        C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0       D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C4(C0/4,m60)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@0.5     D#b4(E-1/4,m63)        type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@0.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1       F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1       G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      D4(D0/4,m62)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=staccato slur=- tie=- tm=-
+    NOTE =@1.5     F4(F0/4,m65)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE =@1.5     G4(G0/4,m67)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+=== PART P4 (Left Hand): 212 measures
+
+--- m.3
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.4
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+
+--- m.5
+    NOTE @0        C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @0.5      C3(C0/3,m48)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1        G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
+    NOTE @1.5      G2(G0/2,m43)           type=eighth dots=0 dur=0.5 v=1 st=None stem=up acc=None arts=- slur=- tie=- tm=-
