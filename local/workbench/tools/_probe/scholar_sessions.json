@@ -1,0 +1,56 @@
+{
+  "0cd7dfd4-133e-48c0-ad9d-c5c2a2f5ebc4": {
+    "name": "scholar-a",
+    "label": "学者A：教材与理论起步",
+    "createdAt": 1794798596877,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "aacbe5d0-929b-47b0-ab02-f63ab36b05b4": {
+    "name": "scholar-b",
+    "label": "学者B：谱源与标注起步",
+    "createdAt": 1794798601908,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "1e50ba2f-ead4-4d88-a1b0-bb24b397d49f": {
+    "name": "scholar-c",
+    "label": "学者C：论文与背景起步",
+    "createdAt": 1794798793731,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "418993d0-5f8a-4a9f-a9e1-e690ba4f2f7c": {
+    "name": "scholar-a2",
+    "label": "学者A2：续写结构篇",
+    "createdAt": 1794815319698,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "5f7e404c-ec30-4689-bb24-7d27946da050": {
+    "name": "scholar-b2",
+    "label": "学者B2：续写和声篇",
+    "createdAt": 1794815330837,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "d24d169b-881e-48eb-aded-e6ca72cccb03": {
+    "name": "scholar-c2",
+    "label": "学者C2：续写配器篇",
+    "createdAt": 1794815386156,
+    "parent": "session-c6ded6ed-ae5c-4a2c-898f-3bf3a1b33a24.json"
+  },
+  "7c908aa4-f1cf-4c35-9309-e2a0e96a8921": {
+    "name": "scholar-1",
+    "label": "音乐学者1",
+    "createdAt": 1794770053148,
+    "parent": "session-feb7e687-e9de-4c4c-9617-bddd5d2c6d4a.json"
+  },
+  "1b898ee7-6dd7-448a-9a93-97db86e16637": {
+    "name": "scholar-2",
+    "label": "音乐学者2",
+    "createdAt": 1794770063249,
+    "parent": "session-feb7e687-e9de-4c4c-9617-bddd5d2c6d4a.json"
+  },
+  "8e44d836-1f42-45fc-a847-c9b72e6453df": {
+    "name": "scholar-3",
+    "label": "音乐学者3",
+    "createdAt": 1794770087182,
+    "parent": "session-feb7e687-e9de-4c4c-9617-bddd5d2c6d4a.json"
+  }
+}

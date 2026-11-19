@@ -1,6 +1,7 @@
 # 工作单：scholar-b3
 
-接替 scholar-b2 / scholar-b。先读 `local/docs/实施记录/2026-11-20-续作/续作说明.md`、
+接替 scholar-b2 / scholar-b。先读你的前任运行记录：`local/docs/研究归档/_运行记录/scholar-b2.md`
+与 `scholar-b.md`，再读 `local/docs/实施记录/2026-11-20-续作/续作说明.md`、
 `local/docs/偏好-知识库写作.md`、`local/docs/实施记录/2026-11-16-DSH首批/角色提示词.md`（共同段与学者段）。
 
 ## 第一波（先做这个，做完回报）
