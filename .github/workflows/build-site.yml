@@ -55,6 +55,10 @@ jobs:
           test -d content-source/content
           rm -rf content
           cp -a content-source/content content
+          if [ -d content-source/provenance ]; then
+            rm -rf provenance
+            cp -a content-source/provenance provenance
+          fi
           rm -rf content-source
           echo "content from \`${{ inputs.content_ref }}\`" >> "$GITHUB_STEP_SUMMARY"
 
@@ -221,12 +225,14 @@ jobs:
         if: steps.site-cache.outputs.cache-hit != 'true'
         env:
           MUSIC_WIKI_BASE: ${{ inputs.base }}
+          MUSIC_WIKI_CONTENT_REF: ${{ inputs.content_ref || 'main' }}
         run: pnpm build:site
 
       - name: Smoke-test built site
         if: steps.site-cache.outputs.cache-hit != 'true'
         env:
           MUSIC_WIKI_BASE: ${{ inputs.base }}
+          MUSIC_WIKI_CONTENT_REF: ${{ inputs.content_ref || 'main' }}
           MUSIC_WIKI_SMOKE: ${{ inputs.content_ref != '' && 'preview' || 'full' }}
         run: pnpm smoke:site
 

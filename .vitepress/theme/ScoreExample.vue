@@ -125,7 +125,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <figure class="score-example" :data-score-id="id">
+  <figure class="score-example" :id="'score-' + id" :data-score-id="id">
     <figcaption>
       <span class="score-title">
         <span>{{ title }}</span>

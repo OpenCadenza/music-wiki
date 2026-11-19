@@ -20,6 +20,11 @@ function resolveBase(value: string | undefined) {
 const base = resolveBase(process.env.MUSIC_WIKI_BASE)
 const isPreview = base !== productionBase
 
+/** Repository used for provenance links; the branch follows the content source. */
+const repository = 'https://github.com/OpenCadenza/music-wiki'
+const contentBranch = (process.env.MUSIC_WIKI_CONTENT_REF || 'main').trim() || 'main'
+const provenanceIndex = `${repository}/blob/${contentBranch}/provenance/README.md`
+
 const head: Array<[string, Record<string, string>]> = [
   ['meta', { name: 'theme-color', content: '#f5f1ec' }],
   ['link', { rel: 'icon', href: `${base}favicon.svg` }]
@@ -152,6 +157,15 @@ const siteConfig = {
       dark: 'github-dark'
     }
   },
+  // Attach the article's provenance link at build time: the file lives at
+  // `provenance/<same path as content>` and only existing entries get a link.
+  transformPageData(pageData: { relativePath: string; frontmatter: Record<string, unknown> }) {
+    const relativePath = pageData.relativePath
+    if (!relativePath || relativePath.endsWith('index.md')) return
+    if (existsSync(resolve('provenance', relativePath))) {
+      pageData.frontmatter.provenanceUrl = `${repository}/blob/${contentBranch}/provenance/${relativePath}`
+    }
+  },
   // MathJax's SVG output wraps every formula in a <span> carrying a <style>
   // block that un-clips its assistive MathML layer for text selection. Browsers
   // drop those in-body <style> elements during hydration, which both leaves the
@@ -172,7 +186,7 @@ const siteConfig = {
       { text: 'OpenCadenza', link: 'https://opencadenza.github.io/' },
       {
         text: '来源与许可',
-        link: 'https://github.com/OpenCadenza/music-wiki/blob/main/NOTICE.md'
+        link: provenanceIndex
       }
     ],
     search: {
@@ -196,8 +210,7 @@ const siteConfig = {
     ],
     footer: {
       message: '面向创作任务的音乐知识库',
-      copyright:
-        '谱例来源与许可见 <a href="https://github.com/OpenCadenza/music-wiki/blob/main/NOTICE.md">NOTICE.md</a>'
+      copyright: `谱例来源与许可见 <a href="${provenanceIndex}">provenance/</a>`
     }
   }
 }
