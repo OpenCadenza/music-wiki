@@ -132,7 +132,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
   - **第一小提琴完全解耦**：彻底放弃旋律职能，大幅跃升至极高音区，以连续不断的轻巧十六分音符跳跃音型（运动平面）自上而下倾泻，如水晶般包裹第二小提琴；
   - **声学留白**：中提琴与大提琴在此段**完全保持休止（Tacet）**！海顿通过编制减员制造了巨大的中低频真空，使两把小提琴在高音区展开绝对清澈、零掩蔽的双声部对位对话。
 
-```lilypond title="海顿 Op.76 No.3《皇帝》第二乐章" location="Poco adagio; cantabile，mm.1–20"
+```lilypond title="海顿 Op.76 No.3《皇帝》第二乐章" location="Poco adagio; cantabile，mm.1–20" id="haydn-op76no3-ii-mm1-20"
 \version "2.26.0"
 \language "english"
 
@@ -274,7 +274,7 @@ cello = {
   - 为了防止密集和声塌陷为一团灰暗泥浆，贝多芬引入了极其严密的**微观发音法切分**：第一小提琴拉奏如泣如诉的四小节大连线主旋律（*legato*）；下方第二小提琴与中提琴则以极其轻柔的弱拍切分音（Syncopated held chords）持续呼吸，形成“连绵线条”与“微观脉冲和声垫”的时域解耦；
   - 大提琴则在深沉的低音区给出极弱的点状支撑，四件同质乐器在极低声能下展现出层次分明的空间景深。
 
-```lilypond title="贝多芬 Op.135 第三乐章" location="Lento assai, cantante e tranquillo，mm.1–12"
+```lilypond title="贝多芬 Op.135 第三乐章" location="Lento assai, cantante e tranquillo，mm.1–12" id="beethoven-op135-iii-mm1-12"
 \version "2.26.0"
 \language "english"
 

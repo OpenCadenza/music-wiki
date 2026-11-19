@@ -142,7 +142,7 @@ description: 深入剖析钢琴三重奏（小提琴、大提琴、钢琴）中�
   - 舒伯特极其清醒地认识到长踏板对大提琴弱奏抒情的毁灭性打击。因此在整个主题呈示的 20 小节内，钢琴完全**禁用延音长音**；
   - 钢琴左右手被严格规定为持续不断的**极轻短促跳音（Staccato repeated eighth notes）**，以规整的丧葬进行曲节奏轻点拍子。断奏使击弦能量在几十毫秒内迅速衰减，彻底避免了低频共鸣的滞留，为大提琴连绵不绝的拉弦长音留出了完全真空的频域通道。
 
-```lilypond title="舒伯特 D.929 第二乐章" location="Andante con moto，mm.1–21"
+```lilypond title="舒伯特 D.929 第二乐章" location="Andante con moto，mm.1–21" id="schubert-d929-ii-mm1-21"
 \version "2.26.0"
 \language "english"
 

@@ -26,7 +26,7 @@
 - 开篇第 1 小节的和弦被明确标注为 `#viio6` $\to$ `i6`。
 - 这一标注揭示了关键的音乐实质：贝多芬完全打破了古典奏鸣乐章以主和弦奠定调性基础的惯例，直接以悬浮、紧张的**导音减和弦第一转位**切入。细胞内部的 $E$ 与 $A\flat$ 构成了减七和弦骨架，使整个疑问动机悬置在半空调性场中，赋予听觉强烈的动荡感与解决渴望。
 
-```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.1–4"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.1–4" id="beethoven-op135-iv-mm1-4"
 \version "2.26.0"
 \language "english"
 
@@ -116,7 +116,7 @@ cello = {
 - mm. 15–16 在大提琴冲向主音时被标注为明确的 `I`。
 - 这一和声进程表明，答句动机的音程反转与属到主（$V \to I$）的强功能解决形成了完全共振。和声不再是开篇的悬浮导音，而是提供了无懈可击的功能支撑。
 
-```lilypond title="贝多芬 Op.135 第四乐章" location="Allegro，mm.12–16"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Allegro，mm.12–16" id="beethoven-op135-iv-mm12-16"
 \version "2.26.0"
 \language "english"
 
@@ -207,7 +207,7 @@ cello = {
 - 此处的 `III+` 正是由低音问句落音 $A\flat$ 与高音震音中的持续音 $C$、$E$ 所共同构成的**增三和弦**（$A\flat - C - E$）。
 - 在传统功能和声中，增三和弦由于其对称性与模糊性，具有极强的不稳定性。贝多芬在此处通过高音尖锐震音与增三和弦的碰撞，彻底剥夺了问句动机在呈示部的哲学哀伤，将其异化为面对命运崩溃时的惊悚与绝望。同一动机细胞在此完成了从“古典式疑问”向“浪漫式惊惧”的极限和声再语境化。
 
-```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.165–172"
+```lilypond title="贝多芬 Op.135 第四乐章" location="Grave ma non troppo tratto，mm.165–172" id="beethoven-op135-iv-mm165-172"
 \version "2.26.0"
 \language "english"
 
@@ -325,7 +325,7 @@ $$G \to A \to B\flat \to C \to D \to E\flat \to D$$
 
 更为精妙的是，在后续的情节发展中，舒伯特将这个包含持续音小二度摩擦的惊呼细胞，依次在 g 小调（$E\flat-D$）、a 小调（$F-E$）与 c 小调（$A\flat-G$）中**连续抬升调性台阶**。动机细胞的核心音程没有改变，但每一次和声重设与音高攀升，都将戏剧冲突推向更高维度的窒息感。
 
-```lilypond title="舒伯特 D.328《魔王》钢琴前奏" location="Schnell，mm.1–5"
+```lilypond title="舒伯特 D.328《魔王》钢琴前奏" location="Schnell，mm.1–5" id="schubert-d328-mm1-5"
 \version "2.26.0"
 \language "english"
 
@@ -372,7 +372,7 @@ pianoLower = {
 }
 ```
 
-```lilypond title="舒伯特 D.328《魔王》" location="Schnell，mm.72–76"
+```lilypond title="舒伯特 D.328《魔王》" location="Schnell，mm.72–76" id="schubert-d328-mm72-76"
 \version "2.26.0"
 \language "english"
 

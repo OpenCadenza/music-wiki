@@ -97,7 +97,7 @@ description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介�
 >   - 四重奏版移至 F 大调（激活提琴空弦泛音体系）；第一小提琴（GM 40）将钢琴单薄的高音骨架扩展为宽广抒情线条；第二小提琴（GM 40）与中提琴（GM 41）舍弃分解音，重构为双音连奏衬托与模仿对位；大提琴（GM 42）提供低音支点。
 > - **收录情况**：仅收录钢琴原作 Op. 14 No. 1 的开篇；改编版 Hess 34 暂无可靠机器可读源，未收录（正文对其音区、空弦与织体重构的分析依据版本记述与原文描述）。
 
-```lilypond title="贝多芬 Op.14 No.1 第一乐章" location="Allegro，mm.1–16"
+```lilypond title="贝多芬 Op.14 No.1 第一乐章" location="Allegro，mm.1–16" id="beethoven-op14no1-i-mm1-16"
 \version "2.26.0"
 \language "english"
 

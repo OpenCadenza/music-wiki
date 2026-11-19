@@ -47,7 +47,7 @@
 1. **原位（Root Position）而非转位**：标注清晰确认为 `bII` 而非带有斜杠下标的 `bII6`。低音直接是基础根音 $G\flat$（`bass_note: -5`），彻底摧毁了古典第一转位依赖低音第 4 级（$B\flat$）维持线性平滑性的声学伪装；
 2. **调性板块平移（Tonal Block）**：$\flat\text{II}$ 在此处不再充当依附于属和弦的前属装饰，而是跨越两个完整小节将主部主题完整搬迁至降二级领域。它与主调 $f$ 小调之间构成了不共戴天的半音阶对抗。
 
-```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.1–8"
+```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.1–8" id="beethoven-op95-i-mm1-8"
 \version "2.26.0"
 \language "english"
 
@@ -184,7 +184,7 @@ violoncello = {
 
 贝多芬通过在开篇埋下原位 $\flat\text{II}$ 的伏笔，使后续向降VI级（$D\flat$）的转调获得了浑然天成的结构合理性。原本看似不可理喻的开篇和声裂痕，最终成为了统摄全乐章宏观调性循环的核心枢纽。
 
-```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.19–24"
+```lilypond title="贝多芬 Op.95 第一乐章" location="Allegro con brio，mm.19–24" id="beethoven-op95-i-mm19-24"
 \version "2.26.0"
 \language "english"
 

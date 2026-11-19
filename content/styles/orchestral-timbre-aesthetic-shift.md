@@ -151,7 +151,7 @@ description: 深入解构 18 至 19 世纪初西方管弦乐微观声学组织�
 > - **声学机制**：外声部极性对峙（Fl./Vl. 主题对位 vs Vc./Violone 低音跳进），中频依靠羽管键琴密集拨弦和弦锚定和声；展示通奏低音退出历史前夕的临界织体形态
 > - **GM 设定**：Flute (73), Violin (40), Harpsichord (6), Viola (41), Cello (42), Acoustic Bass (32)
 
-```lilypond title="巴赫 BWV 1050 第一乐章" location="Allegro，mm.1–9"
+```lilypond title="巴赫 BWV 1050 第一乐章" location="Allegro，mm.1–9" id="bach-bwv1050-i-mm1-9"
 \version "2.26.0"
 \language "english"
 
@@ -323,7 +323,7 @@ cembaloLower = {
 > - **声学机制**：mm. 17–31（弦乐）与 mm. 32–39（全奏） 弦乐弱奏呈现清澈室内乐质感；m. 33 起全奏强奏，双簧管加倍旋律、长笛进入高音，两支自然圆号演奏中频持续长音踏板锚定和声
 > - **GM 设定**：Oboe (68), French Horn (60), Bassoon (70), String Ensemble 1 (48), Cello (42), Contrabass (43)
 
-```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.17–31"
+```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.17–31" id="haydn-hob1-104-i-mm17-31"
 \version "2.26.0"
 \language "english"
 
@@ -457,7 +457,7 @@ bass = {
 }
 ```
 
-```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.32–39"
+```lilypond title="海顿 Hob.I:104 第一乐章" location="Allegro，mm.32–39" id="haydn-hob1-104-i-mm32-39"
 \version "2.26.0"
 \language "english"
 

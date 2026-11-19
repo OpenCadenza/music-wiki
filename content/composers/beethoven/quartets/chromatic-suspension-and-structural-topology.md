@@ -63,7 +63,7 @@
   * **声部角色颠覆**：此前承担挂留的大多是第一小提琴，但在第 21–24 小节，大提琴（Bass）彻底接管了引子开篇动机，在低音区展开长程半音阶逆向爬升，大提琴反客为主成为核心“挂留施压声部”（Vorhaltsstimme）；
   * 最终在第 24 小节第 4 拍，整个庞大的连锁悬置网在属和弦（$V^7$）与主和弦（$I$）的纯正敲击中瞬间收束，完美引爆第 25 小节灿烂的快板主部。
 
-```lilypond title="贝多芬 Op.74 第一乐章" location="Poco Adagio，mm.18–24"
+```lilypond title="贝多芬 Op.74 第一乐章" location="Poco Adagio，mm.18–24" id="beethoven-op74-i-mm18-24"
 \version "2.26.0"
 \language "english"
 
@@ -160,7 +160,7 @@ $$C\sharp 4 \ (全音符) \longrightarrow B\sharp 3 \ (二分音符) \longrighta
 
 这一系列实证数据表明：在晚期贝多芬的复调语境中，**声部的横向线性冲力完全凌驾于垂直和弦的协和容忍度之上**；半音挂留不再是调性润滑油，而是作曲家有意嵌入的结构阻尼齿轮。
 
-```lilypond title="贝多芬 Op.131 第一乐章" location="Adagio ma non troppo e molto espressivo，mm.6–11"
+```lilypond title="贝多芬 Op.131 第一乐章" location="Adagio ma non troppo e molto espressivo，mm.6–11" id="beethoven-op131-i-mm6-11"
 \version "2.26.0"
 \language "english"
 
@@ -268,7 +268,7 @@ violoncello = {
 
 在这一段落中，**半音挂留彻底摆脱了“从属于某个和弦”的卑微地位——它自己就是和弦的创生者**。每一个和弦的诞生，都是这四个半音阶原子在时间轴上相互追逐、推挤、碰撞时的即时物理切片。
 
-```lilypond title="贝多芬 Op.132 第一乐章" location="Assai sostenuto，mm.1–8"
+```lilypond title="贝多芬 Op.132 第一乐章" location="Assai sostenuto，mm.1–8" id="beethoven-op132-i-mm1-8"
 \version "2.26.0"
 \language "english"
 

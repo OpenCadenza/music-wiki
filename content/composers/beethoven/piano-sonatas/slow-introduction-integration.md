@@ -67,7 +67,7 @@ flowchart TD
 > - **调性与拍号**：c 小调，Grave 4/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–10 慢引子（双重附点、减七和弦与六度跳跃叹息动机）；mm. 11–19 快板主部呈示（低音颤音，高音以 4 倍时值压缩倒影引子动机形成飞驰第一主题）
 
-```lilypond title="贝多芬 Op.13《悲怆》第一乐章" location="Grave，mm.1–19"
+```lilypond title="贝多芬 Op.13《悲怆》第一乐章" location="Grave，mm.1–19" id="beethoven-op13-i-mm1-19"
 \version "2.26.0"
 \language "english"
 
@@ -229,7 +229,7 @@ U = \tweak Stem.direction #UP \etc
 > - **调性与拍号**：降 E 大调，Adagio 2/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–4 “Le-be-wohl” 下行三音级动机（$\hat{8}-\hat{7}-\hat{6}$）及落入 vi 级阻碍和弦；mm. 17–25 快板启动，告别动机时值压缩为切分跳跃演化为主部第一主题
 
-```lilypond title="贝多芬 Op.81a《告别》第一乐章" location="Adagio，mm.1–25"
+```lilypond title="贝多芬 Op.81a《告别》第一乐章" location="Adagio，mm.1–25" id="beethoven-op81-i-mm1-25"
 \version "2.26.0"
 \language "english"
 
@@ -380,7 +380,7 @@ U = \tweak Stem.direction #UP \etc
 > - **调性与拍号**：c 小调，Maestoso 4/4 拍 $\rightarrow$ Allegro 也是 4/4 拍（全乐章只有一个拍号，速度加快而拍号不变）
 > - **结构说明**：mm. 1–5 Maestoso 极端强奏减七和弦大跳与附点下坠；mm. 11–16 低音区持续神秘震音蓄能；mm. 19–25 Allegro 爆发，减七跳跃动机裂变为赋格化主部主题
 
-```lilypond title="贝多芬 Op.111 第一乐章" location="Maestoso，mm.1–25"
+```lilypond title="贝多芬 Op.111 第一乐章" location="Maestoso，mm.1–25" id="beethoven-op111-i-mm1-25"
 \version "2.26.0"
 \language "english"
 

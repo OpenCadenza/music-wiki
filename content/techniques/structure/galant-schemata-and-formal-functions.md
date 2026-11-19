@@ -58,7 +58,7 @@
 
 海顿在此展现了加兰特图式驱动 8 小节原型句型的典范笔法：
 
-```lilypond title="海顿 Hob. XVI:27 第三乐章" location="Presto，mm.1–8"
+```lilypond title="海顿 Hob. XVI:27 第三乐章" location="Presto，mm.1–8" id="haydn-hob16-27-iii-mm1-8"
 \version "2.26.0"
 \language "english"
 
@@ -123,7 +123,7 @@ leftHand = \relative c' {
 
 莫扎特展示了古典句型在延续功能阶段如何实现结构扩张（4 小节呈示 + 6 小节延续）：
 
-```lilypond title="莫扎特 K. 283 第一乐章" location="Allegro，mm.1–10"
+```lilypond title="莫扎特 K. 283 第一乐章" location="Allegro，mm.1–10" id="mozart-k283-i-mm1-10"
 \version "2.26.0"
 \language "english"
 
@@ -194,7 +194,7 @@ leftHand = \relative c' {
 
 在 19 世纪初的维也纳器乐创作中，作曲家进一步超越了图式的常规句法拼接。贝多芬《降E大调第10弦乐四重奏“竖琴”》（Op. 74）第一乐章慢引子（Poco adagio，DCML 数据表头与总谱拍号均为 **2/2 拍**，全长 24 小节，至第 25 小节进入快板 Allegro）便是一个里程碑式的范例。音乐理论家约翰内斯·赖泽（Johannes Raiser, 2018）在考察该引子的前半程开端模型与句法展开（mm. 1–9）时指出：贝多芬将加兰特模型视作一种**“创造性空间”（Kreativer Raum）**，并结合埃马努埃尔·阿洛伊斯·弗斯特（Emanuel Aloys Förster, 1805）的低音理论，对图式进行了深度的去程式化重构。
 
-```lilypond title="贝多芬 Op.74《竖琴》第一乐章" location="Poco adagio，mm.1–9"
+```lilypond title="贝多芬 Op.74《竖琴》第一乐章" location="Poco adagio，mm.1–9" id="beethoven-op74-i-mm1-9"
 \version "2.26.0"
 \language "english"
 

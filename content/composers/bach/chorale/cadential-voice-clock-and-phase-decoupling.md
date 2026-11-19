@@ -52,7 +52,7 @@
   * 女高音原封不动地保持 $A4$（`2a;`，带延长记号）；
   * 女高音的 $A4$ **比整座属和弦的到来整整提前了半拍**。这种先到机制使得旋律在强拍到来前便已锁死终点，听觉焦点被完美引导至下方中音声部从 $G4$ 向上寻找导音升 $F4$ 的内声部对位中。
 
-```lilypond title="巴赫 众赞歌 BWV 269" location="Choral，mm.3–4"
+```lilypond title="巴赫 众赞歌 BWV 269" location="Choral，mm.3–4" id="bach-bwv269-mm3-4"
 \version "2.26.0"
 \language "english"
 
@@ -119,7 +119,7 @@ bass = {
 
 这种“外声部先到、内声部后到”的错位设计，避免了终止式在强拍上的平淡无奇，使终止式内部拥有了微观的时序起伏。
 
-```lilypond title="巴赫 众赞歌 BWV 347" location="Choral，mm.3–4"
+```lilypond title="巴赫 众赞歌 BWV 347" location="Choral，mm.3–4" id="bach-bwv347-mm3-4"
 \version "2.26.0"
 \language "english"
 
@@ -183,7 +183,7 @@ bass = {
 
 在这里，女高音的时钟与下方三声部的时钟完全脱钩：旋律提前两拍在终点等待，下方三声部如同旋转的机械齿轮，经历了一次“减和弦悬挂 $\to$ 阻碍伪解决 $\to$ 终极真解决”的三级跳，展现了巴赫处理体裁终束时近乎神迹的对位自由度。
 
-```lilypond title="巴赫 众赞歌 BWV 38/6" location="Choral，mm.12–13"
+```lilypond title="巴赫 众赞歌 BWV 38/6" location="Choral，mm.12–13" id="bach-bwv38no6-mm12-13"
 \version "2.26.0"
 \language "english"
 
@@ -259,7 +259,7 @@ bass = {
 2. **声学物理维度的去浊考量（一种可行的解释）**：
    除严格声部导向的必然性外，从历史声学语境审视，在莱比锡圣托马斯或圣尼古拉大教堂的高混响建筑空间中，三和弦若在强奏或延长记号下强行加入纯五度（$A - E$），极易与刚刚消散的属和弦残留泛音产生浑浊叠加。巴赫通过“纯八度根音矩阵（A2-A3-A4）+ 唯一色彩三音（C4）”的精简配置，为声场留出声学余量，在听觉上形成了一种晶莹剔透、毫无声学冗余的绝对安宁感——这构成了理解终局五音留白的一种极具说服力的声学物理假说。
 
-```lilypond title="巴赫 众赞歌 BWV 153/5" location="Choral，mm.3–4"
+```lilypond title="巴赫 众赞歌 BWV 153/5" location="Choral，mm.3–4" id="bach-bwv153no5-mm3-4"
 \version "2.26.0"
 \language "english"
 

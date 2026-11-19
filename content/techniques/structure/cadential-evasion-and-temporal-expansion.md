@@ -66,7 +66,7 @@ flowchart TD
 > - **调性与拍号**：C 大调，2/4 拍
 > - **结构说明**：mm. 9–12 复合乐段大后继句呈示；mm. 13–15 延续冲刺并在 m. 15 遭遇导音未解决与规避 PAC；mm. 16–19 启动 One-More-Time 变奏重跑，终在 m. 19 闭合于 I:PAC
 
-```lilypond title="莫扎特 K.309 第三乐章" location="Allegretto grazioso，mm.9–19"
+```lilypond title="莫扎特 K.309 第三乐章" location="Allegretto grazioso，mm.9–19" id="mozart-k309-iii-mm9-19"
 \version "2.26.0"
 \language "english"
 
@@ -148,7 +148,7 @@ lower = {
 > - **调性与拍号**：C 大调，4/4 拍
 > - **结构说明**：mm. 1–4 乐句呈示（BI + 重复）；mm. 5–8 延续冲刺，m. 8 降落为弱 IAC（高音停在三音）；mm. 8–13 低音下行连接线触发高八度延续部 5 小节剧烈扩张，至 m. 13 达成强力 I:PAC
 
-```lilypond title="贝多芬 Op.2 No.3 第一乐章" location="Allegro con brio，mm.1–13"
+```lilypond title="贝多芬 Op.2 No.3 第一乐章" location="Allegro con brio，mm.1–13" id="beethoven-op2no3-i-mm1-13"
 \version "2.26.0"
 \language "english"
 

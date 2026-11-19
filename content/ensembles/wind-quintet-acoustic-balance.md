@@ -148,7 +148,7 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 
 - **单簧管夏卢摩区与圆号对话（mm. 1–4）**：乐章开篇由单簧管在低音区（Chalumeau）与圆号低声交涉，大管随后以极弱的断奏加入。长笛与双簧管完全保持休止，完全避开了高频共振峰对幽暗气氛的破坏；
 - **动态避让与进场补偿（mm. 5–12）**：当长笛以弱奏（*p*）接入主题时，圆号立刻收敛为持续的背景极弱踏板长音（*pp*），大管则在中高音区以清脆跳音陪伴，为主部主题创造了通透无阻的声学通道。
-```lilypond title="卡尔·尼尔森 管乐五重奏 Op.43 第一乐章" location="Allegro ben moderato，mm.1–11（含 1 拍弱起）"
+```lilypond title="卡尔·尼尔森 管乐五重奏 Op.43 第一乐章" location="Allegro ben moderato，mm.1–11（含 1 拍弱起）" id="nielsen-op43-i-mm1-11"
 \version "2.26.0"
 \language "english"
 

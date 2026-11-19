@@ -76,7 +76,7 @@
   * 低音下沉至大字组 $A2$（`4AA`），次中音经过至 $G3$；
   * $D4 \to C\sharp 4$ 的解决瞬间确立了 A 大调属三和弦的纯正结构（$A - C\sharp - E$），随后在第 3 拍毫无阻碍地收束于主音和弦 $D$。
 
-```lilypond title="巴赫 众赞歌 BWV 87/7" location="Choral，mm.1–3"
+```lilypond title="巴赫 众赞歌 BWV 87/7" location="Choral，mm.1–3" id="bach-bwv87-mm1-3"
 \version "2.26.0"
 \language "english"
 
@@ -145,7 +145,7 @@ bass = {
   * 四个声部同时释放至 G 大调纯净主和弦（`2GG; 2B; 2d; 2g;`，带延长记号）。
   * 这里的 $G4 \to F\sharp 4$ 挂留消除了终止前和声的空洞感，赋予了属和弦强大的向心凝聚力。
 
-```lilypond title="巴赫 众赞歌 BWV 269" location="Choral，mm.5–7"
+```lilypond title="巴赫 众赞歌 BWV 269" location="Choral，mm.5–7" id="bach-bwv269-mm5-7"
 \version "2.26.0"
 \language "english"
 
@@ -210,7 +210,7 @@ bass = {
   * 女低音声部在第 1 拍以附点四分音符挂留 $G\sharp 4$（`4.g#`），随后在弱拍下行级进至 $A4$；紧接着在第 3–4 拍以八分音符形成 $G\sharp \to F\sharp \to G\sharp \to E$ 的交织；
   * 第 4 拍女高音更是突发还原 $D$（`4ddnX`），与低音的 $C\sharp/B$ 构成刺耳的二度/七度碰撞，整座四部架构宛如一座由错位齿轮相互咬合的张力风暴，最终在第 4 小节释放至 A 大调纯粹和弦。
 
-```lilypond title="巴赫 众赞歌 BWV 60/5" location="Choral，mm.1–4"
+```lilypond title="巴赫 众赞歌 BWV 60/5" location="Choral，mm.1–4" id="bach-bwv60-mm1-4"
 \version "2.26.0"
 \language "english"
 

@@ -143,7 +143,7 @@ tags:
 > - **声部构成**：大管（前景旋律，GM 70 Bassoon）、第一小提琴/中提琴（反复跳音运动背景，GM 40/41）、大提琴（低音点缀，GM 42）
 > - **摘录说明：只收录大管主题变体；弦乐的带休止反复和弦与低音点状短音未收录（无可逐音置信的四声部源）。**
 
-```lilypond title="贝多芬 Op.67 第二乐章" location="Andante con moto，mm.205–209"
+```lilypond title="贝多芬 Op.67 第二乐章" location="Andante con moto，mm.205–209" id="beethoven-op67-ii-mm205-209"
 \version "2.26.0"
 \language "english"
 

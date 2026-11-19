@@ -85,7 +85,7 @@
 3. **声学爆发**：超主音与升四级音构成的双重三全音骤然撕裂了明亮的 C 大调纯净空间，将乐句的张力瞬间推至最高负荷；
 4. **终止顺导（mm. 15–16）**：法国六和弦顺势卸力于终止四六和弦（$Cad^6_4$），最终在原位属和弦的驱动下，于 m. 16 毫无悬念地达成雷霆般的完全正格终止（PAC）。
 
-```lilypond title="莫扎特 K.465 第四乐章" location="Allegro，mm.10–16"
+```lilypond title="莫扎特 K.465 第四乐章" location="Allegro，mm.10–16" id="mozart-k465-iv-mm10-16"
 \version "2.26.0"
 \language "english"
 
@@ -168,7 +168,7 @@ violoncello = {
 - **张力跨越**：这一德六和弦并非一闪而过，而是被延留跨越小节线，强力压迫至 m. 8 拍头，随后经过精妙的声部导向，平稳释放在宽广深远的 B 大调半终止长音之中；
 - 贝多芬在此雄辩地证明：增六和弦不仅是戏剧性快板乐章中的爆破装置，更能在极静谧的慢板中凝聚起崇高的哲学张力。
 
-```lilypond title="贝多芬 Op.109 第三乐章" location="Andante molto cantabile ed espressivo，mm.1–8"
+```lilypond title="贝多芬 Op.109 第三乐章" location="Andante molto cantabile ed espressivo，mm.1–8" id="beethoven-op109-iii-mm1-8"
 \version "2.26.0"
 \language "english"
 
