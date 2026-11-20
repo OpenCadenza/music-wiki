@@ -1,26 +1,36 @@
-# 研究归档：管弦乐织体中的音响平面与分层机制
+# 研究归档：音响平面（planes-of-tone-layering）
 
-- **学者**：scholar-c
-- **选题**：管弦乐织体中的音响平面与分层机制（Planes of Tone Layering）
+- **学者**：scholar-c / scholar-c3（接替续作）
+- **选题**：音响平面（Planes of Tone Layering）
 - **中心论证**：配器的实质并非在声部写定后机械指派音色，而是利用音响平面理论，通过控制音区距离、起音包络、泛音结构与节奏密度，构建前景旋律、背景运动与背景共鸣的三层听觉场景，从声学机制上规避声学遮蔽并防止织体塌陷为同质沉重全奏。
-- **实际采用的资料范围（严格限制在本地真实研读文献）**：
-  - Alan Belkin: *Artistic Orchestration* (`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)：
-    - "Preliminary Considerations" (pp. 3–11，第 101–220 行)：管弦乐各家族特性、木管异质三音区、古典/里姆斯基-科萨科夫式交错（overlapping）与包围（enclosure）手法（第 161–172 行）；
-    - "Planes of Tone" (pp. 39–44，第 760–877 行)：音响平面的界定；单焦点听觉注意力边界（第 785 行）；最高声部感知优先级（第 707 行）；前景凸显条件（第 809–811 行）；平面内融合条件、平面间区分条件；运动平面的 4 种形态（第 821–845 行）与共鸣平面的声学特征；
-    - "Contrapuntal Orchestration" & "The Tutti" (pp. 46–50，第 895–959 行)：对位配器平衡、起奏强化（marking entries）、持续尾音（trailers）防干涩（第 915–920 行）、全奏独立家族型与要素分配型织体。
-  - Philharmonia Orchestra 乐器学档案 (`local/resources/text/organized-html/philharmonia/instruments/`)：
+- **实际采用的资料范围**：
+  - Alan Belkin: *Artistic Orchestration*（原件不在本工作树，摘录与记录见 `local/docs/研究归档/_运行记录/scholar-c.md`）：
+    - "Preliminary Considerations" (pp. 3–11)：管弦乐各家族特性、木管异质三音区、古典/里姆斯基-科萨科夫式交错（overlapping）与包围（enclosure）手法；
+    - "Planes of Tone" (pp. 39–44)：音响平面的界定；单焦点听觉注意力边界；最高声部感知优先级；前景凸显条件；平面内融合条件、平面间区分条件；运动平面的 4 种形态与共鸣平面的声学特征；
+    - "Contrapuntal Orchestration" & "The Tutti" (pp. 46–50)：对位配器平衡、起奏强化（marking entries）、持续尾音（trailers）防干涩、全奏独立家族型与要素分配型织体。
+  - Philharmonia Orchestra 乐器学档案（原件不在本工作树，摘录与记录见 `local/docs/研究归档/_运行记录/scholar-c.md`）：
     - `horn.md`：圆号在中景作为谐和填充（Harmonic filling）与管弦乐长音粘合剂的核心功能；
     - `oboe.md`：双簧管的频段特征（233 Hz – 1.6 kHz）、高穿透力及其在木管和弦中的破坏融合变数。
+  - 勃拉姆斯《第三交响曲》分谱（本工作树实际打开核验）：
+    - `local/workbench/scores/score-s2/downloads/brahms90/BrahmsSYMPH3M3/`（J.F. Lucarelli 编码之圆号、长笛、大管、单簧管分谱）。
+  - Donald Francis Tovey 配器理论概念：音响平面（Planes of Tone）历史概念来源。
 - **正文位置**：
   - 主要正文：`content/techniques/sound/planes-of-tone-layering.md`
   - 目录实质索引：`content/techniques/sound/index.md`
 - **谱例现状与占位清单**：
-  - 贝多芬《第五交响曲》Op.67 第二乐章（Andante con moto），mm. 205–218（大管前景旋律 + 弦乐轻跳反复音伴奏，声部摘录占位）；
-  - 勃拉姆斯《第三交响曲》Op.90 第三乐章（Poco allegretto），mm. 1–12（大提琴歌唱性前景 + 小提琴摇摆琶音伴奏 + 圆号/管乐长音和声垫，声部摘录占位）；
-  - 瓦格纳《纽伦堡的名歌手》序曲，mm. 42–50（管乐庄严和弦旋律 + 弦乐疾速音阶跑动动能平面，声部摘录占位）；
-  - 谱例制作流水线：已由 lead 派发给专职谱例助手 `assistant-scores-b` 执行（关联 `task-6`），当前在正文中以文本引用块规范占位，不采用空 `lilypond` 围栏，确保构建脚本零报错。
-- **引证与工程校验修正记录（根据 lead 审查意见）**：
-  1. 剔除未经本地建档的外部心理学文献（Bregman）引用，论证全面收敛并扎根于 Belkin 原文（第 785、707、809–811 行）；
-  2. 修正里姆斯基-科萨科夫手法表述为“贝尔金所述的古典/里姆斯基-科萨科夫式做法”（第 161–172 行），避免拔高为定律；
-  3. 将 3 处占位块统一调整为普通文本块，经 `node scripts/validate-content.mjs` 实测，本篇正文与索引全部零报错通过。
-- **状态**：`已成稿，待本批复读`
+  - 贝多芬《第五交响曲》Op.67 第二乐章（Andante con moto），mm. 205–209（大管变体独奏声部 LilyPond 谱例已入文，id: `beethoven-op67-ii-mm205-209`）；
+  - 勃拉姆斯《第三交响曲》Op.90 第三乐章（Poco allegretto），mm. 1–12（大提琴歌唱性前景 + 小提琴摇摆琶音伴奏 + 木管长音/低音和声垫，规范文本占位，已清理生产侧交付状态说明）；
+  - 瓦格纳《纽伦堡的名歌手》序曲，mm. 42–50（管乐庄严和弦旋律 + 弦乐疾速音阶跑动动能平面，规范文本占位，已清理生产侧交付状态说明）。
+- **第二波（2026-11-20）修订记录**：
+  1. **清单 #8 谱面实证与配器论述复核**：
+     - 本工作树实际打开谱源 `local/workbench/scores/score-s2/downloads/brahms90/BrahmsSYMPH3M3/`，核实勃拉姆斯第三交响曲第三乐章开篇 mm. 1–12：
+       - 圆号声部（`Corno_I_II.ly`）休止 23 小节（Mark A）后继续休止 16 小节，直到第 40 小节末弱起（`c16. d32`）进入、第 41 小节（Mark B）起正式作为前景独奏主奏该抒情主题。因此 mm. 1–12 圆号完全休止的事实无误。
+       - 开篇真实木管分布：长笛（`Flauto_I_II.ly`）自第 1 小节起即吹出极弱持续长音；大管（`Fagotto_I_II.ly`）在强拍提供点状低音支架；单簧管前 12 小节全休止，于第 13 小节起进入交替。
+     - 正文论述理顺：明确开篇呈示中共鸣平面完全由木管组承担，声学质地通透轻盈；勃拉姆斯克制地将圆号音色保留至第 40 小节末弱起、第 41 小节作为高光前景独奏转场呈现，形成了由木管共鸣背景到铜管前景独奏的动态音色对比，论证逻辑完全贯通。
+  2. **图示结构化升级**：将正文中 3 处 ASCII 字符框图（内部融合条件树、背景平面的双重形态、创作 Agent 配器决策树）全部改写为标准 `mermaid` 流程图，消除跨设备字符错位，提升知识库可读性。
+  3. **消除施工痕迹与生产状态**：
+     - 剔除案例一中残留的过程性语句“（具体声部音高对位待后续谱例交付后对照校准）”；
+     - 剔除案例二与案例三占位块中的“交付状态：规范文本引用块占位，待后续谱例助手完成总谱切片编码”，仅保留作品、乐章、小节范围与声部构成；
+     - 确保正文无源文件行号、无协作记录痕迹。
+  4. **建立来源与许可索引（落实 D 条）**：完成 `provenance/techniques/sound/planes-of-tone-layering.md`，区分工作树内实际打开路径与前任记录摘录来源，规范登记 Belkin 论著、Philharmonia 乐器档案、勃拉姆斯分谱与 Tovey 出处，谱例底本按公有领域再排版并标注“未确认”许可，严格遵守不编造原则。
+- **状态**：`第二波第1篇完成，待验收`
