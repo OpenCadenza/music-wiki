@@ -1,9 +1,11 @@
 ---
-title: 钢琴三重奏的声学掩蔽与织体妥协机制
+title: 钢琴三重奏
 description: 深入剖析钢琴三重奏（小提琴、大提琴、钢琴）中击弦瞬态与持续摩擦弦的物理声学对抗，解析延音踏板与低音泛音对大提琴中低音区的声学掩蔽机制，系统解构大提琴逃逸至男高音音区的结构代价（低音真空与声部挤压），并阐明钢琴织体的声学减重与室内乐妥协法则。
 ---
 
-# 钢琴三重奏的声学掩蔽与织体妥协机制（Acoustic Masking and Textural Compromise in the Piano Trio）
+# 钢琴三重奏
+
+<p class="doc-subtitle">击弦瞬态与持续摩擦弦的物理对抗下，钢琴三重奏如何化解声学掩蔽并实现织体妥协？（Acoustic Masking and Textural Compromise in the Piano Trio）</p>
 
 在西方室内乐的核心体裁中，**钢琴三重奏**（Piano Trio: 小提琴 Violin、大提琴 Cello、钢琴 Piano）呈现出一种极具张力的矛盾特质。
 

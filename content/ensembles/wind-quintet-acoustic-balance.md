@@ -1,9 +1,11 @@
 ---
-title: 管乐五重奏的声学失衡与多维平衡机制
+title: 管乐五重奏
 description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大管、圆号）在乐器物理发音、动态非对称性与共振峰上的天然失衡，系统阐述和声几何排布（叠置 vs 交错与包围）、圆号中音粘合剂法则与复调色彩解耦策略，并结合安东·雷哈与卡尔·尼尔森的经典文献与作品案例。
 ---
 
-# 管乐五重奏的声学失衡与多维平衡机制（Acoustic Imbalance and Multidimensional Balance in the Wind Quintet）
+# 管乐五重奏
+
+<p class="doc-subtitle">四种相异发音机制与跨家族铜管拼合下，管乐五重奏如何化解声学失衡并建立多维平衡？（Acoustic Imbalance and Multidimensional Balance in the Wind Quintet）</p>
 
 在所有标准西方室内乐体裁中，**管乐五重奏**（Wind Quintet: 长笛 Flute、双簧管 Oboe、单簧管 Clarinet、大管 Bassoon、圆号 French Horn）呈现出声学异质性最高、平衡难度最大的极端特征。
 

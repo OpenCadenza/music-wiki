@@ -1,9 +1,11 @@
 ---
-title: 乐思与编制媒介的双向选择机制
+title: 乐思与编制
 description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介（Ensemble Medium）的声学物理适配机制，否定“中性乐思”假说，剖析时域包络、起音瞬态、无尽延留与声部交叉对编制的排他性选择，系统探讨跨编制转译的边界与声学代偿（以贝多芬 Op. 14 No. 1 向四重奏 Hess 34 的转译、Op. 97 与 Op. 135 的动机分流、及勃拉姆斯 Op. 34 室内乐迁徙为例），并为创作 Agent 提供可迁移的声学适配决策模型。
 ---
 
-# 乐思与编制媒介的双向选择机制（The Bidirectional Selection Between Musical Ideas and Ensemble Medium）
+# 乐思与编制
+
+<p class="doc-subtitle">乐思与发音物理载体如何双向互相塑形，跨编制转译又需要怎样的声学代偿？（The Bidirectional Selection Between Musical Ideas and Ensemble Medium）</p>
 
 在传统配器法与作曲技法教学中，乐器编制往往被简化为一层外在的“音色着色板”（Color Palette）。这种观念假定存在一种独立于乐器物理特性的“抽象乐思”——仿佛一条旋律只要具备优美的级进与句法，便能任意指派给长笛、小提琴或钢琴演奏。
 

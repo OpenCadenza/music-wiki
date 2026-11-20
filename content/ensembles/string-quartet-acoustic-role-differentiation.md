@@ -1,9 +1,11 @@
 ---
-title: 弦乐四重奏的声学同质性与声部角色解耦机制
+title: 弦乐四重奏
 description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、中提琴、大提琴）在摩擦发音机制上的绝对均质性与声学双刃性，系统阐述如何打破同质遮蔽与声部粘连，剖析音区梯级错位、两把小提琴的功能角色解耦、中提琴的中音声学枢纽法则与运弓发音法分层，并结合海顿《皇帝四重奏》与贝多芬 Op. 135 进行实证分析。
 ---
 
-# 弦乐四重奏的声学同质性与声部角色解耦机制（Acoustic Homogeneity and Voice Decoupling in the String Quartet）
+# 弦乐四重奏
+
+<p class="doc-subtitle">绝对音色均质的提琴家族中，弦乐四重奏如何打破声部粘连并实现角色解耦？（Acoustic Homogeneity and Voice Decoupling in the String Quartet）</p>
 
 在西方室内乐艺术中，**弦乐四重奏**（String Quartet: 第一小提琴 Violin I、第二小提琴 Violin II、中提琴 Viola、大提琴 Cello）被普遍奉为织体纯度最高、声学结构最完美的经典体裁。
 
