@@ -11,7 +11,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 
 如果说管乐五重奏的核心矛盾在于“如何化解极端异质发音机制带来的破裂”，钢琴三重奏的核心挑战在于“如何缓解击弦脉冲对持续摩擦拉弦的声学掩蔽”，那么弦乐四重奏则将作曲家推向了声学物理的另一个极端：**绝对的音色均质性（Homogeneity）**。
 
-四件乐器共享完全相同的物理发音激励原理——松香马毛弓与金属缠弦之间的粘滞-滑移摩擦（Stick-slip friction）、木制琴马对面板与背板的机械能量传递、云杉与枫木共鸣箱的亥姆霍兹共振腔体、以及偶数与奇数全泛音列的完整激发。正如阿兰·贝尔金（Alan Belkin）在《艺术化配器法》（`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md` 第 137 行）所指出的：*“Given the easy blend within the family, such crossing creates no special problems.”*（鉴于弦乐家族内部极易实现自然融合，声部交叉在弦乐写作中不会引发任何特殊障碍）。
+四件乐器共享完全相同的物理发音激励原理——松香马毛弓与金属缠弦之间的粘滞-滑移摩擦（Stick-slip friction）、木制琴马对面板与背板的机械能量传递、云杉与枫木共鸣箱的亥姆霍兹共振腔体、以及偶数与奇数全泛音列的完整激发。正如阿兰·贝尔金（Alan Belkin）在《艺术化配器法》（*Artistic Orchestration*）论述弦乐组声部交叉与融合特质时所指出的：*“Given the easy blend within the family, such crossing creates no special problems.”*（鉴于弦乐家族内部极易实现自然融合，声部交叉在弦乐写作中不会引发任何特殊障碍）。
 
 然而，这种完美的均质性是一把致命的**声学双刃剑**：在垂直和声中，它赋予了四重奏如管风琴般无缝交融的和声纯度；但在多声部复调与复杂织体中，**高度同质的音色极易导致听觉上的“声部粘连”（Timbral Conflation）与空间模糊**，使内声部沦为毫无辨识度的混响背景。
 
@@ -36,7 +36,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 ```
 
 ### 1. 垂直和声融合的天然优势
-贝尔金在探讨“音响平面”（Planes of Tone）的融合条件时（`bk-O-O.md` 第 787 行）明确指出：**平面内的完美融合，取决于音色的相似性、节奏的同步性、音区的密集排列以及各声部力度的均衡。**
+贝尔金在探讨“音响平面”（Planes of Tone）的融合条件时明确指出：**平面内的完美融合，取决于音色的相似性、节奏的同步性、音区的密集排列以及各声部力度的均衡。**
 
 弦乐四重奏天然满足了音色相似性的最高标准。当四件乐器以相同力度演奏四部和声和弦时，由于每件乐器均辐射出几乎完全相同的摩擦发音包络与温暖平滑的泛音谱系，泛音列之间能够实现无缝的互嵌与相位共振。这种均质性使得弦乐四重奏在演奏圣咏（Chorale）、缓板和弦块面时，能够产生其他任何室内乐编制都无法企及的纯净与崇高感。
 
@@ -53,7 +53,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 
 解耦的第一层机制在于纵向空间的物理错位。
 
-贝尔金在《艺术化配器法》（`bk-O-O.md` 第 572–577 行）中指出：
+贝尔金在《艺术化配器法》（*Artistic Orchestration*）的“音区规划”（Register Planning）章节中指出：
 > *“If the desired result is a blended sonority, to be perceived as one single plane of tone, the layout of the music within this register normally will follow that of the overtone series: wider in the lower range and more compact getting higher, with no large gaps in the middle... On the other hand, where differentiation is needed, as in certain types of counterpoint, such gaps may be appropriate.”*  
 > （如果需要实现融合的音响以形成单一音响平面，音区排布通常应遵循泛音列规律：低音区开放、高音区密集，中间不留大空隙……反之，在需要产生声部区分的对位织体中，刻意留出空隙则是极为恰当的。）
 
@@ -71,7 +71,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 
 弦乐四重奏中最独特的声学命题，在于编制中包含**两把物理构造完全相同的第一小提琴与第二小提琴**。
 
-根据 Philharmonia 乐器档案 `violin.md` 第 39 行实测记载：*“In a typical orchestra, violins are grouped into Firsts and Seconds. The leader of the First Violins is also the Leader of the Orchestra... seated two to a desk.”* 在室内乐中，第二小提琴绝非第一小提琴的“减弱复制品”，而是承担着极其关键的结构解耦职能：
+根据爱乐乐团（Philharmonia Orchestra）乐器指南关于小提琴声部分组与领导职能的论述：*“In a typical orchestra, violins are grouped into Firsts and Seconds. The leader of the First Violins is also the Leader of the Orchestra... seated two to a desk.”* 在室内乐中，第二小提琴绝非第一小提琴的“减弱复制品”，而是承担着极其关键的结构解耦职能：
 
 ```
        【角色一：同向和声平移】              【角色二：声部交叉反向对位】            【角色三：动能织体引擎】
@@ -82,11 +82,11 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 
 ### 1. 领航者与中高音声学变压器
 - **第一小提琴**：天然占据高音把位的声学穿透优势，承担引导演奏方向、勾勒主要旋律轮廓的职能；
-- **第二小提琴**：通常工作在小提琴的中低音区（G3–D5，即 G 弦与 D 弦）。Philharmonia `violin.md` 第 35 行指出：*“The rich low notes can be very vocal and can be easily used to 'tug the heart strings'.”* 第二小提琴利用低音琴弦深沉、沙哑的声学色彩，充当第一小提琴明亮高音与中提琴暗淡音色之间的“变压中介”。
+- **第二小提琴**：通常工作在小提琴的中低音区（G3–D5，即 G 弦与 D 弦）。爱乐乐团乐器指南指出：*“The rich low notes can be very vocal and can be easily used to 'tug the heart strings'.”* 第二小提琴利用低音琴弦深沉、沙哑的声学色彩，充当第一小提琴明亮高音与中提琴暗淡音色之间的“变压中介”。
 
 ### 2. 动能分工：旋律层 vs 运动背景层
 当第一小提琴唱出抒情长音时，第二小提琴绝不能以相同的长音陪伴，否则会导致声部粘连。高明的做法是：**将第二小提琴转化为次级运动平面（Movement Plane）**。
-- 采用反复八分音符、琶音或十六分音符跑动，为静态的旋律注入微观推进动能（呼应 Belkin `bk-O-O.md` 第 820–845 行关于运动平面的四种形态）。
+- 采用反复八分音符、琶音或十六分音符跑动，为静态的旋律注入微观推进动能（呼应贝尔金《艺术化配器法》关于背景运动平面四种形态的论述）。
 
 ---
 
@@ -96,7 +96,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 1. **向上粘合第二小提琴**：
    - 中提琴最高琴弦 A 弦（基频 220 Hz）与小提琴 D/A 弦频段高度重叠，能与第二小提琴构成极其浓郁的同质三度或六度和声；
 2. **向下承接大提琴上浮真空**：
-   - 正如在前篇《钢琴三重奏的声学掩蔽与织体妥协机制》中所论述的，大提琴一旦上浮至男高音区，编制便会发生低音真空；但在弦乐四重奏中，**中提琴粗糙沉郁的低音 C 弦（基频约 130 Hz）能够完美接管次级低音**，确保织体在纵向维度上永不坍塌；
+   - 正如在 [《钢琴三重奏》](piano-trio-acoustic-compromise.md) 中所论述的，大提琴一旦上浮至男高音区，编制便会发生低音真空；但在弦乐四重奏中，**中提琴粗糙沉郁的低音 C 弦（基频约 130 Hz）能够完美接管次级低音**，确保织体在纵向维度上永不坍塌；
 3. **特有的鼻音暗淡音色突围**：
    - 相比小提琴与大提琴，中提琴的共鸣箱相对于其定弦而言物理尺寸偏小，这赋予了它独特的微弱鼻音质感与略带阴郁的色彩。在四重奏复调中，作曲家只要给中提琴安排一条具有独特节奏特征的独立线条，其特殊音色便能迅速从均质背景中凸显出来。
 
@@ -106,7 +106,7 @@ description: 深入解构弦乐四重奏（第一小提琴、第二小提琴、�
 
 当四件乐器必须在相同音区或和声框架下发声时，**运弓与发音法的差异化配置是打破均质粘连的终极武器**。
 
-根据 Philharmonia 乐器档案 `cello.md` 第 55–59 行记载：
+根据爱乐乐团（Philharmonia Orchestra）乐器指南关于大提琴运弓发音法的论述：
 > *“Notes that are indicated to be played separately can be played on the string or can allow the bow to bounce off the string... Bouncing off the string has more resonance... Playing on the string is, on the contrary, more forceful, but is harder work...”*  
 > （各自独立的发音既可以贴弦演奏，也可以让琴弓在弦上跳跃……离弦跳弓具有更多共鸣……相反，贴弦演奏更具强力……）
 
@@ -269,7 +269,7 @@ cello = {
 ### 案例二：贝多芬《F大调第16弦乐四重奏》Op. 135 第三乐章（mm. 1–12）
 **机制：极致同质和声块面中的微观运弓分层与弱声学透视**
 
-在晚期贝多芬的这首降 D 大调极缓板（*Lento assai, cantante e tranquillo*）中，音乐呈现出一种近乎宗教受难般的深沉沉思。关于该作品第四乐章中核心动机的倒影变形与和声再语境化机制，可参见专题文章 [核心细胞的倒影变形与和声再语境化机制](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)；而在第三乐章开篇，贝多芬直面的是**同质四重奏在极度弱奏（*sotto voce / pp*）下的声学透视难题**：
+在晚期贝多芬的这首降 D 大调极缓板（*Lento assai, cantante e tranquillo*）中，音乐呈现出一种近乎宗教受难般的深沉沉思。关于该作品第四乐章中核心动机的倒影变形与和声再语境化机制，可参见专题文章 [《动机倒影》](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)；而在第三乐章开篇，贝多芬直面的是**同质四重奏在极度弱奏（*sotto voce / pp*）下的声学透视难题**：
 
 - **微观运弓与音区解耦（mm. 1–8）**：
   - 四件乐器全部集中在温润的中低音区密集排列，第一小提琴被刻意压低至其中低把位（Ab4–F5），与第二小提琴及中提琴极其贴近；
@@ -414,21 +414,13 @@ cello = {
 
 ## 参考文献与资料索引
 
-1. **Philharmonia Orchestra**: *Instruments Resource Profiles* (`local/resources/text/organized-html/philharmonia/instruments/`)
-   - `violin.md`：
-     - 行 35：弦乐器无尽延留的声学特质（*“it is the endless sustain that characterises all string instruments that enables the violins... to create a floating effect”*）；
-     - 行 39：管弦乐与室内乐中第一小提琴与第二小提琴的分组与角色分工；
-     - 行 59–65：小提琴实测频率范围（**195 Hz – 1.6 kHz**）与四弦纯五度定弦（G, D, A, E）。
-   - `cello.md`：
-     - 行 27：大提琴作为弦乐组中男高音声部的多维角色定位；
-     - 行 29：大提琴音区跨度与起音清晰度（*“Another of its useful qualities is its clarity of attack, which enables it to play crisp architectural shapes...”*）；
-     - 行 39：四弦定弦（C, G, D, A）及低音琴弦阴郁丰厚的音色特性；
-     - 行 45–51：大提琴实测频率范围（**65 Hz – 1.0 kHz**）；
-     - 行 55–59：跳弓（Bouncing off the string）的共鸣感与贴弦（On the string）发音力量对比。
-2. **Alan Belkin**: *Artistic Orchestration* (本地 OCR 整理稿 `local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)
-   - 行 137：弦乐同质家族内声部交叉的自由度与声学融合优势；
-   - 行 572–577：音区规划（Register planning）、泛音列自然展开与刻意留出空隙（Gaps）实现声学分层；
-   - 行 787：音响平面（Planes of Tone）的定义及平面内融合的三大核心条件（音色相似、节奏同步、密集排列、力度均衡）；
-   - 行 820–845：背景运动平面的四种基本形态（颤音、反复音、音阶、琶音）。
+1. **Philharmonia Orchestra**: *Instruments Resource Profiles*
+   - 小提琴（*Violin*）：弦乐器持续发音特质、第一/第二小提琴职能分工、实测频率范围（195 Hz – 1.6 kHz）与定弦；
+   - 大提琴（*Cello*）：男高音声部定位与起音清晰度、实测频率范围（65 Hz – 1.0 kHz）、跳弓与贴弦发音法对比。
+2. **Alan Belkin**: *Artistic Orchestration*
+   - “预备考量：弦乐”（*Preliminary Considerations: Strings*）：弦乐家族内部声部交叉与声学融合优势；
+   - “音区规划”（*Register Planning: Normal*）：泛音列自然排布与对位织体中的刻意留白（Gaps）；
+   - “音响平面”（*Planes of Tone*）：单一平面内的融合条件（音色相似、节奏同步、密集排列、力度均衡）；
+   - “背景层：运动”（*Background: Movement*）：运动平面的四种形态（颤音、反复音、音阶、琶音）。
 3. **Joseph Haydn**: *String Quartet in C major ("Emperor")*, Op. 76 No. 3 (1797), Score, II. Poco adagio, cantabile.
 4. **Ludwig van Beethoven**: *String Quartet No. 16 in F major*, Op. 135 (1826), Score, III. Lento assai, cantante e tranquillo.

@@ -1,36 +1,28 @@
-# 研究归档：弦乐四重奏的声学同质性与声部角色解耦机制
+# 研究归档：弦乐四重奏
 
-- **学者**：scholar-c
-- **选题**：弦乐四重奏的声学同质性与声部角色解耦机制（Acoustic Homogeneity and Voice Decoupling in the String Quartet）
+- **学者**：scholar-c / scholar-c3（续作收尾）
+- **选题**：弦乐四重奏（原题：弦乐四重奏的声学同质性与声部角色解耦机制，Acoustic Homogeneity and Voice Decoupling in the String Quartet）
 - **所属顶层轴**：`content/ensembles/`（编制轴第三篇，完成室内乐声学三联画闭环）
 - **中心论证**：弦乐四重奏（两把小提琴、中提琴、大提琴）共享相同的提琴家族摩擦发音物理机制（粘滞-滑移摩擦与全泛音激发），具备绝对的音色均质性（Homogeneity）。均质性在垂直和声中带来完美的无缝融合，但在多声部复调与复杂织体中极易导致听觉上的“声部粘连”（Timbral Conflation）与空间模糊。作曲家通过音区梯级错位（两极拉伸腾出中央空间）、两把小提琴的职能解耦（领航旋律 vs 中音声学变压与运动背景平面）、中提琴作为中音声学枢纽（向上粘合第二小提琴，向下接管大提琴上浮后的低音空缺）、以及发音法多维分层（贴弦长弓歌唱 vs 离弦跳音伴奏、拉奏与拨弦剥离），打破同质遮蔽，构建了兼具和声厚度与复调辨识度的三维室内乐声场。
-- **实际采用的资料范围（严格限制在本地真实研读文献）**：
+- **实际采用的资料范围（严格限制在本地真实研读文献，行号已移入 provenance 存档）**：
   - Philharmonia Orchestra 乐器学档案 (`local/resources/text/organized-html/philharmonia/instruments/`)：
-    - `violin.md`：
-      - 行 35：弦乐器无尽延留的声学特质（*“it is the endless sustain that characterises all string instruments that enables the violins... to create a floating effect”*）；
-      - 行 39：管弦乐与室内乐中第一小提琴与第二小提琴的职能分工；
-      - 行 59–65：小提琴实测频率范围（**195 Hz – 1.6 kHz**）与四弦定弦（G, D, A, E）。
-    - `cello.md`：
-      - 行 27：大提琴作为弦乐组中男高音声部的多维角色定位；
-      - 行 29：大提琴宽广音域与起音清晰度（*“Another of its useful qualities is its clarity of attack...”*）；
-      - 行 39：四弦定弦（C, G, D, A）及低音琴弦深沉阴郁特质；
-      - 行 45–51：大提琴实测频率范围（**65 Hz – 1.0 kHz**）；
-      - 行 55–59：跳弓（Bouncing）共鸣感 vs 贴弦（On the string）力量感发音法对比。
+    - `violin.md`：弦乐器无尽延留的声学特质、管弦乐与室内乐中第一小提琴与第二小提琴的职能分工、小提琴实测频率范围（195 Hz – 1.6 kHz）与四弦定弦（G, D, A, E）；
+    - `cello.md`：大提琴作为弦乐组中男高音声部的多维角色定位、大提琴宽广音域与起音清晰度、四弦定弦（C, G, D, A）及低音琴弦深沉阴郁特质、大提琴实测频率范围（65 Hz – 1.0 kHz）、跳弓（Bouncing off the string）共鸣感 vs 贴弦（On the string）发音力量对比。
   - Alan Belkin: *Artistic Orchestration* (`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)：
-    - 行 137：弦乐同质家族内声部交叉的自由度与声学融合优势；
-    - 行 572–577：音区规划（Register planning）、泛音列自然展开与刻意留出空隙（Gaps）实现声学分层；
-    - 行 787：音响平面（Planes of Tone）定义与平面内融合三条件；
-    - 行 820–845：背景运动平面的四种基本形态（反复音、琶音、音阶、颤音）。
+    - Preliminary Considerations: Remarks on Instruments / Strings：弦乐同质家族内声部交叉的自由度与声学融合优势；
+    - Register Planning: Normal：音区规划、泛音列自然展开与刻意留出空隙（Gaps）实现声学分层；
+    - Planes of Tone：音响平面定义与平面内融合三条件（音色相似、节奏同步、密集排列、力度均衡）；
+    - Background: Movement：背景运动平面的四种基本形态（反复音、琶音、音阶、颤音）。
   - 乐谱文献与作品案例：
-    - 海顿（J. Haydn）：《C大调弦乐四重奏“皇帝”》Op. 76 No. 3 第二乐章 Poco adagio, cantabile（mm. 1–40，同一圣咏主题在四件乐器间轮转呈示，变奏一第二小提琴接棒旋律、第一小提琴跃升为十六分音符运动平面、中提琴与大提琴休止留白）；
-    - 贝多芬（L. v. Beethoven）：《F大调第16弦乐四重奏》Op. 135 第三乐章 Lento assai, cantante e tranquillo（mm. 1–12，极弱密集和声中的微观运弓与切分长音时域解耦；与第四乐章动机倒影分析形成自然跨篇链接）。
+    - 海顿（J. Haydn）：《C大调弦乐四重奏“皇帝”》Op. 76 No. 3 第二乐章 Poco adagio, cantabile（mm. 1–20 完整嵌入 LilyPond 谱例；同一圣咏主题在四件乐器间轮转呈示，变奏一第二小提琴接棒旋律、第一小提琴跃升为十六分音符运动平面、中提琴与大提琴休止留白）；
+    - 贝多芬（L. v. Beethoven）：《F大调第16弦乐四重奏》Op. 135 第三乐章 Lento assai, cantante e tranquillo（mm. 1–12 完整嵌入 LilyPond 谱例；极弱密集和声中的微观运弓与切分长音时域解耦；与第四乐章动机倒影分析形成自然跨篇链接）。
 - **正文位置**：
   - 正文：`content/ensembles/string-quartet-acoustic-role-differentiation.md`
   - 编制轴目录导引：`content/ensembles/index.md`（收录导引）
 - **谱例现状与占位清单**：
-  - 海顿 Op. 76 No. 3 第二乐章 mm. 1–40（声部摘录占位，第一小提琴 GM 40、第二小提琴 GM 40、中提琴 GM 41、大提琴 GM 42）；
-  - 贝多芬 Op. 135 第三乐章 mm. 1–12（声部摘录占位，第一小提琴 GM 40、第二小提琴 GM 40、中提琴 GM 41、大提琴 GM 42）；
-  - 正文中全部采用符合规范的文本引用块占位，无空 `lilypond` 围栏，确保构建全绿。
+  - 海顿 Op. 76 No. 3 第二乐章 mm. 1–20（已嵌入真实 LilyPond 四声部代码块，id 为 `haydn-op76no3-ii-mm1-20`，无 GM 编号，合规标注 \set Staff.midiInstrument）；
+  - 贝多芬 Op. 135 第三乐章 mm. 1–12（已嵌入真实 LilyPond 四声部代码块，id 为 `beethoven-op135-iii-mm1-12`，无 GM 编号，合规标注 \set Staff.midiInstrument）；
+  - 正文中全部采用符合规范的 LilyPond 围栏，无空围栏，乐谱与声学分析完全闭环。
 - **工程与内容校验**：
-  - 运行 `node scripts/validate-content.mjs`，通过校验（20 Markdown files, 8 directories, 3 notation blocks, 0 errors）。
-- **状态**：`已成稿，待本批复读`
+  - 运行 `node scripts/validate-content.mjs`，通过校验。
+- **状态**：`第二波修订完成（已改短标题“弦乐四重奏”与单行副标题、正文清除所有行号与本地路径为正文章节名、跨篇引用统一使用短标题链接 [《钢琴三重奏》](piano-trio-acoustic-compromise.md) 与 [《动机倒影》](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)、清除文末文献中所有行号与本地路径并规范条目、填补 provenance 来源与谱例表）`
