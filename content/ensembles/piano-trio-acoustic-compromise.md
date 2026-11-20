@@ -71,7 +71,7 @@ description: 深入剖析钢琴三重奏（小提琴、大提琴、钢琴）中�
             大提琴   ──┴─► C/G 弦被钢琴泛音吞噬       [低音]  钢琴左手 (被迫独自承担脉冲性断续低音)
 ```
 
-### 1. 逃逸至男高音音区（Tenor Register: G3–E♭4/A4）
+### 1. 逃逸至男高音音区（Tenor Register: G3–E♭4）
 大提琴为了在声学上被听众听见，唯一的出路是向高频空间逃逸。
 - 依据爱乐乐团乐器指南关于大提琴男高音功能定位的论述：
   > *“The cello is the tenor voice in the string section... With its particularly wide range and powerful sound it can one minute be playing a bass line and the next a melody that is high enough for the rest of the orchestra to move underneath.”*  
