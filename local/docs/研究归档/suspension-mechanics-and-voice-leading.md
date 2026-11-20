@@ -9,31 +9,31 @@
 
 ## 1. 实际采用的资料范围
 
-- **权威对位法教材与理论规约（Open Music Theory）**：
-  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/fourthSpecies.md`：
+- **权威对位法教材与理论规约（Open Music Theory）**（原件不在本工作树，依据前任运行记录与来源卡摘录）：
+  * `fourthSpecies.md`：
     - 第四类切分对位法的严格律则、斜向进行、弱起准备、强拍重音不协和、弱拍单向下行级进解决；
     - 上方声部挂留（7–6、4–3、9–8）与低音声部挂留（2–3、5–6、4–5）的分类原则与力学差异；
     - 严禁连续 9–8 或 4–5 挂留以杜绝隐伏平行五八度，防范后拍五八度（After-beat Fifths/Octaves）。
-  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/embellishingTones.md`：
+  * `embellishingTones.md`：
     - 挂留音（迟到）与切分音及先现音（早到）的本质力学解耦；
     - **解决音重叠禁忌（Resolution Doubling Taboo）**：除 9–8 挂留外，挂留音的解决音音高类别严禁在其他上方声部预先/同时叠置；
     - 反向延留音（Retardation）：向上级进解决的终束延留（如 7–8）。
-  * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/voiceLeading-strict.md`：
+  * `voiceLeading-strict.md`：
     - 四部和声声部导向原则、倾向音必然解决律与声部交叉声学掩蔽。
 
 - **现代学术文献与历史理论**：
-  * Johannes Raiser (2018)《Beethovens Streichquartett op. 74》（ZGMTH，`local/resources/text/organized-html/beethoven-analysis-chamber/raiser-op74-galant-introduction-2018.md`，Lines 117–129）：
+  * Johannes Raiser (2018)《Beethovens Streichquartett op. 74》（ZGMTH 15/2, 2018, S. 117–129；原件不在本工作树，依据前任运行记录）：
     - 贝多芬 Op. 74 第一乐章慢引子（Poco Adagio）mm. 18–24 的对位解构；
     - Emanuel Aloys Förster 通奏低音理论中的多重半音挂留（mehrfache Vorhaltsbildungen）与长达附点四分音符的长时值变音延留；
     - 解决和弦自身再度充当下一次属七/减七和弦挂留准备的连环悬置，以及大提琴作为挂留核心声部（Vorhaltsstimme）的功能反转。
 
-- **底层机器可读原生谱源（Humdrum Kern）**：
-  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor096.krn`（BWV 87/7, "Jesu, meine Freude"）：
-    - Lines 22–36（mm. 1–2）：女低音在 m. 1 拍 4 准备 D4，跨小节线延留至 m. 2 强拍，在低音 A 上形成四度重音挂留，弱拍下行级进解决至导音升 C4，完成典范 $V^{4-3}$ 半终止；
-  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor001.krn`（BWV 269, "Aus meines Herzens Grunde"）：
-    - Lines 43–54（mm. 5–7）：第 6 小节女低音保持二分音符 G4，第 3 拍低音切入属音 D3 形成 $4–3$ 挂留并下行解决至升 F4，在第 7 小节闭合完全正格终止（PAC）；
-  * `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/chor216.krn`（BWV 60/5, "Es ist genug!"）：
-    - Lines 19–39（mm. 1–4）：开篇女高音三全音全音阶跳升（A-B-C#-D#）与 m. 3 低音 9 音八度半音下行（Passus Duriusculus），与上方声部还原 D 挂留交织成极端复调张力网。
+- **底层机器可读原生谱源（Humdrum Kern 语料，本工作树无副本）**：
+  * `chor096.krn`（BWV 87/7, "Jesu, meine Freude"）：
+    - mm. 1–2：女低音在 m. 1 拍 4 准备 D4，跨小节线延留至 m. 2 强拍，在低音 A3 上形成四度重音挂留，弱拍下行级进解决至导音升 C4，完成典范 $V^{4-3}$ 半终止；
+  * `chor001.krn`（BWV 269, "Aus meines Herzens Grunde"）：
+    - mm. 5–7：第 6 小节女低音保持二分音符 G4，第 3 拍低音切入属音 D3 形成 $4–3$ 导向并下行解决至升 F4，在第 7 小节闭合完全正格终止（PAC）；
+  * `chor216.krn`（BWV 60/5, "Es ist genug!"）：
+    - mm. 1–4：开篇女高音三全音全音阶跳升（A-B-C#-D#）与 m. 3 低音 9 音八度半音下行（Passus Duriusculus），与上方声部还原 D 挂留交织成极端复调张力网。
 
 ---
 
@@ -75,15 +75,15 @@
 - H1 改为短标题 `# 挂留音`；
 - H1 下新增单行副标题 `<p class="doc-subtitle">挂留音如何打破块状和弦并通过相位差驱动声部导向？</p>`。
 
-### 5.2 事实修正与乐谱对齐（依据 Humdrum Kern 原生谱源）
+### 5.2 事实修正与乐谱对齐（依据 Humdrum Kern 语料，本工作树无副本）
 1. **BWV 87/7 m. 2 女高音八度纠偏（待作者修订清单 #1）**：
-   - 依据 Kern `chor096.krn`（第 22–36 行）：m. 2 女高音实为二分音符 `2e`（E4），随后收束于 `2d`（D4）。原正文误写为“高音 E5”，已纠正为小字一组的 $E4$（女低音 $D4$ 与女高音 $E4$ 构成大二度挤压，而非复二度）。
+   - 依据 Kern `chor096.krn`（本工作树无副本，依据前人记录摘录与入文 LilyPond 对照）：m. 2 女高音实为二分音符 `2e`（E4），随后收束于 `2d`（D4）。原正文误写为“高音 E5”，已纠正为小字一组的 $E4$（女低音 $D4$ 与女高音 $E4$ 构成大二度挤压，而非复二度）。
    - 同时通篇核查并纠正了小字组/大字组标记错位：低音经过音 $G2 \to G3$（`8GJ` 为小字一组以下的小字组 G3）、m. 2 强拍低音 $A3$（`4A`）、解决拍低音 $A2$（`4AA` 为大字组）。
 2. **BWV 269 乐谱事实与清单澄清**：
    - 清单 #1 提到“BWV 269 mm.3–4 拍位描述与 Kern 有出入（Kern：A4 八分在 b2.5、B4 在第 3 拍）”。经查 Kern `chor001.krn`，该 mm.3–4 先现音段落实属于同批第二篇《cadential-voice-clock-and-phase-decoupling.md》（第 43–60 行），属于清单跨篇条目归并线索；本篇正文引用的是 BWV 269 mm.5–7（完全正格终止）。
-   - 本篇对照 `chor001.krn`（第 43–54 行）严谨核实了 mm.5–7 的声部与八度：低音为 $B2$（`4BB`）、$C3$（`4C`）、$D3$（`4D`）、$G2$（`2GG`）；次中音为 $D4$（`4d`）、$E4$（`4e`）、$D4 \to C4$（`8dL 8cJ`）、$B3$（`2B`）；女低音为 $F\sharp 4$（`4f#`）、$G4$（`2g`，第 1–2 拍持续）、$F\sharp 4$（`4f#`，第 3 拍切入导音）、$D4$（`2d`）；女高音为 $B4$（`4b`）、$A4$（`2a`，第 2–3 拍持续）、$G4$（`2g`）。微调了拍位描述，使之完全吻合原谱。
+   - 本篇对照 `chor001.krn` 对应小节（mm.5–7）严谨核实了各声部与八度：低音为 $B2$（`4BB`）、$C3$（`4C`）、$D3$（`4D`）、$G2$（`2GG`）；次中音为 $D4$（`4d`）、$E4$（`4e`）、$D4 \to C4$（`8dL 8cJ`）、$B3$（`2B`）；女低音为 $F\sharp 4$（`4f#`）、$G4$（`2g`，第 1–2 拍持续）、$F\sharp 4$（`4f#`，第 3 拍切入导音）、$D4$（`2d`）；女高音为 $B4$（`4b`）、$A4$（`2a`，第 2–3 拍持续）、$G4$（`2g`）。微调了拍位描述，使之完全吻合原谱。
 3. **BWV 60/5 m. 3 八度编号校准**：
-   - 依据 Kern `chor216.krn`（第 19–39 行）：m. 2 低音为小字一组 $B\sharp 3$（`2B#;`）、次中音 $F\sharp 4$（`2f#;`）；m. 3 低音 9 音八度半音下行线条明确记为 $C\sharp 4 \to B3 \to A3 \to G\sharp 3 \to F\sharp 3 \to E3 \to D3 \to C\sharp 3 \to B2$，终落大字组 $A2$；女低音为 $G\sharp 4 \to F\sharp 4 \to G\sharp 4 \to E4$；女高音第 4 拍突发还原音为小字二组 $D5$（`4ddnX`）。通篇八度编号已全部与科学音高记号及 Kern 一致。
+   - 依据 Kern `chor216.krn` 对应小节（mm.1–4）：m. 2 低音为小字一组 $B\sharp 3$（`2B#;`）、次中音 $F\sharp 4$（`2f#;`）；m. 3 低音 9 音八度半音下行线条明确记为 $C\sharp 4 \to B3 \to A3 \to G\sharp 3 \to F\sharp 3 \to E3 \to D3 \to C\sharp 3 \to B2$，终落大字组 $A2$；女低音为 $G\sharp 4 \to F\sharp 4 \to G\sharp 4 \to E4$；女高音第 4 拍突发还原音为小字二组 $D5$（`4ddnX`）。通篇八度编号已全部与科学音高记号及 Kern 一致。
 4. **贝多芬 Op. 74 第一乐章源间异读说明（清单 #10）**：
    - 补充说明慢引子开端（mm. 1–9）中 m. 9 第一小提琴花彩首音在 Kern 中记为 E♭5、DCML 记为 E♮5 的源间冲突，指出和声逻辑支持降号（E♭）。
 
