@@ -1,35 +1,27 @@
 # 研究归档：钢琴三重奏的声学掩蔽与织体妥协机制
 
-- **学者**：scholar-c
+- **学者**：scholar-c / scholar-c3（续作收尾）
 - **选题**：钢琴三重奏的声学掩蔽与织体妥协机制（Acoustic Masking and Textural Compromise in the Piano Trio）
 - **所属顶层轴**：`content/ensembles/`（编制轴第二篇）
-- **中心论证**：钢琴三重奏（小提琴、大提琴、钢琴）直面敲击击弦瞬态脉冲（Hammer-string transient attack）与摩擦持续拉弦（Bowed stick-slip sustain）在时域包络与声能上的物理冲突。现代钢琴延音踏板释放整琴共振并在低音区（65–500 Hz）形成强大的泛音掩蔽场，导致大提琴低音 C/G 弦被严重向上掩蔽。大提琴被迫上浮至 A 弦男高音区（G3–A4/C5）突围，但付出了底层低音真空（低音转嫁给衰减的钢琴左手导致连贯性断裂）与频域拥挤（与小提琴下半区频段重叠挤压）的沉重结构代价。贝多芬（Op. 97《大公》）与舒伯特（D. 929）通过钢琴织体的“声学减重”（严控踏板、纵向两极化拉开在中央留出和声真空、改用轻断奏点缀）以及弦乐的平行八度/双音抗衡，维系了室内乐的动态平衡。
+- **中心论证**：钢琴三重奏（小提琴、大提琴、钢琴）直面敲击击弦瞬态脉冲（Hammer-string transient attack）与摩擦持续拉弦（Bowed stick-slip sustain）在时域包络与声能上的物理冲突。现代钢琴延音踏板释放整琴共振并在低音区（65–500 Hz）形成强大的泛音掩蔽场，导致大提琴低音 C/G 弦被严重向上掩蔽。大提琴被迫上浮至男高音区（mm. 3–14 抬升至 G3–E♭4 男高音歌唱区突围，随后自 m. 15 起下潜回落至低音区，实测全段音域 F2–E♭4）突围，但付出了底层低音真空（低音转嫁给衰减的钢琴左手导致连贯性断裂）与频域拥挤（与小提琴下半区频段重叠挤压）的沉重结构代价。贝多芬（Op. 97《大公》）与舒伯特（D. 929）通过钢琴织体的“声学减重”（严控踏板、纵向两极化拉开在中央留出和声真空、改用右手短断奏重复和弦+左手无断奏单音八分点缀）以及弦乐的平行八度/双音抗衡，维系了室内乐的动态平衡。
 - **实际采用的资料范围（严格限制在本地真实研读文献）**：
   - Philharmonia Orchestra 乐器学档案 (`local/resources/text/organized-html/philharmonia/instruments/`)：
-    - `cello.md`：
-      - 行 27：大提琴作为弦乐组中的男高音声部定位（*“The cello is the tenor voice in the string section. It can play an octave lower than the viola...”*）；
-      - 行 29：大提琴多维角色转换（*“With its particularly wide range and powerful sound it can one minute be playing a bass line and the next a melody that is high enough for the rest of the orchestra to move underneath...”*）；
-      - 行 39：四弦纯五度定弦（C, G, D, A）及低音弦阴郁丰厚的音色特性；
-      - 行 45–51：大提琴频率范围实测数据（**65 Hz – 1.0 kHz**）；
-      - 行 55–59：跳弓（Bouncing）共鸣感 vs 贴弦（On the string）力量感发音法对比。
-    - `violin.md`：
-      - 行 35：弦乐器无尽延留的声学本质（*“it is the endless sustain that characterises all string instruments that enables the violins... to create a floating effect”*）；
-      - 行 59–65：小提琴频率范围实测数据（**195 Hz – 1.6 kHz**）与四弦定弦（G, D, A, E）；
-      - 行 69：小提琴高把位敏捷性与低音共鸣。
+    - `cello.md`：大提琴作为弦乐组中的男高音声部定位、多维角色转换、四弦纯五度定弦（C, G, D, A）、65 Hz – 1.0 kHz 实测频率范围与跳弓/贴弦发音法对比；
+    - `violin.md`：弦乐器无尽延留的声学本质、195 Hz – 1.6 kHz 实测频率范围与四弦定弦（G, D, A, E）、小提琴高把位敏捷性与低音共鸣。
   - Alan Belkin: *Artistic Orchestration* (`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)：
-    - 行 137：弦乐同质家族声部交叉与声学融合优势；
-    - 行 572–577：音区规划（Register planning）、泛音列自然展开与刻意在中央留出空隙（Gaps）实现声学分层；
-    - 行 777–787：音响平面（Planes of Tone）与织体融合平衡准则。
+    - Preliminary Considerations: Remarks on Instruments / Strings：弦乐同质家族声部交叉与声学融合优势；
+    - Harmony: Register Planning：音区规划、泛音列自然展开与刻意在中央留出空隙（Gaps）实现声学分层；
+    - Planes of Tone：音响平面理论与织体融合平衡准则。
   - 乐谱文献与作品案例：
-    - 贝多芬（L. v. Beethoven）：《降B大调第7钢琴三重奏“大公”》Op. 97 第一乐章 Allegro moderato（开篇 mm. 1–12，钢琴单音克制呈示与空间留白）；
-    - 舒伯特（F. Schubert）：《降E大调第二钢琴三重奏》D. 929 第二乐章 Andante con moto（开篇 mm. 1–21，大提琴男高音区孤胆歌唱与钢琴点状跳音声学避让）。
+    - 贝多芬（L. v. Beethoven）：《降B大调第7钢琴三重奏“大公”》Op. 97 第一乐章 Allegro moderato（开篇 mm. 1–12，钢琴单音克制呈示与空间留白，单行规范文本占位）；
+    - 舒伯特（F. Schubert）：《降E大调第二钢琴三重奏》D. 929 第二乐章 Andante con moto（开篇 mm. 1–21，大提琴男高音区孤胆歌唱与钢琴点状织体声学避让，已嵌入真实 LilyPond 谱例代码块）。
 - **正文位置**：
   - 正文：`content/ensembles/piano-trio-acoustic-compromise.md`
   - 编制轴目录导引：`content/ensembles/index.md`（更新收录导引）
 - **谱例现状与占位清单**：
-  - 贝多芬 Op. 97 第一乐章 mm. 1–12（声部摘录占位，钢琴 GM 0、小提琴 GM 40、大提琴 GM 42）；
-  - 舒伯特 D. 929 第二乐章 mm. 1–21（声部摘录占位，钢琴 GM 0、大提琴 GM 42、小提琴 GM 40）；
-  - 正文中全部采用符合规范的文本引用块占位，无空 `lilypond` 围栏，确保构建全绿。
+  - 贝多芬 Op. 97 第一乐章 mm. 1–12（单行规范文本占位，已清除 GM 编号与制作过程便签）；
+  - 舒伯特 D. 929 第二乐章 mm. 1–21（已嵌入真实 LilyPond 谱例代码块，校订大提琴音区为 F2–E♭4，伴奏织体为右手断奏和弦+左手单音八分）；
+  - 正文中全部采用符合规范的单行文本占位与正规 LilyPond 围栏，无空 `lilypond` 围栏，确保构建全绿。
 - **工程与内容校验**：
-  - 运行 `node scripts/validate-content.mjs`，通过校验（15 Markdown files, 6 directories, 3 notation blocks, 0 errors）。
-- **状态**：`已成稿，待本批复读`
+  - 运行 `node scripts/validate-content.mjs`，通过校验。
+- **状态**：`第二波修订完成（已改短标题与单行副标题、正文清除所有行号与本地路径为章节名、修正舒伯特 D. 929 音区为 F2–E♭4 并明确 m.15 起下潜回落、修正钢琴织体为右手断奏重复和弦+左手单音八分、删除“稍快板”笔误、单行占位、建立 provenance 来源与谱例表）`
