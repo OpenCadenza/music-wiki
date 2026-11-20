@@ -33,7 +33,7 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 ```
 
 ### 1. 音区分裂公理（The Acoustic Axiom: Three Instruments in One）
-贝尔金在《艺术化配器法》第 7 页（行 152）提出了配器学中至关重要的音区分裂公理：
+贝尔金在《艺术化配器法》（*Artistic Orchestration*）的木管概论（Remarks on Instruments: Woodwind）章节中提出了配器学中至关重要的音区分裂公理：
 > *“A good policy is to consider each woodwind as being three instruments in one: a high, a middle, and a low timbre.”*  
 > （一条极佳的原则是：将每一件木管乐器视为由高、中、低三种完全不同的音色拼合成的三件乐器。）
 
@@ -50,7 +50,7 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 - **强奏吞噬（Forte Explosion）**：若全员写下 *ff*，圆号一发力，其金属共鸣声能足以彻底淹没长笛与单簧管，导致五重奏瞬间变成“圆号独奏附带管乐杂音”。
 
 ### 3. 共振峰冲突与起音包络（Attack Envelope Divergence）
-双簧管强烈的鼻音共振峰使它成为整体和声融合的“破坏性染色源”（贝尔金，行 173：*“The oboe is the instrument most likely to hurt the overall blend. It will definitively color any combination, for better or for worse.”*）。如果双簧管被不加思索地置于和弦中间，其高频共振峰会像刀片一样将和声上下割裂。
+双簧管强烈的鼻音共振峰使它成为整体和声融合的“破坏性染色源”（正如贝尔金所指出的：*“The oboe is the instrument most likely to hurt the overall blend. It will definitively color any combination, for better or for worse.”*）。如果双簧管被不加思索地置于和弦中间，其高频共振峰会像刀片一样将和声上下割裂。
 
 此外，长笛的软起音（Air attack）、单簧管的渐进起音（Tongued reed attack）与双簧管/大管的瞬态爆发起音（Bite attack）在时域包络上完全不同步，导致五部合奏极易出现发音“散焦”。
 
@@ -60,7 +60,7 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 
 当五件异质乐器组合演奏一个五音密集或开放和弦时，如何排布声部决定了和弦是融为一体，还是崩解为五种互不相干的杂音？
 
-贝尔金在《艺术化配器法》第 7–10 页（行 161–177 与图例）系统对比了多管乐和弦排布的三种几何模型：**叠置（Stacking / Juxtaposition）**、**交错（Interlocking / Overlapping）**与**包围（Enclosure）**。这一理论在管乐五重奏中具有至关重要的指导意义。
+贝尔金在《艺术化配器法》（*Artistic Orchestration*）中系统对比了多管乐和弦排布的三种几何模型：**叠置（Stacking / Juxtaposition）**、**交错（Interlocking / Overlapping）**与**包围（Enclosure）**。这一理论在管乐五重奏中具有至关重要的指导意义。
 
 ```
        【模型一：传统叠置 (Stacking)】                 【模型二：交错排布 (Interlocking)】
@@ -89,7 +89,7 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 ### 4. 圆号在中音声部的黄金锚定法则
 圆号在管乐五重奏中不仅是第五个声部，更是**全编制唯一的跨家族声学中介（Acoustic Bridge）**。
 
-贝尔金在《艺术化配器法》第 11–13 页（行 221–231）给出了铜管与圆号写作的核心铁律：
+贝尔金在《艺术化配器法》（*Artistic Orchestration*）的铜管与圆号章节（Remarks on Instruments: Brass & Horns）中给出了核心铁律：
 > *“Horns are best thought of as alto instruments... The best arrangement for horns in harmony is: three or four horns, in close position, in the range of the alto voice.”*  
 > （圆号最适合被理解为女低音/男高音区 [Alto voice] 乐器……在和声中，圆号的最佳排布是置于女低音音区作密集排列。）
 
@@ -143,13 +143,13 @@ description: 深入解构管乐五重奏（长笛、双簧管、单簧管、大�
 
 ---
 
-### 案例二：卡尔·尼尔森（Carl Nielsen）《管乐五重奏》Op. 43 第一乐章（Allegro ben moderato, mm. 1–12）
+### 案例二：卡尔·尼尔森（Carl Nielsen）《管乐五重奏》Op. 43 第一乐章（Allegro ben moderato，mm. 1–11［含 1 拍弱起］）
 **机制：乐器性格拟人化解耦与极弱动态下的声学避让**
 
-20 世纪管乐五重奏的最高峰之一。尼尔森深谙五位乐手的乐器性格差异，在第一乐章开篇展示了现代配器法如何通过声学避让构建室内乐戏剧性：
+20 世纪管乐五重奏的最高峰之一。尼尔森深谙五位乐手的乐器性格差异，在第一乐章开篇展示了现代配器法如何通过声学避让构建室内乐戏剧性（本节谱例实际覆盖印刷谱 mm. 1–11 与 1 拍弱起，共 12 个谱面小节，未收录印本 m. 12）：
 
 - **单簧管夏卢摩区与圆号对话（mm. 1–4）**：乐章开篇由单簧管在低音区（Chalumeau）与圆号低声交涉，大管随后以极弱的断奏加入。长笛与双簧管完全保持休止，完全避开了高频共振峰对幽暗气氛的破坏；
-- **动态避让与进场补偿（mm. 5–12）**：当长笛以弱奏（*p*）接入主题时，圆号立刻收敛为持续的背景极弱踏板长音（*pp*），大管则在中高音区以清脆跳音陪伴，为主部主题创造了通透无阻的声学通道。
+- **动态避让、进场补偿与节拍扩充（mm. 5–11）**：当长笛以弱奏（*p*）接入主题时，圆号立刻收敛为持续的背景极弱踏板长音（*pp*），大管则在中高音区以清脆跳音陪伴，为主部主题创造了通透无阻的声学通道。值得注意的是，在长笛接入后的展开中，第 7 小节由原本的 4/4 拍临时扩充为 5/4 拍（校勘版谱面与实测 XML 一致），为长笛与双簧管的下行模进多留出一拍的呼吸与对位空间，随后第 8 小节旋即回归 4/4 拍。
 ```lilypond title="卡尔·尼尔森 管乐五重奏 Op.43 第一乐章" location="Allegro ben moderato，mm.1–11（含 1 拍弱起）" id="nielsen-op43-i-mm1-11"
 \version "2.26.0"
 \language "english"
@@ -359,14 +359,14 @@ bassoon = {
 
 ## 参考文献与引证索引
 
-1. **Alan Belkin**: *Artistic Orchestration* (本地 OCR 整理稿 `local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)
-   - pp. 7–10（行 150–210）：木管乐器的声学异质性、音区分裂律（“三件乐器合一”）、和弦排布的三种几何模型（叠置、交错与包围）、双簧管的破坏性染色；
-   - pp. 11–13（行 211–263）：铜管组的均质性、圆号中音声部密集排列法则、高低圆号生理分工与自然泛音列遗存。
-2. **Philharmonia Orchestra**: *Instruments Resource Profiles* (`local/resources/text/organized-html/philharmonia/instruments/`)
-   - `flute.md`（行 36–56）：三节金属开管物理构造、三音区频响与声压特性；
-   - `oboe.md`（行 20–36）：窄圆锥双簧管构造、1–3 kHz 鼻音共振峰与低音发音门槛；
-   - `clarinet.md`（行 20–36）：圆柱闭管单簧管物理机制、奇数次泛音与夏卢摩/喉音/克拉里昂三大音区；
-   - `bassoon.md`（行 20–40）：宽圆锥大双簧管构造、双手拇指按键机制与低音蜂鸣特性；
-   - `horn.md`（行 20–40）：270 cm 圆锥铜管声学能量、漏斗号嘴融合度与跨家族中音桥梁属性。
+1. **Alan Belkin**: *Artistic Orchestration*
+   - 木管概论（*Remarks on Instruments: Woodwind*）：木管乐器声学异质性、音区分裂公理（“三件乐器合一”）、多管乐和弦排布的三种几何模型（叠置、交错与包围）、双簧管的破坏性染色效应；
+   - 铜管与圆号（*Remarks on Instruments: Brass & Horns*）：铜管组均质性、圆号中音声部密集排列法则、跨家族声学中介属性与泛音列遗存。
+2. **Philharmonia Orchestra**: *Instruments Resource Profiles*
+   - 长笛（*Flute*）：金属开管物理构造、三音区频响与低音声压级特性；
+   - 双簧管（*Oboe*）：窄圆锥双簧管构造、1–3 kHz 鼻音共振峰与低音起音发音门槛；
+   - 单簧管（*Clarinet*）：圆柱闭管单簧管物理机制、奇数次谐波与三大音区声学分裂；
+   - 大管（*Bassoon*）：宽圆锥大双簧管构造、低音蜂鸣共鸣与中高音紧绷歌唱特质；
+   - 圆号（*French Horn*）：圆锥形铜管声学能量储备、漏斗形号嘴融合度与中音声学粘合机制。
 3. **Anton Reicha**: *Quintet in E-flat major*, Op. 88 No. 2 (1818), Score, I. Lento - Allegro moderato.
 4. **Carl Nielsen**: *Wind Quintet*, Op. 43 (1922), Score, I. Allegro ben moderato.
