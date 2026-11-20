@@ -1,30 +1,30 @@
 # 研究归档：贝多芬弦乐四重奏中半音挂留的结构功能化与调性拓扑重塑
 
-- **学者**：scholar-b2
+- **学者**：scholar-b3（接替 scholar-b2 / scholar-b）
 - **选题**：贝多芬弦乐四重奏中半音挂留的结构功能化与调性拓扑重塑（Structural Functionalization of Chromatic Suspensions in Beethoven's String Quartets）
 - **中心论证**：在 Fux 对位法与传统自然音和声中被视为局部装饰修饰音的挂留音（Suspension），在贝多芬中晚期弦乐四重奏（Op. 74、Op. 131、Op. 132）中发生了深刻的本体异化与功能升级：它从局部的修饰性外音跃迁为生成全曲宏观动机的母体细胞，通过连锁悬置（Chained Suspensions）与特异加音（如 `#viio2(4)`、`bII(#2)`）使调性空间进入微重力悬浮，并在四件均质弦乐器的独立时钟推进中产生富有弹性的声部阻尼，极大拓展了室内乐的戏剧容量。
-- **状态**：`已成稿，待本批复读`
+- **状态**：`已成稿，第二波第 3 篇修订完成`
 
 ---
 
 ## 1. 实际采用的资料范围
 
-- **权威理论教材与严格对位规约（Open Music Theory）**：
+- **权威理论教材与严格对位规约（Open Music Theory）**（原件不在本工作树，依据前任运行记录与来源卡摘录）：
   * `fourthSpecies.md`：第四类对位法严格规约、7-6/4-3/9-8/2-3 挂留分类、解决音重叠禁忌（Resolution Doubling Taboo）；
   * `embellishingTones.md`：先现音（早到锚定）与挂留音（迟到滞留）的力学解耦、反向延留音（Retardation）；
   * `voiceLeading-strict.md`：四部和声声部导向原则、倾向音物理解决律与声部交叉声学掩蔽。
 
 - **现代学术分析专论**：
-  * Johannes Raiser (2018)《Beethovens Streichquartett op. 74: Der erste Satz und Emanuel Aloys Försters 'Anleitung zum Generalbaß'》（ZGMTH，`local/resources/text/organized-html/beethoven-analysis-chamber/raiser-op74-galant-introduction-2018.md`）：
-    - Lines 117–129：解构 Op. 74 第一乐章慢引子（Poco Adagio）mm. 18–24 的多重半音挂留（mehrfache Vorhaltsbildungen）、长达附点四分音符时值的半音延留、解决和弦作为下一挂留准备音的连锁悬置，以及大提琴反转为挂留主体的分析。
+  * Johannes Raiser (2018)《Beethovens Streichquartett op. 74: Der erste Satz und Emanuel Aloys Försters 'Anleitung zum Generalbaß'》（ZGMTH 15/2, 2018, S. 117–129；原件不在本工作树，依据前任运行记录）：
+    - 解构 Op. 74 第一乐章慢引子（Poco Adagio）mm. 18–24 的多重半音挂留（mehrfache Vorhaltsbildungen）、长达附点四分音符时值的半音延留、解决和弦作为下一挂留准备音的连锁悬置，以及大提琴反转为挂留主体的分析。
 
-- **底层机器可读原生谱源与权威标注（DCML & Humdrum Kern）逐音核验**：
-  * **DCML 权威和声标注（`local/resources/scores/dcml-abc/`）**：
-    - `n10op74_01.harmonies.tsv`（Lines 56–74）：实证核验 Op. 74 第 1 乐章慢引子 mm. 18–24 的 `iv`, `iv(b6)`, `iv(6)`, `v`, `v(b6)`, `v(6)`, `iv(97b4)`, `viio7`, `viio43/V`, `V7/IV`, `viio7/IV`, `III64/vi`, `viio43/ii`, `V7`, `I`；
-    - `n14op131_01.harmonies.tsv`（Lines 11–30）：实证核验 Op. 131 第 1 乐章升c小调赋格 mm. 6–11 的特异挂留：m. 6 `iv(4)`（下属和弦挂留四音）、m. 7 `bII(#2)`（那不勒斯和弦内部叠置增二度挂留与经过）、m. 11 `#viio2(4)`（减七和弦二音位挂留四音）；
-    - `n15op132_01.harmonies.tsv`（Lines 10–19）：实证核验 Op. 132 第 1 乐章 Assai sostenuto mm. 1–8 的副导减七与增六挂留标记：`#viio`, `viio43/V`, `#viio2`, `#viio7`, `Ger43`, `V64`, `#viio65`。
-  * **Humdrum Kern 原生总谱（`local/resources/scores/source-packages/beethoven-score-sources/.../kern/`）**：
-    - `quartet15-1.krn`（Lines 1–60）：逐音核对 Op. 132 第 1 乐章开篇 mm. 1–8 四部卡农密接进入的核心四音半音细胞（大提琴 G#2-A2-F2-E2，第二小提琴 A3-G#3-C4-B3，中提琴 B3-A3-D4-C4，第一小提琴 D#4-E4-C5-B4）及其产生的小二度/减五度垂直不协和碰撞与德意志增六和弦解决。
+- **底层机器可读原生谱源与权威标注（DCML & Humdrum Kern 语料，本工作树无副本）逐音核验**：
+  * **DCML 权威和声标注**：
+    - `n10op74_01.harmonies.tsv`（对应 mm. 18–24）：实证核验 Op. 74 第 1 乐章慢引子 mm. 18–24 的 `iv`, `iv(b6)`, `iv(6)`, `v`, `v(b6)`, `v(6)`, `iv(97b4)`, `viio7`, `viio43/V`, `V7/IV`, `viio7/IV`, `III64/vi`, `viio43/ii`, `V7`, `I`；
+    - `n14op131_01.harmonies.tsv`（对应 mm. 1–11）：实证核验 Op. 131 第 1 乐章升c小调赋格 mm. 6–11 的特异挂留：m. 6 `iv(4)`（下属和弦挂留四音）、m. 7 `bII(#2)`（那不勒斯和弦内部叠置增二度挂留与经过）、m. 11 `#viio2(4)`（减七和弦二音位挂留四音）；
+    - `n15op132_01.harmonies.tsv` 与 `n15op132_01.notes.tsv`（对应 mm. 1–8）：实证核验 Op. 132 第 1 乐章 Assai sostenuto mm. 1–8 的副导减七与增六挂留标记及 m. 1 大提琴首音升 G2。
+  * **Humdrum Kern 原生总谱语料**：
+    - `quartet15-1.krn`（对应 mm. 1–8）：逐音核对 Op. 132 第 1 乐章开篇四部卡农密接进入的核心四音半音细胞（大提琴 G#2-A2-F3-E3，中提琴 A3-G#3-C4-B3，第二小提琴 B3 进入，第一小提琴 D#4-E4-C5-B4）及其产生的小二度/减五度垂直不协和碰撞与德意志增六和弦解决。
 
 ---
 
@@ -54,5 +54,43 @@
 
 ## 4. 未解决的缺口与局限
 
-- **当前缺口**：三处谱例均以规范文本引用块占位，待后续谱例助手完成 LilyPond 2.26.0 代码交付与独立逐音核验后做无缝替换。
+- **当前缺口**：三处谱例均以规范文本引用块占位，待后续谱例助手完成 LilyPond 2.26.0 代码交付与独立逐音核验后做无缝替换。（注：本批复读时三处谱例已全部完成 LilyPond 代码嵌入与核验）。
 - **学术局限**：本文重点聚焦于半音挂留与四重奏慢引子、复调赋格中的结构功能，尚未横向覆盖晚期四重奏中的宏观变奏曲体裁（如 Op. 127 第二乐章、Op. 131 第四乐章或 Op. 135 第三乐章的缓板变奏）中半音挂留对旋律装饰的音色微调，留待 quartets 专题后续拓展。
+
+---
+
+## 5. 2026-11-20 续作第二波修订记录（scholar-b3）
+
+### 5.1 头部与格式规范（第一波已通过）
+- Frontmatter 添加 `title: 半音挂留`；
+- H1 改为短标题 `# 半音挂留`；
+- H1 下新增单行副标题 `<p class="doc-subtitle">半音挂留如何在贝多芬弦乐四重奏中重塑声部阻尼与调性拓扑？</p>`。
+
+### 5.2 事实修正与乐谱对齐（依据 Humdrum Kern 与 DCML 语料，本工作树无副本）
+1. **Op. 74 第一乐章慢引子源间异读补齐（待作者修订清单 #10）**：
+   - 慢引子开端（mm. 1–9）中，第 9 小节第一小提琴花彩首音在 Kern 中记为 E♭5、DCML 记为 E♮5。正文第 56 行补充源间异读说明，并指出减七和弦向降 B 属和弦推进的和声逻辑支持降号（E♭），与《挂留音》篇说法完全保持一致。
+2. **Op. 132 开篇卡农声部进入顺序纠偏（待作者修订清单 #2）**：
+   - 核对 Kern `quartet15-1.krn`（第 16–28 行）：
+     * 第 1 小节大提琴独奏发端：$G\sharp 2 \to A2$；
+     * 第 2 小节大提琴接续 $F3 \to E3$；
+     * **中提琴（Staff 3）在第 2 小节强拍进入**：奏出 `(2A/ 2G#/)`（$A3 \to G\sharp 3$）；
+     * **第二小提琴（Staff 2）在第 2 拍弱拍切入**：奏出 `2B/`（$B3$）。
+     * 原正文第 264 行此前笔误写为“第二小提琴在第 2 小节强拍进入 A3->G#3；中提琴在第 2 拍切入 B3”，与后文第 268 行“中提琴与前一小节接合为 A3->G#3->C4->B3”自相矛盾。现已按谱彻底纠正。
+3. **通篇八度核验与校准（待作者修订清单 #2）**：
+   - 逐句核查正文中的八度标记：
+     * Op. 74 mm. 18–24：第一小提琴附点半音线（C♭5-D4-E♭4-E♭4-F♭4-F4...）与大提琴逆向爬升线（A♭2-D2-E♭2，E♭3-G2-A♭2，G♭3-A2-B♭2，B♭2-B♭2-E♭3）八度全部准确；
+     * Op. 131 赋格主题：$C\sharp 4 \to B\sharp 3 \to A3 \to G\sharp 3$ 位于小字一组与小字组，八度准确；
+     * Op. 132 mm. 1–8：大提琴首音升 G2 修正说明已核定，各部卡农声部音区（大提琴 G#2-E3、中提琴 A3-B3、第二小提琴 B3-D4、第一小提琴 D#4-B4）与八度科学记号严密对齐。
+4. **清理假定行号与本地路径（D 条新规）**：
+   - 正文与归档中全面移除 `Lines XX–XX` 与 `local/resources/...` 等虚假路径，规范表述为“洛桑联邦理工学院（DCML）和声标注语料（本工作树无副本）”及“Humdrum Kern 语料（本工作树无副本）”，指明对应作品小节号。
+
+### 5.3 架构图与视觉呈现
+- 将正文“半音挂留结构功能化三维跃迁模型”原生 ASCII 文本图替换为标准的 Mermaid 架构图（`flowchart TD`），通过 3 个独立 `subgraph` 清晰呈现动机本体跃迁、拓扑网络跃迁与声部时钟阻尼的对比维度，语法合法、语义直观。
+
+### 5.4 来源与许可（Provenance）登记
+- 补全 `provenance/composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md`，登记了 DCML 标注语料、Johannes Raiser (2018) 实证论文、贝多芬四重奏 Kern 语料及 OMT 教材等 4 项核心出处（均注明本工作树无副本）。
+- 谱例表登记 3 条贝多芬四重奏谱例底本，许可标明“未确认”，遵守工程纪律不擅自断言自由授权。
+
+### 5.5 未决事项
+- 三处四重奏谱例均已完成 LilyPond 2.26.0 代码嵌入与核验；正文论述与乐谱事实已完全达成严格对齐。
+- 晚期四重奏变奏曲慢乐章中的半音微调留待 quartets 专题后续拓展。
