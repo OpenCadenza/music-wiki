@@ -37,7 +37,7 @@ flowchart TD
 ### 1.1 动机母体化与时值压缩（Diminution）
 慢引子不再由泛化的和声序进充填，而是直接孵化出具有极高性格辨识度的核心微观细胞（2 至 3 个音的音核或特征节奏）。当音乐进入快板时，第一主题绝非凭空出现的崭新乐思，而是将慢引子中的音核以 2 至 4 倍的速率进行**时值压缩（Diminution）**、音程倒影或节拍置换。快板主部的狂暴奔流，本质上是慢引子潜在势能的瞬间动能释放。
 
-正如前篇[《混合乐段与古典主题句法的多维解耦》](../../../techniques/structure/hybrid-themes-and-syntax-decoupling.md)所指出的动机与和声功能解耦，在这里，贝多芬更进一步将**“主题动机材料”与“表层速度/节拍容器”彻底解耦**——同一套音程基因，既能在极慢的速度下表现为沉重的叹息，也能在极快的速度下化作烈火般的突进。
+正如前篇[《混合乐段》](../../../techniques/structure/hybrid-themes-and-syntax-decoupling.md)所指出的动机与和声功能解耦，在这里，贝多芬更进一步将**“主题动机材料”与“表层速度/节拍容器”彻底解耦**——同一套音程基因，既能在极慢的速度下表现为沉重的叹息，也能在极快的速度下化作烈火般的突进。
 
 ### 1.2 跨越曲式边界的暴力内嵌（Dramatic Intrusion）
 在传统奏鸣曲式中，呈示部末尾、展开部起点与再现部收束是结构铰链的最强支撑点。贝多芬最激进的发明，是在这些关键节点上，**断然切断正在狂飙突进的快板物理时间，以原速（Tempo I）强行召回慢引子材料**。
@@ -69,7 +69,7 @@ flowchart TD
 > **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《c小调第8钢琴奏鸣曲“悲怆”》Op. 13，第一乐章 Grave - Allegro di molto e con brio
 > - **小节范围**：mm. 1–19（开端 Grave 动机向 Allegro 主部第一主题的裂变衔接）
-> - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
+> - **声部编制**：钢琴双手（Acoustic Grand Piano）
 > - **调性与拍号**：c 小调，Grave 4/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–10 慢引子（双重附点、减七和弦与六度跳跃叹息动机）；mm. 11–19 快板主部呈示（低音颤音，高音以 4 倍时值压缩倒影引子动机形成飞驰第一主题）
 
@@ -231,7 +231,7 @@ U = \tweak Stem.direction #UP \etc
 > **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《降E大调第26钢琴奏鸣曲“告别”》Op. 81a，第一乐章 Adagio - Allegro
 > - **小节范围**：mm. 1–25
-> - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
+> - **声部编制**：钢琴双手（Acoustic Grand Piano）
 > - **调性与拍号**：降 E 大调，Adagio 2/4 拍 $\rightarrow$ Allegro 2/2 拍
 > - **结构说明**：mm. 1–4 “Le-be-wohl” 下行三音级动机（$\hat{8}-\hat{7}-\hat{6}$）及落入 vi 级阻碍和弦；mm. 17–25 快板启动，告别动机时值压缩为切分跳跃演化为主部第一主题
 
@@ -375,14 +375,14 @@ U = \tweak Stem.direction #UP \etc
 
 当引子在低音震音的蓄能达到绝对饱和时，m. 19 爆发出的 Allegro con brio ed appassionato 第一主题，展现了晚期贝多芬对古典主调曲式与巴赫复调对位的最高综合：
 - 第一主题那棱角分明、如同花岗岩雕刻般的乐思（$\text{C} - \text{Eb} - \text{B} - \text{C} - \text{A} - \text{Ab}$），**正是 Maestoso 开端减七和弦大跳的纯对位结晶**；
-- 随后，这一主题不再以常规的乐段或乐句展开，而是直接以凶悍无情的**二重赋格（Double Fugue）**展开各声部模仿对决（正如 scholar-b2 在[《对位中的挂留延留力学》](../../../techniques/counterpoint/suspension-mechanics-and-voice-leading.md)中所揭示的声部张力网络）。
+- 随后，这一主题不再以常规的乐段或乐句展开，而是直接以凶悍无情的**二重赋格（Double Fugue）**展开各声部模仿对决（正如[《挂留音》](../../../techniques/counterpoint/suspension-mechanics-and-voice-leading.md)中所揭示的声部张力网络）。
 
 在 Op. 111 中，慢引子与快板主部已融为一体，成为了不可分割的“意志搏斗本体”——唯有历经第一乐章慢引子与赋格快板在 c 小调地狱中的惨烈搏杀，第二乐章 Arietta 那神圣超验的 C 大调净土才具有说服全人类的救赎力量。
 
 > **谱例定位**
 > - **作品**：路德维希·凡·贝多芬《c小调第32钢琴奏鸣曲》Op. 111，第一乐章 Maestoso - Allegro con brio ed appassionato
 > - **小节范围**：mm. 1–25
-> - **声部编制与 GM 编号**：钢琴双手（GM 0: Acoustic Grand Piano）
+> - **声部编制**：钢琴双手（Acoustic Grand Piano）
 > - **调性与拍号**：c 小调，Maestoso 4/4 拍 $\rightarrow$ Allegro 也是 4/4 拍（全乐章只有一个拍号，速度加快而拍号不变）
 > - **结构说明**：mm. 1–5 Maestoso 极端强奏减七和弦大跳与附点下坠；mm. 11–16 低音区持续神秘震音蓄能；mm. 19–25 Allegro 爆发，减七跳跃动机裂变为赋格化主部主题
 
