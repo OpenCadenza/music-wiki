@@ -22,15 +22,16 @@ tags:
 
 ## 一、配器变换速率（Rate of Orchestral Change）与结构张力
 
-配器不仅关乎纵向空间的织体厚薄，更关乎横向时间流中的**色彩更替频次**。加拿大作曲家兼配器理论家阿兰·贝尔金（Alan Belkin）在其《艺术化配器法》（*Artistic Orchestration*，pp. 21–23，约行 430–453）中指出，配器变换的快慢直接调控着作品的结构呼吸与情感张力。
+配器不仅关乎纵向空间的织体厚薄，更关乎横向时间流中的**色彩更替频次**。加拿大作曲家兼配器理论家阿兰·贝尔金（Alan Belkin）在其《艺术化配器法》（*Artistic Orchestration*）的“配器变换速率”（Rate of Orchestral Change, pp. 21–23）一章中指出，配器变换的快慢直接调控着作品的结构呼吸与情感张力。
 
-```
-       【低频配器变换速率 (Low Rate)】                 【高频配器变换速率 (High Rate)】
-       ───────────────┬───────────────                 ───────────────┬───────────────
-                      ▼                                               ▼
-       • 长期拘囿于单一家族或同质织体                 • 短时间内频繁切换乐器组与发音法
-       • 听觉心理：崇高、肃穆、沉思、宏大连续性       • 听觉心理：神经质、惊疑、焦虑、戏剧性交锋
-       • 典型场景：悲剧缓板、赞美诗、冥想性呈示       • 典型场景：诙谐曲、展开部破裂对冲、危机时刻
+```mermaid
+flowchart TD
+    subgraph Low ["低频配器变换速率 (Low Rate)"]
+        L1["• 长期拘囿于单一家族或同质织体<br>• 听觉感知：崇高、肃穆、沉思、宏大连续性<br>• 典型场景：悲剧缓板、赞美诗、冥想性呈示"]
+    end
+    subgraph High ["高频配器变换速率 (High Rate)"]
+        H1["• 短时间内频繁切换乐器组与发音法<br>• 听觉感知：神经质、惊疑、焦虑、戏剧性交锋<br>• 典型场景：诙谐曲、展开部破裂对冲、危机时刻"]
+    end
 ```
 
 ### 1. 低频变换速率：宏大连续性的构建
@@ -45,11 +46,11 @@ tags:
 
 ## 二、贝尔金的五级音色对比阶梯（Scales of Contrast）
 
-如何精准掌控曲式切分的尺度？贝尔金提出了著名的配器公理（*Artistic Orchestration*，行 456）：
+如何精准掌控曲式切分的尺度？贝尔金在讨论音色连续性与对比度时提出了著名的配器公理（*Artistic Orchestration*，"Degree of continuity/contrast of timbre" 一章）：
 > **“音色变化的幅度必须与曲式所需的对比度精确匹配：大乐段的分界需要比乐句内动机更强烈的配器对比。音色深刻影响着对音乐曲式的感知：过大的对比会造成不恰当的音乐断裂；过小的对比则会剥夺音乐必要的标点感。”**  
 > (*The degree of timbral change must correspond to the degree of formal contrast required: A major section break requires more orchestral contrast than a new motive within a phrase. Timbre strongly affects the perception of musical form: Too great a contrast will create an inappropriate break in the music; too small a contrast will deprive the music of necessary punctuation.*)
 
-为了提供可量化的评估准则，贝尔金在假设旋律线完全相同的前提下，根据乐器发声机理、泛音结构与垂直融合能力，将前后相继出现的两个音色之间的感知反差划分为**五级对比阶梯（Group 1 至 Group 5）**（行 468–507）：
+为了提供可量化的评估准则，贝尔金在假设旋律线完全相同的前提下，根据乐器发声机理、泛音结构与垂直融合能力，将前后相继出现的两个音色之间的感知反差划分为**五级对比阶梯（Group 1 至 Group 5）**：
 
 | 对比等级 | 感知强度 | 乐器交接典型场景 | 推荐对应的曲式功能 |
 | :--- | :--- | :--- | :--- |
@@ -65,27 +66,25 @@ tags:
 
 在运用音色对比构建曲式时，创作者与生成模型最易陷入两极化的陷阱：
 
-```
-                    ┌─────────────────────────┐
-                    │    配器标点的失衡形态   │
-                    └────────────┬────────────┘
-         ┌───────────────────────┴───────────────────────┐
-         ▼                                               ▼
- 【陷阱一：过度对比 (Over-contrast)】             【陷阱二：过弱对比 (Under-contrast)】
- 在乐句内微观变奏时采用 Group 3/4 跃迁            在进入大型副部或展开部时音色完全不刷新
- 导致旋律线条破碎，造成无逻辑的结构脱节          导致曲式边界混沌平庸，丧失建筑分界感
+```mermaid
+flowchart TD
+    Trap["配器标点的失衡形态"]
+    Over["【陷阱一：过度对比 (Over-contrast)】<br>• 在乐句内微观变奏时误用 Group 3/4 剧烈跃迁<br>• 导致旋律线条破碎，造成无逻辑的结构脱节"]
+    Under["【陷阱二：过弱对比 (Under-contrast)】<br>• 在进入大型副部或展开部时音色完全不刷新<br>• 导致曲式边界混沌平庸，丧失建筑分界感"]
+    Trap --> Over
+    Trap --> Under
 ```
 
 ### 1. 背景恒定效应（Background Constancy）
-贝尔金指出了一条重要的声学掩蔽与中和原理（行 514）：**如果多声部织体中的背景伴奏平面保持完全不变，那么前景旋律即使发生音色更替，其实际感知到的对比度也会被大幅削弱。**
+贝尔金在解析旋律与伴奏的相对对比时指出了一条重要的声学掩蔽与中和原理：**如果多声部织体中的背景伴奏平面保持完全不变，那么前景旋律即使发生音色更替，其实际感知到的对比度也会被大幅削弱。**
 - *创作应用*：若希望在乐段之间实现平滑过渡，可以让大提琴或弦乐长音伴奏横跨乐段边界，而仅在上方更替独奏木管（如长笛切换为双簧管）；若希望实现刀削般的曲式切分，则前景与背景必须**同步进行家族级音色突变**。
 
 ### 2. 混合音色的“钝化”风险（The Blunting of Mixed Timbres）
-大量使用混合音色（Mixed timbres，例如长笛与双簧管齐奏、单簧管与圆号齐奏）虽然能获得丰厚的厚度，但由于复合音色失去了单一乐器锋利的声学轮廓，长期使用会导致随后的**曲式大对比难以产生冲击力**（行 516）。卓越的配器大师往往在关键对比到来前，先将乐队还原为纯净的独奏单一色彩。
+大量使用混合音色（Mixed timbres，例如长笛与双簧管齐奏、单簧管与圆号齐奏）虽然能获得丰厚的厚度，但由于复合音色失去了单一乐器锋利的声学轮廓，长期使用会导致随后的**曲式大对比难以产生冲击力**。贝尔金特别强调，卓越的配器大师往往在关键对比到来前，先将乐队还原为纯净的独奏单一色彩。
 
 ### 3. 大全奏到极弱的听觉适应缓冲（强奏乐器延留现象）
-贝尔金在行 518 强调了人类听觉的物理适应机制：**在经历高能量的强奏全奏（Tutti *ff*）后，人耳鼓膜与神经需要数个节拍的恢复时间。若音乐立刻无缓冲地切入极弱（*p*），最初的数个弱奏音符往往会被耳朵完全漏听。**
-- *工程规范*：从全奏突然刹车到室内乐弱奏时，可采用贝尔金所述现象（行 518：*one or two instruments will be held over from the fortissimo passage for a few beats*，下文称 holdover／延留），由一至两件中音域乐器在强奏收尾处保留半拍至一拍的极弱持续长音，充当听觉缓冲垫。
+贝尔金在讨论极端动态落差时强调了人类听觉的物理适应机制：**在经历高能量的强奏全奏（Tutti *ff*）后，人耳鼓膜与神经需要数个节拍的恢复时间。若音乐立刻无缓冲地切入极弱（*p*），最初的数个弱奏音符往往会被耳朵完全漏听。**
+- *工程规范*：从全奏突然刹车到室内乐弱奏时，可采用贝尔金所述的强奏延留机制（*one or two instruments will be held over from the fortissimo passage for a few beats*，下文称 holdover／延留），由一至两件中音域乐器在强奏收尾处保留半拍至一拍的极弱持续长音，充当听觉缓冲垫。
 
 ---
 
@@ -108,7 +107,7 @@ tags:
 ### 案例二：贝多芬《第九交响曲》Op. 125 第一乐章开篇（mm. 1–35）
 **机制：阶梯式渐强（Graduated Crescendo）与音色密度累加**
 
-贝多芬在《第九交响曲》开篇确立了管弦乐由混沌走向爆发的原型范式，贝尔金在行 534–547 中特别将其作为配器驱动渐强的最高典范：
+贝多芬在《第九交响曲》开篇确立了管弦乐由混沌走向爆发的原型范式，贝尔金在分析乐句结构配器时特别将其作为配器驱动渐强（Graduated Crescendo）的最高典范：
 
 - **混沌起步（mm. 1–15）**：只有圆号长音震音与第一、第二小提琴在微弱的 *pp* 中奏出空五度颤动（A-E），缺乏明确的三音，音色呈现极度原始、空旷的半透明态；
 - **乐器逐级叠加入场**：贝多芬并未一次性推大力度，而是按照声学音区与色彩张力，极其严整地逐次加入声部——**大提琴/低音提琴（低音下坠）→ 中提琴 → 单簧管 → 双簧管 → 长笛 → 大管**；
@@ -138,27 +137,11 @@ tags:
 
 在多轨生成模型或音乐创作 Agent（经由 OpenViking 检索与调用）进行管弦乐时间轴配器规划时，可执行以下**算法化编配决策流程**：
 
-```
-                    ┌──────────────────────────────┐
-                    │ 输入：曲式边界层级 (Level)   │
-                    │       (动机/乐句/乐段/部类)  │
-                    └──────────────┬───────────────┘
-                                   ▼
-                   【Step 1: 确定音色对比目标等级】
-                   • 乐句内部动机微调 ───► 选用 Group 1 (同家族/相邻弦乐)
-                   • 平行乐段/后句呼应 ──► 选用 Group 2 (同亚家族/融合木管)
-                   • 主副部呈示/展开切分 ─► 选用 Group 3 (异质管弦交替)
-                   • 惊愕停顿/戏剧转折 ──► 选用 Group 4 (arco / pizz 突变)
-                                   ▼
-                   【Step 2: 设定配器变换速率 (Rate of Change)】
-                   • 抒情/宏大/肃穆 ─────► 低频变换 (长时段保留在同家族)
-                   • 诙谐/冲突/危机 ─────► 高频变换 (以小节为单位交替)
-                   • 渐强高潮攀升 ───────► 阶梯添加律 (按音区与饱和度递增)
-                                   ▼
-                   【Step 3: 声学连续性与缓冲检验】
-                   • 弱音承接检查：若从 Tutti ff 突变至 p，是否设置了强奏延留音 (held over / holdover)？
-                   • 过度对比检查：乐句内部旋律是否误用了 Group 3/4 导致线条撕裂？
-                   • 混合音色反思：是否连续多段使用复合木管导致随后的曲式大对比丧失锋芒？
+```mermaid
+flowchart TD
+    In["输入：曲式边界层级 (Level)<br>(动机 / 乐句 / 乐段 / 部类)"] --> S1["【Step 1: 确定音色对比目标等级】<br>• 乐句内部动机微调 ──► 选用 Group 1 (同家族/相邻弦乐)<br>• 平行乐段/后句呼应 ──► 选用 Group 2 (同亚家族/融合木管)<br>• 主副部呈示/展开切分 ──► 选用 Group 3 (异质管弦交替)<br>• 惊愕停顿/戏剧转折 ──► 选用 Group 4 (arco / pizz 突变)"]
+    S1 --> S2["【Step 2: 设定配器变换速率 (Rate of Change)】<br>• 抒情/宏大/肃穆 ──► 低频变换 (长时段保留在同家族)<br>• 诙谐/冲突/危机 ──► 高频变换 (以小节为单位交替)<br>• 渐强高潮攀升 ──► 阶梯添加律 (按音区与饱和度递增)"]
+    S2 --> S3["【Step 3: 声学连续性与缓冲检验】<br>• 弱音承接检查：若从 Tutti ff 突变至 p，是否设置了强奏延留音 (holdover)？<br>• 过度对比检查：乐句内部旋律是否误用了 Group 3/4 导致线条撕裂？<br>• 混合音色反思：是否连续多段使用复合木管导致随后的曲式大对比钝化？"]
 ```
 
 ### 创作 Agent 编配时间轴检查清单（Checklist）
@@ -169,10 +152,7 @@ tags:
 
 ---
 
-## 参考文献与资料索引
+## 参考文献与出处指引
 
-- **Alan Belkin**: *Artistic Orchestration*, Chapters: "Rate of Orchestral Change" (pp. 21–23), "Degree of continuity/contrast of timbre" (pp. 23–25), "Interpreting the phrasing" (pp. 25–27). 本地 OCR 整理稿：`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`
-- **Philharmonia Orchestra**: *Instrument Guides* (`local/resources/text/organized-html/philharmonia/instruments/`):
-  - `clarinet.md`: 单簧管三大音区（Chalumeau、Throat tones、Clarion）的发音物理与色彩反差；
-  - `flute.md`: 长笛低音区的空气感天鹅绒质地与高音区银色穿透力；
-  - `violin.md`: 拉弦（arco）与拨弦（pizzicato）在起音物理包络上的根本突变。
+- **Alan Belkin**: *Artistic Orchestration*, Chapters: "Rate of Orchestral Change" (pp. 21–23), "Degree of continuity/contrast of timbre" (pp. 23–25), "Interpreting the phrasing" (pp. 25–27).
+- **Philharmonia Orchestra**: *Instrument Guides* (Clarinet, Flute, Violin).
