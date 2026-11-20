@@ -41,11 +41,11 @@ description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介�
 ### 1. 时域包络与单音微积分塑形
 任何发音机制在时域（Time Domain）上都呈现为独特的包络（Envelope: Attack, Decay, Sustain, Release）。
 - **击弦键盘（钢琴）**：琴槌击打琴弦的物理接触时间仅为数毫秒，产生能量极高、上升沿极陡峭的瞬态冲量（Transient spike），但随后立刻进入不可逆的指数级声能衰减。钢琴家一旦按下琴键，便无法对正在发响的声音施加任何持续能量补给或音色微调。因此，**钢琴天然催生具有垂直敲击重力、大跨度琶音流动与多和声层叠加的乐思**。
-- **摩擦弦乐（提琴家族）**：正如 Philharmonia 乐器档案（`local/resources/text/organized-html/philharmonia/instruments/violin.md` 第 35 行）所指出：*“it is the endless sustain that characterises all string instruments that enables the violins... to create a floating effect”*（正是所有弦乐器所特有的无尽延留，赋予了小提琴创造漂浮音响的能力）。弓毛与琴弦的粘滞-滑移摩擦允许演奏者在**单音持续过程中（Sustain phase）完成微积分级别的力度膨胀（Crescendo within a single note）、音色明暗渐变与揉弦调制**。因此，依赖细微气息与长弓拉伸的抒情长线条乐思，一旦移植到钢琴上，必然因为琴键击响后的能量快速流失而产生声学断层。
+- **摩擦弦乐（提琴家族）**：正如爱乐乐团（Philharmonia Orchestra）乐器指南关于小提琴音响特质的论述所指出：*“it is the endless sustain that characterises all string instruments that enables the violins... to create a floating effect”*（正是所有弦乐器所特有的无尽延留，赋予了小提琴创造漂浮音响的能力）。弓毛与琴弦的粘滞-滑移摩擦允许演奏者在**单音持续过程中（Sustain phase）完成微积分级别的力度膨胀（Crescendo within a single note）、音色明暗渐变与揉弦调制**。因此，依赖细微气息与长弓拉伸的抒情长线条乐思，一旦移植到钢琴上，必然因为琴键击响后的能量快速流失而产生声学断层。
 
 ### 2. 声部交叉容忍度（Voice Crossing Tolerance）
 在多声部复调与交响化织体中，声部是否允许自由交叉，完全受制于编制的物理均质性。
-- 阿兰·贝尔金（Alan Belkin）在《艺术化配器法》（`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md` 第 137 行）明确论断：*“Unlike choral writing, string writing normally abounds in crossing... Given the easy blend within the family, such crossing creates no special problems.”*（与声乐合唱不同，弦乐写作通常充满了声部交叉……鉴于弦乐家族内部极易实现自然融合，这种交叉不会引发任何特殊问题）。弦乐四重奏凭借高度同质的共鸣箱与泛音激发，二提琴可以毫无阻碍地穿透一提琴，中提琴亦可自由上浮越过二提琴。
+- 阿兰·贝尔金（Alan Belkin）在《艺术化配器法》（Preliminary Considerations: Remarks on Instruments / Strings）中明确论断：*“Unlike choral writing, string writing normally abounds in crossing... Given the easy blend within the family, such crossing creates no special problems.”*（与声乐合唱不同，弦乐写作通常充满了声部交叉……鉴于弦乐家族内部极易实现自然融合，这种交叉不会引发任何特殊问题）。弦乐四重奏凭借高度同质的共鸣箱与泛音激发，二提琴可以毫无阻碍地穿透一提琴，中提琴亦可自由上浮越过二提琴。
 - **然而在异质管乐五重奏中**，如果让双簧管与长笛、或单簧管与大管发生声部交叉，由于两者共振峰结构与动态曲线截然相反（双簧管低音强硬而长笛低音极弱），声部交叉会直接造成**音色断层撕裂与感知混淆**；
 - **在钢琴上**，由于两手处于同一键盘平面，频繁的深层声部交叉不仅受到手指物理碰撞的生理制约，更会因为同键共振而造成声部独立性的彻底丧失。
 
@@ -57,7 +57,7 @@ description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介�
 
 音乐史上最严谨、最具有教科书意义的跨媒介转译范例，莫过于**路德维希·凡·贝多芬（Ludwig van Beethoven）将其《E大调第九钢琴奏鸣曲》Op. 14 No. 1（1798）亲自改编为《F大调弦乐四重奏》Hess 34（1801–1802）**。
 
-在音乐文献中，常有关于“钢琴曲主题大多难以直接移植到弦乐器”的转述说法；而从声学物理机制审视，这一转译确实面临深刻的介质冲突：若要将钢琴作品重构为弦乐四重奏，核心并不在于音符的平移，而在于彻底剔除专属于键盘物理特性的织体（如击弦衰减、踏板混响与音区跳跃），并将其重塑为符合摩擦弦发音机制与声部对位逻辑的弦乐语言。
+在音乐文献中，常有关于钢琴曲主题大多难以直接移植到弦乐器的转述说法（本库未核对原文）；而从声学物理机制审视，这一转译确实面临深刻的介质冲突：若要将钢琴作品重构为弦乐四重奏，核心并不在于音符的平移，而在于彻底剔除专属于键盘物理特性的织体（如击弦衰减、踏板混响与音区跳跃），并将其重塑为符合摩擦弦发音机制与声部对位逻辑的弦乐语言。
 
 ```
                     ┌─────────────────────────────────────────────────────────┐
@@ -76,7 +76,7 @@ description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介�
 
 ### 1. 调性升半音的声学物理奥秘（E大调 $\to$ F大调）
 钢琴作为十二平均律固定音高击弦乐器，调性转换主要涉及黑白键触键手感与指法便利；但对于提琴家族，**调性直接决定了空弦共振（Open-string resonance）与共鸣箱的物理响应**。
-- 小提琴定弦为 G3-D4-A4-E5，中提琴为 C3-G3-D4-A4，大提琴为 C2-G2-D3-A3（Philharmonia `cello.md` 第 39 行，`violin.md` 第 61 行）；
+- 小提琴定弦为 G3-D4-A4-E5，中提琴为 C3-G3-D4-A4，大提琴为 C2-G2-D3-A3（依据爱乐乐团乐器指南中的大提琴与小提琴定弦记录）；
 - 在 **E 大调** 中，大提琴与中提琴的低音空弦 **C** 与 **G** 均无法作为稳定和声根音或五音使用，全编制只能依靠紧绷的手指按弦。这导致弦乐四重奏共鸣箱的自发交感共振被严重抑制，声音干瘪闭塞；
 - 贝多芬果断将全曲整体**向上拔高半音改用 F 大调**：移调彻底重构了空弦音在调内的结构功能。F 大调的主和弦与属和弦（F–A–C 与 C–E–G）能够直接借由中提琴与小提琴的 C 弦、G 弦激发出丰富的交感空弦泛音共振，使整个四重奏声场呈现出通透、宽广的自然声学共鸣。
 
@@ -95,8 +95,8 @@ description: 深入解构音乐创作中乐思（Motivic Idea）与编制媒介�
 >   - 原版：Ludwig van Beethoven - Piano Sonata No. 9 in E major, Op. 14 No. 1, I. Allegro, mm. 1–16
 >   - 改编版：Ludwig van Beethoven - String Quartet in F major, Hess 34 (Arrangement of Op. 14 No. 1), I. Allegro moderato, mm. 1–16
 > - **声学转译特征**：
->   - 原版钢琴为 E 大调，左手阿尔贝蒂八分音符分解和弦（GM 0）；
->   - 四重奏版移至 F 大调（激活提琴空弦泛音体系）；第一小提琴（GM 40）将钢琴单薄的高音骨架扩展为宽广抒情线条；第二小提琴（GM 40）与中提琴（GM 41）舍弃分解音，重构为双音连奏衬托与模仿对位；大提琴（GM 42）提供低音支点。
+>   - 原版钢琴为 E 大调，左手阿尔贝蒂八分音符分解和弦；
+>   - 四重奏版移至 F 大调（激活提琴空弦泛音体系）；第一小提琴将钢琴单薄的高音骨架扩展为宽广抒情线条；第二小提琴与中提琴舍弃分解音，重构为双音连奏衬托与模仿对位；大提琴提供低音支点。
 > - **收录情况**：仅收录钢琴原作 Op. 14 No. 1 的开篇；改编版 Hess 34 暂无可靠机器可读源，未收录（正文对其音区、空弦与织体重构的分析依据版本记述与原文描述）。
 
 ```lilypond title="贝多芬 Op.14 No.1 第一乐章" location="Allegro，mm.1–16" id="beethoven-op14no1-i-mm1-16"
@@ -235,22 +235,15 @@ lhLower = {
 在《大公三重奏》开篇（mm. 1–12），钢琴在没有弦乐介入的情况下独奏呈示了壮丽的主题：
 - **乐思结构**：宽广的降 B 大调主和弦柱状分解，左手深沉浑厚的八度低音跨越至右手开阔的旋律声部，跨度超过三个八度；
 - **声学必要性**：这一乐思必须依靠**现代钢琴强大的金属框架、击弦瞬态冲量与延音踏板释放的 88 组琴弦交感共鸣**才能获得其崇高威严的宏大体量。
-- **排他性验证**：如果尝试将这一段开篇交由弦乐四重奏演奏，四件摩擦弦乐器即便全力强奏，由于缺乏击弦瞬间那种垂直的骨架敲击感与低音踏板泛音场，整个主题听起来会显得臃肿而迟滞，失去原作那种“大理石雕塑般”的巍峨感。关于《大公三重奏》钢琴如何通过织体声学减重为弦乐让渡声学通道，可详见本专题文章 [钢琴三重奏的声学掩蔽与织体妥协机制](piano-trio-acoustic-compromise.md)。
+- **排他性验证**：如果尝试将这一段开篇交由弦乐四重奏演奏，四件摩擦弦乐器即便全力强奏，由于缺乏击弦瞬间那种垂直的骨架敲击感与低音踏板泛音场，整个主题听起来会显得臃肿而迟滞，失去原作那种“大理石雕塑般”的巍峨感。关于《大公三重奏》钢琴如何通过织体声学减重为弦乐让渡声学通道，可详见本专题文章 [钢琴三重奏](piano-trio-acoustic-compromise.md)。
 
 ### 2. 微积分极弱沉思与摩擦无尽延留：Op. 135 第三乐章
 反之，审视贝多芬晚期《F大调第16弦乐四重奏》Op. 135 第三乐章（Lento assai, cantante e tranquillo，mm. 1–12）：
 - **乐思结构**：密集排列的降 D 大调四部和声，极度弱奏（*sotto voce / pp*），第一小提琴在微弱的运弓中展开如同人类叹息般的平滑级进；
-- **声学必要性**：四条声部完全共享相同的提琴共鸣箱物理机制，正如阿兰·贝尔金在行 787 所论述的音响平面完美融合的条件。这种极弱的崇高感要求**绝对平稳的马毛贴弦摩擦、不可被打断的无尽延留、以及四个声部在微观时域上的呼吸同步**。相关弦乐四重奏声部同质性与均质双刃剑分析，可参见 [弦乐四重奏的声学同质性与声部角色解耦机制](string-quartet-acoustic-role-differentiation.md)；而该作品第四乐章中的微观动机几何变换，亦可参见 [核心细胞的倒影变形与和声再语境化机制](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)。
+- **声学必要性**：四条声部完全共享相同的提琴共鸣箱物理机制，正如阿兰·贝尔金在《艺术化配器法》（Planes of Tone: Definition and Blend）中所论述的音响平面完美融合条件。这种极弱的崇高感要求**绝对平稳的马毛贴弦摩擦、不可被打断的无尽延留、以及四个声部在微观时域上的呼吸同步**。相关弦乐四重奏声部同质性与均质双刃剑分析，可参见 [弦乐四重奏](string-quartet-acoustic-role-differentiation.md)；而该作品第四乐章中的微观动机几何变换，亦可参见 [动机倒影](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)。
 - **排他性验证**：如果将这个乐思移植到含钢琴的编制中，无论钢琴家触键多么轻柔，琴槌击弦所固有的微小机械噪音与瞬态脉冲都会无情地撕裂这层由摩擦弦织就的无缝和声薄雾；而钢琴音符随后的快速衰减，更会破坏长线条叹息所依赖的物理张力。
 
-> **动机分流对照例证 2：贝多芬 Op. 97（钢琴三重奏）与 Op. 135（弦乐四重奏）开篇动机对比**
-> - **作品定位**：
->   - 案例 A：Ludwig van Beethoven - Piano Trio in B-flat major, Op. 97 ("Archduke"), I. Allegro moderato, mm. 1–12（钢琴 solo 呈示宏伟主题，双手跨越三八度，踏板泛音场支撑）
->   - 案例 B：Ludwig van Beethoven - String Quartet No. 16 in F major, Op. 135, III. Lento assai, cantante e tranquillo, mm. 1–12（四把摩擦弦极弱 sotto voce / pp 密集排列，无尽延留构建均质神圣空间）
-> - **编制声学排他性**：
->   - Op. 97 依赖击弦瞬态冲量与踏板共鸣，移至纯弦乐丧失结构重力；
->   - Op. 135 依赖摩擦发音微积分控制与无尽延留，移至键盘必因衰减断层而破碎。
-> - **交付状态**：规范文本引用块占位，待后续谱例助手完成对比切片排版。
+贝多芬《大公三重奏》Op. 97 第一乐章 Allegro moderato，mm. 1–12；第 16 弦乐四重奏 Op. 135 第三乐章 Lento assai, cantante e tranquillo，mm. 1–12
 
 ---
 
@@ -328,7 +321,7 @@ lhLower = {
 2. **规约二：虚拟声部实体化原则（Pseudo-Polyphony Realization）**
    - 键盘乐器单手利用击弦衰减与延音踏板伪造的伴奏织体（如阿尔贝蒂低音、单手八度震音），转译至多乐器重奏时，禁止直接指派某一乐器机械单音模仿。必须将其“脱水”解构为：一组乐器的持续双音长弓和声垫 + 另一乐器的反向对位线条或点状节奏标记。
 3. **规约三：衰减平面运动化补偿（Decay-to-Movement Compensation）**
-   - 当弦乐或管乐的长音持续旋律转译至键盘乐器时，由于击弦衰减无法维系长达数秒的饱满张力，禁止干瘪单音长按。必须将静态长音转化为**运动平面（Movement Plane，Belkin 行 820–845）**——如装饰性颤音（Trill）、分解和弦回旋、或弱拍切分脉冲，通过增加声能撞击频次来补偿时域声压的流失。
+   - 当弦乐或管乐的长音持续旋律转译至键盘乐器时，由于击弦衰减无法维系长达数秒的饱满张力，禁止干瘪单音长按。必须将静态长音转化为**运动平面（Movement Plane，参见 Belkin 关于背景织体运动型的论述）**——如装饰性颤音（Trill）、分解和弦回旋、或弱拍切分脉冲，通过增加声能撞击频次来补偿时域声压的流失。
 4. **规约四：动态剪刀差发音法补偿（Articulation Compensation）**
    - 当依赖音色剧烈异质性（如长笛对大管）的乐思转译至同质均质编制（如弦乐四重奏）时，原有的色彩剪刀差瞬间归零。此时必须通过**发音法的三维分层**进行声学补偿：旋律声部采用深沉贴弦长弓（On-the-string Legato），伴奏声部强制改用离弦轻跳弓（Spiccato / Bouncing）或点状拨弦（Pizzicato），以人工制造微观动态剪刀差。
 
@@ -346,17 +339,17 @@ lhLower = {
 
 ## 参考文献与资料索引
 
-1. **Alan Belkin**: *Artistic Orchestration* (本地 OCR 整理稿 `local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)\\
-   - 行 137：弦乐同质家族内声部交叉的自由度与声学融合，对比声乐与键盘；
-   - 行 572–577：音区规划（Register planning）、泛音列自然展开与声部间隙设计；
-   - 行 787：音响平面（Planes of Tone）的定义及平面内融合的三大条件（音色相似、节奏同步、密集排列、力度均衡）；
-   - 行 820–845：四种背景运动平面的物理响应要求与对前景旋律的衬托。
-2. **Philharmonia Orchestra**: *Instruments Resource Profiles* (`local/resources/text/organized-html/philharmonia/instruments/`)\\
-   - `violin.md`：行 35（弦乐器无尽延留与浮动效果）、行 59–65（小提琴 G3–E7 音区与四弦定弦）；
-   - `cello.md`：行 27–29（大提琴男高音声部与起音清晰度）、行 39、45–51（四弦定弦与 65 Hz – 1.0 kHz 频响）。
-3. **Eastman School of Music**: *Beethoven Symphony Basics* (`local/resources/text/organized-html/beethoven-analysis-orchestral/`)\\
-   - `eastman-inheritance.md`：行 17–21（Orchestra of 8 到 Harmonie 渗透，弦乐与管乐平衡）；
-   - `eastman-transition.md`：行 49–51（“dropping of the center of orchestral gravity”，中低音声部重心下移与管乐独立动机对管弦乐媒介的重构）。
+1. **Alan Belkin**: *Artistic Orchestration*
+   - Preliminary Considerations: Remarks on Instruments / Strings（弦乐同质家族内声部交叉的自由度与声学融合，对比声乐与键盘）；
+   - Harmony: Register Planning（音区规划、泛音列自然展开与声部间隙设计）；
+   - Planes of Tone: Definition and Blend（音响平面的定义及平面内融合的三大条件：音色相似、节奏同步、密集排列、力度均衡）；
+   - Planes of Tone: Types of Orchestral Movement（四种背景运动平面的物理响应要求与对前景旋律的衬托）。
+2. **Philharmonia Orchestra**: *Instruments Resource Profiles*
+   - Violin Profile（弦乐器无尽延留与浮动效果、小提琴 G3–E7 音区与四弦定弦）；
+   - Cello Profile（大提琴男高音声部与起音清晰度、四弦定弦与 65 Hz – 1.0 kHz 频响）。
+3. **Eastman School of Music**: *Beethoven Symphony Basics*
+   - Beethoven's Inheritance（Orchestra of 8 到 Harmonie 渗透，弦乐与管乐平衡）；
+   - The Transition to Beethoven（“dropping of the center of orchestral gravity”，中低音声部重心下移与管乐独立动机对管弦乐媒介的重构）。
 4. **Ludwig van Beethoven**:
    - *Piano Sonata No. 9 in E major*, Op. 14 No. 1 (1798), Score, I. Allegro.
    - *String Quartet in F major*, Hess 34 (1801–1802, Arrangement of Op. 14 No. 1), Score, I. Allegro moderato.

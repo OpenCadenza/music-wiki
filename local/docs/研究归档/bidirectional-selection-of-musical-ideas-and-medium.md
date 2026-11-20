@@ -1,6 +1,6 @@
 # 研究归档：乐思与编制媒介的双向选择机制
 
-- **学者**：scholar-c
+- **学者**：scholar-c / scholar-c3（续作收尾）
 - **选题**：乐思与编制媒介的双向选择机制（The Bidirectional Selection Between Musical Ideas and Ensemble Medium）
 - **所属顶层轴**：`content/ensembles/`（编制轴第四篇，作为微观声学三联画的顶层决策升华与方法论指南）
 - **中心论证**：
@@ -13,27 +13,27 @@
   5. 为创作 Agent 形式化建立“乐思—编制媒介声学适配矩阵（Idea-Ensemble Compatibility Matrix）”、跨媒介转译四大代偿规约（调性物理匹配、虚拟声部实体化、衰减平面运动化、动态剪刀差发音法补偿）与编配检查清单。
 - **实际采用的资料范围（严格限制在本地真实研读文献）**：
   - **Alan Belkin**: *Artistic Orchestration* (`local/resources/text/ocr/alan-belkin/bk-O-O/bk-O-O.md`)：
-    - 行 137：弦乐同质家族内声部交叉的自由度与声学融合，对比声乐与键盘的局限；
-    - 行 572–577：音区规划（Register planning）、泛音列自然展开与声部间隙设计；
-    - 行 787：音响平面（Planes of Tone）的定义及平面内融合的三大条件（音色相似、节奏同步、密集排列、力度均衡）；
-    - 行 820–845：四种背景运动平面的物理响应要求与对前景旋律的衬托。
+    - Preliminary Considerations: Remarks on Instruments / Strings（第 137 行左右）：弦乐同质家族内声部交叉的自由度与声学融合，对比声乐与键盘的局限；
+    - Harmony: Register Planning（第 572–577 行左右）：音区规划、泛音列自然展开与声部间隙设计；
+    - Planes of Tone: Definition and Blend（第 787 行左右）：音响平面的定义及平面内融合的三大条件（音色相似、节奏同步、密集排列、力度均衡）；
+    - Planes of Tone: Types of Orchestral Movement（第 820–845 行左右）：四种背景运动平面的物理响应要求与对前景旋律的衬托。
   - **Philharmonia Orchestra**: *Instruments Resource Profiles* (`local/resources/text/organized-html/philharmonia/instruments/`)：
-    - `violin.md`：行 35（弦乐器无尽延留与浮动效果）、行 59–65（小提琴 G3–E7 音区与四弦定弦）；
-    - `cello.md`：行 27–29（大提琴男高音声部与起音清晰度）、行 39、45–51（四弦定弦与 65 Hz – 1.0 kHz 频响）。
+    - `violin.md`：小提琴音响特质（第 35 行左右）、G3–E7 音区与四弦定弦；
+    - `cello.md`：大提琴男高音声部与起音清晰度、四弦定弦与 65 Hz – 1.0 kHz 频响。
   - **Eastman School of Music**: *Beethoven Symphony Basics* (`local/resources/text/organized-html/beethoven-analysis-orchestral/`)：
-    - `eastman-inheritance.md`：行 17–21（Orchestra of 8 到 Harmonie 渗透，弦乐与管乐平衡）；
-    - `eastman-transition.md`：行 49–51（“dropping of the center of orchestral gravity”，中低音声部重心下移与管乐独立动机对管弦乐媒介的重构）。
+    - `eastman-inheritance.md`：Orchestra of 8 到 Harmonie 渗透，弦乐与管乐平衡；
+    - `eastman-transition.md`：“dropping of the center of orchestral gravity”，中低音声部重心下移与管乐独立动机对管弦乐媒介的重构。
   - **乐谱文献与作品案例**：
-    - 贝多芬：E大调第九钢琴奏鸣曲 Op. 14 No. 1 第一乐章与 F大调弦乐四重奏 Hess 34 对照分析（mm. 1–16）；
-    - 贝多芬：降E大调《大公三重奏》Op. 97 第一乐章（mm. 1–12）与 F大调第16弦乐四重奏 Op. 135 第三乐章（mm. 1–12）；
+    - 贝多芬：E大调第九钢琴奏鸣曲 Op. 14 No. 1 第一乐章（已嵌入 mm. 1–16 谱例）与 F大调弦乐四重奏 Hess 34 对照分析；
+    - 贝多芬：降B大调《大公三重奏》Op. 97 第一乐章（mm. 1–12）与 F大调第16弦乐四重奏 Op. 135 第三乐章（mm. 1–12）；
     - 勃拉姆斯：F小调钢琴五重奏 Op. 34、双钢琴奏鸣曲 Op. 34b。
 - **正文位置**：
   - 正文：`content/ensembles/bidirectional-selection-of-musical-ideas-and-medium.md`
   - 编制轴目录导引：`content/ensembles/index.md`（已收录导读）
 - **谱例现状与占位清单**：
-  - 贝多芬 Op. 14 No. 1（钢琴）与 Hess 34（弦乐四重奏）mm. 1–16 对照切片（文本引用块占位）；
-  - 贝多芬 Op. 97 第一乐章 mm. 1–12 与 Op. 135 第三乐章 mm. 1–12 动机分流对照（文本引用块占位）；
-  - 严格采用符合规范的文本引用块占位，无空 `lilypond` 围栏，确保构建全绿。
+  - 贝多芬 Op. 14 No. 1（钢琴）mm. 1–16 已嵌入真实 LilyPond 谱例；Hess 34 依据版本记述与声学理论开展对照；
+  - 贝多芬 Op. 97 第一乐章 mm. 1–12 与 Op. 135 第三乐章 mm. 1–12 动机分流对照（单行规范文本占位，已清除 GM 编号与制作过程便签）；
+  - 严格采用符合规范的单行文本占位，无空 `lilypond` 围栏，确保构建全绿。
 - **工程与内容校验**：
   - 运行 `node scripts/validate-content.mjs`，通过校验。
-- **状态**：`批后复读 P0 修订完成（已清除 3 处直接引语为间接分析陈述，已删除星标评分矩阵）`
+- **状态**：`第二波修订完成（已改短标题与单行副标题、正文清除所有行号与本地路径为章节名、单行占位并清除 GM 编号与过程便签、消除直接引语痕迹、建立 provenance 来源与谱例表）`
