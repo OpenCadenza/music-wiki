@@ -50,7 +50,94 @@ flowchart LR
 $$C\sharp - E\sharp - F\sharp - \mathbf{D\natural} - C\sharp$$
 这个还原 D 是主调升 c 小调的**降二度音级（那不勒斯音级，$\flat\hat{2}$）**。在赋格局部，它作为下属调的下中音出现；但从宏观结构来看，它在升 c 小调的中心调性上埋下了一个半音离心因素。
 
-> 谱例占位：贝多芬 Op. 131 第一乐章，mm. 1–8
+```lilypond title="贝多芬 第14弦乐四重奏 Op.131 第一乐章" location="Adagio ma non troppo e molto espressivo，弱起 + mm.1–8" id="beethoven-op131-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+
+global = {
+  \key cs \minor
+  \time 2/2
+  \tempo "Adagio ma non troppo e molto espressivo" 4 = 69
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \partial 4
+  gs'4\p( |
+  bs'2 cs''2) |
+  a'2.( gs'4 |
+  fs'4 a'4 gs'4 fs'4) |
+  e'4 fs'4 gs'2~ |
+  gs'4 b'2 a'4~ |
+  a'4 es'4 fs'4 a'4 |
+  g'4 es'2 es''4 |
+  fs''2( e''4 ds''4) |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  \partial 4
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r2. cs'4\p( |
+  es'2 fs'2) |
+  d'2.( cs'4 |
+  b4 d'4 cs'4 b4 |
+  a4 b4 cs'4) bs4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  \partial 4
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r2 r4 gs4\p |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  \partial 4
+  r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+\score {
+  <<
+    \new StaffGroup <<
+      \new Staff \violinoI
+      \new Staff \violinoII
+      \new Staff \viola
+      \new Staff \violoncello
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 在第一乐章后半段的密接和应（Stretto）中，第二小提琴在第 94–95 小节再次强化这一带有还原 D 的答题变形；而在尾声（mm. 111–112），大提琴以强奏（$f$）在最低音区连续奏出大字一组与大字组的低音 $D\natural$（$DD\natural\text{–}D\natural$），随后滑入主音升 C。第一乐章并未彻底解决还原 D 的张力，而是将其作为未解决的调性线索留给后续乐章。
 
@@ -107,7 +194,78 @@ flowchart TD
 $$C\sharp - D\sharp - F\sharp - E$$
 第一小提琴的下行与大提琴的上行构成严密的对位骨架，赋格主题在第一乐章中的下行阻尼在终曲中被转化为向前推进的动能。
 
-> 谱例占位：贝多芬 Op. 131 第七乐章，mm. 21–26
+```lilypond title="贝多芬 第14弦乐四重奏 Op.131 第七乐章" location="Allegro，mm.21–26" id="beethoven-op131-vii-mm21-26"
+\version "2.26.0"
+\language "english"
+
+
+global = {
+  \key cs \minor
+  \time 2/2
+  \tempo "Allegro" 2 = 120
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  cs''2. cs'''4 |
+  bs''2 a''2 |
+  gs''2. cs'''4 |
+  bs''4\p cs'''4 ds'''4 e'''4 |
+  ds'''4 r2 cs'''4 |
+  bs''2 a''2 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  e'2. e'4 |
+  fs'2 a'4 fs'4 |
+  bs'2 cs''4 e'4 |
+  fs'4\p e'4 ds'4 cs'4 |
+  bs'4 r2 e'4 |
+  fs'2 a'4 fs'4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  cs'4 r8 gs8 gs4 r8 gs8 |
+  gs4 r8 gs8 gs4 r8 gs8 |
+  gs4 r8 gs8 gs4 r8 gs8 |
+  gs4\p r8 gs8 gs4 r8 gs8 |
+  gs4 r8 gs8 gs4 r8 gs8 |
+  gs4 r8 gs8 gs4 r8 gs8 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  gs4 r2 cs4 |
+  ds2 fs2 |
+  e2. cs4 |
+  ds4\p cs4 bs,4 cs4 |
+  gs,4 r2 cs4 |
+  ds2 fs2 |
+}
+
+\score {
+  <<
+    \new StaffGroup <<
+      \new Staff \violinoI
+      \new Staff \violinoII
+      \new Staff \viola
+      \new Staff \violoncello
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3.2 逆向互补（Reverse Complement）的调性回溯
 巴里（Barry, 1990）指出，终曲对前序乐章调性的引用呈现出逆向回溯的秩序。套曲前序乐章的调性演进为：
@@ -120,7 +278,90 @@ $$\text{升 c 小调 (I)} \longrightarrow \text{D 大调 (II)} \longrightarrow \
 1. **第一次再现（mm. 216–224）：那不勒斯 D 大调踏板织体的突袭**
    根据巴里（Barry, 1990）的曲式分析，终曲呈示部的副部主题（contrasting second subject）始于第 56 小节（E 大调），其典型织体特征即为低音踏板上展开的下行流动线条。在再现部主部之后，音乐并未直接回到升 c 小调，而是在第 216 小节以 **D 大调** 启动副部主题的第一次再现。在声部事实中，此处表现为大提琴持续击出纯五度低音踏板（$DD\text{–}AA$ 与 $EE\text{–}AA$ 两小节一组交替），内声部铺展持续和声，第一小提琴以极轻的弱奏（$p$）在上方展开由主和弦三音 $f\sharp$ 下行流动的八分音符旋律与高音八度华彩（mm. 216–224）。这段建立在 D 大调持续低音之上的副部再现织体，是对全曲第二乐章 D 大调以及第一乐章第 6、第 112 小节还原 D 的宏观回响。
 
-> 谱例占位：贝多芬 Op. 131 第七乐章，mm. 216–224
+```lilypond title="贝多芬 第14弦乐四重奏 Op.131 第七乐章" location="Allegro，mm.216–224（D 大调）" id="beethoven-op131-vii-mm216-224"
+\version "2.26.0"
+\language "english"
+
+
+global = {
+  \key d \major
+  \time 2/2
+  \tempo "Allegro" 2 = 120
+}
+
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  fs''2\p~ fs''8 e''8 d''8 cs''8 |
+  d''8 cs''8 b'8 a'8 g'8 fs'8 e'8 d'8 |
+  d'4. cs'8 a''2 |
+  a''2 a''2 |
+  a''2\p d'''2 |
+  fs'''2 a'''2 |
+  a''2 cs'''2 |
+  e'''2 a'''2 |
+  a''2\p d'''2 |
+}
+
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  <a a'>1\p~ |
+  <a a'>1 |
+  <a a'>1~ |
+  <a a'>1 |
+  <a a'>2\p fs'2~ |
+  <a fs'>1 |
+  <a g'>1~ |
+  <a g'>1 |
+  fs''2\p~ fs''8 e''8 d''8 cs''8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  fs1\p~ |
+  fs1 |
+  g1~ |
+  g1 |
+  fs'2\p~ fs'8 e'8 d'8 cs'8 |
+  d'8 cs'8 b8 a8 g8 fs8 e8 d8 |
+  d4.\p cs8 a'2 |
+  a'2 a'2 |
+  <a fs'>1\p |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  <d, a,>1\p~ |
+  <d, a,>1 |
+  <e, a,>1~ |
+  <e, a,>1 |
+  <d, a,>1\p~ |
+  <d, a,>1 |
+  <e, a,>1~ |
+  <e, a,>1 |
+  <d, a,>1\p |
+}
+
+\score {
+  <<
+    \new StaffGroup <<
+      \new Staff \violinoI
+      \new Staff \violinoII
+      \new Staff \viola
+      \new Staff \violoncello
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 2. **第二次再现与同主音转换（mm. 242–247）**
    紧接着在第 242 小节，大提琴低音转至 $CC\sharp\text{–}GG\sharp$，副部旋律以同构形态进入。此处和声呈现出同主音转换色彩：中提琴与第二小提琴记有 $F\natural$（即大调三音 $E\sharp$ 的等音记谱），第一小提琴唱出 $2eee\sharp$。但这一大调色彩并未持续建立独立段落，在第 248 小节乐谱调号即重新恢复为 4 个升号（升 c 小调调号），音乐随后继续在小调的对位织体中深入推进。

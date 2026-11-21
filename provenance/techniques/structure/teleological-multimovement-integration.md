@@ -14,6 +14,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 贝多芬 Op. 131 第一乐章 | Adagio ma non troppo e molto espressivo，mm. 1–8 | 待补 | 未确认 |
-| 占位 | 贝多芬 Op. 131 第七乐章 | Allegro，mm. 21–26 | 待补 | 未确认 |
-| 占位 | 贝多芬 Op. 131 第七乐章 | Allegro，mm. 216–224 | 待补 | 未确认 |
+| `beethoven-op131-i-mm1-8` | 贝多芬 Op. 131 第一乐章 | Adagio ma non troppo e molto espressivo，弱起 + mm.1–8 | Humdrum Kern `beethoven-string-quartets-main/.../kern/quartet14-1.krn`（CCARH / Craig Stuart Sapp 维护版） | 待确认（Humdrum 语料） |
+| `beethoven-op131-vii-mm21-26` | 贝多芬 Op. 131 第七乐章 | Allegro，mm.21–26 | 同上 `quartet14-7.krn` | 待确认（Humdrum 语料） |
+| `beethoven-op131-vii-mm216-224` | 贝多芬 Op. 131 第七乐章 | Allegro，mm.216–224（D 大调） | 同上 `quartet14-7.krn` | 待确认（Humdrum 语料） |
