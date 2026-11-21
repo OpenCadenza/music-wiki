@@ -9,7 +9,7 @@
 global = {
   \key d \minor
   \time 2/4
-  \tempo "Allegro ma non troppo" 2 = 88
+  \tempo "Allegro ma non troppo, un poco maestoso" 4 = 88
 }
 
 % ---- Flauti 1, 2 ----
@@ -18,9 +18,9 @@ flauti = {
   \clef treble
   \set Staff.midiInstrument = "flute"
   <<
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a''2 | a''2 | e'''2 | e'''4. a'''8 | a'''2 | a'''4~ a'''8.. d'''32 | a'''4~ a'''8.. f'''32 | d'''8.. a''32 f''8. a''32 f''32 | d''4~ d''16 f'''16 e'''16 d'''16 | a'''8 g'''8 e'''8 a'''8 | d'''8. r16 e'''8. r16 | f'''8. r16 r4 | g'''8. r16 a'''8. r16 | bf''4 g'''4 | g'''2 | g'''8 f'''8 ef'''8 d'''8 | cs'''8 r8 r4 | g'''4 e'''8.. f'''32 | f'''8 r8 r4 | a'''4 f'''8.. g'''32 | g'''8 r8 e'''4 | e'''4 f'''4 | f'''4 f'''8 r8 | a'''2 | a'''4 d'8 r8 | }
+    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | d''4~ d''16 f'''16 e'''16 d'''16 | a'''8 g'''8 e'''8 a'''8 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | }
     \\
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a''2 | a''4. a''8 | a''2 | a''4~ a''8.. d''32 | a''4~ a''8.. f''32 | d''8.. a''32 f''8. a''32 f''32 | r2 | r2 | d'''8. r16 cs'''8. r16 | d'''8. r16 r4 | bf''8. r16 fs'''8. r16 | g''4 bf''4 | bf''2 | bf''8 bf''8 bf''8 bf''8 | bf''8 r8 r4 | e'''4 cs'''8.. d'''32 | d'''8 r8 r4 | f'''4 d'''8.. e'''32 | e'''8 r8 cs'''4 | cs'''4 d'''4 | d'''4 d'''8 r8 | a''2 | a''4 d'8 r8 | }
+    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a''2 | a''2 | a''2 | a''4. a''8 | a''2 | a''4~ a''8.. d''32 | a''4~ a''8.. f''32 | d''8.. a''32 f''8. a''32 f''32 | r2 | r2 | d'''8. r16 cs'''8. r16 | d'''8. r16 r4 | bf''8. r16 fs'''8. r16 | g''4 bf''4 | bf''2 | bf''8 bf''8 bf''8 bf''8 | bf''8 r8 r4 | e'''4 cs'''8.. d'''32 | d'''8 r8 r4 | f'''4 d'''8.. e'''32 | e'''8 r8 cs'''4 | cs'''4 d'''4 | d'''4 d'''8 r8 | a''2 | a''4 d'8 r8 | }
   >>
 }
 
@@ -54,9 +54,9 @@ fagotti = {
   \clef bass
   \set Staff.midiInstrument = "bassoon"
   <<
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a,2 | a,8 d,4. | d,4~ d,8.. d'32 | a4~ a8.. f32 | d8.. a,32 f,8. a,32 f,32 | d,4~ d,16 f16 e16 d16 | a8 g8 e8 a8 | d'8. r16 a8. r16 | d8. r16 r4 | g8. r16 a8. r16 | bf2 | bf4. a8 | g8 f'8 ef'8 d'8 | cs'8 r8 r4 | g4 e8.. f32 | f8 r8 r4 | a4 f8.. g32 | g8 r8 g4 | g4 af4 | af4 a4 | a4 a,8 r8 | d4. r8 | }
+    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a8 g8 e8 a8 | d'8. r16 a8. r16 | d8. r16 r4 | g8. r16 a8. r16 | bf2 | bf4. a8 | g8 f'8 ef'8 d'8 | cs'8 r8 r4 | g4 e8.. f32 | f8 r8 r4 | a4 f8.. g32 | g8 r8 g4 | g4 af4 | af4 a4 | a4 a,8 r8 | d4. r8 | }
     \\
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a,8 g,8 e,8 a,8 | d8. r16 a,8. r16 | d,8. r16 r4 | g8. r16 fs8. r16 | g2 | g4. a8 | g8 f8 ef8 d'8 | cs'8 r8 r4 | e4 cs8.. d32 | d8 r8 r4 | f4 d8.. e32 | e8 r8 g,4 | g,4 af,4 | af,4 a,4 | a,4 a,8 r8 | d4. r8 | }
+    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | a,2 | a,8 d,4. | d,4~ d,8.. d'32 | a4~ a8.. f32 | d8.. a,32 f,8. a,32 f,32 | d,4~ d,16 f16 e16 d16 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | }
   >>
 }
 
@@ -66,7 +66,7 @@ corni = {
   \clef treble
   \set Staff.midiInstrument = "french horn"
   <<
-    { e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'4. a'8 | a'2 | a'4~ a'8.. d''32 | a'4~ a'8.. f'32 | d'8.. a32 f'8. a'32 f'32 | d'4~ d'16 f'16 e'16 d'16 | a'8 g'8 e'8 a'8 | d'8. r16 e'8. r16 | d'8. r16 r4 | d'8. r16 d'8. r16 | g'2 | g'2 | g'8 g'8 g'8 g'8 | g'8 r8 r4 | a2 | a8 r8 r4 | a2 | g'8 r8 e'4 | e'4 d'4 | d'4 f'8 r8 | a'2 | a2 | }
+    { e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'2 | e'4. a'8 | a'2 | a'4~ a'8.. d''32 | a'4~ a'8.. f'32 | d'8.. a32 f'8. a'32 f'32 | d'4~ d'16 f'16 e'16 d'16 | a'8 g'8 e'8 a'8 | d'8. r16 e'8. r16 | d'8. r16 r4 | d'8. r16 d'8. r16 | r2 | r2 | r2 | r2 | a2 | a8 r8 r4 | a2 | g'8 r8 e'4 | e'4 d'4 | d'4 f'8 r8 | a'2 | a2 | }
     \\
     { a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a2 | a4. a,8 | a,2 | a,4~ a,8.. d'32 | a4~ a8.. f32 | d8.. a,32 f8. a32 f32 | d4~ d16 f'16 e'16 d'16 | a'8 g'8 e'8 a'8 | d8. r16 a8. r16 | d8. r16 r4 | d8. r16 d8. r16 | r2 | r2 | r2 | r2 | a,2 | a,8 r8 r4 | a,2 | e'8 r8 e'4 | e'4 d4 | d4 d'8 r8 | a2 | d2 | }
   >>
@@ -78,7 +78,7 @@ corniBassi = {
   \clef treble
   \set Staff.midiInstrument = "french horn"
   <<
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r8 d'4. | d'4~ d'8.. d'32 | d'4~ d'8.. d'32 | d'8.. d'32 d'8. d'32 d'32 | d'4~ d'16 r16 r8 | r2 | d'8. r16 r4 | d'8. r16 r4 | d'8. r16 d'8. r16 | r4 bf4 | bf2 | bf8 bf8 bf8 bf8 | bf8 r8 r4 | r2 | r2 | r2 | r4 bf4 | bf4 f'4 | f'4 f'8 r8 | r2 | r2 | }
+    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r8 d'4. | d'4~ d'8.. d'32 | d'4~ d'8.. d'32 | d'8.. d'32 d'8. d'32 d'32 | d'4~ d'16 r16 r8 | r2 | d'8. r16 r4 | d'8. r16 r4 | d'8. r16 d'8. r16 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r4 bf4 | bf4 f'4 | f'4 f'8 r8 | r2 | r2 | }
     \\
     { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r8 d4. | d4~ d8.. d32 | d4~ d8.. d32 | d8.. d32 d8. d32 d32 | d4~ d16 r16 r8 | r2 | d8. r16 r4 | d8. r16 r4 | d8. r16 d8. r16 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r4 bf,4 | bf,4 f4 | f4 f8 r8 | r2 | r2 | }
   >>
@@ -143,11 +143,41 @@ violinoI = {
   \global
   \clef treble
   \set Staff.midiInstrument = "violin"
-  <<
-    { r2 | r4 r8 r16. e''32 | a'4 r8 r16. a'32 | e'4 r4 | r2 | r4 r8 r16. a''32 | e''4 r8 r16. e''32 | a'4 r4 | r2 | r2 | r8 r16. a''32 e''8 r16. e''32 | a'8 r16. a'32 e'8 r8 | r16 a''16 a''16 e''16 r16 e''16 e''16 a'16 | r16 a'16 a'16 e'16 r4 | r16 a''16 a''16 a'16 a'16 a16 a16 a'16 | a'16 a''16 a''16 a'16 a'16 a''16 a'16 r32 d'''32 | a''4~ a''8.. f''32 | d''8.. a'32 f'8. a'32 f'32 | d'4~ d'16 f''16 e''16 d''16 | a''8 g''8 e''8 a''8 | d''8. r16 <e'' a' e' cs'>8. r16 | <f'' a' d'>8. r16 r4 | <g'' bf' d'>8. r16 <a'' a' fs'>8. r16 | bf''2 | bf''4. a''8 | g''8 f''8 ef''8 d''8 | cs''8 r8 r4 | cs'8 r8 r4 | <f'' a' d'>8 r8 r4 | f'8 r8 r4 | <g'' cs'' e'>8 r8 bf''4 | bf''4 d'''4 | d'''4 <f'' a' d'>8 r8 | a''4~ a''16 bf''32 a''32 g''32 f''32 e''32 d''32 | cs''32 d''32 c''32 bf'32 a'32 g'32 f'32 e'32 d'8 r8 | }
-    \\
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | d'4~ d'16 r16 r8 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | }
-  >>
+  r2 |
+  r4 r8 r16. e''32 |
+  a'4 r8 r16. a'32 |
+  e'4 r4 |
+  r2 |
+  r4 r8 r16. a''32 |
+  e''4 r8 r16. e''32 |
+  a'4 r4 |
+  r2 |
+  r2 |
+  r8 r16. a''32 e''8 r16. e''32 |
+  a'8 r16. a'32 e'8 r8 |
+  r16 a''16 a''16 e''16 r16 e''16 e''16 a'16 |
+  r16 a'16 a'16 e'16 r4 |
+  r16 a''16 a''16 a'16 a'16 a16 a16 a'16 |
+  a'16 a''16 a''16 a'16 a'16 a''16 a'16 r32 d'''32 |
+  a''4~ a''8.. f''32 |
+  d''8.. a'32 f'8. a'32 f'32 |
+  d'4~ d'16 f''16 e''16 d''16 |
+  a''8 g''8 e''8 a''8 |
+  d''8. r16 <e'' a' e' cs'>8. r16 |
+  <f'' a' d'>8. r16 r4 |
+  <g'' bf' d'>8. r16 <a'' a' fs'>8. r16 |
+  \grace { bf'16 } bf''2 |
+  bf''4. a''8 |
+  g''8 f''8 ef''8 d''8 |
+  cs''8 r8 r4 |
+  cs'8 r8 r4 |
+  <f'' a' d'>8 r8 r4 |
+  f'8 r8 r4 |
+  <g'' cs'' e'>8 r8 bf''4 |
+  bf''4 d'''4 |
+  d'''4 <f'' a' d'>8 r8 |
+  a''4~ a''16 bf''32 a''32 g''32 f''32 e''32 d''32 |
+  cs''32 d''32 c''32 bf'32 a'32 g'32 f'32 e'32 d'8 r8 |
 }
 
 % ---- Violino II ----
@@ -155,11 +185,41 @@ violinoII = {
   \global
   \clef treble
   \set Staff.midiInstrument = "violin"
-  <<
-    { \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } | \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 } | \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 } | \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 } <a' a>16 r32 d'''32 | a''4~ a''8.. f''32 | d''8.. a'32 f'8. a'32 f'32 | d'4~ d'16 f''16 e''16 d''16 | a''8 g''8 e''8 a''8 | d''8. r16 <e'' a' e' cs'>8. r16 | <f'' a' d'>8. r16 r4 | <g'' bf' d'>8. r16 <a'' a' fs'>8. r16 | <g'' bf'>2 | <g'' bf'>2 | <g'' bf'>8 g8 g8 bf'8 | <bf' g'>8 r8 r4 | cs''8 r8 r4 | <f'' a' d'>8 r8 r4 | <a' f'>8 r8 r4 | <g'' cs'' e'>8 r8 <e'' cs''>4 | <e'' cs''>4 <f'' d''>4 | <f'' d''>4 <f'' d''>4 | <f'' d''>4~ \tuplet 3/2 { <f'' d''>16 } \tuplet 3/2 { <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 } | \tuplet 3/2 { <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 } | }
-    \\
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | d'4~ d'16 r16 r8 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | }
-  >>
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } |
+  \tuplet 3/2 { <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 <e' a>16 } \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 } |
+  \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 } |
+  \tuplet 3/2 { <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 <a' a>16 } <a' a>16 r32 d'''32 |
+  a''4~ a''8.. f''32 |
+  d''8.. a'32 f'8. a'32 f'32 |
+  d'4~ d'16 f''16 e''16 d''16 |
+  a''8 g''8 e''8 a''8 |
+  d''8. r16 <e'' a' e' cs'>8. r16 |
+  <f'' a' d'>8. r16 r4 |
+  <g'' bf' d'>8. r16 <a'' a' fs'>8. r16 |
+  \grace { <g g'>16 } <g'' bf'>2 |
+  <g'' bf'>2 |
+  <g'' bf'>8 g8 g8 bf'8 |
+  <bf' g'>8 r8 r4 |
+  cs''8 r8 r4 |
+  <f'' a' d'>8 r8 r4 |
+  <a' f'>8 r8 r4 |
+  <g'' cs'' e'>8 r8 <e'' cs''>4 |
+  <e'' cs''>4 <f'' d''>4 |
+  <f'' d''>4 <f'' d''>4 |
+  <f'' d''>4~ \tuplet 3/2 { <f'' d''>16 } \tuplet 3/2 { <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 } |
+  \tuplet 3/2 { <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 <a' d'>16 } |
 }
 
 % ---- Viola ----
@@ -167,11 +227,41 @@ viola = {
   \global
   \clef alto
   \set Staff.midiInstrument = "viola"
-  <<
-    { r2 | r2 | r2 | r4 r8 r16. e'32 | a4 r4 | r2 | r2 | r4 r8 r16. e'32 | a4 r4 | r2 | r2 | r4 r8 r16. e'32 | a8 r8 r4 | r4 r16 e'16 e'16 a16 | r4 r16 a'16 a'16 a16 | a16 a'16 a'16 a16 a16 a'16 a16 r32 d''32 | a'4~ a'8.. f'32 | d'8.. a32 f8. a32 f32 | d4~ d16 f'16 e'16 d'16 | a'8 g'8 e'8 a'8 | d'8. r16 <a' a>8. r16 | <d' d>8. r16 r4 | <g' g>8. r16 d'8. r16 | g8 <g' g>4. | <g' g>2 | <g' g>8 bf'8 bf'8 g8 | g8 r8 r4 | <g e>8 r8 r4 | <d'' f' a>8 r8 r4 | <d' a>8 r8 r4 | <e' cs'>8 r8 bf4 | bf4 b4 | b4 <a' a>4 | <a' a>4~ <a' a>16 bf'32 a'32 g'32 f'32 e'32 d'32 | cs'32 d'32 c'32 bf32 a32 g32 f32 e32 d8 r8 | }
-    \\
-    { r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r4 d'8. r16 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | r2 | }
-  >>
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 r16. e'32 |
+  a4 r4 |
+  r2 |
+  r2 |
+  r4 r8 r16. e'32 |
+  a4 r4 |
+  r2 |
+  r2 |
+  r4 r8 r16. e'32 |
+  a8 r8 r4 |
+  r4 r16 e'16 e'16 a16 |
+  r4 r16 a'16 a'16 a16 |
+  a16 a'16 a'16 a16 a16 a'16 a16 r32 d''32 |
+  a'4~ a'8.. f'32 |
+  d'8.. a32 f8. a32 f32 |
+  d4~ d16 f'16 e'16 d'16 |
+  a'8 g'8 e'8 a'8 |
+  d'8. r16 <a' a>8. r16 |
+  <d' d>8. r16 r4 |
+  <g' g>8. r16 d'8. r16 |
+  g8 <g' g>4. |
+  <g' g>2 |
+  <g' g>8 bf'8 bf'8 g8 |
+  g8 r8 r4 |
+  <g e>8 r8 r4 |
+  <d'' f' a>8 r8 r4 |
+  <d' a>8 r8 r4 |
+  <e' cs'>8 r8 bf4 |
+  bf4 b4 |
+  b4 <a' a>4 |
+  <a' a>4~ <a' a>16 bf'32 a'32 g'32 f'32 e'32 d'32 |
+  cs'32 d'32 c'32 bf32 a32 g32 f32 e32 d8 r8 |
 }
 
 % ---- Violoncello ----
@@ -238,7 +328,7 @@ contrabass = {
   r2 |
   r4 r8 r16. d32 |
   a,4~ a,8.. f,32 |
-  d,8.. a,,32 f,,8. a,32 f,32 |
+  d,8.. a,,32 f,,8. a,,32 f,,32 |
   d,4~ d,16 f,16 e,16 d,16 |
   a,8 g,8 e,8 a,8 |
   d8. r16 a,8. r16 |
@@ -259,7 +349,7 @@ contrabass = {
 }
 
 #(set-global-staff-size 11)
-\paper { #(set-paper-size "a4landscape") }
+\paper { #(set-paper-size "a4landscape") system-count = 5 }
 
 \score {
   <<
@@ -282,3 +372,4 @@ contrabass = {
   \layout { ragged-right = ##f }
   \midi { }
 }
+

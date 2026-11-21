@@ -39,7 +39,78 @@ title: 三度调性
 
 贝多芬《华德斯坦》奏鸣曲（Op. 53）第一乐章（Allegro con brio，4/4 拍）是将大三度上中音（$\text{III}$）确立为奏鸣曲式第二调性支柱的实证范本。
 
-*谱例占位：贝多芬 Op. 53 第一乐章 mm. 1–14（主部主题 C 大调至降 B 大调下行模进与半音准备）。*
+```lilypond title="贝多芬 第21钢琴奏鸣曲 Op.53 第一乐章" location="Allegro con brio，mm.1–14" id="beethoven-op53-i-mm1-14"
+\version "2.26.0"
+\language "english"
+
+#(set-global-staff-size 18)
+
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro con brio" 4 = 144
+}
+
+upper = {
+  \global
+  \clef bass
+  r8 <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 |
+  <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <c e>8 <d fs>8 <d fs>8 |
+  <d g>4.( b16 a16 g8) r8 r4 |
+  \clef treble
+  \grace { cs'''16 } d'''4 ~( d'''16 c'''16 b''16 a''16 g''4) r4 |
+  \clef bass
+  <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 |
+  <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <bf, d>8 <c e>8 <c e>8 |
+  <c f>4.( a16 g16 f8) r8 r4 |
+  \clef treble
+  \grace { b''16 } c'''4 ~( c'''16 bf''16 af''16 g''16 f''4) r4 |
+  \grace { e'''16( } f'''2.) f'''16 ef'''16 d'''16 c'''16 |
+  b''16 c'''16 d'''16 ef'''16 f'''16 ef'''16 d'''16 c'''16
+  b''16 c'''16 d'''16 ef'''16 f'''16 ef'''16 d'''16 c'''16 |
+  b''16 c'''16 d'''16 ef'''16 f'''16 ef'''16 d'''16 c'''16
+  b''16 af''16 g''16 f''16 ef''16 d''16 c''16 b'16 |
+  c''8 r8 g'8 r8 ef'8 r8 c'8 r8 |
+  g1\fermata |
+  e'!16 c'16 e'16 c'16 e'16 c'16 e'16 c'16 e'16 c'16 e'16 c'16 e'16 c'16 e'16 c'16 |
+}
+
+lower = {
+  \global
+  \clef bass
+  c,8\pp <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 |
+  <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, g,>8 <c, a,>8 <c, a,>8 |
+  <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 |
+  <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 <b,, g,>8 |
+  <bf,, f,>8\pp <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 |
+  <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, f,>8 <bf,, g,>8 <bf,, g,>8 |
+  <a,, f,>8\< <a,, f,>8 <a,, f,>8 <a,, f,>8 <a,, f,>8 <a,, f,>8 <a,, f,>8 <a,, f,>8 |
+  <af,, f,>8 <af,, f,>8 <af,, f,>8 <af,, f,>8 <af,, f,>8 <af,, f,>8 <af,, f,>8 <af,, f,>8 |
+  <g,, f,>8 <g,, f,>8 <g,, f,>8 <g,, f,>8 <g,, f,>8 <g,, f,>8 <af,, f,>8 <af,, f,>8 |
+  <g,, f,>8 <g,, f,>8 <af,, f,>8 <af,, f,>8 <g,, f,>8 <g,, f,>8 <af,, f,>8 <af,, f,>8 |
+  <g,, f,>4\f <g, g>2 ~ <g, g>8( a16 b16 |
+  c'8) r8 <g, g>8 r8\> <ef, ef>8 r8 <c, c>8 r8 |
+  <g,, g,>1\fermata\p |
+  <c, c>8\pp c16 g16 c16 g16 c16 g16 c16 g16 c16 g16 c16 g16 c16 g16 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \upper
+    }
+    \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \override DynamicLineSpanner.direction = #DOWN
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 主部主题的离心松动（mm. 1–13）
 
@@ -58,7 +129,94 @@ title: 三度调性
 
 随后的 mm. 23–34 构成了长达 12 小节的属准备段落。左手在低音 B 上持续进行八度与琶音脉动，右手在上方声部展开急促的音型盘旋；在第 34 小节中，低音以八度跳跃形式半音级进上行（AA-A, BB-B, C#-c#, D#-d#），而右手则以高音 a 音为轴心，与上方音交替展开（$a-c\sharp-a-d\sharp-a-e-a-f\sharp$），使蓄势达到顶点。
 
-*谱例占位：贝多芬 Op. 53 第一乐章 mm. 23–42（B 大调属准备与 E 大调副题进入及第一乐句收束）。*
+```lilypond title="贝多芬 第21钢琴奏鸣曲 Op.53 第一乐章" location="Allegro con brio，mm.23–42" id="beethoven-op53-i-mm23-42"
+\version "2.26.0"
+\language "english"
+
+#(set-global-staff-size 18)
+
+
+global = {
+  \set Score.currentBarNumber = #23
+  \key c \major
+  \time 4/4
+  \tempo "Allegro con brio" 4 = 144
+}
+
+upper = {
+  \global
+  \clef treble
+  b''4 ~ b''16 a''16 g''16 fs''16 g''16 fs''16 e''16 ds''16 e''16 g''16 fs''16 e''16 |
+  ds''16 cs''16 b'16 as'16 b'16 cs''16 d''16 ds''16 e''16 ds''16 e''16 fs''16 g''16 gs''16 a''16 as''16 |
+  b''16 as''16 b''16 as''16 b''16 a''16 g''16 fs''16 g''16 fs''16 e''16 ds''16 e''16 g''16 fs''16 e''16 |
+  ds''16 cs''16 b'16 as'16 b'16 cs''16 d''16 ds''16 e''16 ds''16 e''16 fs''16 g''16 gs''16 a''16 as''16 |
+  b''16 fs''16 ds''16 b'16 as'16 b'16 e''16 g''16 b''16 fs''16 ds''16 b'16 as'16 b'16 e''16 g''16 |
+  b''16 fs''16 ds''16 b'16 b''16 g''16 e''16 b'16 b''16 fs''16 ds''16 b'16 b''16 g''16 e''16 b'16 |
+  b''16 fs''16 ds''16 b'16 fs''16 ds''16 b'16 fs'16 ds''16 b'16 fs'16 ds'16 b'16 fs'16 ds'16 b16 |
+  \clef bass
+  fs'16 ds'16 b16 fs16 ds'16 b16 fs16 ds16 b16 fs16 ds16 b,16 r4 |
+  \clef treble
+  r2 b'8 b8 cs''8 cs'8 |
+  ds''8 ds'8 r4 ds''8 ds'8 e''8 e'8 |
+  fs''8 fs'8 gs''8 gs'8 a''8 a'8 a''8 b'8 |
+  a''8 cs''8 a''8 ds''8 a''8 e''8 a''8 fs''8 |
+  <b' e'' gs''>2(^\markup { \italic "dolce e molto legato" }
+  <a' ds'' fs''>4 <gs' cs'' e''>4 |
+  <fs' bs' ds''>2 <e' cs''>2) |
+  <a' b'! ds''>2 <b' e''>4 <cs'' e'' fs''>4 |
+  << { <e'' gs''>2 <ds'' fs''>2 } \\ { b'2. a'4 } >> |
+  <b e' gs'>2( <a ds' fs'>4 <gs cs' e'>4 |
+  <ds fs bs ds'>2 <e a cs'>2) |
+  b2 cs'4 ds'4 |
+  \tuplet 3/2 { <gs e'>8 fs'8 gs'8 } \tuplet 3/2 { a'8 b'8 cs''8 }
+  \tuplet 3/2 { d''8 ds''8 e''8 } \tuplet 3/2 { es''8 fs''8 fss''8 } |
+}
+
+lower = {
+  \global
+  \clef bass
+  b,16\p ds16 fs16 b16 b,16 ds16 fs16 b16 b,16 e16 g16 b16 b,16 e16 g16 b16 |
+  b,16 fs16 a16 b16 b,16 fs16 a16 b16 b,16 e16 g16 b16 b,16 e16 g16 b16 |
+  b,16 ds16 fs16 b16 b,16 ds16 fs16 b16 b,16 e16 g16 b16 b,16 e16 g16 b16 |
+  b,16 fs16 a16 b16 b,16 fs16 a16 b16 b,16 e16 g16 b16 b,16 e16 g16 b16 |
+  b,16\< ds16 fs16 b16 as16 b16 g16 e16 b,16 ds16 fs16 b16 as16 b16 g16 e16 |
+  b,16\f ds16 fs16 b16 b,16\sf e16 g16 b16 b,16\sf ds16 fs16 b16 b,16\sf e16 g16 b16 |
+  <b, ds fs b>4 r4 r2 |
+  r2 r4 b,,16 ds,16 fs,16 b,16 |
+  b,,8\> b,8 cs,8 cs8 ds,8 ds8 r4 |
+  ds,8 ds8 e,8 e8 fs,8 fs8 r4 |
+  r2\p fs,8 fs8 gs,8 gs8 |
+  a,8 a8 b,8 b8 cs8 cs'8 ds8 ds'8 |
+  \clef treble
+  <e' gs'>2( <b ds' fs'>4 <cs' e'>4 |
+  <gs bs ds'>2 <a cs'>2) |
+  \clef bass
+  <fs a b ds'>2\< <gs b e'>4 <a cs' fs'>4\! |
+  \clef treble
+  << { <e' gs'>2\sf\> <ds' fs'>2\! } \\ { b1 } >> |
+  \clef bass
+  <e gs>2(\p <b, ds fs>4 <cs e>4 |
+  <gs, bs,>2 <a, cs>2) |
+  << { <e gs>4\< <fs a>2.\! } \\ { <b,, b,>1 } >> |
+  <e, e>4\p r4 r2 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "up" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \upper
+    }
+    \new Staff = "down" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \override DynamicLineSpanner.direction = #DOWN
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3. E 大调副题的圣咏音响（mm. 35–42）
 

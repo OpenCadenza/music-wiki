@@ -21,6 +21,15 @@ PITCH_RE = re.compile(r"^([A-G])([#\-nsf]*)(\d+)$")
 LY_OCT = {1: ",,", 2: ",", 3: "", 4: "'", 5: "''", 6: "'''", 7: "''''", 8: "'''''"}
 BARCHECKS = False
 
+# 显式编辑表（事件级）：{(part_no, measure, event_index): 追加半音数}
+# X1（verifier-6 + source-assistant-2 第二源核对）：Contrabasso m.18 末两个 32 分，
+#   底本写 A3/F3（−12 后实音 A2/F2），两版 MXL 均为 A2/F2（实音 A1/F1）；
+#   取两源读法，仅这两个音再低一个八度，避免 m.18 十度上跳。见核对记录 §5-X1。
+EVENT_SHIFTS = {
+    (13, 18, 3): -12,   # 底本第 4 个事件 A3 → 实音 A1
+    (13, 18, 4): -12,   # 底本第 5 个事件 F3 → 实音 F1
+}
+
 SPEC = [
     (1, "flauti", "flute", "treble", 0, "Flauti 1, 2"),
     (2, "oboi", "oboe", "treble", 0, "Oboe 1, 2"),
@@ -86,7 +95,7 @@ def split_parts(lines):
     return out
 
 
-def parse_part(body):
+def parse_part(body, pname=""):
     """→ (q, {measure: {voice: [ (kind, pitches_tuple, divs, tie) ]}})"""
     q = 24
     for ln in body:
@@ -94,6 +103,16 @@ def parse_part(body):
         if m:
             q = int(m.group(1))
             break
+    # 判断第 3 列是否承载声部号：收集全曲第 3 列取值
+    col3 = set()
+    for ln in body:
+        s = ln.strip()
+        if not s or s[0] not in "ABCDEFGg":
+            continue
+        f = s.split()
+        if len(f) >= 3 and f[2].isdigit():
+            col3.add(int(f[2]))
+    use_col3 = ("1, 2" in pname) or ("3, 4" in pname)
     measures, cur, voice = {1: {}}, 1, 1
     for ln in body:
         if ln.startswith("measure "):
@@ -110,20 +129,39 @@ def parse_part(body):
         if s.startswith("rest") or s.startswith("irest"):
             m = re.match(r"irest\s+(\d+)", s) if s.startswith("irest") else re.match(r"rest\s+(\d+)", s)
             if m:
+                rf = s.split()
+                if use_col3 and len(rf) > 2 and rf[2].isdigit():
+                    voice = int(rf[2])
                 measures[cur].setdefault(voice, []).append(("rest", (), int(m.group(1)), False))
             continue
+        is_grace = False
         if s[0] not in "ABCDEFG":
-            continue
+            # MuseData 倚音：`gBf4   4  3 t`（g + 音名 + 八度）
+            if len(s) > 2 and s[0] == "g" and s[1] in "ABCDEFG":
+                is_grace = True
+            else:
+                continue
         f = s.split()
         if len(f) < 3:
             continue
+        if is_grace:
+            f = [s[1:].split()[0]] + f[1:]
         try:
             divs = int(f[1].rstrip("-"))
         except ValueError:
             continue
         tie = f[1].endswith("-")
+        if use_col3 and f[2].isdigit():
+            voice = int(f[2])          # 双乐器 part：第 3 列 = 乐器/声部号
         evs = measures[cur].setdefault(voice, [])
         indented = ln[:1] in (" ", "\t")
+        if is_grace:
+            if evs and evs[-1][0] == "grace":
+                kind, pitches, d0, t0 = evs[-1]
+                evs[-1] = ("grace", pitches + (f[0],), d0, t0)
+            else:
+                evs.append(("grace", (f[0],), divs, False))
+            continue
         if indented and evs and evs[-1][0] == "note":
             # 和弦音：与上一音同起点
             kind, pitches, d0, t0 = evs[-1]
@@ -133,7 +171,7 @@ def parse_part(body):
     return q, measures
 
 
-def render_voice(events_by_meas, q, shift, lo, hi):
+def render_voice(events_by_meas, q, shift, lo, hi, part_no=0):
     out = []
     for mm in range(lo, hi + 1):
         evs = events_by_meas.get(mm, [])
@@ -141,7 +179,7 @@ def render_voice(events_by_meas, q, shift, lo, hi):
             out.append("r2 |")
             continue
         bar_beats = 2.0
-        total = sum(e[2] for e in evs) / float(q)
+        total = sum(e[2] for e in evs if e[0] != "grace") / float(q)
         if total > bar_beats + 1e-9:
             out.append("r2 |")
             continue
@@ -149,6 +187,15 @@ def render_voice(events_by_meas, q, shift, lo, hi):
         i = 0
         while i < len(evs):
             kind, pitches, divs, tie = evs[i]
+            sh = shift + EVENT_SHIFTS.get((part_no, mm, i), 0)
+            if kind == "grace":
+                gp = chord_ly(pitches, sh)
+                if gp.startswith("<"):
+                    toks.append("\\grace { %s16 }" % gp)
+                else:
+                    toks.append("\\grace { %s16 }" % gp)
+                i += 1
+                continue
             beats = divs / float(q)
             if kind == "note" and abs(beats - 1.0 / 6) < 1e-6:
                 j = i
@@ -156,7 +203,7 @@ def render_voice(events_by_meas, q, shift, lo, hi):
                         and abs(evs[j][2] / float(q) - 1.0 / 6) < 1e-6:
                     j += 1
                 n = j - i
-                p = chord_ly(pitches, shift)
+                p = chord_ly(pitches, sh)
                 while n >= 12:
                     toks.append("\\tuplet 3/2 { %s }" % (" ".join([p + "16"] * 12)))
                     n -= 12
@@ -174,7 +221,7 @@ def render_voice(events_by_meas, q, shift, lo, hi):
                 toks.append("%%UNKNOWN(%s/%d)" % (pitches, divs))
                 i += 1
                 continue
-            p = chord_ly(pitches, shift)
+            p = chord_ly(pitches, sh)
             nxt = evs[i + 1] if i + 1 < len(evs) else None
             tie_mark = ""
             if tie and nxt and nxt[0] == "note" and nxt[1] == pitches:
@@ -186,7 +233,7 @@ def render_voice(events_by_meas, q, shift, lo, hi):
             i += 1
         # 1/24 为单位精确补足小节
         bar_beats = 2.0
-        total = sum(e[2] for e in evs) / float(q)
+        total = sum(e[2] for e in evs if e[0] != "grace") / float(q)
         left24 = int(round((bar_beats - total) * 24))
         FILL24 = [(96, "1"), (72, "2."), (48, "2"), (36, "4."), (24, "4"),
                   (18, "8."), (12, "8"), (9, "16."), (6, "16"), (4, "T16"),
@@ -229,22 +276,44 @@ def main():
     body.append("%% 移调乐器写实音（不写 \\transposition）：Cl in B♭ −2；Hn in D −10；Hn3,4 in B♭ basso −14；Tr in D +2；Cb −12。")
     body.append("%% 弦乐 tremolo 按底本实际时值（每音 1/6 四分音符）折叠为十六分三连音组。")
     body += ["global = {", "  \\key d \\minor", "  \\time 2/4",
-             '  \\tempo "Allegro ma non troppo" 2 = 88', "}", ""]
+             '  \\tempo "Allegro ma non troppo, un poco maestoso" 4 = 88', "}", ""]
     used = []
     for no, var, gm, clef, shift, label in SPEC:
         name, pbody = parts[no]
-        q, meas = parse_part(pbody)
+        q, meas = parse_part(pbody, name)
         voices = {}
         for mm in range(lo, hi + 1):
             for v, evs in meas.get(mm, {}).items():
                 voices.setdefault(v, {})[mm] = evs
         if not voices:
             continue
-        has_notes = any(any(e[0] == "note" for e in evs)
-                       for mmd in voices.values() for evs in mmd.values())
+        has_notes = any(any(e[0] in ("note", "grace") for e in evs)
+                        for mmd in voices.values() for evs in mmd.values())
         if not has_notes:
             continue
-        rendered = {v: render_voice(ev, q, shift, lo, hi) for v, ev in voices.items()}
+        # 每小节按"音符数从多到少"贪心合并声部，若合并后仍 <= 2 拍则并入（保证不丢音、不超拍）
+        def _beats(evs):
+            return sum(e[2] for e in evs if e[0] != "grace") / float(q)
+        merged = {}
+        for mm in range(lo, hi + 1):
+            cand = sorted(((v, evs) for v, evs in ((v, voices[v].get(mm, [])) for v in voices) if evs),
+                          key=lambda pair: -sum(1 for e in pair[1] if e[0] != "rest"))
+            chosen, total = [], 0.0
+            for v, evs in cand:
+                b = _beats(evs)
+                if not chosen or total + b <= 2.0 + 1e-9:
+                    chosen.extend(evs)
+                    total += b
+            if chosen:
+                merged[mm] = chosen
+        big = [v for v in voices
+               if sum(1 for mmd in voices[v].values() for e in mmd if e[0] != "rest") >= 8]
+        rendered = {}
+        if len(big) >= 2:
+            for v in big[:2]:
+                rendered[v] = render_voice(voices[v], q, shift, lo, hi, no)
+        else:
+            rendered[1] = render_voice(merged, q, shift, lo, hi, no)
         body.append("%% ---- %s ----" % label)
         body.append("%s = {" % var)
         body += ["  \\global", "  \\clef %s" % clef, '  \\set Staff.midiInstrument = "%s"' % gm]
@@ -252,8 +321,19 @@ def main():
             for b in rendered[min(rendered)]:
                 body.append("  " + b)
         else:
-            v1 = rendered.get(1) or rendered[min(rendered)]
-            v2 = rendered.get(2) or ["r2 |"] * (hi - lo + 1)
+            def _meanpitch(v):
+                ps = []
+                for mmd in voices[v].values():
+                    for e in mmd:
+                        if e[0] in ("note", "grace"):
+                            for p in e[1]:
+                                mp = parse_pitch_midi(p)
+                                if mp is not None:
+                                    ps.append(mp + shift)
+                return (sum(ps) / len(ps)) if ps else 0
+            keys = sorted(rendered, key=lambda v: -_meanpitch(v))
+            v1 = rendered[keys[0]]
+            v2 = rendered[keys[1]] if len(keys) > 1 else ["r2 |"] * (hi - lo + 1)
             body.append("  <<")
             body.append("    { " + " ".join(v1) + " }")
             body.append("    \\\\")
@@ -263,7 +343,7 @@ def main():
         body.append("")
         used.append(var)
     body.append("#(set-global-staff-size 11)")
-    body.append('\\paper { #(set-paper-size "a4landscape") }')
+    body.append('\\paper { #(set-paper-size "a4landscape") system-count = 6 }')
     body.append("")
     body += ["\\score {", "  <<", "    \\new StaffGroup <<"]
     for var in used:

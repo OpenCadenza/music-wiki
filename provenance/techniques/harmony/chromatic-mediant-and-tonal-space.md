@@ -15,5 +15,5 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op53-i-mm1-14` | 贝多芬 Op.53 第一乐章 | Allegro con brio，mm.1–14 | 待补 | 未确认 |
-| `beethoven-op53-i-mm23-42` | 贝多芬 Op.53 第一乐章 | Allegro con brio，mm.23–42 | 待补 | 未确认 |
+| `beethoven-op53-i-mm1-14` | 贝多芬 Op.53 第一乐章 | Allegro con brio，mm.1–14 | Humdrum Kern `sonata21-1.krn`（经 verifier-5 独立核验；另以两份 CC0 MusicXML 交叉核对音高/八度 14/14 小节一致） | 待确认（Humdrum 语料） |
+| `beethoven-op53-i-mm23-42` | 贝多芬 Op.53 第一乐章 | Allegro con brio，mm.23–42 | 同上 `sonata21-1.krn`（verifier-5 核验；CC0 MusicXML 20/20 小节一致） | 待确认（Humdrum 语料） |
