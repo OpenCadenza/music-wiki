@@ -44,7 +44,9 @@ const dupIds = [...idOwners.entries()].filter(([, v]) => v.length > 1);
 
 const bodyRules = [
   ['A 内部代号', /\b(?:scholar-[abc]\d?|assistant-scores(?:-[a-z])?)\b/],
-  ['B 源文件行号', /(?:^|[^0-9])行 \d+|Lines? \d+[-–]\d+/],
+  // 「下行 1 个半音」「上行 2 度」「进行 3 次」这类是音乐描述，不是源文件行号；
+  // 只把「行 137」「第 12 行」「行 34–40」「Lines 112–146」这种维护者定位算 B 条残留。
+  ['B 源文件行号', /(?<![下上进先平同本每几])行\s?\d+(?!\s*(?:个|度|次|种|拍|音|小节|声部|半音))|第\s?\d+(?:[-–]\d+)?\s?行|Lines?\s?\d+/],
   ['B 本地路径', /local\/(?:resources|workbench|origin_resources)/],
   ['C 交付状态', /交付状态|待后续谱例|待资料助手|待谱例助手|待谱例交付/],
   ['E GM 编号', /GM \d/],
