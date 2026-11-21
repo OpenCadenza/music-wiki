@@ -223,12 +223,12 @@ if (notationBlocks === 0) {
   errors.push('expected at least one ABC/LilyPond block')
 }
 
-// 来源与许可不再登记在 content/ 内，改为仓库根 NOTICE.md。
-if (!existsSync(join(root, 'NOTICE.md'))) {
-  errors.push('NOTICE.md is missing at repository root')
+// 来源与许可按文章登记在仓库根 provenance/，与 content/ 同构；NOTICE.md 只保留为旧链接的指针。
+if (!existsSync(join(root, 'provenance', 'README.md'))) {
+  errors.push('provenance/README.md is missing at repository root')
 }
 if (existsSync(join(contentRoot, 'knowledge', 'sources.json'))) {
-  errors.push('content/knowledge/sources.json: source registry belongs in NOTICE.md')
+  errors.push('content/knowledge/sources.json: source registry belongs in provenance/')
 }
 
 if (errors.length) {

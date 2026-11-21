@@ -321,3 +321,24 @@ mjx-container[display='block'] {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
+/* Anchor target for a score: give it room below the sticky nav bar. */
+.score-example {
+  scroll-margin-top: calc(var(--vp-nav-height) + 1rem);
+}
+
+/* Article footer link to provenance/<path>.md. */
+.provenance-link {
+  margin: 2rem 0 0;
+  font-size: 0.9rem;
+}
+
+.provenance-link a {
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+}
+
+.provenance-link a:hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+}
