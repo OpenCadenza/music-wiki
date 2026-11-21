@@ -14,8 +14,8 @@
     - Planes of Tone：音响平面定义与平面内融合三条件（音色相似、节奏同步、密集排列、力度均衡）；
     - Background: Movement：背景运动平面的四种基本形态（反复音、琶音、音阶、颤音）。
   - 乐谱文献与作品案例：
-    - 海顿（J. Haydn）：《C大调弦乐四重奏“皇帝”》Op. 76 No. 3 第二乐章 Poco adagio, cantabile（mm. 1–20 完整嵌入 LilyPond 谱例；同一圣咏主题在四件乐器间轮转呈示，变奏一第二小提琴接棒旋律、第一小提琴跃升为十六分音符运动平面、中提琴与大提琴休止留白）；
-    - 贝多芬（L. v. Beethoven）：《F大调第16弦乐四重奏》Op. 135 第三乐章 Lento assai, cantante e tranquillo（mm. 1–12 完整嵌入 LilyPond 谱例；极弱密集和声中的微观运弓与切分长音时域解耦；与第四乐章动机倒影分析形成自然跨篇链接）。
+    - 海顿（J. Haydn）：《C大调弦乐四重奏“皇帝”》Op. 76 No. 3 第二乐章 Poco adagio, cantabile（mm. 1–20 完整嵌入 LilyPond 谱例；同一圣咏主题在四件乐器间轮转呈示，变奏一提示第二小提琴接棒旋律、第一小提琴跃升为十六分音符运动平面、织体减薄与留白）；
+    - 贝多芬（L. v. Beethoven）：《F大调第16弦乐四重奏》Op. 135 第三乐章 Lento assai, cantante e tranquillo（mm. 1–12 完整嵌入 LilyPond 谱例；第一小提琴在中低把位 A♭3–F4 密集排列、极弱密集和声中的微观运弓与切分长音时域解耦；与第四乐章动机倒影分析形成自然跨篇链接）。
 - **正文位置**：
   - 正文：`content/ensembles/string-quartet-acoustic-role-differentiation.md`
   - 编制轴目录导引：`content/ensembles/index.md`（收录导引）
@@ -25,4 +25,4 @@
   - 正文中全部采用符合规范的 LilyPond 围栏，无空围栏，乐谱与声学分析完全闭环。
 - **工程与内容校验**：
   - 运行 `node scripts/validate-content.mjs`，通过校验。
-- **状态**：`第二波修订完成（已改短标题“弦乐四重奏”与单行副标题、正文清除所有行号与本地路径为正文章节名、跨篇引用统一使用短标题链接 [《钢琴三重奏》](piano-trio-acoustic-compromise.md) 与 [《动机倒影》](../techniques/material/motivic-inversion-and-harmonic-recontextualization.md)、清除文末文献中所有行号与本地路径并规范条目、填补 provenance 来源与谱例表）`
+- **状态**：`第二轮复读修订完成（海顿变奏一降级为可核减薄表述并更正为 G 大调、贝多芬 Op. 135 第一小提琴音区按谱例修正为起于 D♭4/F4 并下潜至 A♭3、统一小提琴实测基频与常规/独奏频率范围、删除决策树与清单等冗余收尾、补充编制篇互链）`
