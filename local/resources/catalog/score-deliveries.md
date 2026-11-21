@@ -104,5 +104,39 @@ HWV 348 Air、K.550 III、Op.55 I、Op.67 IV、Reicha Op.88/2、Nielsen Op.43、
 | SCR-039 | 舒伯特 D.929 第二乐章 mm.1–21 | S9 | 核验通过（补 13 条力度、修 m.16 连音线、隐藏节拍机后），已入正文 |
 
 ### 新增谱源：PDMX MusicXML（2026-11-17）
-
 Zenodo 记录 15571083 的 `mxl.tar.gz`（1,894,335,797 B）已取回并解包，5 份 MusicXML 归档在 `scholar-plan-dev/local/resources/scores/pdmx/`（附 README）：Nielsen Op.43 全曲、Nielsen Kvintet 另一转录、Schubert D.929 二乐章三份转录。归档结构为 `mxl/<两位hex>/<两位hex>/<hash>.mxl`，与 `score-s7` 清单里的 `PDMX/mxl/...` 写法不同，按 `members-map.json` 的文件名前缀匹配解出。
+
+---
+
+## 2026-11-22 第二轮 P1 补谱（`task-4`，`score-assistant-2`）
+
+产出目录：`local/workbench/scores/score-p1/`。**生产者不得自我认证**：下表"待独立核验"即表示本助手只完成编码+自检，未作核验结论。
+
+| 编号 | 作品与片段 | 谱源 | 交付文件 | 状态 | 编译结果 |
+| --- | --- | --- | --- | --- | --- |
+| **SCR-040** | 贝多芬 第七交响曲 Op.92 **II. Allegretto mm.1–10**（10 谱表摘录：长笛/双簧管/单簧管 A/大管/圆号 E + 中提琴/大提琴/低音提琴；一、二小提琴保留空谱表；小号、定音鼓该段全休止，从略） | Mutopia Project #595（Stelios Samelis, 2005；源标 Dover/Litolff，PD）分谱，本地副本 `local/workbench/scores/score-s2/downloads/op92-2/` | `local/workbench/scores/score-p1/beethoven-op92-ii-mm1-10/beethoven-op92-ii-mm1-10.ly`（+ `.pdf`/`.mid`/`page.png` 本地预览件）<br>核对记录：同目录 `核对记录.md`；核验报告：同目录 `核验报告-verifier.md` | **已核验（verifier-4：记谱逐音一致、结构事实全对）**。已按 verifier 意见修正 D1（圆号移调 → 音乐会音高 E3/E4）与 D2（单簧管/圆号改实音记谱），重编译 0 error/0 warning。**同时证伪正文原表述**"前 26 小节木管与铜管完全沉默"：m.1–3 由双簧管、单簧管(A)、大管、圆号(E) 以 f→pp 奏 a 小调主和弦，m.3 后半拍释放；m.3–26 才是纯低弦，第二小提琴 m.27、第一小提琴 m.51 依次进入。正文已回填 `beethoven-op92-ii-mm1-10` 围栏并改写该段 |
+| **SCR-038（重新登记）** | 尼尔森 管乐五重奏 Op.43 第一乐章（弱起 + 印刷谱 mm.1–11） | 见 SCR-038 原行（PDMX MXL，`local/origin_resources/downloads/2026-11-17/pdmx/extract/mxl/`） | `local/workbench/scores/score-s8/nielsen-op43-mvt1-mm1-12.ly` | **待独立核验（本轮仅登记，不做自我认证）**：本轮未重新核对内容，也未复核其既有"可放行"结论；按 P1 清单 #7 只登记状态，等 verifier 独立结论 | 沿用 S8 记录（0 error / 0 warning） |
+
+### 缺口（本轮补谱清单 #1 / #2 / #4 / #5，如实报告）
+
+| 清单项 | 作品/片段 | 本轮结论 |
+| --- | --- | --- |
+| #1 | 贝多芬 钢琴三重奏 Op.97《大公》第一乐章 mm.1–12 | **无可用机器可读源**（续 `score-s5`/`score-s7` 缺口报告：本地 kern 仅钢琴奏鸣曲+弦乐四重奏；PDMX 无 Op.97；Mutopia 无 O97；IMSLP 仅 PDF 扫描；MuseScore 唯一候选自述 WIP） |
+| #2 | 雷哈 管乐五重奏 Op.88 No.2 第一乐章 mm.1–8 | **无可用机器可读源**（IMSLP 木管五重奏曲目表缺 Op.88/2；MuseScore `scores/9588706` 标 CC0 但导出需登录会话） |
+| #4 | 贝多芬 第九交响曲 Op.125 第一乐章 mm.1–35 | **无可用机器可读源**（Mutopia 该项目仍在 in-progress；本机无交响曲 kern/MusicXML；IMSLP 直链被 bot check 拦） |
+| #5 | 马勒 第四交响曲 第二乐章 mm.34–46 | **无可用机器可读源**（PDMX 25.4 万条 0 命中；Mutopia 无 Mahler；KernScores 503） |
+
+**下一步建议（若主控要推进这四处）**：① 用带登录会话的浏览器导出 MuseScore CC0 MXL（Reicha Op.88/2 唯一许可干净的一条）；② Zenodo PDMX `mxl.tar.gz` 全量重取后按 `score-s7/_probe/expect_mxl.tsv` 清单精确取件（该清单已确认含 Op.97/Reicha 之外的目标）；③ **Op.125 本轮新发现可行路径**：CCARH《The Nine Symphonies of Beethoven: A Digital Edition》提供**带显式小节号的 MuseData 原始数据**（非扫描件），`sym9` = Op.125，可从 <https://wiki.ccarh.org/wiki/Ludwig_van_Beethoven> 的 Data 列或 <https://musedata.org/list/> 的 `DATA_URL` 表取 `.md2`；`sym7` 还可用来独立复核 Op.92 II 的未决项（圆号调性、Vn 进入小节）；④ Mahler 4 目前只能挂起或改换同论点例。以上均需外部下载与人工转写，**不经"从扫描目测抄谱"**。
+
+---
+
+## 2026-11-22 R 卡（task-10 / task-8 / task-9，`score-assistant-2`）
+
+进度与阻断的完整说明见 `local/workbench/scores/score-p1/R卡进度与阻断.md`。
+
+| 编号 | 作品与片段 | 谱源 | 交付文件 | 状态 | 编译结果 |
+| --- | --- | --- | --- | --- | --- |
+| **SCR-041** | 贝多芬 第14弦乐四重奏 Op.131 **I. Adagio ma non troppo e molto espressivo，弱起 + 印刷谱 mm.1–8**（Vn I 赋格主题、Vn II m.4 答题进入、Va m.8 末拍进入、Vc 全休止） | `local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet14-1.krn`（Kern，craigsapp 编；**文件头 OMV 误标 Mvmt.4，内容实为第一乐章**） | `local/workbench/scores/score-p1/beethoven-op131-i-mm1-8/beethoven-op131-i-mm1-8.ly`（+ `.pdf`/`.mid`/`page.png`）<br>核对记录：同目录 `核对记录.md` | **待独立核验**。八度基准已用已核验的 `beethoven-op131-i-mm6-11`（SCR-017）逐音校准（kern `c`=C4 标准约定，`es`=E♯）；力度位置与跨边界圆滑线/连音线按"片段内保留、越界删除"简化，已在核对记录 §6 逐条登记 | 0 error / 0 warning；MIDI 逐声部自查：Vn I 首音 G♯4、Vn II 首音 C♯4、Va G♯3、Vc 全休止 |
+| R101 | 莫扎特 K.284 I mm.16–23 / 17–22 | **无源** | — | **缺口**：本地无莫扎特奏鸣曲 kern/ABC；OMT 只有 `k284-ii.xml`（第二乐章）；Mutopia `ftp/MozartWA/` 无 `KV284`；IMSLP 仅扫描 PDF | 未编码 |
+| R201 | 贝多芬 Op.53 I mm.1–14 / mm.23–42 | 已定位 `kern/sonata21-1.krn` | — | **未定稿（阻断）**：底本右手在同一乐句内八度不自洽（m.3 和弦 `D`+`G`=D3+G3，m.4 花彩 `ddd`=D6，相差 3 个八度），两种可能（和弦记低 1–2 个八度 / 花彩记高）只能靠印刷谱一次目视定夺；按"不造谱、不硬猜"停在编码前 | 未编码 |
+| R301 第 2/3 段 | Op.131 VII mm.21–26、mm.216–224 | 同语料 `quartet14-7.krn`（待定位乐章块） | — | **未做**：本轮时间用于第 1 段与工具校准；下一轮可续 | — |

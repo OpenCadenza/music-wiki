@@ -95,10 +95,140 @@ flowchart TD
 
 贝多芬著名的 A 小调快板乐章展现了古典乐派如何通过将配器变换速率压制至极限，来建立坚不可摧的崇高与深沉连续性：
 
-- **配器安排**：在乐章前 26 小节，整个交响乐队的木管与铜管完全保持沉默。沉重而带有催眠特质的特定节奏型（长-短-短-长-长），完全由**中提琴、大提琴与低音提琴**在阴郁的中低音区以弱奏呈示；
-- **微观阶梯推进**：主题进行中，声部从中低弦乐逐步过渡到第二小提琴（Group 1 的相邻弦乐交替），音区缓缓抬升但音色毫无割裂。极低的配器变换速率，使得整段音乐如同石雕般坚固沉穆，为后续木管与全奏的层层展开积蓄了巨大的结构潜能。
+- **配器安排**：木管与圆号只在开篇露一次面：双簧管、单簧管（A）、大管与圆号（E）以 f→pp 的 a 小调主和弦点出调性，到 m.3 第 2 拍即收束退场；此后直到 m.26，全部发音只剩**中提琴、大提琴与低音提琴**，那个沉重而带有催眠特质的节奏型（长-短-短-长-长）由这三声部在阴郁的中低音区以弱奏呈示；
+- **微观阶梯推进**：换声部极慢。第二小提琴直到 m.27 才接过主题，第一小提琴 m.51 才进入，二者都在本段的 26 小节之外；在此之前音色毫无割裂，整段音乐如同石雕般坚固沉穆，为后续木管与全奏的层层展开积蓄了结构潜能。
 
-贝多芬《第七交响曲》Op. 92 第二乐章 Allegretto，mm. 1–26。
+```lilypond title="贝多芬 第七交响曲 Op.92 第二乐章" location="Allegretto，mm.1–10（音乐会音高记谱）" id="beethoven-op92-ii-mm1-10"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key a \minor
+  \time 2/4
+  \tempo "Allegretto" 4 = 76
+}
+
+flauti = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "flute"
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+oboi = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "oboe"
+  <c'' e''>2\f\> ~ | <c'' e''>2\! ~ | <c'' e''>4\pp r4 |
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+clarinetti = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "clarinet"
+  <e' a'>2\f\> ~ | <e' a'>2\! ~ | <e' a'>4\pp r4 |
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+fagotti = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "bassoon"
+  <a c'>2\f\> ~ | <a c'>2\! ~ | <a c'>4\pp r4 |
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+corni = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "french horn"
+  <e e'>2\f\> ~ | <e e'>2\! ~ | <e e'>4\pp r4 |
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+violinoOne = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+violinoTwo = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 | R2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \set Staff.midiInstrument = "viola"
+  R2 | R2 |
+  e4\p^\markup { \large \italic "ten." } e8\staccato e8\staccato |
+  e4\staccato( e4\staccato) |
+  e4 e8\staccato e8\staccato |
+  e4\staccato( e4\staccato) |
+  e4 e8\staccato <d fs>8\staccato |
+  <e g>4\staccato( <e g>4\staccato) |
+  <d g>4 <c g>8\staccato( <d g>8\staccato) |
+  <e g>4 r4 |
+}
+
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  R2 | R2 |
+  c4\p^\markup { \large \italic "ten." } c8\staccato c8\staccato |
+  b,4\staccato( b,4\staccato) |
+  b,4 b,8\staccato b,8\staccato |
+  c4\staccato( c4\staccato) |
+  c4 c8\staccato c8\staccato |
+  c4\staccato( c4\staccato) |
+  b,4 a,8\staccato( b,8\staccato) |
+  c4 r4 |
+}
+
+contrabass = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "contrabass"
+  R2 | R2 |
+  a,4\p^\markup { \large \italic "ten." } a,8\staccato a,8\staccato |
+  gs,4\staccato( gs,4\staccato) |
+  e,4 e,8\staccato e,8\staccato |
+  a,4\staccato( a,4\staccato) |
+  a,4 a,8\staccato a,8\staccato |
+  a,4\staccato( a,4\staccato) |
+  g,4 g,8\staccato( g,8\staccato) |
+  c4 r4 |
+}
+
+\score {
+  <<
+    \new StaffGroup <<
+      \new Staff \flauti
+      \new Staff \oboi
+      \new Staff \clarinetti
+      \new Staff \fagotti
+      \new Staff \corni
+    >>
+    \new StaffGroup <<
+      \new Staff \violinoOne
+      \new Staff \violinoTwo
+      \new Staff \viola
+      \new Staff \violoncello
+      \new Staff \contrabass
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+为便于读谱，单簧管（A）与圆号（E）在这里按音乐会音高记谱；小号与定音鼓在该段全休止，未列入。
 
 ---
 
