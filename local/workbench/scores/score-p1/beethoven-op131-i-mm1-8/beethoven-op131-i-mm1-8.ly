@@ -53,7 +53,7 @@ violinoII = {
   % m.3
   r1 |
   % m.4
-  cs'4\p( r2. |
+  r2. cs'4\p( |
   % m.5
   es'2 fs'2) |
   % m.6

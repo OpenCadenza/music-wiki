@@ -137,6 +137,51 @@ Zenodo 记录 15571083 的 `mxl.tar.gz`（1,894,335,797 B）已取回并解包�
 | 编号 | 作品与片段 | 谱源 | 交付文件 | 状态 | 编译结果 |
 | --- | --- | --- | --- | --- | --- |
 | **SCR-041** | 贝多芬 第14弦乐四重奏 Op.131 **I. Adagio ma non troppo e molto espressivo，弱起 + 印刷谱 mm.1–8**（Vn I 赋格主题、Vn II m.4 答题进入、Va m.8 末拍进入、Vc 全休止） | `local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet14-1.krn`（Kern，craigsapp 编；**文件头 OMV 误标 Mvmt.4，内容实为第一乐章**） | `local/workbench/scores/score-p1/beethoven-op131-i-mm1-8/beethoven-op131-i-mm1-8.ly`（+ `.pdf`/`.mid`/`page.png`）<br>核对记录：同目录 `核对记录.md` | **待独立核验**。八度基准已用已核验的 `beethoven-op131-i-mm6-11`（SCR-017）逐音校准（kern `c`=C4 标准约定，`es`=E♯）；力度位置与跨边界圆滑线/连音线按"片段内保留、越界删除"简化，已在核对记录 §6 逐条登记 | 0 error / 0 warning；MIDI 逐声部自查：Vn I 首音 G♯4、Vn II 首音 C♯4、Va G♯3、Vc 全休止 |
-| R101 | 莫扎特 K.284 I mm.16–23 / 17–22 | **无源** | — | **缺口**：本地无莫扎特奏鸣曲 kern/ABC；OMT 只有 `k284-ii.xml`（第二乐章）；Mutopia `ftp/MozartWA/` 无 `KV284`；IMSLP 仅扫描 PDF | 未编码 |
-| R201 | 贝多芬 Op.53 I mm.1–14 / mm.23–42 | 已定位 `kern/sonata21-1.krn` | — | **未定稿（阻断）**：底本右手在同一乐句内八度不自洽（m.3 和弦 `D`+`G`=D3+G3，m.4 花彩 `ddd`=D6，相差 3 个八度），两种可能（和弦记低 1–2 个八度 / 花彩记高）只能靠印刷谱一次目视定夺；按"不造谱、不硬猜"停在编码前 | 未编码 |
-| R301 第 2/3 段 | Op.131 VII mm.21–26、mm.216–224 | 同语料 `quartet14-7.krn`（待定位乐章块） | — | **未做**：本轮时间用于第 1 段与工具校准；下一轮可续 | — |
+| **SCR-042** | 莫扎特 第六钢琴奏鸣曲 K.284 (205b) **I. Allegro，mm.17–24**（PianoStaff 双行；过渡段收束→三次击槌→抽空→A 大调副题起句） | `local/resources/scores/source-packages/humdrum/mozart-sonatas/0016-16-Piano Sonata No. 6 in D major, K 284 (205b), mvmt. 1.abc`（hum2abc 自 Humdrum kern `sonata06-1.krn` 转换，2021-01-14；L:1/16、M:C、K:D） | `local/workbench/scores/score-p1/mozart-k284-i-mm17-24/`（`.ly` + 核对记录 + pdf/mid/png） | **待独立核验**。事实更正两条：**三次击槌的左手和弦是 A–C♯–E（A 大调主和弦），不是 E–G♯–B**；**内聚裂隙实际是 m.21 第 4 拍双手同时休止 + m.22 左手整小节休止**（非"m.22 第 1 拍"）。详见核对记录 §2 | 0 error / 0 warning；MIDI：右手首和弦 E5/A5/C♯6、左手 A3/A4/G♯4… |
+| **SCR-043** | 贝多芬 第14弦乐四重奏 Op.131 **VII. Allegro，mm.21–26** | `…/beethoven-string-quartets-main/…/kern/quartet14-7.krn` | `local/workbench/scores/score-p1/beethoven-op131-vii-mm21-26/` | **待独立核验**。Vn I C♯6–B♯5–A5–G♯5 下行 × Vc C♯3–D♯3–F♯3–E3 上行＝倒影对位；Va 为"每拍 8 分休止 + 8 分 G♯4"固定型；m.24 四声部 `p` | 0 error / 0 warning；MIDI 逐声部自查通过 |
+| **SCR-044** | 贝多芬 Op.131 **VII. Allegro，mm.216–224** | 同上 `quartet14-7.krn` | `local/workbench/scores/score-p1/beethoven-op131-vii-mm216-224/` | **待独立核验**。实为 D 大调踏板华彩织体（Vc D2/A2 与 E2/A2 交替全音符、Va/Vn II 踏板、Vn I 在 F♯5–A6 间运动）；**是否为"终曲第二主题呈示"属学术判断，本助手不代认证**，建议学者按谱面确认是否换段 | 0 error / 0 warning；MIDI 含 A6(93)、F♯6(90) 等极值音 |
+| R101 | 莫扎特 K.284 I mm.16–23 / 17–22 | 见 SCR-042 | — | **已交付 SCR-042**（取 mm.17–24，范围可再调） | — |
+| **SCR-046** | 贝多芬 第九交响曲 Op.125 **I. Allegro ma non troppo, un poco maestoso，mm.1–35**（**13 谱表**，含 Corno 3,4；弦乐 A–E 五度 tremolo 写成重复和弦 `\tuplet 3/2 { <e' a>16 ×12 }`；A4 横向 3 页） | 同 SCR-045（CCARH MuseData `sym9-mvmt1.md2`，依 B&H 全集 / Bennion 2005；**非 CC0**）。**第二源核对**：`downloads/beethoven-op125-i/op125-i-20parts-musescore-pdmx.mxl`（CC0，source-assistant-2 提供的 `<transpose>` 证据：Cor in D −10、Cor 3,4 in B♭ basso −14、**Tr in D +2**、Cl in B −2、Basso −12）。工具 `md2_parse.py`/`md2_score.py`（per-part Q、**行首缩进=和弦音**、`P` 行忽略、移调实音、1/24 精确补足小节、`--barchecks` 逐小节定位）/`midi_events.py` | `local/workbench/scores/score-p1/beethoven-op125-i-mm1-35/`（`.ly` + 核对记录 + pdf 3 页/mid/png×3） | **待 verifier-6 核验**。入场：m.1 Vn II+Vc/圆号 → m.2 Vn I → m.4 Va+Cb → m.5 Cl → m.9 Ob → m.11 Fl → m.14 Fg → **m.15 Corno 3,4（写 E♮5/E♮4→实 D4/D3）** → **m.16 Tr+Timp 全奏**；开场并集 {A2,E3,A3,E4}＝空五度无三音。**m.21/m.23 的"第 2 声部"已按第二源改正为和弦音**（不再退为休止） | **0 error / 0 warning**（`\barNumberCheck` 逐小节核过 35 小节 × 13 声部） |
+| **SCR-045** | 贝多芬 第九交响曲 Op.125 **I. mm.1–16**（早期版，**声部读法有误**：曾把前导空格当第 2 声部、小号误用 −10；仅作历史对照，**勿回填正文**） | 同上 | `local/workbench/scores/score-p1/beethoven-op125-i-mm1-16/` | 已被 SCR-046 取代 | 0/0（但读法已过时） |
+| R201 | 贝多芬 Op.53 I mm.1–14 / mm.23–42 | `kern/sonata21-1.krn` | — | **已改派**（lead 改派 score-assistant-3；最小编辑方案已授权，另派 source-assistant-2 找第二谱源） | — |
+| R301 第 2/3 段 | Op.131 VII mm.21–26、mm.216–224 | 同上 | — | **已交付 SCR-043 / SCR-044**（R301 三段齐） | 见上 |
+
+---
+
+## 2026-11-22 谱源登记：R2 资料请求（`task-14`，`source-assistant-2`）
+
+本段**不登记交付谱例**，只登记"新入手的机器可读谱源与其许可"，供后续补谱/核验复用。汇总报告：`local/workbench/scores/score-p1/缺口报告-2-来源.md`；取件与核验脚手架：`local/workbench/scores/score-p1/downloads/_pdmx/`（含说明与日志）。每项均有独立 `来源与许可.md`（URL、抓取时间、许可、完整性、转换方式）。
+
+| 编号 | 作品 / 片段 | 谱源（本地路径） | 类型与许可 | 用途与状态 |
+| --- | --- | --- | --- | --- |
+| **SRC-001** | 贝多芬 第九交响曲 Op.125 **第一乐章（全乐章 547 小节）** | `local/workbench/scores/score-p1/downloads/beethoven-op125-i/sym9-mvmt1.md2`（1,452,057 B）<br>URL：`https://bitbucket.org/musedata/beethoven/raw/master/bhl/orch/sym9/editions/public/score/mvt1.md2` | **CCARH MuseData**（`.md2` 文本，14 part，含 `measure N` 显式小节号）；文件头 `(C) 2002,2005 CCARH`，学术/教育用途，**非 CC0**；依 B&H 全集（Bennion 2005）转写 | **P1 清单 #4 主底本**（mm.1–35 可直取）；`Q:24` ⇒ 每小节 48 divisions 可作时值断言 |
+| **SRC-002** | 同上（交叉核对） | `…/beethoven-op125-i/op125-i-20parts-musescore-pdmx.mxl`（541,180 B）、`…/op125-i-52parts-musescore-pdmx.mxl`（696,481 B） | **MusicXML**（MuseScore 用户转录，经 PDMX/Zenodo 15571083 取件）；**CC0 1.0**，`is_official=False` | 与 SRC-001 在"547 小节 / 2/4 / 前 16 小节每小节 2 拍"上一致；抽查音高用，不作主底本。**已用于核 SCR-046 的三处未决项**（圆号/小号移调方向、m.21/m.23 内声部性质、m.15 Corno 3,4 进入音），证据表：`local/workbench/scores/score-p1/downloads/beethoven-op125-i/第二源核对-op125.md` |
+| **SRC-003** | 贝多芬 第二十一钢琴奏鸣曲 Op.53《华尔斯坦》**第一乐章** | `…/beethoven-op53/op53-waldstein-A-musescore-pdmx.mxl`（102,874 B，**小节号 0 起**）、`…/op53-waldstein-B-musescore-pdmx.mxl`（234,884 B，**整部三乐章、小节号 1 起**） | **MusicXML**（MuseScore 用户转录，PDMX）；**CC0 1.0** | **R201 第二谱源**：印刷谱 m.4/m.8/m.11 两源均为 4.0 拍，并据此判定 kern 的"4.5 拍"系解析口径问题（和弦/倚音），已通报 `score-assistant-3` |
+| **SRC-004** | 贝多芬 第七交响曲 Op.92 **第二乐章（全乐章 278 小节）** | `…/beethoven-op92-ii/sym7-mvmt2.md2`（346,584 B）<br>URL：`https://bitbucket.org/musedata/beethoven/raw/master/bhl/orch/sym7/editions/public/score/mvt2.md2` | **CCARH MuseData**（13 part，`measure` 标记 3,550 个）；学术/教育用途，**非 CC0** | **Op.92 II 独立第三编码源**，供 `verifier-4` 复核未决项；该编码圆号记作 `Cor_1-2/(E)` |
+| — | 贝多芬 Op.97《大公》I mm.1–12 | `…/beethoven-op97/_not-op97/beethoven-dmajor-trio-musescore-pdmx.mxl`（80,257 B，CC0） | MusicXML（PDMX） | **排除性证据**：`Allegro vivace e con brio` + 3/4 + 270 小节 ⇒ 非 Op.97，不得作底本；#1 仍为缺口 |
+| — | 雷哈 Op.88 No.2 I mm.1–8 | 无机器可读源；IMSLP 仅扫描（手稿 F-Pn L.4503(1)，44 页）+ 分谱 PDF | — | **缺口**；更正上一轮"IMSLP 无扫描"的判断 |
+| — | 马勒 第四 II mm.34–46 | 无总谱级机器可读源；IMSLP 仅 1 个 MXL（`#1037437`，第二乐章 **Vn1 分谱**排版文件，且下载被 JS 反爬拦截） | — | **缺口**；PDMX 无第四交响曲 |
+
+> 取件与核对可复现说明：大归档 `PDMX.csv`（225,399,738 B）与 `mxl.tar.gz`（1,894,335,797 B）取用后已删除（腾出 ~2 GB），Zenodo 记录公开可重取；提取、扫描、逐小节核验脚本与输出全部留在 `downloads/_pdmx/`。**未绕过任何站点的人机校验/登录限制**（musescore.com 返回 Cloudflare 校验、imslp.org 文件下载走 JS 中转，均如实登记为阻塞）。
+
+
+---
+
+## 2026-11-22 R201 交付（`task-8`，`score-assistant-3`）
+
+> **本节取代上面「R 卡」表里 R201 行的"阻断／未编码"状态。** R201 的"底本 m.4 / m.8 / m.11 各多出 0.5 拍"经独立复核**不成立**，原因是三条 kern 读法错误，**未做任何最小编辑**，按底本原样落谱。详情见两交付目录的 `核对记录.md` §0、§2。
+
+**复核要点（三条读法坑，与 `source-assistant-2` / lead 的结论一致，本助手独立复算确认）**
+1. `8qccc#` 是**倚音**（kern `q`），时值 **0**，不推进时间；
+2. `([4ddd)` 是**四分**（附点会写 `4.ddd`）；
+3. 同一 spine 内**空格分隔的多个 token = 同时发声的和弦**，不能相加 —— m.11 左手 `8GG] (8GL]` 是**一个八分和弦**（0.5），不是两个八分。
+⇒ 统一口径"记录时间推进量 = 各 spine 剩余发声时值的最小值；`q`=0；同 spine 多 token=和弦"，mm.1–14 与 mm.23–42 **34/34 小节全部恰 4.00 拍**；LilyPond barcheck 0 警告。
+
+| 编号 | 作品与片段 | 谱源 | 交付文件 | 状态 | 编译结果 |
+| --- | --- | --- | --- | --- | --- |
+| **SCR-045** | 贝多芬 第21钢琴奏鸣曲 Op.53《Waldstein》**I. Allegro con brio，mm.1–14**（主部 C 大调反复和弦 → G/B 收束 → 花彩 → **B♭ 大调下方大二度模进** → F/A → m.9 高点 → 半音下行低音 C2-B1-B♭1-A1-A♭1-G1 → m.13 延长 → m.14 新句；双行钢琴谱） | **主源**：`local/resources/scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/beethoven-piano-sonatas-main/kern/sonata21-1.krn`（`!!!OPS 53`／`*M4/4`／`*MM144`／`*k[]`）<br>**第二源 A**：`local/workbench/scores/score-p1/downloads/beethoven-op53/op53-waldstein-A-musescore-pdmx.mxl`（PDMX/Zenodo 15571083，CC0，file m.0=印刷 m.1）<br>**第二源 B**：同目录 `…-B-…mxl`（同来源，整部三乐章，小节号 1 起） | `local/workbench/scores/score-p1/beethoven-op53-i-mm1-14/beethoven-op53-i-mm1-14.ly`（+ `.pdf`/`.mid`/`page.png`）<br>核对记录：同目录 `核对记录.md` | **待独立核验**（生产者未自我认证）。三源比对：kern↔本交付 0 差异；**源 B↔本交付 14/14 完全一致**；源 A 仅 m.12 末拍左手和弦分歧（A 记 A1，kern/B/本交付记 C2）。音区三源一致：m.1 左手 36/43=C2/G2、右手 48/52=C3/E3（源 B 实测 MIDI 号）。圆滑线未转译（登记在 §4-3） | 0 error / 0 warning（LilyPond 2.26.0）；MIDI 两谱表 program=0 acoustic grand，总长 56.00 拍；右手 27 个音级 + 2 个倚音（C♯6/E6）全对，左手 16/16 全对 |
+| **SCR-046** | 贝多芬 Op.53 **I. Allegro con brio，mm.23–42**（**B 大调属准备** 十六分琶音层 → m.29 收束／m.30 交接 → mm.31–34 八分对置层 → **m.35 E 大调副题进入**（底本 `dolce e molto legato`）→ mm.39–41 第二乐句＋**m.41 B1+B2 属持续音** → m.42 三连八分上行至 F♯♯5；双行钢琴谱，m.38／m.41 为两层声部） | 同 SCR-045 三源 | `local/workbench/scores/score-p1/beethoven-op53-i-mm23-42/beethoven-op53-i-mm23-42.ly`（+ `.pdf`/`.mid`/`page.png`）<br>核对记录：同目录 `核对记录.md` | **待独立核验**。三源比对：kern↔本交付 0 差异；**源 B↔本交付 20/20 完全一致**；源 A 7/20 分歧（mm.23–26 左手第二半小节音型、m.28、m.32、m.39），均以 kern+B 为准并逐条登记在 §5.2。**`dolce e molto legato` 定位印刷谱 m.35**（A 出现在其 file m.34，正是"A 从 0 起号"判据） | 0 error / 0 warning；MIDI 80.00 拍 = 20×4；右手 28/28、左手 24/24 音级与 kern 完全一致 |
+
+**两源的许可与性质**：A、B 均为 musescore.com 用户转录经 PDMX 收录（`license: cc-zero`、`is_official=False`），**只作交叉核对，不取代 kern、不单独当原谱引用**；取得路径、许可与"两份转录的已知缺陷"见 `local/workbench/scores/score-p1/downloads/beethoven-op53/来源与许可.md`（`source-assistant-2` / `task-14`）。
+
+**给后续 R 卡的可复用结论**：本谱集（craigsapp/beethoven-piano-sonatas 的 MuseData→kern 转写）有三条易踩的记法，核时值前必须先套：① `q` 倚音 = 0 时值；② 同一 spine 空格分隔多 token = 和弦（取最短时值，不累加）；③ `[` / `]` 是**连音线**（不是符杠），`L` / `J` 才是符杠。

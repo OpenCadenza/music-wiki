@@ -48,10 +48,18 @@ def parse_token(tok):
     t = tok
     if t in (".", ""):
         return ("null", None)
-    if t.startswith("r"):
-        m = re.match(r"r+([0-9]*)", t)
-        dur = int(m.group(1)) if m.group(1) else None
-        return ("rest", {"dur": dur, "raw": t})
+    # 去掉前导的重音/连音线等修饰记号
+    m0 = re.match(r"^[\(\[\)\]]+(\S+)$", t)
+    if m0:
+        t = m0.group(1)
+    # 时值前置的休止：8r / 16r / 4r.
+    mr = re.match(r"^([0-9.]+)[rR]+$", t)
+    if mr:
+        d = mr.group(1).rstrip(".")
+        return ("rest", {"dur": int(d) if d else None, "raw": tok})
+    if t[0] in "rR":
+        m = re.match(r"[rR]+([0-9]*)", t)
+        return ("rest", {"dur": int(m.group(1)) if m.group(1) else None, "raw": tok})
     # 音高：可选前导时值 + 字母（可重复）+ 变化音 + 可选时值 + 修饰
     m = re.match(r"^([0-9]*)([a-gA-G]+)([#\-n]*)([0-9]*)(.*)$", t)
     if not m:

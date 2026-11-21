@@ -33,9 +33,9 @@ upper = {
   % m.21
   <cs'' e'' a''>4 e''16 cs''16 e''16 cs''16 a'4 r4 |
   % m.22
-  e''4 a''8 gs''8 b''8 a''8 g''8 fs''8 |
+  e''4 a''8 gs''8 b''8 a''8 gs''8 fs''8 |
   % m.23
-  fs''8\mordent e''4 e''4 e''16 ds''16 e''8-. fs''8-. |
+  fs''8\mordent e''8 e''4. e''16\mordent ds''16 e''8-. fs''8-. |
   % m.24
   e''8 d''!4 fs''8 d''8 cs''4 e''8 |
 }
@@ -45,13 +45,13 @@ lower = {
   \clef treble
   \set Staff.midiInstrument = "acoustic grand"
   % m.17
-  a16 a'16 gs'16 a'16 b'16 a'16 fs'16 a'16 e'16 a'16 d'16 a'16 cs'16 a'16 b16 a16 |
+  a16 a'16 gs'16 a'16 b'16 a'16 fs'16 a'16 e'16 a'16 d'16 a'16 cs'16 a'16 b16 a'16 |
   % m.18
-  a16 a'16 b'16 a'16 cs'16 a'16 d'16 a'16 e'16 a'16 cs'16 a'16 d'16 a'16 b16 a16 |
+  a16 a'16 b16  a'16 cs'16 a'16 d'16 a'16 e'16 a'16 cs'16 a'16 d'16 a'16 b16 a'16 |
   % m.19
-  a16 a'16 gs'16 a'16 b'16 a'16 fs'16 a'16 e'16 a'16 d'16 a'16 cs'16 a'16 b16 a16 |
+  a16 a'16 gs'16 a'16 b'16 a'16 fs'16 a'16 e'16 a'16 d'16 a'16 cs'16 a'16 b16 a'16 |
   % m.20
-  a16 a'16 b'16 a'16 cs'16 a'16 d'16 a'16 e'16 a'16 cs'16 a'16 d'16 a'16 b16 a16 |
+  a16 a'16 b16  a'16 cs'16 a'16 d'16 a'16 e'16 a'16 cs'16 a'16 d'16 a'16 b16 a'16 |
   % m.21
   a4 <a cs' e'>4 <a cs' e'>4 r4 |
   % m.22
@@ -59,7 +59,7 @@ lower = {
   % m.23
   <gs' b'>8 <gs' b'>8 <gs' b'>8 <gs' b'>8 <gs' b'>8 <gs' b'>8 <gs' b'>8 <gs' b'>8 |
   % m.24
-  <fs' a'>8 <fs' a'>8 <fs' a'>8 <fs' a'>8 <e' gs'>8 <e' g'>8 <e' g'>8 <e' g'>8 |
+  <fs' a'>8 <fs' a'>8 <fs' a'>8 <fs' a'>8 <e' gs'>8 <e' gs'>8 <e' gs'>8 <e' gs'>8 |
 }
 
 \score {
@@ -72,3 +72,4 @@ lower = {
   \layout { ragged-right = ##f }
   \midi { }
 }
+
