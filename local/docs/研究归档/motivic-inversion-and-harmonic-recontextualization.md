@@ -26,7 +26,7 @@
     - 儿子惊呼处（mm. 72–76）独唱 $E\flat 5$ 与钢琴伴奏八度连续猛击属音 $D4/D5$ 形成的小二度/小九度摩擦，结合低音副属推进与三次呼喊的调性升高。
 - **特别说明**：
   * 本文严格区分谱面事实（Kern 谱行段与音级音程）、标注数据（DCML TSV 标签）与学者理论推导；
-  * 早期遗留的人工转写乐谱经独立逐音校勘（详见核验记录 `local/workbench/scores/assistant-scores-c/旧谱核验报告.md`），已全数纠偏并基于 Kern 权威源码与 Peters 底本完成规范排版；分析论证完全直接扎根于原生 Kern 谱段与 DCML 表格数据。
+  * 早期遗留的人工转写乐谱经独立逐音校勘（详见历史校勘记录），已全数纠偏并基于 Kern 权威源码与 Peters 底本完成规范排版；分析论证完全直接扎根于原生 Kern 谱段与 DCML 表格数据。
 
 ---
 
@@ -61,7 +61,7 @@
   - 正文中全部去除 Kern 与 DCML 的文件行号（如“第 24–63 行”、“第 2 行”、“第 112–146 行”、“第 23–29 行”、“第 887–960 行”、“第 323–326 行”），统一改为标准小节定位（mm. 1–4、m. 1、mm. 12–16、mm. 13–16、mm. 165–172、mm. 165–168）；
   - 增加对相邻文章的短标题跨篇链接：在 mm. 12–16 处链接到[《八度歧义与演奏法》](../../notation/clef-octave-ambiguity-and-encoding-loss.md)，在 mm. 72–76 处链接到[《半音挂留》](../../composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md)；
   - 订正第 111 行伴奏声部“断音八分音符”为“断音四分音符”（对应原谱 4C' 4E' 4G'）；
-  - 归档中彻底清除代理人代号（`assistant-scores-c`、`task-11`）以及 GM 编号；
+  - 归档中彻底清除内部代理人代号以及 GM 编号；
 - **真实路径复核（清单 D 条）**：
   - 亲自于工作树真实路径 `local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet16-4.krn` 中逐音复核了 mm. 1–4、mm. 12–16、mm. 165–172 对应音符与声部；
   - DCML TSV 与 Mutopia 源码如实注明“本工作树无副本”；

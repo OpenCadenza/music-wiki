@@ -7,7 +7,7 @@
 
 | 来源 | 版本/位置 | 在本文的用途 |
 | --- | --- | --- |
-| J. S. 巴赫 370 首四部合唱 Humdrum Kern 语料库 | `bach-370-chorales-main`（本工作树无副本；涉及 `chor001.krn` [BWV 269], `chor002.krn` [BWV 347], `chor010.krn` [BWV 38/6], `chor021.krn` [BWV 153/5]） | 众赞歌终止式旋律先到、内声部挂留滞后、长音锚定与五音留白的逐音实证依据 |
+| J. S. 巴赫 370 首四部合唱 Humdrum Kern 语料库 | `local/resources/scores/source-packages/humdrum/bach-370-chorales-main/bach-370-chorales-main/kern/`（涉及 `chor001.krn` [BWV 269], `chor002.krn` [BWV 347], `chor010.krn` [BWV 38/6], `chor021.krn` [BWV 153/5]） | 众赞歌终止式旋律先到、内声部挂留滞后、长音锚定与五音留白的逐音实证依据 |
 | Open Music Theory (OMT) | 章节：`cadenceTypes.md`、`voiceLeading-strict.md`、`embellishingTones.md` | 完全正格终止（PAC）、半终止（HC）标准界定及先现音与挂留音理论基准 |
 | 历史声学文献与泛音列物理原理 | 莱比锡圣托马斯/圣尼古拉教堂历史声学背景与泛音列理论 | 终结和弦三倍根音与五音留白去浊机制的声学阐释依据 |
 
