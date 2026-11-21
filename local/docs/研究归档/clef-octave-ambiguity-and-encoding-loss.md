@@ -64,3 +64,8 @@
   - 本人亲自于本工作树中打开并逐音复核了 `beethoven-score-sources/.../kern/` 下的 `quartet16-4.krn`（m.13 `4C'` / `4CC'`）与 `quartet10-1.krn`（m.7 `1BB-`，m.9 `16ee-`）；
   - 明确标注 Mutopia 源码 `Erlkoenig.ly` 在本工作树无本地独立副本（引自外部权威校勘源码）；
   - 完备填写 `provenance/notation/clef-octave-ambiguity-and-encoding-loss.md` 的“引用与出处”表和“谱例”表，未确认许可规范标为“未确认”。
+
+## 复读状态
+
+- 2026-11-22：**已复读**（差异复读 + 按篇修订已落地；本条由主控按工作流 §6 回填）。
+

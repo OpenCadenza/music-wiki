@@ -69,3 +69,8 @@
   - 将原 ASCII 三维变奏矩阵替换为合规的 Mermaid `flowchart TD` 图表，语法自查通过；
 - **补齐 provenance**：
   - 补全 `provenance/techniques/material/motivic-inversion-and-harmonic-recontextualization.md` 的“引用与出处”表和“谱例”表（5 块谱例完整登记，底本可溯，许可标为“未确认”）。
+
+## 复读状态
+
+- 2026-11-22：**已复读**（差异复读 + 按篇修订已落地；本条由主控按工作流 §6 回填）。
+
