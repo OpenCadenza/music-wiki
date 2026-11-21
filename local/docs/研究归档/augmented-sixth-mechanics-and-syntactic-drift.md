@@ -15,7 +15,7 @@
   * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/cadenceTypes.md`（正格终止与半终止的和声动力学要求）；
 - **实证总谱研读**：
   * 沃尔夫冈·阿玛多伊斯·莫扎特《C大调第19弦乐四重奏“不协和”》K. 465 第四乐章（Allegro molto，mm. 10–16；此处遵循 OpenScore 与 OMT 零基记谱口径，即弱起小节计为 m. 0，对应传统印本 mm. 11–17：m. 13 自然下属 IV6，m. 14 第 2 拍爆发法国六和弦 Fr.，mm. 15–16 经 Cad6/4 达成完全正格终止 PAC）；
-  * 路德维希·凡·贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章（Andante molto cantabile ed espressivo，mm. 1–8：如歌萨拉班德变奏主题，m. 7 拍尾至 m. 8 拍头引入德国六和弦 Ger. 强力加压，释放于半终止 HC）；
+  * 路德维希·凡·贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章（Andante molto cantabile ed espressivo，mm. 1–8：如歌萨拉班德变奏主题，m. 7 拍尾至 m. 8 拍头引入德国六和弦 Ger. 强力加压，释放于半终止 HC；经查工作树内 `local/resources/scores/source-packages/beethoven-score-sources/.../kern/sonata30-3.krn` 真实存在并逐音核实一致）；
   * 弗朗茨·舒伯特《降B大调第21钢琴奏鸣曲》D. 960 第一乐章（Molto moderato，mm. 18–48，本工作树无数字谱副本：主部主题呈示与神秘低音震音，德六和弦向属七和弦的等音重拼与半音大三度远关系调区跃迁）；
 - **引证与推论纪律说明**：
   * 本文严格立足于上述实际阅读的 OMT 章节与实证总谱，严禁虚构文献页码与行号；

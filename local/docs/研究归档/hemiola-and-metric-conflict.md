@@ -65,6 +65,9 @@
    - 正文无 ASCII 字符画；节拍脉冲对比数学公式（$3 \times 2 = 6$ vs $2 \times 3 = 6$）与决策图谱表格清晰明了，无需额外增加 Mermaid 图。
 4. **来源与许可建立**：
    - 填写 `provenance/techniques/rhythm/hemiola-and-metric-conflict.md`，登记 Cohn 2016 与 Butterfield 2006 的 MTO 卷期与官方 URL、OMT 章节。
+5. **差异复读修正（第二轮）**：
+   - 补齐 `provenance/techniques/rhythm/hemiola-and-metric-conflict.md` 谱例表中的 3 处占位行（亨德尔 HWV 348 Air、莫扎特 K. 550 III、贝多芬 Op. 55 I），id 标“占位”，底本标“待补”，许可标“未确认”；
+   - 确认正文中 3 处占位形态全部为单行纯文本定位，无多行工单块遗留。
 
 ---
 

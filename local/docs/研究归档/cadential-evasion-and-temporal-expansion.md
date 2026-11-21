@@ -65,8 +65,12 @@
    - 更新跨篇链接文本为短标题（如 [《混合乐段》](hybrid-themes-and-syntax-decoupling.md)、[《海米奥拉》](../rhythm/hemiola-and-metric-conflict.md)、[《慢引子》](../../composers/beethoven/piano-sonatas/slow-introduction-integration.md)）。
 3. **图表与 Mermaid 评估**：
    - 核心力学机制 Mermaid 流程图（终止能级落差与时间传动：PAC 常规闭合、IAC 弱化溢出二次点火、Evaded Cadence 假动作抹消启动 OMT）逻辑严密、直观高效，完整保留。
-4. **来源与许可建立**：
-   - 填写 `provenance/techniques/structure/cadential-evasion-and-temporal-expansion.md`，登记 OMT 章节与 William Rothstein 理论转引出处；2 处嵌入谱例底本记为“待补”，许可记为“未确认”。
+5. **差异复读修正（第二轮）**：
+   - 将 Mermaid 图中 `OMT 机制` 修正为全称 `One-More-Time 机制`，彻底消除与 Open Music Theory 缩写的混淆；
+   - 将 §4.1 莫扎特 K. 494 的文本占位定位行移回 §4.1 对应小节末尾，纠正之前误落在 §4.2 末尾的结构归属错误；
+   - 精炼 §4.2 莫扎特 K. 515（mm. 1–21）讨论，明确其奇数 5 小节 CBI 原生呼吸特征，并确立判定“扩充”与“原生不规则长度”的理论准则；
+   - 更新 §5.4 对复调对位专题的跨篇链接为短标题[《众赞歌终止式》]；
+   - 在 provenance 谱例表中补齐 K. 494 的占位记录。
 
 ---
 

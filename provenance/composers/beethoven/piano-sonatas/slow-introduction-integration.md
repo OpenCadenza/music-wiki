@@ -19,4 +19,4 @@
 | --- | --- | --- | --- | --- |
 | `beethoven-op13-i-mm1-19` | 贝多芬 Op.13《悲怆》第一乐章 | Grave，mm.1–19 | 音乐公有领域；谱源基于 Humdrum Kern `sonata08-1.krn` 再排版 | 未确认 |
 | `beethoven-op81-i-mm1-25` | 贝多芬 Op.81a《告别》第一乐章 | Adagio，mm.1–25 | 音乐公有领域；谱源基于 Humdrum Kern `sonata26-1.krn` 再排版 | 未确认 |
-| `beethoven-op111-i-mm1-25` | 贝多芬 Op.111 第一乐章 | Maestoso，mm.1–25 | 音乐公有领域；谱源基于 Humdrum Kern `sonata32-1.krn` 再排版 | 未确认 |
+| `beethoven-op111-i-mm1-25` | 贝多芬 Op.111 第一乐章 | Maestoso至Allegro，mm.1–25 | 音乐公有领域；谱源基于 Humdrum Kern `sonata32-1.krn` 再排版 | 未确认 |

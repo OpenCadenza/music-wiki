@@ -32,7 +32,7 @@
 ## 2. 正文与索引位置
 
 - **专题正文**：`content/composers/beethoven/piano-sonatas/slow-introduction-integration.md`
-- **归档对应**：本归档（`local/docs/研究归档/beethoven-slow-introduction-integration.md`）对应上述正文文章（保留既有文件名，未新建重复归档）。
+- **归档对应**：本归档（`local/docs/研究归档/slow-introduction-integration.md`）对应上述正文文章。
 - **跨篇自然链接**：正文有机呼应此前篇目：[《混合乐段》](../../../techniques/structure/hybrid-themes-and-syntax-decoupling.md)（紧凑型微观解耦 vs 宏观引子解耦）、[《海米奥拉》](../../../techniques/rhythm/hemiola-and-metric-conflict.md)（双重附点与极端切分对节拍引力的撕裂），以及[《挂留音》](../../../techniques/counterpoint/suspension-mechanics-and-voice-leading.md)（Op. 111 中慢引子减七大跳向严密二重赋格对位的蜕变）。消除了一切内部角色代号。
 
 ---
@@ -53,14 +53,15 @@
    - 调性/拍号：降 E 大调，Adagio 2/4 拍 $\rightarrow$ Allegro 2/2 拍；现况：已完成自包含 LilyPond 围栏嵌入并校验通过。
 3. **贝多芬：c小调第32钢琴奏鸣曲 Op. 111，第一乐章 Maestoso - Allegro con brio ed appassionato，mm. 1–25**
    - 谱例 id：`beethoven-op111-i-mm1-25`
-   - 定位：`Maestoso，mm.1–25`
+   - 定位：`Maestoso至Allegro，mm.1–25`
    - 编制：钢琴双手（Acoustic Grand Piano，已清除 GM 0 编号）
    - 调性/拍号：c 小调，全乐章为单一 4/4 拍（Maestoso 4/4 拍 $\rightarrow$ Allegro 4/4 拍，速度加快而拍号不变，无 2/2 残留）；现况：已完成自包含 LilyPond 围栏嵌入并校验通过。
 
 ---
 
-## 4. 待解决缺口与后续
+## 4. 差异复读修正记录（第二轮）
 
-- 正文内跨篇引用已规范为短标题链接，消除对内部角色代号 `scholar-b2` 的提及；
-- 谱例信息块已清理 GM 编号，只保留乐器名称；
-- 全乐章拍号与谱面数据已完成双重复核。
+- **Op. 111 小节边界与速度换入一致性**：实查 `sonata32-1.krn`，统一 Maestoso 慢引子本体为 mm. 1–16；m. 17 贝多芬显式标入快板速度（`Allegro con brio ed appassionato`），以 2 小节低音十六分音符震音作为前导过门；m. 19 呈示部双小节线正式爆发第一主题（与 LilyPond 围栏 `% 17`、`% 19` 严格对齐）；
+- **Op. 81a 告别动机音高与尾声范围**：实查 `sonata26-1.krn`，更正“Le-be-wohl”音型为德奥传统双音号角音型（高音声部下行三音 $G - F - \text{Eb}$，即 $\hat{3} - \hat{2} - \hat{1}$，内声部 $\text{Eb} - \text{B}\flat - G$），并在第 2 小节突遇低音 C（vi 级 c 小调）阻碍和弦；澄清非虚构图式术语；明确尾声 Coda 确切范围为 mm. 223–257（共 35 小节）；
+- **文字与表述修正**：修正第 60 行“右音声部”笔误为“右手声部”；将第 66 行“远关系的 g 小调”改为“小属调 g 小调”（明确 v 级突然切入的戏剧性）；
+- **谱例引导语统一**：全面移除三处残留的多行工单式“谱例定位”块，改写为单行行内正文引导语，与全库规范统一。

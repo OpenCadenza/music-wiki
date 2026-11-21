@@ -17,7 +17,7 @@
   * `local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/schemataSummary.md`（加兰特图式外声部音级总览）
 - **学术期刊论文与理论文献**：
   * `local/resources/text/organized-html/beethoven-analysis-chamber/raiser-op74-galant-introduction-2018.md`（Johannes Raiser 2018 发表于 ZGMTH，实证考察 Emanuel Aloys Förster 1805 和弦坐落理论、Gjerdingen 图式模型在贝多芬 Op. 74 Poco Adagio 慢引子中的创造性解构与 10-8-6 对位模型）
-  * William E. Caplin 2015《Harmony and Cadence in Gjerdingen's "Prinner"》（界定加兰特线性延续图式的对位本质、非终止属性与延续功能，论证向完全正格终止转化的低音变异条件）
+  * William E. Caplin 2015《Harmony and Cadence in Gjerdingen's "Prinner"》（界定加兰特线性延续图式的对位本质、非终止属性与延续功能，论证向完全正格终止转化的低音变异条件；注：该文与专著全书在本工作树无独立本地全文副本，基于学术转引与既有研究归档记录）
 - **特别说明**：Caplin 与 Gjerdingen 专著全书未在本地收录，本文不假托任何未读原著页码，相关理论概念均严格落脚于上述实际读过的 OMT 篇章、Raiser 论文与 Caplin 2015 论文；关于图式终结力与曲式功能结合机制的推导，在正文中明确注明为“笔者据此推断”。
 
 ---
@@ -61,6 +61,10 @@
    - 全文核查无旧 ASCII 字符画图；现有小节结构划分、对位骨架音级公式与完整实证谱例已极为清晰，无需画蛇添足加 Mermaid 图。
 5. **来源与许可建立**：
    - 填写 `provenance/techniques/structure/galant-schemata-and-formal-functions.md`，登记 OMT 章节、Johannes Raiser 2018 论文以及 William E. Caplin 2015 论文出处；3 处谱例底本记为“待补”，许可记为“未确认”。
+6. **差异复读修正（第二轮）**：
+   - 审慎校正 Caplin 2015 论文转述用语，改“专门指出”为客观陈述“据卡普林对 Prinner 的辨析（见研究归档所列 Caplin 2015 论文）”，并明确标注该文在本地工作树无独立全文副本的引证状态；
+   - 修正案例 2 莫扎特 K. 283 前 4 小节实证分析：纠正原先将阿尔贝蒂分解低音误称“声部延留与对位延留和弦”的偏差，实打实按谱面明确为连续经过式属七和弦转位低音（$G \to A \to F\sharp \to G$）与轻快琶音伴奏织体（$I - V^4_3 - V^6_5 - I$）；
+   - 更新 §四 跨专题互链块，将旧长标题全面更新为短标题[《挂留音》]与[《半音挂留》]。
 
 ---
 
