@@ -1,0 +1,779 @@
+[
+ {
+  "slug": "beethoven-op61",
+  "name": "op61-mvt1.md2",
+  "bytes": 829599,
+  "valid": true,
+  "wk": "61",
+  "mv": "1",
+  "barlines": 0,
+  "source_line": "Breitkopf & H�rtel, Series 4 No.29, Leipzig"
+ },
+ {
+  "slug": "brahms-op51n1",
+  "name": "brahms-op51n1.mxl",
+  "bytes": 258221,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq7108150.xml"
+  ],
+  "has_container": true,
+  "measures": 3032,
+  "parts": 4,
+  "title": "String Quartet No.1, Op.51 No.1",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "brahms-op91",
+  "name": "op91-1-Gestillte-Sehnsucht.mxl",
+  "bytes": 25202,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 297,
+  "parts": 3,
+  "title": "Gestillte Sehnsucht",
+  "instruments": [
+   "Singstimme.\nVoice",
+   "Bratsche.\nViola",
+   "Pianoforte."
+  ],
+  "valid": true
+ },
+ {
+  "slug": "brahms-op91",
+  "name": "op91-2-Geistliches-Wiegenlied.mxl",
+  "bytes": 26218,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 471,
+  "parts": 3,
+  "title": "Geisliches Wiegenlied",
+  "instruments": [
+   "Singstimme\nVoice",
+   "Bratsche\nViola",
+   "Pianoforte"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-1-Cest-lextase.mxl",
+  "bytes": 12694,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 104,
+  "parts": 2,
+  "title": "C'est l'extase langoureuse",
+  "instruments": [
+   "Chant\nVoice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-2-Il-pleure.mxl",
+  "bytes": 16607,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 160,
+  "parts": 2,
+  "title": "Il Pleure dans mon Coeur",
+  "instruments": [
+   "Voice",
+   "PIANO"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-3-Lombre-des-arbres.mxl",
+  "bytes": 8476,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 62,
+  "parts": 2,
+  "title": "L'Ombre des Arbres",
+  "instruments": [
+   "Chant\nVoice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-4-Paysages-belges.mxl",
+  "bytes": 22184,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 204,
+  "parts": 2,
+  "title": "Paysages belges. Chevaux de bois",
+  "instruments": [
+   "Chant\nVoice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-5-Green.mxl",
+  "bytes": 13174,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 116,
+  "parts": 2,
+  "title": "Green",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-6-Spleen.mxl",
+  "bytes": 11682,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 68,
+  "parts": 2,
+  "title": "Spleen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "debussy-quartet",
+  "name": "debussy-op10.mxl",
+  "bytes": 327874,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq8661306.xml"
+  ],
+  "has_container": true,
+  "measures": 3396,
+  "parts": 4,
+  "title": "String Quartet in G minor, Op.10",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "dvorak-op96",
+  "name": "dvorak-op96-american.mxl",
+  "bytes": 246552,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq8885439.xml"
+  ],
+  "has_container": true,
+  "measures": 3412,
+  "parts": 4,
+  "title": "String Quartet No.12, Op.96 (“American”)",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-02.krn",
+  "bytes": 13946,
+  "valid": true,
+  "spines": 4,
+  "barlines": 105,
+  "otl": "String Quartet in C Major"
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-03.krn",
+  "bytes": 6777,
+  "valid": true,
+  "spines": 4,
+  "barlines": 101,
+  "otl": "String Quartet in C Major"
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-open-score.mxl",
+  "bytes": 197968,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 2124,
+  "parts": 4,
+  "title": "String Quartet in C major, Hob.III:77, Op.76 No.3",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "haydn-seven-last-words",
+  "name": "haydn-op51-seven-last-words.mxl",
+  "bytes": 370398,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 3912,
+  "parts": 4,
+  "title": "Die Worte des Erlösers am Kreuze, Hob.III:50–56, Op.51",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104a.krn",
+  "bytes": 135525,
+  "valid": true,
+  "spines": 18,
+  "barlines": 296,
+  "otl": "Symphonie Nr. 104"
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104b.krn",
+  "bytes": 82950,
+  "valid": true,
+  "spines": 18,
+  "barlines": 153,
+  "otl": "Symphonie Nr. 104"
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104c.krn",
+  "bytes": 42918,
+  "valid": true,
+  "spines": 18,
+  "barlines": 109,
+  "otl": "Symphonie Nr. 104"
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104d.krn",
+  "bytes": 130430,
+  "valid": true,
+  "spines": 18,
+  "barlines": 339,
+  "otl": "Symphonie Nr. 104"
+ },
+ {
+  "slug": "mozart-k421",
+  "name": "mozart-k421.mxl",
+  "bytes": 146629,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq7294793.xml"
+  ],
+  "has_container": true,
+  "measures": 1704,
+  "parts": 4,
+  "title": "String Quartet No.15 in D minor, K.421/417b (Op. 10, No. 2)",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "mozart-k467",
+  "name": "k467-mvt1.md2",
+  "bytes": 711896,
+  "valid": false,
+  "wk": "467",
+  "mv": "1",
+  "barlines": 0,
+  "source_line": ""
+ },
+ {
+  "slug": "mozart-k467",
+  "name": "k467-mvt2.md2",
+  "bytes": 236947,
+  "valid": false,
+  "wk": "467",
+  "mv": "2",
+  "barlines": 0,
+  "source_line": ""
+ },
+ {
+  "slug": "mozart-k550",
+  "name": "k550-mvt1.md2",
+  "bytes": 536132,
+  "valid": false,
+  "wk": "550",
+  "mv": "1",
+  "barlines": 0,
+  "source_line": ""
+ },
+ {
+  "slug": "schubert-d810",
+  "name": "schubert-d810.mxl",
+  "bytes": 380491,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq7397765.xml"
+  ],
+  "has_container": true,
+  "measures": 5780,
+  "parts": 4,
+  "title": "String Quartet in D minor, D.810, No.14 (“Death and the Maiden”)",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D911-01-Gute-Nacht.mxl",
+  "bytes": 30422,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 210,
+  "parts": 2,
+  "title": "Gute Nacht",
+  "instruments": [
+   "Singstimme",
+   "Pianoforte"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D911-05-Der-Lindenbaum.mxl",
+  "bytes": 37521,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 164,
+  "parts": 2,
+  "title": "Der Lindenbaum",
+  "instruments": [
+   "Singstimme",
+   "Pianoforte"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D957-04-Standchen.mxl",
+  "bytes": 11188,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 118,
+  "parts": 2,
+  "title": "Ständchen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-01_Im_wunderschönen_Monat_Mai.mxl",
+  "bytes": 12492,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 54,
+  "parts": 2,
+  "title": "Im wunderschönen Monat Mai",
+  "instruments": [
+   "Clarinet in C",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-02_Aus_meinen_Tränen_sprießen.mxl",
+  "bytes": 4729,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 36,
+  "parts": 2,
+  "title": "Aus meinen Tränen spriessen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-03_Die_Rose-_die_Lilie.mxl",
+  "bytes": 5192,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 46,
+  "parts": 2,
+  "title": "Die Rose, die Lilie, die Taube",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-04_Wenn_ich_in_deine_Augen_seh-.mxl",
+  "bytes": 6360,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 42,
+  "parts": 2,
+  "title": "Wenn ich in deine Augen seh'",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-05_Ich_will_meine_Seele_tauchen.mxl",
+  "bytes": 6354,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 46,
+  "parts": 2,
+  "title": "Ich will meine Seele tauchen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-06_Im_Rhein-_im_heiligen_Strome.mxl",
+  "bytes": 8209,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 118,
+  "parts": 2,
+  "title": "Im Rhein, im heiligen Strome",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-07_Ich_grolle_nicht.mxl",
+  "bytes": 8944,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 72,
+  "parts": 2,
+  "title": "Ich grolle nicht",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-08_Und_wüssten-s_die_Blumen.mxl",
+  "bytes": 11578,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 76,
+  "parts": 2,
+  "title": "Und wüssten's die Blumen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-09_Das_ist_ein_Flöten_und_Geigen.mxl",
+  "bytes": 12150,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 170,
+  "parts": 2,
+  "title": "Das ist ein Flöten und Geigen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-10_Hör-_ich_das_Liedchen_klingen.mxl",
+  "bytes": 5867,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 60,
+  "parts": 2,
+  "title": "Hör' ich das Liedchen klingen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-11_Ein_Jüngling_liebt_ein_Mädchen.mxl",
+  "bytes": 6562,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 94,
+  "parts": 2,
+  "title": "Ein Jüngling liebt ein Mädchen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-12_Am_leuchtenden_Sommermorgen.mxl",
+  "bytes": 7275,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 60,
+  "parts": 2,
+  "title": "Am leuchtenden Sommermorgen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-13_Ich_hab-_im_Traum_geweinet.mxl",
+  "bytes": 6660,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 78,
+  "parts": 2,
+  "title": "Ich hab' im Traum geweinet",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-14_Allnächtlich_im_Traume.mxl",
+  "bytes": 6915,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 78,
+  "parts": 2,
+  "title": "Allnächtlich im Traume",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-15_Aus_alten_Märchen_winkt_es.mxl",
+  "bytes": 16889,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 228,
+  "parts": 2,
+  "title": "Aus alten Märchen",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-16_Die_alten-_bösen_Lieder.mxl",
+  "bytes": 15463,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "has_container": true,
+  "measures": 134,
+  "parts": 2,
+  "title": "Die alten, bösen Lieder",
+  "instruments": [
+   "Voice",
+   "Piano"
+  ],
+  "valid": true
+ },
+ {
+  "slug": "smetana-sq1",
+  "name": "smetana-sq1-from-my-life.mxl",
+  "bytes": 309997,
+  "zip_ok": true,
+  "members": [
+   "META-INF/container.xml",
+   "sq7483523.xml"
+  ],
+  "has_container": true,
+  "measures": 3584,
+  "parts": 4,
+  "title": "String Quartet No.1",
+  "instruments": [
+   "Violin 1",
+   "Violin 2",
+   "Viola",
+   "Violoncello"
+  ],
+  "valid": true
+ }
+]

@@ -1,0 +1,1003 @@
+[
+ {
+  "slug": "mozart-k550",
+  "name": "k550-mvt1.md2",
+  "bytes": 536132,
+  "sha256": "3f627f5521a47fae2f72fcc8b1347a04a13c37b7f4097170917ee1e2e841a0f9",
+  "url": "https://bitbucket.org/musedata/mozart/raw/master/nma/sym/k550/editions/public/score/mvt1.md2",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Mozart, Symphony No. 40 in G minor, K.550 — Mvt 1",
+  "format": "MuseData md2",
+  "coverage": "第一乐章全（Molto allegro）；据 Neue Mozart-Ausgabe（NMA）转录，文件头注明 \"first version\"",
+  "note": "候选 #1 底本；亦可用于候选 #23（A/Bb 单簧管移调记谱）",
+  "wk": "550",
+  "mv": "1",
+  "barlines": 0,
+  "source": "Neue Mozart Augabe",
+  "copyright": null,
+  "muse2psv1": "z18xf1j2S50m150w2200MT^Symphony"
+ },
+ {
+  "slug": "mozart-k467",
+  "name": "k467-mvt1.md2",
+  "bytes": 711896,
+  "sha256": "8ca646179581c1c605bc41fe300dd5215159fc5b71e02baeb8e769dfde02868b",
+  "url": "https://bitbucket.org/musedata/mozart/raw/master/nma/conc/k467/editions/public/score/mvt1.md2",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Mozart, Piano Concerto No. 21 in C major, K.467 — Mvt 1",
+  "format": "MuseData md2",
+  "coverage": "第一乐章全（含乐队全奏段与钢琴段分谱行）",
+  "note": "候选 #19 ritornello 底本",
+  "wk": "467",
+  "mv": "1",
+  "barlines": 0,
+  "source": "Neue Mozart Augabe",
+  "copyright": "(C) ",
+  "muse2psv1": "z18xf1j2S50m150w2200MG^data^T^Piano"
+ },
+ {
+  "slug": "mozart-k467",
+  "name": "k467-mvt2.md2",
+  "bytes": 236947,
+  "sha256": "19b2850adefa5cebc3b4e2b21913fdc028527e465c56e1aa33c66145878d9389",
+  "url": "https://bitbucket.org/musedata/mozart/raw/master/nma/conc/k467/editions/public/score/mvt2.md2",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Mozart, Piano Concerto No. 21 in C major, K.467 — Mvt 2",
+  "format": "MuseData md2",
+  "coverage": "第二乐章全（Andante）",
+  "note": "候选 #2（原 K.488 不可得，改 K.467 第二乐章）底本",
+  "wk": "467",
+  "mv": "2",
+  "barlines": 0,
+  "source": "Neue Mozart Augabe",
+  "copyright": null,
+  "muse2psv1": "z18xf1j2S50m150w2200MG^data^T^Piano"
+ },
+ {
+  "slug": "beethoven-op61",
+  "name": "op61-mvt1.md2",
+  "bytes": 829599,
+  "sha256": "5b43285b70697c2d29ead36924fe0e882abbb66fafab8743a6ae760f88ff0962",
+  "url": "https://bitbucket.org/musedata/beethoven/raw/master/bhl/conc/violin/editions/public/score/mvt1.md2",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Beethoven, Violin Concerto in D major, Op.61 — Mvt 1",
+  "format": "MuseData md2",
+  "coverage": "第一乐章全；据 Breitkopf & Haertel 全集转录，Fran Bennion 1996/2002",
+  "note": "候选 #19 第二底本（独奏—乐队交替）",
+  "wk": "61",
+  "mv": "1",
+  "barlines": 0,
+  "source": "Breitkopf & H�rtel, Series 4 No.29, Leipzig",
+  "copyright": "(C) 1996, 2002 Center for Computer Assisted Research in the Humanities.",
+  "muse2psv1": "z18xf1j2S100m150w2200MT^Violin"
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-02.krn",
+  "bytes": 13946,
+  "sha256": "212313374424d891a25949b8711ce10b6a3c6b2959e0f08b79d8bc4ee924c9b7",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-quartets/master/kern/op76n3-02.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, String Quartet in C major, Op.76 No.3 (Hob.III:77) — Mvt 2",
+  "format": "Humdrum **kern",
+  "coverage": "第二乐章（Poco adagio, cantabile, 变奏乐章）全",
+  "note": "候选 #4 主底本",
+  "spines": 4,
+  "barlines": 105,
+  "otl": "String Quartet in C Major",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-03.krn",
+  "bytes": 6777,
+  "sha256": "f13d2297906ee4fd9c9de21358ce787969cd55ccaf39f28822c64281972cda7a",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-quartets/master/kern/op76n3-03.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, String Quartet in C major, Op.76 No.3 — Mvt 3",
+  "format": "Humdrum **kern",
+  "coverage": "第三乐章（Menuetto）全",
+  "note": "候选 #4 补充（舞曲乐章对照）",
+  "spines": 4,
+  "barlines": 101,
+  "otl": "String Quartet in C Major",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-op76n3",
+  "name": "op76n3-open-score.mxl",
+  "bytes": 197968,
+  "sha256": "3bd97417c8e7a5b80fba5821ec4d80d8bde19f030f169ac3cfba17f3a70492dd",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Haydn,_Joseph/String_Quartet_in_C_major,_Hob.III77,_Op.76_No.3/sq20428156.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Haydn, String Quartet in C major, Op.76 No.3 — 全曲 4 乐章",
+  "format": "MusicXML (MXL, MuseScore 导出)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #4 第二来源（CC0，可公开引用的清版）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 4,
+  "total_measures": 530,
+  "movements": 4,
+  "mvmt_measures": [
+   128,
+   109,
+   103,
+   190
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104a.krn",
+  "bytes": 135525,
+  "sha256": "ae63818fb0e86865ea74e8e1b535d8def9c3dd67d1632a8d3b05cb83287d4bd5",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-symphonies/master/kern/sym104a.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, Symphony No.104 in D major (London) — Mvt 1",
+  "format": "Humdrum **kern",
+  "coverage": "第一乐章（Adagio—Allegro）全，18 声部",
+  "note": "候选 #5 主底本",
+  "spines": 18,
+  "barlines": 296,
+  "otl": "Symphonie Nr. 104",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104b.krn",
+  "bytes": 82950,
+  "sha256": "c031e214049dc306639811fcc703c238bbba75eb63c3b3b3d9da591ccb3420ee",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-symphonies/master/kern/sym104b.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, Symphony No.104 — Mvt 2",
+  "format": "Humdrum **kern",
+  "coverage": "第二乐章（Andante）全",
+  "note": "候选 #5 补充",
+  "spines": 18,
+  "barlines": 153,
+  "otl": "Symphonie Nr. 104",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104c.krn",
+  "bytes": 42918,
+  "sha256": "f5a68b7f075ba812ccbab23078f8dc9c2866ebe77eee25c838adae3f34793ac0",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-symphonies/master/kern/sym104c.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, Symphony No.104 — Mvt 3",
+  "format": "Humdrum **kern",
+  "coverage": "第三乐章（Menuetto: Allegro）全",
+  "note": "候选 #5 补充",
+  "spines": 18,
+  "barlines": 109,
+  "otl": "Symphonie Nr. 104",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-sym104",
+  "name": "sym104d.krn",
+  "bytes": 130430,
+  "sha256": "d42dd457ac89a2ee7cf2225bd9731f53ec37642b72a9610c0ce7982ae8d60428",
+  "url": "https://raw.githubusercontent.com/musedata/humdrum-haydn-symphonies/master/kern/sym104d.krn",
+  "license": "CCARH MuseData（斯坦福计算机辅助人文研究中心）；文件头含 (C) CCARH。许可为**学术研究用途**：可致谢引用、可用于核对，但**不得再发布/随教材分发原始数据**，商业衍生版、公开演出与录音亦受限（见 musedata 仓库 LICENSE.txt）。非 CC0。",
+  "work": "Haydn, Symphony No.104 — Mvt 4",
+  "format": "Humdrum **kern",
+  "coverage": "第四乐章（Finale: Spiritoso）全",
+  "note": "候选 #5 补充",
+  "spines": 18,
+  "barlines": 339,
+  "otl": "Symphonie Nr. 104",
+  "sct1": ""
+ },
+ {
+  "slug": "haydn-seven-last-words",
+  "name": "haydn-op51-seven-last-words.mxl",
+  "bytes": 370398,
+  "sha256": "99d0ce8e9500a2e5fe8f5868449a2d3e0dd8b8cd5424a204640234af9206b410",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Haydn,_Joseph/Die_Worte_des_Erlösers_am_Kreuze,_Hob.III50–56,_Op.51/sq19815031.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Haydn, Die sieben letzten Worte des Erlösers am Kreuze, Hob.III:50–56, Op.51（弦乐四重奏版）",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲：引子（Maestoso ed adagio）+ 7 首sonata + Il terremoto",
+  "note": "候选 #18 替换件底本（原 K.375/388 无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 4,
+  "total_measures": 978,
+  "movements": 9,
+  "mvmt_measures": [
+   51,
+   104,
+   108,
+   128,
+   132,
+   128,
+   103,
+   101,
+   123
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "mozart-k421",
+  "name": "mozart-k421.mxl",
+  "bytes": 146629,
+  "sha256": "a8c8ad4b515f215dff949981175c91b51b9ce44f5569ff959d072a35cf40b9e1",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Mozart,_Wolfgang_Amadeus/String_Quartet_No.15_in_D_minor,_K.421417b_(Op._10,_No._2)/sq7294793.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Mozart, String Quartet No.15 in D minor, K.421/417b — 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #3 替换件底本（原《费加罗》重唱无机器可读源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq7294793.xml"
+  ],
+  "parts": 4,
+  "total_measures": 426,
+  "movements": 4,
+  "mvmt_measures": [
+   119,
+   88,
+   67,
+   152
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "schubert-d810",
+  "name": "schubert-d810.mxl",
+  "bytes": 380491,
+  "sha256": "c1370ff43b2272b88e04d41d3cc31ca6717a982eaa09cc5540a5952b4f3c1bd5",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Schubert,_Franz/String_Quartet_in_D_minor,_D.810,_No.14_(“Death_and_the_Maiden”)/sq7397765.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Schubert, String Quartet in D minor, D.810 No.14 (\"Death and the Maiden\") — 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章（含第二乐章 5 段变奏）",
+  "note": "候选 #6 替换件底本（原《未完成》交响曲无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq7397765.xml"
+  ],
+  "parts": 4,
+  "total_measures": 1445,
+  "movements": 4,
+  "mvmt_measures": [
+   341,
+   181,
+   167,
+   756
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "brahms-op51n1",
+  "name": "brahms-op51n1.mxl",
+  "bytes": 258221,
+  "sha256": "1b8b4ad4651ade2462c7de1838e7e72b4096b69c83487f867013d40c701da4b9",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Brahms,_Johannes/String_Quartet_No.1,_Op.51_No.1/sq7108150.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Brahms, String Quartet No.1 in C minor, Op.51 No.1 — 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #8 替换件底本（原 Symphony No.1 IV 无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq7108150.xml"
+  ],
+  "parts": 4,
+  "total_measures": 758,
+  "movements": 3,
+  "mvmt_measures": [
+   263,
+   97,
+   398
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "smetana-sq1",
+  "name": "smetana-sq1-from-my-life.mxl",
+  "bytes": 309997,
+  "sha256": "4fac212e1944c261bf74f2f170fc942b1e3c6ca32d8e22e40f2b2bdfd26bfbc8",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Smetana,_Bedřich/String_Quartet_No.1/sq7483523.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Smetana, String Quartet No.1 in E minor \"Z mého života\"（我的一生）— 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #10 替换件底本（原肖邦叙事曲无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq7483523.xml"
+  ],
+  "parts": 4,
+  "total_measures": 896,
+  "movements": 4,
+  "mvmt_measures": [
+   262,
+   251,
+   97,
+   286
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "dvorak-op96",
+  "name": "dvorak-op96-american.mxl",
+  "bytes": 246552,
+  "sha256": "43d011444059c64c1b7607d28f3ef847419cfe06ad6608b94b1e524b00173461",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Dvořák,_Antonín/String_Quartet_No.12,_Op.96_(“American”)/sq8885439.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Dvorak, String Quartet No.12 in F major, Op.96 (\"American\") — 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #11 替换件底本（原肖邦马祖卡无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq8885439.xml"
+  ],
+  "parts": 4,
+  "total_measures": 853,
+  "movements": 4,
+  "mvmt_measures": [
+   178,
+   97,
+   196,
+   382
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "debussy-quartet",
+  "name": "debussy-op10.mxl",
+  "bytes": 327874,
+  "sha256": "eca80ee10ce9eff1df3a4352a68a84b0f2bc408d18745b42f367ffd6f7385621",
+  "url": "https://raw.githubusercontent.com/OpenScore/StringQuartets/main/scores/Debussy,_Claude/String_Quartet_in_G_minor,_Op.10/sq8661306.mxl",
+  "license": "CC0-1.0（OpenScore/StringQuartets 仓库 LICENSE.txt）；作品本身公有领域。原始贡献来自 MuseScore 社区，经 OpenScore 校订。",
+  "work": "Debussy, String Quartet in G minor, Op.10 — 全曲 4 乐章",
+  "format": "MusicXML (MXL)",
+  "coverage": "全曲四乐章",
+  "note": "候选 #13 主底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "sq8661306.xml"
+  ],
+  "parts": 4,
+  "total_measures": 849,
+  "movements": 4,
+  "mvmt_measures": [
+   194,
+   177,
+   123,
+   355
+  ],
+  "detected_title": ""
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D957-04-Standchen.mxl",
+  "bytes": 11188,
+  "sha256": "11f8bd4edfd11dc303d4b46d480cf110cb7015af303abf0d3848c40984c202a1",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schubert,_Franz/Schwanengesang,_D.957/04_Ständchen/lc5004835.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schubert, Schwanengesang D.957 No.4 \"Ständchen\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #7 底本之一（避开 D.328《魔王》）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 59,
+  "movements": 1,
+  "mvmt_measures": [
+   59
+  ],
+  "detected_title": "Ständchen"
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D911-01-Gute-Nacht.mxl",
+  "bytes": 30422,
+  "sha256": "e92816c5dfad0ee85fd9fefc7760abba75d7797453bf5d8eb2c622b119167e04",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schubert,_Franz/Winterreise,_D.911/01_Gute_Nacht/lc5015378.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schubert, Winterreise D.911 No.1 \"Gute Nacht\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #7 底本之一",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 105,
+  "movements": 1,
+  "mvmt_measures": [
+   105
+  ],
+  "detected_title": "Gute Nacht"
+ },
+ {
+  "slug": "schubert-lieder",
+  "name": "D911-05-Der-Lindenbaum.mxl",
+  "bytes": 37521,
+  "sha256": "f4312876fee5664a805aeace05621015c4be0143055bd3b58f348d039420452e",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schubert,_Franz/Winterreise,_D.911/05_Der_Lindenbaum/lc5016466.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schubert, Winterreise D.911 No.5 \"Der Lindenbaum\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #7 底本之一",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 82,
+  "movements": 1,
+  "mvmt_measures": [
+   82
+  ],
+  "detected_title": "Der Lindenbaum"
+ },
+ {
+  "slug": "brahms-op91",
+  "name": "op91-1-Gestillte-Sehnsucht.mxl",
+  "bytes": 25202,
+  "sha256": "9291808a4f38924fda4d54dbe281a81a2ae292dcf460286887f6ce26d04e7279",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Brahms,_Johannes/2_Gesänge,_Op.91/1_Gestillte_Sehnsucht/lc6302395.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Brahms, 2 Gesänge Op.91 No.1 \"Gestillte Sehnsucht\"（人声+中提琴+钢琴）",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（3 声部）",
+  "note": "候选 #9 替换件底本（原单簧管五重奏 Op.115 无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 3,
+  "total_measures": 98,
+  "movements": 1,
+  "mvmt_measures": [
+   98
+  ],
+  "detected_title": "Gestillte Sehnsucht"
+ },
+ {
+  "slug": "brahms-op91",
+  "name": "op91-2-Geistliches-Wiegenlied.mxl",
+  "bytes": 26218,
+  "sha256": "8ef00c7ac76c56b74c7183417bf8ea04068bb33a251dd5dbfe8e08f47797b250",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Brahms,_Johannes/2_Gesänge,_Op.91/2_Geistliches_Wiegenlied/lc6320420.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Brahms, 2 Gesänge Op.91 No.2 \"Geistliches Wiegenlied\"（人声+中提琴+钢琴）",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（3 声部）",
+  "note": "候选 #9 第二底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 3,
+  "total_measures": 157,
+  "movements": 1,
+  "mvmt_measures": [
+   157
+  ],
+  "detected_title": "Geisliches Wiegenlied"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-1-Cest-lextase.mxl",
+  "bytes": 12694,
+  "sha256": "4693babeedceca67f9f413311b8218f37f01fe0986e02912d4c660bc0c9f862f",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/1_C’est_l’extase_langoureuse/lc5060910.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.1 \"C'est l'extase langoureuse\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #12 替换件底本（原钢琴前奏曲无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 52,
+  "movements": 1,
+  "mvmt_measures": [
+   52
+  ],
+  "detected_title": "C'est l'extase langoureuse"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-2-Il-pleure.mxl",
+  "bytes": 16607,
+  "sha256": "fa5a10c4844855430ec517570fa895e792e3b6b50516058b64af5624e87af4c4",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/2_Il_pleure_dans_mon_coeur/lc5060918.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.2 \"Il pleure dans mon coeur\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全",
+  "note": "候选 #12 底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 80,
+  "movements": 1,
+  "mvmt_measures": [
+   80
+  ],
+  "detected_title": "Il Pleure dans mon Coeur"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-3-Lombre-des-arbres.mxl",
+  "bytes": 8476,
+  "sha256": "638a7b419ea55ea8e83a37e80cf54d50a23fba505c7636f764302e203248a651",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/3_L’ombre_des_arbres/lc5060924.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.3 \"L'ombre des arbres\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全",
+  "note": "候选 #12 底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 31,
+  "movements": 1,
+  "mvmt_measures": [
+   31
+  ],
+  "detected_title": "L'Ombre des Arbres"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-4-Paysages-belges.mxl",
+  "bytes": 22184,
+  "sha256": "0766fcde15024cfdafa5ff660e3958735e41978ba0f16fff420e46deee84f8ee",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/4_Paysages_belges._Chevaux_de_bois/lc5060932.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.4 \"Paysages belges: Chevaux de bois\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全",
+  "note": "候选 #12 底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 102,
+  "movements": 1,
+  "mvmt_measures": [
+   102
+  ],
+  "detected_title": "Paysages belges. Chevaux de bois"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-5-Green.mxl",
+  "bytes": 13174,
+  "sha256": "dc9636f49dc6045a652f72241ae99e184e21a6032f1f744aa726292d044edc0b",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/5_Aquarelles_I._Green/lc5060938.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.5 \"Aquarelles I: Green\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全",
+  "note": "候选 #12 底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 58,
+  "movements": 1,
+  "mvmt_measures": [
+   58
+  ],
+  "detected_title": "Green"
+ },
+ {
+  "slug": "debussy-ariettes",
+  "name": "ariettes-6-Spleen.mxl",
+  "bytes": 11682,
+  "sha256": "c4299ac985cc360dd4fe6284f66a1615614ff66977bca6f949f3294728225fea",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Debussy,_Claude/Ariettes_Oubliées/6_Aquarelles_II._Spleen/lc5060943.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Debussy, Ariettes oubliées No.6 \"Aquarelles II: Spleen\"",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全",
+  "note": "候选 #12 底本",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 34,
+  "movements": 1,
+  "mvmt_measures": [
+   34
+  ],
+  "detected_title": "Spleen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-01_Im_wunderschönen_Monat_Mai.mxl",
+  "bytes": 12492,
+  "sha256": "41baf881da914ae9e2a2f4c8f2eb609e8c4526af834f31fc386a0fc52bd45cea",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/01_Im_wunderschönen_Monat_Mai/lc4976777.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.1 — Im wunderschönen Monat Mai",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 27,
+  "movements": 1,
+  "mvmt_measures": [
+   27
+  ],
+  "detected_title": "Im wunderschönen Monat Mai"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-02_Aus_meinen_Tränen_sprießen.mxl",
+  "bytes": 4729,
+  "sha256": "6d9c7c9ed0b0a8bdf71e8e80f98b1433da57fdc50d8eadd3c8b1b216c90c5b57",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/02_Aus_meinen_Tränen_sprießen/lc4976769.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.2 — Aus meinen Tränen sprießen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 17,
+  "movements": 1,
+  "mvmt_measures": [
+   17
+  ],
+  "detected_title": "Aus meinen Tränen spriessen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-03_Die_Rose-_die_Lilie.mxl",
+  "bytes": 5192,
+  "sha256": "c9fba958731ac7d5c72aa1b26eae62cc30f4dca4f9959e67ccf4551eecf110e8",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/03_Die_Rose,_die_Lilie/lc4976849.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.3 — Die Rose, die Lilie",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 23,
+  "movements": 1,
+  "mvmt_measures": [
+   23
+  ],
+  "detected_title": "Die Rose, die Lilie, die Taube"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-04_Wenn_ich_in_deine_Augen_seh-.mxl",
+  "bytes": 6360,
+  "sha256": "89ac0877bbc76531f796d5860084659b182e9d3eb1b12384fd43e4c80c3e08d2",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/04_Wenn_ich_in_deine_Augen_seh’/lc4978368.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.4 — Wenn ich in deine Augen seh’",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 21,
+  "movements": 1,
+  "mvmt_measures": [
+   21
+  ],
+  "detected_title": "Wenn ich in deine Augen seh'"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-05_Ich_will_meine_Seele_tauchen.mxl",
+  "bytes": 6354,
+  "sha256": "e0a65708fbef7f8dc314f8a277a2cac52e7f58d4a6a61e322963aa46dc62ad08",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/05_Ich_will_meine_Seele_tauchen/lc4978373.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.5 — Ich will meine Seele tauchen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 22,
+  "movements": 1,
+  "mvmt_measures": [
+   22
+  ],
+  "detected_title": "Ich will meine Seele tauchen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-06_Im_Rhein-_im_heiligen_Strome.mxl",
+  "bytes": 8209,
+  "sha256": "e1933ed56b99cd324238f6cb8422b374f0b2142594b6ba71b3f814b57b3d09f2",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/06_Im_Rhein,_im_heiligen_Strome/lc4978379.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.6 — Im Rhein, im heiligen Strome",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 58,
+  "movements": 1,
+  "mvmt_measures": [
+   58
+  ],
+  "detected_title": "Im Rhein, im heiligen Strome"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-07_Ich_grolle_nicht.mxl",
+  "bytes": 8944,
+  "sha256": "37b7eb77b4b07c3cd994b2128902f428c7eea1d43f55fcca72ee63544b5440ee",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/07_Ich_grolle_nicht/lc4978382.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.7 — Ich grolle nicht",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 36,
+  "movements": 1,
+  "mvmt_measures": [
+   36
+  ],
+  "detected_title": "Ich grolle nicht"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-08_Und_wüssten-s_die_Blumen.mxl",
+  "bytes": 11578,
+  "sha256": "d2fc6b1efc64c4ee987e6249d9254070559e9411bd70c67578f4d89641ad4459",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/08_Und_wüssten’s_die_Blumen/lc4978387.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.8 — Und wüssten’s die Blumen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 37,
+  "movements": 1,
+  "mvmt_measures": [
+   37
+  ],
+  "detected_title": "Und wüssten's die Blumen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-09_Das_ist_ein_Flöten_und_Geigen.mxl",
+  "bytes": 12150,
+  "sha256": "98442e8d835be8648a44e5f27ff2b6a6eeec163895d99a070b780c333104402d",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/09_Das_ist_ein_Flöten_und_Geigen/lc4978390.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.9 — Das ist ein Flöten und Geigen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 85,
+  "movements": 1,
+  "mvmt_measures": [
+   85
+  ],
+  "detected_title": "Das ist ein Flöten und Geigen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-10_Hör-_ich_das_Liedchen_klingen.mxl",
+  "bytes": 5867,
+  "sha256": "22489f8b31edce9eb7b0119499d9b7181b3125348ece367e9dd462ba5268b03b",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/10_Hör’_ich_das_Liedchen_klingen/lc5003150.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.10 — Hör’ ich das Liedchen klingen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 30,
+  "movements": 1,
+  "mvmt_measures": [
+   30
+  ],
+  "detected_title": "Hör' ich das Liedchen klingen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-11_Ein_Jüngling_liebt_ein_Mädchen.mxl",
+  "bytes": 6562,
+  "sha256": "5ea244b7ddc12e86865beb7aad315943e4bb5020ed0196e19241bc203ded330a",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/11_Ein_Jüngling_liebt_ein_Mädchen/lc4978393.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.11 — Ein Jüngling liebt ein Mädchen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 47,
+  "movements": 1,
+  "mvmt_measures": [
+   47
+  ],
+  "detected_title": "Ein Jüngling liebt ein Mädchen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-12_Am_leuchtenden_Sommermorgen.mxl",
+  "bytes": 7275,
+  "sha256": "83efdd604ee0b60a9e067b89fc40cbed571a2a7be1d0c7db26e49960aedf7b99",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/12_Am_leuchtenden_Sommermorgen/lc4978395.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.12 — Am leuchtenden Sommermorgen",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 30,
+  "movements": 1,
+  "mvmt_measures": [
+   30
+  ],
+  "detected_title": "Am leuchtenden Sommermorgen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-13_Ich_hab-_im_Traum_geweinet.mxl",
+  "bytes": 6660,
+  "sha256": "f6450f5657bc453c7541dd98445bdbe3c489be1e33bdfa857849c2bc85b3c2d5",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/13_Ich_hab’_im_Traum_geweinet/lc4978396.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.13 — Ich hab’ im Traum geweinet",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 38,
+  "movements": 1,
+  "mvmt_measures": [
+   38
+  ],
+  "detected_title": "Ich hab' im Traum geweinet"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-14_Allnächtlich_im_Traume.mxl",
+  "bytes": 6915,
+  "sha256": "7125d9d5b52b211ced7b425824774d00d923b1b7799a425320b15404c5b5ba88",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/14_Allnächtlich_im_Traume/lc4978397.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.14 — Allnächtlich im Traume",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 38,
+  "movements": 1,
+  "mvmt_measures": [
+   38
+  ],
+  "detected_title": "Allnächtlich im Traume"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-15_Aus_alten_Märchen_winkt_es.mxl",
+  "bytes": 16889,
+  "sha256": "e64e76ac6d19dfec41e5b10233e939af5202c4e12f3b955595e2633aab2f6277",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/15_Aus_alten_Märchen_winkt_es/lc4978398.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.15 — Aus alten Märchen winkt es",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 113,
+  "movements": 1,
+  "mvmt_measures": [
+   113
+  ],
+  "detected_title": "Aus alten Märchen"
+ },
+ {
+  "slug": "schumann-dichterliebe",
+  "name": "op48-16_Die_alten-_bösen_Lieder.mxl",
+  "bytes": 15463,
+  "sha256": "41c91a855a9e013a1fd9c1ea3c5c696863f80263340c6c6cf294d84864d788a0",
+  "url": "https://raw.githubusercontent.com/OpenScore/Lieder/main/scores/Schumann,_Robert/Dichterliebe,_Op.48/16_Die_alten,_bösen_Lieder/lc4978400.mxl",
+  "license": "CC0-1.0（OpenScore/Lieder 仓库 LICENSE.txt）；作品本身公有领域。",
+  "work": "Schumann, Dichterliebe Op.48 No.16 — Die alten, bösen Lieder",
+  "format": "MusicXML (MXL)",
+  "coverage": "单曲全（人声+钢琴）",
+  "note": "候选 #20 替换件底本（原《狂欢节》无编码源）",
+  "zip_members": [
+   "META-INF/container.xml",
+   "score.xml"
+  ],
+  "parts": 2,
+  "total_measures": 67,
+  "movements": 1,
+  "mvmt_measures": [
+   67
+  ],
+  "detected_title": "Die alten, bösen Lieder"
+ }
+]
