@@ -2,8 +2,8 @@
 
 - **学者**：scholar-b4
 - **选题**：同主音大小调借用与色彩句法（Modal Mixture and Color Syntax in Classical Harmony）
-- **中心论证**：同主音大小调借用（Modal Mixture / Borrowing）是古典主义至早期浪漫主义在维系单一调性中心前提下拓展和声色彩幅度的最核心机制。其声学物理基石在于同主音大小调共享相同的 $\hat{1}, \hat{5}, \hat{4}$ 纯音程骨架，其最关键的动量源泉在于降 6 级音（$\flat\hat{6}$）对属音（$\hat{5}$）所产生的强力向下半音倾泻引力。严格区分“借和弦”与“转调”：只要目标和弦缺乏确立新调地位的结构性终止式（PAC/HC），所有借用和弦（如 $\text{iv}, \flat\text{VI}, \flat\text{III}, \flat\text{VII}, \text{ii}^{\circ 7}$）均严格被主调的自然功能区（如 $[\text{S4}], [\text{Tx-6}]$）所吸收，主音引力中心自始至终未发生实质偏移。贝多芬的创作实践表明，调式交替既能在局部提供强烈的光影阴暗对比（如 Op. 13 慢乐章 mm. 41–51 降 a 小调突变与大三度光辉复苏），又能在尾声充当阻碍终止与戏剧性蓄能的宏大断崖（如 Op. 2 No. 3 尾声 mm. 218–232 的 $\flat\text{VI}$ 级和弦），更能在宏观奏鸣再现部中充当远关系三度调性平滑重返主调的“调性枢纽”（如 Op. 53 再现部 mm. 196–206 A 大调经 A 小调无缝回归 C 大调）。
-- **状态**：已成稿，待本批复读
+- **中心论证**：同主音大小调借用（Modal Mixture / Borrowing）是古典主义至早期浪漫主义在维系单一调性中心前提下拓展和声色彩幅度的最核心机制。其声学物理基石在于同主音大小调共享相同的 $\hat{1}, \hat{5}, \hat{4}$ 纯音程骨架，其最关键的动量源泉在于降 6 级音（$\flat\hat{6}$）对属音（$\hat{5}$）所产生的强力向下半音倾泻引力。严格区分“借和弦”与“转调”：只要目标和弦缺乏确立新调地位的结构性终止式（PAC/HC），所有借用和弦（如 $\text{iv}, \flat\text{VI}, \flat\text{III}, \flat\text{VII}, \text{ii}^{\circ 7}$）均严格被主调的自然功能区（如变音下属 $\text{iv}$、变音主/阻碍代换 $\flat\text{VI}$）所吸收，主音引力中心自始至终未发生实质偏移。贝多芬的创作实践表明，调式交替既能在局部提供强烈的光影阴暗对比（如 Op. 13 慢乐章 mm. 41–51 降 a 小调突变与大三度光辉复苏），又能在尾声充当阻碍终止与戏剧性蓄能的宏大断崖（如 Op. 2 No. 3 尾声 mm. 218–232 的 $\flat\text{VI}$ 级和弦），更能在宏观奏鸣再现部中充当远关系三度调性平滑重返主调的“调性枢纽”（如 Op. 53 再现部 mm. 196–206 A 大调经 A 小调无缝回归 C 大调）。
+- **状态**：已成稿，完成第二轮中期复读返修
 
 ---
 
@@ -11,7 +11,7 @@
 
 - **底层机器可读原生谱源（Humdrum Kern 真实路径与逐小节核对）**：
   * 本地路径：`local/resources/scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/beethoven-piano-sonatas-main/kern/sonata08-2.krn`（贝多芬 Op. 13 第二乐章 Adagio cantabile）：
-    - **m. 41**：主调降 A 大调（$A\flat$ major）中，第一插部收束后，低音击出大字一组 $A\flat$，三连音伴奏突然引入小三度降音 $c\flat$ 与 $e\flat$（同主音降 a 小调小主和弦 $\text{i} = A\flat\text{–}C\flat\text{–}E\flat$），旋律于 $a\flat \to c\flat \to b\flat \to a\flat$ 间哀伤回旋；
+    - **m. 41**：主调降 A 大调（$A\flat$ major）中，第一插部收束后，低音击出大字组主音 $A\flat$（$A\flat 2$），三连音伴奏突然引入小三度降音 $c\flat$ 与 $e\flat$（同主音降 a 小调小主和弦 $\text{i} = A\flat\text{–}C\flat\text{–}E\flat$），旋律于 $a\flat \to c\flat \to b\flat \to a\flat$ 间哀伤回旋；
     - **mm. 48–50**：降 a 小调内声部引入含减五度与降六级音的导和弦，并在 m. 50 凝聚为属七和弦 $E\flat^7$；
     - **m. 51**：强拍高声部在一片静谧（$p$）中轻柔敲出还原大三度音 $c\natural$（C-natural），低音同步降落在降 A 大调主和弦上，完成从同主音小调深渊向明亮大调神圣升华的经典调式复苏。
   * 本地路径：`local/resources/scores/source-packages/beethoven-score-sources/beethoven-piano-sonatas-main/beethoven-piano-sonatas-main/kern/sonata03-1.krn`（贝多芬 Op. 2 No. 3 第一乐章 Allegro con brio）：
@@ -27,7 +27,7 @@
   * 本地路径：`local/resources/text/open-music-theory/legacy-source/openmusictheory-openmusictheory.github.io-a907aa0/`（章节：`modalMixture.md`、`appliedChords.md`、`Modulation.md`）：
     - 同主音大小调借用的声学概念与音阶基础；
     - 借和弦（Modal Mixture）与结构转调（Modulation）的严格判界：以目标调是否出现 PAC/IAC/HC 为唯一标准；
-    - 罗马数字与功能低音标记规约：未改变根音时保留原级数并修改和弦性质（如 $\text{iv}$ 标记为 $[\text{S4}]$ 代替 $\text{S4}$），改变根音时前加变音记号（如 $\flat\text{VI}$ 标记为 $[\text{Tx-6}]$）；
+    - 罗马数字与变音级数标记规约：未改变根音时保留原级数并修改和弦性质（如 $\text{iv}$），改变根音时前加变音记号（如 $\flat\text{VI}$、$\flat\text{III}$、$\flat\text{VII}$）；
     - 皮卡迪三度（Picardy Third）的历史演进与小调神圣升华意义。
 
 ---

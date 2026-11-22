@@ -3,7 +3,7 @@
 - **短标题**：乐句扩展
 - **对应正文**：`content/techniques/structure/phrase-expansion-and-structural-skeleton.md`
 - **出处记录**：`provenance/techniques/structure/phrase-expansion-and-structural-skeleton.md`
-- **当前状态**：已成稿，待本批复读
+- **当前状态**：P3已返修（删除算法状态机与内部Agent语境，明确K.494为OMT教材示例，统一方整性霸权措辞与K.330外部扩展例）
 - **学者署名**：scholar-a4
 - **关联合约**：S105（task-40）
 
@@ -38,7 +38,7 @@
 1. **莫扎特：F大调回旋曲 K. 494，Allegretto，mm. 1–6**
    - 证明：乐节内部插值与动机回声扩展（Sub-phrase interpolation by motivic echo）；
    - 谱面核验：第 1–2 小节呈示 2 小节基本乐念，第 3 小节弱拍琶音以回声形态完整复述第 2 小节，导致 basic idea 扩展至 3 小节，随后第 4–6 小节为 3 小节对比乐念并收束于半终止；剔除第 3 小节可严丝合缝还原为标准 4 小节（2+2）前乐句；
-   - 底本来源：本地 OMT 谱例与核验语料；
+   - 底本来源：据 Open Music Theory 教材谱例转录示例；
    - 状态：**规范单行文本占位**。
 2. **贝多芬：C大调第3钢琴奏鸣曲 Op. 2 No. 3，第 1 乐章 Allegro con brio，mm. 1–13**
    - 证明：8 小节标准乐句因终止弱化（IAC）与低音连接句引发延续部变奏重跑（拉长至 13 小节 PAC 闭合）；

@@ -3,7 +3,7 @@
 - **短标题**：终止图式
 - **对应正文**：`content/techniques/structure/cadential-prinner-and-structural-closure.md`
 - **出处记录**：`provenance/techniques/structure/cadential-prinner-and-structural-closure.md`
-- **当前状态**：已成稿，待本批复读
+- **当前状态**：P3已返修（删去无底本K.331案例，修正K.283低音为D3并规范谱面描述，删去标题代码块围栏与内部Agent语境）
 - **学者署名**：scholar-a4
 - **关联合约**：S103（task-27）
 
@@ -37,15 +37,10 @@
    - 底本来源：本地 Humdrum mozart-sonatas 库 `0061-61-Piano Sonata No. 15 in C major, K 545, mvmt. 1.abc`；
    - 编制：钢琴双手；
    - 状态：**规范单行文本占位**。
-2. **莫扎特：G大调第5钢琴奏鸣曲 K. 283 (189h)，第 1 乐章 Allegro，mm. 5–10**
-   - 证明：终止化 Prinner（Cadential Prinner）实现完全正格终止的典范；
-   - 谱面核验：mm. 5–6 右手核心音为 e2（$\hat{6}$）与 d2（$\hat{5}$），低音为 C（$\hat{4}$）与 B（$\hat{3}$）；mm. 7–8 十六分音符展开后，低音脱离 A 音（$\hat{2}$），在 m. 9 坚决跳向属音 D（$\hat{5}$，持续八分音符震音）；右手在强拍形成终止四六和弦延留（`fedc BdBG AcAF`）并解决至属七；m. 10 强拍双手坚决落于原位主和弦（高音 G4 即 $\hat{1}$，低音 $G_2$ 即 $\hat{1}$），达成完全正格终止（PAC）；
+2. **莫扎特：G大调第5钢琴奏鸣曲 K. 283 (189h)，第 1 乐章 Allegro，mm. 1–10**
+   - 证明：Meyer 呈示后紧接终止化 Prinner（Cadential Prinner）实现完全正格终止的典范；
+   - 谱面核验：mm. 1–4 呈示句（Meyer 图式）确立调性与基础乐念；mm. 5–6 Prinner 启动，右手核心音为 e2（$\hat{6}$）与 d2（$\hat{5}$），低音为 C（$\hat{4}$）与 B（$\hat{3}$）；mm. 7–8 十六分音符展开后，低音脱离原型级进轨迹，在 m. 9 坚决跳向属音 D3（$\hat{5}$，以二分音符低音支撑）；右手在属音上方展开十六分音符分解琶音，在强拍形成清脆的终止四六延留并解决至原位属七；m. 10 强拍双手坚决落于原位主和弦（高音 G4 即 $\hat{1}$，低音 G2 即 $\hat{1}$），达成完全正格终止（PAC）；
    - 底本来源：本地 Humdrum mozart-sonatas 库 `0013-13-Piano Sonata No. 5 in G major, K 283 (189h), mvmt. 1.abc`；
-   - 编制：钢琴双手；
-   - 状态：**规范单行文本占位**。
-3. **莫扎特：A大调第11钢琴奏鸣曲 K. 331，第 1 乐章 Andante grazioso，mm. 1–8**
-   - 证明：乐段前句原型 Prinner（弱半终止）与后句终止化 Prinner（强拍 PAC）的直接对称对照；
-   - 谱面核验：前句 mm. 3–4 低音沿 $D \to C\sharp \to B \to A$ 级进，形成弱半终止；后句 mm. 7–8 低音跳入属音 E（$\hat{5}$），强拍插入终止四六并解决至属七，m. 8 强拍坚决落于原位主和弦，达成 PAC；
    - 编制：钢琴双手；
    - 状态：**规范单行文本占位**。
 

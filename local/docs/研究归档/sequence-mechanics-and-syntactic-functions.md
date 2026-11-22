@@ -3,7 +3,7 @@
 - **短标题**：模进与句法
 - **对应正文**：`content/techniques/structure/sequence-mechanics-and-syntactic-functions.md`
 - **出处记录**：`provenance/techniques/structure/sequence-mechanics-and-syntactic-functions.md`
-- **当前状态**：已成稿，待本批复读
+- **当前状态**：P3已返修（核正K.545 m.38低音B♮与mm.41-42制动和弦，删标题代码块围栏与内部Agent语境）
 - **学者署名**：scholar-a4
 - **关联合约**：S104（task-33）
 
@@ -45,8 +45,8 @@
    - 证明：模进链条直接接管并替代真正主题展开的典范；
    - 谱面核验：
      - mm. 29–36：双小节线后在 g 小调建立 4 小节分解和弦模型，随后整体移位至 d 小调完整复述；
-     - mm. 37–40：左右手声部互换，右手为流畅下行音阶跑动，左手低音形成清晰的下行二度（D2）模进级进链条：$C \to B\flat \to A \to G\sharp$；
-     - mm. 41–42：模进链在 F 大调属七和弦（$C^7$）上突然制动，直接引出第 43 小节在下属调 F 大调上的主部再现；
+     - mm. 37–40：左右手声部互换，右手为流畅下行音阶跑动，左手低音形成清晰的下行二度（D2）模进级进链条：$C3 \to B2 (B\natural) \to A2 \to G\sharp2$；
+     - mm. 41–42：第 41 小节后半小节在 F 大调属七和弦（$C^7$）上突然加压制动，第 42 小节模进彻底结束并直接在下属调 F 大调上迎来主部主题再现；
    - 底本来源：本地 Humdrum 莫扎特奏鸣曲库 `0061-61-Piano Sonata No. 15 in C major, K 545, mvmt. 1.abc`；
    - 编制：钢琴双手；
    - 状态：**规范单行文本占位**。

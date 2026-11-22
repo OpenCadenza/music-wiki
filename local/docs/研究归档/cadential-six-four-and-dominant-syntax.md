@@ -3,7 +3,7 @@
 - **短标题**：终止四六和弦
 - **对应正文**：`content/techniques/harmony/cadential-six-four-and-dominant-syntax.md`
 - **出处记录**：`provenance/techniques/harmony/cadential-six-four-and-dominant-syntax.md`
-- **当前状态**：已成稿，待本批复读
+- **当前状态**：P3已返修（明确K.331底本与OMT缩编谱，核正K.545副部EEC小节为mm.22-26，替换Op.13为K.283，彻底清除内部Agent/算法语境）
 - **学者署名**：scholar-a4
 - **关联合约**：S106（task-46）
 
@@ -34,21 +34,24 @@
 1. **莫扎特：A大调第11钢琴奏鸣曲 K. 331，第 1 乐章 Andante grazioso，mm. 1–8**
    - 证明：前乐句 m. 4 复合半终止与后乐句 m. 8 复合 PAC，展示完美的 6-5、4-3 与 8-7 声部对位解决；
    - 谱面核验：
-     - m. 4：低音 E 上方打出六度 C# 与四度 A，下行解决至五度 B 与三度 G#（$V^{6-5}_{4-3}$ 半终止）；
-     - m. 8：低音 E 上右手敲出 `[E–A–C#]` 重拍 $Cad^6_4$，随后四度下行至 G#、六度下行至 B、八度滑入七度 D 形成完整 $V^{8-7}_{6-5 \atop 4-3}$，最后干净收束于 A 大调原位 PAC，旋律稳稳落于主音 A；
-   - 底本来源：本地 Humdrum 莫扎特奏鸣曲库 `0043-43-Piano Sonata No. 11 in A major, K 331 (300i), mvmt. 1a.abc`；
+     - m. 4：低音 E2 上方打出六度 c♯² 与四度 a¹，下行解决至五度 b¹ 与三度 g♯¹（$V^{6-5}_{4-3}$ 半终止）；
+     - m. 8：低音 E2 上右手敲出 `[E2A2c2]` 重拍 $Cad^6_4$（八度、四度、六度），随后四度下行至 g♯¹、六度下行至 b¹、八度滑入七度 d¹ 形成完整 $V^{8-7}_{6-5 \atop 4-3}$，最后干净收束于 A 大调原位 PAC，旋律稳稳落于主音 a¹；
+   - 底本来源：本地 Humdrum 莫扎特奏鸣曲库 `0043-43-Piano Sonata No. 11 in A major, K 331 (300i), mvmt. 1a.abc` 及 OMT 和声缩编谱 `k331-reduction.ly`；
    - 状态：**规范单行文本占位**。
-2. **莫扎特：C大调第16钢琴奏鸣曲 K. 545，第 1 乐章 Allegro，m. 4 与 mm. 71–75**
+2. **莫扎特：C大调第15钢琴奏鸣曲 K. 545，第 1 乐章 Allegro，m. 4 与 mm. 22–26**
    - 证明：主部简单半终止省略四六 vs. 副部 EEC 强制重音终止四六拦截；
    - 谱面核验：
      - m. 4：轻盈流动，$I \to IV \to ii^6 \to V$，完全省略四六；
-     - mm. 71–75：长程十六分音符狂飙后，m. 71 强拍在低音属音 D 上以重音轰出 $Cad^6_4$，随后转化为 mm. 72–74 的长属七长颤音，并在 m. 75 爆发出 G 大调原位 PAC；
+     - mm. 22–26：长程十六分音符下行跑动后，m. 24 强拍在副调（G 大调）属音 D3 上以重音进入 $Cad^6_4$，随后转化为 m. 25 的属七长颤音（高音 a2 上的属音长颤音），并在 m. 26 强拍爆发出 G 大调原位 PAC（副部 EEC）；
    - 底本来源：本地 Humdrum 莫扎特奏鸣曲库 `0061-61-Piano Sonata No. 15 in C major, K 545, mvmt. 1.abc`；
    - 状态：**规范单行文本占位**。
-3. **贝多芬：C小调第8钢琴奏鸣曲 Op. 13，第 2 乐章 Adagio cantabile，mm. 1–8**
-   - 证明：慢乐章如歌主题中终止四六的情感凝聚与 PAC 平静消解；
-   - 谱面核验：第 4 小节半终止四六暂歇，第 8 小节强拍在低音降 E 上爆发出浓郁的 $Cad^6_4$，旋律声部由降 E 平缓滑向降 D（七音），完美配合 6-5 与 4-3 的内部消解并达成 PAC；
-   - 底本来源：本地 Humdrum 贝多芬奏鸣曲库 `beethoven-piano-sonatas-main/kern/sonata08-2.krn`；
+3. **莫扎特：G大调第5钢琴奏鸣曲 K. 283 (189h)，第 1 乐章 Allegro，mm. 5–10**
+   - 证明：终止化 Prinner 中终止四六的重音插入与 PAC 强闭合；
+   - 谱面核验：
+     - mm. 5–6：Prinner 启动，高音声部自 e² 下行至 d²，低音顺次下落至 C 与 B；
+     - mm. 7–8：十六分音符展开后，低音脱离原型级进轨迹；
+     - mm. 9–10：第 9 小节低音坚决跳向属音 D3，右手在属音上方展开十六分音符分解琶音跑动，在强拍形成清脆的终止四六延留（低音 D 上方叠置四度音 G 与六度音 B），并在弱拍利落解决为原位属七和弦；第 10 小节强拍双手坚决落在原位 G 大调主和弦上，达成完全正格终止（PAC）；
+   - 底本来源：本地 Humdrum 莫扎特奏鸣曲库 `0013-13-Piano Sonata No. 5 in G major, K 283 (189h), mvmt. 1.abc`；
    - 状态：**规范单行文本占位**。
 
 ---
@@ -62,7 +65,7 @@
 - **Heinrich Schenker**：《自由对位》（*Der freie Satz*, 1935），属低音上方的对位倚音还原理论；
 - **与首批 20 篇的关系与边界**：
   - 与《终止图式》（专论加兰特外声部线型公式如 Prinner）与《终止式延后》（专论规避终止与时间扩张）严格区分；
-  - 正文中精准关联 short title 链接：`[《众赞歌终止式》](cadential-voice-clock-and-phase-decoupling.md)`、`[《复合乐段》](compound-period-hierarchical-syntax.md)`、`[《乐句扩展》](phrase-expansion-and-structural-skeleton.md)`、`[《终止式延后》](cadential-evasion-and-temporal-expansion.md)`。
+  - 正文中精准关联 short title 链接：`[《众赞歌终止式》](../../composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md)`、`[《复合乐段》](../structure/compound-period-hierarchical-syntax.md)`、`[《乐句扩展》](../structure/phrase-expansion-and-structural-skeleton.md)`、`[《终止式延后》](../structure/cadential-evasion-and-temporal-expansion.md)`。
 
 ---
 

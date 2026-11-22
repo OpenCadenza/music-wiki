@@ -31,8 +31,8 @@
   * 贝多芬《升 c 小调第十四弦乐四重奏》Op. 131 第一乐章 Kern 乐谱事实：
     - 阅读来源：`local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet14-1.krn`；
     - m. 9：第一、第二小提琴呈示后，中提琴在主音 $c\sharp^1$ 上作为第三声部以 $p$ espressivo 切入，展现深邃对位景深。
-  * 莫扎特《降 E 大调交响协奏曲》K. 364：
-    - 独奏中提琴向上变调调弦半音（Scordatura in D，D-A-E-B），在 D 大调指法下激发空弦交感共鸣，克服声学掩蔽。
+  * 莫扎特《降 E 大调交响协奏曲》K. 364（据经典乐器文献与莫扎特研究记述）：
+    - 独奏中提琴向上变调调弦半音（Scordatura in D），在 D 大调指法下激发空弦交感共鸣，克服声学掩蔽。
 - **推论与论证边界**：
   * 本文完全基于提琴物理声学振动方程、中提琴空气共鸣箱尺寸妥协与贝多芬原始总谱/分谱的逐小节排查；
   * 杜绝空洞的情感玄学比喻，所有分析精准锚定至小节号、声部名、中音谱号记谱、把位、各弦音区与织体形态。
