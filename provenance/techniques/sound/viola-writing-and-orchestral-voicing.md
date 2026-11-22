@@ -13,7 +13,7 @@
 | Ludwig van Beethoven (1808) | C 小调第五交响曲 Op. 67 第二乐章分谱事实 | 第二乐章中提琴分谱 `local/workbench/scores/score-s2/downloads/op67-2/Symphony5_2-lys/viola.ly`（mm. 1–8 中提琴与大提琴同度齐奏 dolce 歌唱第一主题；mm. 25–28 与 mm. 42–49 解耦转入三连音与三十二分音符流动伴奏） |
 | Ludwig van Beethoven (1812) | A 大调第七交响曲 Op. 92 第二乐章分谱事实 | 第二乐章中提琴分谱 `local/workbench/scores/score-s2/downloads/op92-2/viola.ly`（mm. 3–20 中提琴与低音呈示达克提尔节奏；mm. 21–26 跃升至小字一组高把位唱出对位副旋律；mm. 27–46 十六分音符与三连音全奏推进） |
 | Ludwig van Beethoven (1826) | 升 c 小调第十四弦乐四重奏 Op. 131 第一乐章 Kern 乐谱事实 | 本地 Kern 乐谱 `local/resources/scores/source-packages/beethoven-score-sources/beethoven-string-quartets-main/beethoven-string-quartets-main/kern/quartet14-1.krn`（m. 9 中提琴以 p espressivo 呈现第三声部赋格答题） |
-| Wolfgang Amadeus Mozart (1779) | 降 E 大调交响协奏曲 K. 364 总谱事实 | 历史对比依据：独奏中提琴高半音变调调弦（Scordatura in D，D-A-E-B 定弦）提升穿透力与空弦交感共鸣机制 |
+| Wolfgang Amadeus Mozart (1779) / 乐器文献研究 | 降 E 大调交响协奏曲 K. 364（转引自 Boyden, Stowell 等经典弓弦乐器文献与莫扎特研究） | 历史对比依据：独奏中提琴高半音变调调弦（Scordatura in D，实音调高半音）提升穿透力与空弦交感共鸣机制（据乐器文献记述） |
 
 ## 谱例
 

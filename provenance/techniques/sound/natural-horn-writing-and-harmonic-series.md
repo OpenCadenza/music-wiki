@@ -17,5 +17,5 @@
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
 | ex-natural-horn-op67-1-motto | 贝多芬第五交响曲 Op. 67 第一乐章 | Allegro con brio，mm. 59–62 | Mutopia / Dover | 公有领域 |
-| ex-natural-horn-op67-2-fanfare | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–33 | Mutopia / Breitkopf & Härtel | 公有领域 |
+| ex-natural-horn-op67-2-fanfare | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–38 | Mutopia / Breitkopf & Härtel | 公有领域 |
 | ex-natural-horn-op92-2-pedal | 贝多芬第七交响曲 Op. 92 第二乐章 | Allegretto，mm. 1–3 与 mm. 36–40 | Mutopia / Litolff | 公有领域 |
