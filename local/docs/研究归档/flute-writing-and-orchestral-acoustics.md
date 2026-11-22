@@ -20,7 +20,7 @@
   * 贝多芬《第五交响曲》Op. 67 第一乐章长笛分谱事实：
     - 阅读来源：`local/workbench/scores/score-s2/downloads/op67-1/Symphony5_1-lys/flauti.ly`；
     - mm. 25–34：主部全奏中第一长笛在小字三组高位（$c^3, d^3, e\flat^3, f^3, g^3$）与第一小提琴同节奏高八度推进，充当撕裂性全奏天幕；
-    - mm. 63–66：第一长笛在小字二组高位（$b\flat^2\text{–}e\flat^3\text{–}d^3\text{–}e\flat^3\text{–}f^3\text{–}c^3$）吹出明澈的副部对位呼应；
+    - mm. 63–66：第一长笛在小字二组高位至小字三组（$b\flat^2\text{–}e\flat^3\text{–}d^3\text{–}e\flat^3\text{–}f^3\text{–}c^3$）吹出明澈的副部对位呼应；
     - mm. 195–210：展开部结尾长笛在小字三组高位（$d\flat^3\text{–}d^3$）以 $p$ 至 $pp$ 吹奏极其透明的二全音符，弦乐退避为背景长音。
   * 贝多芬《第五交响曲》Op. 67 第二乐章长笛分谱事实：
     - 阅读来源：`local/workbench/scores/score-s2/downloads/op67-2/Symphony5_2-lys/flauti.ly`；
@@ -29,7 +29,7 @@
     - 阅读来源：`local/workbench/scores/score-s2/downloads/op92-2/flauti.ly`；
     - mm. 1–74：长笛全声部保持沉默，彻底避开暗沉低音区的声学掩蔽；
     - mm. 75–86：第一波全奏高潮双长笛以八度强奏（$<e'' e'''>4\ff$ 至 $<a'' a'''>$）骤然切入，穿透全乐队铜管与打击乐；
-    - mm. 101–116：A 大调副部第一长笛在小字二组高位与单簧管形成舒展的长线条八度空旷呼应。
+    - mm. 101–116：A 大调 Maggiore 段第一长笛在小字二组高位与单簧管形成舒展的长线条八度空旷呼应。
   * 贝多芬《第一交响曲》Op. 21 第二乐章 MuseData 总谱事实：
     - 阅读来源：`local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2`；
     - mm. 1–11：赋格前三声部呈示时长笛静默；
