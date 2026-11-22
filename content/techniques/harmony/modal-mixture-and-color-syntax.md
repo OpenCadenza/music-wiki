@@ -1,6 +1,6 @@
 ---
 title: 调式交替
-category: 创作技法
+category: techniques/harmony
 tags:
   - 和声
   - 调式交替

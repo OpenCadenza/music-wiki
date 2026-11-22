@@ -80,7 +80,7 @@ $$V^7/\text{vi} \longrightarrow V^7/\text{ii} \longrightarrow V^7/V \longrightar
 主部主题在第 26 小节于 C 大调属音八度极强（$ff$）收束后，第 27 小节突然以轻声（$p$）切入 G 小调三和弦，随即引爆两轮阶梯式副属和弦连锁：
 
 #### 1. 第一轮五度副属链条（mm. 28–31）
-- **m. 28**：左手低音在八分音符分解音型中奏出 $G\text{–}A\text{–}e$，右手高音切入带有临时升记号的 $c\sharp$ 音（$8dd \to 8cc\sharp$），构成 **$A^7$ 和弦（$V^7/D$）**；
+- **m. 28**：左手低音在八分音符分解音型中奏出 $G\text{–}A\text{–}e$，右手高音切入带有临时升记号的 $c\sharp$ 音（谱面写作两个八分音符：d3→c♯3），构成 **$A^7$ 和弦（$V^7/D$）**；
 - **m. 29**：低音下行五度滑入 $F\sharp\text{–}A\text{–}d$，右手琶音引入包含 $c\natural$ 的 **$D^7$ 和弦（$V^7/G$）**。前一小节的导音 $c\sharp$ 在此处精确下沉为七音 $c\natural$；
 - **m. 30**：低音再次下行五度切入 $F\natural\text{–}G\text{–}d$，右手奏出包含降记号的 **$G^7$ 和弦（$V^7/C$）**；
 - **m. 31**：最终在第 31 小节强拍落脚于 **C 小调三和弦（$E\flat\text{–}G\text{–}c$）**。
@@ -99,7 +99,7 @@ $$V^7/\text{vi} \longrightarrow V^7/\text{ii} \longrightarrow V^7/V \longrightar
 
 #### 3. 从连锁推进到功能替代（mm. 38–46）
 进入第 38 小节后，连锁推进的动能被正式导向曲式功能的全面更替：
-- **mm. 38–41**：第 38 小节低音切入 $GG\sharp\text{–}BB\text{–}E\text{–}G\sharp$，右手 $ee \to ddd$ 构成 $E^7$，随后在第 39 小节强奏（$f$）突入 A 小调（$A\text{–}c\text{–}e$）；第 40 小节后半拍低音切入 $D$（$8c\ 8d$），右手以特强（$sf$）引入 $D^7$（$f\sharp\text{–}a\text{–}cc\text{–}dd\text{–}ff\sharp$），并在第 41 小节强奏落脚于 G 小调（$G\text{–}B\flat\text{–}d$）；
+- **mm. 38–41**：第 38 小节低音切入 $GG\sharp\text{–}BB\text{–}E\text{–}G\sharp$，右手 e3→d3 的八度下行构成 $E^7$，随后在第 39 小节强奏（$f$）突入 A 小调（$A\text{–}c\text{–}e$）；第 40 小节后半拍低音切入 $D$（$8c\ 8d$），右手以特强（$sf$）引入 $D^7$（$f\sharp\text{–}a\text{–}cc\text{–}dd\text{–}ff\sharp$），并在第 41 小节强奏落脚于 G 小调（$G\text{–}B\flat\text{–}d$）；
 - **m. 42**：前半小节维持 G 小调，后半小节低音强力击出双八度降 6 级音 $E\flat$（大字组与小字组 $E\flat\text{–}e\flat$），上方切入 $cc\sharp\text{–}gg\text{–}ccc\sharp$（意大利增六和弦），将全部动能猛烈推向新调属和弦；
 - **mm. 43–46**：第 43 小节，低音击出八度 $D\text{–}d$，伴奏为 $F\sharp\text{–}A$，声部正式降落在 **D 大三和弦**（新调 G 大调的属和弦 $\text{V}$）上！原本作为 C 大调副属和弦（$V/V$）的 D 和弦，在此处彻底替代并接管了句法结构，演化为长达 4 小节的属持续低音与强烈的半终止（HC），最终在第 47 小节正式引出副部主题。
 
