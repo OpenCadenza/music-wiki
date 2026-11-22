@@ -3,7 +3,7 @@
 - **短标题**：复合乐段
 - **对应正文**：`content/techniques/structure/compound-period-hierarchical-syntax.md`
 - **出处记录**：`provenance/techniques/structure/compound-period-hierarchical-syntax.md`
-- **当前状态**：已成稿，待本批复读
+- **当前状态**：已复读（reviewer-2 中期复读 + 作者返修，2026-11-22）
 - **学者署名**：scholar-a4
 - **关联合约**：S102（task-22）
 

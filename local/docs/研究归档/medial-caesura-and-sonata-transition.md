@@ -3,7 +3,7 @@
 - **学者**：scholar-a4
 - **选题**：内聚裂隙与奏鸣曲过渡段动力学（Medial Caesura and Sonata Transition Dynamics）
 - **中心论证**：古典主义奏鸣曲式呈示部中的过渡段（Transition）并非中立的调性搬迁通道，而是承担着动力推进与结构切分的双重功能：通过动机碎裂化（liquidation）与和声节奏加速实现能量蓄积（energy gain），并在推进至属和弦锁定（dominant lock）后，通过修辞性休止或裂隙填充制造一道结构断裂——内聚裂隙（Medial Caesura, MC）。这道裂隙切断了过渡段的高速运动惯性，为具有独立性格的副部主题（Subordinate Theme, S）开辟了清晰的句法与声部空间。
-- **状态**：`已成稿，待本批复读`
+- **状态**：`已复读`（reviewer-2 中期复读 + 作者返修，2026-11-22）
 
 ---
 
