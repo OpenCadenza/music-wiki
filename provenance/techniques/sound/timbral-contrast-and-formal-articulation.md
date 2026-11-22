@@ -18,5 +18,5 @@
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
 | `beethoven-op92-ii-mm1-10` | 贝多芬 第七交响曲 Op.92 第二乐章 | Allegretto，mm.1–10（音乐会音高记谱） | Mutopia Project #595（Stelios Samelis, 2005；源标 Dover/Litolff） | PD |
-| `beethoven-op125-i-mm1-35`（待回填） | 贝多芬 第九交响曲 Op.125 第一乐章 | Allegro ma non troppo, un poco maestoso，mm.1–35 | CCARH MuseData sym9（依 Breitkopf & Härtel 转写） | 学术/教育用途（非 CC0） |
+| `beethoven-op125-i-mm1-35` | 贝多芬 第九交响曲 Op.125 第一乐章 | Allegro ma non troppo, un poco maestoso，mm.1–35 | CCARH MuseData sym9（依 Breitkopf & Härtel 转写） | 学术/教育用途（非 CC0） |
 | （暂无） | 马勒第四交响曲 II/III | 各乐章声部摘录（占位待补） | 待补 | 未确认 |
