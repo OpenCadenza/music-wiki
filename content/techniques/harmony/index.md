@@ -19,3 +19,10 @@
 
 - [从局部下属到结构对抗：那不勒斯和弦（bII）的调性异化机制](neapolitan-chord-structural-mutation.md)：以贝多芬《第11弦乐四重奏“严肃”》Op. 95 第一乐章为核心实证案例，严格对照 Open Music Theory（OMT）规范教材、原生 Kern 乐谱与 DCML 和声标注，深入剖析那不勒斯和弦如何颠覆第一转位与下属前属规范，演化为原位爆发的调性平移板块，并作为核心中介驱动半音-三度宏观调性网络的展开。
 - [增六和弦的力学本质与语法漂移：从古典半音下属加压到浪漫等音枢纽](augmented-sixth-mechanics-and-syntactic-drift.md)：基于对位声学物理与变化下属和弦框架，解构增六和弦作为外声部反向半音向心钳夹的动力学机制，剖析四大变体（意、法、德、瑞）的内声部色彩分化，并实证追踪其从莫扎特、贝多芬的古典前属极压，演进为舒伯特远关系调性穿梭等音枢纽的语法飞跃。
+- [副属连锁](applied-dominant-chains-and-functional-replacement.md)：副属和弦如何五度连锁推进，以及装饰性离调与结构性功能替代的句法分界。
+- [终止四六和弦](cadential-six-four-and-dominant-syntax.md)：终止四六为何不是独立和弦，而是属功能区的双倚音延留，以及它何时必须出现、何时被省略。
+- [三度调性](chromatic-mediant-and-tonal-space.md)：大三度中音关系如何扩张奏鸣曲式的调性空间，并迫使再现部作出结构代偿。
+- [减七枢纽](diminished-seventh-enharmonic-pivot.md)：减七和弦的对称等音结构如何成为多向导音枢纽，触发远关系调性突变。
+- [和声节奏](harmonic-rhythm-and-syntactic-pacing.md)：和声变更频率如何独立于表面音符节奏，组织乐句推进、终止期待与结构制动。
+- [利底亚调式](lydian-mode-and-tonal-gravity.md)：贝多芬 Op.132 第三乐章如何用无调号 F 利底亚剥离功能和声的向心重力。
+- [调式交替](modal-mixture-and-color-syntax.md)：同主音大小调借用如何在提供色彩对比的同时维系单一调性中心。

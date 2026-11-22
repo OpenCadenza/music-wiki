@@ -21,3 +21,9 @@
   系统探讨维也纳古典乐派如何通过复合基础乐念（CBI）打破乐段与乐句的刻板二元划分，实现旋律动机设计与和声曲式功能的完全解耦，并剖析四类经典混合形态在不同表现压力下的力学平衡机制。
 - [终止式延后与时间扩张：古典句法中的规避机制与“再来一次”技术](cadential-evasion-and-temporal-expansion.md)  
   剖析古典乐派如何打破“四小节方整霸权”，通过规避终止（Evaded Cadence）、终止弱化溢出（IAC Substitution）与“再来一次”（One-More-Time, OMT）技术，蓄意推迟终止降临并弹性拉伸宏观时间尺度。
+- [终止图式](cadential-prinner-and-structural-closure.md)：加兰特 Prinner 如何通过低音变异与终止四六插入，从延续图式转化为结构性正格终止。
+- [复合乐段](compound-period-hierarchical-syntax.md)：16 小节复合乐段如何把乐句升阶为乐题，以双层终止维持宏观呼应与微观动力。
+- [内聚裂隙](medial-caesura-and-sonata-transition.md)：奏鸣曲式过渡段如何以能量蓄积与突变阻断，打开副部主题的句法空间。
+- [乐句扩展](phrase-expansion-and-structural-skeleton.md)：古典句法如何通过内部扩展、终止回避与模进追加拉长乐句，同时保持可还原的骨架。
+- [模进与句法](sequence-mechanics-and-syntactic-functions.md)：模进如何同时承担延续动力、调性迁移与结构标点，以及装饰性模进与结构性模进的分野。
+- [超乐章目的论](teleological-multimovement-integration.md)：晚期贝多芬如何让多乐章在终端回收开篇材料，完成整体目的论。

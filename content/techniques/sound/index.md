@@ -29,3 +29,7 @@ description: 探讨多声部与管弦乐音乐中声音（Sound）、音色（Ti
   深入解析托维与贝尔金的“音响平面”（Planes of Tone）理论，探讨前景旋律、背景运动（Movement 4 种原型）与背景共鸣（Resonance）的声学分离机制，剖析贝多芬、勃拉姆斯与瓦格纳的管弦乐分层范例，并提供面向创作 Agent 的配器决策树与工程检查清单。
 - [音色对比阶梯与曲式标点机制](timbral-contrast-and-formal-articulation.md)  
   解析音色在时间轴上作为独立曲式标点的结构功能，系统解构贝尔金五级音色对比阶梯（Group 1–5）与配器变换速率（Rate of Orchestral Change），探讨大乐段切分、微观连续性保持、大全奏突变弱奏的延留缓冲律，以及贝多芬与马勒的典型管弦乐案例。
+- [长笛写作](flute-writing-and-orchestral-acoustics.md)：长笛四阶音区的声能反差、气息消耗与掩蔽规避，如何决定其管弦乐写作。
+- [自然圆号写作](natural-horn-writing-and-harmonic-series.md)：自然圆号的泛音列与管身调性如何塑造古典配器的音区、调性与手塞语法。
+- [定音鼓写作](timpani-writing-and-classical-orchestration.md)：双鼓固定音高与机械调弦延迟如何重塑曲式标点、和声骨架与动机形态。
+- [中提琴写作](viola-writing-and-orchestral-voicing.md)：中提琴的形制悖论、音区特性与掩蔽矛盾如何塑造室内乐与管弦乐织体。

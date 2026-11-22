@@ -18,3 +18,4 @@
 ## 本维度的专题研究
 
 - [对位中的挂留延留力学与声部导向机制](suspension-mechanics-and-voice-leading.md)：以 Open Music Theory（OMT）第四类对位法规范为理论坐标，实证透视巴赫 370 首四部合唱（Kern 原生谱源 `chor096.krn`、`chor001.krn`、`chor216.krn`）与贝多芬《Op. 74 竖琴四重奏》慢引子中的挂留网络，系统解构 4–3、7–6、9–8 与 2–3 挂留的力学拓扑、解决音重叠禁忌与交响化和声链演进。
+- [平行五八度](parallel-fifths-and-octaves.md)：严格对位的平行五八度禁则如何在古典与浪漫实践中被功能性、织体性与音响色彩打破。
