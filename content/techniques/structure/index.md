@@ -27,3 +27,6 @@
 - [乐句扩展](phrase-expansion-and-structural-skeleton.md)：古典句法如何通过内部扩展、终止回避与模进追加拉长乐句，同时保持可还原的骨架。
 - [模进与句法](sequence-mechanics-and-syntactic-functions.md)：模进如何同时承担延续动力、调性迁移与结构标点，以及装饰性模进与结构性模进的分野。
 - [超乐章目的论](teleological-multimovement-integration.md)：晚期贝多芬如何让多乐章在终端回收开篇材料，完成整体目的论。
+- [海顿104慢引子](slow-introduction-and-allegro-transition.md)：海顿 No.104 的慢引子如何用号角悬疑、小调滑移与属音制动为快板蓄能。
+- [自传叙事与四重奏](autobiographical-narrative-and-quartet-form.md)：斯美塔那 SQ1 如何在严格奏鸣构架里承载私密自传叙事。
+- [协奏原则](concertante-principle-and-double-exposition.md)：古典协奏曲如何把利都奈罗与奏鸣曲式熔成双重呈示。

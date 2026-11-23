@@ -33,3 +33,6 @@ description: 探讨多声部与管弦乐音乐中声音（Sound）、音色（Ti
 - [自然圆号写作](natural-horn-writing-and-harmonic-series.md)：自然圆号的泛音列与管身调性如何塑造古典配器的音区、调性与手塞语法。
 - [定音鼓写作](timpani-writing-and-classical-orchestration.md)：双鼓固定音高与机械调弦延迟如何重塑曲式标点、和声骨架与动机形态。
 - [中提琴写作](viola-writing-and-orchestral-voicing.md)：中提琴的形制悖论、音区特性与掩蔽矛盾如何塑造室内乐与管弦乐织体。
+- [合唱式织体](brahms-string-quartet-chorale-texture.md)：勃拉姆斯 Op.51/1 如何把合唱与管风琴式声部导向嵌入弦乐四重奏。
+- [德彪西四重奏色调](debussy-quartet-timbre-and-harmonic-color.md)：德彪西 Op.10 如何用调式偏转、平行和弦与弱音器置换打开印象主义室内乐音响。
+- [K.550 句法与配器](mozart-k550-syntax-and-orchestration.md)：莫扎特 K.550 第一乐章如何用弦乐先行、木管标点与双调圆号铰接句法。
