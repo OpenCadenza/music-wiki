@@ -1,7 +1,7 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T10:04:32.965Z",
+  "generatedAt": "2026-11-23T10:08:24.278Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
   "summary": {
     "articles": 48,
