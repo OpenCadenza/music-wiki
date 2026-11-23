@@ -1,7 +1,7 @@
 # 超拍与乐句节奏
 
 - 文章：`content/techniques/rhythm/hypermeter-and-phrase-rhythm.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
@@ -15,5 +15,5 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op2-no3-i-mm1-13` | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 1–13 | 待补 | 未确认 |
-| `mozart-k309-iii-mm1-19` | 莫扎特 K. 309 第三乐章 | Rondeau: Allegretto grazioso，mm. 1–19 | 待补 | 未确认 |
+| 占位 | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 1–13 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 莫扎特 K. 309 第三乐章 | Rondeau: Allegretto grazioso，mm. 1–19 | 待补（本篇正文为单行文本占位） | 未确认 |

@@ -1,7 +1,7 @@
 # 副属连锁
 
 - 文章：`content/techniques/harmony/applied-dominant-chains-and-functional-replacement.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
@@ -15,6 +15,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op2-no3-i-mm27-37` | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 27–37 | 待补 | 未确认 |
-| `beethoven-op2-no3-i-mm38-46` | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 38–46 | 待补 | 未确认 |
-| `beethoven-op14-no2-i-mm14-25` | 贝多芬 Op. 14 No. 2 第一乐章 | Allegro，mm. 14–25 | 待补 | 未确认 |
+| 占位 | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 27–37 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 38–46 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 14 No. 2 第一乐章 | Allegro，mm. 14–25 | 待补（本篇正文为单行文本占位） | 未确认 |

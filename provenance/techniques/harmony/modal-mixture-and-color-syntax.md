@@ -1,7 +1,7 @@
 # 调式交替
 
 - 文章：`content/techniques/harmony/modal-mixture-and-color-syntax.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
@@ -16,6 +16,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op13-ii-mm41-51` | 贝多芬 Op. 13 第二乐章 | Adagio cantabile，mm. 41–51 | 待补 | 未确认 |
-| `beethoven-op2-no3-i-mm218-232` | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 218–232 | 待补 | 未确认 |
-| `beethoven-op53-i-mm196-206` | 贝多芬 Op. 53 第一乐章 | Allegro con brio，mm. 196–206 | 待补 | 未确认 |
+| 占位 | 贝多芬 Op. 13 第二乐章 | Adagio cantabile，mm. 41–51 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 218–232 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 53 第一乐章 | Allegro con brio，mm. 196–206 | 待补（本篇正文为单行文本占位） | 未确认 |

@@ -1,7 +1,7 @@
 # 平行五八度
 
 - 文章：`content/techniques/counterpoint/parallel-fifths-and-octaves.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
@@ -17,6 +17,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op53-i-mm1-8` | 贝多芬 Op. 53 第一乐章 | Allegro con brio，mm. 1–8 | 待补 | 未确认 |
-| `beethoven-op81a-i-mm1-6` | 贝多芬 Op. 81a 第一乐章 | Adagio，mm. 1–6 | 待补 | 未确认 |
-| `beethoven-op13-i-mm11-20` | 贝多芬 Op. 13 第一乐章 | Allegro molto e con brio，mm. 11–20 | 待补 | 未确认 |
+| 占位 | 贝多芬 Op. 53 第一乐章 | Allegro con brio，mm. 1–8 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 81a 第一乐章 | Adagio，mm. 1–6 | 待补（本篇正文为单行文本占位） | 未确认 |
+| 占位 | 贝多芬 Op. 13 第一乐章 | Allegro molto e con brio，mm. 11–20 | 待补（本篇正文为单行文本占位） | 未确认 |
