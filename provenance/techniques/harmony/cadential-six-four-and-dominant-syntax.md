@@ -1,7 +1,7 @@
 # 终止四六和弦
 
 - 文章：`content/techniques/harmony/cadential-six-four-and-dominant-syntax.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

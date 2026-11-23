@@ -1,7 +1,7 @@
 # 复合乐段
 
 - 文章：`content/techniques/structure/compound-period-hierarchical-syntax.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

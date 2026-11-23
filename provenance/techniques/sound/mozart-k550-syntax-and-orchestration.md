@@ -1,7 +1,7 @@
 # 句法与配器
 
 - 文章：`content/techniques/sound/mozart-k550-syntax-and-orchestration.md`
-- 许可：待补（正文为单行文本占位）
+- 许可：CCARH MuseData 学术用途（非 CC0；详见两表）
 
 ## 引用与出处
 
@@ -16,6 +16,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-mozart-k550-1-theme | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 1–16 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| ex-mozart-k550-1-tutti | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 16–28 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| ex-mozart-k550-1-retransition | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 138–165 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 1–16 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 16–28 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 138–165 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |

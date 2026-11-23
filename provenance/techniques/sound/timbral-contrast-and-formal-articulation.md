@@ -1,7 +1,7 @@
 # 音色对比阶梯
 
 - 文章：`content/techniques/sound/timbral-contrast-and-formal-articulation.md`
-- 许可：待补
+- 许可：CC0-1.0（部分条目为学术核对，详见两表）
 
 ## 引用与出处
 

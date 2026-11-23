@@ -1,0 +1,2011 @@
+整合检查：正文 40 篇，内容目录 16，谱例 47 块
+  [WARN] index-presence     P0=0 P1=0 P2=1
+  [FAIL] index-coverage     P0=20 P1=0 P2=0
+  [PASS] links              P0=0 P1=0 P2=0
+  [WARN] triplet            P0=0 P1=1 P2=0
+  [WARN] provenance-tables  P0=0 P1=40 P2=0
+  [WARN] score-ids          P0=0 P1=31 P2=6
+  [WARN] manual-gaps        P0=0 P1=2 P2=10
+  [PASS] titles             P0=0 P1=0 P2=0
+  [WARN] terms              P0=0 P1=0 P2=4
+P0=20 P1=74 P2=21 → 未通过
+报告：local/docs/实施记录/2026-11-23-第四轮/整合检查-最新.md
+数据：local/docs/实施记录/2026-11-23-第四轮/integration-audit.json
+{
+  "tool": "local/workbench/tools/audit_integration.mjs",
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-22T18:17:19.258Z",
+  "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
+  "summary": {
+    "articles": 40,
+    "contentDirs": 16,
+    "indexFiles": 17,
+    "notationBlocks": 47,
+    "notationBlocksWithoutId": 0,
+    "provenance": 40,
+    "archives": 40,
+    "scoreboardIds": 47,
+    "manualGaps": 6,
+    "scoreRefs": 0,
+    "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
+    "severityCounts": {
+      "P0": 20,
+      "P1": 74,
+      "P2": 21
+    },
+    "exitCode": 1,
+    "passed": false
+  },
+  "checks": [
+    {
+      "id": "index-presence",
+      "title": "目录索引存在与实质导览",
+      "violations": 1,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 1
+      },
+      "status": "warn"
+    },
+    {
+      "id": "index-coverage",
+      "title": "index 收录本目录文章",
+      "violations": 20,
+      "bySeverity": {
+        "P0": 20,
+        "P1": 0,
+        "P2": 0
+      },
+      "status": "fail"
+    },
+    {
+      "id": "links",
+      "title": "相对链接可达",
+      "violations": 0,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "status": "pass"
+    },
+    {
+      "id": "triplet",
+      "title": "三件套（正文 / provenance / 归档）",
+      "violations": 1,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 1,
+        "P2": 0
+      },
+      "status": "warn"
+    },
+    {
+      "id": "provenance-tables",
+      "title": "provenance 两表非空与许可登记",
+      "violations": 40,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 40,
+        "P2": 0
+      },
+      "status": "warn"
+    },
+    {
+      "id": "score-ids",
+      "title": "谱例 id 对账（围栏 / provenance / score-board）",
+      "violations": 37,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 31,
+        "P2": 6
+      },
+      "status": "warn"
+    },
+    {
+      "id": "manual-gaps",
+      "title": "score-board 缺口表与正文占位差异",
+      "violations": 12,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 2,
+        "P2": 10
+      },
+      "status": "warn"
+    },
+    {
+      "id": "titles",
+      "title": "标题唯一性与元数据一致",
+      "violations": 0,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 0
+      },
+      "status": "pass"
+    },
+    {
+      "id": "terms",
+      "title": "术语口径统计",
+      "violations": 4,
+      "bySeverity": {
+        "P0": 0,
+        "P1": 0,
+        "P2": 4
+      },
+      "status": "warn"
+    }
+  ],
+  "violations": [
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "styles/woodwind-symphonic-emancipation.md",
+      "detail": "styles/index.md 未收录本文",
+      "index": "styles/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "techniques/counterpoint/index.md 未收录本文",
+      "index": "techniques/counterpoint/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
+      "detail": "techniques/harmony/index.md 未收录本文",
+      "index": "techniques/harmony/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "techniques/rhythm/index.md 未收录本文",
+      "index": "techniques/rhythm/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "techniques/sound/index.md 未收录本文",
+      "index": "techniques/sound/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "techniques/sound/index.md 未收录本文",
+      "index": "techniques/sound/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "techniques/sound/index.md 未收录本文",
+      "index": "techniques/sound/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "techniques/sound/index.md 未收录本文",
+      "index": "techniques/sound/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/cadential-prinner-and-structural-closure.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/compound-period-hierarchical-syntax.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/medial-caesura-and-sonata-transition.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "uncollected-article",
+      "severity": "P0",
+      "path": "techniques/structure/teleological-multimovement-integration.md",
+      "detail": "techniques/structure/index.md 未收录本文",
+      "index": "techniques/structure/index.md"
+    },
+    {
+      "category": "archive-path-missing",
+      "severity": "P1",
+      "path": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
+      "detail": "归档未写明正文路径",
+      "archive": "local/docs/研究归档/augmented-sixth-mechanics-and-syntactic-drift.md"
+    },
+    {
+      "category": "manual-gaps-stale",
+      "severity": "P1",
+      "path": "local/resources/catalog/score-board.md",
+      "detail": "缺口行疑似过期：贝多芬 Op.92 第二乐章 mm.1–10｜已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）（状态里提到的 beethoven-op92-ii-mm1-10 已存在于正文围栏）",
+      "work": "贝多芬 Op.92 第二乐章",
+      "span": "mm.1–10",
+      "status": "已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）"
+    },
+    {
+      "category": "manual-gaps-stale",
+      "severity": "P1",
+      "path": "local/resources/catalog/score-board.md",
+      "detail": "缺口行疑似过期：贝多芬 Op.125 第一乐章 mm.1–35｜已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）（状态里提到的 beethoven-op125-i-mm1-35 已存在于正文围栏）",
+      "work": "贝多芬 Op.125 第一乐章",
+      "span": "mm.1–35",
+      "status": "已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op74-i-mm6-9",
+      "id": "beethoven-op74-i-mm6-9"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d328-prelude-and-vocal",
+      "id": "schubert-d328-prelude-and-vocal"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op53-i-mm1-8",
+      "id": "beethoven-op53-i-mm1-8"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op81a-i-mm1-6",
+      "id": "beethoven-op81a-i-mm1-6"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-i-mm11-20",
+      "id": "beethoven-op13-i-mm11-20"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op2-no3-i-mm27-37",
+      "id": "beethoven-op2-no3-i-mm27-37"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op2-no3-i-mm38-46",
+      "id": "beethoven-op2-no3-i-mm38-46"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op14-no2-i-mm14-25",
+      "id": "beethoven-op14-no2-i-mm14-25"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-i-mm1-4",
+      "id": "beethoven-op13-i-mm1-4"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-i-mm135-139",
+      "id": "beethoven-op13-i-mm135-139"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op18-no6-iv-mm9-18",
+      "id": "beethoven-op18-no6-iv-mm9-18"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-ii-mm41-51",
+      "id": "beethoven-op13-ii-mm41-51"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op2-no3-i-mm218-232",
+      "id": "beethoven-op2-no3-i-mm218-232"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op53-i-mm196-206",
+      "id": "beethoven-op53-i-mm196-206"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op2-no3-i-mm1-13",
+      "id": "beethoven-op2-no3-i-mm1-13"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：mozart-k309-iii-mm1-19",
+      "id": "mozart-k309-iii-mm1-19"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op67-1-echo",
+      "id": "ex-flute-op67-1-echo"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op92-2-tutti",
+      "id": "ex-flute-op92-2-tutti"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op21-2-fugato",
+      "id": "ex-flute-op21-2-fugato"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op67-2-arpeggio",
+      "id": "ex-flute-op67-2-arpeggio"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op67-1-motto",
+      "id": "ex-natural-horn-op67-1-motto"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op67-2-fanfare",
+      "id": "ex-natural-horn-op67-2-fanfare"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op92-2-pedal",
+      "id": "ex-natural-horn-op92-2-pedal"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op21-2-closing",
+      "id": "ex-timpani-op21-2-closing"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op67-2-fanfare",
+      "id": "ex-timpani-op67-2-fanfare"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op67-3to4-transition",
+      "id": "ex-timpani-op67-3to4-transition"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op125-2-octaves",
+      "id": "ex-timpani-op125-2-octaves"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op59-3-4-fugue",
+      "id": "ex-viola-op59-3-4-fugue"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op67-2-unison",
+      "id": "ex-viola-op67-2-unison"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op92-2-countermelody",
+      "id": "ex-viola-op92-2-countermelody"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op131-1-answer",
+      "id": "ex-viola-op131-1-answer"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "composers/beethoven/piano-sonatas/slow-introduction-integration.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "ensembles/bidirectional-selection-of-musical-ideas-and-medium.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "ensembles/piano-trio-acoustic-compromise.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "ensembles/string-quartet-acoustic-role-differentiation.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "ensembles/wind-quintet-acoustic-balance.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "notation/machine-readable-sources-and-evidence-hierarchy.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "styles/orchestral-timbre-aesthetic-shift.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "styles/woodwind-symphonic-emancipation.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/harmony/neapolitan-chord-structural-mutation.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/rhythm/hemiola-and-metric-conflict.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/planes-of-tone-layering.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/timbral-contrast-and-formal-articulation.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/cadential-prinner-and-structural-closure.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/compound-period-hierarchical-syntax.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/galant-schemata-and-formal-functions.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/medial-caesura-and-sonata-transition.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "prov-license-pending",
+      "severity": "P1",
+      "path": "techniques/structure/teleological-multimovement-integration.md",
+      "detail": "文件头许可未落实：「待补」"
+    },
+    {
+      "category": "axis-index-coverage",
+      "severity": "P2",
+      "path": "techniques/index.md",
+      "detail": "轴根导览未覆盖 19/29 篇子树文章",
+      "missing": [
+        "techniques/counterpoint/parallel-fifths-and-octaves.md",
+        "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+        "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+        "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+        "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+        "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+        "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+        "techniques/harmony/modal-mixture-and-color-syntax.md",
+        "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+        "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+        "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+        "techniques/sound/timpani-writing-and-classical-orchestration.md",
+        "techniques/sound/viola-writing-and-orchestral-voicing.md",
+        "techniques/structure/cadential-prinner-and-structural-closure.md",
+        "techniques/structure/compound-period-hierarchical-syntax.md",
+        "techniques/structure/medial-caesura-and-sonata-transition.md",
+        "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+        "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+        "techniques/structure/teleological-multimovement-integration.md"
+      ]
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
+      "detail": "计划 id beethoven-op74-i-mm6-9 与既有围栏 beethoven-op74-i-mm1-9 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "beethoven-op74-i-mm6-9",
+      "existing": "beethoven-op74-i-mm1-9"
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "计划 id beethoven-op53-i-mm1-8 与既有围栏 beethoven-op53-i-mm1-14 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "beethoven-op53-i-mm1-8",
+      "existing": "beethoven-op53-i-mm1-14"
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+      "detail": "计划 id beethoven-op13-i-mm11-20 与既有围栏 beethoven-op13-i-mm1-19 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "beethoven-op13-i-mm11-20",
+      "existing": "beethoven-op13-i-mm1-19"
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+      "detail": "计划 id beethoven-op13-i-mm1-4 与既有围栏 beethoven-op13-i-mm1-19 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "beethoven-op13-i-mm1-4",
+      "existing": "beethoven-op13-i-mm1-19"
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "计划 id beethoven-op2-no3-i-mm1-13 与既有围栏 beethoven-op2no3-i-mm1-13 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "beethoven-op2-no3-i-mm1-13",
+      "existing": "beethoven-op2no3-i-mm1-13"
+    },
+    {
+      "category": "id-near-collision",
+      "severity": "P2",
+      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+      "detail": "计划 id mozart-k309-iii-mm1-19 与既有围栏 mozart-k309-iii-mm9-19 同作品同乐章且小节重叠（补谱会重复）",
+      "id": "mozart-k309-iii-mm1-19",
+      "existing": "mozart-k309-iii-mm9-19"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "styles/woodwind-symphonic-emancipation.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 3"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 3、未收录内联 3、裸引用块 0"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 3"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 1"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 4"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 4"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/structure/cadential-prinner-and-structural-closure.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/structure/compound-period-hierarchical-syntax.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 3、未收录内联 3、裸引用块 0"
+    },
+    {
+      "category": "placeholder-nonconforming",
+      "severity": "P2",
+      "path": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
+    },
+    {
+      "category": "term-inconsistency",
+      "severity": "P2",
+      "path": "content/",
+      "detail": "乐思 / 乐念 两种写法并存：乐思 16 篇 / 乐念 8 篇"
+    },
+    {
+      "category": "term-inconsistency",
+      "severity": "P2",
+      "path": "content/",
+      "detail": "挂留 / 悬置 两种写法并存：挂留 13 篇 / 悬置 7 篇"
+    },
+    {
+      "category": "term-inconsistency",
+      "severity": "P2",
+      "path": "content/",
+      "detail": "模进 / 序列 两种写法并存：模进 15 篇 / 序列 2 篇"
+    },
+    {
+      "category": "term-inconsistency",
+      "severity": "P2",
+      "path": "content/",
+      "detail": "Prinner / 普林纳 两种写法并存：Prinner 4 篇 / 普林纳 1 篇"
+    }
+  ],
+  "advisories": [
+    {
+      "id": "placeholder-without-gap",
+      "detail": "8 篇有谱例占位/计划但没有登记到 score-board manual:gaps",
+      "files": [
+        "styles/woodwind-symphonic-emancipation.md",
+        "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+        "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+        "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+        "techniques/structure/cadential-prinner-and-structural-closure.md",
+        "techniques/structure/compound-period-hierarchical-syntax.md",
+        "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+        "techniques/structure/sequence-mechanics-and-syntactic-functions.md"
+      ]
+    }
+  ],
+  "indexCoverage": [
+    {
+      "dir": "",
+      "index": "index.md",
+      "articles": 0,
+      "linked": 0,
+      "uncollected": []
+    },
+    {
+      "dir": "composers",
+      "index": "composers/index.md",
+      "articles": 0,
+      "linked": 0,
+      "uncollected": []
+    },
+    {
+      "dir": "composers/bach",
+      "index": "composers/bach/index.md",
+      "articles": 0,
+      "linked": 0,
+      "uncollected": []
+    },
+    {
+      "dir": "composers/bach/chorale",
+      "index": "composers/bach/chorale/index.md",
+      "articles": 1,
+      "linked": 1,
+      "uncollected": []
+    },
+    {
+      "dir": "composers/beethoven",
+      "index": "composers/beethoven/index.md",
+      "articles": 0,
+      "linked": 0,
+      "uncollected": []
+    },
+    {
+      "dir": "composers/beethoven/piano-sonatas",
+      "index": "composers/beethoven/piano-sonatas/index.md",
+      "articles": 1,
+      "linked": 1,
+      "uncollected": []
+    },
+    {
+      "dir": "composers/beethoven/quartets",
+      "index": "composers/beethoven/quartets/index.md",
+      "articles": 1,
+      "linked": 1,
+      "uncollected": []
+    },
+    {
+      "dir": "ensembles",
+      "index": "ensembles/index.md",
+      "articles": 4,
+      "linked": 4,
+      "uncollected": []
+    },
+    {
+      "dir": "notation",
+      "index": "notation/index.md",
+      "articles": 2,
+      "linked": 2,
+      "uncollected": []
+    },
+    {
+      "dir": "styles",
+      "index": "styles/index.md",
+      "articles": 2,
+      "linked": 1,
+      "uncollected": [
+        "styles/woodwind-symphonic-emancipation.md"
+      ]
+    },
+    {
+      "dir": "techniques",
+      "index": "techniques/index.md",
+      "articles": 0,
+      "linked": 0,
+      "uncollected": []
+    },
+    {
+      "dir": "techniques/counterpoint",
+      "index": "techniques/counterpoint/index.md",
+      "articles": 2,
+      "linked": 1,
+      "uncollected": [
+        "techniques/counterpoint/parallel-fifths-and-octaves.md"
+      ]
+    },
+    {
+      "dir": "techniques/harmony",
+      "index": "techniques/harmony/index.md",
+      "articles": 9,
+      "linked": 2,
+      "uncollected": [
+        "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+        "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+        "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+        "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+        "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+        "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+        "techniques/harmony/modal-mixture-and-color-syntax.md"
+      ]
+    },
+    {
+      "dir": "techniques/material",
+      "index": "techniques/material/index.md",
+      "articles": 1,
+      "linked": 1,
+      "uncollected": []
+    },
+    {
+      "dir": "techniques/rhythm",
+      "index": "techniques/rhythm/index.md",
+      "articles": 2,
+      "linked": 1,
+      "uncollected": [
+        "techniques/rhythm/hypermeter-and-phrase-rhythm.md"
+      ]
+    },
+    {
+      "dir": "techniques/sound",
+      "index": "techniques/sound/index.md",
+      "articles": 6,
+      "linked": 2,
+      "uncollected": [
+        "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+        "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+        "techniques/sound/timpani-writing-and-classical-orchestration.md",
+        "techniques/sound/viola-writing-and-orchestral-voicing.md"
+      ]
+    },
+    {
+      "dir": "techniques/structure",
+      "index": "techniques/structure/index.md",
+      "articles": 9,
+      "linked": 3,
+      "uncollected": [
+        "techniques/structure/cadential-prinner-and-structural-closure.md",
+        "techniques/structure/compound-period-hierarchical-syntax.md",
+        "techniques/structure/medial-caesura-and-sonata-transition.md",
+        "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+        "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+        "techniques/structure/teleological-multimovement-integration.md"
+      ]
+    }
+  ],
+  "termStats": {
+    "idea-motif": {
+      "name": "乐思 / 乐念",
+      "variants": {
+        "乐思": {
+          "articles": 16,
+          "occurrences": 76,
+          "byBatch": {
+            "首批": 9,
+            "第二轮": 7,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "composers/beethoven/piano-sonatas/slow-introduction-integration.md",
+              "count": 3,
+              "batch": "首批"
+            },
+            {
+              "rel": "ensembles/bidirectional-selection-of-musical-ideas-and-medium.md",
+              "count": 33,
+              "batch": "首批"
+            },
+            {
+              "rel": "styles/orchestral-timbre-aesthetic-shift.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+              "count": 8,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/modal-mixture-and-color-syntax.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/neapolitan-chord-structural-mutation.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+              "count": 12,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/sound/timbral-contrast-and-formal-articulation.md",
+              "count": 2,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
+              "count": 2,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
+              "count": 2,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
+              "count": 5,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/medial-caesura-and-sonata-transition.md",
+              "count": 1,
+              "batch": "第二轮"
+            }
+          ]
+        },
+        "乐念": {
+          "articles": 8,
+          "occurrences": 62,
+          "byBatch": {
+            "首批": 3,
+            "第二轮": 5,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
+              "count": 5,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/compound-period-hierarchical-syntax.md",
+              "count": 16,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
+              "count": 4,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
+              "count": 19,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/medial-caesura-and-sonata-transition.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+              "count": 13,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+              "count": 1,
+              "batch": "第二轮"
+            }
+          ]
+        }
+      }
+    },
+    "suspension": {
+      "name": "挂留 / 悬置",
+      "variants": {
+        "挂留": {
+          "articles": 13,
+          "occurrences": 135,
+          "byBatch": {
+            "首批": 8,
+            "第二轮": 5,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md",
+              "count": 5,
+              "batch": "首批"
+            },
+            {
+              "rel": "composers/beethoven/piano-sonatas/slow-introduction-integration.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
+              "count": 42,
+              "batch": "首批"
+            },
+            {
+              "rel": "notation/machine-readable-sources-and-evidence-hierarchy.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+              "count": 5,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
+              "count": 68,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/modal-mixture-and-color-syntax.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
+              "count": 3,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
+              "count": 3,
+              "batch": "首批"
+            }
+          ]
+        },
+        "悬置": {
+          "articles": 7,
+          "occurrences": 17,
+          "byBatch": {
+            "首批": 3,
+            "第二轮": 4,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
+              "count": 3,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
+              "count": 2,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
+              "count": 3,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
+              "count": 6,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/teleological-multimovement-integration.md",
+              "count": 1,
+              "batch": "第二轮"
+            }
+          ]
+        }
+      }
+    },
+    "sequence": {
+      "name": "模进 / 序列",
+      "variants": {
+        "模进": {
+          "articles": 15,
+          "occurrences": 111,
+          "byBatch": {
+            "首批": 7,
+            "第二轮": 8,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "ensembles/wind-quintet-acoustic-balance.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
+              "count": 2,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
+              "count": 3,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/chromatic-mediant-and-tonal-space.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
+              "count": 14,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
+              "count": 3,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
+              "count": 1,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
+              "count": 2,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/compound-period-hierarchical-syntax.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
+              "count": 7,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
+              "count": 3,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/medial-caesura-and-sonata-transition.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+              "count": 8,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
+              "count": 62,
+              "batch": "第二轮"
+            }
+          ]
+        },
+        "序列": {
+          "articles": 2,
+          "occurrences": 2,
+          "byBatch": {
+            "首批": 0,
+            "第二轮": 2,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "techniques/counterpoint/parallel-fifths-and-octaves.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/sound/timpani-writing-and-classical-orchestration.md",
+              "count": 1,
+              "batch": "第二轮"
+            }
+          ]
+        }
+      }
+    },
+    "prinner": {
+      "name": "Prinner / 普林纳",
+      "variants": {
+        "Prinner": {
+          "articles": 4,
+          "occurrences": 41,
+          "byBatch": {
+            "首批": 2,
+            "第二轮": 2,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
+              "count": 1,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
+              "count": 32,
+              "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
+              "count": 5,
+              "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
+              "count": 3,
+              "batch": "首批"
+            }
+          ]
+        },
+        "普林纳": {
+          "articles": 1,
+          "occurrences": 1,
+          "byBatch": {
+            "首批": 0,
+            "第二轮": 1,
+            "未知": 0
+          },
+          "files": [
+            {
+              "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
+              "count": 1,
+              "batch": "第二轮"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "titleStats": {
+    "total": 40,
+    "duplicates": [],
+    "missingH1": [],
+    "mismatch": []
+  },
+  "scoreBoard": {
+    "exists": true,
+    "ids": 47,
+    "gaps": {
+      "found": true,
+      "rows": [
+        {
+          "work": "贝多芬 Op.97 第一乐章",
+          "span": "mm.1–12",
+          "status": "无法核验：无机器可读源（IMSLP 仅 PDF；PDMX 无；CCARH 无钢琴三重奏）",
+          "line": 6
+        },
+        {
+          "work": "雷哈 Op.88 No.2 第一乐章",
+          "span": "mm.1–8",
+          "status": "无法核验：IMSLP 有扫描/分谱 PDF，无 MXL；PDMX 无",
+          "line": 7
+        },
+        {
+          "work": "贝多芬 Op.92 第二乐章",
+          "span": "mm.1–10",
+          "status": "已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）",
+          "line": 8
+        },
+        {
+          "work": "贝多芬 Op.125 第一乐章",
+          "span": "mm.1–35",
+          "status": "已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）",
+          "line": 9
+        },
+        {
+          "work": "马勒 第四交响曲 第二乐章",
+          "span": "mm.34–46",
+          "status": "无法核验：PDMX 无第四；IMSLP 仅 Vn1 分谱 MXL，非总谱",
+          "line": 10
+        },
+        {
+          "work": "那不勒斯和弦教材模型",
+          "span": "示意",
+          "status": "不出谱：正文改为示意性表述（差异复读 #1 已处理）",
+          "line": 11
+        }
+      ]
+    }
+  },
+  "placeholders": {
+    "composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "composers/beethoven/piano-sonatas/slow-introduction-integration.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "ensembles/bidirectional-selection-of-musical-ideas-and-medium.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "ensembles/piano-trio-acoustic-compromise.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "ensembles/string-quartet-acoustic-role-differentiation.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "ensembles/wind-quintet-acoustic-balance.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "notation/clef-octave-ambiguity-and-encoding-loss.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "notation/machine-readable-sources-and-evidence-hierarchy.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "styles/orchestral-timbre-aesthetic-shift.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "styles/woodwind-symphonic-emancipation.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 3,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [
+        "op21"
+      ],
+      "nonconforming": 3,
+      "hasGapSignal": true
+    },
+    "techniques/counterpoint/parallel-fifths-and-octaves.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/counterpoint/suspension-mechanics-and-voice-leading.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/applied-dominant-chains-and-functional-replacement.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 1,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/cadential-six-four-and-dominant-syntax.md": {
+      "standard": 0,
+      "bracket": 3,
+      "noInline": 3,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [
+        "k331",
+        "k545",
+        "k283"
+      ],
+      "nonconforming": 6,
+      "hasGapSignal": true
+    },
+    "techniques/harmony/chromatic-mediant-and-tonal-space.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/diminished-seventh-enharmonic-pivot.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/lydian-mode-and-tonal-gravity.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 3,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [
+        "op132"
+      ],
+      "nonconforming": 3,
+      "hasGapSignal": true
+    },
+    "techniques/harmony/modal-mixture-and-color-syntax.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/harmony/neapolitan-chord-structural-mutation.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/material/motivic-inversion-and-harmonic-recontextualization.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/rhythm/hemiola-and-metric-conflict.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/rhythm/hypermeter-and-phrase-rhythm.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/flute-writing-and-orchestral-acoustics.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/natural-horn-writing-and-harmonic-series.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 1,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [
+        "op67"
+      ],
+      "nonconforming": 1,
+      "hasGapSignal": true
+    },
+    "techniques/sound/planes-of-tone-layering.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/timbral-contrast-and-formal-articulation.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 1,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/timpani-writing-and-classical-orchestration.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 4,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [
+        "op21",
+        "op67",
+        "op125"
+      ],
+      "nonconforming": 4,
+      "hasGapSignal": true
+    },
+    "techniques/sound/viola-writing-and-orchestral-voicing.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 4,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [
+        "op59no3",
+        "op67",
+        "op92",
+        "op131"
+      ],
+      "nonconforming": 4,
+      "hasGapSignal": true
+    },
+    "techniques/structure/cadential-evasion-and-temporal-expansion.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 1,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/cadential-prinner-and-structural-closure.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 2,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 2,
+      "placeholderTokens": [
+        "k545",
+        "k283"
+      ],
+      "nonconforming": 2,
+      "hasGapSignal": true
+    },
+    "techniques/structure/compound-period-hierarchical-syntax.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 2,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 2,
+      "placeholderTokens": [
+        "k332",
+        "k284"
+      ],
+      "nonconforming": 2,
+      "hasGapSignal": true
+    },
+    "techniques/structure/galant-schemata-and-formal-functions.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/hybrid-themes-and-syntax-decoupling.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 1,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/medial-caesura-and-sonata-transition.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/phrase-expansion-and-structural-skeleton.md": {
+      "standard": 0,
+      "bracket": 3,
+      "noInline": 3,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [
+        "k494",
+        "op2no3",
+        "k309"
+      ],
+      "nonconforming": 6,
+      "hasGapSignal": true
+    },
+    "techniques/structure/sequence-mechanics-and-syntactic-functions.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 2,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 2,
+      "placeholderTokens": [
+        "op2no1",
+        "k545"
+      ],
+      "nonconforming": 2,
+      "hasGapSignal": true
+    },
+    "techniques/structure/teleological-multimovement-integration.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    }
+  }
+}

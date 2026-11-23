@@ -1,7 +1,7 @@
 # 超乐章目的论
 
 - 文章：`content/techniques/structure/teleological-multimovement-integration.md`
-- 许可：待补
+- 许可：CCARH MuseData 学术用途（非 CC0；详见两表）
 
 ## 引用与出处
 

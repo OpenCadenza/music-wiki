@@ -1,7 +1,7 @@
 # 模进与句法
 
 - 文章：`content/techniques/structure/sequence-mechanics-and-syntactic-functions.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

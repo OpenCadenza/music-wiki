@@ -1,7 +1,7 @@
 # 海顿104慢引子
 
 - 文章：`content/techniques/structure/slow-introduction-and-allegro-transition.md`
-- 许可：待补
+- 许可：CCARH MuseData 学术用途（非 CC0；详见两表）
 
 ## 引用与出处
 
@@ -15,8 +15,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `haydn-sym104-i-mm1-2` | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 1–2 | MuseData kern | 学术核对 |
-| `haydn-sym104-i-mm3-8` | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 3–8 | MuseData kern | 学术核对 |
-| `haydn-sym104-i-mm9-16` | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 9–16 | MuseData kern | 学术核对 |
-| `haydn-sym104-i-mm17-32` | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 17–32 | MuseData kern | 学术核对 |
-| `haydn-sym104-i-mm33-40` | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 33–40 | MuseData kern | 学术核对 |
+| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 1–2 | MuseData kern | 学术核对 |
+| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 3–8 | MuseData kern | 学术核对 |
+| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 9–16 | MuseData kern | 学术核对 |
+| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 17–32 | MuseData kern | 学术核对 |
+| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 33–40 | MuseData kern | 学术核对 |

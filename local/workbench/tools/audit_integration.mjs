@@ -539,6 +539,8 @@ else {
     // 4.4 幻影 id：provenance 有、正文围栏无
     for (const id of prov.scoreIds) {
       if (allFenceIds.has(id)) continue
+      // 「关联引用」行指向另一篇文章的谱例，不要求本篇有围栏
+      if (prov.text.split(/\r?\n/).some((line) => line.includes(id) && line.includes('关联引用'))) continue
       if (!ID_SHAPE.test(id)) {
         add('phantom-id', a.rel, `谱例表 id 列不是合法 id：「${id}」`, { id })
         continue

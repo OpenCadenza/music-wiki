@@ -1,7 +1,7 @@
 # 八度歧义与演奏法
 
 - 文章：`content/notation/clef-octave-ambiguity-and-encoding-loss.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 

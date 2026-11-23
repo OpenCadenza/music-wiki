@@ -1,7 +1,7 @@
 # 慢引子
 
 - 文章：`content/composers/beethoven/piano-sonatas/slow-introduction-integration.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 

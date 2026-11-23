@@ -1,7 +1,7 @@
 # 人声中提琴与钢琴
 
 - 文章：`content/ensembles/voice-viola-and-piano.md`
-- 许可：待补
+- 许可：CC0-1.0（部分条目为学术核对，详见两表）
 
 ## 引用与出处
 
@@ -16,7 +16,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-brahms-op91-1-intro | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 1–13 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| ex-brahms-op91-1-interplay | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 14–25 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| ex-brahms-op91-2-carol | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 1–10 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| ex-brahms-op91-2-polyphony | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 26–46 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 1–13 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 14–25 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 1–10 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 26–46 | OpenScore Lieder（CC0） | CC0 / 公有领域 |

@@ -1,7 +1,7 @@
 # 和声节奏
 
 - 文章：`content/techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

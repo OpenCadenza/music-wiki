@@ -1,7 +1,7 @@
 # 中提琴写作
 
 - 文章：`content/techniques/sound/viola-writing-and-orchestral-voicing.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 
@@ -19,7 +19,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-viola-op59-3-4-fugue | 贝多芬第九弦乐四重奏 Op. 59 No. 3 第四乐章 | Allegro molto，mm. 1–10 | Humdrum Kern / Dover | 公有领域 |
-| ex-viola-op67-2-unison | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 1–8 与 mm. 25–33 | Mutopia / Breitkopf & Härtel | 公有领域 |
-| ex-viola-op92-2-countermelody | 贝多芬第七交响曲 Op. 92 第二乐章 | Allegretto，mm. 21–26 与 mm. 27–36 | Mutopia / Litolff | 公有领域 |
-| ex-viola-op131-1-answer | 贝多芬第十四弦乐四重奏 Op. 131 第一乐章 | Adagio ma non troppo，mm. 1–16 | Humdrum Kern / Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第九弦乐四重奏 Op. 59 No. 3 第四乐章 | Allegro molto，mm. 1–10 | Humdrum Kern / Dover | 公有领域 |
+| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 1–8 与 mm. 25–33 | Mutopia / Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第七交响曲 Op. 92 第二乐章 | Allegretto，mm. 21–26 与 mm. 27–36 | Mutopia / Litolff | 公有领域 |
+| 占位（未出谱） | 贝多芬第十四弦乐四重奏 Op. 131 第一乐章 | Adagio ma non troppo，mm. 1–16 | Humdrum Kern / Breitkopf & Härtel | 公有领域 |

@@ -1,7 +1,7 @@
 # 海顿的变奏对话
 
 - 文章：`content/techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md`
-- 许可：待补
+- 许可：CC0-1.0（部分条目为学术核对，详见两表）
 
 ## 引用与出处
 
@@ -16,8 +16,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `haydn-op76n3-ii-mm1-20` | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 1–20 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| `haydn-op76n3-ii-mm21-32` | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 21–32 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| `haydn-op76n3-ii-mm41-60` | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 41–60 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| `haydn-op76n3-ii-mm61-80` | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 61–80 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| `haydn-op76n3-ii-mm81-104` | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 81–104 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 1–20 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 21–32 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 41–60 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 61–80 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 81–104 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |

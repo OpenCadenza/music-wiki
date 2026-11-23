@@ -1,7 +1,7 @@
 # 乐句扩展
 
 - 文章：`content/techniques/structure/phrase-expansion-and-structural-skeleton.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

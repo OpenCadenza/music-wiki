@@ -1,7 +1,7 @@
 # 合唱式织体
 
 - 文章：`content/techniques/sound/brahms-string-quartet-chorale-texture.md`
-- 许可：待补
+- 许可：CC0-1.0（部分条目为学术核对，详见两表）
 
 ## 引用与出处
 
@@ -16,7 +16,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-brahms-op51n1-1-chorale | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 11–18 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-brahms-op51n1-1-pedal | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 35–42 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-brahms-op51n1-4-incipit | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 1–12 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-brahms-op51n1-4-pedal-hymn | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 71–80 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 11–18 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 35–42 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 1–12 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 71–80 | OpenScore SQ（CC0） | CC0 / 公有领域 |

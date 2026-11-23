@@ -1,7 +1,7 @@
 # 定音鼓写作
 
 - 文章：`content/techniques/sound/timpani-writing-and-classical-orchestration.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 
@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-timpani-op21-2-closing | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | Breitkopf & Härtel | 公有领域 |
-| ex-timpani-op67-2-fanfare | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–38 | Mutopia / Breitkopf & Härtel | 公有领域 |
-| ex-timpani-op67-3to4-transition | 贝多芬第五交响曲 Op. 67 第三至第四乐章过渡 | Allegro - Allegro，mm. 324–373 | Mutopia / Dover | 公有领域 |
-| ex-timpani-op125-2-octaves | 贝多芬第九交响曲 Op. 125 第二乐章 | Molto vivace，mm. 1–9 与 mm. 195–205 | Breitkopf & Härtel / Dover | 公有领域 |
+| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–38 | Mutopia / Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第三至第四乐章过渡 | Allegro - Allegro，mm. 324–373 | Mutopia / Dover | 公有领域 |
+| 占位（未出谱） | 贝多芬第九交响曲 Op. 125 第二乐章 | Molto vivace，mm. 1–9 与 mm. 195–205 | Breitkopf & Härtel / Dover | 公有领域 |

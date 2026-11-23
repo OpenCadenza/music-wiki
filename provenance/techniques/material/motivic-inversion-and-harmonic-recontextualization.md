@@ -1,7 +1,7 @@
 # 动机倒影
 
 - 文章：`content/techniques/material/motivic-inversion-and-harmonic-recontextualization.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 

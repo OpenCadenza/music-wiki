@@ -1,7 +1,7 @@
 # 自传叙事与四重奏
 
 - 文章：`content/techniques/structure/autobiographical-narrative-and-quartet-form.md`
-- 许可：CC0 / 公有领域
+- 许可：CC0-1.0（部分条目为学术核对，详见两表）
 
 ## 引用与出处
 
@@ -16,7 +16,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-smetana-sq1-1-viola-solo | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 1–16 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-smetana-sq1-1-violin-soar | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 31–46 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-smetana-sq1-4-skocna | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 1–24 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| ex-smetana-sq1-4-rhythmic-drive | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 25–49 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 1–16 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 31–46 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 1–24 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 25–49 | OpenScore SQ（CC0） | CC0 / 公有领域 |

@@ -1,7 +1,7 @@
 # 混合乐段
 
 - 文章：`content/techniques/structure/hybrid-themes-and-syntax-decoupling.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

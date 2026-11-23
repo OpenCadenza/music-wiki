@@ -1,7 +1,7 @@
 # 弦乐四重奏
 
 - 文章：`content/ensembles/string-quartet-acoustic-role-differentiation.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

@@ -1,7 +1,7 @@
 # 加兰特图式
 
 - 文章：`content/techniques/structure/galant-schemata-and-formal-functions.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

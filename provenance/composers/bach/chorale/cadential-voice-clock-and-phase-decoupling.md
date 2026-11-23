@@ -1,7 +1,7 @@
 # 众赞歌终止式
 
 - 文章：`content/composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 

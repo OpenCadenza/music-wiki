@@ -1,7 +1,7 @@
 # 长笛写作
 
 - 文章：`content/techniques/sound/flute-writing-and-orchestral-acoustics.md`
-- 许可：待补
+- 许可：公有领域（详见两表）
 
 ## 引用与出处
 
@@ -19,7 +19,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-flute-op67-1-echo | 贝多芬第五交响曲 Op. 67 第一乐章 | Allegro con brio，mm. 195–210 | Mutopia / Breitkopf & Härtel | 公有领域 |
-| ex-flute-op92-2-tutti | 贝多芬第七交响曲 Op. 92 第二乐章 | Allegretto，mm. 75–86 | Mutopia / Litolff | 公有领域 |
-| ex-flute-op21-2-fugato | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 12–16 | MuseData / CCARH | 公有领域 |
-| ex-flute-op67-2-arpeggio | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 38–45 | Mutopia / Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第一乐章 | Allegro con brio，mm. 195–210 | Mutopia / Breitkopf & Härtel | 公有领域 |
+| 占位（未出谱） | 贝多芬第七交响曲 Op. 92 第二乐章 | Allegretto，mm. 75–86 | Mutopia / Litolff | 公有领域 |
+| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 12–16 | MuseData / CCARH | 公有领域 |
+| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 38–45 | Mutopia / Breitkopf & Härtel | 公有领域 |

@@ -1,7 +1,7 @@
 # 管乐交响化
 
 - 文章：`content/styles/woodwind-symphonic-emancipation.md`
-- 许可：待补
+- 许可：CCARH MuseData 学术用途（非 CC0；详见两表）
 
 ## 引用与出处
 

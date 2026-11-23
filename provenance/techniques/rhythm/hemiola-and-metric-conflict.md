@@ -1,7 +1,7 @@
 # 海米奥拉
 
 - 文章：`content/techniques/rhythm/hemiola-and-metric-conflict.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

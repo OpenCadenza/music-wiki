@@ -1,7 +1,7 @@
 # 减七枢纽
 
 - 文章：`content/techniques/harmony/diminished-seventh-enharmonic-pivot.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
@@ -15,6 +15,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `beethoven-op13-i-mm1-4` | 贝多芬 Op. 13 第一乐章 | Grave，mm. 1–4 | 待补 | 未确认 |
-| `beethoven-op13-i-mm135-139` | 贝多芬 Op. 13 第一乐章 | Grave / Allegro molto e con brio，mm. 135–139 | 待补 | 未确认 |
-| `beethoven-op18-no6-iv-mm9-18` | 贝多芬 Op. 18 No. 6 第四乐章 | La Malinconia. Adagio，mm. 9–18 | 待补 | 未确认 |
+| 占位（未出谱） | 贝多芬 Op. 13 第一乐章 | Grave，mm. 1–4 | 待补 | 未确认 |
+| 占位（未出谱） | 贝多芬 Op. 13 第一乐章 | Grave / Allegro molto e con brio，mm. 135–139 | 待补 | 未确认 |
+| 占位（未出谱） | 贝多芬 Op. 18 No. 6 第四乐章 | La Malinconia. Adagio，mm. 9–18 | 待补 | 未确认 |

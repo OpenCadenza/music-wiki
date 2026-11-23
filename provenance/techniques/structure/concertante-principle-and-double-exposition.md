@@ -1,7 +1,7 @@
 # 协奏原则
 
 - 文章：`content/techniques/structure/concertante-principle-and-double-exposition.md`
-- 许可：待补（正文为单行文本占位）
+- 许可：CCARH MuseData 学术用途（非 CC0；详见两表）
 
 ## 引用与出处
 
@@ -16,6 +16,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| ex-mozart-k467-1-r1 | 莫扎特《C 大调第二十一钢琴协奏曲》K.467 第一乐章 | Allegro maestoso，mm. 1–28 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| ex-mozart-k467-1-eingang | 莫扎特《C 大调第二十一钢琴协奏曲》K.467 第一乐章 | Allegro maestoso，mm. 74–91 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| ex-beethoven-op61-1-tutti | 贝多芬《D 大调小提琴协奏曲》Op. 61 第一乐章 | Allegro ma non troppo，mm. 1–18 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 莫扎特《C 大调第二十一钢琴协奏曲》K.467 第一乐章 | Allegro maestoso，mm. 1–28 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 莫扎特《C 大调第二十一钢琴协奏曲》K.467 第一乐章 | Allegro maestoso，mm. 74–91 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| 占位（未出谱） | 贝多芬《D 大调小提琴协奏曲》Op. 61 第一乐章 | Allegro ma non troppo，mm. 1–18 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |

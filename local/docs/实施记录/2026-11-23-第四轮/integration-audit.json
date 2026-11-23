@@ -1,7 +1,7 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T09:59:40.143Z",
+  "generatedAt": "2026-11-23T10:04:32.965Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
   "summary": {
     "articles": 48,
@@ -12,13 +12,13 @@
     "provenance": 48,
     "archives": 48,
     "scoreboardIds": 47,
-    "manualGaps": 6,
+    "manualGaps": 4,
     "scoreRefs": 0,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
       "P0": 0,
-      "P1": 100,
-      "P2": 17
+      "P1": 0,
+      "P2": 16
     },
     "exitCode": 0,
     "passed": true
@@ -60,43 +60,43 @@
     {
       "id": "triplet",
       "title": "三件套（正文 / provenance / 归档）",
-      "violations": 1,
+      "violations": 0,
       "bySeverity": {
         "P0": 0,
-        "P1": 1,
+        "P1": 0,
         "P2": 0
       },
-      "status": "warn"
+      "status": "pass"
     },
     {
       "id": "provenance-tables",
       "title": "provenance 两表非空与许可登记",
-      "violations": 44,
+      "violations": 0,
       "bySeverity": {
         "P0": 0,
-        "P1": 44,
+        "P1": 0,
         "P2": 0
       },
-      "status": "warn"
+      "status": "pass"
     },
     {
       "id": "score-ids",
       "title": "谱例 id 对账（围栏 / provenance / score-board）",
-      "violations": 55,
+      "violations": 1,
       "bySeverity": {
         "P0": 0,
-        "P1": 53,
-        "P2": 2
+        "P1": 0,
+        "P2": 1
       },
       "status": "warn"
     },
     {
       "id": "manual-gaps",
       "title": "score-board 缺口表与正文占位差异",
-      "violations": 12,
+      "violations": 10,
       "bySeverity": {
         "P0": 0,
-        "P1": 2,
+        "P1": 0,
         "P2": 10
       },
       "status": "warn"
@@ -125,666 +125,6 @@
     }
   ],
   "violations": [
-    {
-      "category": "archive-path-missing",
-      "severity": "P1",
-      "path": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
-      "detail": "归档未写明正文路径",
-      "archive": "local/docs/研究归档/augmented-sixth-mechanics-and-syntactic-drift.md"
-    },
-    {
-      "category": "manual-gaps-stale",
-      "severity": "P1",
-      "path": "local/resources/catalog/score-board.md",
-      "detail": "缺口行疑似过期：贝多芬 Op.92 第二乐章 mm.1–10｜已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）（状态里提到的 beethoven-op92-ii-mm1-10 已存在于正文围栏）",
-      "work": "贝多芬 Op.92 第二乐章",
-      "span": "mm.1–10",
-      "status": "已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）"
-    },
-    {
-      "category": "manual-gaps-stale",
-      "severity": "P1",
-      "path": "local/resources/catalog/score-board.md",
-      "detail": "缺口行疑似过期：贝多芬 Op.125 第一乐章 mm.1–35｜已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）（状态里提到的 beethoven-op125-i-mm1-35 已存在于正文围栏）",
-      "work": "贝多芬 Op.125 第一乐章",
-      "span": "mm.1–35",
-      "status": "已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "ensembles/voice-viola-and-piano.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op91-1-intro",
-      "id": "ex-brahms-op91-1-intro"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "ensembles/voice-viola-and-piano.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op91-1-interplay",
-      "id": "ex-brahms-op91-1-interplay"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "ensembles/voice-viola-and-piano.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op91-2-carol",
-      "id": "ex-brahms-op91-2-carol"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "ensembles/voice-viola-and-piano.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op91-2-polyphony",
-      "id": "ex-brahms-op91-2-polyphony"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op74-i-mm6-9",
-      "id": "beethoven-op74-i-mm6-9"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d328-prelude-and-vocal",
-      "id": "schubert-d328-prelude-and-vocal"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op76n3-ii-mm1-20",
-      "id": "haydn-op76n3-ii-mm1-20"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op76n3-ii-mm21-32",
-      "id": "haydn-op76n3-ii-mm21-32"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op76n3-ii-mm41-60",
-      "id": "haydn-op76n3-ii-mm41-60"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op76n3-ii-mm61-80",
-      "id": "haydn-op76n3-ii-mm61-80"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op76n3-ii-mm81-104",
-      "id": "haydn-op76n3-ii-mm81-104"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-i-mm1-4",
-      "id": "beethoven-op13-i-mm1-4"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op13-i-mm135-139",
-      "id": "beethoven-op13-i-mm135-139"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op18-no6-iv-mm9-18",
-      "id": "beethoven-op18-no6-iv-mm9-18"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/brahms-string-quartet-chorale-texture.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op51n1-1-chorale",
-      "id": "ex-brahms-op51n1-1-chorale"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/brahms-string-quartet-chorale-texture.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op51n1-1-pedal",
-      "id": "ex-brahms-op51n1-1-pedal"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/brahms-string-quartet-chorale-texture.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op51n1-4-incipit",
-      "id": "ex-brahms-op51n1-4-incipit"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/brahms-string-quartet-chorale-texture.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-brahms-op51n1-4-pedal-hymn",
-      "id": "ex-brahms-op51n1-4-pedal-hymn"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：debussy-op10-i-mm1-8",
-      "id": "debussy-op10-i-mm1-8"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：debussy-op10-i-mm25-40",
-      "id": "debussy-op10-i-mm25-40"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：debussy-op10-iii-mm1-16",
-      "id": "debussy-op10-iii-mm1-16"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：debussy-op10-iii-mm28-61",
-      "id": "debussy-op10-iii-mm28-61"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：debussy-op10-iii-mm103-123",
-      "id": "debussy-op10-iii-mm103-123"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op67-1-echo",
-      "id": "ex-flute-op67-1-echo"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op92-2-tutti",
-      "id": "ex-flute-op92-2-tutti"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op21-2-fugato",
-      "id": "ex-flute-op21-2-fugato"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-flute-op67-2-arpeggio",
-      "id": "ex-flute-op67-2-arpeggio"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/mozart-k550-syntax-and-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-mozart-k550-1-theme",
-      "id": "ex-mozart-k550-1-theme"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/mozart-k550-syntax-and-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-mozart-k550-1-tutti",
-      "id": "ex-mozart-k550-1-tutti"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/mozart-k550-syntax-and-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-mozart-k550-1-retransition",
-      "id": "ex-mozart-k550-1-retransition"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op67-1-motto",
-      "id": "ex-natural-horn-op67-1-motto"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op67-2-fanfare",
-      "id": "ex-natural-horn-op67-2-fanfare"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-natural-horn-op92-2-pedal",
-      "id": "ex-natural-horn-op92-2-pedal"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op21-2-closing",
-      "id": "ex-timpani-op21-2-closing"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op67-2-fanfare",
-      "id": "ex-timpani-op67-2-fanfare"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op67-3to4-transition",
-      "id": "ex-timpani-op67-3to4-transition"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-timpani-op125-2-octaves",
-      "id": "ex-timpani-op125-2-octaves"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op59-3-4-fugue",
-      "id": "ex-viola-op59-3-4-fugue"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op67-2-unison",
-      "id": "ex-viola-op67-2-unison"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op92-2-countermelody",
-      "id": "ex-viola-op92-2-countermelody"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-viola-op131-1-answer",
-      "id": "ex-viola-op131-1-answer"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/autobiographical-narrative-and-quartet-form.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-smetana-sq1-1-viola-solo",
-      "id": "ex-smetana-sq1-1-viola-solo"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/autobiographical-narrative-and-quartet-form.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-smetana-sq1-1-violin-soar",
-      "id": "ex-smetana-sq1-1-violin-soar"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/autobiographical-narrative-and-quartet-form.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-smetana-sq1-4-skocna",
-      "id": "ex-smetana-sq1-4-skocna"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/autobiographical-narrative-and-quartet-form.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-smetana-sq1-4-rhythmic-drive",
-      "id": "ex-smetana-sq1-4-rhythmic-drive"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/concertante-principle-and-double-exposition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-mozart-k467-1-r1",
-      "id": "ex-mozart-k467-1-r1"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/concertante-principle-and-double-exposition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-mozart-k467-1-eingang",
-      "id": "ex-mozart-k467-1-eingang"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/concertante-principle-and-double-exposition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：ex-beethoven-op61-1-tutti",
-      "id": "ex-beethoven-op61-1-tutti"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-sym104-i-mm1-2",
-      "id": "haydn-sym104-i-mm1-2"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-sym104-i-mm3-8",
-      "id": "haydn-sym104-i-mm3-8"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-sym104-i-mm9-16",
-      "id": "haydn-sym104-i-mm9-16"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-sym104-i-mm17-32",
-      "id": "haydn-sym104-i-mm17-32"
-    },
-    {
-      "category": "phantom-id",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-sym104-i-mm33-40",
-      "id": "haydn-sym104-i-mm33-40"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "composers/bach/chorale/cadential-voice-clock-and-phase-decoupling.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "composers/beethoven/piano-sonatas/slow-introduction-integration.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "ensembles/bidirectional-selection-of-musical-ideas-and-medium.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "ensembles/piano-trio-acoustic-compromise.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "ensembles/string-quartet-acoustic-role-differentiation.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "ensembles/voice-viola-and-piano.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "ensembles/wind-quintet-acoustic-balance.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "notation/machine-readable-sources-and-evidence-hierarchy.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "styles/orchestral-timbre-aesthetic-shift.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "styles/woodwind-symphonic-emancipation.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/counterpoint/parallel-fifths-and-octaves.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/chromatic-mediant-and-tonal-space.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/modal-mixture-and-color-syntax.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/harmony/neapolitan-chord-structural-mutation.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/rhythm/hemiola-and-metric-conflict.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/brahms-string-quartet-chorale-texture.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/flute-writing-and-orchestral-acoustics.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/planes-of-tone-layering.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/timbral-contrast-and-formal-articulation.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/cadential-prinner-and-structural-closure.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/compound-period-hierarchical-syntax.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/galant-schemata-and-formal-functions.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/hybrid-themes-and-syntax-decoupling.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/medial-caesura-and-sonata-transition.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/slow-introduction-and-allegro-transition.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
-    {
-      "category": "prov-license-pending",
-      "severity": "P1",
-      "path": "techniques/structure/teleological-multimovement-integration.md",
-      "detail": "文件头许可未落实：「待补」"
-    },
     {
       "category": "axis-index-coverage",
       "severity": "P2",
@@ -826,14 +166,6 @@
       "detail": "计划 id beethoven-op74-i-mm6-9 与既有围栏 beethoven-op74-i-mm1-9 同作品同乐章且小节重叠（补谱会重复）",
       "id": "beethoven-op74-i-mm6-9",
       "existing": "beethoven-op74-i-mm1-9"
-    },
-    {
-      "category": "id-near-collision",
-      "severity": "P2",
-      "path": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-      "detail": "计划 id beethoven-op13-i-mm1-4 与既有围栏 beethoven-op13-i-mm1-19 同作品同乐章且小节重叠（补谱会重复）",
-      "id": "beethoven-op13-i-mm1-4",
-      "existing": "beethoven-op13-i-mm1-19"
     },
     {
       "category": "placeholder-nonconforming",
@@ -923,12 +255,14 @@
   "advisories": [
     {
       "id": "placeholder-without-gap",
-      "detail": "8 篇有谱例占位/计划但没有登记到 score-board manual:gaps",
+      "detail": "10 篇有谱例占位/计划但没有登记到 score-board manual:gaps",
       "files": [
         "styles/woodwind-symphonic-emancipation.md",
         "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
         "techniques/harmony/lydian-mode-and-tonal-gravity.md",
         "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+        "techniques/sound/timpani-writing-and-classical-orchestration.md",
+        "techniques/sound/viola-writing-and-orchestral-voicing.md",
         "techniques/structure/cadential-prinner-and-structural-closure.md",
         "techniques/structure/compound-period-hierarchical-syntax.md",
         "techniques/structure/phrase-expansion-and-structural-skeleton.md",
@@ -1602,28 +936,16 @@
           "line": 7
         },
         {
-          "work": "贝多芬 Op.92 第二乐章",
-          "span": "mm.1–10",
-          "status": "已回填（`beethoven-op92-ii-mm1-10`，verifier-4 核验）",
-          "line": 8
-        },
-        {
-          "work": "贝多芬 Op.125 第一乐章",
-          "span": "mm.1–35",
-          "status": "已回填（`beethoven-op125-i-mm1-35`，verifier-6 逐音核验）",
-          "line": 9
-        },
-        {
           "work": "马勒 第四交响曲 第二乐章",
           "span": "mm.34–46",
           "status": "无法核验：PDMX 无第四；IMSLP 仅 Vn1 分谱 MXL，非总谱",
-          "line": 10
+          "line": 8
         },
         {
           "work": "那不勒斯和弦教材模型",
           "span": "示意",
           "status": "不出谱：正文改为示意性表述（差异复读 #1 已处理）",
-          "line": 11
+          "line": 9
         }
       ]
     }
@@ -1694,7 +1016,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1756,7 +1078,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 5,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1830,7 +1152,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 3,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1912,7 +1234,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1922,7 +1244,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 5,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1932,7 +1254,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1942,7 +1264,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 3,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1952,7 +1274,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 1,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 3,
       "placeholderTokens": [
         "op67"
       ],
@@ -1984,7 +1306,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 4,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [
         "op21",
         "op67",
@@ -1998,7 +1320,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 4,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [
         "op59no3",
         "op67",
@@ -2013,7 +1335,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -2059,7 +1381,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 3,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -2126,7 +1448,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 0,
+      "provPlaceholderRows": 5,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false

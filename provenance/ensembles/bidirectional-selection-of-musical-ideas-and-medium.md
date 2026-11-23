@@ -1,7 +1,7 @@
 # 乐思与编制
 
 - 文章：`content/ensembles/bidirectional-selection-of-musical-ideas-and-medium.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 

@@ -1,7 +1,7 @@
 # 管乐五重奏
 
 - 文章：`content/ensembles/wind-quintet-acoustic-balance.md`
-- 许可：待补
+- 许可：待确认（详见两表）
 
 ## 引用与出处
 
