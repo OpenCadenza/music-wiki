@@ -1,7 +1,7 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T19:29:12.929Z",
+  "generatedAt": "2026-11-24T20:38:01.800Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
   "summary": {
     "articles": 60,
@@ -13,11 +13,11 @@
     "archives": 60,
     "scoreboardIds": 47,
     "manualGaps": 4,
-    "scoreRefs": 0,
+    "scoreRefs": 1,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
       "P0": 0,
-      "P1": 11,
+      "P1": 12,
       "P2": 16
     },
     "exitCode": 0,
@@ -82,10 +82,10 @@
     {
       "id": "score-ids",
       "title": "谱例 id 对账（围栏 / provenance / score-board）",
-      "violations": 12,
+      "violations": 13,
       "bySeverity": {
         "P0": 0,
-        "P1": 11,
+        "P1": 12,
         "P2": 1
       },
       "status": "warn"
@@ -173,6 +173,13 @@
       "path": "notation/transposing-instruments-notation-and-sounding-pitch.md",
       "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op21-ii-clarinets-fugato",
       "id": "beethoven-op21-ii-clarinets-fugato"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
+      "detail": "谱例表 id 列不是合法 id：「关联既有：haydn-op76no3-ii-mm1-20」",
+      "id": "关联既有：haydn-op76no3-ii-mm1-20"
     },
     {
       "category": "phantom-id",
@@ -317,7 +324,7 @@
       "category": "term-inconsistency",
       "severity": "P2",
       "path": "content/",
-      "detail": "乐思 / 乐念 两种写法并存：乐思 27 篇 / 乐念 9 篇"
+      "detail": "乐思 / 乐念 两种写法并存：乐思 27 篇 / 乐念 10 篇"
     },
     {
       "category": "term-inconsistency",
@@ -329,7 +336,7 @@
       "category": "term-inconsistency",
       "severity": "P2",
       "path": "content/",
-      "detail": "模进 / 序列 两种写法并存：模进 23 篇 / 序列 5 篇"
+      "detail": "模进 / 序列 两种写法并存：模进 23 篇 / 序列 6 篇"
     },
     {
       "category": "term-inconsistency",
@@ -628,16 +635,21 @@
           ]
         },
         "乐念": {
-          "articles": 9,
-          "occurrences": 63,
+          "articles": 10,
+          "occurrences": 64,
           "byBatch": {
             "首批": 3,
             "第二轮": 5,
-            "未知": 1
+            "未知": 2
           },
           "files": [
             {
               "rel": "notation/articulation-marks-and-realization.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
+              "rel": "techniques/rhythm/folk-idiom-and-rhythmic-vitality.md",
               "count": 1,
               "batch": "未知"
             },
@@ -992,14 +1004,19 @@
           ]
         },
         "序列": {
-          "articles": 5,
-          "occurrences": 5,
+          "articles": 6,
+          "occurrences": 7,
           "byBatch": {
             "首批": 0,
             "第二轮": 2,
-            "未知": 3
+            "未知": 4
           },
           "files": [
+            {
+              "rel": "notation/transposing-instruments-notation-and-sounding-pitch.md",
+              "count": 2,
+              "batch": "未知"
+            },
             {
               "rel": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
               "count": 1,
@@ -1217,7 +1234,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 3,
+      "provPlaceholderRows": 2,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1279,7 +1296,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 5,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false

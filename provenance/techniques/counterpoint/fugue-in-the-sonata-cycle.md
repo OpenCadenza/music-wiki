@@ -7,8 +7,8 @@
 
 | 来源 | 版本/位置 | 在本文的用途 |
 | --- | --- | --- |
-| Ludwig van Beethoven (1818) | 降 B 大调第 29 钢琴奏鸣曲“槌子键琴” Op. 106 第四乐章乐谱机器可读事实 | CCARH Humdrum Kern `sonata29-4.krn`（逐小节核验 Largo mm. 1–14 自由调性摸索引子、mm. 15–18 导音 A 长颤音与大十度跃迁爆发、Allegro risoluto mm. 19–48 三声部赋格呈示部、逆行与倒影对位变形） |
-| Ludwig van Beethoven (1821) | 降 A 大调第 31 钢琴奏鸣曲 Op. 110 第三乐章乐谱机器可读事实 | CCARH Humdrum Kern `sonata31-3.krn`（逐小节核验 mm. 1–8 降 b 小调戏剧宣叙调与 Bebung 指法、mm. 9–26 降 a 小调叹息哀歌 Arioso dolente、mm. 27–56 降 A 大调纯四度上行赋格呈示部、mm. 115–136 g 小调哀歌与 G 大调十次连续除颤和弦、mm. 137–160 倒影赋格 Umkehrung der Fuge 与密接和应、mm. 175–209 主调圣化 Apotheosis） |
+| Ludwig van Beethoven (1818) | 降 B 大调第 29 钢琴奏鸣曲“槌子键琴” Op. 106 第四乐章乐谱机器可读事实 | CCARH Humdrum Kern `sonata29-4.krn`（逐小节核验 Largo mm. 1–14 自由调性摸索引子、Allegro risoluto mm. 15–48 三声部赋格呈示部、逆行与倒影对位变形） |
+| Ludwig van Beethoven (1821) | 降 A 大调第 31 钢琴奏鸣曲 Op. 110 第三乐章乐谱机器可读事实 | CCARH Humdrum Kern `sonata31-3.krn`（逐小节核验 mm. 1–8 降 b 小调戏剧宣叙调与 Bebung 指法、mm. 9–26 降 a 小调叹息哀歌 Arioso dolente、mm. 27–56 降 A 大调纯四度上行赋格呈示部、mm. 117–136 g 小调哀歌与 G 大调十次连续除颤和弦、mm. 137–160 倒影赋格 Umkehrung der Fuge 与密接和应、mm. 175–209 主调圣化 Apotheosis） |
 | Charles Rosen | *The Classical Style: Haydn, Mozart, Beethoven* (W. W. Norton, 1997) & *Beethoven's Piano Sonatas: A Short Companion* (Yale University Press, 2002) | 贝多芬晚期奏鸣曲赋格形式哲学、海顿与莫扎特古典复调遗产及主调与复调戏剧冲突论述 |
 | William E. Caplin | *Classical Form: A Theory of Formal Functions for the Instrumental Music of the Classical Style* (Oxford University Press, 1998) | 古典奏鸣套曲终乐章大型形式功能与赋格段插部理论支撑 |
 | Heinrich Schenker | *Erläuterungsausgabe: Die letzten fünf Sonaten von Beethoven* (Universal Edition, 1913–1920) | 贝多芬晚期奏鸣曲（Op. 106、Op. 110）对位拓扑、线性声部导向与倒影对称结构分析 |
