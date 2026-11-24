@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `haydn-op51-intro-mm1-4`（文本占位） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 1–4 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `haydn-op51-intro-mm5-8`（文本占位） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 5–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `haydn-op51-sonata1-mm1-6`（文本占位） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 1–6 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `haydn-op51-sonata1-mm37-44`（文本占位） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 37–44 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 1–4 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 5–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 1–6 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 37–44 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |

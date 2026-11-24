@@ -18,4 +18,4 @@
 | --- | --- | --- | --- | --- |
 | `mozart-k465-iv-mm10-16` | 莫扎特 K.465 第四乐章 | Allegro，mm.10–16 | 音乐公有领域；转引自 OpenScore 数字化谱源与 OMT 谱例（`Graphics/K465-iv.png`）再排版 | 未确认 |
 | `beethoven-op109-iii-mm1-8` | 贝多芬 Op.109 第三乐章 | Andante molto cantabile ed espressivo，mm.1–8 | 音乐公有领域；转引自 OMT 谱例（`Graphics/Op109-iii.png`）与 Humdrum Kern `sonata30-3.krn` 互证再排版 | 未确认 |
-| 占位 | 舒伯特《降B大调第21钢琴奏鸣曲》D. 960 第一乐章 | Molto moderato，mm.18–48 | 待补 | 未确认 |
+| 占位（未出谱） | 舒伯特《降B大调第21钢琴奏鸣曲》D. 960 第一乐章 | Molto moderato，mm.18–48 | 待补 | 未确认 |

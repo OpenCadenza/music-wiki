@@ -16,6 +16,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 1–16 | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |
-| 占位 | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 26–52（重点 mm. 34–42） | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |
-| 占位 | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |
+| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 1–16 | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |
+| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 26–52（重点 mm. 34–42） | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |
+| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | MuseData `local/workbench/scores/score-p1/downloads/beethoven-op21-ii-sym1.md2` | CCARH / 待确认 |

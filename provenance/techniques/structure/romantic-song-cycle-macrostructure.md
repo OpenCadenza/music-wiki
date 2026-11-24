@@ -14,7 +14,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 舒曼《诗人之恋》Op. 48 No. 1 | Langsam, zart，mm. 1–4、mm. 23–26 | OpenScore Lieder MXL | CC0 |
-| 占位 | 舒曼《诗人之恋》Op. 48 No. 8 | Und wüssten’s die Blumen，mm. 31–38 | OpenScore Lieder MXL | CC0 |
-| 占位 | 舒曼《诗人之恋》Op. 48 No. 12 | Am leuchtenden Sommermorgen，mm. 20–30 | OpenScore Lieder MXL | CC0 |
-| 占位 | 舒曼《诗人之恋》Op. 48 No. 16 | Die alten, bösen Lieder，mm. 52–67 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 舒曼《诗人之恋》Op. 48 No. 1 | Langsam, zart，mm. 1–4、mm. 23–26 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 舒曼《诗人之恋》Op. 48 No. 8 | Und wüssten’s die Blumen，mm. 31–38 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 舒曼《诗人之恋》Op. 48 No. 12 | Am leuchtenden Sommermorgen，mm. 20–30 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 舒曼《诗人之恋》Op. 48 No. 16 | Die alten, bösen Lieder，mm. 52–67 | OpenScore Lieder MXL | CC0 |

@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 舒伯特《小夜曲》D.957 No. 4 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位 | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位 | 舒伯特《晚安》D.911 No. 1 | Mässig, in gehender Bewegung，mm. 71–82 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位 | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 25–36、mm. 45–54 | OpenScore Lieder MXL | CC0-1.0 |
+| 占位（未出谱） | 舒伯特《小夜曲》D.957 No. 4 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
+| 占位（未出谱） | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
+| 占位（未出谱） | 舒伯特《晚安》D.911 No. 1 | Mässig, in gehender Bewegung，mm. 71–82 | OpenScore Lieder MXL | CC0-1.0 |
+| 占位（未出谱） | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 25–36、mm. 45–54 | OpenScore Lieder MXL | CC0-1.0 |

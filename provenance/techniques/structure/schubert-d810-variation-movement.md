@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `schubert-d810-ii-theme`（文本占位） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 1–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `schubert-d810-ii-var2`（文本占位） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 49–56 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `schubert-d810-ii-var3`（文本占位） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 73–80 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| `schubert-d810-ii-var4`（文本占位） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 97–104 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 1–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 49–56 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 73–80 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 97–104 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |

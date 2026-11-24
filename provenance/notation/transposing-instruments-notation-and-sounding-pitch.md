@@ -17,6 +17,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `mozart-k550-i-horns-woodwinds`（文本占位） | 莫扎特《g小调第四十交响曲》（K.550）第一乐章 | mm. 18–20 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |
-| `beethoven-op92-ii-clarinets-opening`（关联既有谱例） | 贝多芬《A大调第七交响曲》（Op. 92）第二乐章 | mm. 1–10 | 音乐公有领域；关联 `content/techniques/sound/timbral-contrast-and-formal-articulation.md` 已编译谱例 `beethoven-op92-ii-mm1-10`，避免重复出谱 | 公有领域 / Mutopia 转写 |
-| `beethoven-op21-ii-clarinets-fugato`（文本占位） | 贝多芬《C大调第一交响曲》（Op. 21）第二乐章 | mm. 1–15 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |
+| 占位（未出谱） | 莫扎特《g小调第四十交响曲》（K.550）第一乐章 | mm. 18–20 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |
+| `beethoven-op92-ii-clarinets-opening`（关联引用） | 贝多芬《A大调第七交响曲》（Op. 92）第二乐章 | mm. 1–10 | 音乐公有领域；关联 `content/techniques/sound/timbral-contrast-and-formal-articulation.md` 已编译谱例 `beethoven-op92-ii-mm1-10`，避免重复出谱 | 公有领域 / Mutopia 转写 |
+| 占位（未出谱） | 贝多芬《C大调第一交响曲》（Op. 21）第二乐章 | mm. 1–15 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |

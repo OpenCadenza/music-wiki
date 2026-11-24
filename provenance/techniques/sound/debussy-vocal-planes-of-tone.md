@@ -15,7 +15,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 德彪西《被遗忘的抒情调》No. 2 | Allegro non tanto，mm. 1–17 | OpenScore Lieder MXL | CC0 |
-| 占位 | 德彪西《被遗忘的抒情调》No. 2 | Moderato，mm. 47–56 | OpenScore Lieder MXL | CC0 |
-| 占位 | 德彪西《被遗忘的抒情调》No. 4 | Allegro non tanto，mm. 1–16 | OpenScore Lieder MXL | CC0 |
-| 占位 | 德彪西《被遗忘的抒情调》No. 4 | a Tempo (le double plus lent)，mm. 78–90 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 2 | Allegro non tanto，mm. 1–17 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 2 | Moderato，mm. 47–56 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 4 | Allegro non tanto，mm. 1–16 | OpenScore Lieder MXL | CC0 |
+| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 4 | a Tempo (le double plus lent)，mm. 78–90 | OpenScore Lieder MXL | CC0 |

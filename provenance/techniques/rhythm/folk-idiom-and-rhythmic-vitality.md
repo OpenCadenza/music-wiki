@@ -14,7 +14,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位 | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 1–16 | OpenScore SQ MXL | CC0 |
-| 占位 | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 44–52 | OpenScore SQ MXL | CC0 |
-| 占位 | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 1–28 | OpenScore SQ MXL | CC0 |
-| 占位 | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 49–60 | OpenScore SQ MXL | CC0 |
+| 占位（未出谱） | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 1–16 | OpenScore SQ MXL | CC0 |
+| 占位（未出谱） | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 44–52 | OpenScore SQ MXL | CC0 |
+| 占位（未出谱） | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 1–28 | OpenScore SQ MXL | CC0 |
+| 占位（未出谱） | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 49–60 | OpenScore SQ MXL | CC0 |
