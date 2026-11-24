@@ -29,3 +29,5 @@
   摒弃虚浮的模型归纳，以最扎实的工程与音乐学实证笔触，直击本知识库核验中暴露出的真实事故：剖析贝多芬 Op. 135 与 Op. 74 中中提琴、大提琴在 Kern 与 LilyPond 转译中因谱号与八度基准冲突而产生的“整八度漂移”；解构 LilyPond 调号不自动变换音高的静默方言陷阱；以舒伯特《魔王》（D. 328）为例，揭示飞驰马蹄的 staccatissimo 尖锐短跳音被误降级为 tenuto 保持音时造成的 180 度声学背叛，并为严肃音乐知识库与创作 Agent 提供硬性核验规程。
 - [谱源的可信度阶梯：为什么机器可读原生语料能当证据，而人工转写不能？](machine-readable-sources-and-evidence-hierarchy.md)  
   深入探讨数字音乐学与严肃知识库建设中的证据学基石：解构 Humdrum Kern 物理绝对音高矩阵、DCML 分层和声复审体系与 Mutopia 权威校勘底本的数据哲学；直面人工未校勘转写谱中由于心智固化、编译器隐式转换与主观臆造带来的系统性污染；建立面向知识库写作与创作 Agent（OpenViking）的“谱源可信度四级阶梯”与证据采信准则。
+- [移调记谱与实音](transposing-instruments-notation-and-sounding-pitch.md)：K.550/Op.92/Op.21 三例拆解移调乐器的记谱—实音映射与编码陷阱。
+- [演奏法记号与实现](articulation-marks-and-realization.md)：贝多芬早中晚三期四重奏的连弓、断音与强弱突变如何落到运弓力学。

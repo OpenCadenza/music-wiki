@@ -36,3 +36,6 @@ description: 探讨多声部与管弦乐音乐中声音（Sound）、音色（Ti
 - [合唱式织体](brahms-string-quartet-chorale-texture.md)：勃拉姆斯 Op.51/1 如何把合唱与管风琴式声部导向嵌入弦乐四重奏。
 - [德彪西四重奏色调](debussy-quartet-timbre-and-harmonic-color.md)：德彪西 Op.10 如何用调式偏转、平行和弦与弱音器置换打开印象主义室内乐音响。
 - [K.550 句法与配器](mozart-k550-syntax-and-orchestration.md)：莫扎特 K.550 第一乐章如何用弦乐先行、木管标点与双调圆号铰接句法。
+- [德彪西的音响平面](debussy-vocal-planes-of-tone.md)：德彪西歌曲如何用人声朗诵调、器乐背景动型与调式色彩层拉开三维景深。
+- [独奏与乐队对话](mozart-concerto-solo-orchestra-dialogue.md)：K.467 第二乐章如何用弱音弦乐、拨奏低音与木管标点建立独奏—乐队三方对话。
+- [歌曲中的钢琴角色](schubert-lieder-piano-role.md)：舒伯特如何让钢琴从伴奏升格为造境、心理反思与叙事接管的主角。

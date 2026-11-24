@@ -30,3 +30,6 @@
 - [海顿104慢引子](slow-introduction-and-allegro-transition.md)：海顿 No.104 的慢引子如何用号角悬疑、小调滑移与属音制动为快板蓄能。
 - [自传叙事与四重奏](autobiographical-narrative-and-quartet-form.md)：斯美塔那 SQ1 如何在严格奏鸣构架里承载私密自传叙事。
 - [协奏原则](concertante-principle-and-double-exposition.md)：古典协奏曲如何把利都奈罗与奏鸣曲式熔成双重呈示。
+- [变奏曲式的类型](variation-types-and-structural-transformations.md)：装饰、性格/对位与时值递减三类变奏如何重塑骨架与时间。
+- [死与少女的变奏](schubert-d810-variation-movement.md)：舒伯特 D.810 第二乐章如何用织体裂变与调性明暗把歌曲原型写成室内乐全景变奏。
+- [浪漫套曲的结构](romantic-song-cycle-macrostructure.md)：舒曼《诗人之恋》如何用悬置属七、独立后奏与跨曲再现织成超曲式网络。

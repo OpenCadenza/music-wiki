@@ -39,3 +39,4 @@ description: 探讨不同编制（弦乐四重奏、管乐五重奏、钢琴三�
 - [乐思与编制媒介的双向选择机制](bidirectional-selection-of-musical-ideas-and-medium.md)  
   深入解构乐思（Motivic Idea）与编制媒介（Ensemble Medium）的声学物理适配机制，否定“中性乐思”假说，剖析时域包络、起音瞬态、无尽延留与声部交叉对编制的排他性选择，系统探讨跨编制转译的边界与声学代偿（以贝多芬 Op. 14 No. 1 向四重奏 Hess 34 的转译、Op. 97 与 Op. 135 的动机分流、及勃拉姆斯 Op. 34 室内乐迁徙为例），并为创作 Agent 提供可迁移的声学适配决策模型。
 - [人声、中提琴与钢琴](voice-viola-and-piano.md)：女低音、助奏中提琴与钢琴如何在同频区段化解掩蔽，形成三方复调对话。
+- [从管弦乐到四重奏](orchestra-to-string-quartet-reduction.md)：海顿《临终七言》如何把管弦乐原版压缩成四件提琴的声学代偿。

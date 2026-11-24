@@ -1,23 +1,23 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T10:08:24.278Z",
+  "generatedAt": "2026-11-24T19:29:12.929Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
   "summary": {
-    "articles": 48,
+    "articles": 60,
     "contentDirs": 16,
     "indexFiles": 17,
     "notationBlocks": 47,
     "notationBlocksWithoutId": 0,
-    "provenance": 48,
-    "archives": 48,
+    "provenance": 60,
+    "archives": 60,
     "scoreboardIds": 47,
     "manualGaps": 4,
     "scoreRefs": 0,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
       "P0": 0,
-      "P1": 0,
+      "P1": 11,
       "P2": 16
     },
     "exitCode": 0,
@@ -82,10 +82,10 @@
     {
       "id": "score-ids",
       "title": "谱例 id 对账（围栏 / provenance / score-board）",
-      "violations": 1,
+      "violations": 12,
       "bySeverity": {
         "P0": 0,
-        "P1": 0,
+        "P1": 11,
         "P2": 1
       },
       "status": "warn"
@@ -126,12 +126,91 @@
   ],
   "violations": [
     {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "ensembles/orchestra-to-string-quartet-reduction.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op51-intro-mm1-4",
+      "id": "haydn-op51-intro-mm1-4"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "ensembles/orchestra-to-string-quartet-reduction.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op51-intro-mm5-8",
+      "id": "haydn-op51-intro-mm5-8"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "ensembles/orchestra-to-string-quartet-reduction.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op51-sonata1-mm1-6",
+      "id": "haydn-op51-sonata1-mm1-6"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "ensembles/orchestra-to-string-quartet-reduction.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：haydn-op51-sonata1-mm37-44",
+      "id": "haydn-op51-sonata1-mm37-44"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "notation/transposing-instruments-notation-and-sounding-pitch.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：mozart-k550-i-horns-woodwinds",
+      "id": "mozart-k550-i-horns-woodwinds"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "notation/transposing-instruments-notation-and-sounding-pitch.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op92-ii-clarinets-opening",
+      "id": "beethoven-op92-ii-clarinets-opening"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "notation/transposing-instruments-notation-and-sounding-pitch.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：beethoven-op21-ii-clarinets-fugato",
+      "id": "beethoven-op21-ii-clarinets-fugato"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/structure/schubert-d810-variation-movement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d810-ii-theme",
+      "id": "schubert-d810-ii-theme"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/structure/schubert-d810-variation-movement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d810-ii-var2",
+      "id": "schubert-d810-ii-var2"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/structure/schubert-d810-variation-movement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d810-ii-var3",
+      "id": "schubert-d810-ii-var3"
+    },
+    {
+      "category": "phantom-id",
+      "severity": "P1",
+      "path": "techniques/structure/schubert-d810-variation-movement.md",
+      "detail": "谱例表登记了 id 但正文没有对应围栏：schubert-d810-ii-var4",
+      "id": "schubert-d810-ii-var4"
+    },
+    {
       "category": "axis-index-coverage",
       "severity": "P2",
       "path": "techniques/index.md",
-      "detail": "轴根导览未覆盖 26/36 篇子树文章",
+      "detail": "轴根导览未覆盖 35/45 篇子树文章",
       "missing": [
         "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
+        "techniques/counterpoint/fugue-in-the-sonata-cycle.md",
+        "techniques/counterpoint/mozart-quartet-conversational-counterpoint.md",
         "techniques/counterpoint/parallel-fifths-and-octaves.md",
         "techniques/harmony/applied-dominant-chains-and-functional-replacement.md",
         "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
@@ -140,12 +219,16 @@
         "techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md",
         "techniques/harmony/lydian-mode-and-tonal-gravity.md",
         "techniques/harmony/modal-mixture-and-color-syntax.md",
+        "techniques/rhythm/folk-idiom-and-rhythmic-vitality.md",
         "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
         "techniques/sound/brahms-string-quartet-chorale-texture.md",
         "techniques/sound/debussy-quartet-timbre-and-harmonic-color.md",
+        "techniques/sound/debussy-vocal-planes-of-tone.md",
         "techniques/sound/flute-writing-and-orchestral-acoustics.md",
+        "techniques/sound/mozart-concerto-solo-orchestra-dialogue.md",
         "techniques/sound/mozart-k550-syntax-and-orchestration.md",
         "techniques/sound/natural-horn-writing-and-harmonic-series.md",
+        "techniques/sound/schubert-lieder-piano-role.md",
         "techniques/sound/timpani-writing-and-classical-orchestration.md",
         "techniques/sound/viola-writing-and-orchestral-voicing.md",
         "techniques/structure/autobiographical-narrative-and-quartet-form.md",
@@ -154,9 +237,12 @@
         "techniques/structure/concertante-principle-and-double-exposition.md",
         "techniques/structure/medial-caesura-and-sonata-transition.md",
         "techniques/structure/phrase-expansion-and-structural-skeleton.md",
+        "techniques/structure/romantic-song-cycle-macrostructure.md",
+        "techniques/structure/schubert-d810-variation-movement.md",
         "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
         "techniques/structure/slow-introduction-and-allegro-transition.md",
-        "techniques/structure/teleological-multimovement-integration.md"
+        "techniques/structure/teleological-multimovement-integration.md",
+        "techniques/structure/variation-types-and-structural-transformations.md"
       ]
     },
     {
@@ -231,19 +317,19 @@
       "category": "term-inconsistency",
       "severity": "P2",
       "path": "content/",
-      "detail": "乐思 / 乐念 两种写法并存：乐思 23 篇 / 乐念 8 篇"
+      "detail": "乐思 / 乐念 两种写法并存：乐思 27 篇 / 乐念 9 篇"
     },
     {
       "category": "term-inconsistency",
       "severity": "P2",
       "path": "content/",
-      "detail": "挂留 / 悬置 两种写法并存：挂留 16 篇 / 悬置 8 篇"
+      "detail": "挂留 / 悬置 两种写法并存：挂留 20 篇 / 悬置 10 篇"
     },
     {
       "category": "term-inconsistency",
       "severity": "P2",
       "path": "content/",
-      "detail": "模进 / 序列 两种写法并存：模进 19 篇 / 序列 3 篇"
+      "detail": "模进 / 序列 两种写法并存：模进 23 篇 / 序列 5 篇"
     },
     {
       "category": "term-inconsistency",
@@ -323,15 +409,15 @@
     {
       "dir": "ensembles",
       "index": "ensembles/index.md",
-      "articles": 5,
-      "linked": 5,
+      "articles": 6,
+      "linked": 6,
       "uncollected": []
     },
     {
       "dir": "notation",
       "index": "notation/index.md",
-      "articles": 2,
-      "linked": 2,
+      "articles": 4,
+      "linked": 4,
       "uncollected": []
     },
     {
@@ -351,8 +437,8 @@
     {
       "dir": "techniques/counterpoint",
       "index": "techniques/counterpoint/index.md",
-      "articles": 3,
-      "linked": 3,
+      "articles": 5,
+      "linked": 5,
       "uncollected": []
     },
     {
@@ -372,22 +458,22 @@
     {
       "dir": "techniques/rhythm",
       "index": "techniques/rhythm/index.md",
-      "articles": 2,
-      "linked": 2,
+      "articles": 3,
+      "linked": 3,
       "uncollected": []
     },
     {
       "dir": "techniques/sound",
       "index": "techniques/sound/index.md",
-      "articles": 9,
-      "linked": 9,
+      "articles": 12,
+      "linked": 12,
       "uncollected": []
     },
     {
       "dir": "techniques/structure",
       "index": "techniques/structure/index.md",
-      "articles": 12,
-      "linked": 12,
+      "articles": 15,
+      "linked": 15,
       "uncollected": []
     }
   ],
@@ -396,12 +482,12 @@
       "name": "乐思 / 乐念",
       "variants": {
         "乐思": {
-          "articles": 23,
-          "occurrences": 86,
+          "articles": 27,
+          "occurrences": 92,
           "byBatch": {
             "首批": 9,
             "第二轮": 7,
-            "未知": 7
+            "未知": 11
           },
           "files": [
             {
@@ -415,6 +501,11 @@
               "batch": "首批"
             },
             {
+              "rel": "ensembles/orchestra-to-string-quartet-reduction.md",
+              "count": 2,
+              "batch": "未知"
+            },
+            {
               "rel": "ensembles/voice-viola-and-piano.md",
               "count": 1,
               "batch": "未知"
@@ -426,6 +517,11 @@
             },
             {
               "rel": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
+              "rel": "techniques/counterpoint/fugue-in-the-sonata-cycle.md",
               "count": 1,
               "batch": "未知"
             },
@@ -458,6 +554,11 @@
               "rel": "techniques/harmony/neapolitan-chord-structural-mutation.md",
               "count": 1,
               "batch": "首批"
+            },
+            {
+              "rel": "techniques/rhythm/folk-idiom-and-rhythmic-vitality.md",
+              "count": 2,
+              "batch": "未知"
             },
             {
               "rel": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
@@ -515,6 +616,11 @@
               "batch": "第二轮"
             },
             {
+              "rel": "techniques/structure/romantic-song-cycle-macrostructure.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
               "rel": "techniques/structure/slow-introduction-and-allegro-transition.md",
               "count": 1,
               "batch": "未知"
@@ -522,14 +628,19 @@
           ]
         },
         "乐念": {
-          "articles": 8,
-          "occurrences": 62,
+          "articles": 9,
+          "occurrences": 63,
           "byBatch": {
             "首批": 3,
             "第二轮": 5,
-            "未知": 0
+            "未知": 1
           },
           "files": [
+            {
+              "rel": "notation/articulation-marks-and-realization.md",
+              "count": 1,
+              "batch": "未知"
+            },
             {
               "rel": "techniques/structure/cadential-evasion-and-temporal-expansion.md",
               "count": 5,
@@ -578,12 +689,12 @@
       "name": "挂留 / 悬置",
       "variants": {
         "挂留": {
-          "articles": 16,
-          "occurrences": 142,
+          "articles": 20,
+          "occurrences": 155,
           "byBatch": {
             "首批": 8,
             "第二轮": 6,
-            "未知": 2
+            "未知": 6
           },
           "files": [
             {
@@ -610,6 +721,16 @@
               "rel": "notation/machine-readable-sources-and-evidence-hierarchy.md",
               "count": 1,
               "batch": "首批"
+            },
+            {
+              "rel": "techniques/counterpoint/fugue-in-the-sonata-cycle.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
+              "rel": "techniques/counterpoint/mozart-quartet-conversational-counterpoint.md",
+              "count": 2,
+              "batch": "未知"
             },
             {
               "rel": "techniques/counterpoint/parallel-fifths-and-octaves.md",
@@ -657,6 +778,11 @@
               "batch": "未知"
             },
             {
+              "rel": "techniques/sound/mozart-concerto-solo-orchestra-dialogue.md",
+              "count": 8,
+              "batch": "未知"
+            },
+            {
               "rel": "techniques/structure/cadential-prinner-and-structural-closure.md",
               "count": 3,
               "batch": "第二轮"
@@ -665,16 +791,21 @@
               "rel": "techniques/structure/galant-schemata-and-formal-functions.md",
               "count": 3,
               "batch": "首批"
+            },
+            {
+              "rel": "techniques/structure/romantic-song-cycle-macrostructure.md",
+              "count": 2,
+              "batch": "未知"
             }
           ]
         },
         "悬置": {
-          "articles": 8,
-          "occurrences": 20,
+          "articles": 10,
+          "occurrences": 33,
           "byBatch": {
             "首批": 3,
             "第二轮": 4,
-            "未知": 1
+            "未知": 3
           },
           "files": [
             {
@@ -708,8 +839,18 @@
               "batch": "第二轮"
             },
             {
+              "rel": "techniques/sound/debussy-vocal-planes-of-tone.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
               "rel": "techniques/sound/mozart-k550-syntax-and-orchestration.md",
               "count": 3,
+              "batch": "未知"
+            },
+            {
+              "rel": "techniques/structure/romantic-song-cycle-macrostructure.md",
+              "count": 12,
               "batch": "未知"
             },
             {
@@ -725,12 +866,12 @@
       "name": "模进 / 序列",
       "variants": {
         "模进": {
-          "articles": 19,
-          "occurrences": 114,
+          "articles": 23,
+          "occurrences": 121,
           "byBatch": {
             "首批": 7,
             "第二轮": 8,
-            "未知": 4
+            "未知": 8
           },
           "files": [
             {
@@ -739,9 +880,19 @@
               "batch": "首批"
             },
             {
+              "rel": "ensembles/orchestra-to-string-quartet-reduction.md",
+              "count": 2,
+              "batch": "未知"
+            },
+            {
               "rel": "ensembles/wind-quintet-acoustic-balance.md",
               "count": 1,
               "batch": "首批"
+            },
+            {
+              "rel": "notation/articulation-marks-and-realization.md",
+              "count": 2,
+              "batch": "未知"
             },
             {
               "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
@@ -767,6 +918,11 @@
               "rel": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
               "count": 3,
               "batch": "首批"
+            },
+            {
+              "rel": "techniques/rhythm/folk-idiom-and-rhythmic-vitality.md",
+              "count": 1,
+              "batch": "未知"
             },
             {
               "rel": "techniques/sound/brahms-string-quartet-chorale-texture.md",
@@ -827,20 +983,30 @@
               "rel": "techniques/structure/slow-introduction-and-allegro-transition.md",
               "count": 1,
               "batch": "未知"
+            },
+            {
+              "rel": "techniques/structure/variation-types-and-structural-transformations.md",
+              "count": 2,
+              "batch": "未知"
             }
           ]
         },
         "序列": {
-          "articles": 3,
-          "occurrences": 3,
+          "articles": 5,
+          "occurrences": 5,
           "byBatch": {
             "首批": 0,
             "第二轮": 2,
-            "未知": 1
+            "未知": 3
           },
           "files": [
             {
               "rel": "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md",
+              "count": 1,
+              "batch": "未知"
+            },
+            {
+              "rel": "techniques/counterpoint/fugue-in-the-sonata-cycle.md",
               "count": 1,
               "batch": "未知"
             },
@@ -853,6 +1019,11 @@
               "rel": "techniques/sound/timpani-writing-and-classical-orchestration.md",
               "count": 1,
               "batch": "第二轮"
+            },
+            {
+              "rel": "techniques/structure/schubert-d810-variation-movement.md",
+              "count": 1,
+              "batch": "未知"
             }
           ]
         }
@@ -912,7 +1083,7 @@
     }
   },
   "titleStats": {
-    "total": 48,
+    "total": 60,
     "duplicates": [],
     "missingH1": [],
     "mismatch": []
@@ -991,6 +1162,16 @@
       "nonconforming": 0,
       "hasGapSignal": false
     },
+    "ensembles/orchestra-to-string-quartet-reduction.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
     "ensembles/piano-trio-acoustic-compromise.md": {
       "standard": 0,
       "bracket": 0,
@@ -1031,6 +1212,16 @@
       "nonconforming": 0,
       "hasGapSignal": false
     },
+    "notation/articulation-marks-and-realization.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 3,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
     "notation/clef-octave-ambiguity-and-encoding-loss.md": {
       "standard": 0,
       "bracket": 0,
@@ -1042,6 +1233,16 @@
       "hasGapSignal": false
     },
     "notation/machine-readable-sources-and-evidence-hierarchy.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "notation/transposing-instruments-notation-and-sounding-pitch.md": {
       "standard": 0,
       "bracket": 0,
       "noInline": 0,
@@ -1079,6 +1280,26 @@
       "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 5,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/counterpoint/fugue-in-the-sonata-cycle.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/counterpoint/mozart-quartet-conversational-counterpoint.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1209,6 +1430,16 @@
       "nonconforming": 0,
       "hasGapSignal": false
     },
+    "techniques/rhythm/folk-idiom-and-rhythmic-vitality.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
     "techniques/rhythm/hemiola-and-metric-conflict.md": {
       "standard": 0,
       "bracket": 0,
@@ -1249,7 +1480,27 @@
       "nonconforming": 0,
       "hasGapSignal": false
     },
+    "techniques/sound/debussy-vocal-planes-of-tone.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
     "techniques/sound/flute-writing-and-orchestral-acoustics.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/mozart-concerto-solo-orchestra-dialogue.md": {
       "standard": 0,
       "bracket": 0,
       "noInline": 0,
@@ -1287,6 +1538,16 @@
       "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/sound/schubert-lieder-piano-role.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1430,6 +1691,26 @@
       "nonconforming": 6,
       "hasGapSignal": true
     },
+    "techniques/structure/romantic-song-cycle-macrostructure.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 4,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/schubert-d810-variation-movement.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
     "techniques/structure/sequence-mechanics-and-syntactic-functions.md": {
       "standard": 0,
       "bracket": 0,
@@ -1459,6 +1740,16 @@
       "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 0,
+      "placeholderTokens": [],
+      "nonconforming": 0,
+      "hasGapSignal": false
+    },
+    "techniques/structure/variation-types-and-structural-transformations.md": {
+      "standard": 0,
+      "bracket": 0,
+      "noInline": 0,
+      "quotePlaceholder": 0,
+      "provPlaceholderRows": 8,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
