@@ -17,7 +17,109 @@ description: 以莫扎特 g 小调第 40 交响曲（K.550）第一乐章为例�
 
 古典主义经典主题通常以旋律与低音同步起奏确立拍点与调性，但 K.550 第一乐章打破了这一常态。莫扎特在主部主题开端构建了极具张力的“伴奏先行”音响层。
 
-谱例 1：莫扎特《G 小调第四十交响曲》K.550 第一乐章 mm. 1–16，主部主题陈述与木管应答（单行文本占位）
+```lilypond title="莫扎特 第40交响曲 K.550 第一乐章" location="Molto allegro，mm.1–14" id="mozart-k550-i-mm1-14"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 g 小调第 40 交响曲 K.550 第一乐章，主部主题（弦乐）的陈述—延续—终止句法。
+% 据 OpenScore 转写体核对后自编码摘录；该底本许可待确认，仅作学术引用。
+
+global = {
+  \time 2/2
+  \tempo "Molto allegro" 2 = 88
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key bf \major
+  r2 r4\p ef''8( d''8) |
+  d''4 ef''8( d''8) d''4 ef''8( d''8) |
+  d''4( bf''4) r4 bf''8( a''8) |
+  g''4 g''8( f''8) ef''4 ef''8( d''8) |
+  c''4 c''4 r4 d''8( c''8) |
+  c''4 d''8( c''8) c''4 d''8( c''8) |
+  c''4( a''4) r4 a''8( g''8) |
+  fs''4 fs''8( ef''8) d''4 d''8( c''8) |
+  bf'4 bf'4 r4 bf''8( a''8) |
+  a''4( c'''4 fs''4 a''4) |
+  g''4( d''4) r4 bf''8( a''8) |
+  a''4( c'''4 fs''4 a''4) |
+  g''4( bf''4 a''8 g''8 f''8 ef''8) |
+  d''1 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key bf \major
+  r2 r4\p ef'8( d'8) |
+  d'4 ef'8( d'8) d'4 ef'8( d'8) |
+  d'4( bf'4) r4 bf'8( a'8) |
+  g'4 g'8( f'8) ef'4 ef'8( d'8) |
+  c'4 c'4 r4 d'8( c'8) |
+  c'4 d'8( c'8) c'4 d'8( c'8) |
+  c'4( a'4) r4 a'8( g'8) |
+  fs'4 fs'8( ef'8) d'4 d'8( c'8) |
+  bf4 bf4 r4 bf'8( a'8) |
+  a'4( c''4 fs'4 a'4) |
+  g'4( d'4) r4 bf'8( a'8) |
+  a'4( c''4 fs'4 a'4) |
+  g'4( bf'4 a'8 g'8 f'8 ef'8) |
+  d'1 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key bf \major
+  <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 |
+  <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 |
+  <g bf>8 <g bf>8 <d' g'>8 <d' g'>8 <g bf>8 <g bf>8 <d' g'>8 <d' g'>8 |
+  <g bf>8 <g bf>8 <bf d'>8 <bf d'>8 <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 |
+  <a ef'>8 <a ef'>8 <ef' a'>8 <ef' a'>8 <a ef'>8 <a ef'>8 <ef' a'>8 <ef' a'>8 |
+  <a ef'>8 <a ef'>8 <ef' a'>8 <ef' a'>8 <a ef'>8 <a ef'>8 <ef' a'>8 <ef' a'>8 |
+  <a d'>8 <a d'>8 <d' c''>8 <d' c''>8 <a d'>8 <a d'>8 <d' c''>8 <d' c''>8 |
+  <a c'>8 <a c'>8 <c' a'>8 <c' a'>8 <a fs'>8 <a fs'>8 <fs' a'>8 <fs' a'>8 |
+  <g d'>8 <g d'>8 <d' g'>8 <d' g'>8 <g d'>8 <g d'>8 <d' g'>8 <d' g'>8 |
+  <a ef'>8 <a ef'>8 <ef' fs'>8 <ef' fs'>8 <a ef'>8 <a ef'>8 <ef' fs'>8 <ef' fs'>8 |
+  <g d'>8 <g d'>8 <d' g'>8 <d' g'>8 <g d'>8 <g d'>8 <d' g'>8 <d' g'>8 |
+  <a ef'>8 <a ef'>8 <ef' fs'>8 <ef' fs'>8 <a ef'>8 <a ef'>8 <ef' fs'>8 <ef' fs'>8 |
+  <g d'>1 |
+  bf2. a4 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key bf \major
+  g,4 r4 r2 |
+  g4 r4 r2 |
+  g,4 r4 r2 |
+  g4 r4 r2 |
+  g,4 r4 r2 |
+  g4 r4 r2 |
+  fs,4 r4 r2 |
+  d4 r4 r2 |
+  g,4 r4 r2 |
+  c1( |
+  bf,1 |
+  c1 |
+  bf,1) |
+  e1 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 伴奏骨架的时间超前与音区悬空
 
@@ -65,7 +167,188 @@ $$f\sharp \to g \to a \to b\flat \to c \to b\flat \to a \to g \to f\sharp$$
 
 在无阀键时代的管弦乐配器中，自然圆号受制于物理泛音列，难以在小调作品中提供充分的转调与半音和声支撑。莫扎特在 K.550 中采用了极为超前的“双调性配对”（Dual Crooking）策略：第一圆号定调于降 B alto，第二圆号定调于 G。
 
-谱例 2：莫扎特《G 小调第四十交响曲》K.550 第一乐章 mm. 16–28，主部群全奏爆发与双圆号合流（单行文本占位）
+```lilypond title="莫扎特 第40交响曲 K.550 第一乐章" location="Molto allegro，mm.16–24" id="mozart-k550-i-mm16-24"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.550 第一乐章，主部群全奏爆发与 B♭ 调、G 调双圆号合流（圆号按记谱音写，带移调声明）。
+% 据 OpenScore 转写体核对后自编码摘录；该底本许可待确认，仅作学术引用。
+
+global = {
+  \time 2/2
+  \tempo "Molto allegro" 2 = 88
+}
+
+flute = {
+  \global
+  \clef treble
+  \key g \minor
+  fs''4 r4\f cs'''2( |
+  d'''4) r4 cs'''2( |
+  d'''4) r4 cs'''2( |
+  d'''4) cs'''4\staccato d'''4\staccato cs'''4\staccato |
+  d'''2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+oboeOne = {
+  \global
+  \clef treble
+  \key g \minor
+  r2\f <g'' bf''>2( |
+  <fs'' a''>4) r4 <g'' bf''>2( |
+  <fs'' a''>4) r4 <g'' bf''>2( |
+  <fs'' a''>4) <g'' bf''>4\staccato <fs'' a''>4\staccato <g'' bf''>4\staccato |
+  <fs'' a''>2 r2 |
+  r1 |
+  <bf' bf''>1~ |
+  <bf' bf''>1 |
+  <c'' bf''>1 |
+}
+
+clarinetOne = {
+  \global
+  \clef treble
+  \transposition bf
+  \key a \minor
+  gs'4 r4\f <ds'' fs''>2( |
+  <e'' gs''>4) r4 <ds'' fs''>2( |
+  <e'' gs''>4) r4 <ds'' fs''>2( |
+  <e'' gs''>4) <ds'' fs''>4\staccato <e'' gs''>4\staccato <ds'' fs''>4\staccato |
+  <e'' gs''>2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+bassoon = {
+  \global
+  \clef bass
+  \key g \minor
+  fs4 r4\f <bf e'>2( |
+  <a fs'>4) r4 <bf e'>2( |
+  <a fs'>4) r4 <bf e'>2( |
+  <a fs'>4) <bf e'>4\staccato <a fs'>4\staccato <bf e'>4\staccato |
+  fs'2(\p c'2 |
+  bf2 a2) |
+  bf4 r4 r2 |
+  r1 |
+  <ef' g'>1 |
+}
+
+hornOne = {
+  \global
+  \clef treble
+  \transposition bf
+  \key a \minor
+  r2\f c''2( |
+  e''4) r4 c''2( |
+  e''4) r4 c''2( |
+  e''4) c''4\staccato e''4\staccato c''4\staccato |
+  e''2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+hornTwo = {
+  \global
+  \clef treble
+  \transposition g
+  \key c \minor
+  r2\f c''2( |
+  d''4) r4 c''2( |
+  d''4) r4 c''2( |
+  d''4) c''4\staccato d''4\staccato c''4\staccato |
+  d''2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  d''2 r4\f d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'4 d'8 d'8 d'4 d'8 d'8 |
+  d'2 r4\p ef''8( d''8) |
+  d''4 ef''8( d''8) d''4 ef''8( d''8) |
+  d''4( bf''4) r4 bf''8( a''8) |
+  g''4 g''8( f''8) ef''4 ef''8( d''8) |
+  c''4 c''4 r4 f''8( ef''8) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  d'2 r4\f d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'4 d'8 d'8 d'4 d'8 d'8 |
+  d'2 r4\p ef'8( d'8) |
+  d'4 ef'8( d'8) d'4 ef'8( d'8) |
+  d'4( bf'4) r4 bf'8( a'8) |
+  g'4 g'8( f'8) ef'4 ef'8( d'8) |
+  c'4 c'4 r4 f'8( ef'8) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  a2 r4\f d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'2 r4 d'8 d'8 |
+  d'4 d'8 d'8 d'4 d'8 d'8 |
+  d'2 r2 |
+  r1 |
+  <g bf>8 <g bf>8 <d' g'>8 <d' g'>8 <g bf>8 <g bf>8 <d' g'>8 <d' g'>8 |
+  <g bf>8 <g bf>8 <bf d'>8 <bf d'>8 <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 |
+  <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 <g bf>8 <g bf>8 <bf g'>8 <bf g'>8 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  d2 r4\f d8 d8 |
+  d2 r4 d8 d8 |
+  d2 r4 d8 d8 |
+  d4 d8 d8 d4 d8 d8 |
+  d2 r2 |
+  r1 |
+  g,4 r4 r2 |
+  g4 r4 r2 |
+  ef,4 r4 r2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "flute" \flute }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "clarinet" \clarinetOne }
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoon }
+    \new Staff { \set Staff.midiInstrument = "french horn" \hornOne }
+    \new Staff { \set Staff.midiInstrument = "french horn" \hornTwo }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 泛音互补与关键音级锁定
 
@@ -98,7 +381,139 @@ $$f\sharp \to g \to a \to b\flat \to c \to b\flat \to a \to g \to f\sharp$$
 
 奏鸣曲式展开部向再现部的过渡阶段（Retransition / Rückleitung）是对作曲家句法掌控力与配器布局能力的严苛考验。在 K.550 第一乐章第 101–164 小节的展开部中，莫扎特通过动机构造与乐器声组的分离，完成了音乐戏剧性的梯级跃迁。
 
-谱例 3：莫扎特《G 小调第四十交响曲》K.550 第一乐章 mm. 138–165，属准备阶段木管与弦乐的一小节交替下行对话（单行文本占位）
+```lilypond title="莫扎特 第40交响曲 K.550 第一乐章" location="Molto allegro，mm.138–149" id="mozart-k550-i-mm138-149"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.550 第一乐章，属准备段木管与弦乐的一小节交替下行对话。
+% 据 OpenScore 转写体核对后自编码摘录；该底本许可待确认，仅作学术引用。
+
+global = {
+  \time 2/2
+  \tempo "Molto allegro" 2 = 88
+}
+
+flute = {
+  \global
+  \clef treble
+  \key bf \major
+  cs'''2 r2 |
+  r2 r4\p f''8( ef''8) |
+  ef''4\staccato f''8( ef''8) ef''4\staccato ef''4\staccato |
+  r2 r4 gf''8( f''8) |
+  f''4\staccato gf''8( f''8) f''4\staccato f''4\staccato |
+  r2 r4 g''8( f''8) |
+  f''4\staccato g''8( f''8) f''4\staccato f''4\staccato |
+  r2 r4 af''8( g''8) |
+  g''4\staccato af''8( g''8) g''4\staccato g''4\staccato |
+  r1 |
+  r4 b''8 c'''8 c'''4 r4 |
+  r1 |
+}
+
+oboeOne = {
+  \global
+  \clef treble
+  \key bf \major
+  <cs'' e''>2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key bf \major
+  a''4\staccato a''4\staccato r4\p bf''8( a''8) |
+  a''4\staccato bf''8( a''8) a''4\staccato bf''8( a''8) |
+  a''4\staccato a''4\staccato r4 c'''8( bf''8) |
+  bf''4\staccato c'''8( bf''8) bf''4\staccato c'''8( bf''8) |
+  bf''4\staccato bf''4\staccato r4 c'''8( b''8) |
+  bf''4\staccato c'''8( b''8) b''4\staccato c'''8( b''8) |
+  b''4\staccato b''4\staccato r4 d'''8( c'''8) |
+  c'''4\staccato d'''8( c'''8) c'''4\staccato d'''8( c'''8) |
+  c'''4\staccato c'''4\staccato r4 bf''8( a''8) |
+  a''4 bf''8( a''8) a''4 bf''8( a''8) |
+  a''4 r4 r4 g''8( fs''8) |
+  fs''4 g''8( fs''8) fs''4 g''8( fs''8) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key bf \major
+  <cs' e'>2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r2 r4\p ef''4~ |
+  ef''4 ef''2 ef''4~ |
+  ef''4 r4 r4 c''4~ |
+  c''4 c''2 c''4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key bf \major
+  a2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r2 r4\p c''4~ |
+  c''4 c''2 c''4~ |
+  c''4 r4 r4 a'4~ |
+  a'4 a'2 a'4 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key bf \major
+  a2 r2 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r2 r4\p g'8( fs'8) |
+  fs'4 g'8( fs'8) fs'4 g'8( fs'8) |
+  fs'4 r4 r4 ef'8( d'8) |
+  d'4 ef'8( d'8) d'4 ef'8( d'8) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "flute" \flute }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 展开部开端的调性重置与复调对位撕扯
 

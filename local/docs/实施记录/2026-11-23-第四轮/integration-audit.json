@@ -1,19 +1,19 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T00:04:47.973Z",
+  "generatedAt": "2026-11-25T01:03:26.854Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-d044eeed-4550",
   "summary": {
     "articles": 60,
     "contentDirs": 16,
     "indexFiles": 17,
-    "notationBlocks": 47,
+    "notationBlocks": 106,
     "notationBlocksWithoutId": 0,
     "provenance": 60,
     "archives": 60,
-    "scoreboardIds": 47,
-    "manualGaps": 20,
-    "scoreRefs": 6,
+    "scoreboardIds": 106,
+    "manualGaps": 33,
+    "scoreRefs": 12,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
       "P0": 0,
@@ -791,7 +791,7 @@
   },
   "scoreBoard": {
     "exists": true,
-    "ids": 47,
+    "ids": 106,
     "gaps": {
       "found": true,
       "rows": [
@@ -822,7 +822,7 @@
         {
           "work": "贝多芬 第一交响曲 Op.21 第二乐章",
           "span": "mm.1–16、26–52、53–64",
-          "status": "未补：第四轮遗留占位（《管乐交响化》《定音鼓写作》两篇共用），待出谱",
+          "status": "未补：第四轮遗留占位（《管乐交响化》《定音鼓写作》共用）；《移调记谱与实音》另需 C 调单簧管切入 mm.1–15，底本仅 CCARH md2（11 声部），本轮完成声部与移调核对但未转写",
           "line": 10
         },
         {
@@ -914,6 +914,84 @@
           "span": "mm.1–6",
           "status": "未补：第四轮遗留占位（《乐句扩展》，据 OMT 教材谱例），待出谱",
           "line": 25
+        },
+        {
+          "work": "莫扎特 K.467 第一乐章",
+          "span": "mm.1–28",
+          "status": "未取得：本地只有 CCARH MuseData md2，无 MusicXML/MXL，本轮未逐音核验（《协奏原则》）",
+          "line": 26
+        },
+        {
+          "work": "莫扎特 K.467 第一乐章",
+          "span": "mm.74–91",
+          "status": "未取得：同上，仅 md2（《协奏原则》）",
+          "line": 27
+        },
+        {
+          "work": "贝多芬 Op.61 第一乐章",
+          "span": "mm.1–18",
+          "status": "未取得：本地谱源包（OpenScore 四重奏/钢琴奏鸣曲、PDMX）均无小提琴协奏曲机器可读谱（《协奏原则》）",
+          "line": 28
+        },
+        {
+          "work": "莫扎特 K.467 第二乐章",
+          "span": "mm.1–8",
+          "status": "未取得：仅 md2（《独奏与乐队对话》）",
+          "line": 29
+        },
+        {
+          "work": "莫扎特 K.467 第二乐章",
+          "span": "mm.23–30",
+          "status": "未取得：仅 md2（《独奏与乐队对话》）",
+          "line": 30
+        },
+        {
+          "work": "莫扎特 K.467 第二乐章",
+          "span": "mm.66–71",
+          "status": "未取得：仅 md2（《独奏与乐队对话》）",
+          "line": 31
+        },
+        {
+          "work": "莫扎特 K.467 第二乐章",
+          "span": "mm.82–88",
+          "status": "未取得：仅 md2（《独奏与乐队对话》）",
+          "line": 32
+        },
+        {
+          "work": "莫扎特 K.331 第一乐章",
+          "span": "主题 mm.1–8、第一变奏 mm.19–26、Minore mm.55–72",
+          "status": "未完成：底本只有本地 kern/ABC（CCARH，非 CC0），abc2ly 不认多声部叠加，kern 需逐轨转写（《变奏曲式的类型》）",
+          "line": 33
+        },
+        {
+          "work": "贝多芬 Op.109 第三乐章",
+          "span": "第一/第二变奏 mm.17–48、第五变奏 mm.113–128",
+          "status": "未完成：kern 底本含声部分裂与三重装饰音，本轮未转写（《变奏曲式的类型》）；本乐章 mm.1–8 已有既有编译块，正文已改链接",
+          "line": 34
+        },
+        {
+          "work": "贝多芬 Op.111 第二乐章",
+          "span": "主题 mm.1–16、第二变奏 mm.33–48",
+          "status": "未完成：kern 底本未转写（《变奏曲式的类型》）",
+          "line": 35
+        },
+        {
+          "work": "贝多芬 Op.106 第四乐章",
+          "span": "引子 mm.1–14、赋格呈示部 mm.15–48",
+          "status": "未完成：kern 底本未转写（《赋格在奏鸣曲中》）",
+          "line": 36
+        },
+        {
+          "work": "贝多芬 Op.110 第三乐章",
+          "span": "宣叙调与哀歌 mm.1–26、赋格呈示部 mm.27–56",
+          "status": "未完成：kern 底本未转写（《赋格在奏鸣曲中》）",
+          "line": 37
+        },
+        {
+          "work": "贝多芬 Op.59 No.1 第一乐章",
+          "span": "mm.1–8、mm.18–24",
+          "status": "未完成：OpenScore 弦乐四重奏未收 Op.59 No.1，只有本地 kern 底本未转写（《演奏法记号与实现》）",
+          "line": 38
         }
       ]
     }
@@ -964,7 +1042,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -994,7 +1072,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1014,7 +1092,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 2,
+      "provPlaceholderRows": 1,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1040,14 +1118,16 @@
       "hasGapSignal": false
     },
     "notation/transposing-instruments-notation-and-sounding-pitch.md": {
-      "standard": 0,
+      "standard": 1,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 2,
-      "placeholderTokens": [],
+      "provPlaceholderRows": 1,
+      "placeholderTokens": [
+        "op21"
+      ],
       "nonconforming": 0,
-      "hasGapSignal": false
+      "hasGapSignal": true
     },
     "styles/orchestral-timbre-aesthetic-shift.md": {
       "standard": 0,
@@ -1076,7 +1156,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1096,7 +1176,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1231,7 +1311,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1261,7 +1341,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1271,7 +1351,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 5,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1281,7 +1361,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1297,21 +1377,23 @@
       "hasGapSignal": false
     },
     "techniques/sound/mozart-concerto-solo-orchestra-dialogue.md": {
-      "standard": 0,
+      "standard": 4,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 4,
-      "placeholderTokens": [],
+      "placeholderTokens": [
+        "k467"
+      ],
       "nonconforming": 0,
-      "hasGapSignal": false
+      "hasGapSignal": true
     },
     "techniques/sound/mozart-k550-syntax-and-orchestration.md": {
       "standard": 0,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 3,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1344,7 +1426,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1393,7 +1475,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1434,14 +1516,17 @@
       "hasGapSignal": true
     },
     "techniques/structure/concertante-principle-and-double-exposition.md": {
-      "standard": 0,
+      "standard": 3,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
-      "placeholderTokens": [],
+      "placeholderTokens": [
+        "k467",
+        "op61"
+      ],
       "nonconforming": 0,
-      "hasGapSignal": false
+      "hasGapSignal": true
     },
     "techniques/structure/galant-schemata-and-formal-functions.md": {
       "standard": 0,
@@ -1490,7 +1575,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1500,7 +1585,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1523,7 +1608,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 5,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false

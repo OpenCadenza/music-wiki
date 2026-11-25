@@ -68,9 +68,125 @@ graph TD
 
 乐章开篇并未有任何传统门厅式的慢速引子，而是以全员极强击弦骤然引爆：
 
-*谱例：斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章，mm. 1–16，低音震音背景上的中提琴宿命独奏主题*
+```lilypond title="斯美塔那《我的生活》第一弦乐四重奏 第一乐章" location="Allegro vivo appassionata，mm.1–16" id="smetana-sq1-i-mm1-16"
+\version "2.26.0"
+\language "english"
 
-- **声学背景层铺设（mm. 1–4）**：第 1 小节，四件乐器以全奏极强（$ff$）共同敲击 E 小调和弦；紧接着，大提琴死死驻留在大字一组空弦低音 $E_2$ 的持续全音符长音上，第一小提琴与第二小提琴在小字一组展开阴郁的附点十六分音符震音摇摆（$e^1\text{–}g^1$ 与 $g\text{–}b$）。这种由低频踏板与中频冷色震音构筑的背景，构成了典型而压抑的[音响平面分层](../sound/planes-of-tone-layering.md)；
+global = {
+  \key e \minor
+  \time 4/4
+  \tempo "Allegro vivo appassionata" 4 = 132
+}
+
+staffOne = {
+  \global
+  \clef treble
+  b'4-. r4 \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  \repeat tremolo 2 { e'8 g'8 } \repeat tremolo 2 { e'8 g'8 } |
+  e'2( b8) g'2 e'8 e'2 g'8 g'2 r16 b'16 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  <e' b' g''>4-. r4 \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  <e b g'>4-. r4 r2 |
+  r1 |
+  r1 |
+  r2 r4 r8 b'8-. |
+  b'1\sf( |
+  e'4-.->) r4 r4 r8 fs'8-. |
+  g'1\sf( |
+  b4-.->) r4 r4 r8 ds'8-. |
+  e'2\sf( g4-.->) r8 a8-.\downbow |
+  b2\sf\upbow( e4-.->) r8 fs8-.\upbow |
+  g4->( e8-. r16 fs16--) g8( e8 g8-. r16 a16--) |
+  b8->( e8 g8-. r16 a16--) \tuplet 3/2 { b8->( e8 fs8 g8 a8 as8) } |
+  \tuplet 3/2 { b8( e8 fs8 g8 a8 as8) b8( cs'8 ds'8) } e'8-. r16 fs'16-- |
+  g'4->( b8-. r16 ds'16--) e'4->( b8-.) r16 fs'16-- |
+  g'4->( b8-. r16 ds'16--) e'4->( b8-. r16 fs'16--) |
+  g'8( b8) ds'8( e'8 fs'8 g'8 a'8-. r16 b'16--)() |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  e,4-. r4 e,2~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1~ |
+  e,1() |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+- **声学背景层铺设（mm. 1–4）**：第 1 小节，四件乐器以全奏极强（$ff$）共同敲击 E 小调和弦；紧接着，大提琴死死驻留在大字一组空弦低音 $E_2$ 的持续全音符长音上，第一小提琴与第二小提琴在小字一组展开阴郁的八分音符震音摇摆（$e^1\text{–}g^1$ 与 $g\text{–}b$）。这种由低频踏板与中频冷色震音构筑的背景，构成了典型而压抑的[音响平面分层](../sound/planes-of-tone-layering.md)；
 - **中提琴破空而出的独奏（mm. 4–16）**：在密不透风的背景声场中，中提琴在小字一组弱起切入高音 $b^1$，并在第 5 小节以全音符强音（$forte$）唱出震惊全场的宿命核心动机：
   $$b^1 \rightarrow e^1 \rightarrow g^1 \rightarrow b \rightarrow e^1 \rightarrow b \dots$$
   音调包含了强烈的四度与六度大跳，随后在小字组深沉下潜。这一动机具有鲜明的朗诵调（Recitativo）特征，斯美塔那自述此段为“对未知的宿命呼唤与青年热血中不可抑制的向往”；
@@ -88,7 +204,123 @@ graph TD
 
 第 31 小节起，音乐进入激烈的结构过渡段：
 
-*谱例：斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章，mm. 31–46，第一小提琴高八度激情飞升与过渡推进*
+```lilypond title="斯美塔那《我的生活》第一弦乐四重奏 第一乐章" location="Allegro vivo appassionata，mm.31–46" id="smetana-sq1-i-mm31-46"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key e \minor
+  \time 4/4
+  \tempo "Allegro vivo appassionata" 4 = 132
+}
+
+staffOne = {
+  \global
+  \clef treble
+  <ef' c''>4\sf-. r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) ef'8( f'8 } |
+  <a fs'>4\sf-.) r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) ef'8( f'8 } |
+  <a fs'>4\sf-.) r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) ef'8( f'8 } |
+  \tuplet 3/2 { fs'8-.->) fs'8( gs'8 a'8-.->) a'8( b'8 c''8-.->) c''8( d''8 ds''8-.->) ds''8( es''8 } |
+  fs''4\sf-.) r4 <fs' ds'' b''>4-. r4 |
+  <fs' ds'' b''>4\sf r4 <fs' ds'' b''>4 r8 b''8-. |
+  b''1\sf( |
+  e''4-.->) r4 r4 r8 fs''8 |
+  g''1\sf( |
+  b'4-.->) r4 r4 r8 ds''8-. |
+  e''2\sf( g'4-.->) r8 a'8-. |
+  b'2\sf( e'4-.->) r8 fs'8-. |
+  g'2\sf( e'4-.->) r8 fs'8 |
+  g'4\sf( e'8) r16 fs'16 g'8 fs'8( g'8 a'8 |
+  \tuplet 3/2 { b'8-.->) g'8( a'8 b'8-.->) b'8( ds''8 e''8-.->) e''8( fs''8 g''8-.->) g''8( a''8 } |
+  \tuplet 3/2 { b''8-.->) e''8( fs''8 g''8-.->) g''8( a''8 b''8-.->) b''8( ds'''8 e'''8-.->) e'''8( fs'''8) } |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  <a fs'>4\sf-. r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) c'8( d'8 } |
+  <a ef'>4\sf-.) r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) c'8( d'8 } |
+  <a ef'>4\sf-.) r4 \tuplet 3/2 { ef'8-.-> c'8( d'8 ef'8-.->) c'8( d'8 } |
+  \tuplet 3/2 { ds'8-.->) ds'8( es'8 fs'8-.->) fs'8( gs'8 a'8-.->) a'8( b'8 c''8-.->) c''8( d''8 } |
+  ds''4\sf-.) r4 <ds' a' fs''>4-. r4 |
+  <ds' a' fs''>4\sf r4 <ds' a' fs''>4 r8 b'8-. |
+  b'1\sf( |
+  e'4-.->) r4 r4 r8 fs'8-. |
+  g'1\sf( |
+  b4-.->) r4 r4 r8 ds'8-. |
+  e'2\sf( g4-.->) r8 a8-. |
+  b2( g4-.->) r8 b8-. |
+  e'2\sf( g4-.->) r8 b8 |
+  e'4\sf( g8) r16 b16 e'8 b8( e'8 fs'8 |
+  \tuplet 3/2 { g'8-.->) e'8( fs'8 g'8-.->) g'8( a'8 g'8-.->) g'8( b'8 e''8-.->) e''8( fs''8 } |
+  \tuplet 3/2 { g''8-.->) g'8( b'8 e''8-.->) e''8( fs''8 g''8-.->) g''8( a''8 g''8-.->) g''8( b''8) } |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  ef''4\sf-.-> r4 r4 r8 ef8-. |
+  ef2\sf( c4-.->) r8 ef8-. |
+  ef2\sf( c4-.->) r8 a8-. |
+  a1\trill |
+  a4\sf r4 \tuplet 3/2 { a8( fs8 g8) a8( fs8 g8) } |
+  \tuplet 3/2 { a8( fs8 g8) a8( fs8 g8) } a4-. <a ds'>4-.-> |
+  <g e'>4 r4 \tuplet 3/2 { g8( e8 fs8) g8( e8 fs8) } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+  \repeat tremolo 2 { g8 b8 } \repeat tremolo 2 { g8 b8 } |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  c,4\sf-. r4 r2 |
+  c,4\sf r4 r2 |
+  c,4\sf r4 r2 |
+  c,2\sf( c4-.->) r8 c8 |
+  c4\sf \tuplet 3/2 { d8-. d8( c8) } b,4 \tuplet 3/2 { d8-. d8( c8) } |
+  b,4\sf \tuplet 3/2 { d8-. d8( c8 b,8-.) b,8( a,8 g,8-.) g,8( fs,8 } |
+  e,4-.) r4 e,8( g,8 e,8 g,8) |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+  \repeat tremolo 2 { e,8 g,8 } \repeat tremolo 2 { e,8 g,8 } |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **声部主权移交**：第一小提琴终于接管旋律主权，在第 37 小节跃升至小字三组高位 $b^3$，以撕裂般的高八度全音符咆哮出宿命动机的激化形态；
 - **声部间的织体对位**：第二小提琴与中提琴以连续后半拍切分音型逆向运动，大提琴则在低音区以沉重的顿音重击根音；
@@ -111,7 +343,155 @@ graph TD
 
 第四乐章开篇展现出一派狂热、质朴而阳光普照的捷克乡土狂欢场景：
 
-*谱例：斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章，mm. 1–24，捷克民间舞曲狂欢主题与切分节奏*
+```lilypond title="斯美塔那《我的生活》第一弦乐四重奏 第四乐章" location="Vivace，mm.1–24" id="smetana-sq1-iv-mm1-24"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key e \major
+  \time 2/4
+  \tempo "Vivace" 4 = 152
+}
+
+staffOne = {
+  \global
+  \clef treble
+  \tuplet 3/2 { gs''4 a''8\downbow b''8-> cs'''8 b''8 } |
+  \tuplet 3/2 { cs'''8-> b''8 cs'''8 b''8-> cs'''8 b''8 } |
+  \tuplet 3/2 { cs'''8-> b''8 cs'''8 b''8-> cs'''8 a''8 } |
+  gs''4-> fs''4-> |
+  \tuplet 3/2 { gs''4\sf-> a''8\downbow b''8-> cs'''8 b''8 } |
+  \tuplet 3/2 { cs'''8-> b''8 cs'''8 b''8-> cs'''8 b''8 } |
+  \tuplet 3/2 { cs'''8-> b''8 cs'''8 b''8-> cs'''8 a''8 } |
+  gs''4-> fs''4-> |
+  <b' e''>16 <b' e''>16 r8 r4 |
+  <b' e''>16 <b' e''>16 r8 r4 |
+  <b' e''>16 <b' e''>16 r8 r4 |
+  r2 |
+  <b' b''>16 <b' b''>16 r8 r4 |
+  <b' b''>16 <b' b''>16 r8 r4 |
+  <b' b''>16 <b' b''>16 r8 r4 |
+  r2 |
+  <b' e''>16 <b' e''>16 b'16 e''16 cs''16 fs''16 ds''16 gs''16 |
+  <b' e''>16 <b' e''>16 b'16 e''16 cs''16 fs''16 ds''16 gs''16 |
+  <b' e''>16 <b' e''>16 b'16 e''16 cs''16 fs''16 ds''16 gs''16 |
+  e''16 a''16 fs''16 b''16 gs''16 cs'''16 a''16 ds'''16 |
+  e'''16-> e'''16 b''16 e'''16 fs'''16 fs'''16 cs'''16 fs'''16 |
+  fs'''16\sf fs'''16 cs'''16 fs'''16 fs'''16 fs'''16 cs'''16 fs'''16 |
+  gs'''16 gs'''16 r16 fs'''16 e'''16 ds'''16 cs'''16 b''16 |
+  as''16 gs''16 fs''16 es''16 e''16 ds''16 cs''16 bs'16 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  \tuplet 3/2 { <b' e''>4 <a' e''>8\downbow <b' e''>8-> <a' e''>8 <b' e''>8 } |
+  \tuplet 3/2 { <a' e''>8-> <b' e''>8 <a' e''>8 <b' e''>8-> <a' e''>8 <b' e''>8 } |
+  \tuplet 3/2 { <a' e''>8-> <b' e''>8 <a' e''>8 <b' e''>8-> <a' e''>8 <cs'' e''>8 } |
+  <b' e''>4-> <a' ds''>4-> |
+  \tuplet 3/2 { <b' e''>4\sf <a' e''>8\downbow <b' e''>8-> <a' e''>8 <b' e''>8 } |
+  \tuplet 3/2 { <a' e''>8-> <b' e''>8 <a' e''>8 <b' e''>8-> <a' e''>8 <b' e''>8 } |
+  \tuplet 3/2 { <a' e''>8-> <b' e''>8 <a' e''>8 <b' e''>8-> <a' e''>8 <cs'' e''>8 } |
+  <b' e''>4-> <a' ds''>4-> |
+  <gs' b'>16 <gs' b'>16 r8 r4 |
+  <gs' b'>16 <gs' b'>16 r8 r4 |
+  <gs' b'>16 <gs' b'>16 r8 r4 |
+  r2 |
+  <ds' b'>16 <ds' b'>16 fs'16 b'16 gs'16 cs''16 as'16 ds''16 |
+  <ds' b'>16 <ds' b'>16 fs'16 b'16 gs'16 cs''16 as'16 ds''16 |
+  <ds' b'>16 <ds' b'>16 fs'16 b'16 gs'16 cs''16 a'16 ds''16 |
+  b'16 e''16 cs''16 fs''16 ds''16 gs''16 a'16 fs''16 |
+  e''16 b'16 gs'8-. a'8-. b'8-. |
+  <b gs'>16 <b gs'>16 gs'8-. a'8-. b'8-. |
+  <b gs'>16 <b gs'>16 b'16 b'16 cs''16 cs''16 ds''16 ds''16 |
+  e''16 e''16 fs''16 fs''16 gs''16 gs''16 a''16 a''16 |
+  b''16-> e''16 b'16 e''16 fs''16 fs''16 cs''16 fs''16 |
+  fs''16\sf fs''16 cs''16 fs''16 fs''16 fs''16 cs''16 fs''16 |
+  <e'' gs''>16 <e'' gs''>16 r16 fs''16 e''16 ds''16 cs''16 b'16 |
+  as'16 gs'16 fs'16 es'16 e'16 ds'16 cs'16 bs16 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  \tuplet 3/2 { <b gs'>4 <a e'>8\downbow <b e'>8-> <cs' e'>8 <b e'>8 } |
+  \tuplet 3/2 { <cs' e'>8-> <b e'>8 <cs' e'>8 <b e'>8-> <cs' e'>8 <b e'>8 } |
+  \tuplet 3/2 { <cs' e'>8-> <b e'>8 <cs' e'>8 <b e'>8-> <cs' e'>8 <a e'>8 } |
+  <b gs'>4-> <b fs'>4-> |
+  \tuplet 3/2 { <b gs'>4\sf <a e'>8\downbow <b e'>8-> <cs' e'>8 <b e'>8 } |
+  \tuplet 3/2 { <cs' e'>8-> <b e'>8 <cs' e'>8 <b e'>8-> <cs' e'>8 <b e'>8 } |
+  \tuplet 3/2 { <cs' e'>8-> <b e'>8 <cs' e'>8 <b e'>8-> <cs' e'>8 <a e'>8 } |
+  <b gs'>4-> <b fs'>4-> |
+  <gs e'>16 <gs e'>16 b16 e'16 cs'16 fs'16 ds'16 gs'16 |
+  <gs e'>16 <gs e'>16 b16 e'16 cs'16 fs'16 ds'16 gs'16 |
+  <gs e'>16 <gs e'>16 b16 e'16 cs'16 fs'16 ds'16 gs'16 |
+  e'16 a'16 fs'16 b'16 gs'16 cs''16 as'16 ds''16 |
+  b'16 fs'16 ds'8-. e'8-. fs'8-. |
+  <b fs'>16 <b fs'>16 ds'8-. e'8-. fs'8-. |
+  <b fs'>16 <b fs'>16 ds'8-. e'8-. fs'8-. |
+  gs'8-. a'8-. b8-. ds'8-. |
+  <gs e'>16 <gs e'>16 e16 e16 e8 r8 |
+  <gs e'>16 <gs e'>16 e16 e16 e8 r8 |
+  <gs e'>16 <gs e'>16 gs16 gs16 a16 a16 b16 b16 |
+  cs'16 cs'16 ds'16 ds'16 e'16 e'16 fs'16 fs'16 |
+  gs'16-> gs'16 gs'16 gs'16 a'16 a'16 e'16 a'16 |
+  a'16\sf a'16 e'16 a'16 a'16 a'16 e'16 a'16 |
+  <e' cs''>16 <e' cs''>16 r16 fs'16 e'16 ds'16 cs'16 b16 |
+  as16 gs16 fs16 es16 fs8-.-> r8 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  \tuplet 3/2 { e4 fs8\downbow gs8-> a8 gs8 } |
+  \tuplet 3/2 { a8-> gs8 a8 gs8-> a8 gs8 } |
+  \tuplet 3/2 { a8-> gs8 a8 gs8-> a8 fs8 } |
+  b4-> b,4-> |
+  \tuplet 3/2 { e4\sf fs8\downbow gs8-> a8 gs8 } |
+  \tuplet 3/2 { a8-> gs8 a8 gs8-> a8 gs8 } |
+  \tuplet 3/2 { a8-> gs8 a8 gs8-> a8 fs8 } |
+  b4-> b,4-> |
+  e,16 e,16 r8 r4 |
+  e,16 e,16 r8 r4 |
+  e,16 e,16 gs,8-. a,8-. b,8-. |
+  cs8-. ds8-. e8-. fs8-. |
+  b,16 b,16 r8 r4 |
+  b,16 b,16 r8 r4 |
+  b,16 b,16 r8 r4 |
+  r8 b16 b16 b8 b,16 b,16 |
+  <e, b,>16 <e, b,>16 r8 r8 b,16 b,16 |
+  <e, b,>16 <e, b,>16 r8 r8 b,16 b,16 |
+  <e, b,>16 <e, b,>16 gs,8-. a,8-. b,8-. |
+  cs8-. ds8-. e8-. fs8-. |
+  gs8-> gs8 a4 |
+  a4\sf a4 |
+  as16 as16 r16 fs16 e16 ds16 cs16 b,16 |
+  as,16 gs,16 fs,8-. r4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **波希米亚跳跃舞曲（Skočná）**：第一小提琴以飞快的十六分音符跳弓与重音切分领衔（mm. 1–8: $g\sharp^2\text{–}a^2\text{–}b^2\text{–}c\sharp^3\text{–}b^2$），运弓强调跳音（Martellato）与尖锐的落弓重音；
 - **质朴的重奏敲击**：大提琴演奏粗犷的重音低音跳进（$E_3\text{–}F\sharp_3\text{–}G\sharp_3\text{–}A_3\text{–}G\sharp_3$），第二小提琴与中提琴以连续后半拍切分音型模拟民间风笛与乡村弦乐队的伴奏律动；
@@ -123,7 +503,159 @@ graph TD
 
 进入第 25 小节，狂欢能量进一步向全员扩散：
 
-*谱例：斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章，mm. 25–49，舞曲动机交错对抗与粗犷低音推进*
+```lilypond title="斯美塔那《我的生活》第一弦乐四重奏 第四乐章" location="Vivace，mm.25–49" id="smetana-sq1-iv-mm25-49"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key e \major
+  \time 2/4
+  \tempo "Vivace" 4 = 152
+}
+
+staffOne = {
+  \global
+  \clef treble
+  \tuplet 3/2 { cs''4\sf( ds''8) cs''8-. ds''8-. cs''8-. } |
+  \tuplet 3/2 { ds''8-. cs''8-. ds''8( fs''8 e''8 ds''8) } |
+  \tuplet 3/2 { cs''4->( ds''8) cs''8-. ds''8-. cs''8-. } |
+  \tuplet 3/2 { ds''8-. cs''8-. ds''8( fs''8 e''8 ds''8) } |
+  \tuplet 3/2 { fs''4->( gs''8) fs''8-. gs''8-. fs''8-. } |
+  \tuplet 3/2 { gs''8-. fs''8-. gs''8( b''8 a''8 gs''8) } |
+  \tuplet 3/2 { fs''4->( gs''8) fs''8-. gs''8-. fs''8-. } |
+  \tuplet 3/2 { gs''8-. fs''8-. gs''8( b''8 a''8 gs''8) } |
+  \tuplet 3/2 { fs''4 gs''8->~ gs''4 as''8->~ } |
+  \tuplet 3/2 { as''4 b''8->~ b''4 cs'''8->~ } |
+  \tuplet 3/2 { cs'''4\f ds'''8 fs'''8 e'''8 ds'''8 } |
+  \tuplet 3/2 { fs'''8\sf e'''8 ds'''8 e'''8 ds'''8 cs'''8 } |
+  b''4.\sf\sf( fs''8) |
+  ds''8( fs''8) fs''16-. e''16-. ds''8-. |
+  cs''8( e''8) <e'' fs''>8( ds''8-. |
+  cs''4. fs'8 |
+  b'8-. cs''8-.) ds''4-> |
+  cs''8-.( ds''8-.) e''4-> |
+  ds''8 ds''16( fs''16 es''8) es''16( gs''16 |
+  fs''4.)( b''8) |
+  b''4.->( fs''8) |
+  ds''8( fs''8) fs''16-. e''16-. ds''8( |
+  e''8-.) gs''16-. fs''16-. e''8-.( ds''8-.) |
+  <cs'' ds''>8 fs'8( |
+  b'8-. cs''8-.) ds''4-> |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  \tuplet 3/2 { fs'4\sf fs'8-. fs'8-. fs'8-. fs'8-. } |
+  \tuplet 3/2 { fs'8-. fs'8-. fs'8-. b'8( fs'8) fs'8 } |
+  \tuplet 3/2 { fs'4-> fs'8-. fs'8-. fs'8-. fs'8-. } |
+  \tuplet 3/2 { fs'8-. fs'8-. fs'8-. b'8( fs'8) fs'8 } |
+  \tuplet 3/2 { ds''4->( e''8) ds''8-. e''8-. ds''8-. } |
+  \tuplet 3/2 { e''8-. ds''8-. e''8( gs''8 fs''8 e''8) } |
+  \tuplet 3/2 { ds''4->( e''8) ds''8-. e''8-. ds''8-. } |
+  \tuplet 3/2 { e''8-. ds''8-. e''8( gs''8 fs''8 e''8) } |
+  \tuplet 3/2 { ds''8-. b'8-. e''8-. e''8-.-> cs''8-. fss''8-. } |
+  \tuplet 3/2 { fss''8-.-> ds''8-. gs''8-. gs''8-.-> es''8-. b''8-. } |
+  \tuplet 3/2 { b''8\f-.-> gs''8-. b''8-. ds'''8-> cs'''8 b''8 } |
+  \tuplet 3/2 { ds'''8\sf cs'''8 b''8 as''8 fs''8 e''8 } |
+  ds''16\sf( b'16 fs'16 b'16) b'16( fs'16 ds'16 fs'16) |
+  b'16( fs'16 ds'16 fs'16) b'16( fs'16 ds'16 fs'16) |
+  e'16( fs'16) cs'16( fs'16) cs'16( fs'16) cs'16-. ds'16-. |
+  e'16-. fs'16-. e'16-. ds'16-. cs'16-. b16-. as16-. cs'16-. |
+  fs'8 r8 <ds' b'>8-.->\arpeggio r8 |
+  r4 <as e' cs''>8-.->\arpeggio r8 |
+  fs'8-. <fs' b'>8-. <gs' b'>8-. <gs' cs''>8-. |
+  <fs' cs''>8-. fs'16-. gs'16-. as'16-. fs'16-. gs'16-. as'16-. |
+  b'16\p( fs'16 ds'16 fs'16) b'16( fs'16 ds'16 fs'16) |
+  b'16( fs'16 ds'16 fs'16) b'16( fs'16 ds'16 fs'16) |
+  cs''16( fs'16 e'16 fs'16) as'16( fs'16 e'16 fs'16) |
+  e'16-. fs'16-. e'16-. ds'16-. cs'16-. b16-. as16-. cs'16-. |
+  fs'8 r8 <ds' b'>8-.->\arpeggio r8 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  \tuplet 3/2 { as4\sf( b8-.) as8-. b8-. as8-. } |
+  \tuplet 3/2 { b8-. as8-. b8( ds'8 cs'8 b8) } |
+  \tuplet 3/2 { as4->( b8) as8-. b8-. as8-. } |
+  \tuplet 3/2 { b8-. as8-. b8( ds'8 cs'8 b8) } |
+  \tuplet 3/2 { b'4 b'8 b'8-. b'8-. b'8-. } |
+  \tuplet 3/2 { b'8-. b'8-. b'8 e''8( b'8) b'8-. } |
+  \tuplet 3/2 { b'4-> b'8 b'8-. b'8-. b'8-. } |
+  \tuplet 3/2 { b'8-. b'8-. b'8-. e''8( b'8) b'8-. } |
+  \tuplet 3/2 { b'8-. ds'8-. b'8-. b'8-.-> e'8-. b'8-. } |
+  \tuplet 3/2 { cs''8-.-> ds'8-. ds''8-. ds''8-.-> gs'8-. ds''8-. } |
+  \tuplet 3/2 { es''8\f b'8 gs'8 b'8 fs'8 fs'8 } |
+  \tuplet 3/2 { b'8\sf fs'8 fs'8 cs''8 fs'8 as'8 } |
+  b'8\sf r8 <ds b fs'>8-.->\arpeggio r8 |
+  r4 <ds b fs'>8-.->\arpeggio r8 |
+  r4 <cs as fs'>8-.->\arpeggio r8 |
+  r8 fs16( gs16) as8-. <fs cs'>8-. |
+  b16( fs16 ds16 fs16) b16( fs16 ds16 fs16) |
+  cs'16( fs16 e16 fs16) cs'16( as16 fs16 as16) |
+  ds'16( cs'16 b8-.) gs'16( fs'16 es'8-.) |
+  fs'16-. gs'16-. fs'16-. e'16-. ds'16-. e'16-. ds'16-. cs'16-. |
+  b8\p r8 <ds b fs'>8-.->\arpeggio r8 |
+  r4 <ds b fs'>8-.->\arpeggio r8 |
+  r4 <cs as fs'>8-.->\arpeggio r8 |
+  r8 fs16( gs16) as8-. <fs cs'>8-. |
+  b16( fs16 ds16 fs16) b16( fs16 ds16 fs16) |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  \tuplet 3/2 { e4\sf e8-. e8-. e8-. e8-. } |
+  \tuplet 3/2 { e8-. e8-. e8-. ds4( fs8) } |
+  \tuplet 3/2 { e4-> e8 e8-. e8-. e8-. } |
+  \tuplet 3/2 { e8-. e8-. e8-. ds4( fs8) } |
+  \tuplet 3/2 { a4 a8 a8-. a8-. a8-. } |
+  \tuplet 3/2 { a8-. a8-. a8 gs4( b8) } |
+  \tuplet 3/2 { a4-> a8 a8-. a8-. a8-. } |
+  \tuplet 3/2 { a8-. a8-. a8-. gs4( b8) } |
+  \tuplet 3/2 { a8-. a8-. a8-. gs8-. fs8-. e8-. } |
+  \tuplet 3/2 { ds8-. ds8-. cs8-. b,8-. as,8-. gs,8-. } |
+  \tuplet 3/2 { gs,8\f fs,8 es,8 fs,8 fs,8 fs,8 } |
+  \tuplet 3/2 { fs,8\sf fs,8 fs,8 fs,8 fs,8 fs,8 } |
+  b,4.\sf b,8 |
+  b,4. b,8 |
+  as,4.( fs8) |
+  as,4 e4-> |
+  ds4( cs8-.) b,8-. |
+  as,4( gs,8-.) fs,8-. |
+  b,8-. gs,8-. cs8-. b,8-. |
+  as,8-. fs,8-. fs8-. e8-. |
+  ds8\p-. cs8-. b,4-> |
+  b,4.( fs,8) |
+  as,4.( fs8) |
+  as,4 e4-> |
+  ds4( cs8-.) b,8-. |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **切分重音的横向交错**：第一小提琴与中提琴在 B 大调上展开交错的二度锯齿状对位（mm. 25–32: $c\sharp^2\text{–}d\sharp^2\text{–}c\sharp^2\text{–}d\sharp^2$ 对比内声部），展现出强烈的[半音与节拍冲突](../rhythm/hemiola-and-metric-conflict.md)；
 - **全员齐奏的踏步感**：大提琴在 mm. 33–36 以级进下行的大全音符连续跺步（$A_3\text{–}G\sharp_3\text{–}F\sharp_3\text{–}E_3$），四件乐器呈现出极具肉体动感与民间节日狂欢的原始生命力；

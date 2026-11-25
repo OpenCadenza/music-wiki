@@ -45,7 +45,85 @@ description: 深入解构莫扎特《d小调第15弦乐四重奏》K.421 中四�
 
 此时四件乐器全员投入，织体发生了深刻的性格质变：第二小提琴与中提琴以八分音符同音密集切分狂暴推进；大提琴紧咬持续低音音型（D3/D4）；原本压抑内省的独白瞬间被放大为四件乐器共同承担的戏剧性悲鸣，并在第 8 小节以坚实的全奏完满终止收束，充分展现了均质编制在音量极化时的共鸣威慑力。
 
-[谱例：莫扎特《d小调第15弦乐四重奏》K.421 第一乐章，mm. 1–8，主部主题呈示与八度下落动机的强弱动态对比]
+```lilypond title="莫扎特 弦乐四重奏 K.421 第一乐章" location="Allegro，mm.1–8" id="mozart-k421-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 d 小调第 15 弦乐四重奏 K.421 第一乐章，主部主题与八度下落动机。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key d \minor
+  d''2( d'4.) d'8 |
+  d'8. cs'16 d'8 d'8 d'4.( f''8)\staccato |
+  f''4~( f''16 e''16) d''16( cs''16) bf'4( a'8 g'8) |
+  f'8( bf'8 a'8 gs'8) a'4 r4 |
+  d'''2( d''4.) d''8 |
+  d''8. cs''16 d''8 d''8 d''4.( f'''8) |
+  f'''4~( f'''16\p e'''16) d'''16( cs'''16) bf''4( a''8) g''8~ |
+  g''16( f''16 e''16 bf''16)( bf''16 a''16) cs''16( e''16) d''4 r4 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key d \minor
+  r8 a8(\staccato a8\staccato a8)\staccato r8 a8(\staccato a8\staccato a8)\staccato |
+  r8 bf8(\staccato bf8\staccato bf8)\staccato r8 f'8\staccato f'8( d'8) |
+  r8 d'8( cs'8 e'8) r8 cs'8(\staccato cs'8\staccato cs'8)\staccato |
+  d'8( g'8 f'8 e'8 f'8 g'8 f'8 e'8) |
+  d'8 a'8(\staccato a'8\staccato a'8)\staccato r8 a'8(\staccato a'8\staccato a'8)\staccato |
+  r8 d'8(\staccato d'8\staccato d'8)\staccato r8 f''8\staccato f''8( d''8) |
+  d''4~ d''16(\p cs''16 f''16 e''16) g''4( f''8) e''8 |
+  a'8 bf'16( g'16) g'16( f'16) e'16( g'16) f'4 r4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key d \minor
+  r8 f8(\staccato f8\staccato f8)\staccato r8 f8(\staccato f8\staccato f8)\staccato |
+  r8 f8(\staccato f8\staccato f8)\staccato r8 a8(\staccato a8\staccato a8)\staccato |
+  r8 bf8(\staccato bf8\staccato bf8)\staccato r8 e8(\staccato e8\staccato e8)\staccato |
+  d4 r4 r8 e'8( d'8 cs'8) |
+  d'8 f'8(\staccato f'8\staccato f'8)\staccato r8 fs'8(\staccato fs'8\staccato fs'8)\staccato |
+  r8 g'8(\staccato g'8\staccato g'8)\staccato r8 gs'8(\staccato gs'8\staccato gs'8)\staccato |
+  gs'4( a'4) r8\p a8( b8 cs'8) |
+  d'8 g8 a8 a8 d'4 r4 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key d \minor
+  d2( c2 |
+  bf,2 a,2 |
+  g,2 a,2) |
+  d,4 r4 r2 |
+  r8\f d'8(\staccato d'8\staccato d'8)\staccato r8 c'8(\staccato c'8\staccato c'8)\staccato |
+  r8 b8(\staccato b8\staccato b8)\staccato r8 bf8(\staccato bf8\staccato bf8)\staccato |
+  a2 r2 |
+  r2 r8\f a8\staccato f8\staccato d8\staccato |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -95,7 +173,85 @@ description: 深入解构莫扎特《d小调第15弦乐四重奏》K.421 中四�
 
 在呈示部结束群前，半音化的减七和弦再次侵蚀大调氛围。在第 44 小节，第一小提琴突然降落至带有降 C 偏音色彩的降 E 大调音区（Eb4–D4–Eb4），与第二小提琴 Cb4、中提琴 Ab3 绞合在一起。莫扎特在此通过半音和声阻碍了副部预期的完满终止，实现了典型的句法延展与终止规避（参见[终止延后](../structure/cadential-evasion-and-temporal-expansion.md)），短暂的大调明朗再度被拉回全曲宿命般的阴郁底色之中。
 
-[谱例：莫扎特《d小调第15弦乐四重奏》K.421 第一乐章，mm. 25–34，F大调副部主题的双小提琴对话与内声部十六分音符织体]
+```lilypond title="莫扎特 弦乐四重奏 K.421 第一乐章" location="Allegro，mm.25–32" id="mozart-k421-i-mm25-32"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.421 第一乐章，F 大调副部的双小提琴对话与内声部十六分音符织体。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key d \minor
+  f'4( e'16 f'16 bf'16 a'16) a'8( g'8) r4 |
+  fs'16( g'16 a'16 g'16 bf'16 a'16 d''16 c''16) bf'8( a'8) r4 |
+  f''4( e''16 f''16 bf''16 a''16) a''8( g''8~) g''16( f''16 e''16 d''16) |
+  d''8( c''8~) c''16( bf'16 a'16 g'16) f'4 r4 |
+  f'8~( \tuplet 3/2 { f'16 e'16 f'16 a'16 g'16 f'16 c''16 bf'16 a'16) } fs'8( g'8) r4 |
+  \tuplet 3/2 { bf''16( a''16 g''16 f''16 e''16 d''16 c''16 b'16 c''16 cs''16 d''16 bf'16) } gs'8 a'8 r4 |
+  \tuplet 3/2 { f'16 a'16 c''16 f''16 a''16 c'''16 f'''16 e'''16 d'''16 c'''16 bf''16 a''16 g''16( a''16 fs''16 g''16) bf''16 a''16 bf''16 a''16 g''16 f''16 e''16 d''16 } |
+  \tuplet 3/2 { c''16 d''16 b'16 c''16( f''16) f'16 } g'8.( f'32 g'32 f'4) r4 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key d \minor
+  r16\p c'16( f'16) f'16\staccato f'16 f'16 f'16 f'16 r16 d'16( f'16) f'16\staccato f'16 f'16 f'16 f'16 |
+  r16 bf16( e'16) e'16\staccato e'16 e'16 e'16 e'16 r16 a16( f'16) f'16\staccato f'16 f'16 f'16 f'16 |
+  r16 c'16( f'16) f'16\staccato f'16 f'16 f'16 f'16 r16 d'16( f'16) f'16\staccato f'16 f'16 f'16 f'16 |
+  r16 bf16( e'16) e'16\staccato e'16 e'16 e'16 e'16 f'16\staccato a'16( g'16 f'16 e'16 f'16 e'16 d'16) |
+  c'8\staccato c'8\staccato f'8( c'8) r8 d'8\staccato d''8( g'8) |
+  r8 c'8\staccato bf'8( g'8) r8 d'8\staccato d''8( a'8) |
+  r8\f c'8\staccato c''8( a'8) r8 f'8\staccato d''8( bf'8) |
+  a'8 f'4( e'8)\p f'4(\sf fs'4) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key d \minor
+  r16\p a16( c'16) c'16\staccato c'16 c'16 c'16 c'16 r16 g16( d'16) d'16\staccato d'16 d'16 d'16 d'16 |
+  r16 g16( bf16) bf16\staccato bf16 bf16 bf16 bf16 r16 f16( a16) a16\staccato a16 a16 a16 a16 |
+  r16 a16( c'16) c'16\staccato c'16 c'16 c'16 c'16 r16 g16( d'16) d'16\staccato d'16 d'16 d'16 d'16 |
+  r16 g16( bf16) bf16\staccato bf16 bf16 bf16 bf16 a16\staccato f'16( e'16 d'16 cs'16 d'16 c'16 bf16) |
+  a16\staccato c'16\staccato f'16\staccato c'16\staccato a16\staccato c'16\staccato f'16\staccato c'16\staccato g16\staccato d'16\staccato f'16\staccato d'16\staccato g16\staccato d'16\staccato f'16\staccato d'16\staccato |
+  g16\staccato c'16\staccato e'16\staccato c'16\staccato g16\staccato c'16\staccato e'16\staccato c'16\staccato f16\staccato a16\staccato f'16\staccato a16\staccato f16\staccato a16\staccato f'16\staccato a16\staccato |
+  a16\staccato c'16\staccato f'16\staccato c'16\staccato a16\staccato c'16\staccato f'16\staccato c'16\staccato g16\staccato d'16\staccato f'16\staccato d'16\staccato g16\staccato d'16\staccato f'16\staccato d'16\staccato |
+  f'8 c'8 d'8 c'16( bf16)\p a2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key d \minor
+  a,4 r4 bf,4 r4 |
+  c4 r4 d4 r4 |
+  a,4 r4 bf,4 r4 |
+  c4 r4 f4 r4 |
+  a,4 r4 bf,4 r4 |
+  c4 r4 d4 r4 |
+  a,4 r4 bf,4 r4 |
+  r8 a,8 bf,8 c8\p f8(\sf ef4)\p d16.( c32) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -115,7 +271,85 @@ description: 深入解构莫扎特《d小调第15弦乐四重奏》K.421 中四�
 
 在第 9 小节，主题在属调 C 大调上展开第二句陈述。第一小提琴（C5–休止–C5–B4–D5–G4）与中提琴（Eb4–休止–Eb4–D4–F4）形成声部远距离音程对话。各声部在 mm. 16–24 通过连续的下行挂留与微观转调，在第 24 小节达成温和的完全终止，完成了第一部分的封闭。
 
-[谱例：莫扎特《d小调第15弦乐四重奏》K.421 第二乐章，mm. 1–8，F大调西西里行板主题的四部交错微观对位]
+```lilypond title="莫扎特 弦乐四重奏 K.421 第二乐章" location="Andante（西西里行板），mm.1–8" id="mozart-k421-ii-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.421 第二乐章，F 大调西西里行板主题的四部交错对位。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 6/8
+  \tempo "Andante" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key f \major
+  a'8 r8 a'8 g'8( bf'8 g'8) |
+  f'4( g'16 f'32) g'32 a'8 r16\mf a16( c'16 f'16 |
+  a'8) r16 c'16( f'16 a'16 c''8) c''8(\staccato c''8)\staccato |
+  c''8 r8 c''8 d''8( e''8 f''8) |
+  c''4( bf'16 a'32 bf'32 a'8) r16 c'16( f'16 a'16 |
+  c''8) r16 a'16( c''16 f''16 a''8) a''8(\staccato a''8)\staccato |
+  a''4.( b'8) r16\p b'16( c''16 f''16) |
+  e''8.( f''16) d''8\staccato c''8 r8 r8 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  f'8 r8 f'8 d'4. |
+  c'4( e'8) f'8 r8 r8 |
+  r8 r16\mf a16( c'16 f'16 a'8) a'8(\staccato a'8)\staccato |
+  a'8 r8 a'8 bf'8( c''8 d''8) |
+  a'4( g'16 f'32 g'32 f'8) r8 r8 |
+  r8 r16 c'16( f'16 a'16 c''8) c''8(\staccato c''8)\staccato |
+  c''4.( g'8) r16\p g'16 g'16( c''16) |
+  c''8.( d''16) b'8\staccato c''8 r8 r8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key f \major
+  c'8 r8 c'8 bf4. |
+  a4( c'8) c'8 r8 r8 |
+  r4 r8 r8 r16\mf f16( a16 c'16) |
+  f'8 r8 f'8 f'8( e'8 d'8) |
+  c'8( d'8 e'8 f'8) r8 r8 |
+  r4 r8 r8 r16\f f16( a16 c'16) |
+  f'4.( d'8) r16\p d'16( e'16 f'16) |
+  g'4( f'8) e'8 r8 r8 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key f \major
+  f8 r8 f8 bf,4. |
+  c4.( f,8) r8 r8 |
+  r2. |
+  f8 r8 f8 bf,4. |
+  c4.( f,8) r8 r8 |
+  r2. |
+  r8 r16\f f,16( a,16 c16) f8 r16\p f16( e16 a16) |
+  g4 g,8 c8 r8 r8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -135,7 +369,85 @@ description: 深入解构莫扎特《d小调第15弦乐四重奏》K.421 中四�
 
 第 47–53 小节转向属音 C 的长音准备。四件乐器在极弱的音量中交替奏出八分音符断奏分解和弦（第一小提琴 G3–E4–C5，第二小提琴 G3–E4–C5，大提琴低音 C4–C3 踏步），戏剧性风暴逐渐消退，重新为 F 大调再现做好了铺垫。
 
-[谱例：莫扎特《d小调第15弦乐四重奏》K.421 第二乐章，mm. 36–44，♭III 调性阴影侵入与四件乐器的交响式撕扯对位]
+```lilypond title="莫扎特 弦乐四重奏 K.421 第二乐章" location="Andante（西西里行板），mm.36–43" id="mozart-k421-ii-mm36-43"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.421 第二乐章，降 III 级（降 A 大调）阴影侵入的对比段。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 6/8
+  \tempo "Andante" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key f \major
+  af'16( c''16 ef''16) ef'16(\staccato ef'16\staccato ef'16)\staccato ef'4 ef''8~ |
+  ef''16( af''16 g''16 gf''16 f''16 e''16 ef''16 d''16 df''16 c''16 df''16 bf'16) |
+  af'16(\staccato c''16 ef''16)\staccato ef'16(\staccato ef'16\staccato ef'16)\staccato ef'4\p ef''8~ |
+  ef''16( d''16 df''16) df''16(\staccato df''16\staccato df''16)\staccato df''16( c''16 b'16 c''16 df''16 ef''16) |
+  e''16( f''16 g''16 f''16 af''16 f''16) f''16( ef''16 af''16 g''16 f''16 ef''16) |
+  ef''16( df''16 c''16 df''16 f''16 df''16) df''16( c''16 b'16 c''16 df''16 bf'16) |
+  af'16\staccato af'16\staccato c''16\staccato c''16\staccato ef''16\staccato ef''16\staccato af'8 r16\p c'16( f'16 g'16) |
+  af'8\staccato af'8\staccato af'8\staccato af'8\staccato r16 f'16( af'16 bf'16) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  <c' ef'>4. g16( bf16 df'16) df'16(\staccato df'16\staccato df'16)\staccato |
+  <c' ef'>4. <bf g'>4. |
+  af'4.( gf'4.) |
+  f'4.( ef'4.) |
+  df'4. c'8.( ef'16 df'16 c'16) |
+  c'16( bf16 a16 bf16 df'16 bf16) bf16( af16 g16 af16 bf16 g16) |
+  af16\staccato af16\staccato c'16\staccato c'16\staccato ef'16\staccato ef'16\staccato af8 r8 r8 |
+  f'8\staccato f'8\staccato f'8\staccato f'8\staccato r8 r8 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key f \major
+  af4. df16( g16 bf16) bf16(\staccato g16\staccato g16)\staccato |
+  ef'2.~ |
+  ef'4. ef16( af16 c'16) c'16(\staccato c'16\staccato c'16)\staccato |
+  af2.~ |
+  af2. |
+  f8 r8 f8 ef8 r8 df8 |
+  c8 r8 r8 r4 r8 |
+  c'8\staccato c'8\staccato c'8\staccato c'8\staccato r8 r8 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key f \major
+  af,4. af,4.~ |
+  af,2.~ |
+  af,4. af,4.~ |
+  af,2.~ |
+  af,2. |
+  df8 r8 df8 ef8 r8 ef,8 |
+  af,8 r8 r8 r4 r8 |
+  f8\staccato f8\staccato f8\staccato f8\staccato r8 r8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

@@ -14,7 +14,11 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 1–16 | OpenScore SQ MXL | CC0 |
-| 占位（未出谱） | 德沃夏克 Op. 96 第一乐章 | Allegro ma non troppo，mm. 44–52 | OpenScore SQ MXL | CC0 |
-| 占位（未出谱） | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 1–28 | OpenScore SQ MXL | CC0 |
-| 占位（未出谱） | 德沃夏克 Op. 96 第三乐章 | Molto vivace，mm. 49–60 | OpenScore SQ MXL | CC0 |
+| `dvorak-op96-i-mm1-16` | 德沃夏克《F 大调第 12 弦乐四重奏“美国”》Op. 96 第一乐章 | Allegro ma non troppo，mm.1–16 | OpenScore StringQuartets MXL `dvorak-op96-american.mxl` | CC0-1.0 / 公有领域 |
+| `dvorak-op96-i-mm44-52` | 同上 第一乐章 | Allegro ma non troppo，mm.44–52 | 同上 | CC0-1.0 / 公有领域 |
+| `dvorak-op96-iii-mm1-28` | 同上 第三乐章 | Molto vivace，mm.1–28 | 同上 | CC0-1.0 / 公有领域 |
+| `dvorak-op96-iii-mm49-60` | 同上 第三乐章 | Poco meno mosso，mm.49–60 | 同上 | CC0-1.0 / 公有领域 |
+
+> 底本细节：第一乐章 mm.2–5 的第一小提琴与 mm.7–14 的中提琴在底本中以两音震音记谱（MuseScore `<tremolo type="start">` 成对，`actual-notes=2`），谱例按 `\repeat tremolo` 还原为两音震音。
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

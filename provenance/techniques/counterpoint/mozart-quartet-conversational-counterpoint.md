@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《d小调第15弦乐四重奏》K.421 第一乐章 | Allegro moderato，mm. 1–8 | OpenScore String Quartets（MXL） | CC0-1.0（单行文本占位） |
-| 占位（未出谱） | 莫扎特《d小调第15弦乐四重奏》K.421 第一乐章 | Allegro moderato，mm. 25–34 | OpenScore String Quartets（MXL） | CC0-1.0（单行文本占位） |
-| 占位（未出谱） | 莫扎特《d小调第15弦乐四重奏》K.421 第二乐章 | Andante，mm. 1–8 | OpenScore String Quartets（MXL） | CC0-1.0（单行文本占位） |
-| 占位（未出谱） | 莫扎特《d小调第15弦乐四重奏》K.421 第二乐章 | Andante，mm. 36–44 | OpenScore String Quartets（MXL） | CC0-1.0（单行文本占位） |
+| `mozart-k421-i-mm1-8` | 莫扎特《d小调第15弦乐四重奏》K.421 第一乐章 | Allegro moderato，mm.1–8 | OpenScore StringQuartets（CC0-1.0）`sq7294793.mxl` 自编码摘录 | CC0-1.0 |
+| `mozart-k421-i-mm25-32` | 莫扎特《d小调第15弦乐四重奏》K.421 第一乐章 | Allegro moderato，mm.25–32 | OpenScore StringQuartets（CC0-1.0）`sq7294793.mxl` 自编码摘录 | CC0-1.0 |
+| `mozart-k421-ii-mm1-8` | 莫扎特《d小调第15弦乐四重奏》K.421 第二乐章 | Andante（西西里行板），mm.1–8 | OpenScore StringQuartets（CC0-1.0）`sq7294793.mxl` 自编码摘录 | CC0-1.0 |
+| `mozart-k421-ii-mm36-43` | 莫扎特《d小调第15弦乐四重奏》K.421 第二乐章 | Andante（西西里行板），mm.36–43 | OpenScore StringQuartets（CC0-1.0）`sq7294793.mxl` 自编码摘录 | CC0-1.0 |

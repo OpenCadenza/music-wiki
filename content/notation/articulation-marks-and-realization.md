@@ -52,7 +52,75 @@ tags:
 
 在《F大调第一弦乐四重奏》Op. 18 No. 1 的第一乐章（*Allegro con brio*，3/4 拍，全曲 F 大调）中，贝多芬从开篇第一小节便确立了动机驱动的发音范式：
 
-贝多芬《F大调第一弦乐四重奏》Op. 18 No. 1 第一乐章 mm. 1–4（开篇齐奏两连两断动机与断音跳音）
+```lilypond title="贝多芬《F 大调第一弦乐四重奏》Op.18 No.1 第一乐章" location="Allegro con brio，mm.1–4" id="beethoven-op18no1-i-mm1-4"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 3/4
+  \tempo "Allegro con brio" 4 = 126
+}
+
+staffOne = {
+  \global
+  \clef treble
+  f'4\p~ f'8( g'16 f'16) e'8-. f'8-. |
+  c'4 r4 r4 |
+  f'4~ f'8( g'16 f'16) e'8-. f'8-. |
+  d'4 r4 r4 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  f'4\p~ f'8( g'16 f'16) e'8-. f'8-. |
+  c'4 r4 r4 |
+  f'4~ f'8( g'16 f'16) e'8-. f'8-. |
+  d'4 r4 r4 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  f4\p~ f8( g16 f16) e8-. f8-. |
+  c4 r4 r4 |
+  f4~ f8( g16 f16) e8-. f8-. |
+  d4 r4 r4 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  f4\p~ f8( g16 f16) e8-. f8-. |
+  c4 r4 r4 |
+  f4~ f8( g16 f16) e8-. f8-. |
+  d4 r4 r4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **开篇“两连两断”齐奏动机（m. 1）**：
   * 四件乐器以弱奏（$p$）八度齐奏核心主题：小字一组 $F$ 在第 1 拍附点系留起音，随后引出 $G$–$F$ 的十六分音符回音，这两拍半由一条紧凑的连弓笼罩（（F 附点、F 八分、G–F 两个十六分，同弓连奏））；
@@ -95,7 +163,7 @@ tags:
 
 在贝多芬生前完成的最后一部完整作品《F大调第十六弦乐四重奏》Op. 135 的第三乐章（*Lento assai, cantante e tranquillo*，6/8 拍，降 D 大调）中，演奏法记号褪去了所有外在的戏剧冲突，升华为形而上的精神内省；同一段音乐的音区与声部角色，可对照[《弦乐四重奏》](../ensembles/string-quartet-acoustic-role-differentiation.md)中已编译的 Op.135 III mm.1–12 谱例阅读：
 
-贝多芬《F大调第十六弦乐四重奏》Op. 135 第三乐章 mm. 1–12（降D大调内省长连弓与三音微观连弓细分）
+Op.135 第三乐章 mm.1–12 的谱例见 [《弦乐四重奏的声学角色分化》](../ensembles/string-quartet-acoustic-role-differentiation.md#score-beethoven-op135-iii-mm1-12)；此处只讨论同一段音乐里连弓与分弓记号的实际发音差别，不再复制代码块。
 
 - **和声踏板的长音系留（mm. 1–2）**：
   * 在 6/8 拍的沉静律动中，第二小提琴与中提琴在极弱（$p$ / $pp$）下以连线长音跨小节延留（Tied Notes），大提琴沉于极低音区；

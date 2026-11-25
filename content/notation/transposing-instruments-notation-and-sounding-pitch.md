@@ -59,7 +59,52 @@ category: notation
 - **第二圆号（G 调，Corno in G）**：同样以无调号方式记谱，视读音比声学实音高纯四度（记谱 C 音实音为 G 音）；
 - 两者在总谱上均不写调号，全凭乐管固有物理长度所激发的自然泛音列落位。
 
-[谱例占位：莫扎特《g小调第四十交响曲》（K.550）第一乐章，mm. 18–20，木管与 B♭/G 双调圆号合流]
+```lilypond title="莫扎特《g 小调第四十交响曲》K.550 第一乐章 双圆号（记谱音）" location="Molto allegro，mm.18–20" id="mozart-k550-i-mm18-20-horns"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \time 4/4
+  \tempo "Molto allegro" 4 = 138
+}
+
+staffSix = {
+  \global
+  \clef treble
+  \key c \major
+  \transposition bf
+  e''4 r4 c''2( |
+  e''4) c''4-. e''4-. c''4-. |
+  e''2 r2 |
+}
+
+staffSeven = {
+  \global
+  \clef treble
+  \key ef \major
+  \transposition g
+  d''4 r4 c''2( |
+  d''4) c''4-. d''4-. c''4-. |
+  d''2 r2 |
+}
+
+\score {
+  <<
+    \new Staff = "P6" <<
+      \set Staff.midiInstrument = "french horn"
+      \staffSix
+    >>
+    \new Staff = "P7" <<
+      \set Staff.midiInstrument = "french horn"
+      \staffSeven
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+上谱只截取两支圆号的记谱声部，用来对照「记谱音 ↔ 实音」；同一段落在总谱全奏中的完整语境（长笛、双簧管、大管与弦乐的同击层次）见 [《句法与配器：莫扎特 K.550》](../techniques/sound/mozart-k550-syntax-and-orchestration.md#score-mozart-k550-i-mm16-24) 的同类片段。
 
 在第一主题与副题连接段全奏爆发后的延续段（第 18–20 小节，主全奏爆发于第 16 小节第 3 拍），木管组与圆号组形成了极其精密的声学咬合：
 - **木管组（实音 C 调记谱）**：长笛、第一双簧管与大管以 D 大三和弦分解音型展开强奏呼应，长笛由 $D6$ 领衔高音声部，双簧管与大管在内声部与低音区形成坚实支撑；
@@ -100,7 +145,7 @@ category: notation
 - 明确指定两支 C 调单簧管（Clarinetti 1, 2 in C）；
 - 与 A 调单簧管不同，C 调单簧管无需进行任何移调处理，其调号（一个降号，B♭）与弦乐及总谱主调完全相同。
 
-[谱例占位：贝多芬《C大调第一交响曲》（Op. 21）第二乐章，mm. 1–15，C 调单簧管赋格风切入]
+谱例待补：贝多芬《C 大调第一交响曲》Op. 21 第二乐章，C 调单簧管在赋格织体中的切入，mm. 1–15（底本为 CCARH MuseData md2，本轮只完成声部与移调核对，未转写为 LilyPond）。
 
 声学与配器形态呈现出独特的古典透明度：
 - **前 12 小节绝对沉默**：乐章以第二小提琴的四声部微型赋格呈示开篇（mm. 1–6），中提琴与大提琴在 mm. 7–12 形成属调应答，木管声部在整整 12 个小节内保持休止；

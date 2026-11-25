@@ -14,8 +14,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 德彪西《g小调弦乐四重奏》Op. 10 第一乐章 | Animé et très décidé，mm. 1–8 | OpenScore MXL | CC0-1.0 |
-| 占位（未出谱） | 德彪西《g小调弦乐四重奏》Op. 10 第一乐章 | Animé et très décidé，mm. 25–40 | OpenScore MXL | CC0-1.0 |
-| 占位（未出谱） | 德彪西《g小调弦乐四重奏》Op. 10 第三乐章 | Andantino doucement expressif，mm. 1–16 | OpenScore MXL | CC0-1.0 |
-| 占位（未出谱） | 德彪西《g小调弦乐四重奏》Op. 10 第三乐章 | Andantino doucement expressif，mm. 28–61 | OpenScore MXL | CC0-1.0 |
-| 占位（未出谱） | 德彪西《g小调弦乐四重奏》Op. 10 第三乐章 | Andantino doucement expressif，mm. 103–123 | OpenScore MXL | CC0-1.0 |
+| `debussy-op10-i-mm1-8` | 德彪西《g小调弦乐四重奏》Op.10 第一乐章 | Animé et très décidé，mm.1–8 | OpenScore StringQuartets（CC0-1.0）`sq8661306.mxl` 自编码摘录 | CC0-1.0 |
+| `debussy-op10-i-mm25-32` | 德彪西《g小调弦乐四重奏》Op.10 第一乐章 | Animé et très décidé，mm.25–32 | OpenScore StringQuartets（CC0-1.0）`sq8661306.mxl` 自编码摘录 | CC0-1.0 |
+| `debussy-op10-iii-mm1-8` | 德彪西《g小调弦乐四重奏》Op.10 第三乐章 | Andantino doucement expressif，mm.1–8 | OpenScore StringQuartets（CC0-1.0）`sq8661306.mxl` 自编码摘录 | CC0-1.0 |
+| `debussy-op10-iii-mm28-35` | 德彪西《g小调弦乐四重奏》Op.10 第三乐章 | Andantino doucement expressif，mm.28–35 | OpenScore StringQuartets（CC0-1.0）`sq8661306.mxl` 自编码摘录 | CC0-1.0 |
+| `debussy-op10-iii-mm107-114` | 德彪西《g小调弦乐四重奏》Op.10 第三乐章 | Andantino doucement expressif，mm.107–114 | OpenScore StringQuartets（CC0-1.0）`sq8661306.mxl` 自编码摘录 | CC0-1.0 |

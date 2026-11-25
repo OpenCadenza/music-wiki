@@ -47,7 +47,85 @@ $$\text{Dactyl: } \quad \text{Half Note } (\text{♩. or } \text{𝅗𝅥}) \quad + 
 | **后半段离调（B1）** | mm. 9–16 | 转向降 B 大调（$III$）：$III - vii^{\circ6}/III - III$ | 低音逆行级进上升，自然大三和弦明朗色彩 | 降 B 大调不完满完全终止（IAC） |
 | **后半段回归（B2）** | mm. 17–24（反复） | g 小调：$i - iv - \flat II^6 - i^6_4 - V^7 - i$ | 潜伏使用那不勒斯和弦，终止式紧缩沉降 | 第 24 小节 g 小调完满完全终止（PAC） |
 
-[谱例占位：舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章，mm. 1–8，达克提尔圣咏主题前段]
+```lilypond title="舒伯特 弦乐四重奏 D.810《死与少女》第二乐章" location="Andante con moto，mm.1–8" id="schubert-d810-ii-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特 d 小调第 14 弦乐四重奏 D.810《死与少女》第二乐章，达克提尔圣咏主题前段。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Andante con moto" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  g'2 g'4 g'4 |
+  g'2 a'4 bf'4 |
+  a'2 g'4 fs'4 |
+  g'2 g'4 g'4 |
+  g'2 g'4 g'4 |
+  g'2 a'4 bf'4 |
+  g'2 fs'2 |
+  g'2 r2 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  d'2 ef'4 c'4 |
+  d'2 d'4 d'4 |
+  d'2 d'4 d'4 |
+  d'2 bf4 c'4 |
+  d'2 ef'4 c'4 |
+  d'2 <c' d'>4 <bf d'>4 |
+  <c' d'>2 d'2 |
+  d'2 r2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  bf2 c'4 a4 |
+  bf2 c'4 d'4 |
+  c'2 bf4 a4 |
+  bf2 g4 a4 |
+  bf2 c'4 a4 |
+  bf2 a4 g4 |
+  a2 a2 |
+  bf2 r2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  g2 g4 g4 |
+  g2 g4 g4 |
+  d2 d4 d4 |
+  g2 g4 g4 |
+  g2 g4 g4 |
+  g2 g4 g4 |
+  d2 d2 |
+  g,2 r2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 这种坚固的 24 小节和声与句法框架，构成了后续所有变奏赖以展开的几何母体。
 
@@ -86,7 +164,85 @@ $$\text{Dactyl: } \quad \text{Half Note } (\text{♩. or } \text{𝅗𝅥}) \quad + 
 - **第二小提琴与中提琴**则以平稳的八分音符提供中景和声垫底，在中声部填充温润的谐波支撑；
 - 这种高低声部的剧烈音区倒置，彻底颠覆了古典室内乐“小提琴主唱、大提琴打底”的刻板印象，展现了深沉的心理交锋。
 
-[谱例占位：舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章，mm. 49–56，变奏 II 大提琴高音区哀歌主调与第一小提琴切分伴奏]
+```lilypond title="舒伯特 弦乐四重奏 D.810《死与少女》第二乐章" location="Andante con moto，mm.49–56" id="schubert-d810-ii-mm49-56"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特 D.810 第二乐章，变奏 II：大提琴高音区哀歌主调。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Andante con moto" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  g16 bf'16\staccato d''16\staccato bf'16\staccato r16 d''16\staccato g''16\staccato d''16\staccato r16 ef''16\staccato g''16\staccato ef''16\staccato r16 c''16\staccato g''16\staccato c''16\staccato |
+  r16 d''16\staccato g''16\staccato d''16\staccato r16 d''16\staccato bf''16\staccato d''16\staccato r16 d''16\staccato a''16\staccato d''16\staccato r16 d''16\staccato g''16\staccato d''16\staccato |
+  r16 d''16 d'''16 d''16 r16 d''16 c'''16 d''16 r16 d''16 bf''16 d''16 r16 d''16 fs''16 d''16 |
+  r16 d''16 g''16 d''16 r16 bf'16 d''16 bf'16 r16 g'16 bf'16 g'16 r16 a'16 c''16 a'16 |
+  r16 bf'16 d''16 bf'16 r16 d''16 g''16 d''16 r16 ef''16 g''16 ef''16 r16 c''16 g''16 c''16 |
+  r16 d''16 g''16 d''16 r16 d''16 bf''16 d''16 r16 d''16 a''16 d''16 r16 d''16 g''16 d''16 |
+  r16 ef''16 ef'''16 c'''16 r16 ef''16 ef'''16 c'''16 r16 d''16 d'''16 fs''16 r16 fs''16 d'''16 fs''16 |
+  r16 g''16\staccato bf''16\staccato g''16\staccato d'''16\staccato\accent bf''16\staccato bf''16\staccato\accent g''16\staccato g''16\staccato\accent d''16\staccato d''16\staccato\accent bf'16\staccato bf'16\staccato\accent g'16\staccato ef'16\staccato bf16\staccato |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  bf8.( g'16 bf8. g'16 c'8. g'16 a8. g'16) |
+  bf8.( g'16 bf8. d'16 c'8. d'16 bf8. d'16) |
+  a8.( d'16 a8. d'16 bf8. d'16 c'8. d'16) |
+  bf8.( g'16 bf8. g'16 g8. g'16 a8. g'16) |
+  bf8.( g'16 bf8. g'16 c'8. g'16 a8. g'16) |
+  bf8.( g'16 bf8. d'16 c'8. d'16 cs'8. d'16) |
+  c'8.( ef'16 c'8. ef'16 c'8. d'16 c'8. d'16) |
+  bf8.( d'16 bf8. d'16 bf8) r8 r4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  g8 r8 g'8 g'8 g8 r8 g'8 g'8 |
+  g8 r8 g'8 g'8 g8 r8 g'8 g'8 |
+  d8 r8 d'8 d'8 d8 r8 d'8 d'8 |
+  g8 r8 g'8 g'8 g8 r8 g'8 g'8 |
+  g8 r8 g'8 g'8 g8 r8 g'8 g'8 |
+  g8 r8 g'8 g'8 g8 r8 g'8 g'8 |
+  d8 r8 d'8 d'8 d8 r8 d'8 d'8 |
+  g8 r8 g'8 g'8 g8 r8 r4 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  d'2( ef'4 c'4) |
+  d'4( g'4 a'4 g'4) |
+  fs'2( g'4 a'4) |
+  d'4.( d'8 bf4 c'4) |
+  d'2( ef'4 c'4) |
+  d'4( g'4 a'4 bf'8. g'16) |
+  g'4( fs'8. g'16 a'8 fs'8 ef'8 d'8) |
+  d'4.( e'16 fs'16 g'8) r8 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3. 变奏 III（mm. 73–96）：狂暴全奏与暴烈肉搏
 
@@ -96,7 +252,85 @@ $$\text{Dactyl: } \quad \text{Half Note } (\text{♩. or } \text{𝅗𝅥}) \quad + 
 - **全员齐奏威压**：第一小提琴以狂暴的连续重音扫弦撕裂织体，中提琴与大提琴在低音区施以沉重的八度碾压；
 - 死神在此彻底脱去温和安详的面具，展现出摧毁一切生灵的原始狂暴。这种剧烈的声学冲击与室内乐织体撕裂，与贝多芬晚期复调的抗争形态遥相呼应，参见 [《赋格在奏鸣曲中》](../counterpoint/fugue-in-the-sonata-cycle.md)。
 
-[谱例占位：舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章，mm. 73–80，变奏 III 狂暴全奏与断奏三连音冲突]
+```lilypond title="舒伯特 弦乐四重奏 D.810《死与少女》第二乐章" location="Andante con moto，mm.73–80" id="schubert-d810-ii-mm73-80"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特 D.810 第二乐章，变奏 III：狂暴全奏与断奏三连音。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Andante con moto" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  g'8 g'16 g'16\fz g'8 g'16 g'16\fz g'8 g'16 g'16\fz g'8 g'16 g'16 |
+  g'8 g'16 g'16\fz g'8 fs'16 g'16\fz a'8 g'16 a'16\fz bf'8 a'16 g'16 |
+  fs'8 d''16 d''16 d''8 d''16 d''16 d''8 d''16 d''16 d''8 d''16 d''16 |
+  d''8 <g' g''>16 <g' g''>16 <g' g''>8 <g' g''>16 <g' g''>16 <g' g''>8 r8 r4 |
+  g''1~ |
+  g''4.( bf''8) d'''4(\staccato d'''4)\staccato |
+  d'''4( fs'''4 g'''4 d'''4) |
+  g'''4\staccato r4 r4\f bf4\accent |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  d'8 bf16 c'16\fz d'8 c'16 d'16\fz ef'8 c'16 d'16\fz ef'8 d'16 c'16 |
+  d'8 bf16 c'16\fz d'8 d'16 d'16\fz d'8 d'16 d'16\fz d'8 d'16 d'16 |
+  d'8 fs'16 g'16 a'8 bf'16 a'16 g'8 a'16 g'16 fs'8 e'16 fs'16 |
+  g'8 bf16 c'16 d'8 bf16 c'16 d'8\p a'16 bf'16 c''8 bf'16 c''16 |
+  d''8 bf'16 c''16 d''8 c''16 d''16 ef''8 c''16 d''16 ef''8 d''16 c''16 |
+  d''8 bf'16 c''16 d''8 fs''16 g''16 a''8 g''16 a''16 bf''8 a''16 g''16 |
+  fs''8 fs''16 g''16 a''8 bf''16 a''16 g''8 a''16 g''16 fs''8 e''16 fs''16 |
+  g''8 bf'16 c''16 d''8 bf'16 c''16 d''8 bf16 c'16 d'8 c'16 d'16 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  bf8 g16 a16\fz bf8 a16 bf16\fz c'8 a16 bf16\fz c'8 bf16 a16 |
+  bf8 g16 a16\fz bf8 a16 bf16\fz c'8 bf16 c'16\fz d'8 c'16 bf16 |
+  a8 a16 bf16 c'8 d'16 c'16 bf8 c'16 bf16 a8 g16 a16 |
+  bf8 g16 a16 bf8 g16 a16 bf8\p fs'16 g'16 a'8 g'16 a'16 |
+  bf'8 g'16 a'16 bf'8 a'16 bf'16 c''8 a'16 bf'16 c''8 bf'16 a'16 |
+  bf'8 g'16 a'16 bf'8 a'16 bf'16 c''8 bf'16 c''16 d''8 c''16 bf'16 |
+  a'8 a'16 bf'16 c''8 d''16 c''16 bf'8 c''16 bf'16 a'8 g'16 a'16 |
+  bf'8 g'16 a'16 bf'8 g'16 a'16 bf'8 g16 a16 bf8 a16 af16 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  g8 g16 g16\fz g8 g16 g16\fz g8 g16 g16\fz g8 g16 g16 |
+  g8 g16 g16\fz g8 g16 g16\fz g8 g16 g16\fz g8 g16 g16 |
+  d8 d16 d16 d8 d16 d16 d8 d16 d16 d8 d16 d16 |
+  g,8 g,16 g,16 g,8 g,16 g,16 g,8 r8 r4 |
+  r2\p c'2( |
+  g2) g,4.( bf,8) |
+  d4 d4 d2~ |
+  d8( r8) d,4( g,8) r8 bf,4\accent |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 4. 变奏 IV（mm. 97–120）：G 大调的超现实升华与抚慰
 
@@ -106,7 +340,85 @@ $$\text{Dactyl: } \quad \text{Half Note } (\text{♩. or } \text{𝅗𝅥}) \quad + 
 - **极弱动态控制**：力度全面回落至极弱（*pp*），中提琴与大提琴以极为柔顺平缓的长和弦构筑神圣的纯五度底座；
 - **高音诗意歌唱**：第一小提琴在最高音区吹拂起极为甜美、抒情的三连音花彩，第二小提琴在中音区予以轻声应答。这一变奏在心理上不再是逃避死亡，而是少女沉浸在死神怀抱中的安歇与解脱。
 
-[谱例占位：舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章，mm. 97–104，变奏 IV 转入 G 大调空灵圣咏与高音三连音歌唱]
+```lilypond title="舒伯特 弦乐四重奏 D.810《死与少女》第二乐章" location="Andante con moto，mm.97–104" id="schubert-d810-ii-mm97-104"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特 D.810 第二乐章，变奏 IV：转入 G 大调的空灵圣咏。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Andante con moto" 4 = 60
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \major
+  \tuplet 3/2 { d''8( e''8 fs''8 g''8 b''8 a''8) g''8( fs''8 e''8) e''8( d''8 cs''8) } |
+  \tuplet 3/2 { d''8( g''8 b''8) d'''8( d''8 d'''8) d'''8( d''8 d'''8) d'''8( d''8 d'''8) } |
+  \tuplet 3/2 { d'''8( d''8 d'''8) d'''8( d''8 d'''8) e'''8( e''8 e'''8) fs'''8( fs''8 fs'''8) } |
+  \tuplet 3/2 { g'''8( g''8 g'''8) g'''8\staccato g'''8\staccato g'''8\staccato g'''8\staccato g'8(\staccato a'8\staccato b'8\staccato c''8\staccato cs''8)\staccato } |
+  \tuplet 3/2 { d''8( e''8 fs''8 g''8 b''8 a''8) g''8( fs''8 e''8) e''8( d''8 cs''8) } |
+  \tuplet 3/2 { d''8( g''8 b''8) d'''8( d''8 d'''8) d'''8( d''8 d'''8) d'''8( d''8 d'''8) } |
+  \tuplet 3/2 { d'''8( d''8 d'''8) e'''8( e''8 e'''8) d''8( d'''8 c'''8) d''8( b''8 a''8) } |
+  \tuplet 3/2 { d''8(\staccato fs''8\staccato a''8\staccato d'''8\staccato fs'''8\staccato a'''8)\staccato } g'''4 r4 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \major
+  <g g'>1~ |
+  <g g'>4 b'4( a'4 g'4) |
+  fs'4( c''4 b'4 a'4) |
+  g'2. r4 |
+  <g g'>1~ |
+  <g g'>4 b'4( a'4 g'4) |
+  fs'4( e'4 fs'4 g'8 a'8) |
+  a'2( g'4) r4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \major
+  b2( c'4 as4) |
+  b4( d'4 c'4 b4) |
+  a2( b8 c'8 d'4) |
+  d'4( e'4 d'4) r4 |
+  b2( c'4 as4) |
+  b4( d'4 c'4 b4) |
+  a4( g4 a4 b8 c'8) |
+  <d c'>2( <g b>4) \tuplet 3/2 { g8( a8 b8) } |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \major
+  d'2( e'4 cs'4) |
+  d'1~ |
+  d'4( e'4 d'4 c'4) |
+  b4( c'4 b4) r4 |
+  d'2( e'4 cs'4) |
+  d'1( |
+  c'2. d'4) |
+  fs'2( g'4) \tuplet 3/2 { b8( c'8 d'8) } |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 5. 变奏 V 与外扩结构（mm. 121–152）：深渊回归与形式裂变
 

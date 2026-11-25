@@ -50,7 +50,123 @@ tags:
 
 第一乐章 Allegro ma non troppo 开篇展现了古典弦乐四重奏历史上最具辨识度的音响场景：
 
-德沃夏克《F大调第12弦乐四重奏“美国”》Op. 96 第一乐章 mm. 1–16（风笛织体、中提琴五声叙事与苏格兰切分）
+```lilypond title="德沃夏克《美国》弦乐四重奏 Op.96 第一乐章" location="Allegro ma non troppo，mm.1–16" id="dvorak-op96-i-mm1-16"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 4/4
+  \tempo "Allegro ma non troppo" 4 = 116
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r8 f''16( a''16 \repeat tremolo 6 { f''16 a''16 } |
+  \repeat tremolo 4 { f''16 a''16 } \repeat tremolo 4 { f''16 a''16 } |
+  \repeat tremolo 4 { f''16 a''16 } \repeat tremolo 4 { f''16 a''16 } |
+  \repeat tremolo 4 { f''16 a''16 } \repeat tremolo 4 { f''16 a''16 } |
+  \repeat tremolo 4 { f''16 a''16 } \repeat tremolo 4 { f''16 a''16 } |
+  f''16 a''16 f''16 a''16 f''16 a''16 f''16 a''16) f''16( a''16 f''16 c''16 a'16 f'16 a'16 c''16) |
+  f''8\mf( a''4 c'''8) d'''8.( f'''16-. d'''4-.) |
+  c'''8.( a''16 f''8 g''16 a''16) c'''2 |
+  c''8.\fz-> d''16-. f''16-. d''16-. r8 c''8.-> d''16-. f''16-. d''16-. r8 |
+  c''16( f''16 a''16 c'''16) c'''8.( a''16 f''4.) r8 |
+  r2 c''16( f''16 a''16 c'''16) c'''8. g''16-. |
+  f''8 r8 r4 c''16( f''16 a''16 c'''16) c'''8. g''16-. |
+  f''8 r8 r4 a'16( d''16 f''16 a''16) a''8. e''16-. |
+  d''8 r8 r4 a'16( d''16 f''16 a''16) a''8. e''16-. |
+  d''16\ff( f''16 a''16) d'''16-. d''16( f''16 a''16) d'''16-. d''16( f''16 a''16) d'''16-. d''16( f''16 a''16) d'''16-. |
+  d'1\fz->~ |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  r2 r8 a'16( c''16 a'16 c''16 a'16 c''16) |
+  \repeat tremolo 4 { a'16 c''16 } \repeat tremolo 4 { a'16 c''16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  a'16( f'16 a'16 f'16 a'16 f'16 a'16 f'16 \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  \repeat tremolo 4 { a'16 f'16 } \repeat tremolo 4 { a'16 f'16 } |
+  f'8 r8 f'16\upbow g'16 a'16 bf'16) c''4 e'8( bf'8 |
+  a'8) r8 f'16\upbow( g'16 a'16 bf'16) c''4 e'8( bf'8 |
+  a'8) r8 d''16\upbow( e''16 f''16 g''16) a''4( cs''4) |
+  d''8 r8 d''16\upbow( e''16 f''16 g''16) a''4( cs''4) |
+  d''8\ff-> d'8-. d''8-> d'8-. d''8-> d'8-. d''8-> d'8-. |
+  d'16( f'16 a'16) d''16-. d'16( f'16 a'16) d''16-. d'16( f'16 a'16) d''16-. d'16( f'16 a'16) d''16-. |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  r1 |
+  r1 |
+  f8\mf( a4 c'8) d'8. f'16-. d'4 |
+  c'8.( a16 f8 g16 a16 c'2) |
+  c8.-> d16-. f16-. d16-. r8 c8.-> d16-. f16-. d16-. r8 |
+  c16( f16 a16 c'16 c'8. a16) f4. r8 |
+  \repeat tremolo 4 { f16 a16 } \repeat tremolo 4 { f16 a16 } |
+  \repeat tremolo 4 { f16 a16 } \repeat tremolo 4 { f16 a16 } |
+  \repeat tremolo 4 { f16 a16 } \repeat tremolo 4 { f16 a16 } |
+  \repeat tremolo 4 { f16 a16 } \repeat tremolo 4 { f16 a16 } |
+  f8 r8 f4->( a4) bf16( a16 g16 c'16) |
+  c'8 r8 f4->( a4) bf16( a16 g16 c'16 |
+  f8) r8 d'4->( f'4) g'16( f'16 e'16 g'16) |
+  f'8 r8 d'4->( f'4) g'16( f'16 e'16 g'16) |
+  f8.\ff g16 f8. g16 f8. g16 f8. g16 |
+  f8. g16 f8. g16 f8. g16 f8. g16 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  r2 r4 r8 f,8-. |
+  f,1~ |
+  f,1~ |
+  f,1~ |
+  f,1~ |
+  f,2(~ f,8 a,8 c8 a,8) |
+  f,4. r8 r4 r8 f8 |
+  r8 a,8 r8 c8 r4 f8 f,8 |
+  r4 r8 d,8 r8 f,8 a,8 c8 |
+  f8 r8 a8 f8 d'8 c'8 f8 r8 |
+  f,16\f( a,16 c16 f16) f8.-> d16-. c4 r8 c8 |
+  f,16\fz( a,16 c16 f16) f8.-> d16-. c4 r8 c8 |
+  d16\fz( f16 a16 d'16) d'8.-> bf16-. a4 r8 a8 |
+  d16\fz( f16 a16 d'16) d'8. bf16-. a4 r8 a8 |
+  d8.\ff bf,16 d8. bf,16 d8. bf,16 d8. bf,16 |
+  d8. bf,16 d8. bf,16 d8. bf,16 d8. bf,16 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **风笛底噪与织体铺垫（mm. 1–2）**：
   * 大提琴在小字大组 $F_2$ 稳稳扎下八分音符低音根基并形成持续低音潜流；
@@ -72,7 +188,95 @@ tags:
 
 当奏鸣曲式推进至副部主题时，德沃夏克并未采用典型的属调（C 大调），而是转向具有三度中音色彩的 A 大调/升 c 调性倾向：
 
-德沃夏克《F大调第12弦乐四重奏“美国”》Op. 96 第一乐章 mm. 44–52（第二主题五声调式转位与抒情切分对话）
+```lilypond title="德沃夏克《美国》弦乐四重奏 Op.96 第一乐章" location="Allegro ma non troppo，mm.44–52" id="dvorak-op96-i-mm44-52"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 4/4
+  \tempo "Allegro ma non troppo" 4 = 116
+}
+
+staffOne = {
+  \global
+  \clef treble
+  a'4\ppp--( b'4--) cs''4( b'8-. a'8-.) |
+  b'8( fs''16 b'16 a'8-. fs'8-.) fs'2 |
+  b'8( a'4 fs'8) e'16-. e'16-. a'16-. cs''16-. e''4-> |
+  d''4.\fz( fs'8) e'2 e''16 e''4.-> |
+  a'4\pp--( b'4--) cs''8( d''16 cs''16 b'8 a'8) |
+  \tuplet 5/4 { b'16( fs''16 cs''16 b'16 a'16 } fs'8) fs'8-. fs'2 |
+  b'8( a'4 f'8) e'16-! e'16-! a'16-! cs''16-! e''4 |
+  d''4.\f( fs'8) es'2 |
+  cs''4( d''4 e''4) d''16( b'16) b'8-. |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  cs'2\ppp(~ <cs' e'>2) |
+  <b fs'>1~ |
+  <b fs'>2 <e' a'>2 |
+  <fs' d''>2\fz( <e' cs''>2) |
+  e'1\pp |
+  fs'1 |
+  f'2 <e' a'>2 |
+  <fs' d''>2\f b'8( gs'8 es'8 cs''8) |
+  e'4( fs'4) g'4( fs'8 d'8) |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  e2\ppp a2~ |
+  a1 |
+  a2 <e a>2 |
+  <d b>2\fz( <e cs'>2) |
+  cs'1\pp |
+  a1 |
+  a2 <e a>2 |
+  d8\f( fs8 d'8 b8) gs2 |
+  as2. b8( d'8) |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  a,1\ppp |
+  d1 |
+  d2( cs2) |
+  gs,2\fz( a,2) |
+  a1\pp |
+  d1~ b2~ |
+  b2 cs2 |
+  gs,2\f cs2 |
+  fs2. b4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **五声调式的色彩平移（mm. 44–46）**：
   * 第一小提琴以柔美如歌（$pianissimo$, $dolce$）奏出由 $A_4$–$B_4$–$C\sharp_5$–$F\sharp_5$ 构成的五声调式第二主题；
@@ -89,7 +293,171 @@ tags:
 
 第三乐章 Molto vivace（3/4 拍，全 196 小节）采用了罕见的双重三部曲式（A–B–A–B–A），将民间诙谐的身体律动与大自然的实景临摹高度凝练为一体：
 
-德沃夏克《F大调第12弦乐四重奏“美国”》Op. 96 第三乐章 mm. 1–28（诙谐曲主题跳跃与绯红唐纳雀鸣啭动机点彩）
+```lilypond title="德沃夏克《美国》弦乐四重奏 Op.96 第三乐章" location="Molto vivace，mm.1–28" id="dvorak-op96-iii-mm1-28"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 3/4
+  \tempo "Molto vivace" 4 = 168
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  c''2.\p-> |
+  c''2.-> |
+  c''2.->~ |
+  c''4 r4 r4 |
+  c'''8\f r8 f'''4.-> d'''8 |
+  c'''8 d'''8 f'''4 r4 |
+  c'''8 r8 f'''4.-> d'''8 |
+  c'''8 d'''8 a''4 r4 |
+  c'''2.\pp-> |
+  c'''2.-> |
+  c'''2.->~ |
+  c'''4 r4 r4 |
+  c'''8\ff d'''8 f'''4 r4 |
+  r2 r4 |
+  c''8 d''8 f''4 r4 |
+  r2 r4 |
+  a'''4\p( f'''4) r8 c'''8 |
+  c'''4( g'''8 f'''8) r8 a'''8 |
+  a'''4( f'''4 e'''8 d'''8 |
+  f'''4) r4 r4 |
+  a'''4( f'''4) r8 c'''8 |
+  c'''4( g'''8 f'''8) r8 a'''8 |
+  a'''4( f'''4 e'''8 d'''8) |
+  f'''4 r4 r4 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  c''8\f r8 f''4.-> d''8 |
+  c''8 d''8 f''4 r4 |
+  c''8 r8 f''4.-> d''8 |
+  c''8 d''8 a'4 r4 |
+  f'4\p( g'4-> d'8 e'8) |
+  f'4( g'4-> d'8 e'8) |
+  f'4( g'4-> d'8 e'8) |
+  f'4( g'8 e'8 f'8) r8 |
+  c''8\f r8 f''4.-> d''8 |
+  c''8 d''8 f''4 r4 |
+  c''8 r8 f''4.-> d''8 |
+  c''8 d''8 a'4 r4 |
+  f''4\pp( g''4-> d''8 e''8) |
+  f''4( g''4-> d''8 e''8) |
+  f''4( g''4-> d''8 e''8) |
+  f''4 r4 r4 |
+  r2 r4 |
+  c'''8\ff d'''8 a''4 r4 |
+  r2 r4 |
+  c''8 d''8 a'4 r4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8 d''8 f''4 |
+  r4 c''8( d''8 bf'4 |
+  a'4) r4 r4 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  a4\p( bf4.-> g8) |
+  a4( bf4.-> g8) |
+  a4( bf4.-> g8) |
+  a4 r4 r4 |
+  c'8\f r8 f'4.-> d'8 |
+  c'8 d'8 f'4 r4 |
+  c'8 r8 f'4.-> d'8 |
+  c'8 d'8 a4 r4 |
+  a'4\pp( bf'4.-> g'8) |
+  a'4( bf'4.-> g'8) |
+  a'4( bf'4.-> g'8) |
+  a'4 r4 r4 |
+  r4 <d' a'>8 <d' a'>8 <d' a'>8 r8 |
+  r4 <f' c''>8 <f' c''>8 <f' c''>8 r8 |
+  r2 r4 |
+  r2 r4 |
+  f'8\p f'8 f'8 f'8 a'8( f'8) |
+  f'8 f'8 f'8 f'8 a'8( f'8) |
+  f'8 f'8 f'8 f'8 a'8( f'8) |
+  a'8( f'8) f'8 f'8 a'8( f'8) |
+  f'8 f'8 f'8 f'8 a'8( f'8) |
+  f'8 f'8 f'8 f'8 a'8( f'8) |
+  f'8 f'8 f'8 f'8 g'8( f'8) |
+  f'4-. f4-. r4 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  c'8\f r8 f'4.-> d'8 |
+  c'8 d'8 f'4 r4 |
+  c'8 r8 f'4.-> d'8 |
+  c'8 d'8 a4 r4 |
+  c2\p c,4 |
+  c2 c,4 |
+  c2 c,4 |
+  f,4 r4 r4 |
+  r2 r4 |
+  r4 <d a>8-> <d a>8 <d a>8 r8 |
+  r2 r4 |
+  r4 <f c'>8-> <f c'>8 <f c'>8 r8 |
+  c'2\pp c4 |
+  c'2 c4 |
+  c'2 c4 |
+  f4 d8-. c8-. f,8 r8 |
+  r2 r4 |
+  r2 r4 |
+  r4 <d a>8 <d a>8 <d a>8 r8 |
+  r4 <f c'>8 <f c'>8 <f c'>8 r8 |
+  c'8\p-> d'8 a4 r4 |
+  c'8-> d'8 a4 r4 |
+  c'8-> d'8 a4 r4 |
+  c'8->( d'8) a4 r4 |
+  c'8-> d'8 a4 r4 |
+  c'8-> d'8 a4 r4 |
+  c'8-> d'8 a4 g8( f8) |
+  f4-. f,4-. r4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **八度断奏与偏心重音（mm. 1–8）**：
   * mm. 1–4：第一小提琴与中提琴整整静止 4 小节，第二小提琴与大提琴以极具弹性的大八度跳进（$C_5$–$F_5$–$D_5$ 与 $C_4$–$F_4$–$D_4$）轻声奏出跳跃的五声核心骨架；三拍子中原本次强的第二拍因跳进四分音符而被强化，形成轻灵的偏心重音；
@@ -101,7 +469,107 @@ tags:
   * 德沃夏克在斯皮尔维尔散步时深深着迷于北美林间鲜红的唐纳雀鸣叫，并将这段真实鸟鸣升华为主部的高潮动机；
   * 第一小提琴陡然跃升至极高音区，在 $A_6$–$F_6$–$C_6$–$G_6$ 的音程之间飞速滑跃与颤鸣，穿透了四重奏下方的全音符长音背景，展现出惊人的空间纵深感。
 
-德沃夏克《F大调第12弦乐四重奏“美国”》Op. 96 第三乐章 mm. 49–60（F小调 Trio 主题时值扩增与哀歌沉思变形）
+```lilypond title="德沃夏克《美国》弦乐四重奏 Op.96 第三乐章" location="a tempo（F 小调 Trio），mm.49–60" id="dvorak-op96-iii-mm49-60"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \minor
+  \time 3/4
+  \tempo "a tempo" 4 = 126
+}
+
+staffOne = {
+  \global
+  \clef treble
+  c''4\pp( f''4 g''4 |
+  af''4 g''4 f''4) |
+  af''4( c'''4 bf''4 |
+  af''4 g''4 f''4) |
+  ef''4( f''4 g''4 |
+  af''4 bf''4 b''4) |
+  c'''4( af''4 f''4 |
+  ef''2) r4 |
+  af''8\mf-> r16 g''16 g''8 r16 f''16 f''4 |
+  af''8-> r16 g''16 g''8 r16 f''16 f''4 |
+  af''8-> r16 g''16 g''8 r16 f''16 f''4 |
+  af''8-> r16 g''16 g''8 r16 f''16 f''4 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  c''2.\pp( |
+  f''2 df''4) |
+  c''2( df''4 |
+  f''2) r4 |
+  c''2.( |
+  f''2 df''4) |
+  c''2( df''4 |
+  c''2) r4 |
+  af'8\mf-> r16 g'16 g'8 r16 f'16 f'4 |
+  af'8-> r16 g'16 g'8 r16 f'16 f'4 |
+  af'8-> r16 g'16 g'8 r16 f'16 f'4 |
+  af'8-> r16 g'16 g'8 r16 f'16 f'4 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  f8\fp f8 f4-> r4 |
+  df8\fz-> df8 df4-> r4 |
+  f8\fp f8 f4-> r4 |
+  df8\fp df8 df4-> r4 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  c'2.\mf |
+  f'2( df'4) |
+  c'2( df'4) |
+  f'2. |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **调式阴翳与时值扩增（Augmentation，mm. 49–56）**：
   * 进入 Trio（Poco meno mosso，转入 4 个降号的 f 小调），德沃夏克没有遵循常规引入全新旋律，而是实施了极具匠心的**时值扩增与调式降半音重构**；

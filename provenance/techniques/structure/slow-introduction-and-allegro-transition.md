@@ -15,8 +15,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 1–2 | MuseData kern | 学术核对 |
-| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 3–8 | MuseData kern | 学术核对 |
-| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Adagio，mm. 9–16 | MuseData kern | 学术核对 |
-| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 17–32 | MuseData kern | 学术核对 |
-| 占位（未出谱） | 海顿《D大调第104交响曲》第一乐章 | Allegro，mm. 33–40 | MuseData kern | 学术核对 |
+| `haydn-hob1-104-i-adagio-mm1-2` | 海顿《D大调第104交响曲》Hob.I:104 第一乐章 | Adagio，mm.1–2（木管与弦乐齐奏） | MuseData/CCARH kern 与 OpenScore 转写体 MusicXML 比对后自编码 | 据 CCARH MuseData 转写，学术用途 |
+| `haydn-hob1-104-i-adagio-mm3-8` | 海顿《D大调第104交响曲》Hob.I:104 第一乐章 | Adagio，mm.3–8（弦乐四部＋第一大管） | MuseData/CCARH kern 与 OpenScore 转写体 MusicXML 比对后自编码 | 据 CCARH MuseData 转写，学术用途 |
+| `haydn-hob1-104-i-adagio-mm9-16` | 海顿《D大调第104交响曲》Hob.I:104 第一乐章 | Adagio，mm.9–16（弦乐四部） | MuseData/CCARH kern 与 OpenScore 转写体 MusicXML 比对后自编码 | 据 CCARH MuseData 转写，学术用途 |
+| `haydn-hob1-104-i-mm17-31`（关联引用） | 海顿《D大调第104交响曲》Hob.I:104 第一乐章 | Allegro，mm.17–32（源编号 17–31，收录于《管弦乐音色转型》） | MuseData/CCARH kern 与 OpenScore 转写体 MusicXML 比对后自编码 | 据 CCARH MuseData 转写，学术用途 |
+| `haydn-hob1-104-i-mm32-39`（关联引用） | 海顿《D大调第104交响曲》Hob.I:104 第一乐章 | Allegro，mm.33–40（源编号 32–39，收录于《管弦乐音色转型》） | MuseData/CCARH kern 与 OpenScore 转写体 MusicXML 比对后自编码 | 据 CCARH MuseData 转写，学术用途 |

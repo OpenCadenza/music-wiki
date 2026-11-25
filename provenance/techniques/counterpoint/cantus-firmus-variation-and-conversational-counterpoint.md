@@ -16,8 +16,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| `haydn-op76no3-ii-mm1-20`（关联引用） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 1–20（收录于《弦乐四重奏》） | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 21–40 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 41–60 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 61–80 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
-| 占位（未出谱） | 海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 | Poco adagio, cantabile，mm. 81–100 | OpenScore MXL / MuseData kern | CC0-1.0 / 学术核对 |
+| `haydn-op76no3-ii-mm1-20`（关联引用） | 海顿《C大调弦乐四重奏》Op.76 No.3 第二乐章 | Poco adagio, cantabile，mm.1–20（谱例收录于《弦乐四重奏》） | OpenScore StringQuartets（CC0-1.0）`sq20428156.mxl` 自编码摘录 | CC0-1.0 |
+| `haydn-op76no3-ii-mm21-28` | 海顿《C大调弦乐四重奏》Op.76 No.3 第二乐章 | Poco adagio, cantabile，mm.21–28 | OpenScore StringQuartets（CC0-1.0）`sq20428156.mxl` 自编码摘录 | CC0-1.0 |
+| `haydn-op76no3-ii-mm41-48` | 海顿《C大调弦乐四重奏》Op.76 No.3 第二乐章 | Poco adagio, cantabile，mm.41–48 | OpenScore StringQuartets（CC0-1.0）`sq20428156.mxl` 自编码摘录 | CC0-1.0 |
+| `haydn-op76no3-ii-mm72-79` | 海顿《C大调弦乐四重奏》Op.76 No.3 第二乐章 | Poco adagio, cantabile，mm.72–79 | OpenScore StringQuartets（CC0-1.0）`sq20428156.mxl` 自编码摘录 | CC0-1.0 |
+| `haydn-op76no3-ii-mm81-88` | 海顿《C大调弦乐四重奏》Op.76 No.3 第二乐章 | Poco adagio, cantabile，mm.81–88 | OpenScore StringQuartets（CC0-1.0）`sq20428156.mxl` 自编码摘录 | CC0-1.0 |

@@ -47,7 +47,103 @@ tags:
 
 魏尔伦的名句“泪洒我心，正如雨落屋顶”，在德彪西笔下被转化为物理雨滴与内心情感平面的精妙对位：
 
-德彪西《被遗忘的抒情调》No. 2《泪洒我心》mm. 1–17（雨幕背景音型与人声朗诵调前景解耦）
+```lilypond title="德彪西《被遗忘的抒情调》No.2《泪洒我心》" location="Allegro non tanto，mm.1–17" id="debussy-ariettes2-mm1-17"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key b \major
+  \time 3/4
+  \tempo "Allegro non tanto" 4 = 66
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r4 r4 gs'4( |
+  b'2. |
+  gs'4) gs'4( gs'4 |
+  b'2) gs'8( gs'8 |
+  b'4 gs'4 ds'4 |
+  d'2.)~ |
+  d'4 r4 r4 |
+  r4 cs'4( e'4 |
+  f'4 fs'4 cs''4 |
+  cs''2.) |
+  gs''2( fs''4) |
+  fs''4( e''4 cs''4~ |
+  cs''4 b'4 gs'4 |
+  e'2.) |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  ds''16\pp( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''16\p( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) ds''16( b'16 ds''16 b'16) |
+  ds''4 ds'16 gs'16 ds'16 b'2 ds'16 gs'16 ds'16 gs'16 ds'16 gs'16 ds'16 |
+  ds''4 ds'16 gs'16 ds'16 b'2 ds'16 gs'16 ds'16 gs'16 ds'16 gs'16 ds'16 |
+  gs'4\pp fs'16 d'16 b16 fs'2 d'16 b16 gs16 r16 d'16 b16 gs16 |
+  gs'4 fs'16 d'16 b16 fs'2 d'16 b16 gs16 r16 d'16 b16 gs16 |
+  e'2.\pp-> e16 cs'16 e16 cs'16( e16 cs'16 e16) cs'16( e16 cs'16 e16) |
+  e'2.-> e16 d'16 e16 d'16( e16 d'16 e16) d'16( e16 d'16 e16) |
+  r4\p cs'4 e16 a16 e16 e'4 a16 cs'16 a16 |
+  f'4 gs16 d'16 gs16 fs'4 b16 d'16 b16 cs''4 d'16 gs'16 d'16 |
+  cs''4\p\p cs'16 a'16 cs'16 cs''4 e'16 a'16 e'16 e''4 a'16 cs''16 a'16 |
+  f''4 gs'16 ds''16 gs'16 fs''4 b'16 ds''16 b'16 cs'''4 ds''16 gs''16 ds''16 |
+  cs'''4 cs''16 a''16 cs''16 cs'''2 e''16 a''16 e''16 a''16 e''16 a''16 e''16 |
+}
+
+staffTwoDown = {
+  \global
+  \clef treble
+  r2 r4 |
+  r2 r4 |
+  ds'4\p( es'4 ds'4 |
+  cs'4 b8 cs'8 ds'4)~ |
+  ds'4( gs'4 g'4 |
+  fs'4 es'4 e'4) |
+  b2.->~ g4 fs4 |
+  b2. e4 ds4 |
+  e,2\pp b,4 fs4 |
+  e,2 b,4 fs4 |
+  r2 r4 |
+  a,,2. fs4 gs4 |
+  a,,2.\p cs4( e4 |
+  e2. fs4 gs4) |
+  a,2\p\p cs'4( e'4 |
+  b4 d'4 e'4 |
+  a4) a'2() |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **雨幕背景平面的确立（mm. 1–3）**：
   * 全曲 3/4 拍，标记为 Allegro non tanto，调号 5 个升号（升 g 小调/B 大调）；
@@ -66,7 +162,82 @@ tags:
   * mm. 38–41“Il pleure sans raison”，人声旋律线引入微弱的半音下行级进，中景和声层通过平行下行导和弦带来轻度和声阻尼；
   * mm. 42–46 在“Dans ce cœur qui s'écœure”处，各声部动态收缩至极限，为接下来的调式突变蓄积了心理张力。
 
-德彪西《被遗忘的抒情调》No. 2《泪洒我心》mm. 47–56（中景调式色彩平移与情感哀思停顿）
+```lilypond title="德彪西《被遗忘的抒情调》No.2《泪洒我心》" location="Moderato，mm.47–56" id="debussy-ariettes2-mm47-56"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key c \major
+  \time 3/4
+  \tempo "Moderato" 4 = 76
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r4 f'4~ f'8 r8 |
+  r4 f'8( f'8 f'8 a'8 |
+  f'4) r4 r4 |
+  r4 r4 f'4( |
+  f''2.) |
+  d''4\pp-.-- d''4-.-- d''4-.-- |
+  d''2.-.--~ |
+  d''4 r4 r4 |
+  r2 r4 |
+  r2 r4 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  f4\p->~ df'8~ df'8 r8 r4 f8( |
+  a4\p~ cs'8~ cs'4) r4 |
+  f'2 df'8~ df'4~ df'8 f'8~ |
+  f'2. cs'8~ cs'2( |
+  a'2.\pp\pp)( |
+  f'2.) |
+  gs'4\pp\pp( r8 a'4 gs'4 |
+  fs'4 e'8 fs'8 gs'4)~ |
+  gs'4\p( d''16 b'16 d''16 b'16 d''16 b'16 d''16 b'16) |
+  d''2. b''16 d'''16 b''16 d'''16 b''16 d'''16 b''16 d'''16 b''16 d'''16 b''16 |
+}
+
+staffTwoDown = {
+  \global
+  \clef treble
+  bf,,4\p->~ bf,,8 r8 r4 |
+  f,2\p r4 |
+  bf,2. f8 |
+  g2. a,4 |
+  d,2.\pp\pp e'4( d'4~ |
+  d'4 cs'4 c'4) |
+  b16\pp\pp( d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16) |
+  gs16( b16 gs16 b16 a16 c'16 a16 c'16 as16 cs'16 as16 cs'16) |
+  b16\p( d'16 b16 d'16 a'4 gs'4 |
+  fs'4 gs'8 fs'8 e'4) |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **调式中景的突发平移（mm. 47–50）**：
   * 音乐突然转入 Moderato，调号完全还原（0 升号），人声以质问的口吻唱出“Quoi! nulle trahison?”；
@@ -79,7 +250,100 @@ tags:
 
 第四首取材于旋转木马的民俗场景，展现了机械圆周运动平面与内心幻灭平面的戏剧性碰撞：
 
-德彪西《被遗忘的抒情调》No. 4《木马》mm. 1–16（飞旋机械圆周运动音响平面与民间号角音型）
+```lilypond title="德彪西《被遗忘的抒情调》No.4《木马》" location="Allegro non tanto，mm.1–16" id="debussy-ariettes4-mm1-16"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key e \major
+  \time 2/4
+  \tempo "Allegro non tanto" 4 = 112
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r4 r8. b'16-> |
+  e''8.-> e''16-> b'4-> |
+  cs''16\mp-. cs''16-. cs''16-. cs''16-. gs'8-. gs'8-. |
+  a'8\p as'8 b'8 e'8 |
+  f'8 fs'16 fs'16 g'8 b'8-> |
+  e''8.-> e''16 b'4 |
+  cs''16\mp-. cs''16-. cs''16-. cs''16-. gs'8-. gs'8( |
+  a'8 as'8 b'8) e'8 |
+  f'8 fs'16 fs'16 g'4 |
+}
+
+staffTwoUp = {
+  \global
+  \clef bass
+  r2 |
+  r2 |
+  \tuplet 3/2 { fs'8-> fs'8-. cs'8-. } e'8-> fs8-> |
+  \tuplet 3/2 { fs'8-> fs'8-. cs'8-. } e'8-> fs8-> |
+  \tuplet 3/2 { <ds' gs'>8-> <ds' gs'>8-. <b ds'>8-. } <cs' fs'>8-> <b, fs>8-> |
+  \tuplet 3/2 { <ds' gs'>8-> <ds' gs'>8-. <b ds'>8-. } <cs' fs'>8-> <b, fs>8-> |
+  \tuplet 3/2 { <ds' gs' b'>8-> <b, fs>8-> <ds' gs' b'>8-> } <b, fs>8-> <ds' gs' b'>8->~ |
+  \tuplet 3/2 { <ds' gs' b'>8 <b, fs>8-> <ds' gs' b'>8-> } <b, fs>8-> <ds' gs' b'>8 |
+  r32\sf e''32( b'32 gs'32) e'32->( e''32 b'32 gs'32) r32 b'32( fs'32 ds'32) b32->( b'32 fs'32 ds'32) |
+  r32\mp cs''32( gs'32 e'32) cs'32->( cs''32 gs'32 e'32) r32 gs'32( ds'32 b32) gs32->( gs'32 ds'32 b32) |
+  r32\p a'32( e'32 cs'32) r32( bf'32 f'32 d'32) r32 b'32( fs'32 ds'32) r32 e'32( b32 gs32) |
+  r32 f'32( c'32 a32) r32( fs'32 cs'32 as32) r32 g'32( d'32 b32) r32 b'32( fs'32 ds'32) |
+  r32\ff\sf e''32( b'32 gs'32) e'32->( e''32 b'32 gs'32) r32 b'32( fs'32 b32) gs32->( b'32 fs'32 ds'32) |
+  r32\ff cs''32( gs'32 e'32) cs'32->( cs''32 gs'32 e'32) r32 gs'32( ds'32 b32) gs32->( gs'32 ds'32 b32) |
+  r32 a'32( e'32 cs'32) r32( bf'32 f'32 d'32) r32 b'32( fs'32 ds'32) r32 e'32( b32 gs32) |
+  r32 f'32( c'32 a32) r32( fs'32 cs'32 as32) r32 g'32( d'32 b32) g32( g'32 d'32 b32) |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  a2\ff\trill |
+  a2\ff\trill |
+  a2\trill |
+  a2\trill |
+  a2\trill |
+  a2\trill |
+  a2\trill |
+  a2\trill |
+  e,,8\sf r8 <b ds' fs'>8-. r8 |
+  <cs' e' gs'>8\mp-. r8 <gs b ds'>8-. r8 |
+  a8\p bf8 b8 e8 |
+  f8 fs8 g8 <b ds' fs'>16 r16 |
+  <e' gs' b'>8\ff\sf-. r8 <b ds' fs'>8-. r8 |
+  <cs' e' gs'>8\ff-. r8 <gs b ds'>8-. r8 |
+  a8-. bf8 b8 e8 |
+  f8 fs8 g8 r8 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **机械飞旋背景平面的构建（mm. 1–8）**：
   * 全曲 2/4 拍，Allegro non tanto，调号 4 个升号（E 大调）；
@@ -95,7 +359,91 @@ tags:
   * mm. 59–64 标记“Tempo ritenuto poco a poco”，调号完全还原，人声转入沉重的呼告（“Et dépêchez, chevaux de leur âme”）；
   * mm. 65–77 伴随“La nuit qui tombe”（夜幕降临），钢琴织体反复出现“dim.”与“molto dim. e ritenuto”，飞旋动型被拉宽、频率被稀释，展示了背景平面声能衰退的声学历程。
 
-德彪西《被遗忘的抒情调》No. 4《木马》mm. 78–90（时空减速、钟声平面的浮现与声学空间重构）
+```lilypond title="德彪西《被遗忘的抒情调》No.4《木马》" location="a Tempo（le double plus lent），mm.78–90" id="debussy-ariettes4-mm78-90"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key e \major
+  \time 2/4
+  \tempo "a Tempo (le double plus lent)" 4 = 54
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r4 r8 b'8( |
+  e''4) r8 e''8 |
+  b'4 r4 |
+  e''8( e''8 e''8 e''8 |
+  b'4) \tuplet 3/2 { b'8( b'8 b'8 } |
+  cs''4.) cs''8( |
+  d''4 d''8 d''8 |
+  ds''2)~ |
+  ds''4 r4 |
+  r8 as'8( fs'8 gs'8 |
+  as'8 cs''8 ds''8 fs''8 |
+  \tuplet 3/2 { es''4 ds''4 cs''4 } |
+  as'2) |
+}
+
+staffTwoUp = {
+  \global
+  \clef bass
+  r32 b'32( a'32 ds'32) b32->( b'32 a'32 ds'32) r32 b'32( a'32 ds'32) b32->( b'32 a'32 ds'32) |
+  r4\ppp e''4--\arpeggio( |
+  r4 b'4--\arpeggio) |
+  r4 e''4--\arpeggio( |
+  r4 b'4--\arpeggio) |
+  r4 cs'4--\arpeggio |
+  r4 d'4--\arpeggio |
+  ds'2\pppp\pppp\arpeggio cs''4\arpeggio |
+  cs'8-> fs16-. gs16-. bs4 |
+  ds'2\ppp\ppp\arpeggio cs''4\arpeggio |
+  cs'8-> fs16-. gs16-. fs4 |
+  ds'2\ppp\ppp\arpeggio cs''4\arpeggio |
+  cs'8-> fs16-. gs16-. fs4 |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  b2 |
+  cs'2\ppp( cs''2) |
+  gs2 gs'2 |
+  cs'2( cs''2) |
+  gs2 gs'2 |
+  \repeat tremolo 8 { a32 cs'32 } |
+  \repeat tremolo 8 { d32 a32 } |
+  ds,2\pppp\pppp ds'4~ as'4 |
+  ds'4 as'4 ds'4 as'4 |
+  ds,2\ppp\ppp ds'4~ as'4 |
+  ds'4 as'4 ds'4 as'4 |
+  ds,2\ppp\ppp ds'4~ as'4 |
+  ds'4 as'4 ds'4 as'4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **时空减速与旋转平面的消解（mm. 78–84）**：
   * 随着夜幕降临（“La nuit qui tombe”），音乐在第 78 小节标记“sempre pianissimo”，第 79 小节发生惊人转折：**速度陡然放慢一倍**（“a Tempo. le double plus lent”）；

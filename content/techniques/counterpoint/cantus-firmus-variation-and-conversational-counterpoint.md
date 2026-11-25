@@ -26,7 +26,7 @@ description: 剖析海顿《皇帝四重奏》Op.76 No.3第二乐章中的定旋
 - **后句回归（mm. 13–16）**：$c$ 句引导旋律重回 G 大调主调，并在下属功能区作短暂抒情延展；
 - **扩充强收束（mm. 17–20）**：$c'$ 句对后句进行动力加固，低音稳健支撑前属功能，经[《终止四六和弦》](../harmony/cadential-six-four-and-dominant-syntax.md)的强力解决，最终在第 20 小节以无可争议的完全正格终止闭合原型。
 
-海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 1–20（完整乐谱与音频渲染参见 [《弦乐四重奏》](../../ensembles/string-quartet-acoustic-role-differentiation.md)）。
+海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 1–20 的完整谱例与音频渲染见[《弦乐四重奏》](../../ensembles/string-quartet-acoustic-role-differentiation.md#score-haydn-op76no3-ii-mm1-20)。
 
 ### 2. 四部合唱圣咏织体（Chorale Texture）
 在主题呈示阶段（mm. 1–20），四件乐器呈现严格的合唱圣咏式等时织体：
@@ -53,13 +53,91 @@ description: 剖析海顿《皇帝四重奏》Op.76 No.3第二乐章中的定旋
 2. **两件低音乐器的彻底沉默**：在整整 20 小节的时间跨度中，大提琴与[《中提琴写作》](../sound/viola-writing-and-orchestral-voicing.md)完全休止（20-bar rests），将整个中低音频谱全部抽空；
 3. **空间维度的极限净化**：通过彻底抽离低音与内声部，音乐摆脱了沉重的重力束缚，蜕变为两把小提琴在高音区的纯净对话。
 
-海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 21–32。
+```lilypond title="海顿 弦乐四重奏 Op.76 No.3《皇帝》第二乐章" location="Poco adagio, cantabile，mm.21–28" id="haydn-op76no3-ii-mm21-28"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Op.76 No.3《皇帝》第二乐章，第一变奏（第二小提琴执掌定旋律）。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Poco adagio, cantabile" 4 = 56
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \major
+  d''16\staccato g''16\staccato b''16\staccato g''16\staccato fs''16\staccato d'16\staccato fs''16\staccato g''16\staccato gs''16( a''16 c'''16 fs''16) a''16( g''16 b''16 d''16) |
+  d''16( c''16 e''16 c''16) as'16( b'16 fs'16 g'16) r16 g''16( d'''16 c'''16) fs''16( c'''16 as''16 b''16) |
+  r16 e''16( b''16 a''16) d''16( a''16 fs''16 g''16) r16 c''16( g''16 fs''16) a''16( g''16 b''16 g''16) |
+  fs''16 a''16 cs'''16 d'''16 d'16 e'16 c'16 d'16 b16\staccato d'16\staccato g'16\staccato b'16\staccato d''16\staccato g''16\staccato fs''16\staccato e''16\staccato |
+  d''16\staccato g''16\staccato b''16\staccato g''16\staccato fs''16\staccato d'16\staccato fs''16\staccato g''16\staccato gs''16( a''16 c'''16 fs''16) a''16( g''16 b''16 d''16) |
+  d''16( c''16 e''16 c''16) as'16( b'16 fs'16 g'16) r16 g''16( d'''16 c'''16) fs''16( c'''16 as''16 b''16) |
+  r16 e''16( b''16 a''16) d''16( a''16 fs''16 g''16) r16 c''16( g''16 fs''16) a''16( g''16 b''16 g''16) |
+  fs''16 a''16 cs'''16 d'''16 d''4 d'16( fs'16 d''16 fs'16) d'16( g'16 d''16 g'16) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \major
+  b'4( a'4 c''4 b'4) |
+  a'8( fs'8 g'4) e''4( d''4 |
+  c''4 b'4) a'4( b'8 g'8) |
+  d''2 g'4.( a'8) |
+  b'4( a'4 c''4 b'4) |
+  a'8( fs'8 g'4) e''4( d''4 |
+  c''4 b'4) a'4( b'8 g'8) |
+  d''2 a'4( b'4) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 第一小提琴的隐伏多声部华彩
 第一小提琴化身为轻盈灵动的花腔装饰声部，以连绵不断的十六分音符分解琶音围绕第二小提琴上下翻飞：
 - **宽广音域跨度**：第一小提琴音域从小字一组 $d1$ 一路飞升至小字三组 $d4$，形成极具穿透力的高音拱顶；
 - **隐伏多声部对位（Compound Melody）**：十六分音符跑动中暗含双层对位线条，上方骨干音与第二小提琴构成流动的三度与六度谐和，下方经过音则持续维持和声推进动量；
-- **半音微调**：如第 21 小节的 $g\sharp 2 \to a2$、第 22 小节的 $a\sharp 2 \to b2$，在不破坏赞歌纯洁性的前提下，注入了加兰特风格的灵动情趣；
+- **半音微调**：第 21–22 小节的十六分音符跑动中夹入半音化色彩音，在不破坏赞歌纯洁性的前提下，注入了加兰特风格的灵动情趣（具体音高以上方谱例为准）；
 - **句法呼吸的一致性**：尽管第一小提琴十六分音符滔滔不绝，但其呼吸节律严格依附于第二小提琴的定旋律分句，形成了极其严密的对位互锁。
 
 大提琴与中提琴的长达 20 小节休止，蓄积了巨大的声学期待，使得后续低音声部的破土而出具有无与伦比的震撼力。
@@ -75,7 +153,85 @@ description: 剖析海顿《皇帝四重奏》Op.76 No.3第二乐章中的定旋
 - **和声配置的严苛考验**：定旋律本身包含大量二度级进，移入最低声部后直接成为真实和声的低音。上方三件乐器必须精巧调整和弦排列，既要维持原曲的功能属性，又要避免产生不自然的四六和弦与声部平行；
 - **空间反差**：低音提琴般的厚重线条与上方飘渺的弦乐群构成了截然不同的织体层次。
 
-海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 41–60。
+```lilypond title="海顿 弦乐四重奏 Op.76 No.3《皇帝》第二乐章" location="Poco adagio, cantabile，mm.41–48" id="haydn-op76no3-ii-mm41-48"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Op.76 No.3《皇帝》第二乐章，第二变奏（大提琴执掌定旋律）。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Poco adagio, cantabile" 4 = 56
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \major
+  g'8 g''4( fs''8) r8 e''4 d''8~ |
+  d''8 c''4( b'8) r8 cs''4( d''8) |
+  e''8 fs''4( g''8) d'''8 c'''4( b''8~) |
+  b''8 a''8 g''16( fs''16 e''16 d''16) r8 d''8( b'8 fs'8) |
+  g'8 g''4( fs''8) r8 e''4 d''8~ |
+  d''8 c''4( b'8) r8 cs''4( d''8) |
+  e''8 fs''4( g''8) d'''8 c'''4( b''8~) |
+  b''8 a''8 g''16( fs''16 e''16 d''16) r8 d''4( cs''8) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \major
+  d'4 c'4 fs'4( g'4 |
+  fs'8 a'4 g'8) g'4( fs'4 |
+  e'4 d'4) fs'4( g'4 |
+  fs'4) r4 b4.( c'8) |
+  d'4( c'4 fs'4 g'4) |
+  fs'8( a'4 g'8) g'4( fs'4 |
+  e'4 d'4) fs'4( g'4 |
+  fs'4) r4 fs'4( g'4) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \major
+  r2\p d2~ |
+  d4 g4 r2 |
+  r2 d2~ |
+  d4 r4 r2 |
+  r2 d2~ |
+  d4 g4 r2 |
+  r2 d2~ |
+  d4 r4 d2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \major
+  b4( a4 c'4 b4) |
+  a8( fs8 g4) e'4( d'4 |
+  c'4 b4) a4( b8 g8) |
+  d'2 g4.( a8 |
+  b4 a4) c'4( b4 |
+  a8 fs8 g4) e'4( d'4 |
+  c'4 b4) a4( b8 g8) |
+  d'2 a4( b4) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 第一小提琴的切分叹息与悬留对位
 第一小提琴在此变奏中一改十六分音符的流丽，转入带有悲剧气质的**切分叹息音型**（*Seufzer*）：
@@ -90,11 +246,89 @@ description: 剖析海顿《皇帝四重奏》Op.76 No.3第二乐章中的定旋
 第三变奏（mm. 61–80）是全乐章对位戏剧性与和声冒险的最高峰。海顿在此打破了古典主义变奏的常规界限：
 
 ### 1. 中提琴担当核心声部枢纽
-- **核心定位**：赞歌定旋律由中提琴在温暖的中音区（$G3 \to E4$）平静唱出；
+- **核心定位**：赞歌定旋律由中提琴以中音谱号在原主题的同一八度上平静唱出（音高走向见下方谱例），并未降八度沉入低音；
 - **声学包围**：中提琴处于乐器音域的正中央，上方受到第一、第二小提琴的双重笼罩，下方承托着大提琴的低音起伏，形成极为致密的四部交织网络；
 - **内声部歌唱性的确立**：中提琴不再是填充和声的从属角色，而是成为了全场聆听的重力焦点。
 
-海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 61–80。
+```lilypond title="海顿 弦乐四重奏 Op.76 No.3《皇帝》第二乐章" location="Poco adagio, cantabile，mm.72–79" id="haydn-op76no3-ii-mm72-79"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Op.76 No.3《皇帝》第二乐章，第三变奏后半：半音阶深渊（passus duriusculus）。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Poco adagio, cantabile" 4 = 56
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \major
+  r2 b'8( c''8 cs''8 d''8~) |
+  d''8 c''4 b'8 c''8( b'8 bf'8 a'8) |
+  g'8\staccato g'8( fs'8 f'8) e'8( g'8 fs'8 a'8) |
+  g'8( b'8 c''8 e''8) g'4( fs'4) |
+  g'4 r4 b'8( c''8 cs''8) d''8~ |
+  d''8 c''4 b'8 c''8( b'8 bf'8 a'8) |
+  g'8\staccato g'8( fs'8 f'8) e'8( g'8 fs'8 a'8) |
+  g'8( b'8 c''8 e''8) g'4( fs'4) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \major
+  fs'2 e'4.( d'8) |
+  gs'8( a'8 fs'8 g'8) r2 |
+  r2 r8 e'8( d'8 fs'8) |
+  r8 e'4( c'8 b4 c'4) |
+  b4 r4 e'4.( d'8) |
+  gs'8( a'8 fs'8 g'8) r2 |
+  r2 r8 e'8( d'8 fs'8) |
+  r8 e'4( c'8 b4 c'4) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \major
+  d''2 g''4.( fs''8 |
+  fs''8 e''8 d''4) e''4.( d''8 |
+  d''8 c''8 b'4)\fz a'4.( b'16 c''16) |
+  d''8( e''8 c''8 a'8) g'4( a'8.) g'16 |
+  g'8( a'16 b'16 c''16 d''16 e''16 fs''16) g''4.( fs''8 |
+  fs''8 e''8 d''4) e''4.( d''8 |
+  d''8 c''8 b'4)\fz a'4.( b'16 c''16) |
+  d''8( e''8 c''8 a'8) g'4( a'8.) g'16 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \major
+  d4 d,4 r2 |
+  r2 a8( gs8 g8 fs8) |
+  e8( e'8 ds'8 d'8) cs'4 c'4 |
+  b8( gs8 a8 c8) d2 |
+  g4 r4 r2 |
+  r2 a8( gs8 g8 fs8) |
+  e8( e'8 ds'8 d'8) cs'4 c'4 |
+  b8( gs8 a8 c8 d2) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. mm. 72–76 的半音阶深渊（*Passus duriusculus*）
 在变奏后半程的第 72–76 小节，伴奏声部突然爆发了激烈的半音阶撕扯与小调再语境化：
@@ -117,7 +351,85 @@ description: 剖析海顿《皇帝四重奏》Op.76 No.3第二乐章中的定旋
 - **和声假意再现**：第 82 小节强拍，当第一小提琴唱出旋律音 $C5$ 时，底层和声并未落地于预期的 G 大调，而是被截击在 **E 小调原位和弦（$vi$ 级）与升 F 导音减七和弦**构成的阴影区；
 - **心理张力延续**：这一阻碍解决打破了古典变奏形式上的机械反复，将第三变奏积累的心理张力顺畅过渡到终曲。
 
-海顿《C大调弦乐四重奏》Op. 76 No. 3 第二乐章 Poco adagio, cantabile，mm. 81–100。
+```lilypond title="海顿 弦乐四重奏 Op.76 No.3《皇帝》第二乐章" location="Poco adagio, cantabile，mm.81–88" id="haydn-op76no3-ii-mm81-88"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Op.76 No.3《皇帝》第二乐章，第四变奏起点的阻碍式和声截击与高八度重现。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/2
+  \tempo "Poco adagio, cantabile" 4 = 56
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \major
+  b'4( a'4 c''4 b'4) |
+  a'8( fs'8 g'4) e''4( d''4 |
+  c''4 b'4) a'4( b'8 g'8) |
+  d''2\p g''4.( a''8 |
+  b''4 a''4 c'''4 b''4) |
+  a''8( fs''8 g''4) e'''4( d'''4 |
+  c'''4 b''4) a''4( b''8 g''8) |
+  d'''2 a''4 b''4 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \major
+  d'2 a'4( g'4) |
+  ds'4( e'4) g'8.( a'16 b'4) |
+  e'8.( fs'16) g'2 g'4 |
+  fs'2\p b'4( cs''4 |
+  d''2) a''4( g''4) |
+  ds''4( e''4) g''8.( a''16 b''4) |
+  e''8.( fs''16 g''2) g''4 |
+  fs''2 fs''4 g''4 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \major
+  g4 fs2 g4 |
+  fs4( e4 c'4 b4) |
+  c'4( d'4) e'2 |
+  d'4 r4\p g'2~ |
+  g'4 fs'2 g'4 |
+  fs'4( e'4 c''4 b'4) |
+  c''4( d''4) e''2 |
+  fs'4 r4 d''4( cs''4) |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \major
+  d2 ds4 e4 |
+  b,4( e4 c4 g4) |
+  a4( g4) c'4( cs'4) |
+  d'4 d4\p e'2( |
+  d'2 ds'4 e'4) |
+  b4( e'4) c'4( g'4 |
+  a'4 g'4) c'4( cs'4) |
+  d'1 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 移高八度的天籁歌唱与管风琴织体
 - **第一小提琴高八度升华**：第一小提琴重新接管主题，但被整整移高一个八度，在小字二组至小字三组（$G5 \to E6$）的高音区盘旋，音色清澈如天籁；

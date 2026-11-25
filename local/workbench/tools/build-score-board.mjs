@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs'
 import { join, relative } from 'node:path'
 
 const root = process.argv[2] || process.cwd()
@@ -56,22 +56,33 @@ for (const r of rows) {
   lines.push(`| \`${r.id}\` | ${r.title} | ${r.location} | ${r.rel} | \`${link}\` | ${used} |`)
 }
 
-lines.push(
-  '',
-  '<!-- manual:gaps -->',
+lines.push('')
+
+// manual:gaps 由人维护：优先沿用现有看板里的缺口块，没有才回退到初始模板。
+const GAP_START = '<!-- manual:gaps -->'
+const GAP_END = '<!-- /manual:gaps -->'
+const fallbackGapBlock = [
+  GAP_START,
   '## 缺口（手工维护）',
   '',
   '| 作品 | 需要的片段 | 状态 |',
   '| --- | --- | --- |',
   '| 贝多芬 Op.97 第一乐章 | mm.1–12 | 暂无可靠谱源 |',
   '| 雷哈 Op.88 No.2 第一乐章 | mm.1–8 | 暂无可靠谱源 |',
-  '| 贝多芬 Op.92 第二乐章 | mm.1–26 | 暂无可靠谱源 |',
-  '| 贝多芬 Op.125 第一乐章 | mm.1–35 | 暂无可靠谱源 |',
   '| 马勒 第四交响曲 第二乐章 | mm.34–46 | 暂无可靠谱源 |',
   '| 那不勒斯和弦教材模型 | 示意 | 作者决定是否保留 |',
-  '<!-- /manual:gaps -->',
-  ''
-)
+  GAP_END
+]
+let gapBlock = fallbackGapBlock
+if (existsSync(out)) {
+  const previous = readFileSync(out, 'utf8')
+  const start = previous.indexOf(GAP_START)
+  const end = previous.indexOf(GAP_END)
+  if (start !== -1 && end > start) {
+    gapBlock = previous.slice(start, end + GAP_END.length).split(/\r?\n/)
+  }
+}
+lines.push(...gapBlock, '')
 
 writeFileSync(out, lines.join('\n'))
-console.log(`score-board: ${rows.length} entries -> ${relative(root, out)}`)
+console.log(`score-board: ${rows.length} entries -> ${relative(root, out)}（manual:gaps ${gapBlock.length > fallbackGapBlock.length ? '沿用现有块' : '使用初始模板'}）`)

@@ -40,3 +40,8 @@ __pycache__/
 
 /_mainsample/
 /tmp-mainsample/
+
+# 2026-11-25 第五轮谱例补齐的临时工作目录（46MB 中间件 + 逐块草稿，不进版本跟踪）
+/workbench/scores/score-a-r5/
+/workbench/scores/score-b/
+/workbench/tools/score-a-r5/

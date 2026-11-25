@@ -40,7 +40,70 @@ description: 深入解构舒伯特艺术歌曲中钢琴键盘的声学造型、�
    - 人声声部主要活动于中音区（D4–F5），而钢琴伴奏的密集和弦则紧凑排列于中央 C 下方；
    - 伴奏和弦在拍位上刻意避开强拍（强拍由纯单音低音击出），使得人声的元音共鸣峰在强拍获得完全无阻碍的声学穿透，达成了人声与键盘的声学互补。
 
-[谱例：舒伯特《小夜曲》D.957 No. 4，mm. 1–8，吉他拨奏音型前奏与人声回声对位]
+```lilypond title="舒伯特 《小夜曲》D.957 No.4" location="Mässig，mm.1–8" id="schubert-d957no4-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特《小夜曲》D.957/4，钢琴拨奏音型前奏与人声进入。
+% 据 OpenScore Lieder（CC0-1.0）MXL 核对后自编码摘录；人声声部按原谱记谱音高。
+
+global = {
+  \time 3/4
+  \tempo "Mässig" 4 = 60
+}
+
+voice = {
+  \global
+  \clef treble
+  \key d \minor
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  \tuplet 3/2 { a'8 bf'8 a'8 } d''4. a'8 |
+  \tuplet 3/2 { g'8 a'8 g'8 } d''4 g'8 r8 |
+  a'4.\accent g'8 \tuplet 3/2 { g'8 f'8 e'8 } |
+  f'2 r4 |
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \key d \minor
+  r8 <a d'>8\staccato <d' f'>8\staccato <a d'>8\staccato <d' f'>8\staccato <a d'>8\staccato |
+  r8 <bf d'>8\staccato <d' f'>8\staccato <bf d'>8\staccato <d' f'>8\staccato <bf d'>8\staccato |
+  r8 <bf d'>8\staccato <d' e'>8\staccato <bf d'>8\staccato <d' e'>8\staccato <bf d'>8\staccato |
+  r8 <a cs'>8\staccato <cs' e'>8\staccato <a cs'>8\staccato <cs' e'>8\staccato <a cs'>8\staccato |
+  r8 <a d'>8 <d' f'>8 <a d'>8 <d' f'>8 <a d'>8 |
+  r8 <g d'>8 <d' e'>8 <g d'>8 <d' e'>8 <g d'>8 |
+  r8 <g a cs'>8 <a cs' e'>8 <g a cs'>8 <a cs' e'>8 <g a cs'>8 |
+  r8 <f a d'>8 <a d' f'>8 <f a d'>8 <a d' f'>8 <f a d'>8 |
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  \key d \minor
+  <d, d>2 r4 |
+  <bf,, bf,>2 r4 |
+  <g,, g,>2 r4 |
+  <a,, a,>2 r4 |
+  <d, d>2 r4 |
+  <bf,, bf,>2 r4 |
+  <a,, a,>2 r4 |
+  <d, d>2 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \voice }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 树叶微风与圆号号角：《菩提树》（D.911 No. 5）
 
@@ -51,7 +114,70 @@ description: 深入解构舒伯特艺术歌曲中钢琴键盘的声学造型、�
 - **故乡号角与田园象征**：
   在第 5–8 小节，伴奏织体突然收拢，左右手以柔和的纯五度与大六度平行进行，奏出深沉的圆号号角音调（Horn-call）。这一动机在德奥音乐语汇中历来是森林、驿站与故乡温暖的代名词，钢琴在此超越了单纯的声学绘景，为人声在第 9 小节引出童年回忆（“Am Brunnen vor dem Tore”）构筑了崇高的精神伊甸园。
 
-[谱例：舒伯特《菩提树》D.911 No. 5，mm. 1–8，三连音树叶沙沙声前奏与圆号号角动机]
+```lilypond title="舒伯特 《菩提树》D.911 No.5" location="Mässig，mm.1–8" id="schubert-d911no5-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特《菩提树》D.911/5，三连音树叶沙沙声前奏与圆号号角动机。
+% 据 OpenScore Lieder（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/4
+  \tempo "Mässig" 4 = 66
+}
+
+voice = {
+  \global
+  \clef treble
+  \key e \major
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r4 r4 r8\p b'8 |
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \key e \major
+  \tuplet 3/2 { gs16( e'16 gs16 fs16 ds'16 fs16 gs16 e'16 gs16 b16 gs'16 b16 a16 fs'16 a16 gs16 e'16 gs16) } |
+  <fs b>8. cs''16 b'2\accent |
+  \tuplet 3/2 { gs'16( e''16 gs'16 fs'16 ds''16 fs'16 gs'16 e''16 gs'16 b'16 gs''16 b'16 a'16 fs''16 a'16 gs'16 e''16 gs'16 } |
+  \tuplet 3/2 { fs'16 ds''16 fs'16 e'16 cs''16 e'16 ds'16 b'16 ds'16 cs'16 a'16 cs'16 b16 gs'16 b16 a16 fs'16 a16 } |
+  \tuplet 3/2 { gs16 e'16 gs16 a16 fs'16 a16 gs16 e'16 gs16 a16 fs'16 a16 gs16 e'16 gs16 d'16 es'16 d'16) } |
+  \tuplet 3/2 { cs'16( fs'16 cs'16 <es' gs'>16 cs'16 <es' gs'>16) } <fs' a'>8(\staccato <cs' fs' a'>8\staccato <ds' fs' a'>8\staccato <e' fs' a'>8)\staccato |
+  <fs' a'>8.( <e' gs'>32 <b fs'>32) <b fs'>2 |
+  <fs' a'>8.( <e' gs'>32 <b fs'>32) <b fs'>4.\p <b gs' b'>8 |
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  \key e \major
+  <e, b,>2. |
+  <b,, b,>8 r8 r2 |
+  <e b>2. |
+  <b, b>8 r16 cs16( b,4.)(\accent bs,8) |
+  cs8( bs,8\accent cs8 bs,8\accent cs8 b,8) |
+  a,8( gs,8 fs,8 e,8 ds,8 cs,8) |
+  b,,2. |
+  b,,2~ b,,8 <e, e>8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \voice }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -76,7 +202,82 @@ description: 深入解构舒伯特艺术歌曲中钢琴键盘的声学造型、�
 5. **现实的冰冷回收（mm. 99–105）**：
    在第 99 小节唱到最后一句“an dich hab’ ich gedacht”时，调号突变回 d 小调，大调幻象彻底粉碎，流浪者重新跌落入严冬现实。
 
-[谱例：舒伯特《晚安》D.911 No. 1，mm. 71–82，第四段 D 大调爱情幻境与不变步伐节律的对抗]
+```lilypond title="舒伯特 《晚安》D.911 No.1" location="Mässig，mm.71–82" id="schubert-d911no1-mm71-82"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特《晚安》D.911/1，D 大调爱情幻境与不变步伐节律。
+% 据 OpenScore Lieder（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 2/4
+  \tempo "Mässig" 4 = 66
+}
+
+voice = {
+  \global
+  \clef treble
+  \key d \major
+  r4 r8 fs''8 |
+  e''8 d''8 a'8 fs'8 |
+  e'8. fs'16 e'8 b'8 |
+  d''8. fs'16 a'16 fs'16 e'16 fs'16 |
+  d'4 r8 fs''8 |
+  e''8 d''8 a'8 fs'8 |
+  e'8. fs'16 e'8 b'8 |
+  d''8. fs'16 a'16 fs'16 e'16 fs'16 |
+  d'4 r8 d'8 |
+  g'8 g'8 g'8 fs'16 g'16 |
+  a'8. b'16 a'8 b'8 |
+  d''16 c''16 b'8 a'8 b'16 c''16 |
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \key d \major
+  <fs a d'>8\pp <fs' d''>8 <fs' d''>8 <fs' d''>8 |
+  <fs' d''>8 <fs' d''>8 <fs' d''>8 <fs' d''>8 |
+  <e' d''>8 <e' d''>8 <e' d''>8 <es' d''>8 |
+  <fs' d''>8 <a' fs''>8 <fs' a' d''>8 <g' a' cs''>8 |
+  <fs' a' d''>8 <fs' d''>8 <fs' d''>8 <fs' d''>8 |
+  <fs' d''>8 <fs' d''>8 <fs' d''>8 <fs' d''>8 |
+  <e' d''>8 <e' d''>8 <e' d''>8 <es' d''>8 |
+  <fs' d''>8 <a' fs''>8 <fs' a' d''>8 <g' a' cs''>8 |
+  <fs' a' d''>8 <fs' d''>8 <g' d''>8 <a' c''>8 |
+  <g' b'>8 g'16 a'16 <g' b'>8 <g' cs''>8 |
+  <g' d''>8 <g' d''>8 <fs' d''>8 <g' d''>8 |
+  <fs' d''>8 <g' d''>8 <g' a' d''>8 <fs' a' d''>8 |
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  \key d \major
+  <d, d>8 <d a>8 <d a>8 <d a>8 |
+  <d a>8 <d a>8 <d a>8 <d a>8 |
+  <d gs b>8 <d gs b>8 <d gs b>8 <d gs b>8 |
+  <d a>8 <d a>8 <a, a>8 <a, a>8 |
+  <d a>8 <d a>8 <d a>8 <d a>8 |
+  <d a>8 <d a>8 <d a>8 <d a>8 |
+  <d gs b>8 <d gs b>8 <d gs b>8 <d gs b>8 |
+  <d a>8 <d a>8 <a, a>8 <a, a>8 |
+  <d a>8 <d a>8 <e g>8 <fs d'>8 |
+  <g d'>8 <g b>8 <e b>8 <e a>8 |
+  <d a>8 <d a>8 <d a>8 b,8 |
+  a,8 b,16 c16 d8 d8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \voice }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 《小夜曲》中的同主音光芒（mm. 38–53）
 
@@ -110,7 +311,135 @@ description: 深入解构舒伯特艺术歌曲中钢琴键盘的声学造型、�
 - 钢琴声部在突强（*fz*）与弱奏（*p*）的急促交替中，右手游动音型裂变为呼啸的半音阶下行狂飙与带有剧烈重音的切分音阶；
 - 此时伴奏不再仅仅是环境的写实描摹，更象征着外部残酷自然对主人公精神防线的彻底击溃。
 
-[谱例：舒伯特《菩提树》D.911 No. 5，mm. 25–36 与 mm. 45–54，e小调转折与严冬风雪中的三连音狂暴异化]
+```lilypond title="舒伯特 《菩提树》D.911 No.5" location="Mässig，第二段 e 小调转折，mm.25–32" id="schubert-d911no5-mm25-32"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特《菩提树》D.911/5，第二段同主音小调（e 小调）的阴沉转折。
+% 据 OpenScore Lieder（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/4
+  \tempo "Mässig" 4 = 66
+}
+
+voice = {
+  \global
+  \clef treble
+  \key g \major
+  r2. |
+  r2. |
+  r2. |
+  r4 r4 r8 b'8 |
+  b'4. g'8 g'8. g'16 |
+  g'4 e'4 r8 e'8 |
+  fs'4. g'8 \tuplet 3/2 { a'8 g'8 fs'8 } |
+  e'2 r8 b'8 |
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \key g \major
+  \tuplet 3/2 { g16( e'16 g16 fs16 ds'16 fs16 g16 e'16 g16 b16 g'16 b16 a16 fs'16 a16 g16 e'16 g16) } |
+  <fs b>8. c''16( b'2)\accent |
+  \tuplet 3/2 { g'16( e''16 g'16 fs'16 ds''16 fs'16 g'16 e''16 g'16 b'16 g''16 b'16 a'16 fs''16 a'16 g'16 e''16 g'16) } |
+  <fs' ds''>8 r8 r2 |
+  \tuplet 3/2 { <g b>8( e'8 fs'8) } g'8.( b16) g'8 r8 |
+  \tuplet 3/2 { <g b>8( e'8 fs'8) } g'8.( b16) g'8 r8 |
+  \tuplet 3/2 { b8( e'8 fs'8 c'8 e'8 fs'8 b8 ds'8 fs'8) } |
+  \tuplet 3/2 { <g b>8( e'8 g'8 } b'8.\accent g'16 e'8) r8 |
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  \key g \major
+  <e, b,>2. |
+  <b,, b,>8 r8 r4 r4 |
+  <e b>2. |
+  <b, b>8.\pp c,16( b,,2)\accent |
+  \tuplet 3/2 { <e, b,>8( e8 fs8) } g8.(\accent b,16) g8 r8 |
+  \tuplet 3/2 { <e, b,>8( e8 fs8) } g8.(\accent b,16) g8 r8 |
+  \tuplet 3/2 { b,8( e8 fs8 c8 e8 fs8 b,8 ds8 fs8) } |
+  \tuplet 3/2 { <e, b,>8( e8 g8 } b8.\accent g16 e8) r8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \voice }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+```lilypond title="舒伯特 《菩提树》D.911 No.5" location="Mässig，第三段严冬风雪，mm.45–52" id="schubert-d911no5-mm45-52"
+\version "2.26.0"
+\language "english"
+
+% 舒伯特《菩提树》D.911/5，第三段严冬风雪中的织体异化。
+% 据 OpenScore Lieder（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/4
+  \tempo "Mässig" 4 = 66
+}
+
+voice = {
+  \global
+  \clef treble
+  \key e \major
+  r4 r4 r8 fs'8 |
+  fs'4. fs'8 fs'8 a'8 |
+  g'4 e'4 r8 e'8 |
+  fs'4. fs'8 b'8. a'16 |
+  g'2 r8 b'8 |
+  c''4. b'8 c''8 b'8 |
+  c''4 c'4 r8 c'8 |
+  c'4. c'8 c'8 c'8 |
+}
+
+pianoUpper = {
+  \global
+  \clef treble
+  \key e \major
+  \tuplet 3/2 { g16 e'16 g16 fs16 ds'16 fs16 g16 e'16 g16 as16 g'16 as16 b16 fs'16 b16 c'16 e'16 c'16 } |
+  \tuplet 3/2 { b16 b'16 b16 r16 c''16 c'16 r16 b'16 b16 r16 a'16 a16 r16 fs'16 fs16 r16 ds'16 ds16 } |
+  \tuplet 3/2 { g16 e'16 g16 fs16 ds'16 fs16 g16 e'16 g16 as16 g'16 as16 b16 fs'16 b16 c'16 e'16 c'16 } |
+  \tuplet 3/2 { b16 b'16 b16 r16 c''16 c'16 r16 b'16 b16 r16 fs'16 fs16 r16 ds'16 ds16 r16 b16 b,16 } |
+  \tuplet 3/2 { g16 e'16 g16 fs16 ds'16 fs16 g16 e'16 g16 fs16 ds'16 fs16 g16 e'16 g16 fs16 ds'16 fs16 } |
+  \tuplet 3/2 { g16 e'16 g16 af16 f'16 af16 g16 e'16 g16 af16 f'16 af16 g16 e'16 g16 af16 f'16 af16 } |
+  \tuplet 3/2 { g16 e'16 g16 gs16 es'16 gs16 a16 fs'16 a16 gs16 es'16 gs16 a16 fs'16 a16 gs16 es'16 gs16 } |
+  \tuplet 3/2 { a16 fs'16 a16 bf16 g'16 bf16 a16 fs'16 a16 bf16 g'16 bf16 a16 fs'16 a16 as16 g'16 as16 } |
+}
+
+pianoLower = {
+  \global
+  \clef bass
+  \key e \major
+  c,2.( |
+  b,,8) c8( b,8 fs,8 ds,8 b,,8) |
+  c,2.( |
+  b,,8) c8( b,8 fs,8 ds,8 b,,8) |
+  c,2.~ |
+  c,8 c,8(\staccato c,8\staccato c,8\staccato c,8\staccato c,8)\staccato |
+  c,2.~ |
+  c,8 c,8(\staccato c,8\staccato c,8\staccato c,8\staccato c,8)\staccato |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "choir aahs" \voice }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoUpper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 死亡诱惑的催眠回归（mm. 59–82）
 

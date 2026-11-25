@@ -42,7 +42,85 @@ description: 剖析德彪西《g小调弦乐四重奏》Op.10第一乐章与第�
 - **多声部错位追逐**：在第 9–10 小节，第一小提琴再度尝试回顾循环动机原型，但在第二小节被强行切断；中提琴与大提琴接管三连音音型，在降 E 音与降 A 音之间游走，形成声部间的错位穿插；
 - **动态跌落与低音潜伏**：第 11–12 小节，全曲力度骤然收缩至极弱（*pianissimo*），四件乐器在此屏息聚拢，大提琴在低音区下沉至大字组 $D2$，为第 13 小节平行和弦流的突然切入铺垫了悬疑而空旷的声学接缝。
 
-德彪西《g小调弦乐四重奏》Op. 10 第一乐章 Animé et très décidé，mm. 1–8。
+```lilypond title="德彪西 弦乐四重奏 Op.10 第一乐章" location="Animé et très décidé，mm.1–8" id="debussy-op10-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 德彪西 g 小调弦乐四重奏 Op.10 第一乐章，循环动机原型与弗里几亚二级音。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 4/4
+  \tempo "Animé et très décidé" 4 = 132
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  g'4\tenuto f'4~ f'8( d'8) f'8 \tuplet 3/2 { af'16( bf'16 af'16) } |
+  g'8 f'4( g'8) d'4\tenuto d'4( |
+  bf'8) r8 g'4~(\accent g'8 bf'8) \tuplet 3/2 { g'8 bf'8 d''8 } |
+  bf'8 r8 g'4~(\accent g'8 bf'8) \tuplet 3/2 { g'8 bf'8 d''8 } |
+  g''4\accent f''4~ f''8 d''8 f''8 \tuplet 3/2 { af''16( bf''16 af''16) } |
+  g''8 f''4( g''8) d''4~( d''8 \tuplet 3/2 { ef''16 f''16 ef''16 } |
+  d''8)\staccato b'4( c''8) af'4~( af'8 \tuplet 3/2 { af'16 bf'16 af'16 } |
+  g'8)\staccato f'4( g'8) d'4~ d'8 \tuplet 3/2 { af'16 bf'16 af'16 } |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  bf4\tenuto c'4~ c'8( bf8) c'8 c'8 |
+  bf8 c'4( bf8) bf4\tenuto c'4( |
+  bf8) r8 bf2~\accent \tuplet 3/2 { bf8 d'8 g'8 } |
+  d'8 r8 bf4~\accent bf8 d'8 \tuplet 3/2 { bf8 d'8 g'8 } |
+  bf'4\accent a'4~ a'8 af'8 g'8 af'8~ |
+  af'2. af'4~ |
+  af'2. ef'4 |
+  d'4.( c'8) b4( af4) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  d4\tenuto d4~ d8( f8) d8 d8 |
+  d8 d4( g8) f4\tenuto fs4( |
+  g8) r8 fs4(\accent f4) \tuplet 3/2 { e8 g8 bf8 } |
+  g8 r8 fs4(\accent f4) \tuplet 3/2 { e8 g8 bf8 } |
+  d'4\accent ef'4~ ef'8 f'8 df'8 c'8 |
+  b8 d'4( f'8) b4( c'4) |
+  b8 d'4( ef'8) c'2 |
+  af2. c'4 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  g,4\tenuto af,4~ af,8( bf,8) af,8 f,8 |
+  g,8 af,4( g,8) bf,4\tenuto af,4 |
+  g,1\accent |
+  g,1\accent |
+  c4\accent f4~ f8 bf,8 ef8 <af, ef>8~ |
+  <af, ef>2. <af, ef>4~ |
+  <af, ef>2. af,4 |
+  b,8\staccato d4( ef8) e4( f4) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -64,7 +142,85 @@ description: 剖析德彪西《g小调弦乐四重奏》Op.10第一乐章与第�
 - **五声音调向第二主题过渡（mm. 33–40）**：在第 33–40 小节，第一小提琴以 $F5 \to E\flat 5 \to D\flat 5 \to B\flat 4$ 的五声性音调穿透全音阶迷雾，内声部以弱音连奏（*legato*）铺陈切分背景，大提琴以轻柔的低音支点锚定色彩调性，完成向第二主题的抒情引渡；
 - **指板音（Sur la touche）的色彩联想**：小提琴在高音区的弱奏运弓展现出近乎透明的长音线条，彻底脱离了浪漫主义晚期的厚重膏血，呈现出纯净的水彩通透感。
 
-德彪西《g小调弦乐四重奏》Op. 10 第一乐章 Animé et très décidé，mm. 25–40。
+```lilypond title="德彪西 弦乐四重奏 Op.10 第一乐章" location="Animé et très décidé，mm.25–32" id="debussy-op10-i-mm25-32"
+\version "2.26.0"
+\language "english"
+
+% 德彪西 Op.10 第一乐章，全音阶渗透与音响平面分层。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 4/4
+  \tempo "Animé et très décidé" 4 = 132
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key g \minor
+  g'16( fs'16 f'16 e'16) ef'16( d'16 df'16 c'16) g'16( fs'16 f'16 e'16) ef'16( d'16 df'16 c'16) |
+  g'4\staccato f'4~\tenuto f'8( d'8) f'8 \tuplet 3/2 { af'16( bf'16 af'16) } |
+  g'8\staccato f'4( g'8) d'4( ef'4) |
+  af'4\staccato f'4~\tenuto f'8( gf'8) ef'8\tenuto \tuplet 3/2 { ef'16( f'16 gf'16) } |
+  af'4\staccato f'4~\tenuto f'8 gf'8(\staccato ef'8\staccato f'8)\staccato |
+  g'4\staccato f'4~\tenuto f'8( d'8) f'8(\staccato \tuplet 3/2 { af'16 bf'16 af'16) } |
+  g'8\staccato f'4( g'8) d'4( ef'4) |
+  bf'4\staccato g'4~\tenuto g'8 bf'8 g'8\staccato \tuplet 3/2 { g'16( a'16 bf'16) } |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key g \minor
+  ef'16( d'16 df'16 c'16) g'16( fs'16 f'16 e'16) ef'16( d'16 df'16 c'16) g'16( fs'16 f'16 e'16) |
+  ef'4\staccato d'4~\tenuto d'8( cf'8) d'8( cf'8) |
+  ef'8\staccato cf'4( d'8) cf'2 |
+  ef'4\staccato bf4~\tenuto bf8 bff8~ bff8( cf'8) |
+  ef'4\staccato bf4~\tenuto bf8 bff8~\staccato bff8 cf'8\staccato |
+  ef'4\staccato d'4~\tenuto d'8( cf'8) d'8( cf'8) |
+  ef'8\staccato cf'4( d'8) cf'2 |
+  fs'4\staccato d'4~\tenuto d'8 fs'8 d'8\staccato \tuplet 3/2 { d'16( fs'16 g'16) } |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key g \minor
+  a16( bf16 b16 c'16) f16( g16 gs16 a16) a16( bf16 b16 c'16) f16( g16 gs16 a16) |
+  bf4\staccato cf'2~\tenuto cf'8( d'8) |
+  bf8\staccato d'4( cf'8) af2 |
+  cf'4\staccato df4~\tenuto df8( ef8) gf8( af8) |
+  cf'4\staccato df4~\tenuto df8 ef8(\staccato gf8\staccato af8)\staccato |
+  bf4\staccato cf'2~\tenuto cf'8( d'8) |
+  bf8\staccato d'4( cf'8) af2 |
+  c'4\staccato bf4~\tenuto bf8 c'8 bf8\staccato \tuplet 3/2 { bf16( c'16 d'16) } |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key g \minor
+  f16( g16 gs16 a16) a16( bf16 b16 c'16) f16( g16 gs16 a16) a16( bf16 b16 c'16) |
+  ef4\staccato af4~\tenuto af8( g8) af8( f8) |
+  ef8\staccato af4( g8) f4( ef4) |
+  df4\staccato gf,4~\tenuto gf,8 cf4( af,8) |
+  df4\staccato gf,4~\tenuto gf,8 cf4( af,8) |
+  ef4\staccato af4~\tenuto af8( g8) af8( f8) |
+  ef8\staccato af4( g8) f4( ef4) |
+  d4\staccato g,4~\tenuto g,8 d8 g8 r8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -86,7 +242,85 @@ description: 剖析德彪西《g小调弦乐四重奏》Op.10第一乐章与第�
   * 大提琴则以极其安详的大字一组 $D\flat 2$ 持续低音奠定圣咏般纯净的地基；
 - **循环动机的神奇蜕变**：只要对比第一乐章的主题（$G \to F \to F \to D \to F$），便能立刻辨认出这一乐思正是第一乐章粗粝循环动机的孪生化身！德彪西将原先桀骜不驯的三连音跳跃，淬炼成抚慰人心的抒情慢板；大提琴持续提供低音长音支撑，第二小提琴与中提琴以甜美绵长的六度和声相伴随。
 
-德彪西《g小调弦乐四重奏》Op. 10 第三乐章 Andantino doucement expressif，mm. 1–16。
+```lilypond title="德彪西 弦乐四重奏 Op.10 第三乐章" location="Andantino doucement expressif，mm.1–8" id="debussy-op10-iii-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 德彪西 Op.10 第三乐章，加弱音器的降 D 大调循环主题。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 6/8
+  \tempo "Andantino doucement expressif" 8 = 84
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key df \major
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  f'8( gf'8.\tenuto f'16) f'8( af'8.\tenuto f'16) |
+  f'16( bf'16 af'8 gf'16 f'16) f'16( ef'16 f'8 df'8) |
+  ef'8( f'8. ef'16) df'16(\staccato bff16\staccato cf'16\staccato df'16~ df'16 ff'16) |
+  ef'8 f'8.( ef'16) gf'8 af'8.( bf'16) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key df \major
+  g8( a8. g16) g8( b8. g16) |
+  af2. |
+  r2. |
+  r2. |
+  df'2.~ |
+  df'2. |
+  bf8( c'8 bf8) bff4. |
+  bf8( cf'8 c'8 df'8 ef'8 gf'8) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key df \major
+  r2. |
+  r2. |
+  g8( a8. g16) g8( b8. g16) |
+  af4.( a4.~) |
+  a4.( bf4. |
+  cf'4. bf4.) |
+  gf8( af8 gf8) ff4. |
+  gf8( af8 bff8 bf8 c'8 ef'8) |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key df \major
+  r2. |
+  r8\pp ff,8 cf8 af8 ff'8 r8 |
+  r2. |
+  r2. |
+  df,2.~ |
+  df,2. |
+  df,2.~ |
+  df,2. |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -109,7 +343,85 @@ description: 剖析德彪西《g小调弦乐四重奏》Op.10第一乐章与第�
 - **无弱音器的弱奏质感**：四件乐器在此虽未重新佩戴弱音器，但极弱的运弓呈现出裸弦特有的干燥与脆弱，与先前的“粉彩感”形成了鲜明对照；
 - **心理张力的铺陈**：长达三十小节的落幅为第 103 小节弱音器的重新佩戴构筑了巨大的声学与心理预期。
 
-德彪西《g小调弦乐四重奏》Op. 10 第三乐章 Andantino doucement expressif，mm. 28–61。
+```lilypond title="德彪西 弦乐四重奏 Op.10 第三乐章" location="Andantino doucement expressif，mm.28–35" id="debussy-op10-iii-mm28-35"
+\version "2.26.0"
+\language "english"
+
+% 德彪西 Op.10 第三乐章，摘除弱音器后的等音偏转与节拍提速。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/8
+  \tempo "Andantino doucement expressif" 8 = 84
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key cs \minor
+  r4. |
+  r4. |
+  r4. |
+  r4. |
+  <g'' d'''>4 r8 |
+  r4. |
+  r4. |
+  <fs'' cs'''>4. |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key cs \minor
+  r4. |
+  r4. |
+  r4. |
+  r4. |
+  <g' d''>4 r8 |
+  r4. |
+  r4. |
+  <fs' cs''>4. |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key cs \minor
+  cs'16(\staccato fs'16\staccato e'16\staccato ds'16)\staccato \tuplet 3/2 { cs'16( ds'16 e'16) } |
+  gs'16( cs''16 b'16 gs'16 fs'16 a'16) |
+  e'16( gs'16) ds'16( e'16) \tuplet 3/2 { cs'16( ds'16 cs'16) } |
+  b4.~ |
+  b4~ b16 a16 |
+  gs16( cs'16 ds'16 fs'16) e'16( a'16) |
+  \tuplet 3/2 { gs'16( fs'16 e'16) } ds'8(\staccato cs'8~)\staccato |
+  cs'4. |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key cs \minor
+  r4. |
+  r4. |
+  r4. |
+  r4. |
+  <g, d>4 r8 |
+  r4. |
+  r4. |
+  <fs, cs>4. |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -127,7 +439,85 @@ description: 剖析德彪西《g小调弦乐四重奏》Op.10第一乐章与第�
 - **持续音与泛音微光（mm. 121–123）**：在最后的三个小节中，第一小提琴与第二小提琴相隔八度弱奏保持音，弦乐全组在极弱（*pp*）渐弱至不可闻的极极弱（*ppp*），乐章在纯净的降 D 大三和弦泛音微光中缓缓消散于无形；
 - **意境闭环与音色沉淀**：通过重新佩戴弱音器与声部的逐层凝固，德彪西完成了从现实剧烈冲突重回超然内心静观的诗意闭环。
 
-德彪西《g小调弦乐四重奏》Op. 10 第三乐章 Andantino doucement expressif，mm. 103–123。
+```lilypond title="德彪西 弦乐四重奏 Op.10 第三乐章" location="Andantino doucement expressif，mm.107–114" id="debussy-op10-iii-mm107-114"
+\version "2.26.0"
+\language "english"
+
+% 德彪西 Op.10 第三乐章尾声，重戴弱音器后的色彩消融。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 6/8
+  \tempo "Andantino doucement expressif" 8 = 84
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key df \major
+  f'8( gf'8.\tenuto f'16) f'8( af'8.\tenuto f'16) |
+  f'16( bf'16 af'8 gf'16 f'16) f'16( ef'16 f'8 df'8) |
+  ef'8( f'8. ef'16) df'16(\staccato bff16\staccato cf'16\staccato df'16~ df'16 ff'16) |
+  ef'8 f'8.( ef'16) gf'8 af'8.( bf'16) |
+  <f' f''>8( <gf' gf''>8. <f' f''>16) <f' f''>8( <af' af''>8. <f' f''>16) |
+  <f' f''>16( <bf' bf''>16) <af' af''>8 <gf' gf''>16( <f' f''>16) <f' f''>16( <ef' ef''>16) <ef' ef''>8( df''8) |
+  ef'''8( df'''8.) bf''16~ bf''16 gf''16( af''16 bf''16 bf''16) df'''16~ |
+  df'''8~( df'''16 ef'''8 f'''16~ f'''16 gf'''8 af'''8 bf'''16~) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key df \major
+  cf'4.( c'4.) |
+  cf'2. |
+  bf4.( aff4.) |
+  bf8( c'4) df'8( d'8 ef'8) |
+  <ef' ef''>4.( <df' df''>4.) |
+  <ef' ef''>4.( <df' df''>4.) |
+  gf'8( af'8 gf'8 f'8 ef'8 f'8) |
+  gf'8( af'8 gf'8 f'8 ef'8 df'8) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key df \major
+  af2.~ |
+  af2. |
+  gf4.( ff4.) |
+  gf8( af4) bf8( cf'8 c'8) |
+  <cf' cf''>2.~ |
+  <cf' cf''>2. |
+  <bf bf'>2.~ |
+  <bf bf'>2. |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key df \major
+  d2.~( |
+  d4. df4.) |
+  c4( bf,8 bff,4.) |
+  c8( d8 ef8 ff8 f8 gf8) |
+  df2.( |
+  df,2.) |
+  gf,4.( ef,4.) |
+  gf,4.( ef,4.) |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

@@ -44,7 +44,150 @@ tags:
 
 套曲第一首《在美丽的五月》（*Im wunderschönen Monat Mai*，2/4 拍，3 升号）是西方调性音乐史上最著名的“调性开放”开篇：
 
-舒曼《诗人之恋》Op. 48 No. 1 mm. 1–4、mm. 23–26（开篇与收尾的升C属七和弦未解决）
+```lilypond title="舒曼《诗人之恋》Op.48 No.1《在美丽的五月》" location="Langsam, zart，mm.1–13" id="schumann-op48no1-mm1-13"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key a \major
+  \time 2/4
+  \tempo "Langsam, zart" 4 = 84
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r16 r4 r8 r16 |
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 r16 cs''16 |
+  cs''8. b'16 b'16 d''16 fs'16 gs'16 |
+  a'4 r8 r16 cs''16 |
+  cs''8. b'16 b'16( d''16 fs'16) gs'16 |
+  a'8 a'8 r8 r16 a'16 |
+  b'8. b'16 cs''8. cs''16 |
+  e''8 d''8 r8 r16 d''16 |
+  d''8. d''16 e''8. e''16 |
+  g''8 fs''8 r4 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  cs''16\p(~ r4 r8 r16 |
+  cs''4~ fs'4) b'16 gs''16 fs''16 |
+  es''4 es'16 gs'4 b'16( d''16. cs''32)~ |
+  cs''4~ fs'4 b'16 gs''16 fs''16 |
+  es''4 es'16 gs'4 b'16( d''16 cs''16)~ |
+  cs''4 fs'16 b'16( d''16 fs'16 gs'16 |
+  a'4)~ cs'16 e'4 a'16( d''16 cs''16)~ |
+  cs''4 fs'16 b'16( d''16 fs'16 gs'16 |
+  a'4)~ cs'16 e'4 a'16( d''16 cs''16) |
+  r8 r16 b'16~ b'8 r16 cs''16~ |
+  cs''8 r8 fs'16 as'16 b'16 g''16 fs''16 |
+  r8 r16 d''16~ d''8 r16 e''16~ |
+  e''8 r8 fs'16 a'16 d''16 gs''16 fs''16 |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  r16\p r4 r8 r16 |
+  d4~ as16 b16 d'16~ d'4 |
+  cs4 b16 cs'8~ cs4 |
+  d4 as16 b16 d'16~ d4 |
+  cs4 b16 cs'8 cs'4 |
+  d4 b16 d'16 r16 r16 b,16( e8 e,16 |
+  a,4) e16 a8~ a8 r16 a16 |
+  d4 b16 d'16 r16 r16 b,16( e8 e,16) |
+  a,8 e16 a8 a8. a16 |
+  g4 b16 e'16 r16 fs4 as16 e'16 r16 |
+  b4. d'16 es'16 r8 r16 r8 |
+  bf4 d'16 g'16 r16 a4 cs'16 g'16 r16 |
+  d4 a16 d'16 r16 r8 r16 b,16 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+```lilypond title="舒曼《诗人之恋》Op.48 No.1《在美丽的五月》" location="mm.23–26（rit.，停在升 C 属七不解决）" id="schumann-op48no1-mm23-26"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key a \major
+  \time 2/4
+  \tempo "Langsam, zart (rit.)" 4 = 60
+}
+
+staffOne = {
+  \global
+  \clef treble
+  d''8. d''16 e''8. e''16 |
+  g''8 fs''8 r4 |
+  r2 |
+  r2 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  r8 r16 d''16~ d''8 r16 e''16~ |
+  e''8 r8 fs'16 a'16 d''16 gs''16 fs''16 |
+  es''4 es'16 gs'4 b'16( d''16 cs''16~ |
+  cs''4~ fs'4) b'16 gs''16 fs''16 |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  bf4 d'16 g'16 r16 a4 cs'16 g'16 r16 |
+  d4 a16 d'16 r16 r8 r16 b,16 |
+  cs4. b16 cs'16 r8 r16 r16 cs16 |
+  d4. as16 b8 d'16~ b8 r16 b,16 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **游移的引子与模糊调性（mm. 1–4）**：
   * 全曲开篇并不确立主调，钢琴在小字一组以升 c 小调属九和弦分解琶音破空而起（$C\sharp_5$–$B_4$–$G\sharp_5$–$F\sharp_5$），随后在中音区游移于升 f 小调与 A 大调之间；
@@ -67,7 +210,78 @@ tags:
   * 前作第七首《我不再怨恨》（No. 7 *Ich grolle nicht*，C 大调）以强烈的重音和弦试图维系自尊的假面；
   * 紧随其后的第八首立刻跌入同主音关系小调 a 小调的冷酷深渊，形成调性明暗的剧烈撕扯；
 
-舒曼《诗人之恋》Op. 48 No. 8 mm. 31–38（人声断裂与钢琴三十二分音符狂暴后奏接管）
+```lilypond title="舒曼《诗人之恋》Op.48 No.8《倘若小花知晓》" location="mm.31–38" id="schumann-op48no8-mm31-38"
+\version "2.26.0"
+\language "english"
+
+%% 底本未标速度记号；4 = 96 为试听设定，不是舒曼原始标记
+
+global = {
+  \key c \major
+  \time 2/4
+  \tempo "Nicht zu schnell" 4 = 96
+}
+
+staffOne = {
+  \global
+  \clef treble
+  gs'8 a'4 r16 c''16 |
+  c''8. bf'16 a'8 gs'8 |
+  a'4 r4 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  d'8-. c'8-. r8 e'8 |
+  d'4\sf bf'16 c'8 d'8 |
+  \tuplet 6/4 { r16\sf r4 r32 r64 f'16( gs'16) b16 d''16( } |
+  \tuplet 6/4 { c''16) c'16 a'16( f'16) a16\sf d'16( c'16) a16 e'16( b16) gs16 e'16 } |
+  \tuplet 6/4 { r16\sf r4 r32 r64 f'16( gs'16) b16 d''16( } |
+  \tuplet 6/4 { c''16) c'16 a'16( f'16) a16\sf d'16( c'16) a16 e'16( b16) gs16 e'16 } |
+  \tuplet 5/4 { a8(~ a16 c'16 e'16 } \tuplet 6/4 { a'16 e'16 c'16 } r8 |
+  r2) |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  f8-. f8-. r8 e8 |
+  d4\sf bf16 a8 gs8 |
+  a,,2\sf \tuplet 6/4 { g16( a16 bf16 e16) } g,16 \tuplet 6/4 { cs'16( } f,8 \tuplet 6/4 { d16 r32 r64 } e,8 |
+  a,,8. d,16 e,8-. e,,8-. |
+  a,,2\sf \tuplet 6/4 { g16 a16 bf16 e16) } g,16 \tuplet 6/4 { cs'16( } f,8 \tuplet 6/4 { d16 r32 r64 } e,8 |
+  a,,8. d,16 e,8-. e,,8-. |
+  a,,2~ \tuplet 6/4 { a16 e16 c16 } |
+  a,2) |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **语言边界的彻底破碎（mm. 31–33）**：
   * 伴随着钢琴全曲不间断的十六分音符密集震颤，人声在第 31–32 小节唱出整部套曲最尖锐的心灵创伤：“sie hat ja selbst zerrissen, zerrissen mir das Herz”（她亲自撕裂了我的心）；
@@ -80,7 +294,85 @@ tags:
 
 下半部分的第十二首《在光彩明媚的夏天早晨》（*Am leuchtenden Sommermorgen*，6/8 拍，2 个降号，降 B 大调）诞生了浪漫主义音乐史上最动人的如歌器乐后奏：
 
-舒曼《诗人之恋》Op. 48 No. 12 mm. 20–30（降B大调抒情如歌后奏与减七分解琶音）
+```lilypond title="舒曼《诗人之恋》Op.48 No.12《在光彩明媚的夏天早晨》" location="Ziemlich langsam，mm.20–30（钢琴后奏）" id="schumann-op48no12-mm20-30"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key bf \major
+  \time 6/8
+  \tempo "Ziemlich langsam" 4 = 88
+}
+
+staffOne = {
+  \global
+  \clef treble
+  c''4. r4 r8 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r4.\fermata r4 r8 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  r16 f''4 c''16 a'16 f'16 r16 r16 g'''4 d'''16 b''16 g''16 r16 |
+  f'4 ef''4 c''16 g'16 ef'16 r16 r16 f'''4 cs'''16 a''16 f''16 r16 |
+  f'4 d''4 a'16 f'16 d'16 r16 r16 ef'''4 bf''16 g''16 ef''16 r16 |
+  f'4 c''16(~ c''4~ f'16 r8 c''16 d''16~ d''8. f'16 r16 ef''16~ |
+  ef''16 f''16~ f''4~ f'16 r8 f''16 bf'16~ bf'8. cs'8 af'16 |
+  b'16 c''16~ c''4~ g'16 r8 c''16 d''16~ d''8. f'16 r16 ef''16~ |
+  ef''16 f''16~ f''4~ f'16 r8 f''16 bf'16~ bf'4~ df'8 c'16 |
+  bf'16 d''16~ d''4~ f'16 r8 d''16 c''16~ c''4~ ef'16 r8 |
+  c''16 bf'16~ bf'4~ d'16 r8 bf'16 f'16~ f'4 c'16 r8 |
+  r16 f'16 d'4 bf16 r16 d'16 bf4 f16 r16 bf16 f8~ |
+  f4.\fermata) r4 r8 |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  f,4. f4.( |
+  r4 r8 f4. |
+  r4 r8 f4. |
+  r4 r8\p a16 ef4. c'16 a16 |
+  d4. d'16 bf16 gf4~ gf16 f16 |
+  e4. c'16 g16 ef4. c'16 a16 |
+  d4. d'16 bf16 gf4~ gf16 g16 |
+  f,4. d'16 bf16 f4. c'16 a16 |
+  f,4. bf16 f16~ f4. a16 f16 |
+  bf,2. f16 r8 r16 d16 r8 d16~ |
+  bf,4.\fermata r4 r8) |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **花语低语与减七和弦琶音（mm. 1–4）**：
   * 钢琴右手以柔和的减七和弦与降六级音波浪琶音切入（$B\flat_4$–$B\flat_5$–$E_4$–$C\sharp_4$），模拟清晨花朵在微风中的摇曳交谈；
@@ -93,7 +385,100 @@ tags:
 
 末曲《古老险恶的歌》（*Die alten, bösen Lieder*，4/4 拍，4 升号，升 c 小调）将全套曲推向了结构与哲学的终极综合：
 
-舒曼《诗人之恋》Op. 48 No. 16 mm. 52–67（调号转入降D大调对No. 12钢琴后奏的跨曲目字面再现）
+```lilypond title="舒曼《诗人之恋》Op.48 No.16《古老险恶的歌》" location="Ziemlich langsam，mm.52–67" id="schumann-op48no16-mm52-67"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key df \major
+  \time 6/4
+  \tempo "Ziemlich langsam" 4 = 84
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r1 r2 |
+  r2 r4 r2 r4 |
+}
+
+staffTwoUp = {
+  \global
+  \clef treble
+  r1 r2 |
+  r8 ef''8(~ ef''2~ af'8 r4 ef''8 f''2) c''8 af'8 r8 gf''8~ |
+  gf''8 af''8~ af''2~ af'8 r4 af''8 df''2 g'8 e'8 r8 f'8 |
+  d''8 ef''8~ ef''2~ g'8 r4 ef''8 f''2 c''8 af'8 r8 gf''8~ |
+  gf''8 af''8~ af''2~ af'8 r4 af''8 df''2 g'8 ff'8 r8 ef'8 |
+  df''8 f''8~ f''2~ af'8 r4 f''8 ef''8~ ef''2~ gf'8 r4 |
+  ef''8 df''8~ df''2~ f'8 r4 df''8 af'8~ af'2 ef'8 r4 |
+  c'8 gf''8( f''8 ef''8 df''8 c''8 bf'8 af'8 g'8 af'8 bf'8. gf'16) |
+  cf'4. cf'''8( bf''8 af''8 gf''8 f''8 ef''8 df''8 c''8 df''8 ef''8. cf''16) |
+  f'4 af''8 gf'4 ef''8 af'4 f''8 gf'4 bf'8 df''4 ef'4 bf'8 |
+  f'4 af''8 gf'4 ef''8 af'4 f''8 gf'4 bf'8 df''4 ef'4 cf''8-. |
+  f'4 af''8 gf'4 ef''8 af'4 f''8 bf'4 df'''8( c''4 af''8 df''4 bf''8 |
+  ef''4 gf'''8 f''4 df'''8 gf''4 ef'''8 g''4 c'''8 f''4 af''8 ef''4 af''8) |
+  df''4 f''8 bf'4 df''8 c''4 gf'8 ef''16 df''2( af'8 f'8 r8 gf'4 ef''16 |
+  df''2) af'8 f'8 r8 gf'4~ ef''16 df''2.~ gf'8~ gf'2( |
+  f'4) r4 r4 r2 r4 |
+}
+
+staffTwoDown = {
+  \global
+  \clef bass
+  ds2. ds4 r2 |
+  df,2. ef'8 c'8 gf2. ef'8 c'8 |
+  f2. f'8 df'8 bff2~ df'8 cf'8 |
+  g2. ef'8 bf8 gf2. ef'8 c'8 |
+  f2. f'8 df'8 bff2~ df'8 bf8 |
+  af,2. f'8 df'8 af2. ef'8 c'8 |
+  af,2. df'8 af8~ af2. c'8 af8 |
+  df1.\arpeggio |
+  df1.\arpeggio f'4.~ f'2. r4 |
+  bf2 ef4 f4 gf4 af4. c'8 bf8 |
+  bf2 ef4 f4 gf4 af2 c'8 cf'8 |
+  d4( ef4 f4 g4 af4 bf4) |
+  c'4( df'4 ef'4 e'4 c''8 f'4 af'8 c'4 af'8) |
+  df'4 f'8 g4 df'8 af4~ af,8 df2 df'8 af4~ af,8 |
+  df2 df'8 af4~ af,8 df2 df'8 af8 df4~ af,8~ |
+  df,4 r4 r4 r2 r4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new PianoStaff <<
+      \new Staff = "P2upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoUp
+      >>
+      \new Staff = "P2lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffTwoDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **沉重棺木的葬礼步态（mm. 1–52）**：
   * 全曲开篇以坚硬方整的升 c 小调低音八度齐奏与重音和弦启动，象征制造巨大棺木沉葬旧日痛苦与爱情诗篇的沉重劳作；

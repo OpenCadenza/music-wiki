@@ -16,6 +16,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 1–16 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 16–28 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 莫扎特《G 小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm. 138–165 | CCARH MuseData（MD） | 据 CCARH MuseData 转写，学术用途（单行文本占位） |
+| `mozart-k550-i-mm1-14` | 莫扎特《G小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm.1–14（弦乐主部主题） | OpenScore 转写体 MusicXML（许可待确认）核对后自编码 | 学术用途（底本许可待确认） |
+| `mozart-k550-i-mm16-24` | 莫扎特《G小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm.16–24（全奏＋B♭/G 双圆号） | OpenScore 转写体 MusicXML（许可待确认）核对后自编码 | 学术用途（底本许可待确认） |
+| `mozart-k550-i-mm138-149` | 莫扎特《G小调第四十交响曲》K.550 第一乐章 | Molto allegro，mm.138–149（属准备木管与弦乐交替） | OpenScore 转写体 MusicXML（许可待确认）核对后自编码 | 学术用途（底本许可待确认） |

@@ -15,7 +15,9 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 2 | Allegro non tanto，mm. 1–17 | OpenScore Lieder MXL | CC0 |
-| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 2 | Moderato，mm. 47–56 | OpenScore Lieder MXL | CC0 |
-| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 4 | Allegro non tanto，mm. 1–16 | OpenScore Lieder MXL | CC0 |
-| 占位（未出谱） | 德彪西《被遗忘的抒情调》No. 4 | a Tempo (le double plus lent)，mm. 78–90 | OpenScore Lieder MXL | CC0 |
+| `debussy-ariettes2-mm1-17` | 德彪西《被遗忘的抒情调》No. 2《泪洒我心》 | mm.1–17 | OpenScore Lieder MXL `ariettes-2-Il-pleure.mxl` | CC0-1.0 / 公有领域 |
+| `debussy-ariettes2-mm47-56` | 同上 No. 2 | mm.47–56 | 同上 | CC0-1.0 / 公有领域 |
+| `debussy-ariettes4-mm1-16` | 德彪西《被遗忘的抒情调》No. 4《木马》 | mm.1–16 | OpenScore Lieder MXL `ariettes-4-Paysages-belges.mxl` | CC0-1.0 / 公有领域 |
+| `debussy-ariettes4-mm78-90` | 同上 No. 4 | mm.78–90 | 同上 | CC0-1.0 / 公有领域 |
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

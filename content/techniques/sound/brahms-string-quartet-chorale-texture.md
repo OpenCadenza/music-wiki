@@ -60,7 +60,85 @@ graph TD
 
 乐章开篇（mm. 1–10），第一小提琴由小字一组急剧跃升至小字二组（$c^1\text{–}d^1\text{–}e\flat^1\text{–}g^1\text{–}c^2\text{–}e\flat^2$），下方由大提琴突进的 $C$ 音低音脉冲与中提琴抽搐般的和弦衬托，情绪极端焦躁。而在第 10 小节全休止与属和弦制动后，第 11 小节织体骤然变异为沉静庄严的四部合唱经文歌：
 
-*谱例：勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章，mm. 11–18，主部尾声的四部合唱经文歌与下行声部导向*
+```lilypond title="勃拉姆斯 弦乐四重奏 Op.51 No.1 第一乐章" location="Allegro，mm.11–18" id="brahms-op51no1-i-mm11-18"
+\version "2.26.0"
+\language "english"
+
+% 勃拉姆斯 c 小调第一弦乐四重奏 Op.51 No.1 第一乐章，主部尾声的四部合唱经文歌。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/2
+  \tempo "Allegro" 2 = 76
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key c \minor
+  f''2( df''2 c''2) |
+  f''2~( \tuplet 3/2 { f''4 e''4 f''4 bf''4 f''4 df''4) } |
+  f''2( df''2 c''2) |
+  f''2~( \tuplet 3/2 { f''4 e''4 f''4 d'''4 b''4 f''4) } |
+  e''1. |
+  f''1. |
+  e''1. |
+  ef''1. |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key c \minor
+  r2\p f'4.( g'8 af'4. f'8) |
+  df''2~( df''4 c''4 df''4 bf'4) |
+  c''4 r4 f'4.( g'8 af'4. f'8) |
+  d''2( cs''4 d''4 f''4 b'4) |
+  c''2( af'2 g'2) |
+  c''2~( \tuplet 3/2 { c''4 b'4 c''4 f''4 c''4 af'4) } |
+  c''2( af'2 g'2) |
+  c''2~( \tuplet 3/2 { c''4 b'4 c''4 a''4 ef''4 c''4) } |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key c \minor
+  f4.( g8 af2 f4) r4 |
+  bf4.( df'8 f'2 f4) r4 |
+  f4.( g8 af2 f4) r4 |
+  b4.( d'8 g'2 g4) r4 |
+  g4.( b8 c'2) r2 |
+  r2 af2( c'2) |
+  g4.( b8 c'2) r2 |
+  r2 a2( c'2) |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key c \minor
+  af,1. |
+  bf,1. |
+  af,1. |
+  g,1. |
+  g,2~( g,4. b,8 c2) |
+  af,4.( c8 f2 af,4) r4 |
+  g,2~( g,4. b,8 c2) |
+  fs,4.( b,8 c2 fs,4) r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 分析其内部细微的声部编排，展现出精妙的对位构架：
 - **第一小提琴（Soprano）**：承担定旋律（Cantus）般的长气息吟唱。在 mm. 11–13 奏出宽广平稳的下行级进（$f^2\text{–}d\flat^2\text{–}c^2$），随后在 mm. 15–18 连续以长达整小节的全音符系留（$e^2, f^2, e^2, e\flat^2$），如同合唱队中高悬的持续长音；
@@ -84,7 +162,85 @@ graph TD
 
 进入呈示部副题区（降 E 小调 / 降 E 大调），合唱思维进一步与器乐重奏技术深度融合：
 
-*谱例：勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章，mm. 35–42，降 E 小调副部中提琴脉冲踏板与四部密集和声推进*
+```lilypond title="勃拉姆斯 弦乐四重奏 Op.51 No.1 第一乐章" location="Allegro，mm.35–42" id="brahms-op51no1-i-mm35-42"
+\version "2.26.0"
+\language "english"
+
+% 勃拉姆斯 Op.51 No.1 第一乐章，降 E 小调副部：中提琴脉冲踏板与四部密集和声。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录。
+
+global = {
+  \time 3/2
+  \tempo "Allegro" 2 = 76
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key c \minor
+  r8 d''8 d''8 ef''8 f''2~( f''8 gf''8) gf''8 f''8 |
+  r8 ef''8 ef''8 f''8 gf''2~( gf''8 bf''8) bf''8 af''8 |
+  r4 gf''4( bf''4 ef'''4 df'''4 gf'''4) |
+  f'''4( ef'''4 df'''4 ef'''4 df'''4 cf'''4) |
+  bf''4( gf''4) ef''4( cf''4) bf''4( gf''4) |
+  ef''4( cf''4) bf''4( f''4) ef''4( c''4) |
+  bf'8( af'8) af'8\staccato d''8\staccato d''8\staccato cf''8\staccato cf''8\staccato f''8\staccato f''8\staccato d''8\staccato d''8\staccato af''8\staccato |
+  af''8\staccato d''8\staccato d''8\staccato gf''8\staccato gf''8\staccato ef''8\staccato ef''8\staccato bf''8\staccato bf''8\staccato gf''8\staccato gf''8\staccato ef'''8\staccato |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key c \minor
+  r8 f'8 f'8 gf'8 af'2~( af'8 bf'8) bf'8 af'8 |
+  r8 gf'8 gf'8 af'8 bf'2~( bf'8 gf'8) gf'8 f'8 |
+  r4 ef'2( bf'4 gf''4 bf''4) |
+  af''4( gf''4 f''4 gf''4 f''4 ef''4) |
+  df''4( bf'4) gf'4( ef'4) df''4( bf'4) |
+  gf'4( ef'4) df''4( bf'4) a'4( ef'4) |
+  d'4 d'4(\staccato r4 d'4\staccato r4 d'4)\staccato |
+  r4 gf'4(\staccato r4 ef'4\staccato r4 ef'4)\staccato |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key c \minor
+  bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato |
+  bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato bf8\staccato bf'8\staccato bf'8\staccato bf8\staccato |
+  gf'8\staccato bf'8\staccato bf'8\staccato gf'8\staccato ef'8\staccato gf'8\staccato gf'8\staccato ef'8\staccato gf'8\staccato df'8\staccato df'8\staccato gf'8\staccato |
+  af8\staccato af'8\staccato af'8\staccato af8\staccato af8\staccato af'8\staccato af'8\staccato af8\staccato af8\staccato af'8\staccato af'8\staccato af8\staccato |
+  gf'8\staccato gf8\staccato gf8\staccato gf'8\staccato gf'8\staccato gf8\staccato gf8\staccato gf'8\staccato gf'8\staccato gf8\staccato gf8\staccato gf'8\staccato |
+  gf'8\staccato gf8\staccato gf8\staccato gf'8\staccato f'8\staccato f8\staccato f8\staccato f'8\staccato f'8\staccato f8\staccato f8\staccato f'8\staccato |
+  bf4 f'4(\staccato r4 f'4\staccato r4 cf''4)\staccato |
+  r4 bf'4(\staccato r4 bf'4\staccato r4 gf'4)\staccato |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key c \minor
+  bf'1( d'2) |
+  bf'2( c'2 d'2) |
+  ef'2 gf2 bf2 |
+  df2 f2 af,2 |
+  bf,2 cf2 df2 |
+  ef2 f2 f,2 |
+  bf,4( cf'4)(\staccato r4 af4\staccato r4 f4)\staccato |
+  r4 bf4(\staccato r4 gf4\staccato r4 ef4)\staccato |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **中提琴作为“管风琴音栓”**：在 mm. 35–36 中，中提琴在 $B\flat$ 与 $b\flat$ 之间持续演奏八分音符的八度跳跃震颤，宛如管风琴轻柔的 8 尺与 4 尺音栓共振；
 - **大提琴高音区歌唱**：大提琴破例脱离低音声部，上升至小字一组次中音区（$b\flat\text{–}d^1$），以悠长歌唱性与小提琴形成对位；
@@ -106,7 +262,102 @@ graph TD
 
 终曲的开头毫无华丽的引子，直接展现为一段严峻、甚至带有苦修色彩的圣咏式起句：
 
-*谱例：勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章，mm. 1–12，四部同度圣咏起句与紧凑和声对位*
+```lilypond title="勃拉姆斯 弦乐四重奏 Op.51 No.1 第四乐章" location="Allegro，mm.1–12" id="brahms-op51no1-iv-mm1-12"
+\version "2.26.0"
+\language "english"
+
+% 勃拉姆斯 Op.51 No.1 第四乐章，四部同度圣咏起句与紧凑和声对位。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录；
+% 该 MXL 第三、四乐章连续编号，此处 mm.1–12 对应源文件印刷小节号 145–156。
+
+global = {
+  \time 2/2
+  \tempo "Allegro" 2 = 92
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key c \minor
+  f'''4.( g'''8) g'''4.( af'''8) |
+  af'''4( b''4) r4 c''4( |
+  af'2) g'8( d''8) d''8( f''8) |
+  c''2 b'8( d''8) d''8( b''8) |
+  b''2 c'''4( g''4 |
+  f''4 ef''4) cs''4( g''4) |
+  fs''8( cs''8) cs''8( d''8) d''2~ |
+  d''8( cs''8) cs''8( d''8) d''2~ |
+  d''8( e''8) e''8( f''8) f''2~ |
+  f''8( e''8) e''8( f''8) f''2~ |
+  f''8( e''8) e''8( f''8) f''8( e''8) e''8( f''8) |
+  f''8( g''8) g''8( af''8) af''8( c'''8) c'''8( f'''8) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key c \minor
+  f''4.( g''8) g''4.( af''8) |
+  af''4( b'4) r2 |
+  r4 c'4( d'2) |
+  r4 f'4( d'2) |
+  r4 d''4( g'2) |
+  r4 c''4( g'2) |
+  a'4\staccato r4 r4 fs'4\staccato |
+  g'4\staccato r4 r4 g'4\staccato |
+  <d' a'>4\staccato r4 r4 <d' a'>4\staccato |
+  <d' b'>4\staccato r4 r4 b'4\staccato |
+  c''4.( b'8) b'4.( c''8) |
+  c''4 r4 r2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key c \minor
+  f'4.( g'8) g'4.( af'8) |
+  af'4( b4) r2 |
+  c8( ef8) ef8( af8) d8( g8) g8( d'8) |
+  f8( af8) af8( c'8) g8( b8) b8( d'8) |
+  g8( d'8) d'8( g'8) g8( c'8) c'8( g'8) |
+  g8( c'8) c'8( ef'8) ef8( g8) g8( cs'8) |
+  d'4\staccato r4 r4 a4\staccato |
+  bf4\staccato r4 r4 <bf d'>4\staccato |
+  <a f'>4\staccato r4 r4 f'4\staccato |
+  g'4\staccato r4 r4 d'4\staccato |
+  f'4.( g'8) g'4.( af'8) |
+  af'4 r4 r2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key c \minor
+  f'4.( g'8) g'4.( af'8) |
+  af'4( b4) r2 |
+  c2 b,2 |
+  af,2 g,2 |
+  f,2 ef,2 |
+  c,2 ef,2 |
+  d,4\staccato r4 r4 d,4\staccato |
+  g,4\staccato r4 r4 g,4\staccato |
+  d4\staccato r4 r4 d4\staccato |
+  g4\staccato r4 r4 g4\staccato |
+  af4.( g8) g4.( f8) |
+  f4 r4 r2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **同度圣咏起句（mm. 1–2）**：全曲第一小节以四度跨越的齐奏同音起动：四件乐器以三跨八度绝对齐奏（Violin I 在小字三组 $f^3\text{–}g^3\text{–}g^3\text{–}a\flat^3$，Violin II 在小字二组，Viola 与 Cello 在小字一组）轰然敲响附点切分动机，宛如早期教会圣咏的会众齐唱式引导句（Intonation）；
 - **主调合唱块落地（mm. 3–6）**：齐奏宣叙之后，乐曲立刻转入严格的四部合唱和声：第一小提琴唱出下行叹息二度（$a\flat^1\text{–}g^1, c^2\text{–}b^1$），大提琴以严谨的阶梯下行低音相对应（$C\text{–}B_1, A\flat_1\text{–}G_1, F_1\text{–}E\flat_1$），内声部以密集的八分音符音阶流动填补空隙；
@@ -129,7 +380,94 @@ graph TD
 
 在展开与过渡的激烈交织后，第 71–80 小节进入了全乐章最具合唱崇高感的时刻：
 
-*谱例：勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章，mm. 71–80，大提琴属踏板音上方三声部圣咏合唱与半音叹息声部导向*
+```lilypond title="勃拉姆斯 弦乐四重奏 Op.51 No.1 第四乐章" location="Allegro，mm.71–80" id="brahms-op51no1-iv-mm71-80"
+\version "2.26.0"
+\language "english"
+
+% 勃拉姆斯 Op.51 No.1 第四乐章，大提琴属踏板音上方的三声部圣咏合唱。
+% 据 OpenScore StringQuartets（CC0-1.0）MXL 核对后自编码摘录；
+% 此处 mm.71–80 对应源文件印刷小节号 215–224。
+
+global = {
+  \time 2/2
+  \tempo "Allegro" 2 = 92
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key c \minor
+  f'4. g'8 g'4.( af'8) |
+  af'2( f'4) r8 f'8 |
+  bf'2( e'4) r8 e'8 |
+  af'4( g'4 d'4 ef'4) |
+  e'2( f'4) bf4( |
+  af'4 f'4 cs'4 d'4) |
+  d''4( bf'4 e'4 f'4) |
+  ef''4( d''4 c''4 bf'4~) |
+  bf'4 af'2 g'4~ |
+  g'4 f'2 f'4 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key c \minor
+  d'2 d'2 |
+  d'2. r8 d'8 |
+  df'2. r8 df'8 |
+  c'2 cf'4( bf4) |
+  cs'2( d'4) r4 |
+  d'2( f'2~ |
+  f'2 bf'2~) |
+  bf'4 ef'2( g'4) |
+  f'2( e'2 |
+  c'2 ef'2) |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key c \minor
+  af4.( g8) g4.( f8) |
+  f2( af4) r8 af8 |
+  g2( bf4) r8 bf8 |
+  f4( af2 g4) |
+  gf2( f4) r4 |
+  bf4 bf2 bf4~ |
+  bf4 d'2 bf4~ |
+  bf4 bf2( df'4) |
+  c'2 bf2 |
+  c'2 c'2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key c \minor
+  r4\p bf,2 bf,4~ |
+  bf,4 bf,2 bf,4~ |
+  bf,4 bf,2 bf,4~ |
+  bf,4 bf,2 bf,4~ |
+  bf,4 bf,2 bf,4~ |
+  bf,4 bf,2 bf,4( |
+  af,4) af,2 af,4( |
+  g,4) g,2 e,4 |
+  f,2 g,2 |
+  af,2 a,2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **踏板低音的定海神针**：大提琴在小字大组 $B\flat_1$ 上持续保持震颤重音脉冲（mm. 71–76），扮演管风琴脚踏键盘（Pedal Bass）的宏大基底；
 - **上三声部的三位一体圣咏**：悬浮在持续低音之上的三件弦乐器，形成了一首无词的弦乐圣咏。第一小提琴重现起句的附点圣咏动机（$f^1\text{–}g^1\text{–}g^1\text{–}a\flat^1$），第二小提琴与中提琴以严格的二分音符长音与反向级进予以和声填充；

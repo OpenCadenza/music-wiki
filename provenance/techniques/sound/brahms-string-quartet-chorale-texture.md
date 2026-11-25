@@ -16,7 +16,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 11–18 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第一乐章 | Allegro，mm. 35–42 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 1–12 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《C 小调第一弦乐四重奏》Op. 51 No. 1 第四乐章 | Allegro，mm. 71–80 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| `brahms-op51no1-i-mm11-18` | 勃拉姆斯《C小调第一弦乐四重奏》Op.51 No.1 第一乐章 | Allegro，mm.11–18 | OpenScore StringQuartets（CC0-1.0）`sq7108150.mxl` 自编码摘录 | CC0-1.0 |
+| `brahms-op51no1-i-mm35-42` | 勃拉姆斯《C小调第一弦乐四重奏》Op.51 No.1 第一乐章 | Allegro，mm.35–42 | OpenScore StringQuartets（CC0-1.0）`sq7108150.mxl` 自编码摘录 | CC0-1.0 |
+| `brahms-op51no1-iv-mm1-12` | 勃拉姆斯《C小调第一弦乐四重奏》Op.51 No.1 第四乐章 | Allegro，mm.1–12（源文件连续编号 145–156） | OpenScore StringQuartets（CC0-1.0）`sq7108150.mxl` 自编码摘录 | CC0-1.0 |
+| `brahms-op51no1-iv-mm71-80` | 勃拉姆斯《C小调第一弦乐四重奏》Op.51 No.1 第四乐章 | Allegro，mm.71–80（源文件连续编号 215–224） | OpenScore StringQuartets（CC0-1.0）`sq7108150.mxl` 自编码摘录 | CC0-1.0 |

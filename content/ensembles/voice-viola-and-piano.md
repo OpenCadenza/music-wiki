@@ -63,7 +63,113 @@ graph TD
 
 在人声进入前，中提琴率先以广阔的独奏线条呈示全曲核心动机：
 
-*谱例：勃拉姆斯《两首歌曲》Op. 91 No. 1，mm. 1–13，前奏中提琴抒情主题呈示与钢琴声学铺垫*
+```lilypond title="勃拉姆斯《两首歌曲》Op.91 No.1《渴望的平息》" location="Adagio espressivo，mm.1–13（含弱起小节）" id="brahms-op91no1-mm1-13"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key d \major
+  \time 2/4
+  \tempo "Adagio espressivo" 4 = 60
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r4 r4 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+}
+
+staffTwo = {
+  \global
+  \clef alto
+  r16 fs8( d16) r4 |
+  d4(~ d16 cs16 e16 g16) |
+  es8.( fs16)~ fs16 d'8( a16) |
+  a4( a16) fs16 g16 e'16 |
+  g4(~ g16 fs16 a'16 d'16) |
+  a'4(~ a'16 fs'16 a'16 d'16) |
+  g'4( g'16) es'16 g'16 a16 |
+  fs'16( ds'16 fs'16 b16) cs''16( as'16 cs''16 e'16) |
+  e''16( b'16 d''8)~ d''16 gs'16( a'16 b'16) |
+  a'16\p( b'16 c''16) fs'16( g'16 a'16) g'16( a'16 |
+  bf'16) e'16( fs'16 g'16) fs'16( g'16 a'16) ds'16( |
+  e'16 fs'16) e'16( fs'16 g'16 e'16 cs'16 b16) |
+  a16( g16) e4( d8) |
+}
+
+staffThreeUp = {
+  \global
+  \clef bass
+  \tuplet 6/4 { r16\p fs'4( d'16 a16 r32 r64 r16 } r4 |
+  \tuplet 6/4 { r16 g'4 d'16 g16 r32 r64 r16 r16 e'4 cs'16 g16 r32 r64 r16 } |
+  \tuplet 6/4 { r16 a'4 d'16 a16 r32 r64 r16 r16 d'4 a16 fs16 r32 r64 r16 } |
+  \tuplet 6/4 { r16 fs'4 d'16 a16 r32 r64 r16 r16 e'4 a16 g16 r32 r64 r16 } |
+  \tuplet 6/4 { r16 a4 g16 e16 r32 r64 r16 r16 d'4 a16 fs16 r32 r64 r16 } |
+  r8 cs'8 \tuplet 6/4 { d16 r32 r64 } e'8 d'8) \tuplet 6/4 { d16 g16 } |
+  r8 cs'8( \tuplet 6/4 { d16 r32 r64 } e'8 d'8) \tuplet 6/4 { d16 fs16 } |
+  r4 \tuplet 6/4 { b16 g16 e'16 } r8 r8 \tuplet 6/4 { e'16 b'16 } |
+  r2 \tuplet 6/4 { b'16 e'16 d''16 r8 e'16 d'16 gs'16 } |
+  r8\p r8 \tuplet 6/4 { c'16 a'16 } r4 |
+  cs'8 r8 r8 r8 \tuplet 6/4 { ds16 a16 } |
+  r4 e8 r8 |
+  r2 |
+}
+
+staffThreeDown = {
+  \global
+  \clef bass
+  d,4\p \tuplet 6/4 { fs16 a,16 } r4 |
+  e,4 \tuplet 6/4 { d16 b,16 } a,,4 \tuplet 6/4 { cs16 a,16 } |
+  d,4 \tuplet 6/4 { fs16 d16 } fs,4 \tuplet 6/4 { d16 a,16 } |
+  b,,4 \tuplet 6/4 { fs16 d16 } cs,4 \tuplet 6/4 { e16 a,16 } |
+  d,4 \tuplet 6/4 { cs16 a,16 } c,4 \tuplet 6/4 { d16 a,16 } |
+  \tuplet 6/4 { b,,16 b,16 d16 r16 r64 r64 b,16 b,,16 b,16 d16 } r8 |
+  \tuplet 6/4 { a,,16 a,16 d16 r16 r64 r64 a,16 a,,16 a,16 d16 } r8 |
+  \tuplet 6/4 { g,,16( g,16 b,16 r8 g,16 e16 g16 } r8 |
+  \tuplet 6/4 { gs,16 e16 gs16 r8 e,16 e16 b16 } r8 |
+  \tuplet 6/4 { a,16\p fs16 a16 r8 } r8 \tuplet 3/2 { a,16 e16 a16) } |
+  r4 \tuplet 6/4 { a,,16( a,16 c16 } r8 |
+  r8 \tuplet 3/2 { a,,16 a,16 cs16) } r4 |
+  r2 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "viola"
+      \staffTwo
+    >>
+    \new PianoStaff <<
+      \new Staff = "P3upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeUp
+      >>
+      \new Staff = "P3lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **中提琴核心主题（mm. 0–5）**：中提琴由小字组 $F\sharp_3\text{–}D_3$ 弱起切入，在第 1 小节滑向低音 $C\sharp_3\text{–}E_3\text{–}G_3$，随后通过大幅度大跳向上攀升至小字二组（m. 5: $A_4\text{–}F\sharp_4\text{–}A_4\text{–}D_4$），以深沉的弧形乐句奠定了平静渴望的意境；
 - **钢琴的声学减重**：钢琴右手避免厚重的柱式和弦，代之以轻柔跳跃的十六分音符短分解和弦，左手仅在强拍点缀八度低音，为中提琴留出了毫无阻碍的共鸣环境。
@@ -77,7 +183,109 @@ graph TD
 
 第 14 小节，女低音以极具感染力的弱奏进入（*In goldnen Abendschein getauchet...*）：
 
-*谱例：勃拉姆斯《两首歌曲》Op. 91 No. 1，mm. 14–25，人声进入与中提琴助奏的音色解耦与错位模仿*
+```lilypond title="勃拉姆斯《两首歌曲》Op.91 No.1《渴望的平息》" location="Adagio espressivo，mm.14–25" id="brahms-op91no1-mm14-25"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key d \major
+  \time 2/4
+  \tempo "Adagio espressivo" 4 = 60
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r4 r8 a'8 |
+  fs'8 e'8 d'8 fs'8 |
+  g'4. e'8 |
+  cs'8 d'8 r8 d''8 |
+  a'8 g'8 fs'8 a'8 |
+  d'8( fs'4) e'8 |
+  a4 r8 d'8 |
+  e'8( fs'8) g'8( gs'8) |
+  a'8.( fs'16) a'8. d'16 |
+  g'8. es'16 g'8.( fs'16) |
+  e'8 b'8 cs''8 d''8 |
+  cs''8( gs'8) a'8( ds'8) |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  d8( cs8) r4 |
+  r4 r16 fs8( d16) |
+  d4(~ d16 cs16 e16 g16) |
+  es8( fs8) r4 |
+  r4 r16 d'8( a16) |
+  a4(~ a16 fs16 g16 e'16) |
+  g8.( e16~ e16 g16 fs16 a16) |
+  g16( b16 a16 d16)~ d16( d'8 d''16) |
+  r16 cs''16( e''8.) cs''16( d''8) |
+  r16 cs''16( e''8.) cs''16( d''8) |
+  r16 cs''16( e''8.) d''16( fs''8)~ |
+  fs''16 e''8 d''8 cs''8 a'16 |
+}
+
+staffThreeUp = {
+  \global
+  \clef bass
+  r2 |
+  r16 cs16( e16 g16) \tuplet 6/4 { fs16( d16 a16 fs16 d'16 a16) } |
+  \tuplet 6/4 { r16 g'16( b16 g16 r16 r64 r64 r16 e'16 cs'16 g16 } r16 r64 r64 |
+  \tuplet 6/4 { r16 d'16 a16 fs16 r16 r64 r64 } r4 |
+  r16 a,16 e16 cs16) \tuplet 6/4 { d16( a,16 fs16 d16 d'16 a16) } |
+  \tuplet 6/4 { r16 fs'16( d'16 a16 r16 r64 r64 r16 e'16 a16 g16 } r16 r64 r64 |
+  \tuplet 6/4 { r16 a16 g16 e16 r16 r64 r64 } r4 |
+  r2 |
+  r16 r64 r64 \tuplet 3/2 { d16 } cs'8)~ \tuplet 3/2 { cs'8( e'16 d'16 d16 g16) } |
+  r16 r64 r64 \tuplet 3/2 { d16 } cs'8~ \tuplet 3/2 { cs'8( e'16 d'16 d16 fs16) } |
+  r2 \tuplet 6/4 { e16 d'16 b16 e16 r16 r64 r64 gs16 gs'16 d'16 gs16 } |
+  \tuplet 6/4 { r16 e16( cs'16~ cs'16 e16 gs16~ gs16 e16 a16~ a16 ds16 a16) } |
+}
+
+staffThreeDown = {
+  \global
+  \clef bass
+  r4 a,,4~ |
+  a,,4.( d,8) |
+  e,4 \tuplet 6/4 { d16 b,16 } a,,4 \tuplet 6/4 { cs16 a,16 } |
+  d,4 \tuplet 6/4 { d16 a,16 } fs,,4~ |
+  fs,,4.( d,8) |
+  b,,4 \tuplet 6/4 { fs16 d16 } cs,4 \tuplet 6/4 { e16 a,16 } |
+  d,4 \tuplet 6/4 { cs16 a,16 } c,4~ |
+  c,2 |
+  r4 \tuplet 3/2 { b,16 r8 r32 r64 b,,16( b,16) r16 } r8 |
+  r4 \tuplet 3/2 { a,16 r8 r32 r64 a,,16( a,16) r16 } r8 |
+  \tuplet 6/4 { gs,,16( gs,16 r8 r32 r64 e,,16 e,16 } r8 r32 r64 |
+  a,,8 b,,8 cs,8 fs,8) |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "viola"
+      \staffTwo
+    >>
+    \new PianoStaff <<
+      \new Staff = "P3upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeUp
+      >>
+      \new Staff = "P3lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 分析此处的复调织体，展现了经典的三方平衡机制：
 - **错位模仿与补充**：第 14 小节人声唱出小字一组主旋律（$F\sharp_4\text{–}E_4\text{–}D_4\text{–}F\sharp_4$）时，中提琴在弱拍后以低八度（$F\sharp_3\text{–}D_3$）进行精巧的回声呼应；
@@ -103,7 +311,101 @@ graph TD
 
 作品开篇并未直接进入摇篮曲主旋律，而是由中提琴在无词状态下独奏呈示 14 世纪德国著名的中世纪圣诞颂歌《约瑟，我亲爱的约瑟》（*Joseph, lieber Joseph mein / Resonet in laudibus*）：
 
-*谱例：勃拉姆斯《两首歌曲》Op. 91 No. 2，mm. 1–10，中提琴独奏呈示古圣咏定旋律《约瑟，我亲爱的约瑟》*
+```lilypond title="勃拉姆斯《两首歌曲》Op.91 No.2《神圣摇篮曲》" location="Andante con moto，mm.1–10" id="brahms-op91no2-mm1-10"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 6/8
+  \tempo "Andante con moto" 8 = 72
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+}
+
+staffTwo = {
+  \global
+  \clef alto
+  c'4\p( a8 f4 a8) |
+  c'4 d'8 c'4.~ |
+  c'4 a8( f4 a8) |
+  c'4 d'8 c'4. |
+  bf4 bf8 bf4 c'8 |
+  bf4 a8 g4 a8( |
+  c'4) a8 f4 a8( |
+  g4 f8) g4 a8( |
+  f4. f4) a8( |
+  f4. f4) r8 |
+}
+
+staffThreeUp = {
+  \global
+  \clef treble
+  r2 r4 |
+  r2 r4 |
+  r8 c'8( e'8 f'8 a8 e'8 |
+  c'8 r2 r8 |
+  r4 r8 r4 r8 |
+  r4 r8 r8 bf8 d'8 |
+  e'8 r8 c'8 r4 r8 |
+  r2 r4 |
+  r2 r4 |
+  r2 r8 r8) |
+}
+
+staffThreeDown = {
+  \global
+  \clef bass
+  r2 r4 |
+  r4 r8 r8 f,8( a,8 |
+  c4.) d4( c8) |
+  a,4( f8 bf8 f,4 f8 c8) |
+  d4 r8 r4 r8 |
+  r8 d,8( fs,8 g,4 f,8) |
+  c,4. e8 r8 d,4. d8 f8 |
+  g,4( d8 a8 g,4) d8 e8 |
+  f4.~ a,8 f4 e8 |
+  f4.~ a,8 f4 f8 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "viola"
+      \staffTwo
+    >>
+    \new PianoStaff <<
+      \new Staff = "P3upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeUp
+      >>
+      \new Staff = "P3lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **中提琴作为神圣代言者**：中提琴在柔和的 F 大调中展开纯朴的颂歌旋律（$c^1\text{–}a\text{–}f\text{–}a \mid c^1\text{–}d^1\text{–}c^1 \mid c^1\text{–}a\text{–}f\text{–}a \mid c^1\text{–}d^1\text{–}c^1$），音符完全落在中提琴最具歌唱性的中低音弦上。勃拉姆斯甚至在最初的手稿中直接将颂歌歌词题写在中提琴分谱下方；
 - **钢琴的摇篮节律导入**：钢琴在第 3 小节切入 $6/8$ 拍轻柔起伏的八分音符摇摆节奏（Rocking rhythm），左手以温和的大跳（$F_2\text{–}A_2\text{–}C_3$）构筑摇篮的晃动动力学。
@@ -126,7 +428,145 @@ graph TD
 
 在 mm. 26–46 中，全曲进入了最具对位功力的复调交响时刻：
 
-*谱例：勃拉姆斯《两首歌曲》Op. 91 No. 2，mm. 26–46，人声摇篮曲与中提琴定旋律的双层复调对话与平行卡农*
+```lilypond title="勃拉姆斯《两首歌曲》Op.91 No.2《神圣摇篮曲》" location="Andante con moto，mm.26–46" id="brahms-op91no2-mm26-46"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key f \major
+  \time 6/8
+  \tempo "Andante con moto" 8 = 72
+}
+
+staffOne = {
+  \global
+  \clef treble
+  d''4. bf'4 d''8 |
+  e''4.(~ e''4 d''8) |
+  c''4.~ c''4 bf'8 |
+  a'4.( g'4. |
+  f'4.) e'4. |
+  d'2.( |
+  e'4 f'16 e'16) d'4 e'8 |
+  f'4 r8 r4 r8 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r4 r8 r4 e'8 |
+  c''4. b'4 a'8 |
+  g'4 f'8 f'4 a'8 |
+  d''4.~ d''4 c''8 |
+  b'4. a'4 r8 |
+  r4 c''8 fs'4 g'8 |
+  gs'4. a'4 r8 |
+  r4 d''8 gs'4 a'8 |
+}
+
+staffTwo = {
+  \global
+  \clef alto
+  g'4 d'8( g'8 bf'8 d''8) |
+  g''4( bf'8 g''4 f''8) |
+  e''4( g'8 e''4 d''8) |
+  c''4( e'8) bf'4( e'8) |
+  a'4( c'8) g'4( c'8) |
+  f'4( a8) r4 r8 |
+  g'4( c'8) r4 r8 |
+  c''4( a'8 f'4 a'8) |
+  c''4( d''8 c''4.)~ |
+  c''8 c'8( a8 f4 a8) |
+  c'4( d'8 c'4.)~ |
+  c'4 r8 d'4.( |
+  c'2.)~ |
+  c'8 r8 c8( e8 g8 c'8) |
+  e'4.( d'4 c'8) |
+  b4.( a4) r8 |
+  f'4.(~ f'4 e'8) |
+  d'4.( c'4) c''8( |
+  fs'4 g'8) r4 r8 |
+  r8 fs8( a8 d'8 fs'8) d''8( |
+  gs'4 a'8) r4 r8 |
+}
+
+staffThreeUp = {
+  \global
+  \clef treble
+  g'4. d'4. |
+  bf'2.\p e''4 d''8 |
+  g'2. c''4 bf'8 |
+  e'2. g'4. |
+  c'2. e'4. |
+  d'2.( |
+  e'2. bf4.) |
+  c'4. r4 r8 |
+  r2 r4 |
+  r8 c'8( e'8 f'8 a8 e'8 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r2 r4 |
+  r4 d'8 f'8 a'8 d''8) |
+  gs'4 r8 r4 r8 |
+  r4 f'8( a'8 c''8 f''8) |
+  c''4 g8( c'8 ef'8 g'8) |
+  r8 c''8( fs'8) r8 c'8( fs8) |
+  r4 a8( d'8 f'8 a'8) |
+}
+
+staffThreeDown = {
+  \global
+  \clef bass
+  g,4( bf,8 g,4 bf,8) |
+  c,4\p( g,8 c4 g,8) |
+  c,4( g,8 c4 g,8) |
+  c,4( c8 c,4 c8) |
+  c,4( c8 c,4 c8) |
+  c,4( f,8 c4 f,8) |
+  c,4( g,8 c4 c,8) |
+  f,4. r4 r8 |
+  r4 r8 r8 f,8( a,8 |
+  c4.) d4( c8 |
+  a,4 f8 bf8 f,4 f4)~ a,8 |
+  f4 r8 f4.( a,8) |
+  e2. e,8 g,4 c8 |
+  e4 g8 c'4 r8 |
+  r4 a,8( c8 e8 a8) |
+  d4 r8 r4 r8 |
+  r4 e,8( gs,8 b,8 e8) |
+  f,4 r8 r4 r8 |
+  e,4.( ef,4. |
+  d,2. d4.) |
+  fs,4.( f,4.) |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "choir aahs"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "viola"
+      \staffTwo
+    >>
+    \new PianoStaff <<
+      \new Staff = "P3upper" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeUp
+      >>
+      \new Staff = "P3lower" <<
+        \set Staff.midiInstrument = "acoustic grand"
+        \staffThreeDown
+      >>
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **双旋律复合对位**：人声歌唱与中提琴圣咏形成了平行的二重唱。在 mm. 40–43 中，人声下行歌唱（$c^2\text{–}b^1\text{–}a^1 \mid g^1\text{–}f^1\text{–}f^1\text{–}a^1$），中提琴在其下方三度与六度严密咬合（$e^1\text{–}d^1\text{–}c^1 \mid b\text{–}a$），展现出严谨的[挂留音机制与声部导向](../techniques/counterpoint/suspension-mechanics-and-voice-leading.md)；
 - **微观卡农模仿（mm. 44–46）**：中提琴紧随人声的叹息动机（$c^2\text{–}f\sharp^1\text{–}g^1$），以一拍之差展开紧凑的卡农呼应，三方织体呈现出如文艺复兴复调经文歌般的严谨对位。

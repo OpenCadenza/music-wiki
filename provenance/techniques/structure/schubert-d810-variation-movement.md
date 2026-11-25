@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 1–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 49–56 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 73–80 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 舒伯特《d小调第14弦乐四重奏“死与少女”》（D.810）第二乐章 | mm. 97–104 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| `schubert-d810-ii-mm1-8` | 舒伯特《d小调第14弦乐四重奏“死与少女”》D.810 第二乐章 | Andante con moto，mm.1–8 | OpenScore StringQuartets（CC0-1.0）`sq7397765.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d810-ii-mm49-56` | 舒伯特《d小调第14弦乐四重奏“死与少女”》D.810 第二乐章 | Andante con moto，mm.49–56 | OpenScore StringQuartets（CC0-1.0）`sq7397765.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d810-ii-mm73-80` | 舒伯特《d小调第14弦乐四重奏“死与少女”》D.810 第二乐章 | Andante con moto，mm.73–80 | OpenScore StringQuartets（CC0-1.0）`sq7397765.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d810-ii-mm97-104` | 舒伯特《d小调第14弦乐四重奏“死与少女”》D.810 第二乐章 | Andante con moto，mm.97–104 | OpenScore StringQuartets（CC0-1.0）`sq7397765.mxl` 自编码摘录 | CC0-1.0 |

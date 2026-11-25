@@ -68,7 +68,7 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
   * 低音声部：$E2 \to G\sharp 2 \to A2 \to B2 \dots$，构建出坚如磐石的二重对位骨架；
 - **乐段结构与和声向心力**：严格的 16 小节方整结构（$8 + 8$），前半段落于属调 B 大调，后半段从升 c 小调向主调 E 大调回环收拢，展示出极其纯净的德奥古典调性闭环。
 
-贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 主题 Gesangvoll, mit innigster Empfindung，mm. 1–16。
+贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章主题 mm.1–8 的谱例见 [《增六和弦机制与句法漂移》](../harmony/augmented-sixth-mechanics-and-syntactic-drift.md#score-beethoven-op109-iii-mm1-8)；mm.9–16 的后半段与主题终止式不在该谱例范围内，此处只作文字描述，不另复制代码块。
 
 ### 2. 第一变奏：意大利美声咏叹调与歌剧化转译（mm. 17–32）
 标记为 *Molto espressivo* 的第一变奏，展示了性格变奏对于“语境置换”的惊人魔力：

@@ -33,7 +33,98 @@ description: 剖析海顿《第104交响曲》第一乐章慢引子（Adagio）�
 ### 3. 自然乐器物理性能的美学转化
 在古典时期的管弦乐队中，D 调自然小号与定音鼓（调至 $D$ 与 $A$）受限于自然泛音列，只能演奏泛音根音与纯五度。海顿巧妙借用这一物理局限，将乐器原生的“无三音”硬度直接转化为调性多义性的哲学发问：自然的空五度音响不仅是织体选择，更成为交响曲开篇悬念的物理载体。
 
-海顿《D大调第104交响曲》第一乐章 Adagio，mm. 1–2。
+```lilypond title="海顿 第104交响曲 Hob.I:104 第一乐章" location="Adagio，mm.1–2" id="haydn-hob1-104-i-adagio-mm1-2"
+\version "2.26.0"
+\language "english"
+
+% 海顿 D 大调第 104 交响曲第一乐章，慢引子开篇：空五度号角齐奏（木管与弦乐齐奏，无三音）。
+% 据 MuseData/CCARH 转写本（kern / MusicXML）核对后自编码摘录，学术用途。
+
+global = {
+  \time 4/4
+  \tempo "Adagio" 4 = 44
+}
+
+fluteOne = {
+  \global
+  \clef treble
+  \key d \minor
+  d''4 d''8.. d''32 a''2 |
+  d''4 d''8.. d''32 a'2 |
+}
+
+oboeOne = {
+  \global
+  \clef treble
+  \key d \minor
+  d''4 d''8.. d''32 a''2 |
+  d''4 d''8.. d''32 a'2 |
+}
+
+clarinetOne = {
+  \global
+  \clef treble
+  \transposition a
+  \key f \minor
+  f'4 f'8.. f'32 c''2 |
+  f''4 f''8.. f''32 c''2 |
+}
+
+bassoonOne = {
+  \global
+  \clef bass
+  \key d \minor
+  d4 d8.. d32 a2 |
+  d4 d8.. d32 a,2 |
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key d \minor
+  d''4 d''8.. d''32 a''2 |
+  d''4 d''8.. d''32 a'2 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key d \minor
+  d'4 d'8.. d'32 a'2 |
+  d'4 d'8.. d'32 a2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key d \minor
+  d'4 d'8.. d'32 a'2 |
+  d'4 d'8.. d'32 a2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key d \minor
+  d4 d8.. d32 a2 |
+  d4 d8.. d32 a,2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "flute" \fluteOne }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "clarinet" \clarinetOne }
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoonOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -56,7 +147,90 @@ description: 剖析海顿《第104交响曲》第一乐章慢引子（Adagio）�
 ### 3. F 大调与 D 小调的三度中音偏转
 在调性网络中，F 大调作为 D 小调的平行大调（$III$ 级），在古典交响曲慢引子中具有独特的情感假释作用。海顿通过从 D 小调下沉到 F 大调的明亮号角，暗示了某种“虚假的胜利”——听众短暂以为音乐将走向 F 大调的光明，然而这随即被随后的半音阶攀登打破。这种三度中音色彩的闪烁，进一步深化了全曲的门槛张力。
 
-海顿《D大调第104交响曲》第一乐章 Adagio，mm. 3–8。
+```lilypond title="海顿 第104交响曲 Hob.I:104 第一乐章" location="Adagio，mm.3–8" id="haydn-hob1-104-i-adagio-mm3-8"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Hob.I:104 第一乐章慢引子，D 小调悲叹与 F 大调全奏突袭（管乐声部从略）。
+% 据 MuseData/CCARH 转写本（kern / MusicXML）核对后自编码摘录，学术用途。
+
+global = {
+  \time 4/4
+  \tempo "Adagio" 4 = 44
+}
+
+bassoonOne = {
+  \global
+  \clef bass
+  \key d \minor
+  a4 a8.. a32 a2 |
+  a4 a8.. a32 a2 |
+  a4 a8.. bf32 bf2 |
+  r8 e'16. f'32 f'8\staccato d'16. c'32 c'8 r8 bf8 r8 |
+  f4 f8.. f32 c'2 |
+  f4 f8.. f32 c2 |
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key d \minor
+  r2 r8\fz d''16.( cs''32)\p cs''8(\staccato cs''8)\staccato |
+  r2 r8\fz d''16.( cs''32)\p cs''8(\staccato cs''8)\staccato |
+  r2 r8\fz d''16.( c''32)\p c''8(\staccato c''8)\staccato |
+  c''4. bf'16.( a'32) a'8 r8 a'8 r8 |
+  f''4 f''8.. f''32 c'''2 |
+  f''4 f''8.. f''32 c''2 |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key d \minor
+  d'4 d'8..( e'32 e'2) |
+  d'4 d'8..( e'32 e'2) |
+  d'4 d'8..( e'32 e'2) |
+  e'8\fz g'16.(\p f'32) f'8 g'16.( f'32) f'8 r8 e'8 r8 |
+  f'4 f'8.. f'32 c''2 |
+  f'4 f'8.. f'32 c'2 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key d \minor
+  a4 a8..( bf32 bf2) |
+  a4 a8..( bf32 bf2) |
+  a4 a8..( bf32 bf2) |
+  f'8\fz bf'16.(\p a'32) a'8 d'16.( c'32) c'8 r8 bf8 r8 |
+  <a f'>4 f'8.. f'32 c''2 |
+  f'4 f'8.. f'32 c'2 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key d \minor
+  f4 f8..( g32) g2 |
+  f4 f8..( g32) g2 |
+  f4 f8..( g32) g2 |
+  a4. bf16.( c'32) c'8 r8 c8 r8 |
+  f4 f8.. f32 c'2 |
+  f4 f8.. f32 c2 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoonOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -81,7 +255,85 @@ description: 剖析海顿《第104交响曲》第一乐章慢引子（Adagio）�
 - **属功能的不可逆锁定**：在第 16 小节，全乐团的和声最终收敛于 D 大调的属和弦（$A$ 大三和弦：低音沉驻于大字一组 $AA$，内声部在中提琴与第二小提琴上平稳解决，第一小提琴由还原 $f1$ 缓缓滑向导音 $e1$）；
 - **总休止（Grand Pause）的绝对寂静**：第 16 小节第四拍，海顿留下了一个完全无声的全休止。这不仅是乐句的呼吸，更是一道深不见底的“声学悬崖”——巨大的交响动量在此处被瞬间冻结，排除了前序管弦乐的残余混响，屏息以待新世界的降生。
 
-海顿《D大调第104交响曲》第一乐章 Adagio，mm. 9–16。
+```lilypond title="海顿 第104交响曲 Hob.I:104 第一乐章" location="Adagio，mm.9–16" id="haydn-hob1-104-i-adagio-mm9-16"
+\version "2.26.0"
+\language "english"
+
+% 海顿 Hob.I:104 第一乐章慢引子，半音阶攀升与属音锁定（弦乐声部）。
+% 据 MuseData/CCARH 转写本（kern / MusicXML）核对后自编码摘录，学术用途。
+
+global = {
+  \time 4/4
+  \tempo "Adagio" 4 = 44
+}
+
+violinOne = {
+  \global
+  \clef treble
+  \key d \minor
+  r2 r8\p g''16.( fs''32) fs''8(\staccato fs''8)\staccato |
+  r2 r8 g''16.( fs''32) fs''8(\staccato fs''8)\staccato |
+  r8 bf''16.( a''32) a''8(\staccato a''8)\staccato r8 bf''16.( a''32) a''8(\staccato a''8)\staccato |
+  d'''4( cs'''4 c'''2~) |
+  c'''4. g''16.( f''32) f''8\staccato r8 cs''8\staccato r8 |
+  d''4 d''8.. d''32 a''2 |
+  d''4 d''8.. d''32 g'2 |
+  f'2( e'2) |
+}
+
+violinTwo = {
+  \global
+  \clef treble
+  \key d \minor
+  ef'4 ef'8..( d'32) d'2 |
+  f'4 f'8..( e'32) e'2 |
+  g'4 g'8..( f'32) f'4 f'4 |
+  g'4( g''4 a''2~) |
+  a''4( g''8) e''16.( d''32) d''8\staccato r8 a'8\staccato r8 |
+  d'4 d'8.. d'32 a'2 |
+  d'4 d'8.. d'32 g4( ef'4) |
+  r1 |
+}
+
+viola = {
+  \global
+  \clef alto
+  \key d \minor
+  c'4 c'4 c'2 |
+  d'4 d'4 d'2 |
+  e'4 e'4 f'4 f'4 |
+  e'4( e''4 ef''4)( d''4~) |
+  d''4. bf'16.( a'32) a'8 r8 e'8\staccato r8 |
+  d'4 d'8.. d'32 a'2 |
+  d'4 d'8.. d'32 g4( bf4) |
+  r1 |
+}
+
+cello = {
+  \global
+  \clef bass
+  \key d \minor
+  a4 a4 a2 |
+  b4 b4 b2 |
+  cs'4 cs'4 d'4 d'4 |
+  r8 bf16.( a32) a8(\staccato a8)\staccato r8 g'16.( fs'32) fs'8(\staccato fs'8)\staccato |
+  r8 fs16.( g32) g8 bf16.( a32) a8\staccato r8 a8\staccato r8 |
+  d4 d8.. d32 a2 |
+  d4 d8.. d32 g,2 |
+  a,4 r4 a,4 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -100,7 +352,7 @@ description: 剖析海顿《第104交响曲》第一乐章慢引子（Adagio）�
 - **脉动持续与半终止（mm. 20–24）**：在第 20 小节，第一小提琴以轻快的四个八分音符断音 $a1$ 维持脉动；第 21–22 小节旋律跃入高八度 $d2$，随后经优雅的小降落收束于半终止（HC）；
 - **后句加固与完全正格终止（mm. 25–32）**：第 25 小节原样重复主题动机，第二小提琴以 $f\sharp 1 \to d1$、中提琴以 $d1 \to A$ 提供更加充实的和声支撑；第 29–31 小节小提琴向上级进扩展，最终在第 32 小节以无可挑剔的完全正格终止（PAC）达成室内乐维度的圆满落定。
 
-海顿《D大调第104交响曲》第一乐章 Allegro，mm. 17–32。
+海顿《D大调第104交响曲》第一乐章 Allegro，mm. 17–32（按源编号；部分版本作 mm. 17–31）的谱例见[《管弦乐音色转型》](../../styles/orchestral-timbre-aesthetic-shift.md#score-haydn-hob1-104-i-mm17-31)。
 
 ---
 
@@ -119,7 +371,7 @@ description: 剖析海顿《第104交响曲》第一乐章慢引子（Adagio）�
 - **和声摆动动力学**：第 37、39 小节落于下属和弦，高音冲至高音 $B5$；第 38、40 小节强势回归原位主和弦，高音收于 $A5$；
 - **交响势能的完全释放**：这种在主部主题收束处施加的下属功能动力扩展，不仅强化了 D 大调的统治地位，更为接下来的向属调（A 大调）过渡蓄积了无与伦比的交响势能。
 
-海顿《D大调第104交响曲》第一乐章 Allegro，mm. 33–40。
+海顿《D大调第104交响曲》第一乐章 Allegro，mm. 33–40（按源编号 mm. 32–39）的全奏接缝谱例见[《管弦乐音色转型》](../../styles/orchestral-timbre-aesthetic-shift.md#score-haydn-hob1-104-i-mm32-39)。
 
 ---
 

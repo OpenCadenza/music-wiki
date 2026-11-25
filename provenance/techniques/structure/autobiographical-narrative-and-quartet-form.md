@@ -16,7 +16,11 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 1–16 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm. 31–46 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 1–24 | OpenScore SQ（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第四乐章 | Vivace，mm. 25–49 | OpenScore SQ（CC0） | CC0 / 公有领域 |
+| `smetana-sq1-i-mm1-16` | 斯美塔那《E 小调第一弦乐四重奏“我的一生”》第一乐章 | Allegro vivo appassionato，mm.1–16 | OpenScore StringQuartets MXL `smetana-sq1-from-my-life.mxl` | CC0-1.0 / 公有领域 |
+| `smetana-sq1-i-mm31-46` | 同上 第一乐章 | Allegro vivo appassionato，mm.31–46 | 同上 | CC0-1.0 / 公有领域 |
+| `smetana-sq1-iv-mm1-24` | 同上 第四乐章 | Vivace，mm.1–24 | 同上 | CC0-1.0 / 公有领域 |
+| `smetana-sq1-iv-mm25-49` | 同上 第四乐章 | Vivace，mm.25–49 | 同上 | CC0-1.0 / 公有领域 |
+
+> 底本细节：正文称 mm.1–16 的背景震音为「附点十六分音符」，OpenScore 底本记为一梁八分音符震音（`<tremolo>1</tremolo>`）；谱例按底本出谱，两处口径差异留待正文复核。
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

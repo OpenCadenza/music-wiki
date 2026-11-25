@@ -50,7 +50,75 @@ category: ensembles
 | **mm. 1–4** | 附点附奏贯穿，倍低音提琴与定音鼓在强拍施以沉重下坠阻尼 | 大提琴坚守纯单音低音线条，四件乐器使用弓根（tallone）粗粝下弓压奏 | 利用弓毛摩擦瞬间的高静摩擦力置换膜鸣乐器的瞬态敲击冲击 |
 | **mm. 5–8** | 木管组长音渐弱，弦乐声部展开弱奏下行哀歌 | 第一小提琴长线条独唱（$F5 \to C\sharp4$），内声部单音平稳跟随 | 剥离管乐色彩干扰，以纯净弓弦发音营造近场深邃的祈祷空间 |
 
-[谱例占位：海顿《十字架上的临终七言》（Op. 51）引子，mm. 1–4，全奏开篇强奏附点扫弦与第二小提琴/中提琴双音和声厚度]
+```lilypond title="海顿《十字架上的临终七言》Op.51 引子" location="Maestoso ed Adagio，mm.1–4" id="haydn-op51-intro-mm1-4"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key d \minor
+  \time 4/4
+  \tempo "Maestoso ed Adagio" 4 = 46
+}
+
+staffOne = {
+  \global
+  \clef treble
+  d'4\ff d''8.. d''32 cs''8-. bf''8-. r4 |
+  a4 g''8.. g''32 f''8-. d'''8-. r4 |
+  f'2\p( e'4. fs'16. g'32) |
+  g'4 r8 bf'16.( a'32) a'8-. r8 r8 bf''16.( a''32) |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  d'4\ff <f' a'>8.. <f' a'>32 <g' bf'>8-. cs'8-. r4 |
+  a4 <a' e''>8.. <a' e''>32 <a' f''>8-. f'8-. r4 |
+  d'2.\p( cs'8 c'8) |
+  <bf d'>4 r8 cs'16.( d'32) d'8-. r8 r8 cs''16.( d''32) |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  <f a>4\ff d'8.. d'32 e'8-. g'8-. r4 |
+  a4 cs''8.. cs''32 d''8-. d'8-. r4 |
+  r8 d'8( bf8 f8 g8\p gs8 a8 d'8) |
+  g4 r8 e'16.( f'32) f'8-. r8 r8 g'16.( f'32) |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  d4\ff d'8.. d'32 e'8-. e8-. r4 |
+  a,4 cs'8.. cs'32 d'8-. d8-. r4 |
+  r8 d8( bf,8 f,8 g,8\p gs,8 a,4) |
+  bf,4 r8 g16.( f32) f8-. r8 r4 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 第二小提琴与中提琴的双音扫弦：充当“和声变压器”
 
@@ -74,7 +142,75 @@ category: ensembles
 - 第一小提琴独揽悲壮而纯净的下行旋律（从 $F5$ 级进滑落至 $C\sharp4$），第二小提琴以单音八分音符平稳伴随；
 - 中提琴与大提琴在低音区施以极其克制的半音下行（$B\flat - A - G\sharp - A$），营造出加的斯地下圣洞中蜡烛摇曳般的深邃肃穆空间。
 
-[谱例占位：海顿《十字架上的临终七言》（Op. 51）引子，mm. 5–8，弱奏长线条沉思与四重奏声部精细分层]
+```lilypond title="海顿《十字架上的临终七言》Op.51 引子" location="Maestoso ed Adagio，mm.5–8" id="haydn-op51-intro-mm5-8"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key d \minor
+  \time 4/4
+  \tempo "Maestoso ed Adagio" 4 = 46
+}
+
+staffOne = {
+  \global
+  \clef treble
+  a''8-. r8 r8 bf'16.( a'32) a'16-. r16 g'16-. r16 f'16-. r16 e'16-. r16 |
+  d'4\f d''8.. d''32 cs''8-. bf''8-. r4 |
+  c'4 ef''8.. ef''32 d''16 d'''16 d'''16-. d'''16-. d'''16-. d'''16-. d'''16-. d'''16-. |
+  d'''8\fz~ d'''32( c'''32 bf''32 a''32) g''16-. g''16-. g''16-. g''16-. c'''8~ c'''32( bf''32 a''32 g''32) fs''16-. fs''16-. fs''16-. fs''16-. |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  d''8-. r8 r8 cs'16.( d'32) d'16-. r16 e'16-. r16 d'16-. r16 cs'16-. r16 |
+  d'4\f <f' a'>8.. <f' a'>32 <g' bf'>8-. cs'8-. r4 |
+  c'4 <fs' a'>8.. <fs' a'>32 <g' bf'>4 r4 |
+  <d' bf'>16\ff <d' bf'>16 <d' bf'>16 <d' bf'>16 <d' bf'>16 <d' bf'>16 <d' bf'>16 <d' bf'>16 <fs' a'>16 <fs' a'>16 <fs' a'>16 <fs' a'>16 <ef' c''>16 <ef' c''>16 <ef' c''>16 <ef' c''>16 |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  f'8-. r8 r8 e'16.( f'32) f'16-. r16 g'16-. r16 a'16-. r16 a16-. r16 |
+  <f a>4\f d'8.. d'32 e'8-. g'8-. r4 |
+  c'4 c''8.. c''32 bf'16 <g' bf'>16-. <g' bf'>16-. <g' bf'>16-. <g' bf'>16-. <g' bf'>16-. <g' bf'>16-. <g' bf'>16-. |
+  <g' bf'>16 <g' bf'>16 <g' bf'>16 <g' bf'>16 <g' bf'>16 <g' bf'>16 <g' bf'>16 <g' bf'>16 ef''16 ef''16 ef''16 ef''16 a'16 a'16 a'16 a'16 |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  r4 r8 g16.( f32) f16-. r16 g16-. r16 a16-. r16 a,16-. r16 |
+  d4\f d'8.. d'32 e'8-. e8-. r4 |
+  c4 c'8.. c'32 bf4 r16 g,16-. bf,16-. d16-. |
+  g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 g16 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -90,7 +226,83 @@ category: ensembles
 - 这种由中提琴与大提琴构建的纯八度“同音脉动钟摆”（Isorhythmic Pulse），完全接管了管弦乐队低音区的空间铺底功能；
 - 干净剔透的羊肠弦拨动消解了乐队倍低音的浑浊，让后续第一小提琴在第 2 小节切入的高音圣咏（$D5 - C5 - B\flat4$）宛如天使自天际降临。
 
-[谱例占位：海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲，mm. 1–6，中提琴与大提琴八度同音脉冲背景与第一小提琴祈祷圣咏]
+```lilypond title="海顿《十字架上的临终七言》Op.51 第一首奏鸣曲" location="Largo，mm.1–6" id="haydn-op51-sonata1-mm1-6"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key bf \major
+  \time 3/4
+  \tempo "Largo" 4 = 42
+}
+
+staffOne = {
+  \global
+  \clef treble
+  r2 r4 |
+  f''8..\fz( d''32) bf'8-. r8 r4 |
+  bf''8..\fz( g''32) ef''8-. ef''8-.( ef''8-. ef''8-.) |
+  cs''8..\fz( d''32) d''8-. r8 r8 d''8 |
+  c''4 ef''4. a'8 |
+  c''4( bf'8-.) r8 r4 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  r2 r4 |
+  <d' f'>8\f <d' f'>8 <d' f'>8 <d' f'>8 <d' f'>8 <d' f'>8 |
+  <g ef'>8\f <g ef'>8 <g ef'>8 g'8 c''8 a'8 |
+  a'8..\fz( bf'32) bf'8 d'8 d'8 f'8 |
+  g'4 <g ef'>4 <g ef'>8 <g ef'>8 |
+  <g ef'>4( <bf d'>8-.) d'8( ef'8 f'8) |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  bf8\p-. bf8-. bf8-. bf8-. bf8-. bf8-. |
+  d'8\f d'8 d'8 d'8 d'8 d'8 |
+  ef'8\f g'8 g'8 g'8 g'8 c''8 |
+  f'4.\fz f'8 f'8 d'8 |
+  g'4 c'4. c'8 |
+  a4( bf8-.) bf8( c'8 d'8) |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  bf,8\p-. bf,8-. bf,8-. bf,8-. bf,8-. bf,8-. |
+  bf,8\f bf,8 bf,8 bf,8 bf,8 bf,8 |
+  bf,8\f bf,8 bf,8 bf,8 bf,8 bf,8 |
+  bf,8\f bf,8 bf,8 bf,8 bf,8 bf,8 |
+  ef8 ef8 c8 c8 f8 f8 |
+  bf,8 bf,8 bf,8 bf,8 bf,8 bf,8 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 双小提琴的三度/六度交叠：长笛与双簧管色彩的室内乐重构
 
@@ -106,7 +318,91 @@ category: ensembles
 - 第一小提琴以十六分音符急速奔涌，中提琴与大提琴在下方以强烈的反拍切分撕扯；
 - 第二小提琴密集切入双音断奏，锁死和声骨架。这种通过增加对位信息量来代偿绝对声压级的做法，是古典大师处理室内乐缩谱的最高智慧。
 
-[谱例占位：海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲，mm. 37–44，展开部全奏冲击的四重奏声部紧密对位与第二小提琴密集双音]
+```lilypond title="海顿《十字架上的临终七言》Op.51 第一首奏鸣曲" location="Largo，mm.37–44" id="haydn-op51-sonata1-mm37-44"
+\version "2.26.0"
+\language "english"
+
+global = {
+  \key bf \major
+  \time 3/4
+  \tempo "Largo" 4 = 42
+}
+
+staffOne = {
+  \global
+  \clef treble
+  f'8\f( af'8) df''8( f''8 df''8 bf'8) |
+  af'2~ af'16( g'16 gf'16 ef'16) |
+  df'2.\pp~ |
+  df'2 r4 |
+  r2 r4 |
+  af''8..\fz( f''32) d''8-. r8 r4 |
+  bf''8..\fz( g''32) ef''8-. r8 r4 |
+  g''8..\fz( f''32) d''8-. r8 r4 |
+}
+
+staffTwo = {
+  \global
+  \clef treble
+  <df' f'>4\f r4 r8 <df' ef'>8 |
+  <df' ef'>8 <df' ef'>8 <df' ef'>8 <df' ef'>8 <c' ef'>8 <c' ef'>8 |
+  <df' f'>8\pp bf8( af8 bf8 af8 bf8) |
+  af2 r4 |
+  r2 r4 |
+  <f' d''>4.\f <f' d''>8-.( <f' d''>8-. <f' d''>8-.) |
+  <g' ef''>4.\f <g' ef''>8-.( <g' ef''>8-. <g' ef''>8-.) |
+  <f' d''>4.\f <f' d''>8-.( <f' d''>8-. <f' d''>8-.) |
+}
+
+staffThree = {
+  \global
+  \clef alto
+  f'4\f r4 r8 ef'8 |
+  ef'8 ef'8 ef'8 ef'8 ef'8 ef'8 |
+  df'8\pp gf8( f8 gf8 f8 gf8) |
+  f2 r4 |
+  r2 r4 |
+  af'4.\f af'8-.( af'8-. af'8-.) |
+  g'4.\f g'8-.( g'8-. g'8-.) |
+  g'4.\f g'8-.( g'8-. g'8-.) |
+}
+
+staffFour = {
+  \global
+  \clef bass
+  df4\f r4 r8 g,8 |
+  af,8 af,8 af,8 af,8 af,8 af,8 |
+  df8\pp df8 df8 df8 df8 df8 |
+  df2 r4 |
+  bf,8\p-. bf,8-. bf,8-. bf,8-. bf,8-. bf,8-. |
+  bf,8\f bf,8 bf,8 bf,8 bf,8 bf,8 |
+  bf,8\f bf,8 bf,8 bf,8 bf,8 bf,8 |
+  b,8\f b,8 b,8 b,8 b,8 b,8 |
+}
+
+\score {
+  <<
+    \new Staff = "P1" <<
+      \set Staff.midiInstrument = "violin"
+      \staffOne
+    >>
+    \new Staff = "P2" <<
+      \set Staff.midiInstrument = "violin"
+      \staffTwo
+    >>
+    \new Staff = "P3" <<
+      \set Staff.midiInstrument = "viola"
+      \staffThree
+    >>
+    \new Staff = "P4" <<
+      \set Staff.midiInstrument = "cello"
+      \staffFour
+    >>
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 4. 第一首奏鸣曲宏观曲式结构与配器转译映射（mm. 1–104）
 

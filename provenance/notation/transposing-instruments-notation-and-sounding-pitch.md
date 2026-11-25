@@ -17,6 +17,10 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《g小调第四十交响曲》（K.550）第一乐章 | mm. 18–20 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |
-| `beethoven-op92-ii-clarinets-opening`（关联引用） | 贝多芬《A大调第七交响曲》（Op. 92）第二乐章 | mm. 1–10 | 音乐公有领域；关联 `content/techniques/sound/timbral-contrast-and-formal-articulation.md` 已编译谱例 `beethoven-op92-ii-mm1-10`，避免重复出谱 | 公有领域 / Mutopia 转写 |
-| 占位（未出谱） | 贝多芬《C大调第一交响曲》（Op. 21）第二乐章 | mm. 1–15 | 音乐公有领域；据 CCARH MuseData 转写，学术用途 | 公有领域 / CCARH 转写 |
+| `mozart-k550-i-mm18-20-horns` | 莫扎特《g 小调第四十交响曲》K.550 第一乐章（两支圆号，写记谱音） | Molto allegro，mm.18–20 | OpenScore K.550 第一乐章 MusicXML 转写体（`k550-i-openscore-raw.musicxml`，Part 6 `Corno in B.` / Part 7 `Corno in G.`）；与 CCARH MuseData md2 `k550-mvt1.md2` 逐音对照一致 | 公有领域；OpenScore 转写体许可待确认（未写 CC0） |
+| `beethoven-op92-ii-mm1-10`（关联引用） | 贝多芬《A 大调第七交响曲》Op. 92 第二乐章 | mm.1–10 | 关联 `content/techniques/sound/timbral-contrast-and-formal-articulation.md` 已编译谱例 | 公有领域 / Mutopia 转写 |
+| 占位（未出谱） | 贝多芬《C 大调第一交响曲》Op. 21 第二乐章 | mm.1–15 | 本地 CCARH MuseData md2 `beethoven-op21-ii-sym1.md2`（Part 3 `Clarinetti 1, 2 in C`）；本轮只完成声部核对，未转写为 LilyPond | 公有领域（据 CCARH MuseData 转写，学术用途） |
+
+> K.550 一段：本谱例只出两支圆号（`\transposition bf` / `\transposition g`，写记谱音），用于「记谱音 ↔ 实音」对照；同一段落在总谱全奏中的完整语境见 `content/techniques/sound/mozart-k550-syntax-and-orchestration.md` 的 `mozart-k550-i-mm16-24` 块。
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

@@ -16,7 +16,9 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 1–13 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm. 14–25 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 1–10 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
-| 占位（未出谱） | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm. 26–46 | OpenScore Lieder（CC0） | CC0 / 公有领域 |
+| `brahms-op91no1-mm1-13` | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm.1–13（含弱起小节） | OpenScore Lieder MXL `op91-1-Gestillte-Sehnsucht.mxl` | CC0-1.0 / 公有领域 |
+| `brahms-op91no1-mm14-25` | 勃拉姆斯《两首歌曲》Op. 91 No. 1 | Adagio espressivo，mm.14–25 | 同上 | CC0-1.0 / 公有领域 |
+| `brahms-op91no2-mm1-10` | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm.1–10 | OpenScore Lieder MXL `op91-2-Geistliches-Wiegenlied.mxl` | CC0-1.0 / 公有领域 |
+| `brahms-op91no2-mm26-46` | 勃拉姆斯《两首歌曲》Op. 91 No. 2 | Andante con moto，mm.26–46 | 同上 | CC0-1.0 / 公有领域 |
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

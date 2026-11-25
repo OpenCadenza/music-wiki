@@ -17,7 +17,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 舒伯特《小夜曲》D.957 No. 4 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位（未出谱） | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 1–8 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位（未出谱） | 舒伯特《晚安》D.911 No. 1 | Mässig, in gehender Bewegung，mm. 71–82 | OpenScore Lieder MXL | CC0-1.0 |
-| 占位（未出谱） | 舒伯特《菩提树》D.911 No. 5 | Mässig，mm. 25–36、mm. 45–54 | OpenScore Lieder MXL | CC0-1.0 |
+| `schubert-d957no4-mm1-8` | 舒伯特《小夜曲》D.957 No.4 | Mässig，mm.1–8 | OpenScore Lieder（CC0-1.0）`lc5004835.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d911no5-mm1-8` | 舒伯特《菩提树》D.911 No.5 | Mässig，mm.1–8 | OpenScore Lieder（CC0-1.0）`lc5016466.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d911no1-mm71-82` | 舒伯特《晚安》D.911 No.1 | Mässig, in gehender Bewegung，mm.71–82 | OpenScore Lieder（CC0-1.0）`lc5015378.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d911no5-mm25-32` | 舒伯特《菩提树》D.911 No.5 | Mässig，第二段 e 小调转折，mm.25–32 | OpenScore Lieder（CC0-1.0）`lc5016466.mxl` 自编码摘录 | CC0-1.0 |
+| `schubert-d911no5-mm45-52` | 舒伯特《菩提树》D.911 No.5 | Mässig，第三段冬季风暴，mm.45–52 | OpenScore Lieder（CC0-1.0）`lc5016466.mxl` 自编码摘录 | CC0-1.0 |

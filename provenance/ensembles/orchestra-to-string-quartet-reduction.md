@@ -17,7 +17,9 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 1–4 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）引子 | mm. 5–8 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 1–6 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 海顿《十字架上的临终七言》（Op. 51）第 1 首奏鸣曲 | mm. 37–44 | 音乐公有领域；基于 OpenScore StringQuartets CC0 底本 | CC0-1.0 / 公有领域 |
+| `haydn-op51-intro-mm1-4` | 海顿《十字架上的临终七言》Op. 51 引子 | Maestoso ed Adagio，mm.1–4 | OpenScore StringQuartets MXL `haydn-op51-seven-last-words.mxl` | CC0-1.0 / 公有领域 |
+| `haydn-op51-intro-mm5-8` | 同上 引子 | Maestoso ed Adagio，mm.5–8 | 同上 | CC0-1.0 / 公有领域 |
+| `haydn-op51-sonata1-mm1-6` | 同上 第 1 首奏鸣曲 | Largo，mm.1–6 | 同上 | CC0-1.0 / 公有领域 |
+| `haydn-op51-sonata1-mm37-44` | 同上 第 1 首奏鸣曲 | Largo，mm.37–44 | 同上 | CC0-1.0 / 公有领域 |
+
+> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。
