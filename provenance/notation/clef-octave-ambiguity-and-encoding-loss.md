@@ -16,5 +16,5 @@
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
 | `beethoven-op135-iv-mm12-16`（关联引用） | 贝多芬 Op. 135 第四乐章 | Allegro，mm. 12–16 | 音乐公有领域；谱源基于 Humdrum Kern `quartet16-4.krn`，谱例收录于《核心细胞》 | 未确认 |
-| `beethoven-op74-i-mm6-9`（关联引用） | 贝多芬 Op. 74 第一乐章 | Poco Adagio，mm. 6–9 | 音乐公有领域；谱源基于 Humdrum Kern `quartet10-1.krn`，谱例收录于《加兰特图式》 | 未确认 |
+| `beethoven-op74-i-mm1-9`（关联引用） | 贝多芬 Op. 74 第一乐章 | Poco Adagio，mm. 1–9 | 音乐公有领域；谱源基于 Humdrum Kern `quartet10-1.krn`，谱例收录于《加兰特图式》 | 未确认 |
 | `schubert-d328-prelude-and-vocal`（关联引用） | 舒伯特《魔王》D. 328 | mm. 1–5、mm. 72–76 | 音乐公有领域；谱源基于 Mutopia Project / C.F. Peters Band I，谱例收录于《核心细胞》 | 未确认 |

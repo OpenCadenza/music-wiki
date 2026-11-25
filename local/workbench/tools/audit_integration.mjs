@@ -81,7 +81,10 @@ const CHECKS = [
 const TERM_PAIRS = [
   { id: 'idea-motif', name: '乐思 / 乐念', variants: ['乐思', '乐念'] },
   { id: 'suspension', name: '挂留 / 悬置', variants: ['挂留', '悬置'] },
-  { id: 'sequence', name: '模进 / 序列', variants: ['模进', '序列'] },
+  // 2026-11-25 第五轮修正：第四轮把「模进 / 序列」当成同义异写，实为两个概念。
+  // 库内「序列」全部指十二音序列、实音/音高顺序、和声进行顺序（如「和声序列为 I–IV–V」），
+  // 与 sequence（模进）技法无关；替换会改错学术含义。故记「已确认分工」，只统计不判违规。
+  { id: 'sequence', name: '模进 / 序列', variants: ['模进', '序列'], distinct: true },
   { id: 'prinner', name: 'Prinner / 普林纳', variants: ['Prinner', '普林纳'] }
 ]
 
@@ -710,9 +713,9 @@ for (const pair of TERM_PAIRS) {
     }
     variants[variant] = { articles: files.length, occurrences, byBatch, files }
   }
-  termStats[pair.id] = { name: pair.name, variants }
+  termStats[pair.id] = { name: pair.name, variants, distinct: Boolean(pair.distinct) }
   const used = Object.values(variants).filter((v) => v.articles > 0)
-  if (used.length > 1) {
+  if (used.length > 1 && !pair.distinct) {
     add('term-inconsistency', 'content/', `${pair.name} 两种写法并存：${Object.entries(variants).map(([k, v]) => `${k} ${v.articles} 篇`).join(' / ')}`)
   }
 }
@@ -885,7 +888,8 @@ for (const pair of TERM_PAIRS) {
   const [a, b] = pair.variants
   const va = stat.variants[a]
   const vb = stat.variants[b]
-  md.push(`| ${pair.name} | ${a}：${va.articles} 篇 / ${va.occurrences} 次 | ${b}：${vb.articles} 篇 / ${vb.occurrences} 次 | ${va.articles && vb.articles ? '**混用**' : '单一'} |`)
+  const verdict = stat.distinct ? '已确认分工' : va.articles && vb.articles ? '**混用**' : '单一'
+  md.push(`| ${pair.name} | ${a}：${va.articles} 篇 / ${va.occurrences} 次 | ${b}：${vb.articles} 篇 / ${vb.occurrences} 次 | ${verdict} |`)
 }
 md.push('')
 md.push('## 标题与元数据', '')

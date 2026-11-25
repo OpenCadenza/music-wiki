@@ -1,8 +1,8 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T20:42:22.328Z",
-  "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-ee5c71d0-e1b5",
+  "generatedAt": "2026-11-25T00:04:47.973Z",
+  "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-d044eeed-4550",
   "summary": {
     "articles": 60,
     "contentDirs": 16,
@@ -12,13 +12,13 @@
     "provenance": 60,
     "archives": 60,
     "scoreboardIds": 47,
-    "manualGaps": 4,
-    "scoreRefs": 1,
+    "manualGaps": 20,
+    "scoreRefs": 6,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
       "P0": 0,
       "P1": 0,
-      "P2": 13
+      "P2": 0
     },
     "exitCode": 0,
     "passed": true
@@ -82,24 +82,24 @@
     {
       "id": "score-ids",
       "title": "谱例 id 对账（围栏 / provenance / score-board）",
-      "violations": 1,
+      "violations": 0,
       "bySeverity": {
         "P0": 0,
         "P1": 0,
-        "P2": 1
+        "P2": 0
       },
-      "status": "warn"
+      "status": "pass"
     },
     {
       "id": "manual-gaps",
       "title": "score-board 缺口表与正文占位差异",
-      "violations": 10,
+      "violations": 0,
       "bySeverity": {
         "P0": 0,
         "P1": 0,
-        "P2": 10
+        "P2": 0
       },
-      "status": "warn"
+      "status": "pass"
     },
     {
       "id": "titles",
@@ -115,115 +115,17 @@
     {
       "id": "terms",
       "title": "术语口径统计",
-      "violations": 2,
+      "violations": 0,
       "bySeverity": {
         "P0": 0,
         "P1": 0,
-        "P2": 2
+        "P2": 0
       },
-      "status": "warn"
+      "status": "pass"
     }
   ],
-  "violations": [
-    {
-      "category": "id-near-collision",
-      "severity": "P2",
-      "path": "notation/clef-octave-ambiguity-and-encoding-loss.md",
-      "detail": "计划 id beethoven-op74-i-mm6-9 与既有围栏 beethoven-op74-i-mm1-9 同作品同乐章且小节重叠（补谱会重复）",
-      "id": "beethoven-op74-i-mm6-9",
-      "existing": "beethoven-op74-i-mm1-9"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "styles/woodwind-symphonic-emancipation.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 3"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 3、未收录内联 3、裸引用块 0"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/harmony/lydian-mode-and-tonal-gravity.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 3"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 1"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/sound/timpani-writing-and-classical-orchestration.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 4"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/sound/viola-writing-and-orchestral-voicing.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 0、裸引用块 4"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/structure/cadential-prinner-and-structural-closure.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/structure/compound-period-hierarchical-syntax.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/structure/phrase-expansion-and-structural-skeleton.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 3、未收录内联 3、裸引用块 0"
-    },
-    {
-      "category": "placeholder-nonconforming",
-      "severity": "P2",
-      "path": "techniques/structure/sequence-mechanics-and-syntactic-functions.md",
-      "detail": "占位不是规范「谱例待补」写法：括号说明 0、未收录内联 2、裸引用块 0"
-    },
-    {
-      "category": "term-inconsistency",
-      "severity": "P2",
-      "path": "content/",
-      "detail": "挂留 / 悬置 两种写法并存：挂留 20 篇 / 悬置 10 篇"
-    },
-    {
-      "category": "term-inconsistency",
-      "severity": "P2",
-      "path": "content/",
-      "detail": "模进 / 序列 两种写法并存：模进 23 篇 / 序列 6 篇"
-    }
-  ],
-  "advisories": [
-    {
-      "id": "placeholder-without-gap",
-      "detail": "10 篇有谱例占位/计划但没有登记到 score-board manual:gaps",
-      "files": [
-        "styles/woodwind-symphonic-emancipation.md",
-        "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
-        "techniques/harmony/lydian-mode-and-tonal-gravity.md",
-        "techniques/sound/natural-horn-writing-and-harmonic-series.md",
-        "techniques/sound/timpani-writing-and-classical-orchestration.md",
-        "techniques/sound/viola-writing-and-orchestral-voicing.md",
-        "techniques/structure/cadential-prinner-and-structural-closure.md",
-        "techniques/structure/compound-period-hierarchical-syntax.md",
-        "techniques/structure/phrase-expansion-and-structural-skeleton.md",
-        "techniques/structure/sequence-mechanics-and-syntactic-functions.md"
-      ]
-    }
-  ],
+  "violations": [],
+  "advisories": [],
   "indexCoverage": [
     {
       "dir": "",
@@ -530,14 +432,15 @@
           },
           "files": []
         }
-      }
+      },
+      "distinct": false
     },
     "suspension": {
       "name": "挂留 / 悬置",
       "variants": {
         "挂留": {
           "articles": 20,
-          "occurrences": 155,
+          "occurrences": 159,
           "byBatch": {
             "首批": 8,
             "第二轮": 6,
@@ -556,7 +459,7 @@
             },
             {
               "rel": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
-              "count": 42,
+              "count": 45,
               "batch": "首批"
             },
             {
@@ -586,7 +489,7 @@
             },
             {
               "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
-              "count": 68,
+              "count": 69,
               "batch": "首批"
             },
             {
@@ -647,67 +550,17 @@
           ]
         },
         "悬置": {
-          "articles": 10,
-          "occurrences": 33,
+          "articles": 0,
+          "occurrences": 0,
           "byBatch": {
-            "首批": 3,
-            "第二轮": 4,
-            "未知": 3
+            "首批": 0,
+            "第二轮": 0,
+            "未知": 0
           },
-          "files": [
-            {
-              "rel": "composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md",
-              "count": 3,
-              "batch": "首批"
-            },
-            {
-              "rel": "techniques/counterpoint/suspension-mechanics-and-voice-leading.md",
-              "count": 2,
-              "batch": "首批"
-            },
-            {
-              "rel": "techniques/harmony/cadential-six-four-and-dominant-syntax.md",
-              "count": 1,
-              "batch": "第二轮"
-            },
-            {
-              "rel": "techniques/harmony/diminished-seventh-enharmonic-pivot.md",
-              "count": 1,
-              "batch": "第二轮"
-            },
-            {
-              "rel": "techniques/material/motivic-inversion-and-harmonic-recontextualization.md",
-              "count": 3,
-              "batch": "首批"
-            },
-            {
-              "rel": "techniques/rhythm/hypermeter-and-phrase-rhythm.md",
-              "count": 6,
-              "batch": "第二轮"
-            },
-            {
-              "rel": "techniques/sound/debussy-vocal-planes-of-tone.md",
-              "count": 1,
-              "batch": "未知"
-            },
-            {
-              "rel": "techniques/sound/mozart-k550-syntax-and-orchestration.md",
-              "count": 3,
-              "batch": "未知"
-            },
-            {
-              "rel": "techniques/structure/romantic-song-cycle-macrostructure.md",
-              "count": 12,
-              "batch": "未知"
-            },
-            {
-              "rel": "techniques/structure/teleological-multimovement-integration.md",
-              "count": 1,
-              "batch": "第二轮"
-            }
-          ]
+          "files": []
         }
-      }
+      },
+      "distinct": false
     },
     "sequence": {
       "name": "模进 / 序列",
@@ -879,7 +732,8 @@
             }
           ]
         }
-      }
+      },
+      "distinct": true
     },
     "prinner": {
       "name": "Prinner / 普林纳",
@@ -925,7 +779,8 @@
           },
           "files": []
         }
-      }
+      },
+      "distinct": false
     }
   },
   "titleStats": {
@@ -963,6 +818,102 @@
           "span": "示意",
           "status": "不出谱：正文改为示意性表述（差异复读 #1 已处理）",
           "line": 9
+        },
+        {
+          "work": "贝多芬 第一交响曲 Op.21 第二乐章",
+          "span": "mm.1–16、26–52、53–64",
+          "status": "未补：第四轮遗留占位（《管乐交响化》《定音鼓写作》两篇共用），待出谱",
+          "line": 10
+        },
+        {
+          "work": "贝多芬 Op.67 第一乐章",
+          "span": "m.59–62",
+          "status": "未补：第四轮遗留占位（《自然圆号写作》），待出谱",
+          "line": 11
+        },
+        {
+          "work": "贝多芬 Op.67 第二乐章",
+          "span": "mm.1–8、25–33、29–38",
+          "status": "未补：第四轮遗留占位（《自然圆号写作》《中提琴写作》《定音鼓写作》共用）；本乐章 mm.205–209 另有既有片段，区间不重叠",
+          "line": 12
+        },
+        {
+          "work": "贝多芬 Op.67 第三乐章向第四乐章过渡",
+          "span": "mm.324–373",
+          "status": "未补：第四轮遗留占位（《定音鼓写作》），待出谱",
+          "line": 13
+        },
+        {
+          "work": "贝多芬 Op.92 第二乐章",
+          "span": "mm.21–26、27–36、36–40",
+          "status": "未补：第四轮遗留占位（《中提琴写作》《自然圆号写作》共用）；本乐章 mm.1–10 另有既有片段，区间不重叠",
+          "line": 14
+        },
+        {
+          "work": "贝多芬 Op.125 第二乐章",
+          "span": "mm.1–9、195–205",
+          "status": "未补：第四轮遗留占位（《定音鼓写作》），待出谱",
+          "line": 15
+        },
+        {
+          "work": "贝多芬 Op.132 第三乐章",
+          "span": "mm.1–6、14–18、31–36",
+          "status": "未补：第四轮遗留占位（《利底亚调式》），待出谱",
+          "line": 16
+        },
+        {
+          "work": "贝多芬 Op.131 第一乐章",
+          "span": "mm.9–16",
+          "status": "未补：第四轮遗留占位（《中提琴写作》）；本乐章 mm.1–8 已有既有片段，本篇只补其后半",
+          "line": 17
+        },
+        {
+          "work": "贝多芬 Op.59 No.3 第四乐章",
+          "span": "mm.1–10",
+          "status": "未补：第四轮遗留占位（《中提琴写作》），待出谱",
+          "line": 18
+        },
+        {
+          "work": "贝多芬 Op.2 No.1 第一乐章展开部",
+          "span": "mm.49–80",
+          "status": "未补：第四轮遗留占位（《模进与句法》），待出谱",
+          "line": 19
+        },
+        {
+          "work": "莫扎特 K.331 第一乐章",
+          "span": "mm.1–8",
+          "status": "未补：第四轮遗留占位（《终止四六和弦》），待出谱",
+          "line": 20
+        },
+        {
+          "work": "莫扎特 K.545 第一乐章",
+          "span": "mm.5–8、22–26",
+          "status": "未补：第四轮遗留占位（《终止图式》《终止四六和弦》共用），待出谱",
+          "line": 21
+        },
+        {
+          "work": "莫扎特 K.545 第一乐章展开部",
+          "span": "mm.29–42",
+          "status": "未补：第四轮遗留占位（《模进与句法》），待出谱",
+          "line": 22
+        },
+        {
+          "work": "莫扎特 K.332 第一乐章",
+          "span": "mm.41–56",
+          "status": "未补：第四轮遗留占位（《复合乐段》），待出谱",
+          "line": 23
+        },
+        {
+          "work": "莫扎特 K.284 第二乐章",
+          "span": "mm.1–16",
+          "status": "未补：第四轮遗留占位（《复合乐段》），待出谱",
+          "line": 24
+        },
+        {
+          "work": "莫扎特 K.494 开篇",
+          "span": "mm.1–6",
+          "status": "未补：第四轮遗留占位（《乐句扩展》，据 OMT 教材谱例），待出谱",
+          "line": 25
         }
       ]
     }
@@ -1109,15 +1060,15 @@
       "hasGapSignal": false
     },
     "styles/woodwind-symphonic-emancipation.md": {
-      "standard": 0,
+      "standard": 3,
       "bracket": 0,
       "noInline": 0,
-      "quotePlaceholder": 3,
+      "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
       "placeholderTokens": [
         "op21"
       ],
-      "nonconforming": 3,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md": {
@@ -1191,17 +1142,16 @@
       "hasGapSignal": false
     },
     "techniques/harmony/cadential-six-four-and-dominant-syntax.md": {
-      "standard": 0,
-      "bracket": 3,
-      "noInline": 3,
+      "standard": 2,
+      "bracket": 0,
+      "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
       "placeholderTokens": [
         "k331",
-        "k545",
-        "k283"
+        "k545"
       ],
-      "nonconforming": 6,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/harmony/chromatic-mediant-and-tonal-space.md": {
@@ -1235,15 +1185,15 @@
       "hasGapSignal": false
     },
     "techniques/harmony/lydian-mode-and-tonal-gravity.md": {
-      "standard": 0,
+      "standard": 3,
       "bracket": 0,
       "noInline": 0,
-      "quotePlaceholder": 3,
+      "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
       "placeholderTokens": [
         "op132"
       ],
-      "nonconforming": 3,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/harmony/modal-mixture-and-color-syntax.md": {
@@ -1367,15 +1317,16 @@
       "hasGapSignal": false
     },
     "techniques/sound/natural-horn-writing-and-harmonic-series.md": {
-      "standard": 0,
+      "standard": 3,
       "bracket": 0,
       "noInline": 0,
-      "quotePlaceholder": 1,
+      "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
       "placeholderTokens": [
-        "op67"
+        "op67",
+        "op92"
       ],
-      "nonconforming": 1,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/sound/planes-of-tone-layering.md": {
@@ -1409,24 +1360,24 @@
       "hasGapSignal": false
     },
     "techniques/sound/timpani-writing-and-classical-orchestration.md": {
-      "standard": 0,
+      "standard": 4,
       "bracket": 0,
       "noInline": 0,
-      "quotePlaceholder": 4,
+      "quotePlaceholder": 0,
       "provPlaceholderRows": 4,
       "placeholderTokens": [
         "op21",
         "op67",
         "op125"
       ],
-      "nonconforming": 4,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/sound/viola-writing-and-orchestral-voicing.md": {
-      "standard": 0,
+      "standard": 4,
       "bracket": 0,
       "noInline": 0,
-      "quotePlaceholder": 4,
+      "quotePlaceholder": 0,
       "provPlaceholderRows": 4,
       "placeholderTokens": [
         "op59no3",
@@ -1434,7 +1385,7 @@
         "op92",
         "op131"
       ],
-      "nonconforming": 4,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/structure/autobiographical-narrative-and-quartet-form.md": {
@@ -1458,29 +1409,28 @@
       "hasGapSignal": false
     },
     "techniques/structure/cadential-prinner-and-structural-closure.md": {
-      "standard": 0,
+      "standard": 1,
       "bracket": 0,
-      "noInline": 2,
+      "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 2,
       "placeholderTokens": [
-        "k545",
-        "k283"
+        "k545"
       ],
-      "nonconforming": 2,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/structure/compound-period-hierarchical-syntax.md": {
-      "standard": 0,
+      "standard": 2,
       "bracket": 0,
-      "noInline": 2,
+      "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 2,
       "placeholderTokens": [
         "k332",
         "k284"
       ],
-      "nonconforming": 2,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/structure/concertante-principle-and-double-exposition.md": {
@@ -1524,17 +1474,15 @@
       "hasGapSignal": false
     },
     "techniques/structure/phrase-expansion-and-structural-skeleton.md": {
-      "standard": 0,
-      "bracket": 3,
-      "noInline": 3,
+      "standard": 1,
+      "bracket": 0,
+      "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 3,
       "placeholderTokens": [
-        "k494",
-        "op2no3",
-        "k309"
+        "k494"
       ],
-      "nonconforming": 6,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/structure/romantic-song-cycle-macrostructure.md": {
@@ -1558,16 +1506,16 @@
       "hasGapSignal": false
     },
     "techniques/structure/sequence-mechanics-and-syntactic-functions.md": {
-      "standard": 0,
+      "standard": 2,
       "bracket": 0,
-      "noInline": 2,
+      "noInline": 0,
       "quotePlaceholder": 0,
       "provPlaceholderRows": 2,
       "placeholderTokens": [
         "op2no1",
         "k545"
       ],
-      "nonconforming": 2,
+      "nonconforming": 0,
       "hasGapSignal": true
     },
     "techniques/structure/slow-introduction-and-allegro-transition.md": {
