@@ -45,7 +45,141 @@ description: 深入解构莫扎特 K.467 第二乐章中独奏钢琴、弱音弦
 
 旋律在第 3 小节以跨越八度的高音 C6 与下行级进回旋，奠定了贯穿全乐章的如歌母体骨架。
 
-谱例待补：莫扎特 K.467 第二乐章 mm. 1–8（弱音弦乐三连音温床与第一小提琴抒情主题呈示）——本地仅存 CCARH MuseData md2 编码，本轮未取得 MusicXML 可核验副本，暂不嵌入。
+弱音弦乐的三连音温床、拨奏低音与第一小提琴如歌主题（mm. 1–8）：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第二乐章" location="Andante，mm.1–8（弱音弦乐三连音温床与木管 sfp 切入）" id="mozart-k467-ii-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.467 第二乐章 mm.1-8：弱音弦乐的三连音底层、低音拨奏琶音与第一小提琴如歌主题，
+% 第 8 小节长笛、双簧管 I、大管 I 以 sfp 长音首次切入。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=76 为编选。
+% 谱表自上而下：长笛、双簧管 I、大管 I、第一小提琴、第二小提琴、中提琴（双音，两轨合记）、大提琴（低音提琴同声部）。
+
+global = {
+  \time 4/4
+  \tempo "Andante" 4 = 76
+}
+
+% Flauto staff 1
+flute = {
+  \global
+  \clef treble
+  \key f \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c'''1\sfp |
+}
+
+% Oboe 1 staff 1
+oboeOne = {
+  \global
+  \clef treble
+  \key f \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  f''1~\sfp |
+}
+
+% Fagotto 1 staff 1
+bassoonOne = {
+  \global
+  \clef bass
+  \key f \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c'1\sfp |
+}
+
+% Violino I staff 1
+violinOne = {
+  \global
+  \clef treble
+  \key f \major
+  r1 |
+  f''4..(\p c''16) a''4..( f''16) |
+  c'''2. bf''16( a''16 g''16 f''16) |
+  fs''4( g''4) r2 |
+  c''2( e''4 g''4) |
+  bf''2~ bf''8( d'''8 c'''8 bf''8) |
+  gs''8( a''8) a''4 r2 |
+  c'''2 a4.\p a8 |
+}
+
+% Violino II staff 1
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  \tuplet 3/2 { c'8\p c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } |
+  \tuplet 3/2 { f'8\f f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { f'8\p f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } |
+}
+
+% Viola staff [1, 2]
+viola = {
+  \global
+  \clef alto
+  \key f \major
+  << { \tuplet 3/2 { a8\p a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } } \\ { \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } } >> |
+  << { \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } } \\ { \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } } >> |
+  << { \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } } \\ { \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } } >> |
+  << { \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } } \\ { \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } } >> |
+  << { \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } } \\ { \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } } >> |
+  << { \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { g8 g8 g8 } } \\ { \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } \tuplet 3/2 { e8 e8 e8 } } >> |
+  << { \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } \tuplet 3/2 { a8 a8 a8 } } \\ { \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } \tuplet 3/2 { f8 f8 f8 } } >> |
+  << { \tuplet 3/2 { ef'8\f ef'8 ef'8 } \tuplet 3/2 { ef'8 ef'8 ef'8 } \tuplet 3/2 { ef'8\p ef'8 ef'8 } \tuplet 3/2 { ef'8 ef'8 ef'8 } } \\ { \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } } >> |
+}
+
+% Violoncello staff 1
+cello = {
+  \global
+  \clef bass
+  \key f \major
+  f8\p r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 f8 r8 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 c8 r8 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  a,8\f r8 c8 r8 f8\p r8 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "flute" \flute }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoonOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 当弦乐抒情线条推进至第 8 小节时，管乐组（长笛、双簧管、大管与圆号）首次以突强后弱（*sfp*）的和声长音切入：
 
@@ -63,7 +197,7 @@ description: 深入解构莫扎特 K.467 第二乐章中独奏钢琴、弱音弦
 
 第 23 小节独奏左手率先接管弱音弦乐的三连音分解和弦，并在第 24 小节由右手奏响开篇第一小提琴所唱的主题旋律（F5–C5–A5–F5）。
 
-此时第一小提琴完全退让沉默，第二小提琴与中提琴则在背景中维持柔和的三连音陪伴。这种音色移交使音乐主体从乐队集合声响升华为具有鲜明个性与呼吸感的独奏心声。
+此时第一小提琴退居为均匀的八分音符音型，第二小提琴与中提琴则在背景中延续柔和的伴奏律动。这种音色移交使音乐主体从乐队集合声响升华为具有鲜明个性与呼吸感的独奏心声。
 
 ### 独奏乐句的微观修饰与八度扩张
 
@@ -79,7 +213,109 @@ description: 深入解构莫扎特 K.467 第二乐章中独奏钢琴、弱音弦
 
 独奏与木管在声场纵向上交错叠置，弱音弦乐在下方充当透明基底，三方各司其职，形成了三维立体的声响空间（参见[管弦乐织体中的音响平面与分层机制](planes-of-tone-layering.md)与[长笛写作](flute-writing-and-orchestral-acoustics.md)）。
 
-谱例待补：莫扎特 K.467 第二乐章 mm. 23–30（独奏钢琴如歌切入与木管初次呼应）——底本同上，仅 md2，暂不嵌入。
+独奏钢琴在第 23 小节的如歌切入（mm. 23–30）：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第二乐章" location="Andante，mm.23–30（独奏钢琴如歌切入，弦乐伴奏音型延续）" id="mozart-k467-ii-mm23-30"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.467 第二乐章 mm.23-30：乐队停在属和弦后，独奏钢琴左手接管分解音型、右手奏第一小提琴主题，
+% 第 24 小节起钢琴在高音区延续抒情线条，背景弦乐保持均匀律动。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=76 为编选。
+% 谱表自上而下：钢琴右手、钢琴左手、第二小提琴、中提琴、大提琴。
+
+global = {
+  \time 4/4
+  \tempo "Andante" 4 = 76
+}
+
+% Piano staff 1
+pianoRH = {
+  \global
+  \clef treble
+  \key f \major
+  r1 |
+  f''4..( c''16) a''4..( f''16) |
+  c'''2. bf''16( a''16 g''16 f''16) |
+  fs''4( g''4) r2 |
+  c''2( e''4 g''4) |
+  bf''2~ bf''8( d'''8 c'''8 bf''8) |
+  gs''8( a''8) a''4 r2 |
+  c'''2 a,4. a,8 |
+}
+
+% Piano staff 2
+pianoLH = {
+  \global
+  \clef bass
+  \key f \major
+  << { \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } } \\ { f2 f2 } >> |
+  << { \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } } \\ { f2 f2 } >> |
+  << { \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } } \\ { f2 f2 } >> |
+  << { \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } } \\ { c2 c2 } >> |
+  << { \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } } \\ { c2 c2 } >> |
+  << { \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } \tuplet 3/2 { r8 bf8 bf8 } \tuplet 3/2 { bf8 bf8 bf8 } } \\ { c2 c2 } >> |
+  << { \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } \tuplet 3/2 { r8 c'8 c'8 } \tuplet 3/2 { c'8 c'8 c'8 } } \\ { f2 f2 } >> |
+  << { \tuplet 3/2 { r8 f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { r8 f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } } \\ { a2 a2 } >> |
+}
+
+% Violino II staff 1
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  f'8 r8 a'8 r8 c''8 r8 r4 |
+  f'8 r8 a'8 r8 c''8 r8 r4 |
+  f'8 r8 a'8 r8 c''8 r8 f'8 r8 |
+  c'8 r8 e'8 r8 g'8 r8 r4 |
+  c'8 r8 e'8 r8 g'8 r8 r4 |
+  c'8 r8 e'8 r8 g'8 r8 c'8 r8 |
+  f'8 r8 a'8 r8 c''8 r8 r4 |
+  a8 r8 c'8 r8 f'8 r8 r4 |
+}
+
+% Viola staff 1
+viola = {
+  \global
+  \clef alto
+  \key f \major
+  f8 r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 f8 r8 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 c8 r8 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  a8 r8 c'8 r8 f'8 r8 r4 |
+}
+
+% Violoncello staff 1
+cello = {
+  \global
+  \clef bass
+  \key f \major
+  f8 r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  f8 r8 a8 r8 c'8 r8 f8 r8 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 c8 r8 |
+  f8 r8 a8 r8 c'8 r8 r4 |
+  a,8 r8 c8 r8 f8 r8 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoRH }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLH }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 独奏段落随后顺畅转入属调 C 大调，钢琴右手以纯净的分解琶音与八度跳跃，在第 44 小节引向平稳的半终止，并在第 45–56 小节完成呈示段落的优雅收拢。
 
@@ -112,7 +348,113 @@ description: 深入解构莫扎特 K.467 第二乐章中独奏钢琴、弱音弦
 
 面对独奏的主观哀怨，长笛与双簧管在第 72–73 小节以温柔纯净的三度与六度平行长音（长笛降 E5–G5，第一双簧管 G4–降 B4）悄然切入，宛如充满安慰色彩的他者回应，促成紧张能量的平稳释放。
 
-谱例待补：莫扎特 K.467 第二乐章 mm. 66–71（管乐减七和弦悬停叹息与钢琴半音化三连音琶音交替）——底本同上，仅 md2，暂不嵌入。
+管乐长音叹息与钢琴三连音琶音的交替（mm. 66–71）：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第二乐章" location="Andante，mm.66–71（木管 sfp 长音叩问与钢琴三连音琶音交替）" id="mozart-k467-ii-mm66-71"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.467 第二乐章 mm.66-71：长笛与双簧管在强拍后骤降（sfp）的长音叹息，与钢琴后两拍的三连音琶音形成交替，
+% 第 70 小节起钢琴转入下行半音歌调。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=76 为编选。
+% 谱表自上而下：长笛、双簧管 I、第一小提琴、第二小提琴、钢琴右手、钢琴左手。
+
+global = {
+  \time 4/4
+  \tempo "Andante" 4 = 76
+}
+
+% Flauto staff 1
+flute = {
+  \global
+  \clef treble
+  \key f \major
+  ef'''1\sfp |
+  d'''1\sfp |
+  df'''1\sfp |
+  c'''1\sfp |
+  r1 |
+  r1 |
+}
+
+% Oboe 1 staff 1
+oboeOne = {
+  \global
+  \clef treble
+  \key f \major
+  ef''1\sfp |
+  g''1\sfp |
+  e''1\sfp |
+  f''1\sfp |
+  r1 |
+  r1 |
+}
+
+% Violino I staff 1
+violinOne = {
+  \global
+  \clef treble
+  \key f \major
+  ef'''2\f r2 |
+  d'''2 r2 |
+  df'''2\f r2 |
+  c'''2 r2 |
+  af'2(\p b'2) |
+  c''4 r4 r2 |
+}
+
+% Violino II staff 1
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  \tuplet 3/2 { fs'8 fs'8 fs'8 } \tuplet 3/2 { fs'8 fs'8 fs'8 } \tuplet 3/2 { fs'8\p fs'8 fs'8 } \tuplet 3/2 { fs'8 fs'8 fs'8 } |
+  \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { g'8\p g'8 g'8 } \tuplet 3/2 { g'8 g'8 g'8 } |
+  \tuplet 3/2 { e'8 e'8 e'8 } \tuplet 3/2 { e'8 e'8 e'8 } \tuplet 3/2 { e'8\p e'8 e'8 } \tuplet 3/2 { e'8 e'8 e'8 } |
+  \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { f'8\p f'8 f'8 } \tuplet 3/2 { f'8 f'8 f'8 } |
+  f'1( |
+  e'4) r4 r2 |
+}
+
+% Piano staff 1
+pianoRH = {
+  \global
+  \clef treble
+  \key f \major
+  r2 \tuplet 3/2 { r8 ef''8\f fs''8 } \tuplet 3/2 { a''8 c'''8 ef'''8\f } |
+  r2 \tuplet 3/2 { r8 bf'8 d''8 } \tuplet 3/2 { g''8 bf''8 d'''8 } |
+  r2 \tuplet 3/2 { r8 df''8\f e''8 } \tuplet 3/2 { g''8 bf''8 df'''8\f } |
+  r2 \tuplet 3/2 { r8 af'8\f c''8 } \tuplet 3/2 { f''8 af''8\f c'''8 } |
+  c'''8( b''8) af''2(\f g''8 f''8) |
+  f''8( e''8 d''8 c''8 b'8 c''8 df''8\f c''8) |
+}
+
+% Piano staff 2
+pianoLH = {
+  \global
+  \clef bass
+  \key f \major
+  a4 r4 r2 |
+  bf4 r4 r2 |
+  g4 r4 r2 |
+  af4\f r4 r2 |
+  << { r2 b2 } \\ { df1\f } >> |
+  << { c'4 r4 r2 } \\ { c4 r4 r2 } >> |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "flute" \flute }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoRH }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLH }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 音乐在第 76–81 小节经过属七和弦的长音准备，重新积蓄回归原调的向心力。
 
@@ -143,7 +485,104 @@ description: 深入解构莫扎特 K.467 第二乐章中独奏钢琴、弱音弦
 
 整个声场在极弱（*pianissimo*）中逐渐淡化，直至完全消融于虚空。
 
-谱例待补：莫扎特 K.467 第二乐章 mm. 82–88（第一小提琴下行挂留与独奏钢琴花彩三连音对位）——底本同上，仅 md2，暂不嵌入。
+第一小提琴的下行挂留链与独奏钢琴的三连音花彩（mm. 82–88）：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第二乐章" location="Andante，mm.82–88（第一小提琴下行挂留与钢琴三连音花彩对位）" id="mozart-k467-ii-mm82-88"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.467 第二乐章 mm.82-88：第一小提琴脱去弱音器后以连续下行挂留（7-6、4-3）铺展，
+% 独奏钢琴在同一音高上起奏三连音回旋，两条线条相互浸润。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=76 为编选。
+% 谱表自上而下：第一小提琴、第二小提琴、钢琴右手、钢琴左手、大提琴。
+
+global = {
+  \time 4/4
+  \tempo "Andante" 4 = 76
+}
+
+% Violino I staff 1
+violinOne = {
+  \global
+  \clef treble
+  \key f \major
+  r4 c'''4( af''4\f f''4) |
+  df'''2.( g''4) |
+  c'''2.( f''4) |
+  bf''2.( e''4) |
+  af''2.( d''4) |
+  g''2.( c''4) |
+  f''4 r4 r2 |
+}
+
+% Violino II staff 1
+violinTwo = {
+  \global
+  \clef treble
+  \key f \major
+  \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { c''8 c''8 c''8 } \tuplet 3/2 { af'8\f af'8 af'8 } \tuplet 3/2 { f'8 f'8 f'8 } |
+  \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { e'8 e'8 e'8 } \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { g'8 g'8 g'8 } |
+  \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { f'8 f'8 f'8 } \tuplet 3/2 { af'8\f af'8 af'8 } \tuplet 3/2 { af'8 af'8 af'8 } |
+  \tuplet 3/2 { af'8\f af'8 af'8 } \tuplet 3/2 { g'8 g'8 g'8 } \tuplet 3/2 { bf'8 bf'8 bf'8 } \tuplet 3/2 { bf'8 bf'8 bf'8 } |
+  \tuplet 3/2 { bf'8 bf'8 bf'8 } \tuplet 3/2 { af'8\f af'8 af'8 } \tuplet 3/2 { b'8 b'8 b'8 } \tuplet 3/2 { b'8 b'8 b'8 } |
+  \tuplet 3/2 { c''8 c''8 c''8 } \tuplet 3/2 { df''8\f df''8 df''8 } \tuplet 3/2 { c''8 c''8 c''8 } \tuplet 3/2 { e'8 e'8 e'8 } |
+  f'4 r4 r2 |
+}
+
+% Piano staff 1
+pianoRH = {
+  \global
+  \clef treble
+  \key f \major
+  d'''4( c'''4) r4 c'''4 |
+  df'''2~\f \tuplet 3/2 { df'''8 g''8 fs''8 } \tuplet 3/2 { g''8 af''8\f bf''8 } |
+  c'''2~ \tuplet 3/2 { c'''8 f''8 e''8 } \tuplet 3/2 { f''8 g''8 af''8\f } |
+  bf''2~ \tuplet 3/2 { bf''8 e''8 d''8 } \tuplet 3/2 { e''8 f''8 g''8 } |
+  af''2~\f \tuplet 3/2 { af''8 d''8 cs''8 } \tuplet 3/2 { d''8 e''8 f''8 } |
+  g''2~ \tuplet 3/2 { g''8 c''8 cs''8 } \tuplet 3/2 { d''8 ef''8\f e''8 } |
+  f''2 e''8( d''8) c''8( bf'8) |
+}
+
+% Piano staff 2
+pianoLH = {
+  \global
+  \clef bass
+  \key f \major
+  e'4 r4 r2 |
+  c'4 r4 r2 |
+  c'4 r4 r2 |
+  c'4 r4 r2 |
+  c'4 r4 r2 |
+  c'4 r4 r4 bf,4 |
+  \tuplet 3/2 { a,8 c8 f8 } \tuplet 3/2 { f,8 a,8 f8 } \tuplet 3/2 { bf,8 d8 f8 } \tuplet 3/2 { g,8 d8 f8 } |
+}
+
+% Violoncello staff 1
+cello = {
+  \global
+  \clef bass
+  \key f \major
+  c4 r4 r2 |
+  c8 r8 g8 r8 bf8 r8 r4 |
+  c8 r8 af8\f r8 c'8 r8 r4 |
+  c8 r8 e8 r8 g8 r8 r4 |
+  c8 r8 f8 r8 af8\f r8 r4 |
+  c8 r8 g8 r8 bf8 r8 bf,8 r8 |
+  a,8 r8 f8 r8 bf,8 r8 g8 r8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoRH }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLH }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

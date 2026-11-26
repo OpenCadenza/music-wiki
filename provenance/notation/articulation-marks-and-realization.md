@@ -15,7 +15,8 @@
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
 | `beethoven-op18no1-i-mm1-4` | 贝多芬《F 大调第一弦乐四重奏》Op. 18 No. 1 第一乐章 | Allegro con brio，mm.1–4 | OpenScore StringQuartets MXL `String_Quartet_No.1,_Op.18_No.1` | CC0-1.0 / 公有领域 |
-| 占位（未出谱） | 贝多芬《F 大调第七弦乐四重奏》Op. 59 No. 1 第一乐章 | mm.1–8、mm.18–24 | 本地 CCARH MuseData kern `quartet07-1.krn`（仅核对，未转写） | 公有领域（据 CCARH MuseData 转写，学术用途） |
+| `beethoven-op59no1-i-mm1-8` | 贝多芬《F 大调第七弦乐四重奏》Op. 59 No. 1 第一乐章 | Allegro，mm.1–8（大提琴主题与内声部八分音符分弓） | CCARH Humdrum Kern `quartet07-1.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op59no1-i-mm18-24` | 贝多芬《F 大调第七弦乐四重奏》Op. 59 No. 1 第一乐章 | Allegro，mm.18–24（ff 爆发后的断音与休止撕裂） | CCARH Humdrum Kern `quartet07-1.krn` | 据 CCARH MuseData 转写，学术用途 |
 | `beethoven-op135-iii-mm1-12`（关联引用） | 贝多芬《F 大调第十六弦乐四重奏》Op. 135 第三乐章 | Lento assai, cantante e tranquillo，mm.1–12 | 已有编译谱例，见 `content/ensembles/string-quartet-acoustic-role-differentiation.md` | 公有领域（据 CCARH MuseData 转写，学术用途） |
 
-> 谱例均由本项目从 MusicXML 逐音转写为 LilyPond（自写转换器 `local/workbench/scores/score-b/tools/mxl2ly.py`），八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。
+> 谱例均由本项目从 MusicXML 或 Humdrum Kern 逐音转写为 LilyPond：MusicXML 见 `local/workbench/tools/score-r5/mxl2ly.py`，Kern 见 `local/workbench/tools/score-r5/kern2ly.py`（转换结果另以编译 MIDI 的音高集合逐谱表回比对 kern 模型）。八度映射经 MIDI 实测校准（`c'` = 中央 C）。只截取论证所需片段，不构成完整乐谱的再分发。

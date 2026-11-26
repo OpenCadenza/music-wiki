@@ -20,8 +20,9 @@
 | 占位（未出谱） | 莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 | Andante grazioso，mm. 1–8 | CCARH MuseData / Humdrum ABC | 据 CCARH 转写，学术用途（单行文本占位） |
 | 占位（未出谱） | 莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 | 第一变奏，mm. 19–26 | CCARH MuseData / Humdrum ABC | 据 CCARH 转写，学术用途（单行文本占位） |
 | 占位（未出谱） | 莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 | 第三变奏 Minore，mm. 55–72 | CCARH MuseData / Humdrum ABC | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | 主题 Gesangvoll, mit innigster Empfindung，mm. 1–16 | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | 第一变奏与第二变奏，mm. 17–48 | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | 第五变奏 Allegro, ma non troppo，mm. 113–128 | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 | Arietta: Adagio molto semplice e cantabile，mm. 1–16 | CCARH Humdrum Kern `sonata32-2.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 | 第二变奏 L'istesso tempo，mm. 33–48 | CCARH Humdrum Kern `sonata32-2.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
+| `beethoven-op109-iii-mm1-8`（关联引用） | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | 主题 Gesangvoll, mit innigster Empfindung，mm. 1–8 | CCARH Humdrum Kern `sonata30-3.krn`；谱例见 `content/techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op109-iii-mm17-32` | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | Variation I: Molto espressivo，mm.17–32（底本 kern 连续编号 mm.17–35，含反复第二结尾） | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op109-iii-mm33-48` | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | Variation II: Leggiermente，mm.33–48（底本 kern 连续编号 mm.36–51） | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op109-iii-mm113-128` | 贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 | Variation V: Allegro, ma non troppo，mm.113–128（底本 kern 连续编号 mm.120–135） | CCARH Humdrum Kern `sonata30-3.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op111-ii-mm1-16` | 贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 | Arietta: Adagio molto semplice e cantabile，mm.1–16（底本 kern 连续编号 mm.1–18，含反复第二结尾） | CCARH Humdrum Kern `sonata32-2.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op111-ii-mm33-48` | 贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 | Variation II: L'istesso tempo，mm.33–48（底本 kern 连续编号 mm.36–54） | CCARH Humdrum Kern `sonata32-2.krn` | 据 CCARH MuseData 转写，学术用途 |

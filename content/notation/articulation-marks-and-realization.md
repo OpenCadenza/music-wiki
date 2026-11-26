@@ -142,7 +142,93 @@ staffFour = {
 
 在《F大调第七弦乐四重奏（拉祖莫夫斯基）》Op. 59 No. 1 的第一乐章（*Allegro*，4/4 拍，F 大调）中，室内乐织体被提升至交响曲的宏阔维度：
 
-贝多芬《F大调第七弦乐四重奏》Op. 59 No. 1 第一乐章 mm. 1–8（大提琴长歌连弓与内声部八分音符分弓异步对位）
+```lilypond title="贝多芬 第7弦乐四重奏 Op.59 No.1 第一乐章" location="Allegro，mm.1–8" id="beethoven-op59no1-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key f \major
+  \time 4/4
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Allegro" 4 = 160
+  \clef "treble" r 1 | % m.1
+  r 1 | % m.2
+  r 1 | % m.3
+  r 1 | % m.4
+  r 1 | % m.5
+  r 1 | % m.6
+  r 1 | % m.7
+  r 1 | % m.8
+}
+
+violinII = {
+  \clef "treble"
+  \clef "treble" c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.1
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.2
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.3
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.4
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.5
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.6
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.7
+  c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 c' 8 | % m.8
+}
+
+viola = {
+  \clef "alto"
+  \clef "alto" a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.1
+  a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.2
+  a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.3
+  a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.4
+  a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.5
+  a 8 a 8 a 8 a 8 a 8 a 8 a 8 a 8 | % m.6
+  a 8 a 8 a 8 a 8 bf 8 bf 8 bf 8 bf 8 | % m.7
+  bf 8 bf 8 bf 8 bf 8 bf 8 bf 8 bf 8 bf 8 | % m.8
+}
+
+cello = {
+  \clef "bass"
+  \clef "bass" ( c 4 d 4 e 4 f 4 ) | % m.1
+  ( c 2. d 8 c 8 | % m.2
+  bf, 8 c 8 ) a, 8 -. g, 8 -. ( f, 4 d 4 | % m.3
+  c 1 ) | % m.4
+  ( d 4 e 4 f 4 g 4 ) | % m.5
+  ( f 2. e 8 d 8 ) | % m.6
+  ( c 8 d 8 ) e 8 -. f 8 -. ( g 4 -. a 4 -. ) | % m.7
+  g 1 | % m.8
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **大提琴如歌长连弓（mm. 1–8，Cantabile Legato）**：
   * 大提琴一反常规的低音支架角色，在独奏高音区领奏宽广的主题；
@@ -158,6 +244,90 @@ staffFour = {
 - **强奏爆发后的断音撕裂与顿挫（mm. 19–24）**：
   * 第 19 小节全体进入极强（$ff$）齐鸣，随后在第 20–22 小节，全曲旋律被断音与八分休止符彻底击碎（第一小提琴：（d³–休止–b♭²–休止–a 二分））；
   * 贝多芬通过断音（Staccato）与休止符的并置，迫使琴弓在极高能量状态下进行剧烈制动，随后在第 22 小节后半拍紧接长达两拍的宽广连弓，完成了室内乐史上最震撼的动能骤变。
+
+```lilypond title="贝多芬 第7弦乐四重奏 Op.59 No.1 第一乐章" location="Allegro，mm.18–24" id="beethoven-op59no1-i-mm18-24"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key f \major
+  \time 4/4
+}
+
+violinI = {
+  \clef "treble"
+  \tempo 4 = 160
+  <e'' e'''> 1 | % m.18
+  <f'' f'''> 2. ( f' 4 | % m.19
+  d'' 8 -. ) r 8 bf' 8 -. r 8 a' 2 | % m.20
+  d'' 8 -. r 8 bf' 8 -. r 8 ( a' 2 | % m.21
+  d'' 8 -. ) r 8 bf' 8 -. r 8 ( af' 2 | % m.22
+  g' 2 e'' 2 ) | % m.23
+  g'' 8 r 8 bf' 8 r 8 ( a' 2 | % m.24
+}
+
+violinII = {
+  \clef "treble"
+  <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 <g' bf'> 8 | % m.18
+  <f' a'> 2. ( <c' f'> 4 | % m.19
+  <d' f'> 8 -. ) r 8 bf 8 -. r 8 ( c' 2 | % m.20
+  d' 8 -. ) r 8 f' 8 -. r 8 ( f' 2 | % m.21
+  d' 8 -. ) r 8 f' 8 -. r 8 ( f' 2 | % m.22
+  e' 2 g' 2 ) | % m.23
+  bf' 8 r 8 g' 8 r 8 f' 2 | % m.24
+}
+
+viola = {
+  \clef "alto"
+  <c' e'> 8 <c' e'> 8 <c' e'> 8 <c' e'> 8 <c' e'> 8 <c' e'> 8 <c' e'> 8 <c' e'> 8 | % m.18
+  c' 2. f 4 ~ | % m.19
+  f 8 -. r 8 f 8 -. r 8 f 2 | % m.20
+  bf 8 -. r 8 d' 8 -. r 8 ( c' 2 | % m.21
+  f 8 -. ) r 8 bf 8 -. r 8 ( b 2 | % m.22
+  c' 2 e 2 ) | % m.23
+  e 8 r 8 cs' 8 r 8 d' 2 | % m.24
+}
+
+cello = {
+  \clef "bass"
+  <c, c> 8 <c, c> 8 <c, c> 8 <c, c> 8 <c, c> 8 <c, c> 8 <c, c> 8 <c, c> 8 | % m.18
+  f, 2. ( a, 4 | % m.19
+  bf, 8 -. ) r 8 d 8 -. r 8 c 2 | % m.20
+  r 1 | % m.21
+  bf, 8 -. r 8 d 8 -. r 8 ( d 2 | % m.22
+  e 2 c 2 ) | % m.23
+  cs 8 r 8 e 8 r 8 ( f 2 | % m.24
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 案例 3：晚期形而上内省——Op. 135 第三乐章 mm. 1–12（极度连贯贴弦与微观连弓细分）
 

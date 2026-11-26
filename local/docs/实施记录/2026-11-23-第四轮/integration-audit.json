@@ -1,18 +1,18 @@
 {
   "tool": "local/workbench/tools/audit_integration.mjs",
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T01:03:26.854Z",
+  "generatedAt": "2026-11-26T18:00:35.622Z",
   "root": "E:\\github\\music-wiki\\.agents\\worktrees\\dsh-d044eeed-4550",
   "summary": {
     "articles": 60,
     "contentDirs": 16,
     "indexFiles": 17,
-    "notationBlocks": 106,
+    "notationBlocks": 124,
     "notationBlocksWithoutId": 0,
     "provenance": 60,
     "archives": 60,
-    "scoreboardIds": 106,
-    "manualGaps": 33,
+    "scoreboardIds": 124,
+    "manualGaps": 22,
     "scoreRefs": 12,
     "batchSource": "local/docs/实施记录/2026-11-22-第二轮/已写选题清单.md",
     "severityCounts": {
@@ -791,7 +791,7 @@
   },
   "scoreBoard": {
     "exists": true,
-    "ids": 106,
+    "ids": 124,
     "gaps": {
       "found": true,
       "rows": [
@@ -917,81 +917,15 @@
         },
         {
           "work": "莫扎特 K.467 第一乐章",
-          "span": "mm.1–28",
-          "status": "未取得：本地只有 CCARH MuseData md2，无 MusicXML/MXL，本轮未逐音核验（《协奏原则》）",
+          "span": "mm.9–28",
+          "status": "未完成：本轮只出了主部主题群 mm.1–8 与独奏引子 mm.74–91（据 CCARH MuseData md2 自编码）；mm.9–28 的十六分音型密集段待下一轮出谱（《协奏原则》）",
           "line": 26
-        },
-        {
-          "work": "莫扎特 K.467 第一乐章",
-          "span": "mm.74–91",
-          "status": "未取得：同上，仅 md2（《协奏原则》）",
-          "line": 27
-        },
-        {
-          "work": "贝多芬 Op.61 第一乐章",
-          "span": "mm.1–18",
-          "status": "未取得：本地谱源包（OpenScore 四重奏/钢琴奏鸣曲、PDMX）均无小提琴协奏曲机器可读谱（《协奏原则》）",
-          "line": 28
-        },
-        {
-          "work": "莫扎特 K.467 第二乐章",
-          "span": "mm.1–8",
-          "status": "未取得：仅 md2（《独奏与乐队对话》）",
-          "line": 29
-        },
-        {
-          "work": "莫扎特 K.467 第二乐章",
-          "span": "mm.23–30",
-          "status": "未取得：仅 md2（《独奏与乐队对话》）",
-          "line": 30
-        },
-        {
-          "work": "莫扎特 K.467 第二乐章",
-          "span": "mm.66–71",
-          "status": "未取得：仅 md2（《独奏与乐队对话》）",
-          "line": 31
-        },
-        {
-          "work": "莫扎特 K.467 第二乐章",
-          "span": "mm.82–88",
-          "status": "未取得：仅 md2（《独奏与乐队对话》）",
-          "line": 32
         },
         {
           "work": "莫扎特 K.331 第一乐章",
           "span": "主题 mm.1–8、第一变奏 mm.19–26、Minore mm.55–72",
           "status": "未完成：底本只有本地 kern/ABC（CCARH，非 CC0），abc2ly 不认多声部叠加，kern 需逐轨转写（《变奏曲式的类型》）",
-          "line": 33
-        },
-        {
-          "work": "贝多芬 Op.109 第三乐章",
-          "span": "第一/第二变奏 mm.17–48、第五变奏 mm.113–128",
-          "status": "未完成：kern 底本含声部分裂与三重装饰音，本轮未转写（《变奏曲式的类型》）；本乐章 mm.1–8 已有既有编译块，正文已改链接",
-          "line": 34
-        },
-        {
-          "work": "贝多芬 Op.111 第二乐章",
-          "span": "主题 mm.1–16、第二变奏 mm.33–48",
-          "status": "未完成：kern 底本未转写（《变奏曲式的类型》）",
-          "line": 35
-        },
-        {
-          "work": "贝多芬 Op.106 第四乐章",
-          "span": "引子 mm.1–14、赋格呈示部 mm.15–48",
-          "status": "未完成：kern 底本未转写（《赋格在奏鸣曲中》）",
-          "line": 36
-        },
-        {
-          "work": "贝多芬 Op.110 第三乐章",
-          "span": "宣叙调与哀歌 mm.1–26、赋格呈示部 mm.27–56",
-          "status": "未完成：kern 底本未转写（《赋格在奏鸣曲中》）",
-          "line": 37
-        },
-        {
-          "work": "贝多芬 Op.59 No.1 第一乐章",
-          "span": "mm.1–8、mm.18–24",
-          "status": "未完成：OpenScore 弦乐四重奏未收 Op.59 No.1，只有本地 kern 底本未转写（《演奏法记号与实现》）",
-          "line": 38
+          "line": 27
         }
       ]
     }
@@ -1092,7 +1026,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 1,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1166,7 +1100,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false
@@ -1377,16 +1311,14 @@
       "hasGapSignal": false
     },
     "techniques/sound/mozart-concerto-solo-orchestra-dialogue.md": {
-      "standard": 4,
+      "standard": 0,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 4,
-      "placeholderTokens": [
-        "k467"
-      ],
+      "provPlaceholderRows": 0,
+      "placeholderTokens": [],
       "nonconforming": 0,
-      "hasGapSignal": true
+      "hasGapSignal": false
     },
     "techniques/sound/mozart-k550-syntax-and-orchestration.md": {
       "standard": 0,
@@ -1516,14 +1448,13 @@
       "hasGapSignal": true
     },
     "techniques/structure/concertante-principle-and-double-exposition.md": {
-      "standard": 3,
+      "standard": 1,
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 3,
+      "provPlaceholderRows": 0,
       "placeholderTokens": [
-        "k467",
-        "op61"
+        "k467"
       ],
       "nonconforming": 0,
       "hasGapSignal": true
@@ -1628,7 +1559,7 @@
       "bracket": 0,
       "noInline": 0,
       "quotePlaceholder": 0,
-      "provPlaceholderRows": 8,
+      "provPlaceholderRows": 3,
       "placeholderTokens": [],
       "nonconforming": 0,
       "hasGapSignal": false

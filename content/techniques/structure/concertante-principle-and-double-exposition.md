@@ -17,15 +17,166 @@ description: 以莫扎特 K.467 与贝多芬 Op.61 第一乐章为例，解析�
 
 在古典交响曲的呈示部中，音乐必须在能量驱动下打破主调平衡，跨越内聚裂隙强力调制属调或关系大调。然而，在古典协奏曲的第一呈示部（Ritornello 1 / R1）中，乐队却呈现出一种极为奇特的“调性自足闭合”：乐队不仅陈述多个性格截然不同的主题群，而且自始至终不离开主调，构成一个高度规整的五段式利都奈罗结构。
 
-谱例待补：莫扎特 K.467 第一乐章 mm. 1–28（乐队第一呈示部进行曲动机与管乐对答）——本地仅存 CCARH MuseData md2 编码，本轮未做 MusicXML 核验，暂不嵌入。
+乐队第一呈示部的主部主题群（进行曲动机与管乐号角对答）如下，取自 Mozart K.467 第一乐章 mm. 1–8：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第一乐章" location="Allegro maestoso，mm.1–8（主部主题群：进行曲动机与管乐号角）" id="mozart-k467-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 C 大调第 21 钢琴协奏曲 K.467 第一乐章 mm.1-8：弦乐进行曲动机与管乐号角应答。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=120 为编选，非原谱标记。
+% 谱表自上而下：定音鼓、双簧管 I/II、大管 I、圆号 I（C 调）、小号 I（C 调）、第一小提琴、大提琴（低音提琴同声部）。
+
+global = {
+  \time 4/4
+  \tempo "Allegro maestoso" 4 = 120
+}
+
+% Timpani// in C-G staff 1
+timpani = {
+  \global
+  \clef bass
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c4\p c8. c16 g,4 g,8. g,16 |
+  c4 g,8 c8 g,4 r4 |
+}
+
+% Oboe 1 staff 1
+oboeOne = {
+  \global
+  \clef treble
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c''4\p c''8. c''16 d''4 d''8. d''16 |
+  e''8( d''16 e''16) f''8-. e''8-. d''4 r4 |
+}
+
+% Oboe 2 staff 1
+oboeTwo = {
+  \global
+  \clef treble
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  g'4\p g'8. g'16 b'4 b'8. b'16 |
+  c''8 b'16 c''16 d''8-. c''8-. b'4 r4 |
+}
+
+% Fagotto 1 staff 1
+bassoonOne = {
+  \global
+  \clef bass
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c'4\p c'8. c'16 d'4 d'8. d'16 |
+  e'4 b8-. c'8-. g4 r4 |
+}
+
+% Corno 1// in C staff 1
+hornOne = {
+  \global
+  \clef treble
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c''4\p c''8. c''16 d''4 d''8. d''16 |
+  e''4 f''8 e''8 d''4 r4 |
+}
+
+% Clarino 1// in C staff 1
+trumpetOne = {
+  \global
+  \clef treble
+  \key c \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  c''4\p c''8. c''16 d''4 d''8. d''16 |
+  e''4 g'8 g'8 g'4 r4 |
+}
+
+% Violino I staff 1
+violinOne = {
+  \global
+  \clef treble
+  \key c \major
+  c'8\p r8 g8 r8 c'8 r8 e'8 r8 |
+  f'4.( \tuplet 3/2 { e'16 d'16 c'16 } b4) r8. g16 |
+  b8 r8 d'8 r8 f'8 r8 d'8 r8 |
+  g'4.( \tuplet 3/2 { a'16 g'16 f'16 } e'4) r4 |
+  g''2~ g''8 fs''8-. g''8-. e''8-. |
+  f''2~ f''8 e''8-. f''8-. d''8-. |
+  c''4 r4 r2 |
+  r2 d''8( e''8 f''8 fs''8) |
+}
+
+% Violoncello staff 1
+cello = {
+  \global
+  \clef bass
+  \key c \major
+  c8\p r8 g,8 r8 c8 r8 e8 r8 |
+  f4.( \tuplet 3/2 { e16 d16 c16 } b,4) r8. g,16 |
+  b,8 r8 d8 r8 f8 r8 d8 r8 |
+  g4.( \tuplet 3/2 { a16 g16 f16 } e4) r4 |
+  r8 c'8 c'8 c'8 c'4 r4 |
+  r8 g8 g8 g8 g4 r4 |
+  r1 |
+  r1 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "timpani" \timpani }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeTwo }
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoonOne }
+    \new Staff { \set Staff.midiInstrument = "french horn" \hornOne }
+    \new Staff { \set Staff.midiInstrument = "trumpet" \trumpetOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+谱例待补：莫扎特 K.467 第一乐章 mm. 9–28（全奏动能过渡段）——该段十六分音符跑动密集，本轮只出主部主题群，暂不嵌入。
 
 ### 1. 莫扎特 K.467 第一乐章的五段式全奏模块
 
 莫扎特于 1785 年完成的《C 大调第二十一钢琴协奏曲》（K.467）第一乐章（快板，Allegro maestoso，4/4 拍），其乐队呈示部（mm. 1–74）展现了典范的五段式利都奈罗构造：
 
 1. **主部主题群（mm. 1–8）**：
-   - 第 1–4 小节：低音弦乐与两部小提琴以极轻的弱奏（$p$）奏出低沉而富有推进感的进行曲节奏型。低音提琴与大提琴在下行跳进（$C3 \to G2 \to C3 \to E3$）上形成断奏骨架，第一小提琴以平稳的八分音符回旋（$c^1 \to e^1 \to c^1$）展开叙述；
-   - 第 5–8 小节：双簧管两支、大管两支、C 调圆号两支、C 调小号（Clarini）两支与定音鼓突然在强奏（$f$）中以军乐号角动机（$g^1 \to g^1 \to g^1 \to c^2$）强力呼应，形成弦乐幽暗质感与管乐辉煌齐鸣的声学对峙。
+   - 第 1–4 小节：低音弦乐与两部小提琴以极轻的弱奏（$p$）奏出低沉而富有推进感的进行曲节奏型。低音提琴与大提琴在下行跳进（$C3 \to G2 \to C3 \to E3$）上形成断奏骨架，第一小提琴以平稳的八分音符回旋（$c^1 \to g \to c^1 \to e^1$）展开叙述；
+   - 第 7–8 小节：两支双簧管、两支大管、两支 C 调圆号、两支 C 调小号（Clarini）与定音鼓在强奏（$f$）中以军乐号角动机（$c^2 \to c^2 \to c^2 \to d^2$，第 8 小节继以 $e^2 \to f^2 \to e^2 \to d^2$）切入呼应，形成弦乐幽暗质感与管乐辉煌齐鸣的声学对峙。
 2. **动能过渡段（mm. 9–28）**：
    - 第一小提琴展开跨越两个八度的十六分音符音阶与琶音冲刺（$C6 \to B5 \to A5 \to G5 \dots$），低音声部以持续的八分音符步态推进；
    - 乐队在第 20–28 小节通过连绵的属和弦延长与半终止停顿（HC on G），积蓄起巨大的交响声能，但始终将调性牢牢锁定在主调 C 的引力场内。
@@ -62,11 +213,85 @@ R1 的首要任务是**建立完备的材料库与调性牢固地基**，同时�
 
 当乐队完成完整的五段式陈述并静止之后，独奏乐器的登场绝非亦步亦趋地重复乐队主题，而是以高度个体化的音色与织体打破既定秩序。
 
-谱例待补：莫扎特 K.467 第一乐章 mm. 74–91（独奏钢琴独立引子与长颤音介入）——底本同上，仅 md2，暂不嵌入。
+独奏钢琴的独立引子（Eingang）与四小节长颤音：
+
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第一乐章" location="Allegro maestoso，mm.74–91（独奏钢琴的独立引子与长颤音）" id="mozart-k467-i-mm74-91"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.467 第一乐章 mm.74-91：乐队全奏收束后，独奏钢琴的华彩引子（Eingang），
+% 第 80 小节起在 G5 上拉开四小节长颤音，至第 91 小节接管主部进行曲主题。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；试听速度 4=120 为编选。
+% 谱表自上而下：钢琴右手、钢琴左手。颤音按原谱 tr 记号标记（LilyPond \trill）。
+
+global = {
+  \time 4/4
+  \tempo "Allegro maestoso" 4 = 120
+}
+
+% Piano staff 1
+pianoRH = {
+  \global
+  \clef treble
+  \key c \major
+  g'16 a'16 g'16 fs'16 g'16 d'16 b'16 a'16 g'4 r4 |
+  b'16 c''16 b'16 a'16 b'16 g'16 d''16 c''16 b'4 r4 |
+  d''16 e''16 d''16 cs''16 d''16 b'16 f''16 e''16 f''16 g''16 f''16 e''16 f''16 d''16 b''16 a''16 |
+  b''16 c'''16 b''16 a''16 b''16 g''16 d'''16 cs'''16 d'''16 e'''16 d'''16 cs'''16 d'''16 b''16 f'''16 e'''16 |
+  f'''16 d'''16 b''16 d'''16 f'''16 d'''16 f'''16 d'''16 f'''16 d'''16 b''16 d'''16 f'''16 d'''16 f'''16 d'''16 |
+  f'''1\fermata |
+  g''1\startTrillSpan |
+  g''1 |
+  g''1 |
+  g''1 |
+  g''2\stopTrillSpan~ g''8 fs''8-. g''8-. e''8-. |
+  f''2~ f''8 e''8-. f''8-. d''8-. |
+  c''16 d''16 c''16 b'16 c''8 cs''8 d''16 e''16 d''16 cs''16 d''8 ds''8 |
+  e''8 f''16 g''16 f''8 e''8 d''8 e''8 f''8 fs''8 |
+  g''8. e''16 e'''4~ e'''16 d'''16 c'''16 b''16 a''16 g''16 f''16 e''16 |
+  g''16 f''16 d'''16 b''16 f'''4~ f'''16 e'''16 d'''16 c'''16 b''16 a''16 g''16 f''16 |
+  e''16 g''16 c'''16 b''16 a''16 g''16 f''16 e''16 d''16 fs''16 g''16 f''16 e''16 d''16 c''16 b'16 |
+  c''4 r4 r8 c''8 e''8 c''8 |
+}
+
+% Piano staff 2
+pianoLH = {
+  \global
+  \clef bass
+  \key c \major
+  g4 r4 r2 |
+  g4 r4 r2 |
+  r1 |
+  r1 |
+  d'2 d'2 |
+  g1\fermata |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r8 g'8 g'8 g'8 g'4 r4 |
+  r8 g'8 g'8 g'8 g'4 r4 |
+  g'4 r4 g'4 r4 |
+  g'2 g'4 r4 |
+  r8 g'8 g'8 g'8 g'4 r4 |
+  r8 g'8 g'8 g'8 g'4 r4 |
+  c'4 r4 g4 r4 |
+  e'8 c'8 e'8 c'8 e'8 c'8 g'8 e'8 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoRH }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \pianoLH }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 莫扎特 K.467：自由即兴的华彩引子（Eingang）
 
-在 K.467 的第 74 小节第 2 拍，独奏钢琴并未立即演奏第一主题的进行曲节奏，而是弹奏出一段完全游离于严谨节拍之外的抒情华彩引子：
+在 K.467 的第 74 小节，独奏钢琴并未立即演奏第一主题的进行曲节奏，而是弹奏出一段完全游离于严谨节拍之外的抒情华彩引子：
 
 - **半音微澜（mm. 74–79）**：钢琴右手以行云流水般的十六分音符分解音型，在 $G4$ 音周围展开优美的回旋装饰（$G4 \to A4 \to G4 \to F\sharp4 \to G4 \to D4 \to B4 \dots$），音区逐渐向上攀升；
 - **持续长颤音（mm. 80–83）**：在第 80 小节，右手在光彩夺目的 $G5$ 音上拉开整整四小节的持续颤音（Trill），左手则以长音和弦铺垫极弱和声；
@@ -92,7 +317,211 @@ R1 的首要任务是**建立完备的材料库与调性牢固地基**，同时�
 
 贝多芬在继承莫扎特协奏曲构架的同时，将交响乐的统一动机思维推向了前所未有的深度。Op. 61 第一乐章展示了如何将一个非旋律性的纯节奏音型贯穿于双重呈示部的全过程。
 
-谱例待补：贝多芬 Op.61 第一乐章 mm. 1–18（定音鼓节拍动机与第 10 小节小提琴 D♯ 半音突变）——本地无该曲机器可读谱（OpenScore 与 PDMX 均无协奏曲），暂不嵌入。
+定音鼓节拍动机、木管恰空式主题与第 10–13 小节的 D♯ 突变：
+
+```lilypond title="贝多芬 小提琴协奏曲 Op.61 第一乐章" location="Allegro ma non troppo，mm.1–18" id="beethoven-op61-i-mm1-18"
+\version "2.26.0"
+\language "english"
+
+% 贝多芬 D 大调小提琴协奏曲 Op.61 第一乐章开头：定音鼓节拍动机、木管恰空式主题、
+% 第 10 小节第一小提琴 D♯ 半音突变，以及第 11、12 小节的属七和弦与 D♯ 回声。
+% 据 CCARH MuseData（Breitkopf & Haertel 全集转录，Fran Bennion 1996/2002）核对后自编码摘录，学术用途。
+% 谱表自上而下：定音鼓、双簧管 I、大管 I、第一小提琴、第二小提琴、中提琴、大提琴。单簧管（A 调）在本段以低八度重复双簧管声部，未单列。
+
+global = {
+  \time 4/4
+  \tempo "Allegro ma non troppo" 4 = 116
+}
+
+% Timpani in D, A staff 1
+timpani = {
+  \global
+  \clef bass
+  \key d \major
+  d4\p d4 d4 d4 |
+  d4 r4 r2 |
+  r1 |
+  r2 r4 d4\p |
+  a,4 a,4 a,4 a,4 |
+  a,4 r4 r2 |
+  r1 |
+  r4 a,4\p a,4 a,4 |
+  d4 a,4 d4 r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+% Oboe 1, 2 staff 1
+oboeOne = {
+  \global
+  \clef treble
+  \key d \major
+  r1 |
+  a''2(\p b''2 |
+  a''4 g''2) fs''4( |
+  e''4 d''4 cs''4 d''4) |
+  e''4 r4 r2 |
+  g''2( fs''2 |
+  b''2.) a''4( |
+  g''4 fs''4 e''4 a''8 e''8) |
+  g''2( fs''4) r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+}
+
+% Fagotto 1, 2 staff 1
+bassoonOne = {
+  \global
+  \clef bass
+  \key d \major
+  r1 |
+  d'1~\p |
+  d'2. d'4( |
+  b4 a4 g4 fs4) |
+  a4 r4 r2 |
+  a1~ |
+  a1~ |
+  a4 a4 a4 cs'4 |
+  cs'2( d'4) r4 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  d2~ d8 e8 fs8 g8 |
+}
+
+% Violino I staff 1
+violinOne = {
+  \global
+  \clef treble
+  \key d \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  ds'8\p r8 ds'8 r8 ds'8 r8 ds'8 r8 |
+  cs'1\f |
+  r1 |
+  b'1~\f |
+  b'2(\p a'2 |
+  g'2 fs'2) |
+  e'2~ e'8( d'8 cs'8 b8) |
+  a2~ a8( a'8 g'8 e'8) |
+  d'16\p d'16 d'16 d'16 d'16 d'16 d'16 d'16 d'8 r8 r4 |
+}
+
+% Violino II staff 1
+violinTwo = {
+  \global
+  \clef treble
+  \key d \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  g1\f |
+  ds'8\p r8 ds'8 r8 ds'8 r8 ds'8 r8 |
+  g'1~\f |
+  g'2(\p fs'2 |
+  e'2 d'2) |
+  b1 |
+  cs'1 |
+  d'16\p a16 a16 a16 a16 a16 a16 a16 a8 r8 r4 |
+}
+
+% Viola staff 1
+viola = {
+  \global
+  \clef alto
+  \key d \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  e1\f |
+  ds'8\p r8 ds'8 r8 ds'8 r8 ds'8 r8 |
+  cs'1~\f |
+  cs'2(\p d'2 |
+  a1) |
+  g1 |
+  g1 |
+  fs16\p fs16 fs16 fs16 fs16 fs16 fs16 fs16 fs8 r8 r4 |
+}
+
+% Violoncello staff 1
+cello = {
+  \global
+  \clef bass
+  \key d \major
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  r1 |
+  a,8\f r8 a,8 r8 a,8 r8 a,8 r8 |
+  r1 |
+  a,8\f r8 a,8 r8 a,8 r8 a,8 r8 |
+  a,4\p a,4 r4 b,4 |
+  r4 cs4 r4 d4 |
+  r4 g,4 r2 |
+  r4 a,4 r2 |
+  d16\p d16 d16 d16 d16 d16 d16 d16 d8 r8 r4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "timpani" \timpani }
+    \new Staff { \set Staff.midiInstrument = "oboe" \oboeOne }
+    \new Staff { \set Staff.midiInstrument = "bassoon" \bassoonOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinOne }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinTwo }
+    \new Staff { \set Staff.midiInstrument = "viola" \viola }
+    \new Staff { \set Staff.midiInstrument = "cello" \cello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 定音鼓动机的结构锚定（mm. 1–2）
 
@@ -107,7 +536,7 @@ $$D3 \to D3 \to D3 \to D3 \to D3 (\text{第 2 小节强拍})$$
 - 弦乐组在第 1–9 小节中一直保持静默；在第 10 小节，第一小提琴突然切入四个断奏的八分音符：
   $$D\sharp4 \to D\sharp4 \to D\sharp4 \to D\sharp4$$
 - 这一音型在节拍形态上严格复制了第 1 小节定音鼓的敲击骨架，但在音高上却是一个极度刺耳的半音离调音（升高半音的减五度音或升主音）；
-- 这个 $D\sharp$ 音瞬间制造了强烈的和声危机感，引发了第 11 小节乐队全员在属七和弦上的强奏爆发。
+- 这个 $D\sharp$ 音瞬间制造了强烈的和声危机感，引发了第 11 小节乐队全员在属七和弦（$A7$）上的强奏爆发；第 12 小节，同一 D♯ 动机改由第二小提琴与中提琴接续，再次被属七和弦承接（见上列谱例 mm. 10–13）。
 
 ```mermaid
 sequenceDiagram

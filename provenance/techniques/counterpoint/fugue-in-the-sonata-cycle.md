@@ -17,7 +17,7 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 | 引子，Largo，mm. 1–14 | CCARH Humdrum Kern `sonata29-4.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 | 赋格呈示部，Allegro risoluto，mm. 15–48 | CCARH Humdrum Kern `sonata29-4.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 | 宣叙调与哀歌，Adagio ma non troppo，mm. 1–26 | CCARH Humdrum Kern `sonata31-3.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
-| 占位（未出谱） | 贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 | 赋格呈示部，Allegro ma non troppo，mm. 27–56 | CCARH Humdrum Kern `sonata31-3.krn` | 据 CCARH 转写，学术用途（单行文本占位） |
+| `beethoven-op106-iv-mm1-14` | 贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 | Largo，mm.1–14 | CCARH Humdrum Kern `sonata29-4.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op106-iv-mm15-48` | 贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 | Allegro risoluto，mm.15–48 | CCARH Humdrum Kern `sonata29-4.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op110-iii-mm1-26` | 贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 | Adagio ma non troppo — Arioso dolente，mm.1–26（12/16 自 m.8 起） | CCARH Humdrum Kern `sonata31-3.krn` | 据 CCARH MuseData 转写，学术用途 |
+| `beethoven-op110-iii-mm27-56` | 贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 | Fuga: Allegro ma non troppo，mm.27–56（含 m.27 末尾哀歌和弦→6/8 赋格起句） | CCARH Humdrum Kern `sonata31-3.krn` | 据 CCARH MuseData 转写，学术用途 |

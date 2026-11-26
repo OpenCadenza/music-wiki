@@ -37,7 +37,115 @@ description: 剖析贝多芬晚期钢琴奏鸣曲中严密复调赋格的结构�
 - **从即兴幻想到秩序聚拢**：第 10–14 小节中，断续的和弦切分音型逐步缩短时间间隔，从沉思的慢板急速压缩。第 14 小节末尾，全曲在低音 $A$ 音与持续三连音琶音中骤然刹车，在第 15 小节以一声极弱（$pp$）却极具穿透力的高音长颤音（Trill on $A5$）破空而起，伴随大字二组低音 $FF$ 的八度重击，完成了从虚无混沌向严谨宇宙秩序的惊天一跃；
 - **导音到主音的等音突围**：第 14 小节的 A 音在第 15 小节被重新诠释为降 B 大调的敏感导音，以极高音颤音与极低音大十度跃迁引爆全曲的终极能量。
 
-贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 引子，Largo，mm. 1–14。
+```lilypond title="贝多芬 第29钢琴奏鸣曲 Op.106 第四乐章" location="Largo，mm.1–14" id="beethoven-op106-iv-mm1-14"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key bf \major
+  \time 6/4
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Largo" 4 = 40
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      \clef "treble" r 16 r 32*2/3 r 32*2/3 \tuplet 3/2 { ( f 32 f' 32 ) r 32 } r 32*2/3 \tuplet 3/2 { f'' 32 f''' 32 ~ f''' 32 } <f'' f'''> 16. <f'' f'''> 32 ~ <f'' f'''> 16 r 16 r 16. <f'' af'' df''' f'''> 32 ~ <f'' af'' df''' f'''> 16 r 16 r 16. <f'' bf'' df''' f'''> 32 ~ <f'' bf'' df''' f'''> 16 r 16 r 16. <gf'' bf'' df''' gf'''> 32 ~ <gf'' bf'' df''' gf'''> 8 ~ ( <gf'' bf'' df''' gf'''> 32 df'' 32 gf'' 32 df'' 32 gf'' 32 df'' 32 gf'' 32 bf' 32 ) | % m.1
+      ef'' 4 ef'' 16 df'' 8 ( bf' 16 <bff' ef''> 16 af' 16 ~ af' 32. bf' 64 r 4 r 4 r 4 s16 | % m.2
+      \time 5/4 r 32 r 32 r 16 r 8 r 32 fs' 32 gs' 32 as' 32 b' 32 cs'' 32 ds'' 32 e'' 32 ds'' 32 b' 32 fs'' 32 e'' 32 ds'' 32 cs'' 32 b' 32 as' 32 b' 32 fs'' 32 gs'' 32 as'' 32 b'' 32 cs''' 32 ds''' 32 e''' 32 ds''' 32 cs''' 32 b'' 32 as'' 32 gs'' 32 fs'' 32 e'' 32 ds'' 32 | % m.3
+      cs'' 32 b' 32 as' 32 gs' 32 fs' 32 e'' 32 ds'' 32 gs'' 32 fs'' 32 b'' 32 as'' 32 e''' 32 <e'' as'' e'''> 16. <ds'' fs'' b'' ds'''> 32 ~ <ds'' fs'' b'' ds'''> 16 r 16 r 16 <ds'' gs'' b'' ds'''> 32 ~ s2 s32 | % m.4
+      \time 4/4 <ds'' gs'' b'' ds'''> 16 ds'' 16 gs' 16 ds'' 16 e'' 16 ds'' 16 gs' 16 ds'' 16 e'' 2 ~ | % m.5
+      e'' 16 as' 16 ds'' 16 cx'' 16 ds'' 16 as' 16 ds'' 16 cs'' 16 bs' 16 ds'' 16 bs' 16 gs'' 16 cs'' 16 gs'' 16 ds'' 16 gs'' 16 | % m.6
+      e'' 4 e' 4 ~ e' 16 cs' 16 fs' 16 es' 16 fs' 16 cs' 16 fs' 16 e' 16 | % m.7
+      r 2. b'' 4 ~ | % m.8
+      b'' 16 gs'' 16 a'' 16 cs''' 16 e'' 16 a'' 16 ds'' 16 gs'' 16 ds'' 16 gs'' 16 ds'' 16 fx'' 16 ds'' 16 gs'' 16 ds'' 16 as'' 16 | % m.9
+      r 8.. <b' ds'' gs'' b''> 32 ~ <b' ds'' gs'' b''> 16 r 16 r 16. <b' e'' gs'' b''> 32 ~ <b' e'' gs'' b''> 8 r 16 r 16 <cs'' e'' gs'' cs'''> 32 ~ <cs'' e'' gs'' cs'''> 16 r 16 r 16 <cs'' e'' a'' cs'''> 32 ~ | % m.10
+      \time 3/4 <cs'' e'' a'' cs'''> 16 \tuplet 3/2 { \clef "bass" a, 32 ( a 32 a 32 ) } \tuplet 3/2 { \clef "treble" ( a' 32 a' 32 a'' 32 ~ ) } \tuplet 3/2 { a'' 32 <a'' as'''> 32 ~ <a'' as'''> 32 ~ } \tuplet 3/2 { ( <a'' as'''> 8 <gs'' gs'''> 8 <e'' e'''> 8 } \tuplet 3/2 { <ds'' ds'''> 8 <d'' d'''> 8 <b' b''> 8 ) } | % m.11
+      \time 10/4 \tuplet 3/2 { gs'' 16 e'' 16 ds'' 16 } \tuplet 3/2 { d'' 16 b' 16 gs' 16 } \tuplet 3/2 { ( e' 16 ds' 16 d' 16 } \clef "bass" b 32 gs 32 e 32 ds 32 ) d 4. ds 8 ~ ds 8 e 4. <cs e> 16 ~ <cs e> 16 <cs e> 32 r 32 <cs e> 16 <cs e> 16 ~ <cs e> 16 <cs a> 32 r 32 <cs fs a> 16 <fs a> 16 ~ <fs a> 16 <fs a> 32 r 32 <fs a> 16 <fs a> 16 ~ <fs a> 16 <fs d'> 32 r 32 <fs b d'> 16 | % m.12
+      \time 6/4 \clef "treble" <b d'> 16 ~ <b d'> 16 <b d'> 32 r 32 <b d'> 16 <b d'> 16 ~ <b d'> 16 <b g'> 32 r 32 <b g'> 16 <e' g'> 16 ~ <e' g'> 16 <e' g'> 32 r 32 <e' g'> 16 <e' c''> 16 ~ <e' c''> 16 <e' c''> 32 r 32 <e' c''> 16 <a' c''> 16 ~ <a' c''> 16 <a' c''> 32 r 32 <a' c''> 16 <a' f''> 16 ~ <a' f''> 16 <a' d'' f''> 32 r 32 <a' d'' f''> 16 | % m.13
+      ( <a' cs'' e'' a''> 16 ~ <a' cs'' e'' a''> 16 ) <a' cs'' e'' a''> 32 r 32 <a' cs'' e'' a''> 16 ( <a' cs'' e'' a''> 16 ~ <a' cs'' e'' a''> 16 ) <a' cs'' e'' a''> 32 r 32 <a' cs'' e'' a''> 16 <a' cs'' e'' a''> 16 ~ <a' cs'' e'' a''> 16 <a' a''> 32 r 32 <a' a''> 16 <a' a''> 16 ~ <a' a''> 16 <a' a''> 32 r 32 <a' a''> 16 <a' a''> 16 ~ <a' a''> 16 <a' a''> 32 r 32 <a' a''> 16 <a' a''> 16 ~ <a' a''> 16 <a' a''> 32 r 32 <a' a''> 16 | % m.14
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s1. | % m.1
+      r 32 ( gf' 32 cf'' 32 gf' 32 cf'' 32 gf' 32 cf'' 32 ef' 32 f' 32 ) af' 32 f' 32 af' 32 f' 32 af' 32 f' 32 af' 32 gf' 16 gf' 16 f' 16 ~ f' 32. gf' 64 <bf' df'' gf'' bf''> 16 r 16 r 16. <bf' ef'' gf'' bf''> 32 ~ <bf' ef'' gf'' bf''> 16 r 16 r 16. ( <ef'' gf'' ef'''> 32 <fs'' ds'''> 32 ) r 32 r 16 r 8 | % m.2
+      \time 5/4 s1 s4 | % m.3
+      s1 s4 | % m.4
+      \time 4/4 s1 | % m.5
+      s1 | % m.6
+      s1 | % m.7
+      ds' 8 ds'' 4 cs'' 8 b' 16 ds'' 16 b' 16 ds'' 16 e'' 16 ds'' 16 b' 16 ds'' 16 | % m.8
+      e'' 4 a' 8 b' 8 b' 8 cs'' 8 b' 8 as' 8 | % m.9
+      s1 | % m.10
+      \time 3/4 s2. | % m.11
+      \time 10/4 s1... s2 s8 | % m.12
+      \time 6/4 s1. | % m.13
+      s1. | % m.14
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      \clef "bass" r 16 \tuplet 3/2 { f, 32 f 32 r 32 } r 32*2/3 \tuplet 3/2 { \clef "treble" f' 32 f'' 32 \clef "bass" r 32 } r 32*2/3 <f,, f,> 32*2/3 ~ <f,, f,> 16. r 32 r 16 <f, f> 16 r 16 r 16 r 16 <df, df> 16 r 16 r 16 r 16 <bf,, bf,> 16 r 16 r 16 r 16 <gf,, gf,> 16 ~ <gf,, gf,> 32 r 32 r 16 r 8 | % m.1
+      r 4 r 32 ( f 32 af 32 f 32 af 32 f 32 af 32 df 32 ) ( gf 16 c 16 df 16 gf, 16 ) r 16 <gf, gf> 16 r 16 r 16 r 16 <ef, ef> 16 r 16 r 16 <b,, b,> 32 r 32 r 16 r 8 | % m.2
+      \time 5/4 r 32 fs 32 gs 32 as 32 b 32 cs' 32 ds' 32 e' 32 ds' 32 b 32 fs' 32 e' 32 ds' 32 cs' 32 b 32 as 32 b 32 fs 32 gs 32 as 32 b 32 cs' 32 ds' 32 e' 32 ds' 32 \clef "treble" ds'' 32 fs'' 32 e'' 32 ds'' 32 cs'' 32 b' 32 as' 32 b' 32 as' 32 ds'' 32 cs'' 32 b' 32 as' 32 gs' 32 fs' 32 | % m.3
+      e' 32 ds' 32 cs' 32 b 32 as 32 cs' 32 b 32 e' 32 ds' 32 d' 32 cs' 32 fs 32 \clef "bass" <fs cs' fs'> 16. r 16 <b,, b,> 16 r 16 r 16 s2 s32 | % m.4
+      \time 4/4 <gs,, gs,> 8 r 8 r 4 r 16 \clef "treble" gs' 16 cs' 16 gs' 16 as' 16 gs' 16 cs' 16 gs' 16 | % m.5
+      fx' 4. fs' 8 ~ fs' 8 fs' 8 e' 8 ds' 8 | % m.6
+      \clef "bass" cs' 16 gs 16 cs 16 gs 16 a 16 gs 16 cs 16 gs 16 a 4. gs 8 | % m.7
+      as 16 cs' 16 as 16 ds' 16 e' 16 ds' 16 as 16 ds' 16 gs 16 b 16 gs 16 b 16 cs' 16 b 16 gs 16 b 16 | % m.8
+      e 8 cs' 4 b 8 b 8 as 8 gs 8 fx 8 | % m.9
+      r 8 r 8 r 16 <gs, gs> 16 r 16 r 16 r 16 <e, e> 16 r 16 r 16 r 16 <cs, cs> 16 -. r 16 r 16 | % m.10
+      \time 3/4 r 32*2/3 a,, 32*2/3 a, 32*2/3 r 16 r 16 r 32*2/3 r 32*2/3 <a,, a,> 32*2/3 <a,, d, e, b,> 2 | % m.11
+      \time 10/4 <a,, d, e, b,> 1 ~ <a,, d, e, b,> 2 r 16 <a,, a,> 16 r 32. <a,, a,> 64 r 16 r 16 <a,, a,> 16 r 32. <fs,, fs,> 64 r 16 r 16 <d, d> 16 r 32. <d, d> 64 r 16 r 16 <d, d> 16 r 32. <b,, b,> 64 r 16 | % m.12
+      \time 6/4 r 16 <g, g> 16 r 32. <g, g> 64 r 16 r 16 <g, g> 16 r 32. <e, e> 64 r 16 r 16 <c c'> 16 r 32 <c c'> 32 r 16 r 16 <a, a> 16 r 32 <a, a> 32 r 16 r 16 <f, f> 16 r 32 <f, f> 32 r 16 r 16 <d, d> 16 r 32 <d, d> 32 r 16 | % m.13
+      r 16 <a,, cs, e, a,> 16 r 32 <a,, cs, e, a,> 32 r 16 r 16 <a,, cs, e, a,> 16 r 32 <a,, cs, e, a,> 32 r 16 r 16 <a,, cs, e, a,> 16 r 32 <a,, a,> 32 r 16 r 16 <a,, a,> 16 r 32 <a,, a,> 32 r 16 r 16 <a,, a,> 16 r 32 <a,, a,> 32 r 16 r 16 <f,, f,> 16 r 32 <f,, f,> 32 r 16 | % m.14
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s1. | % m.1
+      s1. | % m.2
+      \time 5/4 s1 s4 | % m.3
+      s1 s4 | % m.4
+      \time 4/4 s1 | % m.5
+      s1 | % m.6
+      s1 | % m.7
+      fs 2 r 4 r 8 b, 8 | % m.8
+      cs 4. ds 8 ds 4. ds 8 | % m.9
+      s1 | % m.10
+      \time 3/4 s2. | % m.11
+      \time 10/4 s1... s2 s8 | % m.12
+      \time 6/4 s1. | % m.13
+      s1. | % m.14
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 带有自由许可的赋格呈示（Allegro risoluto，mm. 15–48）
 进入 $3/4$ 拍的 Allegro risoluto 后，三声部赋格以雷霆万钧之势展开：
@@ -55,7 +163,195 @@ description: 剖析贝多芬晚期钢琴奏鸣曲中严密复调赋格的结构�
 - **倒影与逆行（Al rovescio / Cancrizans）**：主题不仅以倒影形态出现，更在展开部中被完全逆行处理——音符从最后一个音符倒向反向行进，如同螃蟹倒退爬行；
 - **时值扩大与密接和应**：十六分音符狂潮被扩增为四分音符与二分音符的长线条圣咏，并在不同声部间以极小时间差进行密接交错，展现出人类理智在极端风暴中的绝对控制力。
 
-贝多芬《降B大调第29钢琴奏鸣曲“槌子键琴”》Op. 106 第四乐章 赋格呈示部，Allegro risoluto，mm. 15–48。
+```lilypond title="贝多芬 第29钢琴奏鸣曲 Op.106 第四乐章" location="Allegro risoluto，mm.15–48" id="beethoven-op106-iv-mm15-48"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key bf \major
+  \time 3/4
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Allegro risoluto" 4 = 110
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      a'' 2. ~ | % m.15
+      a'' 4 c''' 2 ~ | % m.16
+      c''' 4 f''' 2 ~ | % m.17
+      f''' 16 ef''' 16 d''' 16 c''' 16 bf'' 16 a'' 16 g'' 16 f'' 16 ef'' 16 -. d'' 16 c'' 16 f'' 16 | % m.18
+      <bf d' f' bf'> 8 r 8 r 8 g' 16 f' 16 ef' 16 d' 16 c' 16 bf 16 | % m.19
+      \clef "bass" a 16 bf 16 a 16 g 16 f 16 g 16 f 16 ef 16 d 16 ef 16 d 16 c 16 | % m.20
+      bf, 4 r 4 r 4 | % m.21
+      \clef "treble" r 2. | % m.22
+      r 2. | % m.23
+      r 2. | % m.24
+      r 2. | % m.25
+      r 2. | % m.26
+      r 2. | % m.27
+      r 2. | % m.28
+      r 2. | % m.29
+      bf 8 r 8 e'' 2 | % m.30
+      f'' 4 r 8 f'' 16 e'' 16 d'' 16 c'' 16 bf' 16 a' 16 | % m.31
+      d'' 4 r 8 d'' 16 c'' 16 bf' 16 a' 16 g' 16 f' 16 | % m.32
+      bf' 4 r 8 bf' 16 a' 16 g' 16 a' 16 g' 16 f' 16 | % m.33
+      e' 16 f' 16 e' 16 d' 16 c' 16 d' 16 e' 16 f' 16 fs' 16 g' 16 a' 16 g' 16 | % m.34
+      f' 16 g' 16 a' 16 bf' 16 b' 16 c'' 16 d'' 16 c'' 16 bf' 16 a' 16 g' 16 f' 16 | % m.35
+      e' 16 f' 16 e' 16 d' 16 -. c' 16 d' 16 e' 16 f' 16 fs' 16 g' 16 a' 16 f' 16 | % m.36
+      e' 16 f' 16 c'' 16 bf' 16 a' 16 bf' 16 c'' 16 bf' 16 gs' 16 a' 16 bf' 16 a' 16 | % m.37
+      g' 16 af' 16 ef'' 16 d'' 16 c'' 16 cs'' 16 d'' 16 cs'' 16 b' 16 c'' 16 d'' 16 c'' 16 | % m.38
+      gs' 16 a' 16 bf' 16 a' 16 e' 16 f' 16 g' 16 f' 16 b' 16 c'' 16 d'' 16 c'' 16 | % m.39
+      r 8 d' 8 d'' 4. r 8 | % m.40
+      r 8 bf 8 bf' 4. r 8 | % m.41
+      r 8 g' 8 g'' 8 f'' 8 ef'' 8 e'' 8 | % m.42
+      f'' 8 r 8 ef'' 4. ef'' 8 | % m.43
+      ( ef'' 8 d'' 8 c'' 8 bf' 8 a' 8 bf' 8 ) | % m.44
+      r 8 b' 8 c'' 8 gf' 8 f' 4 | % m.45
+      af'' 8 r 8 g'' 4. f'' 8 | % m.46
+      r 8 ef'' 8 g'' 8 df'' 8 c'' 4 | % m.47
+      f''' 8 r 8 ef''' 4. d''' 8 | % m.48
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s2. | % m.15
+      s2. | % m.16
+      s2. | % m.17
+      s2. | % m.18
+      s2. | % m.19
+      s2. | % m.20
+      s2. | % m.21
+      s2. | % m.22
+      s2. | % m.23
+      s2. | % m.24
+      s2. | % m.25
+      s2. | % m.26
+      s2. | % m.27
+      s2. | % m.28
+      s2. | % m.29
+      s2. | % m.30
+      r 8 a 8 -. a' 4. r 8 | % m.31
+      r 8 f 8 -. f' 4. r 8 | % m.32
+      s2. | % m.33
+      s2. | % m.34
+      s2. | % m.35
+      s2. | % m.36
+      s2. | % m.37
+      s2. | % m.38
+      ef' 2 f' 4 ~ | % m.39
+      f' 8 r 8 r 8 a' 8 bf' 4 | % m.40
+      r 4 r 8 fs' 8 g' 4 | % m.41
+      r 4 r 8 b' 8 c'' 8 g' 8 | % m.42
+      c'' 8 f' 8 c'' 8 gf' 8 f' 4 ~ | % m.43
+      f' 8 f' 8 ef' 8 d' 8 c' 8 d' 8 | % m.44
+      f' 8 r 8 ef' 4. d' 8 | % m.45
+      r 8 bf' 8 e'' 8 bf' 8 ~ bf' 4 | % m.46
+      c'' 8 r 8 bf' 4. a' 8 | % m.47
+      r 8 a'' 8 c''' 8 gf'' 8 f'' 4 | % m.48
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      <f,, f,> 8 r 8 <f a> 8 r 8 r 4 | % m.15
+      <f,, f,> 8 r 8 <a c'> 8 r 8 r 4 | % m.16
+      <f,, f,> 8 r 8 <f a c' f'> 8 -. r 8 <f,, f,> 8 r 8 | % m.17
+      <f a c' f'> 8 r 8 <f,, f,> 4. g, 16 a, 16 | % m.18
+      <bf,, d, f, bf,> 8 r 8 r 4 r 4 | % m.19
+      f 8 r 8 \clef "treble" a' 2 | % m.20
+      bf' 4 r 8 bf' 16 a' 16 g' 16 f' 16 ef' 16 d' 16 | % m.21
+      g' 4 r 8 g' 16 f' 16 ef' 16 d' 16 c' 16 bf 16 | % m.22
+      ef' 4 r 8 ef' 16 d' 16 c' 16 d' 16 c' 16 bf 16 | % m.23
+      \clef "bass" a 16 bf 16 a 16 g 16 f 16 g 16 a 16 bf 16 b 16 c' 16 d' 16 c' 16 | % m.24
+      bf 16 c' 16 d' 16 ef' 16 e' 16 f' 16 g' 16 f' 16 ef' 16 d' 16 c' 16 bf 16 | % m.25
+      a 16 bf 16 a 16 g 16 f 16 g 16 a 16 bf 16 b 16 c' 16 d' 16 c' 16 | % m.26
+      \clef "treble" bf 16 c' 16 d' 16 ef' 16 e' 16 f' 16 g' 16 f' 16 bf 16 fs' 16 g' 16 fs' 16 | % m.27
+      bf 16 g' 16 a' 16 g' 16 fs' 16 g' 16 a' 16 g' 16 e' 16 f' 16 g' 16 f' 16 | % m.28
+      e' 16 f' 16 g' 16 f' 16 d' 16 ef' 16 f' 16 ef' 16 cs' 16 d' 16 ef' 16 d' 16 | % m.29
+      cs' 16 d' 16 ef' 16 d' 16 b 16 c' 16 d' 16 c' 16 a 16 bf 16 c' 16 bf 16 | % m.30
+      r 2. | % m.31
+      \clef "bass" r 2. | % m.32
+      r 8 d 8 ( d' 8 c' 8 bf 8 b 8 ) | % m.33
+      c' 8 r 8 bf 4. -> bf 8 | % m.34
+      ( bf 8 a 8 g 8 f 8 e 8 f 8 ) | % m.35
+      c' 8 r 8 bf 4. -> -. a 8 | % m.36
+      d' 8 r 8 cs' 4. c' 8 | % m.37
+      f' 8 r 8 e' 4. ef' 8 | % m.38
+      f, 8 -. r 8 a 2 | % m.39
+      bf 4 r 8 bf 16 a 16 g 16 f 16 ef 16 d 16 | % m.40
+      g 4 r 8 g 16 f 16 ef 16 d 16 c 16 bf, 16 | % m.41
+      ef 4 r 8 ef 16 d 16 c 16 d 16 c 16 bf, 16 | % m.42
+      a, 16 bf, 16 a, 16 g, 16 f, 16 g, 16 a, 16 bf, 16 b, 16 c 16 d 16 c 16 | % m.43
+      bf, 16 c 16 d 16 ef 16 e 16 f 16 g 16 f 16 ef 16 d 16 c 16 bf, 16 | % m.44
+      a, 16 bf, 16 a, 16 g, 16 f, 16 g, 16 a, 16 bf, 16 a, 16 bf, 16 c 16 d 16 | % m.45
+      ef 16 f 16 g 16 ef 16 cs 16 d 16 e 16 cs 16 d 16 f 16 bf 16 d' 16 | % m.46
+      fs 16 g 16 a 16 g 16 ds 16 e 16 f 16 e 16 f 16 a 16 c' 16 f' 16 | % m.47
+      b 16 c' 16 d' 16 c' 16 gs 16 a 16 bf 16 a 16 bf 16 a 16 g 16 f 16 | % m.48
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s2. | % m.15
+      s2. | % m.16
+      s2. | % m.17
+      s2. | % m.18
+      s2. | % m.19
+      s2. | % m.20
+      s2. | % m.21
+      s2. | % m.22
+      s2. | % m.23
+      s2. | % m.24
+      s2. | % m.25
+      s2. | % m.26
+      s2. | % m.27
+      s2. | % m.28
+      s2. | % m.29
+      s2. | % m.30
+      s2. | % m.31
+      s2. | % m.32
+      r 2. | % m.33
+      r 2. | % m.34
+      r 2. | % m.35
+      r 2. | % m.36
+      r 2. | % m.37
+      r 2. | % m.38
+      s2. | % m.39
+      s2. | % m.40
+      s2. | % m.41
+      s2. | % m.42
+      s2. | % m.43
+      s2. | % m.44
+      s2. | % m.45
+      s2. | % m.46
+      s2. | % m.47
+      s2. | % m.48
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -75,7 +371,163 @@ description: 剖析贝多芬晚期钢琴奏鸣曲中严密复调赋格的结构�
   * 高音区展开如泣如诉的下行断奏旋律（核心音调 $E\flat5 \to D\flat5 \to C\flat5 \to B\flat4$），在[《挂留音》](suspension-mechanics-and-voice-leading.md)的不协和摩擦中倾诉悲痛；
   * 最终在第 26–27 小节沉入无底的极弱降 a 小调三和弦，伴随延长音记号，生命张力几近归零。
 
-贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 宣叙调与哀歌，Adagio ma non troppo，mm. 1–26。
+```lilypond title="贝多芬 第31钢琴奏鸣曲 Op.110 第三乐章" location="Adagio ma non troppo — Arioso dolente，mm.1–26" id="beethoven-op110-iii-mm1-26"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key af \minor
+  \time 4/4
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Adagio ma non troppo" 4 = 60
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      \clef "treble" <df'' f''> 8.. <df'' f''> 32 r 2 ef'' 4 | % m.1
+      <ef'' gf''> 4 <cf'' af''> 4 <cf' df'> 4 <bf df' ff'> 4 | % m.2
+      ef' 4 <af bf ff'> 8 ff'' 8 r 2 | % m.3
+      \time 7/4 r 8 \tuplet 3/2 { ( g 32 bf 32 df' 32 } \tuplet 3/2 { ef' 32 g' 32 bf' 32 ) } df'' 4 ~ df'' 8. bf' 16 af' 8 g' 8 ~ g' 16 bf' 32 df'' 32 ff'' 32 ef'' 16 bf' 32 ( df'' 16 cf'' 16 ) r 8 r 4 | % m.4
+      \time 4/4 a' 32 a'' 16. a'' 16 ~ a'' 16 a'' 16 ~ a'' 16 a'' 16. ~ a'' 32 ( a'' 32 a'' 32 a'' 32 ~ ) ( a'' 32 a'' 32 a'' 32 ) ( a'' 32 a'' 32 a'' 32 ~ ) a'' 32 r 8. | % m.5
+      \time 17/16 a'' 32 ~ a'' 32 a'' 32 ~ a'' 32 a'' 32 ~ a'' 32 a'' 32 ~ a'' 32 a'' 32 ~ a'' 32 ~ a'' 8 fs'' 8 ds'' 8 a' 8 \tuplet 3/2 { ( cs'' 8 b' 8 ) a' 8 } | % m.6
+      \time 5/4 ( gs' 8 e'' 4 g' 8 cf'' 4 ) ( bf' 8 -. af' 8 -. ) ( g' 8. af' 16 | % m.7
+      \time 12/16 af' 8. ef' 8. ) ef' 16 ef' 16 ef' 16 ef' 16 ef' 16 ef' 16 | % m.8
+      <cf' ef'> 16 <cf' ef'> 16 <cf' ef'> 16 <cf' ef'> 16 <cf' ef'> 16 <cf' ef'> 16 <af cf' ef'> 16 <af cf' ef'> 16 <af cf' ef'> 16 <af cf' ef'> 16 <af cf' ef'> 16 <af cf' ef'> 16 | % m.9
+      ef'' 8. ~ ( ef'' 8 df'' 16 ~ df'' 8 cf'' 16 bf' 16 cf'' 16 af' 16 ) | % m.10
+      ( af' 8. g' 8. ~ ) ( g' 8 ff'' 16 ~ ff'' 8 ef'' 16 ) | % m.11
+      ( ef'' 8 af'' 16 ~ af'' 8 gf'' 16 ~ ) ( gf'' 8 ff'' 16 ef'' 8 df'' 16 ) | % m.12
+      cf'' 8. ~ ( cf'' 16 df'' 16 ef'' 32 df'' 64 cf'' 64 ) bf' 8. ~ ( bf' 16 cf'' 16 df'' 16 ) | % m.13
+      ( cf'' 4. df'' 4. | % m.14
+      ef'' 4. ff'' 8. af'' 8. | % m.15
+      gf'' 8 cf''' 16 af'' 8 af''' 16 ~ ) af''' 8 ( gf''' 16 ~ gf''' 16 ef''' 16 ff''' 32 bf'' 32 ) | % m.16
+      ( df''' 4. cf''' 8. ) ef'' 8. ~ | % m.17
+      ( ef'' 8. bff' 8. af' 8. gf'' 8 ef'' 16 ) | % m.18
+      ( gf'' 8. ff'' 8. ~ ff'' 8. ef'' 8. ~ ) | % m.19
+      ( ef'' 8 df'' 16 ~ df'' 8 cf'' 16 ~ ) cf'' 8 bf' 16 ~ ( bf' 16 cf'' 16 af' 16 ) | % m.20
+      af' 4. g' 8. ( ef' 8. | % m.21
+      af' 4. ) ( g' 4. | % m.22
+      cf'' 4. ) ( bf' 8. c'' 8. | % m.23
+      df'' 8. ~ df'' 16 ef'' 16 ff'' 16 ~ ff'' 8 ( ef'' 16 ~ ef'' 8 g' 16 ) | % m.24
+      ( bf' 4. af' 4. ) | % m.25
+      \clef "bass" bf 8. <ef ef'> 8. af 8 r 16 af 16 r 16 r 16 | % m.26
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      \clef "treble" r 4 ( <ef'' gf''> 8 <c' ef' gf' a'> 8 <df' f' bf'> 8 ) ( <d'' f''> 8 <ef'' af''> 8 gf'' 8 ) | % m.1
+      s1 | % m.2
+      <bf df'> 8 cf' 8 r 4 r 8 <af bf> 8 r 8 <g bf ef'> 8 | % m.3
+      \time 7/4 s1.. | % m.4
+      \time 4/4 s1 | % m.5
+      \time 17/16 s1 s16 | % m.6
+      \time 5/4 s1 s4 | % m.7
+      \time 12/16 s2. | % m.8
+      s2. | % m.9
+      s2. | % m.10
+      s2. | % m.11
+      s2. | % m.12
+      s2. | % m.13
+      s2. | % m.14
+      s2. | % m.15
+      s2. | % m.16
+      s2. | % m.17
+      s2. | % m.18
+      r 8. r 16 af' 16 af' 16 af' 16 af' 16 af' 16 af' 16 af' 16 af' 16 | % m.19
+      af' 16 af' 16 af' 16 af' 16 af' 16 af' 16 r 4. | % m.20
+      s2. | % m.21
+      r 16 d' 16 d' 16 d' 16 ef' 16 ff' 8. ef' 8. ~ s16 | % m.22
+      ef' 16 d' 16 d' 16 d' 16 ef' 16 ff' 8 ef' 16 af' 8 ef' 16 s16 | % m.23
+      af' 16 af' 16 af' 16 af' 16 af' 16 af' 16 r 4. | % m.24
+      r 8 r 16 ef' 16 ef' 16 ef' 16 ef' 8. cf' 8. | % m.25
+      s2. | % m.26
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      \clef "bass" <bf,, bf,> 8.. <bf,, bf,> 32 <bf,, bf,> 8 <bf,, bf,> 8 <bf,, bf,> 2 | % m.1
+      <cf, cf> 4 <ff, ff> 4 <gf, gf> 2 | % m.2
+      <g, g> 8 <af, af> 8 <df, df> 4 <ef, ef> 4 ef, 4 | % m.3
+      \time 7/4 \tuplet 5/4 { ( ef, 32 g, 32 bf, 32 df 32 ef 32 ) } r 8 r 4 r 2 r 4 r 8 <af cf'> 8 <ff bff> 8 <ef gf bff> 8 | % m.4
+      \time 4/4 <b, ds fs a> 1 | % m.5
+      \time 17/16 <b, ds fs b> 1 r 16 | % m.6
+      \time 5/4 <e gs b> 4 <df e g bf> 4 <d f af cf'> 4 r 4 r 4 | % m.7
+      \time 12/16 r 4. ef 16 ef 16 ef 16 ef 16 ef 16 ef 16 | % m.8
+      <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 | % m.9
+      <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 | % m.10
+      <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef> 16 <bf, df ef g> 16 | % m.11
+      <cf ef af> 16 <cf ef af> 16 <cf ef af> 16 <c ef af> 16 <c ef af> 16 <c ef af> 16 <df ff af> 16 <df ff af> 16 <df ff af> 16 <ff af df'> 16 <ff af df'> 16 <ff af df'> 16 | % m.12
+      <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef g bf> 16 <ef g bf> 16 <ef g bf> 16 <df ef g bf> 16 <cf ef af> 16 <bf, ef g> 16 | % m.13
+      <af, ef af> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <af, cf ef> 16 <gf, cf ff> 16 <gf, cf ff> 16 <gf, cf ff> 16 <gf, bf, ff> 16 <gf, bf, ff> 16 <gf, bf, ff> 16 | % m.14
+      <gf, cf ef> 16 <gf, cf ef> 16 <gf, cf ef> 16 <cf gf cf'> 16 <cf gf cf'> 16 <cf gf cf'> 16 <df ff cf'> 16 <df ff cf'> 16 <df ff cf'> 16 <df ff bf> 16 <df ff bf> 16 <df ff bf> 16 | % m.15
+      <ef gf cf'> 16 <ef gf cf'> 16 <ef gf cf'> 16 <ff cf' ff'> 16 <ff cf' ff'> 16 <ff cf' ff'> 16 <gf cf' ef'> 16 <gf cf' ef'> 16 <gf cf' ef'> 16 <gf bf df' ff'> 16 <gf bf df' ff'> 16 <gf bf df' ff'> 16 | % m.16
+      <g bf df' ff'> 16 <g bf df' ff'> 16 <g bf df' ff'> 16 <gf bf df' ff'> 16 <gf bf df' ff'> 16 <gf bf df' gf'> 16 \clef "treble" <cf' ef' gf'> 16 <cf' ef' gf'> 16 <cf' ef' gf'> 16 <cf' ef' gf'> 16 <cf' ef' gf'> 16 <cf' ef' gf'> 16 | % m.17
+      <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf'> 16 <c' ef' gf' af'> 16 <c' ef' gf' af'> 16 <c' ef' gf' af'> 16 | % m.18
+      <df' ff' af'> 16 <df' ff' af'> 16 <df' ff' af'> 16 <df' ff' af'> 16 \clef "bass" <df af df'> 16 <df af df'> 16 <df af df'> 16 <df af df'> 16 <df af df'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 | % m.19
+      <ff af df'> 16 <ff af df'> 16 <ff af df'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <df ff bf> 16 <df ff bf> 16 <df ff bf> 16 <d f bf> 16 <d f cf'> 16 <d f cf'> 16 | % m.20
+      <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef cf' d'> 16 <ef cf' d'> 16 <ef cf' d'> 16 <ef bf ef'> 16 ef 16 ef 16 ef 16 ef 16 <df ef> 16 | % m.21
+      <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <cf ef> 16 <bf, ef> 16 <bf, ef> 16 <bf, ef> 16 <bf, ef> 16 <bf, ef> 16 <bf, ef> 16 | % m.22
+      <af, ef> 16 <af, ef> 16 <af, ef> 16 <af, ef> 16 <af, ef> 16 <af, ef> 16 <gf, ef> 16 <gf, ef> 16 <gf, ef> 16 <gf, ef> 16 <gf, ef> 16 <gf af> 16 | % m.23
+      <ff af> 16 <ff af df'> 16 <ff af df'> 16 <ff af df'> 16 <ef af c'> 16 <df af df'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef af cf'> 16 <ef g bf df'> 16 <ef g bf df'> 16 <ef g bf df'> 16 | % m.24
+      <ff g bf df'> 16 <ff g bf df'> 16 <ff g bf df'> 16 <ef g bf df'> 16 <ef g bf df'> 16 <ef g bf df'> 16 <af cf'> 8. <cf, cf> 8. | % m.25
+      <bf,, bf,> 8. ef, 8. <af,, af,> 8 r 16 <af,, af,> 16 r 16 r 16 | % m.26
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s1 | % m.1
+      s1 | % m.2
+      s1 | % m.3
+      \time 7/4 r 4 r 4 r 2 r 4 <af cf'> 8 <ff, ff> 8 <df, df> 8 <cf, cf> 8 | % m.4
+      \time 4/4 s1 | % m.5
+      \time 17/16 s1 s16 | % m.6
+      \time 5/4 s1 s4 | % m.7
+      \time 12/16 s2. | % m.8
+      s2. | % m.9
+      s2. | % m.10
+      s2. | % m.11
+      s2. | % m.12
+      s2. | % m.13
+      s2. | % m.14
+      s2. | % m.15
+      s2. | % m.16
+      s2. | % m.17
+      s2. | % m.18
+      s2. | % m.19
+      s2. | % m.20
+      s2. | % m.21
+      s2. | % m.22
+      s2. | % m.23
+      s2. | % m.24
+      s2. | % m.25
+      s2. | % m.26
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 理性重构与赋格破晓（Allegro ma non troppo，mm. 27–56）
 正在哀歌耗尽所有声学能量的瞬间，赋格如同黑暗中的第一缕理性之光悄然升起：
@@ -88,7 +540,144 @@ description: 剖析贝多芬晚期钢琴奏鸣曲中严密复调赋格的结构�
   * 中音声部在第 31 小节以属调（降 E 大调）答题（Comes）介入，旋律由 $E\flat4 \to A\flat4$ 领衔；
   * 高音声部在第 37 小节再次以主调高八度呼应，三声部严密铺陈出一座纯净而肃穆的复调圣殿。
 
-贝多芬《降A大调第31钢琴奏鸣曲》Op. 110 第三乐章 赋格呈示部，Allegro ma non troppo，mm. 27–56。
+```lilypond title="贝多芬 第31钢琴奏鸣曲 Op.110 第三乐章" location="Fuga: Allegro ma non troppo，mm.27–56" id="beethoven-op110-iii-mm27-56"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+
+global = {
+  \key af \minor
+  \time 12/16
+}
+
+upper = {
+  \clef "bass"
+  \tempo "Allegro ma non troppo" 8. = 60
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      af 4. s4. | % m.27
+      \time 6/8 \tempo 8. = 110 \clef "treble" r 4 r 8 s4. | % m.27+1
+      r 2. | % m.28
+      r 2. | % m.29
+      r 2. | % m.30
+      r 4 r 8 ( ef' 4. | % m.31
+      af' 4. f' 4. | % m.32
+      bf' 4. g' 4. | % m.33
+      c'' 4. bf' 4 af' 8 | % m.34
+      g' 4. ) bf' 4. ~ | % m.35
+      bf' 4. af' 4 gf' 8 | % m.36
+      r 4 r 8 af' 4. | % m.37
+      df'' 4. bf' 4. | % m.38
+      ef'' 4. c'' 4. | % m.39
+      f'' 4. ef'' 4 df'' 8 | % m.40
+      c'' 4. ef'' 4. ~ | % m.41
+      ef'' 4. df'' 4 c'' 8 | % m.42
+      bf' 4. df'' 4. ~ | % m.43
+      df'' 4. c'' 4 bf' 8 | % m.44
+      af' 4 bf' 8 g' 4 af' 8 | % m.45
+      f' 4 ef' 16 f' 16 ~ f' 8 ef' 8 df' 8 | % m.46
+      c' 8 bf' 8 g' 8 af' 4. | % m.47
+      g' 4. bf' 4. | % m.48
+      ef' 8 g' 8 af' 8 ~ af' 8 bf' 8 ( c'' 8 ~ | % m.49
+      c'' 8 ) a' 8 bf' 8 ef' 8 f' 8 g' 8 | % m.50
+      af' 8 f' 8 g' 8 ~ g' 8 af' 8 bf' 8 ~ | % m.51
+      bf' 8 g' 8 af' 8 ~ af' 8 bf' 8 af' 8 ~ | % m.52
+      af' 8 f' 8 gf' 8 ~ gf' 8 af' 8 gf' 8 ~ | % m.53
+      gf' 8 e' 8 f' 8 ~ f' 8 ( d' 8 ef' 8 | % m.54
+      g' 8 af' 8 f' 8 ef' 8 f' 8 g' 8 | % m.55
+      af' 8 bf' 8 gf' 8 f' 8 g' 8 a' 8 | % m.56
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s2. | % m.27
+      \time 6/8 s2. | % m.27+1
+      s2. | % m.28
+      s2. | % m.29
+      s2. | % m.30
+      s2. | % m.31
+      s2. | % m.32
+      s2. | % m.33
+      s2. | % m.34
+      s2. | % m.35
+      s2. | % m.36
+      f' 4. ~ f' 8 d' 8 ef' 8 | % m.37
+      f' 8 bf' 8 af' 8 ~ af' 8 f' 8 g' 8 ~ | % m.38
+      g' 8 c'' 8 bf' 8 ~ bf' 8 g' 8 a' 8 ~ | % m.39
+      ( a' 8 bf' 8 af' 8 g' 8 af' 8 bf' 8 ) | % m.40
+      ef' 4. c'' 8 df'' 8 bf' 8 | % m.41
+      af' 8 c'' 8 bf' 8 af' 8 g' 8 af' 8 | % m.42
+      e' 8 g' 8 f' 8 bf' 8 c'' 8 af' 8 | % m.43
+      g' 8 bf' 8 af' 8 g' 8 f' 8 g' 8 ~ | % m.44
+      g' 8 c' 8 f' 8 ~ f' 8 ef' 8 f' 8 | % m.45
+      ef' 8 d' 8 af 8 g 4. | % m.46
+      c' 8 df' 8 bf 8 af 8 bf 8 c' 8 | % m.47
+      df' 8 ef' 8 c' 8 bf 8 c' 8 df' 8 | % m.48
+      bf' 8 ef' 4 d' 4. | % m.49
+      ef' 4. df' 4. ~ | % m.50
+      df' 4. c' 4. | % m.51
+      df' 4. d' 4. | % m.52
+      ef' 4. bf 4 c' 8 | % m.53
+      df' 8 r 8 r 8 af 4. | % m.54
+      df' 4. bf 4. | % m.55
+      ef' 4. c' 4. | % m.56
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <af,, af,> 4. s4. | % m.27
+  \time 6/8 ( af 4. s4. | % m.27+1
+  df' 4. bf 4. | % m.28
+  ef' 4. c' 4. | % m.29
+  f' 4. ef' 4 df' 8 ) | % m.30
+  c' 4. ~ c' 8 af 8 g 8 | % m.31
+  f 8 g 8 ef 8 d 8 ef 8 f 8 | % m.32
+  g 8 af 8 f 8 e 8 f 8 g 8 | % m.33
+  g 8 af 8 bf 8 c' 8 d' 8 s8 | % m.34
+  ef' 8 f' 8 d' 8 ef' 8 f' 8 df' 8 | % m.35
+  c' 8 ef' 8 df' 8 c' 8 df' 8 ef' 8 ~ | % m.36
+  ef' 8 c' 8 df' 8 ~ df' 8 b 8 c' 8 ~ | % m.37
+  c' 8 bf 8 c' 8 ef' 4 df' 8 | % m.38
+  c' 4 c 8 f 4 ef 8 | % m.39
+  df 4 d 8 ef 8 f 8 g 8 | % m.40
+  ( af 8 c' 8 bf 8 af 8 bf 8 g 8 | % m.41
+  f 8 af 8 g 8 f 8 e 8 f 8 ) | % m.42
+  g 8 bf 8 af 8 g 8 af 8 f 8 | % m.43
+  e 8 g 8 f 8 e 8 d 8 e 8 | % m.44
+  f 8 ef 8 d 8 ef 8 c 8 af, 8 | % m.45
+  a, 8 bf, 4 <ef, ef> 4. | % m.46
+  <af, af> 4. <f, f> 4. | % m.47
+  <bf, bf> 4. <g, g> 4. | % m.48
+  <c c'> 4. <bf, bf> 4 <af, af> 8 | % m.49
+  <g, g> 4. <bf, bf> 4. ~ | % m.50
+  <bf, bf> 4. <af, af> 4 <gf, gf> 8 | % m.51
+  <f, f> 4. ~ <f, f> 8 gf 8 f 8 ~ | % m.52
+  f 8 d 8 ef 8 ~ ef 8 f 8 ef 8 ~ | % m.53
+  ef 8 c 8 df 8 ~ df 8 b, 8 c 8 | % m.54
+  bf, 8 c 8 af, 8 g, 8 af, 8 bf, 8 | % m.55
+  c 8 df 8 bf, 8 a, 8 bf, 8 c 8 | % m.56
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3. 倒影赋格与生命重生（mm. 137–174）
 在经历第二段因精疲力竭而更加破碎的 g 小调哀歌（*Ermattet, klagend*，mm. 117–136）后，贝多芬在第 132–136 小节以连续十个大字一组 G 大调主和弦的渐强琶音震荡敲响生命复苏的钟声，随后展开全曲最具奇迹色彩的对位神笔：

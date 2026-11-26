@@ -77,6 +77,137 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - **左手摇曳的舞曲伴奏**：低音第一拍落在大字一组深沉的低音基石上（大字一组的 E 音），二三拍以柔和的柱状和弦跟进，呈现出如同肖邦夜曲般的流动空间感；
 - **戏剧动力的渐进升级**：原本平稳的圣咏骨架在连续的切分与渐强（*crescendo*）推动下，爆发出古典装饰性变奏所不具备的强力情感冲击。
 
+```lilypond title="贝多芬 第30钢琴奏鸣曲 Op.109 第三乐章" location="Variation I: Molto espressivo，mm.17–32" id="beethoven-op109-iii-mm17-32"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+% 底本 kern 连续编号 mm.17–35（反复第二结尾另计小节）；此处按刊本印刷号 mm.17–32 标注。
+
+global = {
+  \key e \major
+  \time 3/4
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Molto espressivo" 4 = 84
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      \grace { b'8 } ( b'' 2 -> e'' 8. fs'' 16 | % kern m.17
+      e'' 4 ds'' 4 ~ ) ds'' 8. b' 16 | % kern m.18
+      ( b'' 4. -> ds'' 8 \tuplet 5/4 { e'' 32 fs'' 32 e'' 32 ds'' 32 e'' 32 } fs'' 16 gs'' 16 ) | % kern m.19
+      ( gs'' 4 fs'' 4. ds'' 8 ) | % kern m.20
+      \grace { b'8 } ( b'' 4. -> gs'' 8 ) ( fs'' 8. -. e'' 16 -. ) | % kern m.21
+      ( e'' 8 ds'' 4 ) ( cs'' 8 -. b' 8 -. a' 8 -. ) | % kern m.22
+      ( a' 8 gs' 8 fs' 8 b' 8 as' 8 e'' 8 ) | % kern m.23
+      ( fs'' 8 e'' 8 fs'' 8 g'' 8 ) ds'' 8. b' 16 | % kern m.24
+      ( fs'' 8 e'' 8 fs'' 8 g'' 8 ) ds'' 8. b' 16 | % kern m.25
+      \grace { b'8 } b'' 4. -> ( b' 8 bs' 8. cs'' 16 ) | % kern m.26
+      \grace { cs''8 } a'' 4. -> ( a' 8 as' 8. b' 16 ) | % kern m.27
+      \grace { b'8 } gs'' 4. ( gs' 8 a' 8. e'' 16 ) | % kern m.28
+      <e' e''> 8 <ds' ds''> 8 ~ <ds' ds''> 8 <cs' fx'> 8 <b gs'> 8 <a a'> 8 | % kern m.29
+      \grace { a''8 } a''' 4. ( gs'' 8 a'' 8. cs''' 16 ) | % kern m.30
+      ( as'' 8. b'' 16 ) ( as'' 8. b'' 16 ) ( a'' 8. gs'' 16 ) | % kern m.31
+      gs''' 8 e''' 8 ~ ( e''' 16 ds''' 16 ) cs''' 8 ~ ( cs''' 16 b'' 16 ) a'' 8 ~ | % kern m.32
+      a'' 8 as'' 8 ~ as'' 16 ( b'' 16 fs'' 8 ) ( gs'' 8. fs'' 16 ) | % kern m.33
+      \grace { fs''8 } b'' 4. -> ( b' 8 bs' 8. cs'' 16 ) | % kern m.34
+      a'' 8 as'' 8 ~ ( as'' 16 b'' 16 fs'' 8 ) gs'' 4 | % kern m.35
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s2. | % kern m.17
+      s2. | % kern m.18
+      s2. | % kern m.19
+      s2. | % kern m.20
+      s2. | % kern m.21
+      s2. | % kern m.22
+      s 2 as' 4 | % kern m.23
+      as' 2 b' 4 | % kern m.24
+      as' 2 b' 4 | % kern m.25
+      s2. | % kern m.26
+      s2. | % kern m.27
+      s 2 e' 4 | % kern m.28
+      s2. | % kern m.29
+      s2. | % kern m.30
+      s2. | % kern m.31
+      s2. | % kern m.32
+      s2. | % kern m.33
+      s2. | % kern m.34
+      s2. | % kern m.35
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      e, 4 <b, e gs b> 4 <b, e gs b> 4 | % kern m.17
+      fs, 4 <b, fs a b> 4 <b, fs a b> 4 | % kern m.18
+      gs, 4 <b, e gs b> 4 <b, e gs b> 4 | % kern m.19
+      a, 4 <b, ds fs b> 4 <b, ds fs b> 4 | % kern m.20
+      gs, 4 <b, e gs b> 4 <b, e gs b> 4 | % kern m.21
+      fs, 4 <b, ds fs a> 4 <ds, b,> 4 | % kern m.22
+      b, 4 b, 4 cs, 8 fs,, 8 | % kern m.23
+      ( cs, 8 g, 8 fs, 8 e, 8 ) ( <b,, fs,> 8 cs, 16 ds, 16 ) | % kern m.24
+      ( cs, 8 g, 8 fs, 8 e, 8 ) ( <b,, fs,> 8 <cs, e,> 8 ) | % kern m.25
+      <ds, fs,> 4 <ds fs b> 4 <es gs cs'> 4 | % kern m.26
+      fs, 4 <fs a> 4 <ds fs b> 4 | % kern m.27
+      e, 4 <e gs b> 4 <cs cs'> 4 | % kern m.28
+      cs' 8 b 8 ~ b 8 as 8 gs 8 fs 8 | % kern m.29
+      fs, 4 <fs a> 4 <cs e a> 4 | % kern m.30
+      ds, 4 <ds fs a b> 4 <e gs b> 4 | % kern m.31
+      b, 4 <gs b e'> 4 <fs a b ds'> 4 | % kern m.32
+      e, 4 <e fs a b ds'> 4 <e gs b e'> 8 <ds fs b ds'> 8 | % kern m.33
+      ds, 4 <ds fs b> 4 <es gs cs'> 4 | % kern m.34
+      e, 4 <e fs a b ds'> 4 <e gs b e'> 4 | % kern m.35
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s2. | % kern m.17
+      s2. | % kern m.18
+      s2. | % kern m.19
+      s2. | % kern m.20
+      s2. | % kern m.21
+      s2. | % kern m.22
+      ( e, 4 ds, 8 d, 8 cs, 4 | % kern m.23
+      fs,, 2 s 4 | % kern m.24
+      fs,, 2 s 4 | % kern m.25
+      s2. | % kern m.26
+      s2. | % kern m.27
+      s2. | % kern m.28
+      ds 4 ( ds 4 gs, 8 fs, 8 ) | % kern m.29
+      s2. | % kern m.30
+      s2. | % kern m.31
+      s2. | % kern m.32
+      s2. | % kern m.33
+      s2. | % kern m.34
+      s2. | % kern m.35
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
 ### 3. 第二变奏：轻盈点彩断奏与严格二重对位（mm. 33–64）
 紧接第一变奏的歌剧狂澜，第二变奏（*Leggiermente*）呈现出彻底的结构粉碎与复调智性游戏：
 - **织体的极简粉碎**：连贯如歌的线条被彻底碎裂为点彩式的十六分音符跳音（Staccato）；
@@ -84,7 +215,100 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - **温柔连奏的戏剧性截断（mm. 41–48）**：在第 9–12 小节，轻佻碎裂的断奏忽然被极度温柔的四部纯净连奏（*Teneramente, legato*）强行切断，形成了巨大的戏剧性格撕裂；
 - **再现部的严格二重对位倒影（mm. 49–64）**：在后半程，左右手声部发生颠倒互换（Invertible Counterpoint），原先的上方高音声部翻转为低音，低音声部跃升为高音，充分彰显了贝多芬深邃的巴洛克复调功力。
 
-贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 第一变奏 Molto espressivo 与 第二变奏 Leggiermente，mm. 17–48。
+```lilypond title="贝多芬 第30钢琴奏鸣曲 Op.109 第三乐章" location="Variation II: Leggiermente，mm.33–48" id="beethoven-op109-iii-mm33-48"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+% 底本 kern 连续编号 mm.36–51（反复第二结尾另计小节）；此处按刊本印刷号 mm.33–48 标注。
+
+global = {
+  \key e \major
+  \time 3/4
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Leggiermente" 4 = 84
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      r 16 ( b 16 gs' 16 ) r 16 r 16 ( e' 16 b 16 ) r 16 r 16 ( cs' 16 fs' 16 ) r 16 | % kern m.36
+      r 16 ( ds' 16 fs 16 ) r 16 r 16 e 16 b 16 r 16 r 16 b 16 fs 16 r 16 | % kern m.37
+      r 16 gs' 16 gs'' 16 r 16 r 16 e'' 16 b' 16 r 16 r 16 cs'' 16 fs'' 16 r 16 | % kern m.38
+      r 16 ds'' 16 fs'' 16 r 16 r 16 as'' 16 e'' 16 r 16 r 16 <ds'' fs''> 16 b'' 16 r 16 | % kern m.39
+      r 16 b'' 16 e'' 16 r 16 r 16 gs'' 16 e''' 16 r 16 r 16 e''' 16 fs''' 16 r 16 | % kern m.40
+      r 16 e''' 16 ds''' 16 r 16 r 16 ds''' 16 cs''' 16 r 16 r 16 b'' 16 a'' 16 r 16 | % kern m.41
+      r 16 a'' 16 gs'' 16 r 16 r 16 gs'' 16 a'' 16 r 16 r 16 bf'' 16 e''' 16 r 16 | % kern m.42
+      r 16 <bf'' e'''> 16 <a'' f'''> 16 r 16 r 16 <bf'' g'''> 16 <g'' e'''> 16 r 16 r 16 b''' 16 b'' 16 r 16 | % kern m.43
+      ( gs' 8 e' 8 ) e' 8 e' 8 ( e' 8. ds' 32 e' 32 ) | % kern m.44
+      ( a' 8 fs' 8 ) fs' 8 fs' 8 ( fs' 8. es' 32 fs' 32 ) | % kern m.45
+      ( b' 8 gs' 8 ) gs' 8 gs' 8 ( gs' 8. fs' 32 gs' 32 ) | % kern m.46
+      ( <cs' cs''> 8 <cs' a'> 8 ) <cs' a'> 8 <cs' a'> 8 ( a' 8. gs' 32 a' 32 ) | % kern m.47
+      r 16 <gs' b' gs''> 16 r 16 <gs' b' e''> 16 r 16 <gs' b' ds''> 16 r 16 <gs' b' e''> 16 r 16 <gs' b' ds''> 16 r 16 <gs' b' e''> 16 | % kern m.48
+      r 16 <a' ds'' fs'' a''> 16 r 16 <a' ds'' fs''> 16 r 16 <a' ds'' es''> 16 r 16 <a' ds'' fs''> 16 r 16 <a' ds'' es''> 16 r 16 <a' ds'' fs''> 16 | % kern m.49
+      r 16 <b' e'' gs'' b''> 16 r 16 <b' e'' gs''> 16 r 16 <b' e'' gs''> 16 r 16 <b' e'' b''> 16 r 16 <as' e'' g'' as''> 16 r 16 <e'' as'' e'''> 16 | % kern m.50
+      r 16 <e'' as'' e'''> 16 r 16 <fs'' as'' fs'''> 16 r 16 <g'' as'' g'''> 16 r 16 <e'' as'' e'''> 16 r 16 <e'' as'' e'''> 16 r 16 <ds'' b'' ds'''> 16 | % kern m.51
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s2. | % kern m.36
+      s2. | % kern m.37
+      s2. | % kern m.38
+      s2. | % kern m.39
+      s2. | % kern m.40
+      s2. | % kern m.41
+      s2. | % kern m.42
+      s2. | % kern m.43
+      s2. | % kern m.44
+      ( e' 2 ds' 4 ) | % kern m.45
+      ( fs' 2 e' 4 ) | % kern m.46
+      gs' 2 fs' 4 | % kern m.47
+      s2. | % kern m.48
+      s2. | % kern m.49
+      s2. | % kern m.50
+      s2. | % kern m.51
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  e, 16 r 16 r 16 ( e 16 gs 16 ) r 16 r 16 ( gs, 16 a, 16 ) r 16 r 16 ( a 16 | % kern m.36
+  b 16 ) r 16 r 16 b, 16 cs 16 r 16 r 16 cs' 16 ds' 16 r 16 r 16 ds 16 | % kern m.37
+  e 16 r 16 r 16 e' 16 \clef "treble" gs' 16 r 16 r 16 gs 16 as 16 r 16 r 16 as' 16 | % kern m.38
+  b' 16 r 16 r 16 fs' 16 fs' 16 r 16 r 16 cs'' 16 b' 16 r 16 r 16 a' 16 | % kern m.39
+  gs' 16 r 16 r 16 gs'' 16 e'' 16 r 16 r 16 b' 16 cs'' 16 r 16 r 16 as' 16 | % kern m.40
+  as' 16 r 16 r 16 b' 16 cs'' 16 r 16 r 16 e'' 16 ds'' 16 r 16 r 16 fs'' 16 | % kern m.41
+  d'' 16 r 16 r 16 f'' 16 cs'' 16 r 16 r 16 e'' 16 c'' 16 r 16 r 16 g'' 16 | % kern m.42
+  c'' 16 r 16 r 16 c''' 16 c'' 16 r 16 r 16 c''' 16 b'' 16 r 16 r 16 b' 16 | % kern m.43
+  \clef "bass" r 8 <b, e gs> 8 <b, e gs> 8 <b, e gs> 8 <b, e gs> 8 <b, e gs> 8 | % kern m.44
+  <b, fs a> 8 <b, fs a> 8 <b, fs a> 8 <b, fs a> 8 <b, fs a> 8 <b, fs a> 8 | % kern m.45
+  <b, gs b> 8 <b, gs b> 8 <b, gs b> 8 <b, gs b> 8 <b, gs b> 8 <b, gs b> 8 | % kern m.46
+  <b, a> 8 <b, a> 8 <b, a> 8 <b, a> 8 <b ds'> 8 <b ds'> 8 | % kern m.47
+  b, 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 | % kern m.48
+  b, 16 r 16 <fs a b ds'> 16 r 16 <fs a b ds'> 16 r 16 <fs a b ds'> 16 r 16 <fs a b ds'> 16 r 16 <fs a b ds'> 16 r 16 | % kern m.49
+  b, 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 <gs b e'> 16 r 16 cs 16 r 16 <g as e'> 16 r 16 | % kern m.50
+  c 16 r 16 <g as e'> 16 r 16 <g as e'> 16 r 16 <g as e'> 16 r 16 <c g> 16 r 16 <b, b> 16 r 16 | % kern m.51
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 4. 节拍突变与复调织体沉思（第三、四变奏）
 在进入终极高潮前，贝多芬通过节拍与复调织体的持续重组拓展性格空间：
@@ -96,7 +320,143 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - **第五变奏（Allegro, ma non troppo，mm. 113–128）**：音乐骤然化为严苛的四声部自由赋格。圣咏主题的下行级进被提炼为刚劲的对位短句，各声部展开紧凑的卡农式追逐与密接和应（Stretto），彻底抽离了舞曲外壳；
 - **第六变奏（Tempo I del tema）与主题回归**：基础圣咏原型以不可思议的音符密度重新凝聚，右手在最高音区激荡起漫长的持续颤音（Trill），下方以急促的分解和弦瀑布喷薄而下。在经历了一整场精神宇宙的裂变浩劫之后，原初质朴的主题以完全未施粉黛的素颜（Da Capo）重现，达成了一种“看山还是山”的形而上顿悟。
 
-贝多芬《E大调第30钢琴奏鸣曲》Op. 109 第三乐章 第五变奏 Allegro, ma non troppo，mm. 113–128。
+```lilypond title="贝多芬 第30钢琴奏鸣曲 Op.109 第三乐章" location="Variation V: Allegro, ma non troppo，mm.113–128" id="beethoven-op109-iii-mm113-128"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+% 底本 kern 连续编号 mm.120–135（反复第二结尾另计小节）；此处按刊本印刷号 mm.113–128 标注。
+
+global = {
+  \key e \major
+  \time 4/4
+}
+
+upper = {
+  \clef "bass"
+  \tempo "Allegro, ma non troppo" 4 = 84
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      \clef "bass" gs 2 e 2 | % kern m.120
+      a 2 fs 2 ~ | % kern m.121
+      fs 4 gs 8 ds 8 e 4 d 4 | % kern m.122
+      cs' 2 a 2 ~ | % kern m.123
+      ( a 4 as 4 b 4 a 4 ) | % kern m.124
+      gs 4 b 4 b 4 e' 4 | % kern m.125
+      \clef "treble" ( e' 2. f' 4 | % kern m.126
+      <e' g'> 4 <f' a'> 4 <g' bf'> 4 <ds' b'> 4 ) | % kern m.127
+      \clef "bass" gs 2 e 2 | % kern m.128
+      a 2 fs 2 | % kern m.129
+      \clef "treble" r 8 b' 8 -. cs'' 8 -. ds'' 8 -. e'' 8 -. fs'' 8 -. gs'' 8 -. e'' 8 -. | % kern m.130
+      a'' 8 cs'' 8 ds'' 8 e'' 8 fs'' 8 gs'' 8 a'' 8 fs'' 8 | % kern m.131
+      b'' 8 ds'' 8 e'' 8 fs'' 8 gs'' 8 a'' 8 b'' 8 gs'' 8 | % kern m.132
+      c''' 8 e'' 8 fs'' 8 gs'' 8 a'' 8 b'' 8 c''' 8 a'' 8 | % kern m.133
+      d''' 8 fs'' 8 g'' 8 a'' 8 b'' 8 c''' 8 d''' 8 b'' 8 | % kern m.134
+      e''' 8 d''' 8 e''' 8 f''' 8 g''' 8 as''' 8 b''' 8 ds''' 8 | % kern m.135
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s1 | % kern m.120
+      e 4 fs 8 cs 8 ds 4 b, 4 | % kern m.121
+      b 2 gs 2 | % kern m.122
+      <cs gs> 4 a 8 e 8 fs 4 c 4 | % kern m.123
+      r 1 | % kern m.124
+      r 4 e 4 gs 2 | % kern m.125
+      s1 | % kern m.126
+      s1 | % kern m.127
+      s1 | % kern m.128
+      e 4 fs 8 cs 8 ds 4 b, 4 | % kern m.129
+      \clef "treble" gs' 2 e' 2 ~ | % kern m.130
+      e' 4 fs' 8 cs' 8 ds' 4 b 4 ~ | % kern m.131
+      b 4 gs' 8 ds' 8 e' 4 d' 4 | % kern m.132
+      c' 4 a' 8 e' 8 f' 4 e' 4 | % kern m.133
+      s1 | % kern m.134
+      s 2 e''' 4 ds''' 8 r 8 | % kern m.135
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      r 4 e, 4 -. gs, 2 ~ | % kern m.120
+      gs, 4 fs, 4 -. a, 2 ~ | % kern m.121
+      a, 4 gs, 4 -. b, 2 ~ | % kern m.122
+      b, 4 a, 4 -. c 4 e, 4 | % kern m.123
+      b, 2 fs, 2 ~ | % kern m.124
+      fs, 4 gs, 4 r 2 | % kern m.125
+      gs 4 a 4 bf 4 a 4 | % kern m.126
+      ( g, 4 f, 4 e, 4 fs, 4 ) | % kern m.127
+      r 8 b,, 8 -. cs, 8 -. ds, 8 -. e, 8 -. fs, 8 -. gs, 8 -. e, 8 -. | % kern m.128
+      fs, 8 -. b,, 8 -. ds, 8 -. e, 8 -. fs, 8 -. gs, 8 -. a, 8 -. fs, 8 -. | % kern m.129
+      b, 8 -. ds 8 -. e 8 -. fs 8 -. gs 2 | % kern m.130
+      fs 2 a 2 | % kern m.131
+      gs 2 b 2 | % kern m.132
+      a 2 ( cs' 2 | % kern m.133
+      \clef "treble" d' 4 b' 8 fs' 8 g' 4 f' 4 | % kern m.134
+      e' 8 f' 8 gs' 8 f' 8 e' 4 fs' 4 | % kern m.135
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s1 | % kern m.120
+      s1 | % kern m.121
+      s1 | % kern m.122
+      s1 | % kern m.123
+      e, 4 fs, 8 cs, 8 ds, 4 b,, 4 ~ | % kern m.124
+      b,, 4 gs, 8 ds, 8 e, 4 b,, 4 | % kern m.125
+      ( bs,, 4 cs, 2 <c, c> 4 ) | % kern m.126
+      c, 2. b,, 4 | % kern m.127
+      s1 | % kern m.128
+      s1 | % kern m.129
+      s1 | % kern m.130
+      s1 | % kern m.131
+      s1 | % kern m.132
+      s1 | % kern m.133
+      \clef "treble" c' 4 b 2 g 4 | % kern m.134
+      c' 2 ~ c' 4 b 4 | % kern m.135
+    }
+    \new Voice = "lhIII" {
+      \voiceThree
+      s1 | % kern m.120
+      s1 | % kern m.121
+      s1 | % kern m.122
+      s1 | % kern m.123
+      s1 | % kern m.124
+      s1 | % kern m.125
+      r 2 cs 4 s4 | % kern m.126
+      s1 | % kern m.127
+      s1 | % kern m.128
+      s1 | % kern m.129
+      s1 | % kern m.130
+      s1 | % kern m.131
+      s1 | % kern m.132
+      s1 | % kern m.133
+      s1 | % kern m.134
+      s1 | % kern m.135
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
@@ -113,7 +473,132 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
   * mm. 5–8：低音走出纯朴的级进下行（$C \to B \to A \to G$），高音攀升至 $G5$ 峰值，半终止于属调 G 大调；
   * mm. 9–16：向 a 小调与下属调展开微弱的冥想暗影，最终以神圣的光辉收束于 C 大三和弦原位完全正格终止。
 
-贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 Arietta: Adagio molto semplice e cantabile，mm. 1–16。
+```lilypond title="贝多芬 第32钢琴奏鸣曲 Op.111 第二乐章" location="Arietta: Adagio molto semplice e cantabile，mm.1–16" id="beethoven-op111-ii-mm1-16"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+% 底本 kern 连续编号 mm.1–18（反复第二结尾另计小节）；此处按刊本印刷号 mm.1–16 标注。
+
+global = {
+  \key c \major
+  \time 9/16
+}
+
+upper = {
+  \clef "treble"
+  \tempo "Adagio molto semplice e cantabile" 8. = 40
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      g' 4. ( d'' 8 g' 16 ) | % kern m.1
+      g' 4. g' 8. | % kern m.2
+      ( g' 8. e'' 8. c'' 8. ) | % kern m.3
+      c'' 8. b' 8. <g' b'> 8. | % kern m.4
+      ( c'' 8. e'' 8. g'' 8. ) | % kern m.5
+      ( g'' 8. f'' 8. d'' 8 <a' c''> 16 ) | % kern m.6
+      ( <g' b'> 8. <g' c''> 8. <g' d''> 8 g' 16 ) | % kern m.7
+      g' 4. s8. | % kern m.8
+      g' 4. e' 8. | % kern m.9
+      c'' 4. ( c'' 8 b' 16 ) | % kern m.10
+      b' 4. ( b' 8 e'' 16 ) | % kern m.11
+      <b' e''> 8. ( <c'' e''> 8. <b' d''> 8 <a' c''> 16 ) | % kern m.12
+      ( <a' c''> 8. <gs' b'> 8. <e' a' c''> 8. ) | % kern m.13
+      <g' b' d''> 4. <g' b' d''> 8. | % kern m.14
+      <g' c'' e''> 4. <a' c'' f''> 8. | % kern m.15
+      <g' b' d''> 8. <g' b' d''> 8. ( <g' b' d''> 8 <b' d'' g''> 16 ) | % kern m.16
+      ( <b' d'' g''> 8 <g' c'' e''> 16 ) <g' c'' e''> 8. e' 8. | % kern m.17
+      ( <b' d'' g''> 8 <g' c'' e''> 16 ) <g' c'' e''> 8. c'' 8 e' 16 | % kern m.18
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      ( e' 8. f' 8. d' 8. ) | % kern m.1
+      ( d' 8. e' 8. f' 8. ) | % kern m.2
+      g' 8. e' 8. g' 8. | % kern m.3
+      e' 8. d' 8. d' 8. | % kern m.4
+      g' 4. g' 8. | % kern m.5
+      a' 4. a' 8 d' 16 | % kern m.6
+      d' 8. c' 8. d' 8 d' 16 ~ | % kern m.7
+      d' 8 ( d' 16 <c' e'> 8 <b f'> 16 ) s8. | % kern m.8
+      d' 8 ( <c' e'> 16 <b f'> 8 <c' e'> 16 ) s 8. | % kern m.9
+      e' 4. e' 8. | % kern m.10
+      e' 4. s 8. | % kern m.11
+      s2 s16 | % kern m.12
+      s2 s16 | % kern m.13
+      s2 s16 | % kern m.14
+      s2 s16 | % kern m.15
+      s2 s16 | % kern m.16
+      s2 s16 | % kern m.17
+      s2 s16 | % kern m.18
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      <c, g,> 8. <d, g,> 8. <b,, g,> 8. | % kern m.1
+      <b,, g,> 8. <c, g,> 8. <d, g,> 8. | % kern m.2
+      <e, g,> 8. <c, g,> 8. <e, g,> 8. | % kern m.3
+      ( g,, 8. g, 8. ) ( <g,, g,> 8 <f,, f,> 16 ) | % kern m.4
+      <e,, e,> 4. <e,, e,> 8. | % kern m.5
+      <d,, d,> 4. ( <f,, f,> 8 <fs,, fs,> 16 ) | % kern m.6
+      ( g, 8. a, 8. b, 8 ) b, 16 ~ | % kern m.7
+      b, 8 ( b, 16 c 8 s4 | % kern m.8
+      b, 8 ) ( c 16 d 8 c 16 ) e 8. | % kern m.9
+      a, 8. e 8. e 8. | % kern m.10
+      gs, 8. e 8. e 8. | % kern m.11
+      <gs, e> 8. <a, e> 8. <a, e> 8. | % kern m.12
+      ( e, 8. e 8. ) <a,, a,> 8. | % kern m.13
+      <g,, g,> 4. <g,, g,> 8. | % kern m.14
+      <c, c> 4. <f,, f,> 8. | % kern m.15
+      <g,, g,> 8. <g,, g,> 8. <g,, g,> 8 <g,, g,> 16 | % kern m.16
+      ( <g,, g,> 8 <c, c> 16 ) <c, c> 8. e 8. | % kern m.17
+      ( <g,, g,> 8 <c, c> 16 ) <c, c> 16 ( g 16 f 16 e 16 c 16 g 16 ) | % kern m.18
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s2 s16 | % kern m.1
+      s2 s16 | % kern m.2
+      s2 s16 | % kern m.3
+      g,, 4. s 8. | % kern m.4
+      s2 s16 | % kern m.5
+      s2 s16 | % kern m.6
+      g,, 4. s 8. | % kern m.7
+      s2 s16 | % kern m.8
+      s2 s16 | % kern m.9
+      a, 4. a, 8. | % kern m.10
+      gs, 4. gs, 8. | % kern m.11
+      s2 s16 | % kern m.12
+      e, 4. s 8. | % kern m.13
+      s2 s16 | % kern m.14
+      s2 s16 | % kern m.15
+      s2 s16 | % kern m.16
+      s2 s16 | % kern m.17
+      s2 s16 | % kern m.18
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 比例递减的数学阶梯与时间引力坍缩
 在阿里埃塔主题之后，贝多芬并未改变基础脉搏的绝对时钟速度，而是通过严密的节拍乘法递增，展开了人类音乐史上最壮丽的**时值持续细分**（Progressive Metric Subdivisions）：
@@ -127,7 +612,144 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - **两极声学真空**：左手深陷于大字一组与大字二组的极低音持续音（Pedal point），右手则游弋在小字三组甚至小字四组的高空。中间长达三个八度的声学空洞，彻底瓦解了古典四部和声的密集肉身感；
 - **高音颤音的超验光环**：在高音区长达数十小节的三重颤音中，音符运动彻底脱离了节拍重音的牵引，转化为一种纯粹的光线与泛音云团。变奏曲式在此完成了从“修辞技术”到“形而上宇宙论”的终极飞跃。
 
-贝多芬《c小调第32钢琴奏鸣曲》Op. 111 第二乐章 第二变奏 L'istesso tempo，mm. 33–48。
+```lilypond title="贝多芬 第32钢琴奏鸣曲 Op.111 第二乐章" location="Variation II: L'istesso tempo，mm.33–48" id="beethoven-op111-ii-mm33-48"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData（CCARH）转写，学术用途。
+% 底本 kern 连续编号 mm.36–54（反复第二结尾另计小节）；此处按刊本印刷号 mm.33–48 标注。
+
+global = {
+  \key c \major
+  \time 9/16
+}
+
+upper = {
+  \clef "treble"
+  \tempo "L'istesso tempo" 8. = 40
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      c'' 8 <c' e'> 16 ) s4. | % kern m.36
+      ( <d'' g''> 16 <b' f''> 16 <c'' e''> 16 <c'' f''> 16 <c'' e''> 16 <c'' e''> 16 ) s8. | % kern m.36+1
+      \time 6/16 r 8 s4 | % kern m.36+2
+      \tuplet 3/2 { ( e'' 16 c'' 32 b' 16 c'' 32 } \tuplet 3/2 { d'' 16 b' 32 as' 16 b' 32 ) } r 8 | % kern m.37
+      \tuplet 3/2 { f 16 d 32 cs 16 d 32 } \tuplet 3/2 { g' 16 e' 32 ds' 16 e' 32 } \tuplet 3/2 { g' 16 e' 32 g' 16 f' 32 } | % kern m.38
+      \tuplet 3/2 { a' 16 fs' 32 a' 16 g' 32 } <g' e''> 8 <g' c''> 8 | % kern m.39
+      \tuplet 3/2 { c'' 16 b' 32 d'' 16 c'' 32 } \tuplet 3/2 { c'' 16 as' 32 c'' 16 b' 32 } <g' b'> 8 | % kern m.40
+      c'' 8 \tuplet 3/2 { e'' 16 d'' 32 f'' 16 e'' 32 } g'' 8 ~ | % kern m.41
+      g'' 16 g'' 16 ~ \tuplet 3/2 { g'' 16 e'' 32 g'' 16 f'' 32 } \tuplet 3/2 { e'' 16 cs'' 32 e'' 16 d'' 32 } | % kern m.42
+      c'' 16 b' 16 c'' 16 cs'' 16 d'' 16 d'' 16*2/3 g' 32*2/3 | % kern m.43
+      g' 16 g' 16 ~ g' 16 g' 16 s8 | % kern m.44
+      g' 16 g' 16 ~ \tuplet 3/2 { g' 16 gs' 32 a' 16 b' 32 } \tuplet 3/2 { e' 16 e' 32 ~ e' 16 e' 32 } | % kern m.45
+      c'' 16 ~ c'' 16*2/3 b' 32*2/3 c'' 16 ~ c'' 16*2/3 b' 32*2/3 c'' 16 ~ c'' 16*2/3 b' 32*2/3 | % kern m.46
+      b' 16 ~ b' 16*2/3 c'' 32*2/3 b' 16 ~ b' 16*2/3 c'' 32*2/3 b' 16 ~ b' 16*2/3 e'' 32*2/3 | % kern m.47
+      <b' e''> 16 ~ <b' e''> 16*2/3 <c'' e''> 32*2/3 <c'' e''> 16 ~ \tuplet 3/2 { <c'' e''> 16 <gs' b' d''> 32 ( <e' b' d''> 16 <f' a' c''> 32 } <fs' a' c''> 16*2/3 <gs' b'> 32*2/3 | % kern m.48
+      \tuplet 3/2 { <b gs' b'> 16 <b gs' b'> 32 ~ <b gs' b'> 16 <b gs' b'> 32 ~ } \tuplet 3/2 { <b gs' b'> 16 <c' a' c''> 32 ~ <c' a' c''> 16 <c' a' c''> 32 ~ } \tuplet 3/2 { <c' a' c''> 16 <d' b' d''> 32 ~ <d' b' d''> 16 <d'' b'' d'''> 32 } | % kern m.49
+      s 8 d'' 8 ~ \tuplet 3/2 { d'' 16 ds'' 32 f'' 16 e'' 32 } | % kern m.50
+      e'' 8 ~ e'' 16 e'' 16 ~ \tuplet 3/2 { e'' 16 e'' 32 g'' 16 f'' 32 } | % kern m.51
+      \tuplet 3/2 { d'' 16 ( fs'' 32 a'' 16 g'' 32 ~ ) } ( g'' 16 \tuplet 3/2 { a'' 16 g'' 32 ~ ) ( g'' 16 f'' 32 } a'' 16*2/3 g'' 32*2/3 ) | % kern m.52
+      g'' 16 ~ g'' 16*2/3 f'' 32*2/3 e'' 16 r 16 r 16*2/3 \tuplet 3/2 { e' 32 ~ e' 16 } e' 32*2/3 | % kern m.53
+      g'' 16 ~ \tuplet 3/2 { g'' 16 f'' 32 e'' 16 g'' 32 ~ } g'' 16*2/3 g'' 32*2/3 s8 | % kern m.54
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s2 s16 | % kern m.36
+      s2 s16 | % kern m.36+1
+      \time 6/16 s4. | % kern m.36+2
+      \tuplet 3/2 { g' 16 e' 32 d' 16 e' 32 } \tuplet 3/2 { f' 16 d' 32 cs' 16 d' 32 } r 8 | % kern m.37
+      s4. | % kern m.38
+      s4. | % kern m.39
+      \tuplet 3/2 { e' 16 d' 32 f' 16 e' 32 } \tuplet 3/2 { e' 16 cs' 32 e' 16 d' 32 } d' 8 | % kern m.40
+      g' 8 e' 16 g' 16 \tuplet 3/2 { d'' 16 cs'' 32 e'' 16 d'' 32 } | % kern m.41
+      \tuplet 3/2 { cs'' 16 b' 32 d'' 16 cs'' 32 } a' 16 a' 16 ~ a' 16 a' 16 | % kern m.42
+      a' 16 d' 16 \tuplet 3/2 { g' 16 e' 32 g' 16 f' 32 ~ } \tuplet 3/2 { f' 16 d' 32 <f' af'> 16 <d' f'> 32 } | % kern m.43
+      \tuplet 3/2 { <d' f'> 16 d' 32 b 16 c' 32 } \tuplet 3/2 { d' 16 c' 32 f' 16 e' 32 } s8 | % kern m.44
+      \tuplet 3/2 { <d' f'> 16 d' 32 <b f'> 16 <c' e'> 32 } \tuplet 3/2 { e' 16 <d' e'> 32 <c' e'> 16 <b e'> 32 } \tuplet 3/2 { b 16 d' 32 <a c'> 16 <gs d'> 32 } | % kern m.45
+      c' 16*2/3 ds' 32*2/3 e' 16 ~ e' 16*2/3 ds' 32*2/3 e' 16 ~ e' 16*2/3 ds' 32*2/3 e' 16 ~ | % kern m.46
+      e' 16*2/3 f' 32*2/3 e' 16 ~ e' 16*2/3 f' 32*2/3 e' 16 ~ e' 16*2/3 f' 32*2/3 e' 16 | % kern m.47
+      s4. | % kern m.48
+      s4. | % kern m.49
+      \tuplet 3/2 { ( <d'' b'' d'''> 16 d'' 32 cs'' 16 d'' 32 ) } \tuplet 3/2 { d'' 16 b' 32 as' 16 b' 32 } g' 16 g' 16 ~ | % kern m.50
+      \tuplet 3/2 { g' 16 c'' 32 b' 16 c'' 32 } \tuplet 3/2 { c'' 16 bf' 32 a' 16 bf' 32 } bf' 16 ~ bf' 16*2/3 a' 32*2/3 | % kern m.51
+      a' 16*2/3 c'' 32*2/3 d'' 16 ~ d'' 16*2/3 ds'' 32*2/3 e'' 16 ~ \tuplet 3/2 { e'' 16 f'' 32 <b' f''> 16 <b' d''> 32 } | % kern m.52
+      \tuplet 3/2 { <b' d''> 16 b' 32 c'' 16 d'' 32 } \tuplet 3/2 { g' 16 b 32 c' 16 d' 32 } \tuplet 3/2 { c' 16 b 32 a 16 <gs d'> 32 } | % kern m.53
+      \tuplet 3/2 { <b' d''> 16 b' 32 c'' 16 d'' 32 } \tuplet 3/2 { g' 16 d'' 32 e'' 16 f'' 32 } s8 | % kern m.54
+    }
+  >>
+}
+
+lower = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      e 16 a, 16 e 16 s4. | % kern m.36
+      r 16 g 16 g 16 ( a 16 ) g 16 g 16 s8. | % kern m.36+1
+      \time 6/16 \tuplet 3/2 { c' 16 ( g 32 fs 16 g 32 ) } s4 | % kern m.36+2
+      g 16 g 16 ~ g 16 g 16 \tuplet 3/2 { ( d 16 g, 32 fs, 16 g, 32 ) } | % kern m.37
+      a, 16 b, 16 ~ b, 16 c 16 cs 16 d 16 | % kern m.38
+      ds 16 e 16 \tuplet 3/2 { d 16 b, 32 d 16 c 32 } \tuplet 3/2 { f 16 ds 32 f 16 e 32 } | % kern m.39
+      g 8 g, 8 \tuplet 3/2 { f, 16 e, 32 g, 16 f, 32 } | % kern m.40
+      \tuplet 3/2 { e, 16 d, 32 f, 16 e, 32 } \tuplet 3/2 { c, 16 b,, 32 d, 16 c, 32 } \tuplet 3/2 { bf,, 16 a,, 32 c, 16 bf,, 32 } | % kern m.41
+      a,, 16 a, 16 d, 16 d 16 f, 16 fs, 16 ~ | % kern m.42
+      \tuplet 3/2 { fs, 16 fs, 32 a, 16 g, 32 } a, 16 bf, 16 ~ bf, 16 b, 16 ~ | % kern m.43
+      b, 16 s 8. s8 | % kern m.44
+      \tuplet 3/2 { <g, b,> 16 b, 32 d 16 c 32 } \tuplet 3/2 { c 16 b, 32 a, 16 gs, 32 ~ } \tuplet 3/2 { gs, 16 gs, 32 a, 16 b, 32 } | % kern m.45
+      a, 16*2/3 ds 32*2/3 e 16 ~ e 16*2/3 ds 32*2/3 e 16 ~ e 16*2/3 ds 32*2/3 e 16 ~ | % kern m.46
+      e 16*2/3 f 32*2/3 e 16 ~ e 16*2/3 f 32*2/3 e 16 ~ e 16*2/3 f 32*2/3 e 16 | % kern m.47
+      <gs,, gs,> 16*2/3 <gs,, gs,> 32*2/3 <a,, a,> 16 ~ <a,, a,> 16*2/3 ( <a,, a,> 32*2/3 <b,, b,> 16 \tuplet 3/2 { ( <c, c> 16 ) <d, d> 32 <ds, ds> 16 <e, e> 32 ) } | % kern m.48
+      \tuplet 3/2 { <e, e> 16 <e, e> 32 ~ <e, e> 16 <e, e> 32 ~ } \tuplet 3/2 { <e, e> 16 <a,, a,> 32 ~ <a,, a,> 16 <a,, a,> 32 ~ } \tuplet 3/2 { <a,, a,> 16 <g,, g,> 32 ~ <g,, g,> 16 <g,, g,> 32 } | % kern m.49
+      \tuplet 3/2 { <g,, g,> 16 f' 32 e' 16 f' 32 } \tuplet 3/2 { f' 16 d' 32 c' 16 d' 32 } b 16 d' 16*2/3 c' 32*2/3 | % kern m.50
+      \tuplet 3/2 { c' 16 e' 32 ds' 16 e' 32 } \tuplet 3/2 { e' 16 g' 32 fs' 16 g' 32 } \tuplet 3/2 { g' 16 g' 32 e' 16 fs' 32 } | % kern m.51
+      \tuplet 3/2 { c' 16 a 32 c' 16 b 32 ~ } b 16*2/3 b 32*2/3 c' 16 \tuplet 3/2 { cs' 16 d' 32 f' 16 <d' f'> 32 } | % kern m.52
+      \tuplet 3/2 { <g d' f'> 16 <g, g> 32 ( <a, a> 16 <b, b> 32 ) } \tuplet 3/2 { <c c'> 16 ( d 32 e 16 f 32 } \tuplet 3/2 { e 16 d 32 c 16 b, 32 ) } | % kern m.53
+      \tuplet 3/2 { <g d' f'> 16 ( <g, g> 32 <a, a> 16 <b, b> 32 } \tuplet 3/2 { <c c'> 16 ) \clef "treble" b' 32 c'' 16 d'' 32 } s8 | % kern m.54
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s2 s16 | % kern m.36
+      b, 16 g, 16 c 16 ~ c 8 c 16 s8. | % kern m.36+1
+      \time 6/16 s4. | % kern m.36+2
+      s4. | % kern m.37
+      s4. | % kern m.38
+      s4. | % kern m.39
+      s4. | % kern m.40
+      s4. | % kern m.41
+      s4. | % kern m.42
+      s 8 g, 8 ~ g, 16 g, 16 ~ | % kern m.43
+      \tuplet 3/2 { g, 16 ( b, 32 d 16 e 32 } \tuplet 3/2 { f 16 e 32 d 16 c 32 ) } s8 | % kern m.44
+      s4. | % kern m.45
+      a, 16 ~ \tuplet 3/2 { a, 16 gs, 32 a, 16 ~ a, 32 } gs, 16 a, 16 ~ a, 16*2/3 gs, 32*2/3 | % kern m.46
+      gs, 16 ~ gs, 16*2/3 a, 32*2/3 gs, 16 ~ gs, 16*2/3 a, 32*2/3 gs, 16 ~ gs, 16*2/3 gs, 32*2/3 | % kern m.47
+      s4. | % kern m.48
+      s4. | % kern m.49
+      s 16 g 16 ~ g 8 ~ g 16 g 16 ~ | % kern m.50
+      g 16 c' 16 ~ c' 16 c' 16 ~ c' 16 f 16 | % kern m.51
+      \tuplet 3/2 { fs 16 a 32 fs 16 g 32 ~ } g 16 g 16 ~ g 16 g 16*2/3 g 32*2/3 | % kern m.52
+      s4. | % kern m.53
+      s4. | % kern m.54
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \upper
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \lower
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
