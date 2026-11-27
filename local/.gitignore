@@ -47,3 +47,7 @@ __pycache__/
 /workbench/tools/score-a-r5/
 /workbench/scores/score-c-r5/
 /workbench/scores/score-d-r5/
+
+# 2026-11-27 第六轮谱例补齐的临时工作目录（12MB 底本/中间件，不进版本跟踪）
+/workbench/scores/score-beethoven-r6/
+/workbench/tmp-mozart/

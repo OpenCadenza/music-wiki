@@ -58,7 +58,62 @@ description: 和声变更频率如何组织古典乐句推进、制造终止期�
 - **呈示句（mm. 1–4）**：通常确立核心基本乐思（Basic Idea），其和声功能专职于主功能延留（Tonic Prolongation），和声节奏极其缓慢且规整（常为 2 小节一个和声块）；
 - **延续句（mm. 5–8）**：承担打破静态平衡的动能任务。延续功能所伴随的核心特征（动机断片化、常规音型融解、模进重复）几乎总是与和声节奏的倍增加速形成共振。
 
-[谱例占位：贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章 mm. 1–8 句型和声节奏阶梯加速]
+```lilypond title="贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章" location="Allegro，弱起 + mm.1–8（呈示句与延续句的和声节奏阶梯加速）" id="beethoven-op2no1-i-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 \*MM240 为四分音符值，本谱表为 2/2，故记 2 = 120。
+% 全曲开头有一个未编号的 1 拍弱起小节（右手 c′ 四分音符、左手休止），本谱例以 \partial 4 保留，其后 mm.1–8 编号与刊本一致。
+% mm.5、m.6 的弱起倚音为底本原有。
+
+global = {
+  \key f \minor
+  \time 2/2
+}
+
+right = {
+  \clef "treble"
+  \tempo "Allegro" 2 = 120
+  \partial 4 c'4 | f' 4 -. af' 4 -. c'' 4 -. f'' 4 -. | % m.1
+  ( af'' 4. \tuplet 3/2 { g'' 16 f'' 16 e'' 16 } f'' 4 -. ) r 4 | % m.2
+  g' 4 -. c'' 4 -. e'' 4 -. g'' 4 -. | % m.3
+  ( bf'' 4. \tuplet 3/2 { af'' 16 g'' 16 f'' 16 } g'' 4 -. ) r 4 | % m.4
+  \grace { c''8 } ( af'' 4. \tuplet 3/2 { g'' 16 f'' 16 e'' 16 } f'' 4 -. ) r 4 | % m.5
+  \grace { c''8 } ( bf'' 4. \tuplet 3/2 { af'' 16 g'' 16 f'' 16 } g'' 4 -. ) r 4 | % m.6
+  <c'' f'' af'' c'''> 2 ( bf'' 8 af'' 8 g'' 8 f'' 8 ) | % m.7
+  \grace { e''16 f''16 g''16 } ( f'' 4 e'' 4 ) r 4 r 4 | % m.8
+}
+
+left = {
+  \clef "bass"
+  \partial 4 r4 | r 1 | % m.1
+  r 4 <f af c'> 4 <f af c'> 4 <f af c'> 4 | % m.2
+  <e g bf c'> 4 r 4 r 2 | % m.3
+  r 4 <e g bf c'> 4 <e g bf c'> 4 <e g bf c'> 4 | % m.4
+  r 4 <f af c'> 4 <f af c'> 4 <f af c'> 4 | % m.5
+  r 4 <g bf e'> 4 <g bf e'> 4 <g bf e'> 4 | % m.6
+  r 4 <af c' f'> 4 r 4 <bf df' g'> 4 | % m.7
+  r 4 <c' g'> 4 r 4 g, 4 -. | % m.8
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \right
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \left
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 在贝多芬《F小调第1钢琴奏鸣曲》（Op. 2 No. 1）第一乐章开篇主题（mm. 1–8，2/2 拍）中，和声节奏展现了严整的指数级加速阶梯：
 - **mm. 1–2**：呈示句基本乐思（曼海姆火箭上行琶音与附点回音），右手旋律自 F4 跃升至 A♭5，左手伴奏保持在 F 小调主功能区（$i$），和声跨度整整 **2 小节**；
@@ -83,7 +138,71 @@ description: 和声变更频率如何组织古典乐句推进、制造终止期�
 
 在加兰特与早期古典键盘音乐中，作曲家经常运用“极快表面节奏 + 极慢和声节奏”的织体错位手法。这种错位既保证了键盘乐器所需的声响丰满度与发音余韵，又赋予底层和声结构宽广宏大的建筑感。
 
-[谱例占位：莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 mm. 1–14 表面节奏与和声节奏的解耦推进]
+```lilypond title="莫扎特 第15钢琴奏鸣曲 K.545 第一乐章" location="Allegro，mm.1–14" id="mozart-k545-i-mm1-14"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 C 大调第 15 钢琴奏鸣曲 K.545 第一乐章 mm.1-14（4/4，C 大调）：主部（mm.1–4）与补充、过渡段（mm.5–14）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mm.1-14 逐小节音高多重集完全一致。
+% 左手谱号按底本：mm.1–4 为高音谱号（C4–G4 一带），m.5 末拍起随底本改低音谱号，谱号换在该拍原位置。
+% 试听速度 1/4=120 采自底本速度标记。
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  c''2 e''4 g''4 |
+  b'4. c''16 d''16 c''4 r4 |
+  a''2 g''4 c'''4 |
+  g''4 f''8\trill e''16 f''16 e''4 r4 |
+  a'8 b'16 c''16 d''16 e''16 f''16 g''16 a''16 g''16 f''16 e''16 d''16 c''16 b'16 a'16 |
+  g'8 a'16 b'16 c''16 d''16 e''16 f''16 g''16 f''16 e''16 d''16 c''16 b'16 a'16 g'16 |
+  f'8 g'16 a'16 b'16 c''16 d''16 e''16 f''16 e''16 d''16 c''16 b'16 a'16 g'16 f'16 |
+  e'8 f'16 g'16 a'16 b'16 c''16 d''16 e''16 d''16 c''16 b'16 a'16 g'16 f'16 e'16 |
+  d'8 e'16 f'16 g'16 a'16 b'16 cs''16 d''16 a'16 b'16 cs''16 d''16 e''16 f''16 g''16 |
+  a''16 b''16 c'''16 b''16 a''16 g''16 f''16 e''16 f''16 g''16 a''16 g''16 f''16 e''16 d''16 c''16 |
+  b'8\staccato g''8\staccato e''8\staccato c''8\staccato d''8\staccato g''8\staccato e''8\staccato c''8\staccato |
+  d''4\staccato <b' d'' g''>4\staccato g'4\staccato r4 |
+  r1 |
+  d'''8 b''4. g''8 a''16 b''16 a''8 g''8\staccato |
+}
+
+lower = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  c'8 g'8 e'8 g'8 c'8 g'8 e'8 g'8 |
+  d'8 g'8 f'8 g'8 c'8 g'8 e'8 g'8 |
+  c'8 a'8 f'8 a'8 c'8 g'8 e'8 g'8 |
+  b8 g'8 d'8 g'8 c'8 g'8 e'8 g'8 |
+  f'4 r4 r4 \clef bass <f c'>4 |
+  <e c'>4 r4 r4 <e c'>4 |
+  <d c'>4 r4 r4 <d b>4 |
+  <c c'>4 r4 r4 <c e>4 |
+  <f a>1 |
+  f4. g8 a4. fs8 |
+  g,16 b,16 d16 g16 g,16 c16 e16 g16 g,16 b,16 d16 g16 g,16 c16 e16 g16 |
+  g,4\staccato g4\staccato g,4\staccato r4 |
+  cs'16 d'16 cs'16 d'16 cs'16 d'16 cs'16 d'16 c'16 d'16 c'16 d'16 c'16 d'16 c'16 d'16 |
+  b16 d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16 b16 d'16 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 莫扎特《C大调第15钢琴奏鸣曲》（K. 545）第一乐章主部至过渡段（mm. 1–14）是该手法极具代表性的例证：
 - **mm. 1–4（主部呈示）**：左手伴奏由连续不断的十六分音符阿尔贝蒂低音（C–G–E–G）驱动，表面音符时值流动极快；然而在和声层面上，第 1 小节为纯净的 C 大调主和弦（$I$），第 2 小节为弱拍经过四六/转位和弦组成的辅助装饰（$V^{4/3} \to I^6$），第 3–4 小节同样维持在主功能内部变相延留。整整 4 小节的主部主题，其深层和声骨架处于绝对静止或极慢摆动状态。
@@ -104,12 +223,93 @@ description: 和声变更频率如何组织古典乐句推进、制造终止期�
 
 在经历展开部激烈的调性漫游、模进穿梭与每小节换和弦的动荡推进后，音乐并非径直冲入再现部，而是往往在再现前夕让和声运动骤然归零——将和声锁定于主调的属持续音（Dominant Pedal）或单一属和弦上长达十数小节。
 
-[谱例占位：贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章 mm. 81–101 属音驻留制动与再现爆发]
+```lilypond title="贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章" location="Allegro，展开部末端 mm.81–101（属音驻留制动与再现爆发）" id="beethoven-op2no1-i-mm81-101"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 \*MM240 为四分音符值，本谱表为 2/2，故记 2 = 120。
+% mm.81–92 低音为 C 上的八分音符分解脉动（底本记 C2 与 C3 交替，属音持续音），右手在其上奏断奏三和弦与带倚音的高音线条；
+% mm.93–94 持续音缩减为断奏四分音符（底本为四分音符，非八分音符）；mm.95–100 持续音撤去；m.101 主部「曼海姆火箭」主题在本调 F 小调返回。
+
+global = {
+  \key f \minor
+  \time 2/2
+}
+
+right = {
+  \clef "treble"
+  \tempo "Allegro" 2 = 120
+  <g c' e'> 4 r 4 r 4 ( c'' 4 | % m.81
+  af' 4 -. ) r 4 r 4 ( f'' 4 | % m.82
+  e'' 4 -. ) r 4 r 4 ( c''' 4 | % m.83
+  f'' 4 -. ) r 4 ( <f'' f'''> 2 | % m.84
+  <e'' e'''> 4 ) r 4 r 4 ( c'' 4 | % m.85
+  \grace { b'16 c''16 } af' 4 -. ) af' 4 -. r 4 ( f'' 4 | % m.86
+  \grace { e''16 f''16 } e'' 4 -. ) e'' 4 -. r 4 ( c''' 4 | % m.87
+  \grace { b''16 c'''16 } f'' 4 -. ) f'' 4 -. r 4 ( <f'' f'''> 4 | % m.88
+  <e'' e'''> 4 -. ) <e'' e'''> 4 -. r 4 ( <df'' df'''> 4 | % m.89
+  <c'' c'''> 4 -. ) <c'' c'''> 4 -. r 4 ( <f'' f'''> 4 | % m.90
+  <e'' e'''> 4 -. ) <e'' e'''> 4 -. r 4 ( <df'' df'''> 4 | % m.91
+  <c'' c'''> 4 -. ) <c'' c'''> 4 -. r 4 ( <f'' f'''> 4 | % m.92
+  <e'' e'''> 4 -. ) r 4 r 2 | % m.93
+  r 1 | % m.94
+  r 4 r 8 \tuplet 3/2 { ( af' 16 gf' 16 f' 16 } gf' 4 -. ) r 4 | % m.95
+  r 4 r 8 \tuplet 3/2 { ( ef''' 16 df''' 16 c''' 16 } df''' 4 -. ) r 4 | % m.96
+  r 4 r 8 \tuplet 3/2 { ( f' 16 e' 16 d' 16 } e' 4 -. ) r 4 | % m.97
+  r 4 r 8 \tuplet 3/2 { ( df''' 16 c''' 16 b'' 16 } c''' 4 -. ) r 4 | % m.98
+  r 4 r 8 \tuplet 3/2 { ( ef' 16 d' 16 c' 16 } d' 4 -. ) r 4 | % m.99
+  r 4 r 8 \tuplet 3/2 { ( c''' 16 bf'' 16 a'' 16 } bf'' 4 -. ) r 4 | % m.100
+  f' 4 -. af' 4 -. c'' 4 -. f'' 4 -. | % m.101
+}
+
+left = {
+  \clef "bass"
+  c, 8 c 8 e 8 c 8 e 8 c 8 e 8 c 8 | % m.81
+  f 8 c 8 f 8 c 8 f 8 c 8 af 8 c 8 | % m.82
+  g 8 c 8 g 8 c 8 g 8 c 8 bf 8 c 8 | % m.83
+  af 8 c 8 c' 8 c 8 b 8 c 8 d' 8 c 8 | % m.84
+  c' 8 c 8 e 8 c 8 e 8 c 8 e 8 c 8 | % m.85
+  f 8 c 8 f 8 c 8 f 8 c 8 af 8 c 8 | % m.86
+  g 8 c 8 g 8 c 8 g 8 c 8 bf 8 c 8 | % m.87
+  af 8 c 8 c' 8 c 8 b 8 c 8 d' 8 c 8 | % m.88
+  c' 8 c 8 c' 8 c 8 bf 8 c 8 bf 8 c 8 | % m.89
+  af 8 c 8 c' 8 c 8 b 8 c 8 d' 8 c 8 | % m.90
+  c' 8 c 8 c' 8 c 8 bf 8 c 8 bf 8 c 8 | % m.91
+  af 8 c 8 c' 8 c 8 b 8 c 8 d' 8 c 8 | % m.92
+  ( c' 4 -. c' 4 -. c' 4 -. c' 4 -. ) | % m.93
+  ( c' 4 -. c' 4 -. c' 4 -. c' 4 -. ) | % m.94
+  ( <c' df'> 4 -. <c' df'> 4 -. <c' df'> 4 -. <c' df'> 4 -. ) | % m.95
+  ( <bf df'> 4 -. <bf df'> 4 -. <bf df'> 4 -. <bf df'> 4 -. ) | % m.96
+  ( <bf c'> 4 -. <bf c'> 4 -. <bf c'> 4 -. <bf c'> 4 -. ) | % m.97
+  ( <af c'> 4 -. <af c'> 4 -. <af c'> 4 -. <af c'> 4 -. ) | % m.98
+  ( <af bf> 4 -. <af bf> 4 -. <af bf> 4 -. <af bf> 4 -. ) | % m.99
+  ( <g bf e'> 4 -. <g bf e'> 4 -. <g bf e'> 4 -. <g bf e'> 4 -. ) | % m.100
+  <f af c'> 4 r 4 r 2 | % m.101
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \right
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \left
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 在贝多芬 Op. 2 No. 1 第一乐章展开部末端（mm. 81–101），这一机制发挥到了极致：
-1. **和声刹车（mm. 81–94）**：在经历前半段频繁转调与高度不稳定的低音级进后，贝多芬自 m. 81 起在低音声部筑起坚不可摧的属音 C3 踏板。整整 14 小节内，低音完全固定在八分音符脉动的属音 C3 上；右上声部虽交替出现断奏三和弦、强音震音与高音颤音，但从申克式深层对位视角看，上方所有声部运动皆属属功能区（Dominant Zone）内部的邻音与经过性装饰，宏观和声节奏彻底凝固为零；
+1. **和声刹车（mm. 81–94）**：在经历前半段频繁转调与高度不稳定的低音级进后，贝多芬自 m. 81 起在低音声部筑起坚不可摧的属音踏板：整整 14 小节内，低音只在属音 C 的两个八度间交替脉动（C2 与 C3 的八分音符分解）；右上声部虽交替出现断奏三和弦、强音震音与高音颤音，但从申克式深层对位视角看，上方所有声部运动皆属属功能区（Dominant Zone）内部的邻音与经过性装饰，宏观和声节奏彻底凝固为零；
 2. **高音声部层级增厚与颤音强化（mm. 85–92）**：在低音属音持续震颤之上，右手高音声部先后在 C5（m. 85）与 C6（m. 87）爆发出带装饰音的长颤音，并在 mm. 89–92 出现下行八度分解和弦与突强（fz）重音。上方声部极度活跃的音响织体与底层完全锁死的和声节奏形成巨大反差，将和声动能转化为强烈的垂直势能；
-3. **张力对冲与叹息消解（mm. 93–100）**：mm. 93–94 动态骤降至极弱（pp），持续低音缩减为断奏八分音符；mm. 95–100 属音踏板撤去，声部缩减为单线条下行半音阶叹息，表面织体完全融解（Liquidation），为解决制造极度空旷的声学缺口；
+3. **张力对冲与叹息消解（mm. 93–100）**：mm. 93–94 动态骤降至极弱（pp），持续低音缩减为断奏四分音符；mm. 95–100 属音踏板撤去，声部缩减为单线条下行半音阶叹息，表面织体完全融解（Liquidation），为解决制造极度空旷的声学缺口；
 4. **原调爆发再现（m. 101）**：在长达 20 小节的和声制动蓄能后，主部曼海姆火箭主题以特强（ff）在原调 F 小调轰然爆发。
 
 这种“剧烈动荡 $\to$ 属音驻留减速制动 $\to$ 蓄势再现”的和声节奏布局，是古典奏鸣曲式建筑宏大戏剧性结构的核心支柱。

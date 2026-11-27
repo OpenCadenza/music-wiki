@@ -62,7 +62,75 @@ title: 复合乐段
 ### 1. 莫扎特《F大调第12钢琴奏鸣曲》K. 332 第一乐章 mm. 41–56
 在经历过渡段剧烈冲刺与主调视角下的属锁定停顿（关于过渡段在内聚裂隙处的能量断裂，详见[《内聚裂隙》](medial-caesura-and-sonata-transition.md)）后，副部主题以副调 C 大调上的 16 小节复合乐段展开，呈现为极为精巧的 **混合型 1 + 混合型 1** 结构。
 
-谱例待补：莫扎特《F大调第12钢琴奏鸣曲》K. 332 第一乐章 mm. 41–56
+```lilypond title="莫扎特 第12钢琴奏鸣曲 K.332 第一乐章" location="Allegro，mm.41–56" id="mozart-k332-i-mm41-56"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 F 大调第 12 钢琴奏鸣曲 K.332 第一乐章 mm.41-56（3/4，F 大调）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mm.41-56 回比对：11/16 小节音高多重集完全一致，
+% 其余 5 小节差异均为底本写作的倚音/装饰音（本谱例不展开装饰音）与一处连线写法。
+% 试听速度 1/4=144 采自底本速度标记。
+
+global = {
+  \key f \major
+  \time 3/4
+  \tempo "Allegro" 4 = 144
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  e''8 r8 e''8 r8 e''8 r8 |
+  g''4. f''8 d''4 |
+  << { d''8 c''8 s2 } \\ { e'4 <g' c''>4. <b' d''>8 } >> |
+  << { d''2 e''4 } \\ { b'2 c''4 } >> |
+  f''4. f''8 g''8 a''8 |
+  a''8 g''8 fs''8 g''8 f''8 d''8 |
+  ds''8 e''8 f''8 e''8 g''8 f''8 |
+  e''8 d''8 c''8 b'8 a'8 g'8 |
+  ds''8 e''8 ds''8 e''8 ds''8 e''8 |
+  fs''8 g''8 fs''8 g''8 f''8 d''8 |
+  << { s4 d''8 c''8 e''8 d''8 } \\ { d''8 c''8 g'4 b'4 } >> |
+  << { d''4. ds''8 e''4 } \\ { b'2 c''4 } >> |
+  f''4. f''8 g''8 a''8 |
+  a''8 g''8 fs''8 g''8 f''8 d''8 |
+  ds''8 e''8 g''8 f''8 d''8 b'8 |
+  c''8 g'8 r8 g'8 r8 g'8 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  c'4 r4 r4 |
+  f'4 r4 r4 |
+  c4 e4 g4 |
+  c'4 c4 r4 |
+  a4 <c' f'>4 r4 |
+  b4 <d' g'>4 r4 |
+  c'4 <a c'>4 <f d'>4 |
+  \clef treble <g b>4 r4 r4 |
+  \tuplet 3/2 { c'8 e'8 g'8 } \tuplet 3/2 { c'8 e'8 g'8 } \tuplet 3/2 { c'8 e'8 g'8 } |
+  \tuplet 3/2 { b8 d'8 g'8 } \tuplet 3/2 { b8 d'8 g'8 } \tuplet 3/2 { b8 f'8 g'8 } |
+  \clef bass <c' e'>4 e4 g4 |
+  \clef treble c'4 g4 c4 |
+  a8 c'8 f'8 c'8 a8 c'8 |
+  b8 d'8 g'8 d'8 b8 d'8 |
+  \clef bass c'4 <f d'>4 <g f'>4 |
+  <c' e'>4 e'4 c'4 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **大前句（mm. 41–48，8 小节）**：
   - **小前句（mm. 41–44）**：第 41 小节强拍右手单音轻盈跃入，确立 C 大调主和弦（$I$）；第 42 小节配以经过性导七和弦与下行级进；第 43 小节左手分解和弦 $I^6$ 支撑旋律展开；第 44 小节高音停顿于主音 c²，左手低音落在主音 C3 上，形成极其温和的弱收束（内部小前句落幅）。
@@ -74,7 +142,75 @@ title: 复合乐段
 ### 2. 莫扎特《D大调第6钢琴奏鸣曲》K. 284 第二乐章 mm. 1–16
 作为 Open Music Theory 曲式章节（compoundPeriod）与卡普林理论体系中的经典推荐案例，莫扎特在此慢乐章（波兰舞曲风格的行板）开篇构建了规范严密的 **句型 + 句型（Sentence + Sentence）** 复合乐段。
 
-谱例待补：莫扎特《D大调第6钢琴奏鸣曲》K. 284 第二乐章 mm. 1–16
+```lilypond title="莫扎特 第6钢琴奏鸣曲 K.284 第二乐章" location="Rondeau en polonaise: Andante，mm.1–16" id="mozart-k284-ii-mm1-16"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 D 大调第 6 钢琴奏鸣曲 K.284 第二乐章（回旋曲式波兰舞曲）mm.1-16（3/4，A 大调）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mn 1-16 回比对：12/16 小节音高多重集完全一致，其余 4 小节差异在
+% 三层叠置（&）与连音线写法上，音高集合一致。
+% 试听速度 1/4=104 采自底本速度标记。
+
+global = {
+  \key a \major
+  \time 3/4
+  \tempo "Rondeau en polonaise: Andante" 4 = 104
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  a'2 b'8. gs'16 |
+  a'8 e'8 ds'8 e'8 d'8 cs'8 |
+  b'2 cs''8. a'16 |
+  d''8 d'8 cs'8 d'8 cs'8 b8 |
+  e''4. fs''32 e''32 d''32 cs''32 d''8\staccato d''8\staccato |
+  cs''4. d''32 cs''32 b'32 a'32 gs'8\staccato gs'8\staccato |
+  a'4. <gs' b'>8 <a' cs''>8 <b' d''>8 |
+  << { ds''16 e''16 fs''16 ds''16 cs''4 b'4 } \\ { cs''8 d''16 b'16 a'4 gs'4 } >> |
+  a'4~ \tuplet 3/2 { a'8 e'8 cs''8 } \tuplet 3/2 { d''8 b'8 gs'8 } |
+  a'8 e'8 ds'8 e'8 d'8 cs'8 |
+  b'4~ \tuplet 3/2 { b'8 e'8 d''8 } \tuplet 3/2 { cs''8 a'8 fs''8 } |
+  d''8 d'8 cs'8 d'8 cs'8 b8 |
+  e''4~ e''16 es''16 fs''16 cs''16 d''8\staccato d''8\staccato |
+  cs''4~ cs''16 ds''16 e''16 a'16 gs'8\staccato gs'8\staccato |
+  a'16 b'16 cs''16 d''16 e''16 fs''16 gs''16 a''16 gs''16 fs''16 e''16 d''16 |
+  << { cs''16 e''16 d''16 b'16 <d' b'>4 <cs' a'>4 } \\ { s4 e'2 } >> |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  <a cs'>2 <e d'>4 |
+  <a cs'>8 cs'8 bs8 cs'8 b8 a8 |
+  <e gs>2 <a e'>4 |
+  \clef treble <gs e'>8 b8 as8 b8 a8 gs8 |
+  \clef bass r4 <cs' e' a'>4 <b e' gs'>4 |
+  r4 <a cs' e'>4 <d e b>4 |
+  r8 cs8 cs'8 <d' e'>8 <cs' e'>8 <b e'>8 |
+  <a e'>8 d'8 e'4 e4 |
+  << { s4 cs'4 b8 d'8 } \\ { r4 a4 e4 } >> |
+  <a cs'>8 cs'8 bs8 cs'8 b8 a8 |
+  r4 <e gs>4 <a e'>4 |
+  \clef treble r8 b8 as8 b8 a8 gs8 |
+  \clef bass r4 <cs' a'>4 <b gs'>4 |
+  r4 <a e'>4 <d' e'>4 |
+  << { s4 a2~ } \\ { <cs' e'>4 cs4 d4 } >> |
+  << { a8 gs8 s2 } \\ { e4 a8 e8 a,4 } >> |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **大前句（mm. 1–8，8 小节，呈示为完整句型）**：
   - **呈示句（mm. 1–4，承担大基础乐思）**：在 A 大调（3/4 拍，Rondeau en polonaise）中，第 1–2 小节确立基础乐思（bi），第 1 小节高音长音 A4 接附点十六分音符装饰，第 2 小节十六分音符回旋下行，低音以 A 大三和弦持续音块平稳支撑；第 3–4 小节在属和弦上进行上行二度模进复述（旋律以 B4 与持续属和声展开），构成规范的 2+2 小节呈示句结构。

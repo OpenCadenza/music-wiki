@@ -168,7 +168,114 @@ cello = {
 }
 ```
 
-谱例待补：莫扎特 K.467 第一乐章 mm. 9–28（全奏动能过渡段）——该段十六分音符跑动密集，本轮只出主部主题群，暂不嵌入。
+```lilypond title="莫扎特 第21钢琴协奏曲 K.467 第一乐章" location="Allegro maestoso，mm.9–28（全奏动能过渡：弦乐十六分音符冲刺与八分音符步态）" id="mozart-k467-i-mm9-28"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 C 大调第 21 钢琴协奏曲 K.467 第一乐章 mm.9-28：乐队利都奈罗的动能过渡段。
+% 据 CCARH MuseData（Neue Mozart-Ausgabe 转录）核对后自编码摘录，学术用途；
+% 试听速度 4=120 为编选，非原谱标记。谱表只取论证需要的弦乐三组：
+% 第一小提琴（十六分音符音阶/琶音冲刺）、第二小提琴（平行三度跟随）、
+% 大提琴与低音提琴（同声部，八分音符步态）。本段木管与铜管在上方以持续和弦加入，此处不列。
+% 小节号按刊本印刷号；底本 md2 的 measure 行与本段一一对应（m.11 为全休止）。
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro maestoso" 4 = 120
+}
+
+% Violino I
+violinoI = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  g''2~ g''8 g''16 fs''16 g''8 e''8 |
+  f''2~ f''8 f''16 e''16 f''8 d''8 |
+  c''4 r4 r2 |
+  c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 |
+  c'''16 c'''16 c'''16 c'''16 a''16 a''16 a''16 a''16 b''16 b''16 b''16 b''16 cs'''16 cs'''16 cs'''16 cs'''16 |
+  d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 d'''16 |
+  d'''16 d'''16 d'''16 d'''16 b''16 b''16 b''16 b''16 c'''16 c'''16 c'''16 c'''16 d'''16 d'''16 d'''16 d'''16 |
+  e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 e'''16 |
+  e'''16 e'''16 e'''16 e'''16 ds'''16 ds'''16 ds'''16 ds'''16 e'''16 e'''16 e'''16 e'''16 d'''16 d'''16 d'''16 d'''16 |
+  c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 ef'''16 ef'''16 ef'''16 ef'''16 ef'''16 ef'''16 ef'''16 ef'''16 |
+  ef'''16 ef'''16 ef'''16 ef'''16 cs'''16 cs'''16 cs'''16 cs'''16 d'''16 d'''16 d'''16 d'''16 c'''16 c'''16 c'''16 c'''16 |
+  b''4. \tuplet 3/2 { c'''16 b''16 a''16 } g''8 g''8 a''8 b''8 |
+  c'''4. \tuplet 3/2 { d'''16 c'''16 b''16 } a''8 a''8 b''8 c'''8 |
+  d'''4. \tuplet 3/2 { e'''16 d'''16 c'''16 } b''8 b''8 c'''8 d'''8 |
+  e'''4. \tuplet 3/2 { f'''16 e'''16 d'''16 } c'''8 c'''8 d'''8 e'''8 |
+  f'''4. e'''8 f'''4. e'''8 |
+  f'''8 e'''8 f'''8 e'''8 f'''8 e'''8 f'''8 e'''8 |
+  f'''8 e'''8 d'''8 c'''8 b''8 a''8 g''8 fs''8 |
+  f''8 e''8 d''8 c''8 b'8 a'8 g'8 f'8 |
+  e'4 r4 r2 |
+}
+
+% Violino II
+violinoII = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "violin"
+  r8 g'8 g'8 g'8 g'4 r4 |
+  r8 b'8 b'8 b'8 b'4 r4 |
+  r1 |
+  e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 |
+  d''16 d''16 d''16 d''16 d''16 d''16 d''16 d''16 d''16 d''16 d''16 d''16 e''16 e''16 e''16 e''16 |
+  f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 f''16 |
+  e''16 e''16 e''16 e''16 e''16 e''16 e''16 e''16 g''16 g''16 g''16 g''16 b''16 b''16 b''16 b''16 |
+  c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 c'''16 |
+  b''16 b''16 b''16 b''16 b''16 b''16 b''16 b''16 gs''16 gs''16 gs''16 gs''16 b''16 b''16 b''16 b''16 |
+  e''16 e''16 e''16 e''16 a''16 a''16 a''16 a''16 a''16 a''16 a''16 a''16 c'''16 c'''16 c'''16 c'''16 |
+  a''16 a''16 a''16 a''16 a''16 a''16 a''16 a''16 fs''16 fs''16 fs''16 fs''16 a''16 a''16 a''16 a''16 |
+  g''4. \tuplet 3/2 { a''16 g''16 fs''16 } g''8 g''8 fs''8 g''8 |
+  a''4. \tuplet 3/2 { b''16 a''16 g''16 } fs''8 fs''8 g''8 a''8 |
+  b''4. \tuplet 3/2 { c'''16 b''16 a''16 } g''8 g''8 a''8 b''8 |
+  c'''4. \tuplet 3/2 { d'''16 c'''16 b''16 } c'''8 c'''8 b''8 c'''8 |
+  d'''4. cs'''8 d'''4. cs'''8 |
+  d'''8 cs'''8 d'''8 cs'''8 d'''8 cs'''8 d'''8 cs'''8 |
+  d'''8 c'''8 b''8 a''8 g''8 f''8 e''8 ds''8 |
+  d''8 c''8 b'8 a'8 g'8 f'8 e'8 d'8 |
+  c'4 r4 r2 |
+}
+
+% Violoncello e Contrabasso
+violoncello = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "cello"
+  r8 c'8 c'8 c'8 c'4 r4 |
+  r8 g8 g8 g8 g4 r4 |
+  r1 |
+  c8 r8 g,8 r8 c8 r8 e8 r8 |
+  f4. \tuplet 3/2 { e16 d16 c16 } b,4 r8. g,16 |
+  b,8 r8 d8 r8 f8 r8 d8 r8 |
+  g4. \tuplet 3/2 { a16 g16 f16 } e4 r8. g16 |
+  c8 r8 e8 r8 a8 r8 c'8 r8 |
+  gs4. \tuplet 3/2 { a16 gs16 fs16 } e4 r8. gs16 |
+  a8 r8 e8 r8 c'8 r8 a8 r8 |
+  fs4. \tuplet 3/2 { g16 fs16 e16 } d4 r8. fs16 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g8 g8 g8 g8 g8 g8 g8 g8 |
+  g4 r4 r2 |
+  r1 |
+  c4 c4 c4 c4 |
+}
+
+\score {
+  \new StaffGroup <<
+    \new Staff { \set Staff.midiInstrument = "violin" \violinoI }
+    \new Staff { \set Staff.midiInstrument = "violin" \violinoII }
+    \new Staff { \set Staff.midiInstrument = "cello" \violoncello }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 1. 莫扎特 K.467 第一乐章的五段式全奏模块
 

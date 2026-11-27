@@ -98,7 +98,102 @@ $$\text{理论琴长} \approx 35.5\text{ cm} \times 1.5 \approx 53.25\text{ cm}\
 - **音区与织体地位**：主题在小字组 $c$ 至小字一组 $c^1$ 之间飞速跃动，全部位于中提琴最敏捷、咬字最清晰的 G 弦与 C 弦中高把位；
 - **对位层级确立**：直至第 11 小节，第二小提琴才在属音 $d^1$ 上进入答题（Answer），中提琴随即转入极速八分音符对题（Countersubject）。贝多芬在此确立了中提琴在严格复调对位中与第一小提琴绝对对等的戏剧主宰力。
 
-谱例待补：贝多芬《第九弦乐四重奏》Op. 59 No. 3 第四乐章，mm. 1–10（中提琴在 Allegro molto 开篇以 pp 独奏呈示长达 10 小节的赋格主题，确立全曲终局的极速对位主干）
+```lilypond title="贝多芬 第9弦乐四重奏 Op.59 No.3 第四乐章" location="Allegro molto，mm.1–10" id="beethoven-op59no3-iv-mm1-10"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 中提琴独自呈示赋格主题（mm.1–10）；底本 \*MM280 为四分音符值，本谱表为 2/2，故记 2 = 140，演奏速度相同。
+
+global = {
+  \key c \major
+  \time 2/2
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Allegro molto" 2 = 140
+  \clef "treble" r 1 | % m.1
+  r 1 | % m.2
+  r 1 | % m.3
+  r 1 | % m.4
+  r 1 | % m.5
+  r 1 | % m.6
+  r 1 | % m.7
+  r 1 | % m.8
+  r 1 | % m.9
+  r 1 | % m.10
+}
+
+violinII = {
+  \clef "treble"
+  \clef "treble" r 1 | % m.1
+  r 1 | % m.2
+  r 1 | % m.3
+  r 1 | % m.4
+  r 1 | % m.5
+  r 1 | % m.6
+  r 1 | % m.7
+  r 1 | % m.8
+  r 1 | % m.9
+  r 1 | % m.10
+}
+
+viola = {
+  \clef "alto"
+  \clef "alto" g' 2 ~ g' 8 g' 8 a' 8 g' 8 | % m.1
+  f' 8 e' 8 d' 4 r 8 f' 8 g' 8 f' 8 | % m.2
+  e' 8 d' 8 c' 4 r 8 g' 8 a' 8 g' 8 | % m.3
+  f' 8 e' 8 d' 8 e' 8 f' 8 d' 8 g' 8 f' 8 | % m.4
+  e' 8 d' 8 c' 8 d' 8 e' 8 f' 8 g' 8 e' 8 | % m.5
+  a' 8 g' 8 f' 8 a' 8 b' 8 a' 8 g' 8 b' 8 | % m.6
+  c'' 8 d'' 8 e'' 8 c'' 8 g' 8 f' 8 e' 8 g' 8 | % m.7
+  a' 8 g' 8 f' 8 a' 8 b' 8 a' 8 g' 8 b' 8 | % m.8
+  c'' 8 c'' 8 d'' 8 c'' 8 a' 8 a' 8 b' 8 a' 8 | % m.9
+  fs' 8 fs' 8 g' 8 fs' 8 d' 8 d' 8 e' 8 d' 8 | % m.10
+}
+
+cello = {
+  \clef "bass"
+  \clef "bass" r 1 | % m.1
+  r 1 | % m.2
+  r 1 | % m.3
+  r 1 | % m.4
+  r 1 | % m.5
+  r 1 | % m.6
+  r 1 | % m.7
+  r 1 | % m.8
+  r 1 | % m.9
+  r 1 | % m.10
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3.2 贝多芬 Op. 67 第二乐章：中提琴与大提琴同度齐奏歌唱
 在《第五交响曲》Op. 67 第二乐章（*Andante con moto*，降 A 大调，3/8 拍）中，贝多芬开辟了管弦乐中音色混合的全新范式：
@@ -106,22 +201,369 @@ $$\text{理论琴长} \approx 35.5\text{ cm} \times 1.5 \approx 53.25\text{ cm}\
 - **声学互补机制**：大提琴在高把位提供浑厚的人声歌唱泛音，中提琴在中音区（Alto register）提供细腻沙哑的木质阻尼，两者的同度熔合产生了一种兼具厚重与伤感的天鹅绒般质感，成为交响慢乐章中最经典的音色配方；
 - **中频运动平面的切换**：紧接着在第 25–28 小节与第 42–49 小节，中提琴迅速从旋律角色解耦，转入密集的连续三连音分解和弦与三十二分音符流动琶音，成为承载木管组第二主题陈述的中频动力推进器。
 
-谱例待补：贝多芬《第五交响曲》Op. 67 第二乐章，mm. 1–8 与 mm. 25–33（中提琴在开篇与大提琴同度齐奏 dolce 歌唱第一主题，并在副题变奏中解耦转化为三连音分解和弦流动背景）
+```lilypond title="贝多芬 第五交响曲 Op.67 第二乐章" location="Andante con moto，mm.1–8（实音记谱；中提琴与大提琴同度齐奏）" id="beethoven-op67-ii-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 第一主题由中提琴与大提琴同度（all'unisono）奏出；midiInstrument 为 GM 标准名。
+% 底本 \*MM92 记为四分音符值；3/8 谱表按附点四分音符 8. = 60 给出试听速度。
+% 本谱例为实音（音乐会音高）记谱。
+
+global = {
+  \key af \major
+  \time 3/8
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Andante con moto" 8. = 60
+  r4. | % m.1
+  r4. | % m.2
+  r4. | % m.3
+  r4. | % m.4
+  r4. | % m.5
+  r4. | % m.6
+  r4. | % m.7
+  r8 r8 af'16. c''32 | % m.8
+}
+
+violinII = {
+  \clef "treble"
+  r4. | % m.1
+  r4. | % m.2
+  r4. | % m.3
+  r4. | % m.4
+  r4. | % m.5
+  r4. | % m.6
+  r4. | % m.7
+  r8 r8 ef'16. c'32 | % m.8
+}
+
+viola = {
+  \clef "alto"
+  c'8 c'16. bf32 af16. c'32 | % m.1
+  f8~ f16. a32 bf16. c'32 | % m.2
+  df'16. c'32 bf16. df'32 g16. bf32 | % m.3
+  e16. g32 c'8~ c'16. bf32 | % m.4
+  a16. f32 bf8. df'16 | % m.5
+  g16. ef32 af8 af16. c'32 | % m.6
+  ef'4. | % m.7
+  c'8 r8 <c' ef>16. <af ef>32 | % m.8
+}
+
+cello = {
+  \clef "bass"
+  c'8 c'16. bf32 af16. c'32 | % m.1
+  f8~ f16. a32 bf16. c'32 | % m.2
+  df'16. c'32 bf16. df'32 g16. bf32 | % m.3
+  e16. g32 c'8~ c'16. bf32 | % m.4
+  a16. f32 bf8. df'16 | % m.5
+  g16. ef32 af8 af16. c'32 | % m.6
+  ef'4. | % m.7
+  c'8 r8 c16. af,32 | % m.8
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+mm. 25–38 中提琴解耦、圆号与定音鼓突入 C 大调副主题的同一片段见[《自然圆号写作与泛音序列》](natural-horn-writing-and-harmonic-series.md#score-beethoven-op67-ii-mm25-38)，全库只保留一份。
 
 ### 3.3 贝多芬 Op. 92 第二乐章：从低音脉搏到高把位对位副题的跨越
 在《第七交响曲》Op. 92 第二乐章（*Allegretto*，A 小调，2/4 拍）中，中提琴展现了从低音节奏支柱到高音歌唱线条的全景式职能演进：
 - **低音达克提尔脉搏（mm. 3–20）**：在开篇长达 20 小节的呈示中，中提琴使用中音谱号下方的低音区，与大提琴、低音提琴紧密咬合，以 $p$ tenuto 奏出著名的达克提尔核心节奏（四分音符接两个八分音符），奠定全曲冷峻暗涌的葬礼步伐；
-- **跃升至高把位副旋律（mm. 21–26）**：当第二小提琴在第 21 小节接管主旋律时，中提琴突然跃出内声部，在小字一组高音区（$c^1\text{–}e^2$）唱出一道如泣如诉的长线条对位副旋律；
-- **全奏十六分音符涌动（mm. 27–46）**：随着织体层层增厚，中提琴在第 27 小节转入十六分音符分解八度跳音，并在全奏爆发时以三连音重击缝合弦乐声场。
+- **跃升至高把位副旋律（mm. 27–34）**：当第二小提琴在第 27 小节接替主旋律（其 m.1–26 全休止）时，中提琴突然跃出内声部，在小字一组高音区（$c^1$–$f^1$）唱出一道如泣如诉的长线条对位副旋律；
+- **十六分音型涌动与全奏增厚（m. 37 起）**：自第 37 小节起，中提琴转入“八分音符＋十六分音符”的装饰性音型；第一小提琴直到第 51 小节才加入（此前 m. 2–50 休止），此后中提琴改为持续的八分音符分解和弦（$a\text{–}c^1\text{–}e^1$ 等），随织体层层增厚，成为弦乐声场的中坚。
 
-谱例待补：贝多芬《第七交响曲》Op. 92 第二乐章，mm. 21–26 与 mm. 27–36（中提琴在变奏中跃升至高把位唱出舒展的对位副旋律，随后转入十六分音符分解音型推动管弦全奏高潮）
+```lilypond title="贝多芬 第七交响曲 Op.92 第二乐章" location="Allegretto，mm.27–54（实音记谱；中提琴自高把位对位副旋律转为持续八分分解和弦，第一小提琴 m.51 接入）" id="beethoven-op92-ii-mm27-54"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 第二小提琴自 m.27 以 e¹ 上的达克提尔主题接替主旋律（其 m.1–26 全休止）；第一小提琴 m.2–50 休止，m.51 才接入。
+% 底本中 mm.27–40 的中提琴线条与第一大提琴（Violoncello I）为同度齐奏，本摘录只保留中提琴声部，低音取 Violoncelli e Contrabassi 一线。
+% 底本 \*MM76（四分音符）。本谱例为实音记谱。
+
+global = {
+  \key a \minor
+  \time 2/4
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Allegretto" 4 = 76
+  r2 | % m.27
+  r2 | % m.28
+  r2 | % m.29
+  r2 | % m.30
+  r2 | % m.31
+  r2 | % m.32
+  r2 | % m.33
+  r2 | % m.34
+  r2 | % m.35
+  r2 | % m.36
+  r2 | % m.37
+  r2 | % m.38
+  r2 | % m.39
+  r2 | % m.40
+  r2 | % m.41
+  r2 | % m.42
+  r2 | % m.43
+  r2 | % m.44
+  r2 | % m.45
+  r2 | % m.46
+  r2 | % m.47
+  r2 | % m.48
+  r2 | % m.49
+  r2 | % m.50
+  e''4 e''8 e''8 | % m.51
+  e''4 e''4 | % m.52
+  e''4 e''8 e''8 | % m.53
+  e''4 e''4 | % m.54
+}
+
+violinII = {
+  \clef "treble"
+  e'4 e'8 e'8 | % m.27
+  e'4 e'4 | % m.28
+  e'4 e'8 e'8 | % m.29
+  e'4 e'4 | % m.30
+  e'4 e'8 fs'8 | % m.31
+  g'4 g'4 | % m.32
+  g'4 g'8 g'8 | % m.33
+  g'4 r4 | % m.34
+  g'4 g'8 a'8 | % m.35
+  b'4 b'4 | % m.36
+  fs'4 fs'8 gs'8 | % m.37
+  a'4 a'4 | % m.38
+  e'4 e'8 e'8 | % m.39
+  e'4 e'4 | % m.40
+  e'4 fs'8 gs'8 | % m.41
+  a'4 r4 | % m.42
+  g'4 g'8 a'8 | % m.43
+  b'4 b'4 | % m.44
+  fs'4 fs'8 gs'8 | % m.45
+  a'4 a'4 | % m.46
+  e'4 e'8 e'8 | % m.47
+  e'4 e'4 | % m.48
+  e'4 fs'8 gs'8 | % m.49
+  a'4 r4 | % m.50
+  c''2 | % m.51
+  b'2 | % m.52
+  d''4. c''16 b'16 | % m.53
+  b'8 c''8 c''4 | % m.54
+}
+
+viola = {
+  \clef "alto"
+  c'2 | % m.27
+  b2 | % m.28
+  d'4. c'16 b16 | % m.29
+  b8 c'8 c'4 | % m.30
+  c'4. c'16 d'16 | % m.31
+  ds'8 e'8 e'8 e'8 | % m.32
+  f'4. e'16 d'16 | % m.33
+  d'8 e'8 e'4 | % m.34
+  e'2 | % m.35
+  ds'2 | % m.36
+  d'8 b16 cs'16 d'8 e'16 d'16 | % m.37
+  d'8 cs'8 c'4 | % m.38
+  c'2 | % m.39
+  b4 c'4 | % m.40
+  d'4. c'16 b16 | % m.41
+  a8 a16 b16 c'8 c'16 d'16 | % m.42
+  e'2 | % m.43
+  ds'2 | % m.44
+  d'8 b16 cs'16 d'8 e'16 d'16 | % m.45
+  d'8 cs'8 c'4 | % m.46
+  c'2 | % m.47
+  b4 c'4 | % m.48
+  d'4. c'16 b16 | % m.49
+  a4 r4 | % m.50
+  r8 a8 c'8 e8 | % m.51
+  r8 gs8 b8 e8 | % m.52
+  r8 gs8 b8 e8 | % m.53
+  r8 a8 c'8 e8 | % m.54
+}
+
+cello = {
+  \clef "bass"
+  r4 a,8 a,8 | % m.27
+  gs,8 r8 gs8 r8 | % m.28
+  r4 e,8 e,8 | % m.29
+  a,8 r8 a8 r8 | % m.30
+  r4 a,8 a,8 | % m.31
+  g,8 r8 g8 r8 | % m.32
+  r4 g8 g8 | % m.33
+  c8 r8 c'8 r8 | % m.34
+  r4 c8 c8 | % m.35
+  b,8 r8 b8 r8 | % m.36
+  r4 e8 e8 | % m.37
+  a,8 r8 a8 r8 | % m.38
+  r4 a,8 a,8 | % m.39
+  gs,8 r8 a,8 r8 | % m.40
+  r4 e,8 e,8 | % m.41
+  a,8 r8 a8 r8 | % m.42
+  r4 c8 c8 | % m.43
+  b,8 r8 b8 r8 | % m.44
+  r4 e8 e8 | % m.45
+  a,8 r8 a8 r8 | % m.46
+  r4 a,8 a,8 | % m.47
+  gs,8 r8 a,8 r8 | % m.48
+  r4 e,8 e,8 | % m.49
+  a,8 r8 a8 r8 | % m.50
+  a,4 r8 a8 | % m.51
+  gs,4 r8 gs8 | % m.52
+  e,4 r8 e8 | % m.53
+  a,4 r8 a8 | % m.54
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc/Cb" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3.4 贝多芬 Op. 131 第一乐章：晚期玄思中的赋格第三答题
 在贝多芬晚期《升 c 小调第十四弦乐四重奏》Op. 131 第一乐章（*Adagio ma non troppo e molto espressivo*，升 c 小调，4/4 拍）中，中提琴成为寄托晚期哲学深思的核心载体：
-- 第一小提琴弱奏呈示著名的四音核心动机（$g\sharp^1\text{–}b\sharp^1\text{–}c\sharp^2\text{–}a^1\text{–}g\sharp^1$）；在第二小提琴于属音答题后，中提琴在第 9 小节于主音 $c\sharp^1$ 上作为第三声部以极其静穆的 $p$ espressivo 切入；
+- 第一小提琴弱奏呈示著名的四音核心动机（$g\sharp^1\text{–}b\sharp^1\text{–}c\sharp^2\text{–}a^1\text{–}g\sharp^1$）；第二小提琴随后以属音答题，中提琴则在第 8 小节末拍（第 4 拍）以 $G\sharp$ 起句（答题主题头），作为第三声部以极其静穆的 $p$ espressivo 接入，m. 9 起延续为 $b\sharp^1\text{–}c\sharp^2$ 的线条；
 - 中提琴特有的 C 弦与 G 弦暗哑质感在此被提炼为超脱世俗的灵性光泽，与大提琴在下沉低音区的进入形成深邃的音响景深，证明了中提琴在承载晚期严格复调思维中的不可替代性。
 
-谱例待补：贝多芬 Op. 131 第一乐章，mm. 9–16（中提琴在 m. 9 以静穆的 p espressivo 呈示第三声部答题）；该乐章 mm. 1–8 见[《超乐章目的论》](../structure/teleological-multimovement-integration.md#score-beethoven-op131-i-mm1-8)的同一片段，全库只保留一份。
+```lilypond title="贝多芬 第14弦乐四重奏 Op.131 第一乐章" location="Adagio ma non troppo e molto espressivo，mm.9–16" id="beethoven-op131-i-mm9-16"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% mm.1–8（含弱起）见本库既有谱例 beethoven-op131-i-mm1-8，此处不重复；中提琴作为第三声部的答题起于 m.8 第四拍（= 上一条谱例末小节），本段自其延续处起。
+
+global = {
+  \key cs \minor
+  \time 2/2
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Adagio ma non troppo e molto espressivo" 4 = 68
+  ( ds'' 4 fs'' 4 e'' 4 ) e'' 4 ~ | % m.9
+  ( e'' 4 ds'' 2 e'' 4 ~ ) | % m.10
+  e'' 2. d'' 4 ~ | % m.11
+  ( d'' 4 cs'' 4 bs' 4 b' 4 ~ ) | % m.12
+  ( b' 4 d' 4 cs' 4 as' 4 ~ ) | % m.13
+  ( as' 4 b' 2 cs'' 4 | % m.14
+  d'' 4 b' 4 cs'' 4 d'' 4 ) | % m.15
+  ( e'' 2. d'' 4 ) | % m.16
+}
+
+violinII = {
+  \clef "treble"
+  ds' 4 gs 2 ) ( gs' 4 | % m.9
+  bs' 2 cs'' 4 b' 4 | % m.10
+  as' 4 cs'' 4 b' 4 ) ( a 4 | % m.11
+  gs 4 a 4 ds' 4 f' 4 ) | % m.12
+  ( d' 4 b 4 as 4 cs' 4 ) | % m.13
+  ( d' 4 b 2 as 4 ) | % m.14
+  ( b 4 gs 4 a 4 b 4 | % m.15
+  cs' 2. ) ( b 4 | % m.16
+}
+
+viola = {
+  \clef "alto"
+  bs 2 cs' 2 ) | % m.9
+  a 2. ( gs 4 | % m.10
+  fs 4 a 4 gs 4 fs 4 | % m.11
+  e 4 fs 4 ) gs 2 ~ | % m.12
+  ( gs 4 gs' 4 as' 4 fs' 4 ~ ) | % m.13
+  fs' 4 ( g 4 fs 4 e 4 | % m.14
+  d 4 f 4 e 4 d 4 ) | % m.15
+  ( cs 4 d 4 e 4 fs 4 ) | % m.16
+}
+
+cello = {
+  \clef "bass"
+  r 1 | % m.9
+  r 1 | % m.10
+  r 1 | % m.11
+  r 2 r 4 ( cs 4 | % m.12
+  f 2 fs 2 ) | % m.13
+  d 2. ( cs 4 | % m.14
+  b, 4 d 4 cs 4 b, 4 | % m.15
+  a, 4 b, 4 ) cs 2 | % m.16
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

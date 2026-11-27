@@ -47,7 +47,54 @@ title: 乐句扩展
 - **乐节实据**：第 1–2 小节在高音区轻盈呈示 2 小节基本乐思；但在第 3 小节，右手并未推进至对比乐思，而是将第 2 小节的弱拍琶音音型以回声（Echo）形态原样复述了一次；随后第 4–6 小节才进入 3 小节的对比乐思并收束于半终止（HC）；
 - **骨架还原**：第 3 小节是纯粹的乐节插值。若在分析中剔除第 3 小节，第 1–2 小节便与第 4–5 小节无缝焊接为一个绝对严整的 4 小节标准前乐句（2+2），证明其为乐节内部的局部回声扩展；反之，第 4–6 小节虽然也是 3 小节，但包含完整的低音级进与属和声准备，无法进一步剔除。
 
-谱例待补：莫扎特《F大调回旋曲》K. 494 开篇 mm. 1–6（据 OMT 教材谱例）
+```lilypond title="莫扎特 K.494 回旋曲开篇" location="Allegro，mm.1–6" id="mozart-k494-mm1-6"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 F 大调回旋曲 K.494（后编为《F 大调奏鸣曲》K.533/494 的末乐章）开篇 mm.1-6：主题乐句与其扩展。
+% 据 DCMLab《莫扎特钢琴奏鸣曲》语料 K533-3 音符表（MuseScore/MS3 转录）自编码摘录，学术用途；
+% 并与 Open Music Theory 教材谱例 k494.mxl 逐小节核对：mm.1-4 音高集合完全一致，m.5-6 教材谱例写法略有简化。
+% 两行谱表均按底本实际音区用高音谱号（左手位于 c1-c2 一带）。
+
+global = {
+  \key f \major
+  \time 2/2
+  \tempo "Allegro" 2 = 100
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  f''2 a''2 |
+  a''8 g''8 g''8 e''8 f''4. a''8 |
+  a''8 g''8 g''8 e''8 f''4. a''8 |
+  c'''8 bf''8 bf''8 g''8 bf''8 a''8 a''8 f''8 |
+  d''4. e''8 f''4 g''4 |
+  c''2~ c''8 cs''8 d''8 e''8 |
+}
+
+lower = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  a'4 c''4 f'4 c''4 |
+  bf'4 c''4 a'4 c''4 |
+  bf'4 c''4 a'4 c''4 |
+  << { c''1 } \\ { g'4 e'4 f'4 a'4 } >> |
+  << { bf'4 bf4 d'4 f'4~ } \\ { r2. b4 } >> |
+  << { f'4 e'8 d'8 e'4 r4 } \\ { c'2~ c'4 r4 } >> |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 延续部中的模进追加与和声延留（Sequential & Prolongational Expansion）
 当乐句进入延续部（Continuation）后，动机碎裂与和声加速本应迅速导向终止式。然而，作曲家常在此处接入由 2 小节或 1 小节模型构成的模进链条（如 Monte 上行爬升或下行二度 D2 链，详见[《模进与句法》](sequence-mechanics-and-syntactic-functions.md)）：

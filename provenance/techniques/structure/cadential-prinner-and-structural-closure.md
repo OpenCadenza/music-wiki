@@ -16,5 +16,5 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，mm. 5–8 | 待补（本篇未收录内联图片谱例） | 未确认 |
+| `mozart-k545-i-mm5-8` | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，mm. 5–8 | CCARH Humdrum Kern（`sonata15-1.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0061-…mvmt. 1.abc`）；排版为本项目自编码 LilyPond 摘录；音高多重集已与 DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K545-1.notes.tsv`（MS3 转录） 逐小节回比对一致 | 据 CCARH 转写，学术用途（非 CC0） |
 | 占位（未出谱） | 莫扎特《G大调第5钢琴奏鸣曲》K. 283 第一乐章 | Allegro，mm. 1–10 | 待补（本篇未收录内联图片谱例） | 未确认 |

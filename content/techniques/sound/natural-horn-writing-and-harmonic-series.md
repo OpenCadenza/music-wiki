@@ -129,7 +129,79 @@ m. 59 拍起：八分休止后连续三个八分音符 g2，随后在 m. 60–62
 - 记谱音 d2 对应第 9 泛音（实音 f1）；
 - 记谱音 g1 对应第 6 泛音（实音 b♭）。
 
-谱例待补：贝多芬 Op. 67 第一乐章，m. 59–62（降 E 圆号号角呼号，记谱音与纯自然开放泛音对齐）
+```lilypond title="贝多芬 第五交响曲 Op.67 第一乐章" location="Allegro con brio，mm.59–62（实音记谱；降 E 调自然圆号在纯开放泛音上的号角呼号）" id="beethoven-op67-i-mm59-62"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 Corni in E♭（记谱音）已换算为实音：记 c' 实奏 e♭（下大六度）。
+% 底本 \*MM108（四分音符）。
+
+global = {
+  \key c \minor
+  \time 2/4
+}
+
+horns = {
+  \clef "treble"
+  \tempo "Allegro con brio" 4 = 108
+  r8 bf'8 bf'8 bf'8 | % m.59
+  ef'2 | % m.60
+  f'2 | % m.61
+  bf2~ | % m.62
+}
+
+violinI = {
+  \clef "treble"
+  r2 | % m.59
+  r2 | % m.60
+  r2 | % m.61
+  r2 | % m.62
+}
+
+viola = {
+  \clef "alto"
+  r2 | % m.59
+  r2 | % m.60
+  r2 | % m.61
+  r2 | % m.62
+}
+
+cello = {
+  \clef "bass"
+  r2 | % m.59
+  r2 | % m.60
+  r2 | % m.61
+  r2 | % m.62
+}
+
+\score {
+  <<
+    \new Staff = "Cor" {
+      \set Staff.midiInstrument = "french horn"
+      \global
+      \horns
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 整段英雄性的号角主题没有包含一个手塞音，全部由第 6、8、9、12 级自然开放泛音一气呵成，因而获得了撕裂全奏织体的极致金属亮泽。
 
@@ -142,7 +214,187 @@ m. 59 拍起：八分休止后连续三个八分音符 g2，随后在 m. 60–62
 
 在古典配器中，降 A 低音管（As basso）长达近 5 米，发音迟钝且音色过于灰暗。因此贝多芬放弃在主调中让圆号伴奏，而是选用了明亮的 C 调管身。在乐章呈现优雅沉静的降 A 大调主部双簧管与中提琴旋律时，圆号声部完全保持长休止。然而，一旦音乐通过等音转调突然爆发出辉煌灿烂的 C 大调副主题（如 mm. 29–38、mm. 79–86 与 mm. 147–156），两支 C 调圆号立即以 ff 全力切入，以纯开放泛音（c1-e1-g1-c2-d2-e2-g2）连续轰鸣：
 
-谱例待补：贝多芬 Op. 67 第二乐章，mm. 29–38（C 调圆号在 C 大调副主题中的纯开放泛音织体）
+```lilypond title="贝多芬 第五交响曲 Op.67 第二乐章" location="Andante con moto，mm.25–38（实音记谱；中提琴解耦、C 调圆号与定音鼓突入 C 大调副主题）" id="beethoven-op67-ii-mm25-38"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 圆号（底本 Corni in C，无移调）与定音鼓（in C, G）自 m.29 起进入；
+% 本谱例为实音记谱；底本 \*MM92 记为四分音符值，谱表按 8. = 60 给出试听速度。
+
+global = {
+  \key af \major
+  \time 3/8
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Andante con moto" 8. = 60
+  r8 c''8 df''8 | % m.25
+  ef''8 r8 ef''16. f''32 | % m.26
+  gf''4 ef''16. f''32 | % m.27
+  gf''4 ef''16. f''32 | % m.28
+  fs''4. | % m.29
+  g''16. e''32 <c'' e' g>8 <d'' f' g>8 | % m.30
+  <c'' e' g>8 r8 r8 | % m.31
+  e'16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c''16*2/3 g'16*2/3 g'16*2/3 d''16*2/3 b'16*2/3 | % m.32
+  g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 g'16*2/3 c''16*2/3 d''16*2/3 | % m.33
+  g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 f''16*2/3 d''16*2/3 | % m.34
+  g'16*2/3 g''16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 e''16*2/3 f''16*2/3 | % m.35
+  c'16*2/3 g''16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 e''16*2/3 f''16*2/3 | % m.36
+  <g'' c'' e'>8 r8 r8 | % m.37
+  r8 r8 bf'16. c''32 | % m.38
+}
+
+violinII = {
+  \clef "treble"
+  r8 af'8 bf'8 | % m.25
+  c''8 r8 r8 | % m.26
+  r8 a'4 | % m.27
+  r8 a'4 | % m.28
+  ef''4. | % m.29
+  e''16. c''32 g'8 <b' f' g>8 | % m.30
+  <c'' e' g>8 r8 r8 | % m.31
+  e'16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c''16*2/3 g'16*2/3 g'16*2/3 d''16*2/3 b'16*2/3 | % m.32
+  g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 g'16*2/3 c''16*2/3 d''16*2/3 | % m.33
+  g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 f''16*2/3 d''16*2/3 | % m.34
+  g'16*2/3 g''16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 e''16*2/3 f''16*2/3 | % m.35
+  c'16*2/3 g''16*2/3 e''16*2/3 c''16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 c''16*2/3 d''16*2/3 | % m.36
+  e''8 r8 r8 | % m.37
+  r8 r8 bf'8~ | % m.38
+}
+
+viola = {
+  \clef "alto"
+  ef16*2/3 c'16*2/3 af16*2/3 ef16*2/3 c'16*2/3 af16*2/3 ef16*2/3 df'16*2/3 bf16*2/3 | % m.25
+  ef16*2/3 ef'16*2/3 c'16*2/3 af16*2/3 c'16*2/3 ef'16*2/3 af'8 | % m.26
+  r8 a'4 | % m.27
+  r8 a'4 | % m.28
+  c''4. | % m.29
+  c''16. g'32 e'8 <f' g>8 | % m.30
+  <e' g c>8 r8 r8 | % m.31
+  e16*2/3 c'16*2/3 g16*2/3 e16*2/3 c'16*2/3 g16*2/3 g16*2/3 d'16*2/3 b16*2/3 | % m.32
+  g16*2/3 e'16*2/3 c'16*2/3 g16*2/3 e16*2/3 c16*2/3 g16*2/3 c'16*2/3 d'16*2/3 | % m.33
+  g16*2/3 e'16*2/3 c'16*2/3 g16*2/3 e'16*2/3 c'16*2/3 g16*2/3 f'16*2/3 d'16*2/3 | % m.34
+  g16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 g16*2/3 e16*2/3 c16*2/3 e'16*2/3 f'16*2/3 | % m.35
+  c16*2/3 g'16*2/3 e'16*2/3 c'16*2/3 g16*2/3 e16*2/3 c16*2/3 <e' c'>16*2/3 <f' d'>16*2/3 | % m.36
+  <g' e'>8 r8 r8 | % m.37
+  r8 r8 g'8~ | % m.38
+}
+
+cello = {
+  \clef "bass"
+  af8 af8 af8 | % m.25
+  af4 r8 | % m.26
+  r4. | % m.27
+  r4. | % m.28
+  af,4. | % m.29
+  g,8 g,8 g,8 | % m.30
+  c8 c,8 r8 | % m.31
+  c8 c8 g,8 | % m.32
+  c4 c16. c32 | % m.33
+  c8 c8 c8 | % m.34
+  c4 c16. c32 | % m.35
+  c4 c16. c32 | % m.36
+  c8 r8 r8 | % m.37
+  r4. | % m.38
+}
+
+horns = {
+  \clef "treble"
+  <<
+    \new Voice = "horns_0" {
+      \voiceOne
+      s4. | % m.25
+      s4. | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      c''4. | % m.29
+      c''8 c''8 d''8 | % m.30
+      c''8 r8 e'16. g'32 | % m.31
+      c''8 c''8 d''8 | % m.32
+      e''4 c''16. d''32 | % m.33
+      e''8 e''8 f''8 | % m.34
+      g''4 e''16. f''32 | % m.35
+      g''4 e''16. f''32 | % m.36
+      g''4.~ | % m.37
+      g''4.~ | % m.38
+    }
+    \new Voice = "horns_1" {
+      \voiceTwo
+      s4. | % m.25
+      s4. | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      c'4. | % m.29
+      c'8 e'8 g'8 | % m.30
+      e'8 r8 e'16. g'32 | % m.31
+      e'8 e'8 g'8 | % m.32
+      c''4 e'16. g'32 | % m.33
+      c''8 c''8 d''8 | % m.34
+      e''4 c''16. d''32 | % m.35
+      e''4 c''16. d''32 | % m.36
+      e''4.~ | % m.37
+      e''4.~ | % m.38
+    }
+  >>
+}
+
+timpani = {
+  \clef "bass"
+  r4. | % m.25
+  r4. | % m.26
+  r4. | % m.27
+  r4. | % m.28
+  c4. | % m.29
+  g,8 g,8 g,8 | % m.30
+  c8 r8 r8 | % m.31
+  c8 c8 g,8 | % m.32
+  c8 r8 c16. c32 | % m.33
+  c8 c8 c8 | % m.34
+  c4 c16. c32 | % m.35
+  c4 c16. c32 | % m.36
+  c8 r8 r8 | % m.37
+  r4. | % m.38
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+    \new Staff = "Cor" {
+      \set Staff.midiInstrument = "french horn"
+      \global
+      \horns
+    }
+    \new Staff = "Timp" {
+      \set Staff.midiInstrument = "timpani"
+      \global
+      \timpani
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 这种“跨调性接管预伏”手法，使圆号化身为一把专为调性跃迁准备的声学重锤，在最关键的结构标点处为乐队注入不可替代的光芒。
 
@@ -153,9 +405,114 @@ m. 59 拍起：八分休止后连续三个八分音符 g2，随后在 m. 60–62
 
 乐章开头第 1–2 小节，贝多芬正是以双簧管、单簧管、大管与两支 E 调圆号吹响弱奏（p-pp）的属和弦长音踏板。圆号圆润温和的圆锥形声波在此扮演了不可或缺的“声学胶水”（Acoustic Glue），将异质的木管双簧、单簧与弦乐背景完美熔融为整体。
 
-而在乐章转入 A 大调的歌唱性副主题（m. 36–40）时，第一圆号在持续的弦乐与单簧管背景中，奏出了一段包含下行级进的迷人连音线条（记谱音 f2-e2-d2-c2-b1-a1-g1）。在该段中，开放音（g1, c2, d2, e2）与手塞音（a1, b1, f2）交错滑过，轻柔的动态与手塞音特有的微弱阻尼感相互融合，展示了自然圆号如人声叹息般微妙细腻的抒情维度。
+而在乐章后段的 A 大调区域（*maggiore*，mm. 119–122）中，第二圆号在持续的弦乐与单簧管背景里奏出一段包含下行级进的迷人连音线条（记谱音 f2-e2-d2-c2-b1-a1-g1；第一圆号此段休止，到 m. 123 才重新进入）：第 119 小节以 f2 引入，m. 120 以三连音连续走完 f2–a1 的下行，m. 121 经 g1–a1–b1 收束，m. 122 回到 c2 作句尾支点。在该段中，开放音（g1, c2, d2, e2）与手塞音（a1, b1, f2）交错滑过，轻柔的动态与手塞音特有的微弱阻尼感相互融合，展示了自然圆号如人声叹息般微妙细腻的抒情维度。
 
-谱例待补：贝多芬 Op. 92 第二乐章，m. 36–40（E 调圆号的属音踏板与手塞歌唱旋律；mm. 1–3 与本库既有 Op. 92 第二乐章谱例重叠，补谱时改为链接）
+```lilypond title="贝多芬 第七交响曲 Op.92 第二乐章" location="Allegretto，mm.115–122（实音记谱；E 调圆号的 E 属持续踏板与下行歌唱线条，开放音与手塞音交替）" id="beethoven-op92-ii-mm115-122"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本声部名「Corni 1, 2// in E」；E 调圆号记谱 c′ 实奏 e（下方小六度），本谱例已换算为实音：mm.116–118 的记谱 C5/C4 即实音 E4/E3，与弦乐的 E 属持续音同音。
+% mm.119–122 的下行线条在底本中记于第二声部（voice 2），同期第一声部休止。
+% 底本 \*MM76（四分音符）。本谱例为实音记谱。
+
+global = {
+  \key a \minor
+  \time 2/4
+}
+
+horns = {
+  \clef "treble"
+  \tempo "Allegretto" 4 = 76
+  <<
+    \new Voice = "horns_0" {
+      \voiceOne
+      b'2 | % m.115
+      e'2~ | % m.116
+      e'2~ | % m.117
+      e'2 | % m.118
+      s2 | % m.119
+      s2 | % m.120
+      s2 | % m.121
+      s2 | % m.122
+    }
+    \new Voice = "horns_1" {
+      \voiceTwo
+      b2 | % m.115
+      e2~ | % m.116
+      e2~ | % m.117
+      e2 | % m.118
+      a'4. a'8 | % m.119
+      a'8*2/3 gs'8*2/3 fs'8*2/3 e'8*2/3 ds'8*2/3 cs'8*2/3 | % m.120
+      b4 cs'8 ds'8 | % m.121
+      e'4 e'8*2/3 ds'8*2/3 e'8*2/3 | % m.122
+    }
+  >>
+}
+
+violinII = {
+  \clef "treble"
+  gs8 b8 b8 a8 | % m.115
+  gs4 <gs' b>4 | % m.116
+  <a' b>2 | % m.117
+  <gs' b>2 | % m.118
+  <a' b>2 | % m.119
+  <gs' b>2 | % m.120
+  <a' b>2 | % m.121
+  <gs' b>4 gs4 | % m.122
+}
+
+viola = {
+  \clef "alto"
+  e8 gs8 a8 fs8 | % m.115
+  e4 e'4 | % m.116
+  fs'2 | % m.117
+  e'2 | % m.118
+  fs'2 | % m.119
+  e'2 | % m.120
+  fs'2 | % m.121
+  e'4 e4~ | % m.122
+}
+
+cello = {
+  \clef "bass"
+  b,4 b8 b8 | % m.115
+  e4 e'8 e'8 | % m.116
+  e4 e'8 e'8 | % m.117
+  e4 e'8 e'8 | % m.118
+  e4 e'8 e'8 | % m.119
+  e4 e'8 e'8 | % m.120
+  e4 e'8 e'8 | % m.121
+  e4 e'8 e'8 | % m.122
+}
+
+\score {
+  <<
+    \new Staff = "Cor(E)" {
+      \set Staff.midiInstrument = "french horn"
+      \global
+      \horns
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc/Cb" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

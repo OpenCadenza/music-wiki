@@ -18,6 +18,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《A大调第11钢琴奏鸣曲》K. 331 第一乐章 | Andante grazioso，mm. 1–8 | 待补（本篇未收录内联图片谱例） | 未确认 |
-| 占位（未出谱） | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，mm. 22–26 | 待补（本篇未收录内联图片谱例） | 未确认 |
+| `mozart-k331-i-theme-mm1-8`（关联引用） | 莫扎特《A大调第11钢琴奏鸣曲》K. 331 第一乐章 | Andante grazioso，mm. 1–8 | CCARH Humdrum Kern（`sonata11-1a.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0043-…mvmt. 1a.abc`）；排版为本项目自编码 LilyPond 摘录；谱例见 `content/techniques/structure/variation-types-and-structural-transformations.md` | 据 CCARH 转写，学术用途（非 CC0） |
+| `mozart-k545-i-mm22-26` | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，mm. 22–26（4/4） | CCARH Humdrum Kern（`sonata15-1.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0061-…mvmt. 1.abc`）；排版为本项目自编码 LilyPond 摘录；回比对 DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K545-1.notes.tsv`（MS3 转录）：m. 22–23 底本把回音写成显式还原 G（`=g`），DCML 作 G♯，此处按底本原样保留；其余小节一致 | 据 CCARH 转写，学术用途（非 CC0） |
 | 占位（未出谱） | 莫扎特《G大调第5钢琴奏鸣曲》K. 283 第一乐章 | Allegro，mm. 5–10 | 待补（本篇未收录内联图片谱例） | 未确认 |

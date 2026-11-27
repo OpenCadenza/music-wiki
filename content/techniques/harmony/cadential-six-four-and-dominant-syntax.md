@@ -120,7 +120,7 @@ title: 终止四六和弦
 第 4–5 拍 (着陆)  A, (主音强劲跳进)  E / A (主三和弦对位充填)   A (主音完满落定)        I (PAC 终极收束)
 ```
 
-谱例待补：莫扎特《A大调第11钢琴奏鸣曲》K. 331 第一乐章 mm. 1–8
+本段主题与终止四六的骨架见[《变奏曲式的类型与结构转化》](../structure/variation-types-and-structural-transformations.md#score-mozart-k331-i-theme-mm1-8)（莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 mm. 1–8，第 4、8 小节各有一次终止四六的插入与解决；同一片段全库只保留一份）。
 
 ### 2. 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章：主部省略与副部强制
 - **主部第 4 小节（简单半终止省略四六）**：
@@ -130,7 +130,52 @@ title: 终止四六和弦
   - 第 25 小节和声转化为整整一小节的属七长颤音（高音 a2 上的属音颤音）；
   - 最终在第 26 小节强拍爆发出无可动摇的 G 大调 PAC（呈示部根本终止 EEC）。若无第 24 小节终止四六的强力拦截与减速阻尼，前方的长程十六分音符狂飙将无法获得稳固的结构着陆。
 
-谱例待补：莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 mm. 22–26（副部 EEC）
+```lilypond title="莫扎特 第15钢琴奏鸣曲 K.545 第一乐章" location="Allegro，mm.22–26" id="mozart-k545-i-mm22-26"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.545 第一乐章呈示部收束 mm.22-26（半终止前的终止准备）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mm.22-26 回比对：m.22 底本把回音 B、升 D 写成有明确时值的十六分音符（DCML 记作倚音），
+% m.23 底本在回音里写显式还原 G（`=g`）而 DCML 记 G♯——两处均按底本原样保留；其余小节音高一致。
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  a'2 b'8. c''16 ds''16 e''8. |
+  gs''8. a''16~ a''8 b''32 a''32 g''32 a''32 c'''8 a''8 c'''8 a''8 |
+  b''8 g''8 d'''2 c'''16 b''16 a''16 g''16 |
+  a''1\trill |
+  g''4 g''16 d''16 g''16 b''16 d'''16 b''16 g''16 b''16 c'''16 a''16 fs''16 a''16 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 |
+  <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 <c' e'>8 |
+  d'16 b'16 g'16 b'16 d'16 b'16 g'16 b'16 d'16 b'16 g'16 b'16 d'16 b'16 g'16 b'16 |
+  d'16 c''16 fs'16 c''16 d'16 c''16 fs'16 c''16 d'16 c''16 fs'16 c''16 d'16 c''16 fs'16 c''16 |
+  <g' b'>4 r4 r4 <d' a' c''>4 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3. 莫扎特《G大调第5钢琴奏鸣曲》K. 283 第一乐章 mm. 5–10
 在加兰特风格与古典曲式的交汇处，终止四六还承担着将线性图式转化为结构终止的关键使命（详见[《终止图式》](../structure/cadential-prinner-and-structural-closure.md)）：

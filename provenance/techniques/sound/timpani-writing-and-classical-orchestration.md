@@ -17,7 +17,8 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | Breitkopf & Härtel | 公有领域 |
-| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–38 | Mutopia / Breitkopf & Härtel | 公有领域 |
-| 占位（未出谱） | 贝多芬第五交响曲 Op. 67 第三至第四乐章过渡 | Allegro - Allegro，mm. 324–373 | Mutopia / Dover | 公有领域 |
-| 占位（未出谱） | 贝多芬第九交响曲 Op. 125 第二乐章 | Molto vivace，mm. 1–9 与 mm. 195–205 | Breitkopf & Härtel / Dover | 公有领域 |
+| 关联引用（本库同一片段） | 贝多芬第一交响曲 Op. 21 第二乐章 | Andante cantabile con moto，mm. 53–64 | 见《管乐交响化》`beethoven-op21-ii-mm53-64`（CCARH MuseData） | 学术用途（CCARH，非 CC0） |
+| 关联引用（本库同一片段） | 贝多芬第五交响曲 Op. 67 第二乐章 | Andante con moto，mm. 29–38 | 见《自然圆号写作》`beethoven-op67-ii-mm25-38`（CCARH MuseData） | 学术用途（CCARH，非 CC0） |
+| `beethoven-op67-iii-iv-mm324-373` | 贝多芬第五交响曲 Op. 67 第三至第四乐章过渡 | Allegro，mm. 324–373 | 据 CCARH MuseData 转写（`local/workbench/scores/score-beethoven-r6/raw/sym5-mvt3.md2`），实音记谱；底本定音鼓 m.325–374 连击单音 C | 学术用途（CCARH 2002–2005，非 CC0） |
+| `beethoven-op125-ii-mm1-9` | 贝多芬第九交响曲 Op. 125 第二乐章 | Molto vivace，mm. 1–9 | 据 CCARH MuseData 转写（`local/workbench/scores/score-beethoven-r6/raw/sym9-mvt2.md2`），实音记谱；定音鼓 in F3, F2，八度跳跃在 m.5 | 学术用途（CCARH 2002–2005，非 CC0） |
+| `beethoven-op125-ii-mm195-205` | 贝多芬第九交响曲 Op. 125 第二乐章 | Molto vivace，mm. 195–205 | 据 CCARH MuseData 转写（`local/workbench/scores/score-beethoven-r6/raw/sym9-mvt2.md2`），实音记谱；定音鼓 mm.195/198/201/204 三小节周期 | 学术用途（CCARH 2002–2005，非 CC0） |

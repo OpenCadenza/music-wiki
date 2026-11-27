@@ -17,6 +17,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《F大调回旋曲》K. 494 | Allegretto，mm. 1–6 | 待补（据 OMT 教材谱例，本篇未收录内联图片谱例） | 未确认 |
+| `mozart-k494-mm1-6` | 莫扎特《F大调回旋曲》K. 494（后编为奏鸣曲 K. 533/494 末乐章） | Allegro，mm. 1–6（2/2，F 大调） | DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K533-3.notes.tsv`（MS3 转录）；并与 `local/origin_resources/sources/open-music-theory/raw/openmusictheory.github.io-master.zip` 中教材谱例 `Graphics/form/XML/k494.mxl` 逐小节核对（mm. 1–4 音高集合完全一致，m. 5–6 教材写法略有简化） | 底本为 DCMLab 语料（CC BY-NC-SA 4.0）转录数据，仅用于核对与自编码摘录；作品本身公有领域，谱例再发布许可待人工复核 |
 | 占位（未出谱） | 贝多芬《C大调第3钢琴奏鸣曲》Op. 2 No. 3 第一乐章 | Allegro con brio，mm. 1–13 | 待补（本篇未收录内联图片谱例） | 未确认 |
 | 占位（未出谱） | 莫扎特《C大调第7钢琴奏鸣曲》K. 309 第三乐章 | Allegretto grazioso，mm. 9–19 | 待补（本篇未收录内联图片谱例） | 未确认 |

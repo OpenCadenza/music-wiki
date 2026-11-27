@@ -80,7 +80,288 @@ flowchart TD
 - **对位答题与管乐进入（mm. 6–12）**：在第 6 小节第三拍，中提琴与大提琴在属方向（C 大调）唱出答题；在第 10 小节第三拍，大管双声部（`zu 2`）以 $pp$ 与低音提琴同步切入低音（$G_2\to C_3$），随后在 mm. 11–12 持续敲击八分音符低音脉动（$C_3\text{–}E_3\text{–}G_3$）；圆号在第 11 小节以长音 $G$ 渗入；而在第 12 小节第三拍，长笛与双簧管以高音 $c^2$ 与第一小提琴同步加入，管乐家族在赋格呈示阶段即逐层渗入弦乐对位机体。
 - **全家族铺展与管弦混合（mm. 13–25）**：第 13 小节第一小提琴完整接管主题旋律，木管与弦乐各声部层层叠加，自发完成了从弦乐室内乐向完整双管管弦交响织体的平滑过渡。
 
-谱例待补：贝多芬第一交响曲 Op. 21 第二乐章，mm. 1–16（弦乐与大管参与的赋格模仿呈示）
+```lilypond title="贝多芬 第一交响曲 Op.21 第二乐章" location="Andante cantabile con moto，mm.1–16（实音记谱；弦乐与大管参与的赋格模仿呈示，C 调单簧管 m.13 切入）" id="beethoven-op21-ii-mm1-16"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 Clarinetti in C：记谱音即实音，无需移调——与 B♭ 调单簧管的移调记谱形成对照。
+% 底本 \*MM120 记为四分音符值；3/8 谱表按附点四分音符 8. = 40 给出试听速度。
+% 本谱例为实音记谱。
+
+global = {
+  \key f \major
+  \time 3/8
+}
+
+clarinet = {
+  \clef "treble"
+  \tempo "Andante cantabile con moto" 8. = 40
+  <<
+    \new Voice = "clarinet_0" {
+      \voiceOne
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      s4. | % m.10
+      s4. | % m.11
+      s4. | % m.12
+      r8 f'8 a'8 | % m.13
+      r8 a'8 c''8 | % m.14
+      bf'8 bf'8 bf'8 | % m.15
+      bf'4 g'8 | % m.16
+    }
+    \new Voice = "clarinet_1" {
+      \voiceTwo
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      s4. | % m.10
+      s4. | % m.11
+      s4. | % m.12
+      a8 c'8 s8 | % m.13
+      f'8 a'8 s8 | % m.14
+      g'8 g'8 g'8 | % m.15
+      g'4 e'8 | % m.16
+    }
+  >>
+}
+
+fagotto = {
+  \clef "bass"
+  <<
+    \new Voice = "fagotto_0" {
+      \voiceOne
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      s4. | % m.10
+      s4. | % m.11
+      s4. | % m.12
+      a8 c'8 s8 | % m.13
+      r8 c'8 f'8 | % m.14
+      e'8 e'8 e'8 | % m.15
+      e'4 c'8~ | % m.16
+    }
+    \new Voice = "fagotto_1" {
+      \voiceTwo
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      s4. | % m.10
+      s4. | % m.11
+      s4. | % m.12
+      f8 a8 s8 | % m.13
+      a8 a8 s8 | % m.14
+      bf8 bf8 bf8 | % m.15
+      bf4 bf8 | % m.16
+    }
+    \new Voice = "fagotto_2" {
+      \voiceThree
+      r4. | % m.1
+      r4. | % m.2
+      r4. | % m.3
+      r4. | % m.4
+      r4. | % m.5
+      r4. | % m.6
+      r4. | % m.7
+      r4. | % m.8
+      r4. | % m.9
+      r8 r8 g,8 | % m.10
+      c8 c8 c8 | % m.11
+      e8 e8 g8 | % m.12
+      f8 s4 | % m.13
+      s4. | % m.14
+      s4. | % m.15
+      s4. | % m.16
+    }
+  >>
+}
+
+violinI = {
+  \clef "treble"
+  r4. | % m.1
+  r4. | % m.2
+  r4. | % m.3
+  r4. | % m.4
+  r4. | % m.5
+  r4. | % m.6
+  r4. | % m.7
+  r4. | % m.8
+  r4. | % m.9
+  r4. | % m.10
+  r4. | % m.11
+  r8 r8 c''8 | % m.12
+  f''8 f''8 f''8 | % m.13
+  a''8 a''8 a''8 | % m.14
+  bf''8 bf''16. a''32 g''16. f''32 | % m.15
+  e''8 e''8 e''8 | % m.16
+}
+
+violinII = {
+  \clef "treble"
+  f'8 f'8 f'8 | % m.1
+  a'8 a'8 a'8 | % m.2
+  bf'8 bf'16. a'32 g'16. f'32 | % m.3
+  e'8 e'8 e'8 | % m.4
+  f'8 g'8 a'8 | % m.5
+  bf'8. c''16 a'8 | % m.6
+  g'8 r8 g'8~ | % m.7
+  g'8 c''8 c''8~ | % m.8
+  c''8 b'16. c''32 d''16. e''32 | % m.9
+  f''8 r8 f'8 | % m.10
+  e'8 e'8 e'8 | % m.11
+  c''8 c''8 e'8 | % m.12
+  f'8 f'8 a'8 | % m.13
+  r8 a'8 c''8 | % m.14
+  bf'8 bf'16. a'32 g'16. f'32 | % m.15
+  e'8 g'8 c''8 | % m.16
+}
+
+viola = {
+  \clef "alto"
+  r4. | % m.1
+  r4. | % m.2
+  r4. | % m.3
+  r4. | % m.4
+  r4. | % m.5
+  r8 r8 f8 | % m.6
+  c'8 c'8 c'8 | % m.7
+  e'8 e'8 e'8 | % m.8
+  f'8 f'16. e'32 d'16. c'32 | % m.9
+  b8 b8 b8 | % m.10
+  c'8 c'16. b32 c'16. d'32 | % m.11
+  bf8 bf16. a32 bf16. c'32 | % m.12
+  a8 a8 c'8 | % m.13
+  r8 f'8 a'8 | % m.14
+  c'8 c'8 c'8 | % m.15
+  g'8 e'8 g'8 | % m.16
+}
+
+cello = {
+  \clef "bass"
+  <<
+    \new Voice = "cello_0" {
+      \voiceOne
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      r8 r8 f8 | % m.6
+      c'8 c'8 c'8 | % m.7
+      e'8 e'8 e'8 | % m.8
+      f'8 f'16. e'32 d'16. c'32 | % m.9
+      b8 b8 b8 | % m.10
+      c'8 c'16. b32 c'16. d'32 | % m.11
+      bf8 bf16. a32 bf16. c'32 | % m.12
+      a8 f,8 r8 | % m.13
+      s4. | % m.14
+      s4. | % m.15
+      s4. | % m.16
+    }
+    \new Voice = "cello_1" {
+      \voiceTwo
+      s4. | % m.1
+      s4. | % m.2
+      s4. | % m.3
+      s4. | % m.4
+      s4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      r8 r8 g,8 | % m.10
+      c8 c8 c8 | % m.11
+      e8 e8 g8 | % m.12
+      f8 f,8 s8 | % m.13
+      s4. | % m.14
+      s4. | % m.15
+      s4. | % m.16
+    }
+    \new Voice = "cello_2" {
+      \voiceThree
+      r4. | % m.1
+      r4. | % m.2
+      r4. | % m.3
+      r4. | % m.4
+      r4. | % m.5
+      s4. | % m.6
+      s4. | % m.7
+      s4. | % m.8
+      s4. | % m.9
+      s4. | % m.10
+      s4. | % m.11
+      s4. | % m.12
+      s4. | % m.13
+      f8 f,8 r8 | % m.14
+      c8 e8 g8 | % m.15
+      c'4 bf8 | % m.16
+    }
+  >>
+}
+
+\score {
+  <<
+    \new Staff = "Cl(C)" {
+      \set Staff.midiInstrument = "clarinet"
+      \global
+      \clarinet
+    }
+    \new Staff = "Fg" {
+      \set Staff.midiInstrument = "bassoon"
+      \global
+      \fagotto
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2.2 木管组脱离弦乐的完整家族接力（mm. 26–52）
 在从主部通往属调（C 大调）副部的过渡与展开段落（mm. 26–52）中，贝多芬迈出了更为激进的一步：
@@ -88,7 +369,378 @@ flowchart TD
 - 贝多芬在此反其道而行之：在第 26–34 小节弦乐完成过渡后，于第 34–42 小节，**弦乐退居为细碎流动的十六分音符织体；长笛、双簧管、单簧管与大管组合构成纯粹的四声部木管组**，独立完整地唱出连贯悠扬的抒情旋律与对答。
 - 木管各乐器之间并非单向发音，而是通过长笛与双簧管的八度交错、单簧管与大管的中低音支撑，构建起声学自足的“乐队中的乐队”（Orchestra within the orchestra）。
 
-谱例待补：贝多芬第一交响曲 Op. 21 第二乐章，mm. 26–52（木管组脱离弦乐的独立旋律与和声接力，重点 mm. 34–42）
+```lilypond title="贝多芬 第一交响曲 Op.21 第二乐章" location="Andante cantabile con moto，mm.26–52（实音记谱；木管组脱离弦乐的独立旋律与和声接力，重点 mm.34–42）" id="beethoven-op21-ii-mm26-52"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 \*MM120 记为四分音符值；3/8 谱表按 8. = 40 给出试听速度。
+% 本谱例为实音记谱。
+
+global = {
+  \key f \major
+  \time 3/8
+}
+
+flauto = {
+  \clef "treble"
+  \tempo "Andante cantabile con moto" 8. = 40
+  g''8 r8 r8 | % m.26
+  r4. | % m.27
+  r4. | % m.28
+  r4. | % m.29
+  r4. | % m.30
+  r4. | % m.31
+  r4. | % m.32
+  r4. | % m.33
+  r8 r8 g''8 | % m.34
+  e'''8 r8 e'''8 | % m.35
+  f'''8 r8 r8 | % m.36
+  d'''8 r8 d'''8 | % m.37
+  e'''8 g'''16 fs'''16 g'''16 e'''16 | % m.38
+  c'''8 c'''8 cs'''8 | % m.39
+  d'''8 r8 r8 | % m.40
+  c'''4 d'''16. b''32 | % m.41
+  c'''8 r8 r8 | % m.42
+  r4. | % m.43
+  r4. | % m.44
+  r4. | % m.45
+  r4. | % m.46
+  r4. | % m.47
+  r16. e'''32 e'''4~ | % m.48
+  e'''8 e'''4 | % m.49
+  f'''8 fs'''4 | % m.50
+  g'''8 r8 gs''8 | % m.51
+  a''16*2/3 f'''16*2/3 d'''16*2/3 c'''8 b''8 | % m.52
+}
+
+oboe = {
+  \clef "treble"
+  <<
+    \new Voice = "oboe_0" {
+      \voiceOne
+      g''8 r8 r8 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      r8 r8 g'8 | % m.34
+      e''8 r8 e''8 | % m.35
+      f''8 a''16 gs''16 a''16 f''16 | % m.36
+      d''8 r8 d''8 | % m.37
+      e''8 r8 r8 | % m.38
+      s4. | % m.39
+      s4. | % m.40
+      s4. | % m.41
+      s4. | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      c''16. g''32 g''4~ | % m.46
+      g''16. e''32 e''4~ | % m.47
+      e''16. e''32 e''4~ | % m.48
+      e''8 e''4 | % m.49
+      f''8 fs''4 | % m.50
+      g''8 gs''4 | % m.51
+      a''8 c''8 b'8 | % m.52
+    }
+    \new Voice = "oboe_1" {
+      \voiceTwo
+      e''8 s4 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      s4. | % m.34
+      cs''8 s4 | % m.35
+      d''8 s4 | % m.36
+      b'8 b'8 s8 | % m.37
+      c''8 s4 | % m.38
+      s4. | % m.39
+      s4. | % m.40
+      s4. | % m.41
+      s4. | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      c'16. g'32 g'4~ | % m.46
+      g'16. e'32 e'4~ | % m.47
+      e'16. e'32 e'4~ | % m.48
+      e'8 e'4 | % m.49
+      f'8 fs'4 | % m.50
+      g'8 gs'4 | % m.51
+      a'8 g'8 g'8 | % m.52
+    }
+  >>
+}
+
+clarinet = {
+  \clef "treble"
+  <<
+    \new Voice = "clarinet_0" {
+      \voiceOne
+      g'8 r8 r8 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      s4. | % m.34
+      s4. | % m.35
+      s4. | % m.36
+      s4. | % m.37
+      r8 g''16 fs''16 g''16 e''16 | % m.38
+      c''8 c''8 cs''8 | % m.39
+      d''8 r8 r8 | % m.40
+      c''4 b'8 | % m.41
+      c''8 r8 r8 | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      s4. | % m.46
+      s4. | % m.47
+      r16. e''32 e''4~ | % m.48
+      e''8 bf'4 | % m.49
+      a'8 c''4 | % m.50
+      b'8 d''4~ | % m.51
+      d''8 g'8 g'8 | % m.52
+    }
+    \new Voice = "clarinet_1" {
+      \voiceTwo
+      e'8 s4 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      s4. | % m.34
+      s4. | % m.35
+      s4. | % m.36
+      s4. | % m.37
+      s4. | % m.38
+      g'8 g'8 bf'8 | % m.39
+      a'8 s4 | % m.40
+      e'4 f'8 | % m.41
+      e'8 s4 | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      s4. | % m.46
+      s4. | % m.47
+      e'32 e'4 s16. | % m.48
+      e'8 c'4~ | % m.49
+      c'8 a'4 | % m.50
+      g'8 b'4 | % m.51
+      a'8 e'8 f'8 | % m.52
+    }
+  >>
+}
+
+fagotto = {
+  \clef "bass"
+  <<
+    \new Voice = "fagotto_0" {
+      \voiceOne
+      c8 r8 r8 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      g8 g'8 r8 | % m.34
+      r8 r8 g'8 | % m.35
+      f'8 r8 r8 | % m.36
+      r8 r8 f'8 | % m.37
+      e'8 g'16 fs'16 g'16 e'16 | % m.38
+      c'8 c'8 cs'8 | % m.39
+      d'8 r8 r8 | % m.40
+      r8 c'8 d'8 | % m.41
+      c'8 r8 r8 | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      c'16. g'32 g'4~ | % m.46
+      g'16. e'32 e'4~ | % m.47
+      e'16. e'32 e'4~ | % m.48
+      e'8 c'4~ | % m.49
+      c'8 d'4~ | % m.50
+      d'8 d'4~ | % m.51
+      d'8 c'8 d'8 | % m.52
+    }
+    \new Voice = "fagotto_1" {
+      \voiceTwo
+      c8 s4 | % m.26
+      s4. | % m.27
+      s4. | % m.28
+      s4. | % m.29
+      s4. | % m.30
+      s4. | % m.31
+      s4. | % m.32
+      s4. | % m.33
+      g8 r8 r8 | % m.34
+      e'8 s4 | % m.35
+      d'8 s4 | % m.36
+      d'8 s4 | % m.37
+      c'8 s4 | % m.38
+      g8 g8 bf8 | % m.39
+      a8 s4 | % m.40
+      g8 g8 s8 | % m.41
+      c8 s4 | % m.42
+      s4. | % m.43
+      s4. | % m.44
+      s4. | % m.45
+      c16. g32 g4~ | % m.46
+      g16. e32 e4~ | % m.47
+      e16. e32 e4~ | % m.48
+      e8 bf4 | % m.49
+      a8 c'4 | % m.50
+      b8 b4 | % m.51
+      a8 g8 g8 | % m.52
+    }
+    \new Voice = "fagotto_2" {
+      \voiceThree
+      s4. | % m.26
+      r4. | % m.27
+      r4. | % m.28
+      r4. | % m.29
+      r4. | % m.30
+      e8 e'8 e'8 | % m.31
+      e'8 d'8 c'8 | % m.32
+      b8 g8 c'8 | % m.33
+      s4. | % m.34
+      s4. | % m.35
+      s4. | % m.36
+      s4. | % m.37
+      s4. | % m.38
+      s4. | % m.39
+      s4. | % m.40
+      s4. | % m.41
+      s4. | % m.42
+      r4. | % m.43
+      r4. | % m.44
+      r4. | % m.45
+      s4. | % m.46
+      s4. | % m.47
+      s4. | % m.48
+      s4. | % m.49
+      s4. | % m.50
+      s4. | % m.51
+      s4. | % m.52
+    }
+  >>
+}
+
+violinI = {
+  \clef "treble"
+  g'8 r8 g'8 | % m.26
+  e''8 r8 e''8 | % m.27
+  f''8 r8 a''16. f''32 | % m.28
+  d''8 r8 d''8 | % m.29
+  e''8 r8 g''16. e''32 | % m.30
+  c''8 c''8 c''8 | % m.31
+  c''8 b'8 c''8 | % m.32
+  d''8 f''8~ f''32 e''32 d''32 e''32 | % m.33
+  d''8 r8 r8 | % m.34
+  g''16 e''16 cs''16 a'16 g'16 e'16 | % m.35
+  f'16 d'16 a'16 gs'16 a'16 f'16 | % m.36
+  f''16 d''16 b'16 g'16 f'16 d'16 | % m.37
+  e'16 c'16 g'16 fs'16 g'16 e'16 | % m.38
+  c'8 c''8 cs''8 | % m.39
+  d''16 e''16 f''16 g''16 gs''16 a''16 | % m.40
+  c''4 d''16. b'32 | % m.41
+  c''16. g''32 g''4~ | % m.42
+  g''16. e''32 e''4~ | % m.43
+  e''16. c''32 c''8. cs''16 | % m.44
+  d''16*2/3 f''16*2/3 a''16*2/3 c''8 b'8 | % m.45
+  c''8 r16. d''32 e''16. f''32 | % m.46
+  e''8 r16. b'32 c''16. d''32 | % m.47
+  c''8 r16. gs''32 a''16. b''32 | % m.48
+  a''8 e''4 | % m.49
+  f''8 fs''4 | % m.50
+  g''8 gs''4 | % m.51
+  a''16*2/3 f''16*2/3 d''16*2/3 c''8 b'8 | % m.52
+}
+
+viola = {
+  \clef "alto"
+  c8 r8 r8 | % m.26
+  r8 r8 g'8 | % m.27
+  f'8 r8 r8 | % m.28
+  r8 r8 f'8 | % m.29
+  e'8 r8 r8 | % m.30
+  g8 g'8 g'8 | % m.31
+  g'8 f'8 e'8 | % m.32
+  d'8 b8 c'8 | % m.33
+  g'8 r8 r8 | % m.34
+  r4. | % m.35
+  r8 f'8 d'8 | % m.36
+  g'8 g8 r8 | % m.37
+  r8 e'8 c'8 | % m.38
+  g8 e'8 e'8 | % m.39
+  f'8 r8 r8 | % m.40
+  r8 g'8 g8 | % m.41
+  c'8 r16. b'32 c''16. d''32 | % m.42
+  c''8 r16. gs'32 a'16. b'32 | % m.43
+  a'8 r16. e'32 f'16. g'32 | % m.44
+  f'16. d'32 g'8 g8 | % m.45
+  c'8 r16. g'32 g'16. g'32 | % m.46
+  g'8 r16. e'32 e'16. e'32 | % m.47
+  e'8 r16. e'32 e'16. e'32 | % m.48
+  e'8 c'4~ | % m.49
+  c'8 a'4 | % m.50
+  d'8 b'4 | % m.51
+  a'16*2/3 f'16*2/3 a'16*2/3 g'8 d'8 | % m.52
+}
+
+\score {
+  <<
+    \new Staff = "Fl" {
+      \set Staff.midiInstrument = "flute"
+      \global
+      \flauto
+    }
+    \new Staff = "Ob" {
+      \set Staff.midiInstrument = "oboe"
+      \global
+      \oboe
+    }
+    \new Staff = "Cl(C)" {
+      \set Staff.midiInstrument = "clarinet"
+      \global
+      \clarinet
+    }
+    \new Staff = "Fg" {
+      \set Staff.midiInstrument = "bassoon"
+      \global
+      \fagotto
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2.3 军乐附点动机与定音鼓交响整合（mm. 53–64）
 在副部结束句（Closing Theme，m. 53 起），音乐展现了鲜明的法国大革命仪式军乐色彩：
@@ -96,7 +748,289 @@ flowchart TD
 - 与定音鼓形成直接交响对话的，正是以圆号和木管为主的吹奏乐核心（Harmonie）。双簧管与大管以断奏音符切分介入，赋予原本安详的行板以军乐仪仗般的戏剧动量。
 - 这一用法表明，贝多芬将曾经游离于正式交响乐之外的民间/军乐 Harmoniemusik 语汇，内化为驱动交响曲式行进的核心戏剧动机。
 
-谱例待补：贝多芬第一交响曲 Op. 21 第二乐章，mm. 53–64（木管与定音鼓附点军乐节奏的交响对答）
+```lilypond title="贝多芬 第一交响曲 Op.21 第二乐章" location="Andante cantabile con moto，mm.53–64（实音记谱；木管与定音鼓附点军乐节奏的交响对答）" id="beethoven-op21-ii-mm53-64"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 定音鼓（底本 in C, G）自 m.53 起进入，与小号、木管交替；底本 Corni in F 已换算为实音（下纯五度）。
+% 底本 \*MM120 记为四分音符值；谱表按 8. = 40 给出试听速度。本谱例为实音记谱。
+
+global = {
+  \key f \major
+  \time 3/8
+}
+
+flauto = {
+  \clef "treble"
+  \tempo "Andante cantabile con moto" 8. = 40
+  c'''8 r8 r8 | % m.53
+  r4. | % m.54
+  c'''16*2/3 e'''16*2/3 d'''16*2/3 c'''16*2/3 b''16*2/3 a''16*2/3 g''16*2/3 fs''16*2/3 a''16*2/3 | % m.55
+  g''16*2/3 fs''16*2/3 a''16*2/3 g''16*2/3 a''16*2/3 g''16*2/3 f''16*2/3 e''16*2/3 d''16*2/3 | % m.56
+  c''16*2/3 e''16*2/3 f''16*2/3 g''16*2/3 a''16*2/3 b''16*2/3 c'''16*2/3 d'''16*2/3 e'''16*2/3 | % m.57
+  f'''16*2/3 f'''16*2/3 f'''16*2/3 f'''16*2/3 e'''16*2/3 d'''16*2/3 c'''16*2/3 b''16*2/3 d'''16*2/3 | % m.58
+  c'''16*2/3 c'''16*2/3 c'''16*2/3 c'''16*2/3 b''16*2/3 a''16*2/3 g''16*2/3 fs''16*2/3 a''16*2/3 | % m.59
+  g''16*2/3 fs''16*2/3 a''16*2/3 g''16*2/3 a''16*2/3 g''16*2/3 f''16*2/3 e''16*2/3 d''16*2/3 | % m.60
+  c''8 r8 g''8 | % m.61
+  c'''8 r8 g''8 | % m.62
+  c'''8 c''8 c''8 | % m.63
+  c''8 r8 r8 | % m.64
+}
+
+oboe = {
+  \clef "treble"
+  <<
+    \new Voice = "oboe_0" {
+      \voiceOne
+      c''8 r8 r8 | % m.53
+      r8 f''8 r8 | % m.54
+      e''8 r8 e''8 | % m.55
+      r8 b''8 r8 | % m.56
+      c'''8 r8 e''8 | % m.57
+      r8 f''8 r8 | % m.58
+      e''8 r8 e''8 | % m.59
+      r8 b''8 b''8 | % m.60
+      c'''8 r8 r8 | % m.61
+      r8 r8 g'8 | % m.62
+      c''8 g'8 g'8 | % m.63
+      g'8 r8 s8 | % m.64
+    }
+    \new Voice = "oboe_1" {
+      \voiceTwo
+      g'8 s4 | % m.53
+      d''8 s4 | % m.54
+      c''8 c''8 s8 | % m.55
+      f''8 s4 | % m.56
+      e''8 c''8 s8 | % m.57
+      b'8 s4 | % m.58
+      c''8 c''8 s8 | % m.59
+      f''8 f''8 s8 | % m.60
+      e''8 s4 | % m.61
+      g'8 s4 | % m.62
+      c''8 e'8 e'8 | % m.63
+      e'8 s4 | % m.64
+    }
+  >>
+}
+
+clarinet = {
+  \clef "treble"
+  <<
+    \new Voice = "clarinet_0" {
+      \voiceOne
+      g'8 r8 r8 | % m.53
+      r8 f'8 r8 | % m.54
+      e'8 r8 e'8 | % m.55
+      r8 b'8 r8 | % m.56
+      c''8 r8 c''8 | % m.57
+      r8 f'8 r8 | % m.58
+      e'8 r8 e'8 | % m.59
+      r8 b'8 b'8 | % m.60
+      c''8 r8 r8 | % m.61
+      r8 r8 g'8 | % m.62
+      c''8 g'8 g'8 | % m.63
+      e'8 r8 s8 | % m.64
+    }
+    \new Voice = "clarinet_1" {
+      \voiceTwo
+      e'8 s4 | % m.53
+      d'8 s4 | % m.54
+      c'8 c'8 s8 | % m.55
+      f'8 s4 | % m.56
+      e'8 e'8 s8 | % m.57
+      d'8 s4 | % m.58
+      c'8 c'8 s8 | % m.59
+      f'8 f'8 s8 | % m.60
+      e'8 s4 | % m.61
+      g'8 s4 | % m.62
+      c''8 e'8 e'8 | % m.63
+      c'8 s4 | % m.64
+    }
+  >>
+}
+
+fagotto = {
+  \clef "bass"
+  <<
+    \new Voice = "fagotto_0" {
+      \voiceOne
+      c'8 r8 r8 | % m.53
+      r8 b8 r8 | % m.54
+      c'8 r8 c'8 | % m.55
+      r8 d'8 r8 | % m.56
+      c'8 r8 c'8 | % m.57
+      r8 b8 r8 | % m.58
+      c'8 r8 c'8 | % m.59
+      r8 d'8 d'8 | % m.60
+      c'8 r8 r8 | % m.61
+      r8 r8 g8 | % m.62
+      c'8 g8 g8 | % m.63
+      e8 r8 s8 | % m.64
+    }
+    \new Voice = "fagotto_1" {
+      \voiceTwo
+      c8 s4 | % m.53
+      g8 s4 | % m.54
+      g8 g8 s8 | % m.55
+      g8 s4 | % m.56
+      g8 g8 s8 | % m.57
+      g8 s4 | % m.58
+      g8 g8 s8 | % m.59
+      g8 g8 s8 | % m.60
+      c8 s4 | % m.61
+      g,8 s4 | % m.62
+      c8 e8 e8 | % m.63
+      c8 s4 | % m.64
+    }
+  >>
+}
+
+trumpet = {
+  \clef "treble"
+  <<
+    \new Voice = "trumpet_0" {
+      \voiceOne
+      r8 g'8 g'8 | % m.53
+      g'4.~ | % m.54
+      g'4.~ | % m.55
+      g'8 g'8 g'8 | % m.56
+      g'8 g'8 g'8 | % m.57
+      g'4.~ | % m.58
+      g'4.~ | % m.59
+      g'8 g'8 g'8 | % m.60
+      g'8 r8 r8 | % m.61
+      s4. | % m.62
+      s4. | % m.63
+      s4. | % m.64
+    }
+    \new Voice = "trumpet_1" {
+      \voiceTwo
+      g8 g8 s8 | % m.53
+      g4.~ | % m.54
+      g4.~ | % m.55
+      g8 g8 g8 | % m.56
+      g8 g8 g8 | % m.57
+      g4.~ | % m.58
+      g4.~ | % m.59
+      g8 g8 g8 | % m.60
+      g8 s4 | % m.61
+      s4. | % m.62
+      s4. | % m.63
+      s4. | % m.64
+    }
+  >>
+}
+
+horns = {
+  \clef "treble"
+  <<
+    \new Voice = "horns_0" {
+      \voiceOne
+      g'8 r8 r8 | % m.53
+      s4. | % m.54
+      s4. | % m.55
+      s4. | % m.56
+      s4. | % m.57
+      s4. | % m.58
+      s4. | % m.59
+      s4. | % m.60
+      s4. | % m.61
+      s4. | % m.62
+      r8 c'8 c'8 | % m.63
+      c'8 r8 s8 | % m.64
+    }
+    \new Voice = "horns_1" {
+      \voiceTwo
+      c'8 r8 r8 | % m.53
+      s4. | % m.54
+      s4. | % m.55
+      s4. | % m.56
+      s4. | % m.57
+      s4. | % m.58
+      s4. | % m.59
+      s4. | % m.60
+      s4. | % m.61
+      s4. | % m.62
+      c8 c8 s8 | % m.63
+      c8 s4 | % m.64
+    }
+    \new Voice = "horns_2" {
+      \voiceThree
+      s4. | % m.53
+      r8 g'8 r8 | % m.54
+      g'8 r8 g'8 | % m.55
+      r8 g'8 r8 | % m.56
+      g'8 r8 g'8 | % m.57
+      r8 g'8 r8 | % m.58
+      g'8 r8 g'8 | % m.59
+      r8 g'8 g'8 | % m.60
+      g'8 r8 r8 | % m.61
+      r4. | % m.62
+      s4. | % m.63
+      r8 s4 | % m.64
+    }
+  >>
+}
+
+timpani = {
+  \clef "bass"
+  c16. g,32 g,16. g,32 g,16. g,32 | % m.53
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.54
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.55
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.56
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.57
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.58
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.59
+  g,16. g,32 g,16. g,32 g,16. g,32 | % m.60
+  c8 r8 r8 | % m.61
+  r4. | % m.62
+  r8 c8 c8 | % m.63
+  c8 r8 r8 | % m.64
+}
+
+\score {
+  <<
+    \new Staff = "Fl" {
+      \set Staff.midiInstrument = "flute"
+      \global
+      \flauto
+    }
+    \new Staff = "Ob" {
+      \set Staff.midiInstrument = "oboe"
+      \global
+      \oboe
+    }
+    \new Staff = "Cl(C)" {
+      \set Staff.midiInstrument = "clarinet"
+      \global
+      \clarinet
+    }
+    \new Staff = "Fg" {
+      \set Staff.midiInstrument = "bassoon"
+      \global
+      \fagotto
+    }
+    \new Staff = "Tr(C)" {
+      \set Staff.midiInstrument = "trumpet"
+      \global
+      \trumpet
+    }
+    \new Staff = "Cor" {
+      \set Staff.midiInstrument = "french horn"
+      \global
+      \horns
+    }
+    \new Staff = "Timp" {
+      \set Staff.midiInstrument = "timpani"
+      \global
+      \timpani
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2.4 外围乐章的呼应：首乐章起句与终曲风暴
 第二乐章对木管组的解放并非孤立现象，而是贯穿整部《第一交响曲》的整体配器战略：

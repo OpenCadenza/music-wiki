@@ -35,7 +35,50 @@ title: 终止图式
 ### 原型案例：莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 mm. 5–8
 莫扎特 K. 545 第一乐章开端提供了极为纯正的原型 Prinner 实证：在 mm. 1–4 呈示句（以主和弦延留为主的基础乐思与变化复述）之后，第 5–8 小节作为延续句展开：
 
-谱例待补：莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 mm. 5–8（原型 Prinner）
+```lilypond title="莫扎特 第15钢琴奏鸣曲 K.545 第一乐章" location="Allegro，mm.5–8" id="mozart-k545-i-mm5-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 C 大调第 15 钢琴奏鸣曲 K.545 第一乐章 mm.5-8（4/4，C 大调）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mm.5-8 逐小节音高多重集完全一致。
+% 试听速度 1/4=120 采自底本速度标记。
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  a'8 b'16 c''16 d''16 e''16 f''16 g''16 a''16 g''16 f''16 e''16 d''16 c''16 b'16 a'16 |
+  g'8 a'16 b'16 c''16 d''16 e''16 f''16 g''16 f''16 e''16 d''16 c''16 b'16 a'16 g'16 |
+  f'8 g'16 a'16 b'16 c''16 d''16 e''16 f''16 e''16 d''16 c''16 b'16 a'16 g'16 f'16 |
+  e'8 f'16 g'16 a'16 b'16 c''16 d''16 e''16 d''16 c''16 b'16 a'16 g'16 f'16 e'16 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  \clef bass f'4 r4 r4 <f c'>4 |
+  <e c'>4 r4 r4 <e c'>4 |
+  <d c'>4 r4 r4 <d b>4 |
+  <c c'>4 r4 r4 <c e>4 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **Stage 1（m. 5）**：高音以十六分音符音阶跑动冲出，强拍首音为 A4（$\hat{6}$）；左手低音落在 F 音（$\hat{4}$），伴以 F–C 和弦（IV 级）；
 - **Stage 2（m. 6）**：高音跑动首音移至 G4（$\hat{5}$）；左手低音顺畅滑至 E 音（$\hat{3}$），伴以 E–C 和弦（$I^6$ 级）；

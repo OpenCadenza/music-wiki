@@ -15,5 +15,5 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章 | Allegro，mm. 49–80 | 待补（本篇未收录内联图片谱例） | 未确认 |
-| 占位（未出谱） | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，mm. 29–42 | 待补（本篇未收录内联图片谱例） | 未确认 |
+| `beethoven-op2no1-i-mm49-80` | 贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章 | Allegro，展开部 mm. 49–80 | 据 CCARH MuseData 转写（`beethoven-piano-sonatas-main/kern/sonata01-1.krn`）；底本 \*MM240 为四分音符值，谱表为 2/2，故记 2 = 120 | 学术用途（CCARH 2002–2005，非 CC0） |
+| `mozart-k545-i-mm29-42` | 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章 | Allegro，展开部 mm. 29–42（4/4） | CCARH Humdrum Kern（`sonata15-1.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0061-…mvmt. 1.abc`）；排版为本项目自编码 LilyPond 摘录；音高多重集已与 DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K545-1.notes.tsv`（MS3 转录） 逐小节回比对一致 | 据 CCARH 转写，学术用途（非 CC0） |

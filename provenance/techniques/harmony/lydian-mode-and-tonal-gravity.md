@@ -14,6 +14,6 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 贝多芬 Op. 132 第三乐章 | Molto adagio，mm. 1–6 | 待补 | 未确认 |
-| 占位（未出谱） | 贝多芬 Op. 132 第三乐章 | Molto adagio，mm. 14–18 | 待补 | 未确认 |
-| 占位（未出谱） | 贝多芬 Op. 132 第三乐章 | Andante，mm. 31–36 | 待补 | 未确认 |
+| `beethoven-op132-iii-mm1-6` | 贝多芬 Op. 132 第三乐章 | Molto adagio，mm. 1–6 | 据 CCARH MuseData 转写（`beethoven-string-quartets-main/kern/quartet15-3.krn`，Breitkopf & Härtel 全集底本） | 学术用途（CCARH 2002–2005，非 CC0） |
+| `beethoven-op132-iii-mm14-18` | 贝多芬 Op. 132 第三乐章 | Molto adagio，mm. 14–18 | 同上（`quartet15-3.krn` 刊本印刷小节号 m.14–18） | 学术用途（CCARH 2002–2005，非 CC0） |
+| `beethoven-op132-iii-mm31-36` | 贝多芬 Op. 132 第三乐章 | Andante（D 大调），mm. 31–36 | 同上（`quartet15-3.krn` m.31–36，3/8）；播放速度 8. = 60 为本库试听值 | 学术用途（CCARH 2002–2005，非 CC0） |

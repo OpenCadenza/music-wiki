@@ -25,12 +25,18 @@
 | `beethoven-op111-ii-mm1-16` | 贝多芬 第32钢琴奏鸣曲 Op.111 第二乐章 | Arietta: Adagio molto semplice e cantabile，mm.1–16 | techniques/structure/variation-types-and-structural-transformations.md | `techniques/structure/variation-types-and-structural-transformations.md#score-beethoven-op111-ii-mm1-16` |  |
 | `beethoven-op111-ii-mm33-48` | 贝多芬 第32钢琴奏鸣曲 Op.111 第二乐章 | Variation II: L'istesso tempo，mm.33–48 | techniques/structure/variation-types-and-structural-transformations.md | `techniques/structure/variation-types-and-structural-transformations.md#score-beethoven-op111-ii-mm33-48` |  |
 | `beethoven-op125-i-mm1-35` | 贝多芬 第九交响曲 Op.125 第一乐章 | Allegro ma non troppo, un poco maestoso，mm.1–35 | techniques/sound/timbral-contrast-and-formal-articulation.md | `techniques/sound/timbral-contrast-and-formal-articulation.md#score-beethoven-op125-i-mm1-35` |  |
+| `beethoven-op125-ii-mm1-9` | 贝多芬 第九交响曲 Op.125 第二乐章 | Molto vivace，mm.1–9（实音记谱；定音鼓 in F 的八度跳跃与弦乐八度动机） | techniques/sound/timpani-writing-and-classical-orchestration.md | `techniques/sound/timpani-writing-and-classical-orchestration.md#score-beethoven-op125-ii-mm1-9` |  |
+| `beethoven-op125-ii-mm195-205` | 贝多芬 第九交响曲 Op.125 第二乐章 | Molto vivace，mm.195–205（实音记谱；定音鼓 in F, f 以三小节为周期确立重音） | techniques/sound/timpani-writing-and-classical-orchestration.md | `techniques/sound/timpani-writing-and-classical-orchestration.md#score-beethoven-op125-ii-mm195-205` |  |
 | `beethoven-op13-i-mm1-19` | 贝多芬 Op.13《悲怆》第一乐章 | Grave，mm.1–19 | composers/beethoven/piano-sonatas/slow-introduction-integration.md | `composers/beethoven/piano-sonatas/slow-introduction-integration.md#score-beethoven-op13-i-mm1-19` |  |
-| `beethoven-op131-i-mm1-8` | 贝多芬 第14弦乐四重奏 Op.131 第一乐章 | Adagio ma non troppo e molto espressivo，弱起 + mm.1–8 | techniques/structure/teleological-multimovement-integration.md | `techniques/structure/teleological-multimovement-integration.md#score-beethoven-op131-i-mm1-8` | techniques/sound/viola-writing-and-orchestral-voicing.md |
+| `beethoven-op131-i-mm1-8` | 贝多芬 第14弦乐四重奏 Op.131 第一乐章 | Adagio ma non troppo e molto espressivo，弱起 + mm.1–8 | techniques/structure/teleological-multimovement-integration.md | `techniques/structure/teleological-multimovement-integration.md#score-beethoven-op131-i-mm1-8` |  |
 | `beethoven-op131-i-mm6-11` | 贝多芬 Op.131 第一乐章 | Adagio ma non troppo e molto espressivo，mm.6–11 | composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md | `composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md#score-beethoven-op131-i-mm6-11` |  |
+| `beethoven-op131-i-mm9-16` | 贝多芬 第14弦乐四重奏 Op.131 第一乐章 | Adagio ma non troppo e molto espressivo，mm.9–16 | techniques/sound/viola-writing-and-orchestral-voicing.md | `techniques/sound/viola-writing-and-orchestral-voicing.md#score-beethoven-op131-i-mm9-16` |  |
 | `beethoven-op131-vii-mm21-26` | 贝多芬 第14弦乐四重奏 Op.131 第七乐章 | Allegro，mm.21–26 | techniques/structure/teleological-multimovement-integration.md | `techniques/structure/teleological-multimovement-integration.md#score-beethoven-op131-vii-mm21-26` |  |
 | `beethoven-op131-vii-mm216-224` | 贝多芬 第14弦乐四重奏 Op.131 第七乐章 | Allegro，mm.216–224（D 大调） | techniques/structure/teleological-multimovement-integration.md | `techniques/structure/teleological-multimovement-integration.md#score-beethoven-op131-vii-mm216-224` |  |
 | `beethoven-op132-i-mm1-8` | 贝多芬 Op.132 第一乐章 | Assai sostenuto，mm.1–8 | composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md | `composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md#score-beethoven-op132-i-mm1-8` |  |
+| `beethoven-op132-iii-mm1-6` | 贝多芬 第15弦乐四重奏 Op.132 第三乐章 | Molto adagio，mm.1–6 | techniques/harmony/lydian-mode-and-tonal-gravity.md | `techniques/harmony/lydian-mode-and-tonal-gravity.md#score-beethoven-op132-iii-mm1-6` |  |
+| `beethoven-op132-iii-mm14-18` | 贝多芬 第15弦乐四重奏 Op.132 第三乐章 | Molto adagio，mm.14–18 | techniques/harmony/lydian-mode-and-tonal-gravity.md | `techniques/harmony/lydian-mode-and-tonal-gravity.md#score-beethoven-op132-iii-mm14-18` |  |
+| `beethoven-op132-iii-mm31-36` | 贝多芬 第15弦乐四重奏 Op.132 第三乐章 | Andante（D 大调），mm.31–36 | techniques/harmony/lydian-mode-and-tonal-gravity.md | `techniques/harmony/lydian-mode-and-tonal-gravity.md#score-beethoven-op132-iii-mm31-36` |  |
 | `beethoven-op135-iii-mm1-12` | 贝多芬 Op.135 第三乐章 | Lento assai, cantante e tranquillo，mm.1–12 | ensembles/string-quartet-acoustic-role-differentiation.md | `ensembles/string-quartet-acoustic-role-differentiation.md#score-beethoven-op135-iii-mm1-12` | notation/articulation-marks-and-realization.md |
 | `beethoven-op135-iv-mm1-4` | 贝多芬 Op.135 第四乐章 | Grave ma non troppo tratto，mm.1–4 | techniques/material/motivic-inversion-and-harmonic-recontextualization.md | `techniques/material/motivic-inversion-and-harmonic-recontextualization.md#score-beethoven-op135-iv-mm1-4` |  |
 | `beethoven-op135-iv-mm12-16` | 贝多芬 Op.135 第四乐章 | Allegro，mm.12–16 | techniques/material/motivic-inversion-and-harmonic-recontextualization.md | `techniques/material/motivic-inversion-and-harmonic-recontextualization.md#score-beethoven-op135-iv-mm12-16` |  |
@@ -38,17 +44,30 @@
 | `beethoven-op14no1-i-mm1-16` | 贝多芬 Op.14 No.1 第一乐章 | Allegro，mm.1–16 | ensembles/bidirectional-selection-of-musical-ideas-and-medium.md | `ensembles/bidirectional-selection-of-musical-ideas-and-medium.md#score-beethoven-op14no1-i-mm1-16` |  |
 | `beethoven-op18no1-i-mm1-4` | 贝多芬《F 大调第一弦乐四重奏》Op.18 No.1 第一乐章 | Allegro con brio，mm.1–4 | notation/articulation-marks-and-realization.md | `notation/articulation-marks-and-realization.md#score-beethoven-op18no1-i-mm1-4` |  |
 | `beethoven-op18no2-iv-mm1-8` | 贝多芬 Op. 18 No. 2 第四乐章 | Allegro molto quasi presto，mm.1–8 | techniques/structure/hybrid-themes-and-syntax-decoupling.md | `techniques/structure/hybrid-themes-and-syntax-decoupling.md#score-beethoven-op18no2-iv-mm1-8` |  |
+| `beethoven-op21-ii-mm1-16` | 贝多芬 第一交响曲 Op.21 第二乐章 | Andante cantabile con moto，mm.1–16（实音记谱；弦乐与大管参与的赋格模仿呈示，C 调单簧管 m.13 切入） | styles/woodwind-symphonic-emancipation.md | `styles/woodwind-symphonic-emancipation.md#score-beethoven-op21-ii-mm1-16` | notation/transposing-instruments-notation-and-sounding-pitch.md |
+| `beethoven-op21-ii-mm26-52` | 贝多芬 第一交响曲 Op.21 第二乐章 | Andante cantabile con moto，mm.26–52（实音记谱；木管组脱离弦乐的独立旋律与和声接力，重点 mm.34–42） | styles/woodwind-symphonic-emancipation.md | `styles/woodwind-symphonic-emancipation.md#score-beethoven-op21-ii-mm26-52` |  |
+| `beethoven-op21-ii-mm53-64` | 贝多芬 第一交响曲 Op.21 第二乐章 | Andante cantabile con moto，mm.53–64（实音记谱；木管与定音鼓附点军乐节奏的交响对答） | styles/woodwind-symphonic-emancipation.md | `styles/woodwind-symphonic-emancipation.md#score-beethoven-op21-ii-mm53-64` | techniques/sound/timpani-writing-and-classical-orchestration.md |
+| `beethoven-op2no1-i-mm1-8` | 贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章 | Allegro，弱起 + mm.1–8（呈示句与延续句的和声节奏阶梯加速） | techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md | `techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md#score-beethoven-op2no1-i-mm1-8` |  |
+| `beethoven-op2no1-i-mm49-80` | 贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章 | Allegro，展开部 mm.49–80 | techniques/structure/sequence-mechanics-and-syntactic-functions.md | `techniques/structure/sequence-mechanics-and-syntactic-functions.md#score-beethoven-op2no1-i-mm49-80` |  |
+| `beethoven-op2no1-i-mm81-101` | 贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章 | Allegro，展开部末端 mm.81–101（属音驻留制动与再现爆发） | techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md | `techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md#score-beethoven-op2no1-i-mm81-101` |  |
 | `beethoven-op2no3-i-mm1-13` | 贝多芬 Op.2 No.3 第一乐章 | Allegro con brio，mm.1–13 | techniques/structure/cadential-evasion-and-temporal-expansion.md | `techniques/structure/cadential-evasion-and-temporal-expansion.md#score-beethoven-op2no3-i-mm1-13` | techniques/structure/phrase-expansion-and-structural-skeleton.md |
 | `beethoven-op53-i-mm1-14` | 贝多芬 第21钢琴奏鸣曲 Op.53 第一乐章 | Allegro con brio，mm.1–14 | techniques/harmony/chromatic-mediant-and-tonal-space.md | `techniques/harmony/chromatic-mediant-and-tonal-space.md#score-beethoven-op53-i-mm1-14` |  |
 | `beethoven-op53-i-mm23-42` | 贝多芬 第21钢琴奏鸣曲 Op.53 第一乐章 | Allegro con brio，mm.23–42 | techniques/harmony/chromatic-mediant-and-tonal-space.md | `techniques/harmony/chromatic-mediant-and-tonal-space.md#score-beethoven-op53-i-mm23-42` |  |
 | `beethoven-op59no1-i-mm1-8` | 贝多芬 第7弦乐四重奏 Op.59 No.1 第一乐章 | Allegro，mm.1–8 | notation/articulation-marks-and-realization.md | `notation/articulation-marks-and-realization.md#score-beethoven-op59no1-i-mm1-8` |  |
 | `beethoven-op59no1-i-mm18-24` | 贝多芬 第7弦乐四重奏 Op.59 No.1 第一乐章 | Allegro，mm.18–24 | notation/articulation-marks-and-realization.md | `notation/articulation-marks-and-realization.md#score-beethoven-op59no1-i-mm18-24` |  |
+| `beethoven-op59no3-iv-mm1-10` | 贝多芬 第9弦乐四重奏 Op.59 No.3 第四乐章 | Allegro molto，mm.1–10 | techniques/sound/viola-writing-and-orchestral-voicing.md | `techniques/sound/viola-writing-and-orchestral-voicing.md#score-beethoven-op59no3-iv-mm1-10` |  |
 | `beethoven-op61-i-mm1-18` | 贝多芬 小提琴协奏曲 Op.61 第一乐章 | Allegro ma non troppo，mm.1–18 | techniques/structure/concertante-principle-and-double-exposition.md | `techniques/structure/concertante-principle-and-double-exposition.md#score-beethoven-op61-i-mm1-18` |  |
+| `beethoven-op67-i-mm59-62` | 贝多芬 第五交响曲 Op.67 第一乐章 | Allegro con brio，mm.59–62（实音记谱；降 E 调自然圆号在纯开放泛音上的号角呼号） | techniques/sound/natural-horn-writing-and-harmonic-series.md | `techniques/sound/natural-horn-writing-and-harmonic-series.md#score-beethoven-op67-i-mm59-62` |  |
+| `beethoven-op67-ii-mm1-8` | 贝多芬 第五交响曲 Op.67 第二乐章 | Andante con moto，mm.1–8（实音记谱；中提琴与大提琴同度齐奏） | techniques/sound/viola-writing-and-orchestral-voicing.md | `techniques/sound/viola-writing-and-orchestral-voicing.md#score-beethoven-op67-ii-mm1-8` |  |
 | `beethoven-op67-ii-mm205-209` | 贝多芬 Op.67 第二乐章 | Andante con moto，mm.205–209 | techniques/sound/planes-of-tone-layering.md | `techniques/sound/planes-of-tone-layering.md#score-beethoven-op67-ii-mm205-209` |  |
+| `beethoven-op67-ii-mm25-38` | 贝多芬 第五交响曲 Op.67 第二乐章 | Andante con moto，mm.25–38（实音记谱；中提琴解耦、C 调圆号与定音鼓突入 C 大调副主题） | techniques/sound/natural-horn-writing-and-harmonic-series.md | `techniques/sound/natural-horn-writing-and-harmonic-series.md#score-beethoven-op67-ii-mm25-38` | techniques/sound/timpani-writing-and-classical-orchestration.md<br>techniques/sound/viola-writing-and-orchestral-voicing.md |
+| `beethoven-op67-iii-iv-mm324-373` | 贝多芬 第五交响曲 Op.67 第三乐章→第四乐章 | Allegro，mm.324–373（实音记谱；定音鼓单音 C 的 pp 心跳长脉搏直接引爆第四乐章） | techniques/sound/timpani-writing-and-classical-orchestration.md | `techniques/sound/timpani-writing-and-classical-orchestration.md#score-beethoven-op67-iii-iv-mm324-373` |  |
 | `beethoven-op74-i-mm1-9` | 贝多芬 Op.74《竖琴》第一乐章 | Poco adagio，mm.1–9 | techniques/structure/galant-schemata-and-formal-functions.md | `techniques/structure/galant-schemata-and-formal-functions.md#score-beethoven-op74-i-mm1-9` |  |
 | `beethoven-op74-i-mm18-24` | 贝多芬 Op.74 第一乐章 | Poco Adagio，mm.18–24 | composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md | `composers/beethoven/quartets/chromatic-suspension-and-structural-topology.md#score-beethoven-op74-i-mm18-24` |  |
 | `beethoven-op81-i-mm1-25` | 贝多芬 Op.81a《告别》第一乐章 | Adagio，mm.1–25 | composers/beethoven/piano-sonatas/slow-introduction-integration.md | `composers/beethoven/piano-sonatas/slow-introduction-integration.md#score-beethoven-op81-i-mm1-25` |  |
 | `beethoven-op92-ii-mm1-10` | 贝多芬 第七交响曲 Op.92 第二乐章 | Allegretto，mm.1–10（音乐会音高记谱） | techniques/sound/timbral-contrast-and-formal-articulation.md | `techniques/sound/timbral-contrast-and-formal-articulation.md#score-beethoven-op92-ii-mm1-10` | notation/transposing-instruments-notation-and-sounding-pitch.md |
+| `beethoven-op92-ii-mm115-122` | 贝多芬 第七交响曲 Op.92 第二乐章 | Allegretto，mm.115–122（实音记谱；E 调圆号的 E 属持续踏板与下行歌唱线条，开放音与手塞音交替） | techniques/sound/natural-horn-writing-and-harmonic-series.md | `techniques/sound/natural-horn-writing-and-harmonic-series.md#score-beethoven-op92-ii-mm115-122` |  |
+| `beethoven-op92-ii-mm27-54` | 贝多芬 第七交响曲 Op.92 第二乐章 | Allegretto，mm.27–54（实音记谱；中提琴自高把位对位副旋律转为持续八分分解和弦，第一小提琴 m.51 接入） | techniques/sound/viola-writing-and-orchestral-voicing.md | `techniques/sound/viola-writing-and-orchestral-voicing.md#score-beethoven-op92-ii-mm27-54` |  |
 | `beethoven-op95-i-mm1-8` | 贝多芬 Op.95 第一乐章 | Allegro con brio，mm.1–8 | techniques/harmony/neapolitan-chord-structural-mutation.md | `techniques/harmony/neapolitan-chord-structural-mutation.md#score-beethoven-op95-i-mm1-8` |  |
 | `beethoven-op95-i-mm19-24` | 贝多芬 Op.95 第一乐章 | Allegro con brio，mm.19–24 | techniques/harmony/neapolitan-chord-structural-mutation.md | `techniques/harmony/neapolitan-chord-structural-mutation.md#score-beethoven-op95-i-mm19-24` |  |
 | `brahms-op51no1-i-mm11-18` | 勃拉姆斯 弦乐四重奏 Op.51 No.1 第一乐章 | Allegro，mm.11–18 | techniques/sound/brahms-string-quartet-chorale-texture.md | `techniques/sound/brahms-string-quartet-chorale-texture.md#score-brahms-op51no1-i-mm11-18` |  |
@@ -90,8 +109,13 @@
 | `haydn-op76no3-ii-mm81-88` | 海顿 弦乐四重奏 Op.76 No.3《皇帝》第二乐章 | Poco adagio, cantabile，mm.81–88 | techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md | `techniques/counterpoint/cantus-firmus-variation-and-conversational-counterpoint.md#score-haydn-op76no3-ii-mm81-88` |  |
 | `mozart-k283-i-mm1-10` | 莫扎特 K. 283 第一乐章 | Allegro，mm.1–10 | techniques/structure/galant-schemata-and-formal-functions.md | `techniques/structure/galant-schemata-and-formal-functions.md#score-mozart-k283-i-mm1-10` | techniques/harmony/cadential-six-four-and-dominant-syntax.md<br>techniques/structure/cadential-prinner-and-structural-closure.md |
 | `mozart-k284-i-mm17-24` | 莫扎特 第六钢琴奏鸣曲 K.284 第一乐章 | Allegro，mm.17–24 | techniques/structure/medial-caesura-and-sonata-transition.md | `techniques/structure/medial-caesura-and-sonata-transition.md#score-mozart-k284-i-mm17-24` |  |
+| `mozart-k284-ii-mm1-16` | 莫扎特 第6钢琴奏鸣曲 K.284 第二乐章 | Rondeau en polonaise: Andante，mm.1–16 | techniques/structure/compound-period-hierarchical-syntax.md | `techniques/structure/compound-period-hierarchical-syntax.md#score-mozart-k284-ii-mm1-16` |  |
 | `mozart-k309-iii-mm9-19` | 莫扎特 K.309 第三乐章 | Allegretto grazioso，mm.9–19 | techniques/structure/cadential-evasion-and-temporal-expansion.md | `techniques/structure/cadential-evasion-and-temporal-expansion.md#score-mozart-k309-iii-mm9-19` | techniques/structure/phrase-expansion-and-structural-skeleton.md |
 | `mozart-k330-ii-mm1-8` | 莫扎特 K. 330 第二乐章 | Andante cantabile，mm.1–8 | techniques/structure/hybrid-themes-and-syntax-decoupling.md | `techniques/structure/hybrid-themes-and-syntax-decoupling.md#score-mozart-k330-ii-mm1-8` |  |
+| `mozart-k331-i-theme-mm1-8` | 莫扎特 第11钢琴奏鸣曲 K.331 第一乐章 | Thema: Andante grazioso，mm.1–8 | techniques/structure/variation-types-and-structural-transformations.md | `techniques/structure/variation-types-and-structural-transformations.md#score-mozart-k331-i-theme-mm1-8` | techniques/harmony/cadential-six-four-and-dominant-syntax.md |
+| `mozart-k331-i-var1-mm19-26` | 莫扎特 第11钢琴奏鸣曲 K.331 第一乐章 | Variation I，mm.19–26 | techniques/structure/variation-types-and-structural-transformations.md | `techniques/structure/variation-types-and-structural-transformations.md#score-mozart-k331-i-var1-mm19-26` |  |
+| `mozart-k331-i-var3-mm55-72` | 莫扎特 第11钢琴奏鸣曲 K.331 第一乐章 | Variation III（Minore），mm.55–72 | techniques/structure/variation-types-and-structural-transformations.md | `techniques/structure/variation-types-and-structural-transformations.md#score-mozart-k331-i-var3-mm55-72` |  |
+| `mozart-k332-i-mm41-56` | 莫扎特 第12钢琴奏鸣曲 K.332 第一乐章 | Allegro，mm.41–56 | techniques/structure/compound-period-hierarchical-syntax.md | `techniques/structure/compound-period-hierarchical-syntax.md#score-mozart-k332-i-mm41-56` |  |
 | `mozart-k421-i-mm1-8` | 莫扎特 弦乐四重奏 K.421 第一乐章 | Allegro，mm.1–8 | techniques/counterpoint/mozart-quartet-conversational-counterpoint.md | `techniques/counterpoint/mozart-quartet-conversational-counterpoint.md#score-mozart-k421-i-mm1-8` |  |
 | `mozart-k421-i-mm25-32` | 莫扎特 弦乐四重奏 K.421 第一乐章 | Allegro，mm.25–32 | techniques/counterpoint/mozart-quartet-conversational-counterpoint.md | `techniques/counterpoint/mozart-quartet-conversational-counterpoint.md#score-mozart-k421-i-mm25-32` |  |
 | `mozart-k421-ii-mm1-8` | 莫扎特 弦乐四重奏 K.421 第二乐章 | Andante（西西里行板），mm.1–8 | techniques/counterpoint/mozart-quartet-conversational-counterpoint.md | `techniques/counterpoint/mozart-quartet-conversational-counterpoint.md#score-mozart-k421-ii-mm1-8` |  |
@@ -99,10 +123,16 @@
 | `mozart-k465-iv-mm10-16` | 莫扎特 K.465 第四乐章 | Allegro，mm.10–16 | techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md | `techniques/harmony/augmented-sixth-mechanics-and-syntactic-drift.md#score-mozart-k465-iv-mm10-16` |  |
 | `mozart-k467-i-mm1-8` | 莫扎特 第21钢琴协奏曲 K.467 第一乐章 | Allegro maestoso，mm.1–8（主部主题群：进行曲动机与管乐号角） | techniques/structure/concertante-principle-and-double-exposition.md | `techniques/structure/concertante-principle-and-double-exposition.md#score-mozart-k467-i-mm1-8` |  |
 | `mozart-k467-i-mm74-91` | 莫扎特 第21钢琴协奏曲 K.467 第一乐章 | Allegro maestoso，mm.74–91（独奏钢琴的独立引子与长颤音） | techniques/structure/concertante-principle-and-double-exposition.md | `techniques/structure/concertante-principle-and-double-exposition.md#score-mozart-k467-i-mm74-91` |  |
+| `mozart-k467-i-mm9-28` | 莫扎特 第21钢琴协奏曲 K.467 第一乐章 | Allegro maestoso，mm.9–28（全奏动能过渡：弦乐十六分音符冲刺与八分音符步态） | techniques/structure/concertante-principle-and-double-exposition.md | `techniques/structure/concertante-principle-and-double-exposition.md#score-mozart-k467-i-mm9-28` |  |
 | `mozart-k467-ii-mm1-8` | 莫扎特 第21钢琴协奏曲 K.467 第二乐章 | Andante，mm.1–8（弱音弦乐三连音温床与木管 sfp 切入） | techniques/sound/mozart-concerto-solo-orchestra-dialogue.md | `techniques/sound/mozart-concerto-solo-orchestra-dialogue.md#score-mozart-k467-ii-mm1-8` |  |
 | `mozart-k467-ii-mm23-30` | 莫扎特 第21钢琴协奏曲 K.467 第二乐章 | Andante，mm.23–30（独奏钢琴如歌切入，弦乐伴奏音型延续） | techniques/sound/mozart-concerto-solo-orchestra-dialogue.md | `techniques/sound/mozart-concerto-solo-orchestra-dialogue.md#score-mozart-k467-ii-mm23-30` |  |
 | `mozart-k467-ii-mm66-71` | 莫扎特 第21钢琴协奏曲 K.467 第二乐章 | Andante，mm.66–71（木管 sfp 长音叩问与钢琴三连音琶音交替） | techniques/sound/mozart-concerto-solo-orchestra-dialogue.md | `techniques/sound/mozart-concerto-solo-orchestra-dialogue.md#score-mozart-k467-ii-mm66-71` |  |
 | `mozart-k467-ii-mm82-88` | 莫扎特 第21钢琴协奏曲 K.467 第二乐章 | Andante，mm.82–88（第一小提琴下行挂留与钢琴三连音花彩对位） | techniques/sound/mozart-concerto-solo-orchestra-dialogue.md | `techniques/sound/mozart-concerto-solo-orchestra-dialogue.md#score-mozart-k467-ii-mm82-88` |  |
+| `mozart-k494-mm1-6` | 莫扎特 K.494 回旋曲开篇 | Allegro，mm.1–6 | techniques/structure/phrase-expansion-and-structural-skeleton.md | `techniques/structure/phrase-expansion-and-structural-skeleton.md#score-mozart-k494-mm1-6` |  |
+| `mozart-k545-i-mm1-14` | 莫扎特 第15钢琴奏鸣曲 K.545 第一乐章 | Allegro，mm.1–14 | techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md | `techniques/harmony/harmonic-rhythm-and-syntactic-pacing.md#score-mozart-k545-i-mm1-14` |  |
+| `mozart-k545-i-mm22-26` | 莫扎特 第15钢琴奏鸣曲 K.545 第一乐章 | Allegro，mm.22–26 | techniques/harmony/cadential-six-four-and-dominant-syntax.md | `techniques/harmony/cadential-six-four-and-dominant-syntax.md#score-mozart-k545-i-mm22-26` |  |
+| `mozart-k545-i-mm29-42` | 莫扎特 第15钢琴奏鸣曲 K.545 第一乐章 | Allegro，展开部 mm.29–42 | techniques/structure/sequence-mechanics-and-syntactic-functions.md | `techniques/structure/sequence-mechanics-and-syntactic-functions.md#score-mozart-k545-i-mm29-42` |  |
+| `mozart-k545-i-mm5-8` | 莫扎特 第15钢琴奏鸣曲 K.545 第一乐章 | Allegro，mm.5–8 | techniques/structure/cadential-prinner-and-structural-closure.md | `techniques/structure/cadential-prinner-and-structural-closure.md#score-mozart-k545-i-mm5-8` |  |
 | `mozart-k550-i-mm1-14` | 莫扎特 第40交响曲 K.550 第一乐章 | Molto allegro，mm.1–14 | techniques/sound/mozart-k550-syntax-and-orchestration.md | `techniques/sound/mozart-k550-syntax-and-orchestration.md#score-mozart-k550-i-mm1-14` |  |
 | `mozart-k550-i-mm138-149` | 莫扎特 第40交响曲 K.550 第一乐章 | Molto allegro，mm.138–149 | techniques/sound/mozart-k550-syntax-and-orchestration.md | `techniques/sound/mozart-k550-syntax-and-orchestration.md#score-mozart-k550-i-mm138-149` |  |
 | `mozart-k550-i-mm16-24` | 莫扎特 第40交响曲 K.550 第一乐章 | Molto allegro，mm.16–24 | techniques/sound/mozart-k550-syntax-and-orchestration.md | `techniques/sound/mozart-k550-syntax-and-orchestration.md#score-mozart-k550-i-mm16-24` | notation/transposing-instruments-notation-and-sounding-pitch.md |
@@ -133,28 +163,13 @@
 <!-- manual:gaps -->
 ## 缺口（手工维护）
 
+> 2026-11-27 第六轮：贝多芬 17 块、莫扎特 11 块已出（全库 124→154），可出谱的缺口**本轮全部清零**；下表只剩「无机器可读源」与「不出谱」两类记录，以及一处已标注待核的案例。
+
 | 作品 | 需要的片段 | 状态 |
 | --- | --- | --- |
 | 贝多芬 Op.97 第一乐章 | mm.1–12 | 无法核验：无机器可读源（IMSLP 仅 PDF；PDMX 无；CCARH 无钢琴三重奏） |
 | 雷哈 Op.88 No.2 第一乐章 | mm.1–8 | 无法核验：IMSLP 有扫描/分谱 PDF，无 MXL；PDMX 无 |
 | 马勒 第四交响曲 第二乐章 | mm.34–46 | 无法核验：PDMX 无第四；IMSLP 仅 Vn1 分谱 MXL，非总谱 |
 | 那不勒斯和弦教材模型 | 示意 | 不出谱：正文改为示意性表述（差异复读 #1 已处理） |
-| 贝多芬 第一交响曲 Op.21 第二乐章 | mm.1–16、26–52、53–64 | 未补：第四轮遗留占位（《管乐交响化》《定音鼓写作》共用）；《移调记谱与实音》另需 C 调单簧管切入 mm.1–15，底本仅 CCARH md2（11 声部），本轮完成声部与移调核对但未转写 |
-| 贝多芬 Op.67 第一乐章 | m.59–62 | 未补：第四轮遗留占位（《自然圆号写作》），待出谱 |
-| 贝多芬 Op.67 第二乐章 | mm.1–8、25–33、29–38 | 未补：第四轮遗留占位（《自然圆号写作》《中提琴写作》《定音鼓写作》共用）；本乐章 mm.205–209 另有既有片段，区间不重叠 |
-| 贝多芬 Op.67 第三乐章向第四乐章过渡 | mm.324–373 | 未补：第四轮遗留占位（《定音鼓写作》），待出谱 |
-| 贝多芬 Op.92 第二乐章 | mm.21–26、27–36、36–40 | 未补：第四轮遗留占位（《中提琴写作》《自然圆号写作》共用）；本乐章 mm.1–10 另有既有片段，区间不重叠 |
-| 贝多芬 Op.125 第二乐章 | mm.1–9、195–205 | 未补：第四轮遗留占位（《定音鼓写作》），待出谱 |
-| 贝多芬 Op.132 第三乐章 | mm.1–6、14–18、31–36 | 未补：第四轮遗留占位（《利底亚调式》），待出谱 |
-| 贝多芬 Op.131 第一乐章 | mm.9–16 | 未补：第四轮遗留占位（《中提琴写作》）；本乐章 mm.1–8 已有既有片段，本篇只补其后半 |
-| 贝多芬 Op.59 No.3 第四乐章 | mm.1–10 | 未补：第四轮遗留占位（《中提琴写作》），待出谱 |
-| 贝多芬 Op.2 No.1 第一乐章展开部 | mm.49–80 | 未补：第四轮遗留占位（《模进与句法》），待出谱 |
-| 莫扎特 K.331 第一乐章 | mm.1–8 | 未补：第四轮遗留占位（《终止四六和弦》），待出谱 |
-| 莫扎特 K.545 第一乐章 | mm.5–8、22–26 | 未补：第四轮遗留占位（《终止图式》《终止四六和弦》共用），待出谱 |
-| 莫扎特 K.545 第一乐章展开部 | mm.29–42 | 未补：第四轮遗留占位（《模进与句法》），待出谱 |
-| 莫扎特 K.332 第一乐章 | mm.41–56 | 未补：第四轮遗留占位（《复合乐段》），待出谱 |
-| 莫扎特 K.284 第二乐章 | mm.1–16 | 未补：第四轮遗留占位（《复合乐段》），待出谱 |
-| 莫扎特 K.494 开篇 | mm.1–6 | 未补：第四轮遗留占位（《乐句扩展》，据 OMT 教材谱例），待出谱 |
-| 莫扎特 K.467 第一乐章 | mm.9–28 | 未完成：本轮只出了主部主题群 mm.1–8 与独奏引子 mm.74–91（据 CCARH MuseData md2 自编码）；mm.9–28 的十六分音型密集段待下一轮出谱（《协奏原则》） |
-| 莫扎特 K.331 第一乐章 | 主题 mm.1–8、第一变奏 mm.19–26、Minore mm.55–72 | 未完成：底本只有本地 kern/ABC（CCARH，非 CC0），abc2ly 不认多声部叠加，kern 需逐轨转写（《变奏曲式的类型》） |
+| 贝多芬 Op.30 No.2 第三乐章 | mm.1–8 | 无法核验：该乐章无机器可读源（CCARH MuseData 贝多芬集只收交响曲+弦乐四重奏；Mutopia 只收本曲第 1、4 乐章；PDMX 仅元数据；IMSLP 仅扫描 PDF 且有 bot 验证）——《混合主题与句法解耦》该处正文已标「待核实证案例」，保持占位 |
 <!-- /manual:gaps -->

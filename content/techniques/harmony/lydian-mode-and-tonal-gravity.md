@@ -54,7 +54,86 @@ $$C^{\text{maj}7} = \text{C} - \text{E} - \text{G} - B\natural$$
 
 四件乐器在两小节内完成自上而下的空间下潜，展现了[弦乐四重奏](../../ensembles/string-quartet-acoustic-role-differentiation.md)在声部均质性中的层次分工。于第 2 小节第 3 拍，四声部垂直汇聚成纯正的 F 大三和弦（$FF\text{–}C\text{–}A\text{–}f$），由此托出第一句圣咏定旋律。
 
-谱例待补：贝多芬 Op. 132 第三乐章，mm. 1–6（F 利底亚卡农前奏与第一句圣咏呈示）
+```lilypond title="贝多芬 第15弦乐四重奏 Op.132 第三乐章" location="Molto adagio，mm.1–6" id="beethoven-op132-iii-mm1-6"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 刊本印刷小节号；本乐章 Molto adagio 由弱起小节引出（不计入 mm.1 起的编号）。
+
+global = {
+  \key c \major
+  \time 4/4
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Molto adagio" 4 = 54
+  g' 4 c'' 4 ~ c'' 4 f' 4 | % m.1
+  g' 4 ) f' 4 <f' a'> 2 | % m.2
+  f' 2 e' 2 | % m.3
+  d' 2 e' 2 | % m.4
+  f' 2 g' 2 | % m.5
+  f' 2 ( a'' 4 d'' 4 | % m.6
+}
+
+violinII = {
+  \clef "treble"
+  ( c' 4 a' 4 <g e'> 4 ) ( c' 4 | % m.1
+  e' 4 f' 4 ) a 2 | % m.2
+  c' 2 c' 2 | % m.3
+  a 2 c' 2 | % m.4
+  ( c' 2 b 4 e' 4 ) | % m.5
+  a 2 r 2 | % m.6
+}
+
+viola = {
+  \clef "alto"
+  r 2 ( c 4 a 4 | % m.1
+  g 4 <c c'> 4 ) <c c'> 2 | % m.2
+  c 2 g 2 | % m.3
+  f 2 g 2 | % m.4
+  ( c 2 d 4 e 4 ) | % m.5
+  f 2 r 2 | % m.6
+}
+
+cello = {
+  \clef "bass"
+  r 1 | % m.1
+  ( c, 4 a, 4 ) f, 2 | % m.2
+  a, 2 c 2 | % m.3
+  d 2 c 2 | % m.4
+  ( a, 2 g, 4 c 4 ) | % m.5
+  d 2 r 2 | % m.6
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2.2 五句圣咏的和声轨迹与还原 B 的标点分布
 五句圣咏在结构上呈现为清晰的对称拱形，特性音 $B\natural$ 在各句中的出现位置经过了严密的声部组织：
@@ -66,7 +145,82 @@ $$C^{\text{maj}7} = \text{C} - \text{E} - \text{G} - B\natural$$
 - **第三句（mm. 14–18）：拱顶与极端音区**：
   全段的高潮转折点。高音声部旋律跨入高音区（$e^1\text{–}c^2\text{–}b^1\text{–}c^2\text{–}a^1\text{–}b^1\text{–}c^2\text{–}d^2$）。在第 15 小节与第 17 小节，第一小提琴两次唱出长达二分音符的小字二组 $b^1$（还原 B）。此处 $b^1$ 与中提琴、大提琴形成减三和弦第一转位（$\text{B}^\circ/\text{D}$）与 E 小调三和弦，刺破了原本柔和的协和音响，带来深沉古朴的哀祷色彩，最终稳定降落在第 18 小节的 G 大调上。
 
-谱例待补：贝多芬 Op. 132 第三乐章，mm. 14–18（第三句圣咏高音区 B♮ 悬浮声部）
+```lilypond title="贝多芬 第15弦乐四重奏 Op.132 第三乐章" location="Molto adagio，mm.14–18" id="beethoven-op132-iii-mm14-18"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 第三句圣咏；第一小提琴 m.17–m.18 的高音区 b''→c''' 为 B 还原音。
+
+global = {
+  \key c \major
+  \time 4/4
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Molto adagio" 4 = 54
+  d' 4 e' 4 ) e' 2 | % m.14
+  c'' 2 b' 2 | % m.15
+  c'' 2 a' 2 | % m.16
+  b' 2 c'' 2 | % m.17
+  <d' d''> 2 ( g'' 4 c'' 4 | % m.18
+}
+
+violinII = {
+  \clef "treble"
+  b 4 c' 4 ) c' 2 | % m.14
+  e' 2 e' 2 | % m.15
+  <g e'> 2 c' 2 | % m.16
+  f' 2 <c' e'> 2 | % m.17
+  <b d'> 2 r 2 | % m.18
+}
+
+viola = {
+  \clef "alto"
+  f 4 e 4 ) e 2 | % m.14
+  c 2 g 2 | % m.15
+  <e g> 2 a 2 | % m.16
+  f 2 <g g'> 2 | % m.17
+  <g g'> 2 r 2 | % m.18
+}
+
+cello = {
+  \clef "bass"
+  d 4 ) c 4 a, 2 | % m.14
+  a, 2 e 2 | % m.15
+  c 2 f 2 | % m.16
+  d 2 c 2 | % m.17
+  g, 2 r 2 | % m.18
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **第四句（mm. 20–24）：向主音的回溯**：
   旋律自高音区回落，形态为 $C\mid C\text{–}D\mid G\text{–}A\mid D\text{–}E\mid F$。第 21 小节第三拍，大提琴打下持续低音 $GG$，中提琴奏出 $F$，第二小提琴击出 $B\natural$，第一小提琴高唱 $d^2$。这一纯自然音属七和弦形态并未向 C 大调解决，而是在第 22–24 小节顺流而下，通过 $C\text{–}F\text{–}G\text{–}F$ 的平缓变动，平稳落回 F 大三和弦（m. 24）。
@@ -126,7 +280,86 @@ flowchart TD
 
 这一段落生动再现了病愈后肉体感官机能的复苏。与 A 段非世俗的宗教冥想相比，B 段充满了尘世生命的脉搏与肌肉力量。调性上，D 大调具有无可置疑的主—属功能极性，每一次三十二分音符的冲刺都指向确凿的强拍正格终止。
 
-谱例待补：贝多芬 Op. 132 第三乐章，mm. 31–36（D 大调“新力觉醒”的动力学对比）
+```lilypond title="贝多芬 第15弦乐四重奏 Op.132 第三乐章" location="Andante（D 大调），mm.31–36" id="beethoven-op132-iii-mm31-36"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% m.31 起转为 3/8、D 大调（两升）的 Andante；播放速度 8. = 60 为本库试听值（底本未标该段 MM）。
+
+global = {
+  \key d \major
+  \time 3/8
+}
+
+violinI = {
+  \clef "treble"
+  \tempo "Andante" 8. = 60
+  a'' 4. | % m.31
+  a'' 4. ~ | % m.32
+  a'' 4. ~ | % m.33
+  a'' 4. | % m.34
+  b'' 8 -. g 8 -. b'' 8 | % m.35
+  r 16 a'' 16 r 32 a'' 32 -. b'' 32 -. cs''' 32 -. d''' 32 -. e''' 32 -. fs''' 32 -. g''' 32 -. | % m.36
+}
+
+violinII = {
+  \clef "treble"
+  d'' 8 -. d' 8 -. fs'' 8 | % m.31
+  r 16 e'' 16 r 32 ( a' 32 d'' 32 cs'' 32 b' 32 a' 32 b' 32 cs'' 32 ) | % m.32
+  d'' 8 -. d' 8 -. d'' 8 | % m.33
+  r 16 cs'' 16 r 32 ( fs' 32 b' 32 a' 32 g' 32 fs' 32 g' 32 a' 32 ) | % m.34
+  d' 8 -. d'' 8 -. r 8 | % m.35
+  a' 8 -. a'' 8 -. r 8 | % m.36
+}
+
+viola = {
+  \clef "alto"
+  <fs a> 8 -. fs' 8 -. r 8 | % m.31
+  a 8 -. <e' a'> 8 -. r 8 | % m.32
+  fs 8 -. <d' fs'> 8 -. r 8 | % m.33
+  fs 8 -. <fs' cs''> 8 -. r 8 | % m.34
+  b 8 -. <d' b'> 8 -. r 8 | % m.35
+  d' 8 -. d'' 8 -. d 8 | % m.36
+}
+
+cello = {
+  \clef "bass"
+  d, 8 -. d 8 -. r 8 | % m.31
+  cs 8 cs' 8 -. r 8 | % m.32
+  b, 8 -. b 8 -. r 8 | % m.33
+  a, 8 -. a 8 -. r 8 | % m.34
+  g, 8 -. g 8 -. r 8 | % m.35
+  fs 8 -. fs' 8 -. b, 8 | % m.36
+}
+
+\score {
+  <<
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3.2 变奏渗透：A2 段的八分音符对位织体（mm. 84–114）
 当 F 利底亚圣咏在第 84 小节第二次出现时，贝多芬并未进行简单的动力学重复，而是对其织体进行了深度的对位重构：

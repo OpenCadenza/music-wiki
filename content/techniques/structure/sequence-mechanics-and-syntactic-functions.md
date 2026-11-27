@@ -63,7 +63,190 @@ title: 模进与句法
 ### 1. 贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章展开部（mm. 49–80）
 贝多芬在此展现了古典主义早期最为强悍的结构性模进组织范式。整个展开部的核心行动区（Central-Action Zone）完全由两级梯次的结构性模进驱动：
 
-谱例待补：贝多芬《F小调第1钢琴奏鸣曲》Op. 2 No. 1 第一乐章展开部 mm. 49–80
+```lilypond title="贝多芬 第1钢琴奏鸣曲 Op.2 No.1 第一乐章" location="Allegro，展开部 mm.49–80" id="beethoven-op2no1-i-mm49-80"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 展开部的模进链（mm.49–80）；底本 \*MM240 为四分音符值，本谱表为 2/2，故记 2 = 120。
+% 底本 m.48 后为反复小节线（`=:|!|:`）＋一个**未编号的弱起小节**（右手 e♭′ 四分音符，左手休止），
+% 其后 m.49 起编号连续，故本段起始 m.49 与刊本印刷号一致，不存在合并小节导致的偏移。
+
+global = {
+  \key f \minor
+  \time 2/2
+}
+
+right = {
+  \clef "treble"
+  \tempo "Allegro" 2 = 120
+  <<
+    \new Voice = "rhI" {
+      \voiceOne
+      af' 4 -. c'' 4 -. ef'' 4 -. af'' 4 -. | % m.49
+      ( c''' 4. \tuplet 3/2 { bf'' 16 af'' 16 g'' 16 } af'' 4 -. ) r 4 | % m.50
+      \grace { df''8 } ( df''' 4. \tuplet 3/2 { c''' 16 bf'' 16 a'' 16 } bf'' 4 -. ) r 4 | % m.51
+      bf' 4 -. df'' 4 -. g'' 4 -. bf'' 4 -. | % m.52
+      \grace { df''8 } ( df''' 4. \tuplet 3/2 { c''' 16 bf'' 16 a'' 16 } bf'' 4 -. ) r 4 | % m.53
+      \grace { df''8 } ( df''' 4. \tuplet 3/2 { c''' 16 bf'' 16 a'' 16 } bf'' 4 -. ) r 4 | % m.54
+      a'' 4 r 4 r 4 ( gf'' 4 | % m.55
+      f'' 4 ef'' 4 c'' 4 a' 4 ) | % m.56
+      ( gf' 4. f' 8 bf' 4 -. ) ( gf'' 4 | % m.57
+      f'' 4 ef'' 4 c'' 4 a' 4 ) | % m.58
+      ( gf' 4. f' 8 bf' 4 -. ) ( gf'' 4 | % m.59
+      f'' 4 ef'' 4 c'' 4 a' 4 ) | % m.60
+      r 8 ( a' 8 c'' 8 bf' 8 ) r 8 ( bf' 8 df'' 8 c'' 8 ) | % m.61
+      r 8 ( c'' 8 ef'' 8 df'' 8 ) r 8 ( b' 8 d'' 8 c'' 8 ) | % m.62
+      b' 4 r 4 r 4 ( af'' 4 | % m.63
+      g'' 4 f'' 4 d'' 4 b' 4 ) | % m.64
+      ( af' 4. g' 8 c'' 4 -. ) ( af'' 4 | % m.65
+      g'' 4 f'' 4 d'' 4 b' 4 ) | % m.66
+      ( af' 4. g' 8 c'' 4 -. ) f' 8 d' 8 | % m.67
+      f' 8 d' 8 f' 8 d' 8 f' 8 d' 8 f' 8 d' 8 | % m.68
+      r 4 ( b' 4 c'' 4 ) r 4 | % m.69
+      r 1 | % m.70
+      r 4 ( a' 4 bf' 4 ) r 4 | % m.71
+      r 1 | % m.72
+      r 2 g' 2 | % m.73
+      r 2 af' 2 | % m.74
+      r 2 f' 2 | % m.75
+      r 2 g' 2 | % m.76
+      r 2 e' 2 | % m.77
+      r 2 f' 2 | % m.78
+      r 2 f' 2 | % m.79
+      d' 8 f 8 <af d' f'> 8 f 8 <af d' f'> 8 f 8 <af d' f'> 8 f 8 | % m.80
+    }
+    \new Voice = "rhII" {
+      \voiceTwo
+      s1 | % m.49
+      s1 | % m.50
+      s1 | % m.51
+      s1 | % m.52
+      s1 | % m.53
+      s1 | % m.54
+      s1 | % m.55
+      s1 | % m.56
+      s1 | % m.57
+      s1 | % m.58
+      s1 | % m.59
+      s1 | % m.60
+      s1 | % m.61
+      s1 | % m.62
+      s1 | % m.63
+      s1 | % m.64
+      s1 | % m.65
+      s1 | % m.66
+      s1 | % m.67
+      s1 | % m.68
+      f' 8 d' 8 f' 8 d' 8 ef' 8 c' 8 ef' 8 c' 8 | % m.69
+      ef' 8 c' 8 ef' 8 c' 8 ef' 8 c' 8 ef' 8 c' 8 | % m.70
+      ef' 8 c' 8 ef' 8 c' 8 df' 8 bf 8 df' 8 bf 8 | % m.71
+      df' 8 bf 8 df' 8 bf 8 df' 8 bf 8 df' 8 bf 8 | % m.72
+      df' 8 bf 8 df' 8 bf 8 df' 8 bf 8 df' 8 bf 8 | % m.73
+      c' 8 af 8 ef' 8 af 8 ef' 8 af 8 ef' 8 af 8 | % m.74
+      df' 8 af 8 df' 8 af 8 df' 8 af 8 df' 8 af 8 | % m.75
+      df' 8 g 8 df' 8 g 8 df' 8 g 8 df' 8 g 8 | % m.76
+      c' 8 g 8 c' 8 g 8 c' 8 g 8 c' 8 g 8 | % m.77
+      af 8 f 8 c' 8 f 8 c' 8 f 8 c' 8 f 8 | % m.78
+      df' 8 f 8 df' 8 f 8 df' 8 f 8 df' 8 f 8 | % m.79
+      s1 | % m.80
+    }
+  >>
+}
+
+left = {
+  \clef "bass"
+  <<
+    \new Voice = "lhI" {
+      \voiceOne
+      r 1 | % m.49
+      \clef "bass" r 4 <af c' ef'> 4 <af c' ef'> 4 <af c' ef'> 4 | % m.50
+      r 4 <g bf df' ef'> 4 <g bf df' ef'> 4 <g bf df' ef'> 4 | % m.51
+      r 1 | % m.52
+      r 4 <g bf df' e'> 4 <g bf df' e'> 4 <g bf df' e'> 4 | % m.53
+      r 4 <gf bf df' e'> 4 <gf bf df' e'> 4 <gf bf df' e'> 4 | % m.54
+      f 8 f' 8 f 8 f' 8 f 8 f' 8 f 8 f' 8 | % m.55
+      f 8 f' 8 f 8 f' 8 f 8 f' 8 f 8 f' 8 | % m.56
+      ( ef' 2 df' 4 ) s 4 | % m.57
+      f 8 f' 8 f 8 f' 8 f 8 f' 8 f 8 f' 8 | % m.58
+      ( ef' 2 df' 4 ) s 4 | % m.59
+      f 8 f' 8 f 8 f' 8 ef' 8 f' 8 ef' 8 f' 8 | % m.60
+      df' 8 f' 8 df' 8 f' 8 c' 8 f' 8 c' 8 f' 8 | % m.61
+      bf 8 f' 8 bf 8 f' 8 af 8 fs' 8 af 8 fs' 8 | % m.62
+      g 8 g' 8 g 8 g' 8 g 8 g' 8 g 8 g' 8 | % m.63
+      g 8 g' 8 g 8 g' 8 g 8 g' 8 g 8 g' 8 | % m.64
+      ( f' 2 ef' 4 ) s 4 | % m.65
+      g 8 g' 8 g 8 g' 8 g 8 g' 8 g 8 g' 8 | % m.66
+      ( f' 2 ef' 4 ) ( af 4 | % m.67
+      g 4 f 4 d 4 b, 4 ) | % m.68
+      ( af, 4. g, 8 c 4 -. ) ( gf 4 | % m.69
+      f 4 ef 4 c 4 a, 4 ) | % m.70
+      ( gf, 4. f, 8 bf, 4 -. ) ( ff 4 | % m.71
+      ef 4 df 4 bf, 4 g, 4 ) | % m.72
+      ( ff, 4 ef, 2 ) ef 4 ~ | % m.73
+      ef 4 c 2 c, 4 ~ | % m.74
+      c, 4 df, 2 df 4 ~ | % m.75
+      df 4 bf, 2 bf,, 4 ~ | % m.76
+      bf,, 4 c, 2 c 4 ~ | % m.77
+      c 4 af, 2 af,, 4 | % m.78
+      r 4 ( bf,, 2 bf, 4 ) | % m.79
+      r 4 ( b,, 2 b, 4 ) | % m.80
+    }
+    \new Voice = "lhII" {
+      \voiceTwo
+      s1 | % m.49
+      s1 | % m.50
+      s1 | % m.51
+      s1 | % m.52
+      s1 | % m.53
+      s1 | % m.54
+      s1 | % m.55
+      s1 | % m.56
+      f 4 f 4 f 8 f' 8 f 8 f' 8 | % m.57
+      s1 | % m.58
+      f 4 f 4 f 8 f' 8 f 8 f' 8 | % m.59
+      s1 | % m.60
+      s1 | % m.61
+      s1 | % m.62
+      s1 | % m.63
+      s1 | % m.64
+      g 4 g 4 g 8 g' 8 g 8 g' 8 | % m.65
+      s1 | % m.66
+      g 4 g 4 g 4 s 4 | % m.67
+      s1 | % m.68
+      s1 | % m.69
+      s1 | % m.70
+      s1 | % m.71
+      s1 | % m.72
+      s1 | % m.73
+      s1 | % m.74
+      s1 | % m.75
+      s1 | % m.76
+      s1 | % m.77
+      s1 | % m.78
+      s1 | % m.79
+      s1 | % m.80
+    }
+  >>
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff = "RH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \right
+    }
+    \new Staff = "LH" {
+      \set Staff.midiInstrument = "acoustic grand"
+      \global
+      \left
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **第一阶段：大模型的跨调移位（mm. 49–54）**：
   - 第 49–52 小节：主部著名的“曼海姆火箭”动机在关系大调降 A 大调（bIII）上完整起动（4 小节完整模型）；
@@ -78,7 +261,69 @@ title: 模进与句法
 ### 2. 莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章展开部（mm. 29–42）
 与贝多芬复杂的动机裂变不同，莫扎特 K. 545 第一乐章展示了**模进直接接管并替代真正主题展开**的纯净范式：
 
-谱例待补：莫扎特《C大调第15钢琴奏鸣曲》K. 545 第一乐章展开部 mm. 29–42
+```lilypond title="莫扎特 第15钢琴奏鸣曲 K.545 第一乐章" location="Allegro，展开部 mm.29–42" id="mozart-k545-i-mm29-42"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.545 第一乐章展开部 mm.29-42。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表 mm.29-42 逐小节音高多重集完全一致（含左手十六分音符分解音型）。
+
+global = {
+  \key c \major
+  \time 4/4
+  \tempo "Allegro" 4 = 120
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  g'4 g''16 d''16 g''16 bf''16 d'''16 bf''16 g''16 bf''16 c'''16 a''16 fs''16 a''16 |
+  g''4 g'16 d'16 g'16 bf'16 d''16 bf'16 g'16 bf'16 c''16 a'16 fs'16 a'16 |
+  g'4 r4 r16 g''16 bf''16 a''16 g''16 f''16 e''16 d''16 |
+  cs''4 r4 r16 cs'''16 e'''16 d'''16 cs'''16 bf''16 a''16 g''16 |
+  f''4 d''16 a'16 d''16 f''16 a''16 f''16 d''16 f''16 g''16 e''16 cs''16 e''16 |
+  d''4 d'16 a16 d'16 f'16 a'16 f'16 d'16 f'16 g'16 e'16 cs'16 e'16 |
+  r16 d'16 e'16 f'16 g'16 a'16 b'16 cs''16 d''4 r4 |
+  r16 b'16 c''16 d''16 e''16 fs''16 gs''16 a''16 b''4 r4 |
+  r16 a''16 e'''16 d'''16 c'''16 b''16 a''16 g''16 f''4 r4 |
+  r16 g''16 d'''16 c'''16 b''16 a''16 g''16 f''16 e''4 r4 |
+  r16 f''16 c'''16 b''16 a''16 g''16 f''16 e''16 d''4 r4 |
+  r16 e''16 b''16 a''16 gs''16 f''16 e''16 d''16 c''4 r4 |
+  r16 bf'16 d''16 c''16 bf'16 a'16 g'16 f'16 e'16 f'16 g'16 a'16 bf'16 c''16 d''16 e''16 |
+  f''2 a''4 c'''4 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  \clef treble <g, g>4 r4 r4 <d' a' c''>4 |
+  \clef bass <g' bf'>4 r4 r4 <d a c'>4 |
+  r16 g,16 a,16 bf,16 c16 d16 e16 fs16 g4 r4 |
+  r16 a,16 b,16 cs16 d16 e16 fs16 gs16 a4 r4 |
+  \clef treble <d, d>4 r4 r4 <a e' g'>4 |
+  \clef bass <d' f'>4 r4 r4 <a, e g>4 |
+  <d f>4 r4 r16 d'16 f'16 e'16 d'16 c'16 b16 a16 |
+  gs4 r4 r16 gs16 b16 a16 gs16 f16 e16 d16 |
+  \clef treble c4 r4 r16 d'16 a'16 g'16 f'16 e'16 d'16 c'16 |
+  b4 r4 r16 c'16 g'16 f'16 e'16 d'16 c'16 b16 |
+  \clef bass a4 r4 r16 b16 f'16 e'16 d'16 c'16 b16 a16 |
+  gs4 r4 r16 a16 c'16 b16 a16 g16 f16 e16 |
+  \clef treble d2 <c g bf>2 |
+  f'8 c''8 a'8 c''8 f'8 c''8 a'8 c''8 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 - **模型建立与移位（mm. 29–36）**：
   - 第 29–32 小节：双小节线后，以呈示部结束处的琶音分解和弦建立 4 小节模型（Model），调性确立在 g 小调（v 级）；

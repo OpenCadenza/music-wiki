@@ -1,6 +1,6 @@
 # 知识生产：预备轮完成，单仓库交接
 
-> **2026-11-25 当前状态**：第一、二、三轮共 60 篇已完成，第四轮整合 P0/P1=0。接手新会话请先读[三轮完成后交接](交接/2026-11-25-三轮完成后交接.md)与[音乐学者自由度与内容维护](音乐学者自由度与内容维护.md)；本页其余段落是较早的预备轮/首批说明，冲突时以新文档为准。
+> **2026-11-27 当前状态（第六轮后）**：第一至三轮 60 篇；第四轮 P0/P1=0、P2 已清零；第六轮谱例缺口清零（全库 **154 块**）、5 篇正文按底本做事实性修订，门禁全绿。学者轮因 Gemini 路由不可用尚未开。接手新会话请先读[第六轮完成后交接](交接/2026-11-27-第六轮完成后交接.md)与[音乐学者自由度与内容维护](音乐学者自由度与内容维护.md)；本页其余段落是较早的预备轮/首批说明，冲突时以新文档为准。
 
 2026-11-07已迁入 `音乐学者子代理方案-开发分支`，local不再是独立Git仓库。[先校验解压资料包再接手](交接/README.md)。当前为预备轮后的迁移准备。资料整理已完成；本轮只完善local/docs和相关准备，不启动音乐学者、资料收集或编辑复读。
 
@@ -36,6 +36,21 @@
 第一批约20篇文章，选题自由。每篇成稿后归档对应研究记录，由主控在仓库根目录串行提交content与local全部非忽略改动；整批结束后再由gpt-6.1-terra / medium集中编辑复读。批后复读不是逐篇归档、提交的前置条件。
 
 单仓库正式轮允许维护content/与local/研究区；其余站点工程文件不在写作改动范围，不修改根NOTICE、README、脚本或配置；来源与许可先记在local。local资料、研究记录与版本照常维护，重资料继续忽略。当前文档补充不改content，不启动首批写作。
+
+## 渠道可用性探测的记录方式（2026-11-27 起）
+
+子代理模型（Gemini / magpie 等）能不能用，**只探测并记录，不要为一次探测单独提交 commit**；记录写在本节，攒到下一轮正式提交时一并带上。
+
+- 探测顺序：先 `list_subagent_models(provider="magpie")` 看授权列表；列表里有对应模型才起最小探针（reasoning low、禁止调用工具、只回一行），每个渠道只试一次，失败不重试、不换模型补试。
+- 记录格式：`- YYYY-MM-DD HH:mm gemini-4-hydrogen=可用/失败/未在授权列表，gemini-3.8-flash=…（错误摘要一句话）`
+- 已有记录：
+  - 2026-11-25：`group/gemini-4-hydrogen` 短探针（low 与 high）均返回 `HYDROGEN-OK`；但同一批 4 次长任务（学者/编辑）中途失败。
+  - 2026-11-26 起：`magpie` 的授权模型列表不再含 `group/gemini-*`（只剩 `auto/*` 与 `opencode-go/*`），探针直接报 `provider "magpie" has no configured model "group/gemini-4-hydrogen"`。
+  - 2026-11-27 03:00：两者均「未在授权列表」，按规则未起探针、未消耗调用。
+  - 2026-11-27 07:10（第五轮后新会话）：`magpie` 仍只有 `auto/*` 与 `opencode-go/*`；改查 `magpie-anthropic`，授权列表含 `group/gemini-4-hydrogen`、`group/gemini-3.8-flash`，对 hydrogen 起最小探针（禁工具、单行回复）失败：`failed to construct executor: plan model not specified; you must specify a valid model`。按规则未重试、未换模型补试。
+  - 2026-11-27 07:19（第六轮开工）：同会话改用 `magpie-anthropic / group/gemini-4-hydrogen`（**显式 provider + model + reasoning_effort=high**）起短探针，返回 `HYDROGEN-OK`；07:33 再起工具型探针（读 `score-board.md` 统计缺口行、单条回报）也正常返回（未补 16 / 未完成 2）。结论：该路由当前可用，早前 `plan model not specified` 疑为调用参数缺档；但长任务失败史仍在，按"小步落盘 + 阶段回报"使用，见 `实施记录/2026-11-27-第六轮/实施计划.md`。
+  - 2026-11-27 07:45–08:20（第六轮学者轮）：3 名 hydrogen 学者（high）在开工阶段全部中断、无收尾消息（未落盘、未建卡）；随后对 scholar-a/b 各发一次只读微切片指令，仍失败；08:15 起新探针 `group/gemini-4-hydrogen` 与新探针 `group/gemini-3.8-flash`（同 provider `magpie-anthropic`，high）**也立即失败、无收尾消息**。判断为该 provider 上的 Gemini 路由本轮整体不可用（与 07:19 可用相隔不到 1 小时，属间歇性）；同一时段 `magpie / auto/deepseek-v4.1-flash` 的 3 名助手正常干活。学者轮据此挂起，等用户定夺是否降级。
+
 
 ## 历史
 

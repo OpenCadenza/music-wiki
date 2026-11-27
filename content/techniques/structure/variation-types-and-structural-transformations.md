@@ -34,7 +34,59 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
   $$\text{I} \to \text{V}^6_5 \to \text{I} \to \text{IV} \to \text{I}^6_4 \to \text{V}^7 \to \text{I} \quad (\text{mm. 5–8, 完全正格终止})$$
 - **对比中段与扩充再现（mm. 9–18）**：第 9–12 小节展开属音上的驻留（Standing on the dominant），右手以 $E4 \to D5 \to B4 \to G\sharp 4$ 展开轻微的小调阴影模进；第 13–18 小节在主调上再现原型，并在第 17–18 小节加入 2 小节扩充终止，彻底确立 A 大调调性引力。
 
-莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 Andante grazioso，mm. 1–8。
+```lilypond title="莫扎特 第11钢琴奏鸣曲 K.331 第一乐章" location="Thema: Andante grazioso，mm.1–8" id="mozart-k331-i-theme-mm1-8"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 A 大调第 11 钢琴奏鸣曲 K.331 第一乐章主题 mm.1-8（6/8，A 大调）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% 并用 DCML 莫扎特奏鸣曲音符表按小节做音高多重集回比对（mm.1-8 逐小节一致，
+% m.8 底本含一处连线替代重复音，见 provenance 记录）。
+% 试听速度 1/8=144 采自底本速度标记。
+
+global = {
+  \key a \major
+  \time 6/8
+  \tempo "Thema: Andante grazioso" 8 = 144
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  cs''8. d''16 cs''8 e''4 e''8 |
+  b'8. cs''16 b'8 d''4 d''8 |
+  a'4 a'8 b'4 b'8 |
+  << { cs''4 e''16 d''16 cs''4 b'8 } \\ { e'4 b'8 a'4 gs'8 } >> |
+  cs''8. d''16 cs''8 e''4 e''8 |
+  b'8. cs''16 b'8 d''4 d''8 |
+  a'4 b'8 cs''4 <fs' b' d''>8 |
+  <e' a' cs''>4 <d' e' gs' b'>8 <cs' e' a'>4 r8 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  << { e'4 e'8 e'4 e'8 } \\ { a8. b16 a8 cs'4 cs'8 } >> |
+  << { e'4 e'8 e'4 e'8 } \\ { gs8. a16 gs8 b4 b8 } >> |
+  << { e'4 e'8 e'4 e'8 } \\ { fs4 fs8 gs4 gs8 } >> |
+  a4 d8 e4. |
+  << { e'4 e'8 e'4 e'8 } \\ { a8. b16 a8 cs'4 cs'8 } >> |
+  << { e'4 e'8 e'4 e'8 } \\ { gs8. a16 gs8 b4 b8 } >> |
+  << { e'4 e'8 e'4 s8 } \\ { fs4 gs8 a4 d8 } >> |
+  e4 e,8 a,4 r8 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 2. 第一变奏中的半音化浮雕与十六分音符音流（mm. 19–36 / 变奏 mm. 1–18）
 进入第一变奏，莫扎特展现了装饰性变奏的最高技艺：
@@ -43,7 +95,58 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - **声部织体的梯级加密（mm. 23–26）**：至前乐段后半程，十六分音符音流在右手展开连续的下行级进跑动，第 24 小节在完全正格终止前达到高密度的音型华彩；
 - **双手音型对换与低音忠实度**：在随后的反复段中，十六分音符跑动迅速转移至左手内声部，而右手恢复清晰的旋律线条；左手低音与内声部和弦（$[A, E] \to [C, E] \to [G, E] \dots$）维持着与主题完全一致的击弦节拍与换和弦频率，确保听众始终能够在清晰的和声导航中辨识出母体形态。
 
-莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 第一变奏，mm. 19–26（即变奏 mm. 1–8）。
+```lilypond title="莫扎特 第11钢琴奏鸣曲 K.331 第一乐章" location="Variation I，mm.19–26" id="mozart-k331-i-var1-mm19-26"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.331 第一乐章变奏一 mm.19-26（6/8，A 大调）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% DCML 音符表按小节回比对 mm.19-26：6/8 小节全部一致，另两小节仅有装饰音写法差异。
+% 底本 ABC 的 %%setbarnb 为 19，与刊本印刷号一致。
+
+global = {
+  \key a \major
+  \time 6/8
+  \tempo "Variation I" 8 = 144
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  bs'16 cs''16 r16 cs''16 bs'16 cs''16 ds''16 e''16 r16 e''16 fs''16 e''16 |
+  e''16 b'16 r16 b'16 as'16 b'16 cs''16 d''16 r16 d''16 e''16 d''16 |
+  d''16 a'16 r16 a'16 gs'16 a'16 as'16 b'16 r16 b'16 as'16 b'16 |
+  bs'16 cs''16 bs'16 cs''16 e''16 d''16 cs''16 b'16 a'16 gs'16 fs'16 e'16 |
+  <e' a' cs''>4 <b' d''>8 <bs' ds''>8 <cs'' e''>8 r16 <a' cs''>16 |
+  << { <e' gs' b'>8\staccato <e' gs' b'>8\staccato <e' a' cs''>8\staccato <as' cs''>8 <b' d''>8 r16 <gs' b'>16 } \\ { s4. e'4 s8 } >> |
+  a'8\staccato a'8\staccato b'16\trill a'32 b'32 cs''8\staccato cs''8\staccato <fs' b' d''>8 |
+  <e' a' cs''>8 <e' a' cs''>8 <d' e' gs' b'>8 <cs' e' a'>8 r8 r8 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  r8 <a e'>8 r8 r8 <cs' e'>8 r8 |
+  r8 <gs e'>8 r8 r8 <b e'>8 r8 |
+  r8 <fs e'>8 r8 r8 <gs e'>8 r8 |
+  <a e'>4 <d fs>8 <e gs>4 r8 |
+  a,16 a16 a16 a16 a16 a16 a,16 a16 a16 a16 a16 a16 |
+  e,16 e16 e16 e16 e16 e16 e,16 e16 e16 e16 e16 e16 |
+  fs,16 fs16 fs16 fs16 gs,16 gs16 a,16 a16 a16 a16 d,16 d16 |
+  e,16 e16 e16 e16 e,16 e16 a,,8 a,8 r8 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3. 古典装饰套曲的宏观色彩阻尼（第三变奏 Minore 的对比功能，mm. 55–72）
 在古典装饰性变奏套曲中，单纯的音型加密极易引发听觉疲劳。为此，莫扎特引入了古典主义的标准阻尼设计——**同主音小调变奏**（*Minore*，mm. 55–72）：
@@ -52,7 +155,78 @@ description: 剖析古典至晚期浪漫主义变奏曲式的三大核心结构�
 - 低音线条以八度击弦强化低频重量，弱化了西西里舞曲原本轻盈的摇曳感，构建出严峻的内省空间；
 - 这种局部调式色彩的暂时暗转，不仅避免了装饰性音型的机械平铺，更为主调大调（*Maggiore*）在第四、五变奏中的明亮回归蓄积了强大的结构反弹力。
 
-莫扎特《A大调钢琴奏鸣曲》K. 331 第一乐章 第三变奏 Minore，mm. 55–72。
+```lilypond title="莫扎特 第11钢琴奏鸣曲 K.331 第一乐章" location="Variation III（Minore），mm.55–72" id="mozart-k331-i-var3-mm55-72"
+\version "2.26.0"
+\language "english"
+
+% 莫扎特 K.331 第一乐章变奏三（小调变奏）mm.55-72（6/8，A 小调记谱无调号）。
+% 据 CCARH kern（经 hum2abc 转出的 ABC）核对后自编码摘录，学术用途；
+% 该分谱（sonata11-1d.krn）缺少 %%setbarnb，按变奏二止于 m.54 推算本段自刊本 m.55 起；
+% DCML 音符表 mn 55-72 回比对 16/18 小节音高多重集完全一致。
+
+global = {
+  \key c \major
+  \time 6/8
+  \tempo "Variation III" 8 = 144
+}
+
+upper = {
+  \global
+  \clef treble
+  \set Staff.midiInstrument = "acoustic grand"
+  c''16 b'16 a'16 b'16 c''16 d''16 e''16 ds''16 f''16 e''16 d''16 c''16 |
+  b'16 a'16 gs'16 a'16 b'16 c''16 d''16 cs''16 e''16 d''16 c''16 b'16 |
+  a'16 e''16 ds''16 e''16 c''16 a'16 gs'16 e''16 f''16 e''16 d''16 b'16 |
+  b'16 a'16 gs'16 a'16 b'16 c''16 <a' c''>4 <gs' b'>8 |
+  <c'' c'''>16 <b' b''>16 <a' a''>16 <b' b''>16 <c'' c'''>16 <d'' d'''>16 <e'' e'''>16 <ds'' ds'''>16 <f'' f'''>16 <e'' e'''>16 <d'' d'''>16 <c'' c'''>16 |
+  <b' b''>16 <a' a''>16 <gs' gs''>16 <a' a''>16 <b' b''>16 <c'' c'''>16 <d'' d'''>16 <cs'' cs'''>16 <e'' e'''>16 <d'' d'''>16 <c'' c'''>16 <b' b''>16 |
+  <a' a''>16 <gs' gs''>16 <a' a''>16 <c'' c'''>16 <b' b''>16 <d'' d'''>16 <c'' c'''>16 <b' b''>16 <c'' c'''>16 <e'' e'''>16 <d'' d'''>16 <f'' f'''>16 |
+  <e'' e'''>16 <ds'' ds'''>16 <e'' e'''>16 <e' e''>16 <fs' fs''>16 <gs' gs''>16 <a' a''>4 r8 |
+  a'16 gs'16 a'16 a''16 gs''16 g''16 g''16 f''16 e''16 f''16 e''16 f''16 |
+  a''16 gs''16 a''16 gs''16 a''16 f''16 f''16 e''16 ds''16 e''16 ds''16 e''16 |
+  e''16 d''16 c''16 b'16 a'16 e''16 f''16 d''16 b'16 a'16 gs'16 b'16 |
+  << { s4. c''4 b'8 } \\ { b'16 a'16 c''16 b'16 d''16 c''16 a'4 gs'8 } >> |
+  c''16 b'16 a'16 b'16 c''16 d''16 e''16 ds''16 f''16 e''16 d''16 c''16 |
+  b'16 a'16 gs'16 a'16 b'16 c''16 d''16 cs''16 e''16 d''16 c''16 b'16 |
+  a'16 gs'16 a'16 c''16 b'16 d''16 c''16 b'16 c''16 e''16 d''16 f''16 |
+  e''16 ds''16 e''16 e'16 fs'16 gs'16 a'16 gs'16 a'16 e'16 c'16 e'16 |
+  <a' a''>16 <gs' gs''>16 <a' a''>16 <c'' c'''>16 <b' b''>16 <d'' d'''>16 <c'' c'''>16 <b' b''>16 <c'' c'''>16 <e'' e'''>16 <d'' e'''>16 <f'' f'''>16 |
+  <e'' e'''>16 <ds'' ds'''>16 <e'' e'''>16 <e' e''>16 <fs' fs''>16 <gs' gs''>16 <a' a''>4 r8 |
+}
+
+lower = {
+  \global
+  \clef bass
+  \set Staff.midiInstrument = "acoustic grand"
+  a16 e'16 c'16 e'16 a16 e'16 a16 e'16 c'16 e'16 a16 e'16 |
+  e16 e'16 b16 e'16 e16 e'16 e16 e'16 b16 e'16 e16 e'16 |
+  a16 e'16 c'16 e'16 a16 e'16 b16 e'16 d'16 e'16 b16 e'16 |
+  c'16 e'16 b16 e'16 a16 e'16 e16 e'16 ds'16 e'16 e16 e'16 |
+  a16 e'16 c'16 e'16 a16 e'16 a16 e'16 c'16 e'16 a16 e'16 |
+  e16 e'16 b16 e'16 e16 e'16 e16 e'16 b16 e'16 e16 e'16 |
+  a16 e'16 c'16 e'16 gs16 e'16 a16 e'16 c'16 e'16 f16 d'16 |
+  e16 c'16 a16 c'16 e16 b16 a,16\staccato c16\staccato e16\staccato a16\staccato a,8 |
+  << { c'4 cs'8 d'4. } \\ { a4. a4. } >> |
+  << { f'16 e'16 f'16 e'16 f'16 d'16 d'16 c'16 b16 c'16 b16 c'16 } \\ { a4. a4. } >> |
+  << { c'16 d'16 e'16 d'16 c'8 b16 c'16 d'16 e'16 f'8 } \\ { a4. gs16 a16 b16 c'16 d'8 } >> |
+  << { e'8 e'8 e'8 s4. } \\ { c'8 gs8 a8 ds4 e8 } >> |
+  a16 e'16 c'16 e'16 a16 e'16 a16 e'16 c'16 e'16 a16 e'16 |
+  e16 e'16 b16 e'16 e16 e'16 e16 e'16 b16 e'16 e16 e'16 |
+  a16 e'16 c'16 e'16 gs16 e'16 a16 e'16 c'16 e'16 f16 d'16 |
+  e16 c'16 a16 c'16 e16 b16 <a, a>4 r8 |
+  a,16 e16 c16 e16 gs,16 e16 a,16 e16 c16 e16 f,16 d16 |
+  e,16 c16 a,16 c16 e,16 b,16 a,,16\staccato c,16\staccato e,16\staccato a,16\staccato a,,8 |
+}
+
+\score {
+  \new PianoStaff <<
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \upper }
+    \new Staff { \set Staff.midiInstrument = "acoustic grand" \lower }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 

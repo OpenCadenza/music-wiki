@@ -15,5 +15,5 @@
 
 | 谱例 id | 作品 | 定位 | 底本 | 许可 |
 | --- | --- | --- | --- | --- |
-| 占位（未出谱） | 莫扎特《F大调第12钢琴奏鸣曲》K. 332 第一乐章 | Allegro，mm. 41–56 | 待补（本篇未收录内联图片谱例） | 未确认 |
-| 占位（未出谱） | 莫扎特《D大调第6钢琴奏鸣曲》K. 284 第二乐章 | Rondeau en polonaise，mm. 1–16 | 待补（本篇未收录内联图片谱例） | 未确认 |
+| `mozart-k332-i-mm41-56` | 莫扎特《F大调第12钢琴奏鸣曲》K. 332 第一乐章 | Allegro，mm. 41–56（3/4） | CCARH Humdrum Kern（`sonata12-1.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0052-…mvmt. 1.abc`）；排版为本项目自编码 LilyPond 摘录；回比对 DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K332-1.notes.tsv`（MS3 转录）：11/16 小节音高多重集完全一致，其余 5 小节差异均为底本倚音/装饰音（谱例不展开装饰音）与一处连线写法 | 据 CCARH 转写，学术用途（非 CC0） |
+| `mozart-k284-ii-mm1-16` | 莫扎特《D大调第6钢琴奏鸣曲》K. 284 第二乐章 | Rondeau en polonaise: Andante，mm. 1–16（3/4，A 大调） | CCARH Humdrum Kern（`sonata06-2.krn` → hum2abc 转出的 ABC，`local/resources/scores/source-packages/humdrum/mozart-sonatas/0017-…mvmt. 2.abc`）；排版为本项目自编码 LilyPond 摘录；回比对 DCMLab《莫扎特钢琴奏鸣曲》语料 `notes/K284-2.notes.tsv`（MS3 转录）：12/16 小节音高多重集完全一致，其余 4 小节差异在三层叠置（&）与连线写法，音高集合相同 | 据 CCARH 转写，学术用途（非 CC0） |

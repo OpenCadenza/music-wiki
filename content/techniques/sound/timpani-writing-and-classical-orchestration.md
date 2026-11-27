@@ -82,7 +82,7 @@ flowchart TD
 ### 2.4 贝多芬第一交响曲：弱奏附点与室内乐化
 贝多芬在《C 大调第一交响曲》Op. 21 中进一步打破了定音鼓仅用于全奏强音的陈腐框架。在第二乐章（*Andante cantabile con moto*，F 大调，3/8 拍）的副部结束句（mm. 53–64）中，定音鼓调在 C 与 G（小鼓为 C，大鼓为 G）：
 
-谱例待补：贝多芬《第一交响曲》Op. 21 第二乐章，mm. 53–64（定音鼓 in C. G. 在弱奏中以附点八分音符结合十六分音符敲击军乐仪仗节奏，与圆号和木管组形成室内乐式对答）
+本段（mm. 53–64）见[《管乐交响化的织体机制》](../../styles/woodwind-symphonic-emancipation.md#score-beethoven-op21-ii-mm53-64)：定音鼓 in C. G. 以附点十六分音符结合三十二分音符敲击军乐仪仗节奏，与圆号和木管组形成室内乐式对答。
 
 在此处，定音鼓脱离了粗暴的轰鸣，在 $p$ 与 $pp$ 的微弱力度中以纯净的附点节奏穿透弦乐背景。正如 Eastman 配器分析所指出，在抒情慢乐章中将定音鼓的军乐节奏转化为室内乐式的动机对话，标志着打击乐器开始获得独立的交响句法生命。
 
@@ -105,7 +105,7 @@ flowchart TD
 - **声学静默与爆发**：在降 A 大调的主题变奏与流动旋律中，因 C 音与 G 音无法为降 A 大调主和弦提供低音支撑（G 音构成尖锐大七度对冲），定音鼓在前 28 小节完全保持休止（28 小节整小节休止）；
 - **C 大调副部轰鸣**：直至第 29 小节，音乐突然以莫大的英雄气概转入远关系上中音调 C 大调（同时是整部交响曲的主调），定音鼓瞬间在 $ff$ 爆发出震耳欲聋的长滚奏与八分音符重击（mm. 29–30：`c4.\ff^\trill g,8\staccato[ g,\staccato g,\staccato]`）。在随后的副题变奏中（mm. 31–38、79–86、147–156），定音鼓以密集的附点三十二分音符（`c16. c32 c8[ c c]`）成为撕裂降 A 大调阴翳、注入强光的动力引擎。
 
-谱例待补：贝多芬《第五交响曲》Op. 67 第二乐章，mm. 29–38（定音鼓 in C. G. 在降 A 大调乐章中突入 C 大调副主题，以持续震音与附点三十二分音符爆发全奏轰鸣）
+本段见[《自然圆号写作与泛音序列》](natural-horn-writing-and-harmonic-series.md#score-beethoven-op67-ii-mm25-38)（同谱例含定音鼓 in C. G. 的进入）。
 
 ### 3.3 贝多芬 Op. 67 第三至第四乐章过渡：弱奏长脉搏与声学悬疑
 西方音乐史上最伟大的定音鼓独奏段落，出现在《第五交响曲》第三乐章（谐谑曲）向第四乐章（终曲）的无缝连接部（mm. 324–373）：
@@ -113,7 +113,263 @@ flowchart TD
 - **心跳脉搏（Pulsing Pedal）**：从第 324 小节起，定音鼓独奏以每小节一击的四分音符（音高为小字组 $C_3$），在 $pp$ 力度下敲击单音踏板长达 50 个小节；
 - **声能蓄积与爆发**：这一持续敲击剥离了定音鼓的一切外在打击属性，演变为深渊中生命体的微弱心跳。从第 368 小节起，小提琴音型以半音阶阶梯式向上攀升，定音鼓随之启动惊心动魄的渐强（Crescendo）；在第 374 小节，定音鼓的滚奏与小提琴的冲刺在无休止过渡（*attacca*）中瞬间撞开第四乐章的大门，引爆 C 大调胜仗全奏（三支长号、短笛与低音大管首次加入管弦乐）。定音鼓在此完全担纲了曲式结构的“产婆”。
 
-谱例待补：贝多芬《第五交响曲》Op. 67 第三乐章向第四乐章过渡，mm. 324–373（定音鼓以单音 C 在 pp 弱奏中维持 50 小节心跳长脉搏，随后通过渐强直接引爆第四乐章 C 大调胜仗全奏）
+```lilypond title="贝多芬 第五交响曲 Op.67 第三乐章→第四乐章" location="Allegro，mm.324–373（实音记谱；定音鼓单音 C 的 pp 心跳长脉搏直接引爆第四乐章）" id="beethoven-op67-iii-iv-mm324-373"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 Timpani in C, G 自 m.325 起以单音 C 连击贯穿至 m.374（attacca 入第四乐章）。
+% 底本 \*MM96（四分音符）。本谱例为实音记谱。
+
+global = {
+  \key c \minor
+  \time 3/4
+}
+
+timpani = {
+  \clef "bass"
+  \tempo "Allegro" 4 = 96
+  r2. | % m.324
+  c4 r4 r4 | % m.325
+  c4 c4 c4 | % m.326
+  c4 r4 r4 | % m.327
+  c4 c4 c4 | % m.328
+  c4 r4 r4 | % m.329
+  c4 r4 r4 | % m.330
+  c4 r4 r4 | % m.331
+  c4 r4 r4 | % m.332
+  c4 r4 c4 | % m.333
+  c4 r4 c4 | % m.334
+  c4 r4 c4 | % m.335
+  c4 r4 c4 | % m.336
+  c4 c4 c4 | % m.337
+  c4 c4 c4 | % m.338
+  c4 c4 c4 | % m.339
+  c4 c4 c4 | % m.340
+  c4 c4 c4 | % m.341
+  c4 c4 c4 | % m.342
+  c4 c4 c4 | % m.343
+  c4 c4 c4 | % m.344
+  c4 c4 c4 | % m.345
+  c4 c4 c4 | % m.346
+  c4 c4 c4 | % m.347
+  c4 c4 c4 | % m.348
+  c4 c4 c4 | % m.349
+  c4 c4 c4 | % m.350
+  c4 c4 c4 | % m.351
+  c4 c4 c4 | % m.352
+  c4 c4 c4 | % m.353
+  c4 c4 c4 | % m.354
+  c4 c4 c4 | % m.355
+  c4 c4 c4 | % m.356
+  c4 c4 c4 | % m.357
+  c4 c4 c4 | % m.358
+  c4 c4 c4 | % m.359
+  c4 c4 c4 | % m.360
+  c4 c4 c4 | % m.361
+  c4 c4 c4 | % m.362
+  c4 c4 c4 | % m.363
+  c4 c4 c4 | % m.364
+  c4 c4 c4 | % m.365
+  c4 c4 c4 | % m.366
+  c8 c8 c8 c8 c8 c8 | % m.367
+  c8 c8 c8 c8 c8 c8 | % m.368
+  c8 c8 c8 c8 c8 c8 | % m.369
+  c8 c8 c8 c8 c8 c8 | % m.370
+  c8 c8 c8 c8 c8 c8 | % m.371
+  c8 c8 c8 c8 c8 c8 | % m.372
+  c8 c8 c8 c8 c8 c8 | % m.373
+}
+
+violinI = {
+  \clef "treble"
+  g'4 r4 r4 | % m.324
+  c'2.~ | % m.325
+  c'2.~ | % m.326
+  c'2.~ | % m.327
+  c'2.~ | % m.328
+  c'2.~ | % m.329
+  c'2.~ | % m.330
+  c'2.~ | % m.331
+  c'2.~ | % m.332
+  c'2.~ | % m.333
+  c'2.~ | % m.334
+  c'2.~ | % m.335
+  c'2.~ | % m.336
+  c'2.~ | % m.337
+  c'2.~ | % m.338
+  c'2. | % m.339
+  c'4 ef'4 af'4 | % m.340
+  c''2 ef''4 | % m.341
+  d''2 fs'4 | % m.342
+  r4 r4 ef''4 | % m.343
+  d''2 g'4 | % m.344
+  r4 r4 ef''4 | % m.345
+  d''2 a'4 | % m.346
+  r4 r4 ef''4 | % m.347
+  d''2 g'4 | % m.348
+  r4 r4 ef''4 | % m.349
+  d''2 fs'4 | % m.350
+  r4 r4 ef''4 | % m.351
+  d''2 g'4 | % m.352
+  ef''2 d''4 | % m.353
+  g'2 ef''4 | % m.354
+  d''2 g'4 | % m.355
+  e''2 d''4 | % m.356
+  g'2 f''4 | % m.357
+  e''2 a'4 | % m.358
+  g''2 f''4 | % m.359
+  a'2 a''4 | % m.360
+  g''2 b'4 | % m.361
+  b''2 a''4 | % m.362
+  c''2 c'''4 | % m.363
+  b''2 d''4 | % m.364
+  d'''2 c'''4 | % m.365
+  e''2 e'''4 | % m.366
+  d'''2 f''4 | % m.367
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.368
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.369
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.370
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.371
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.372
+  f'''8 f'''8 f'''8 f'''8 f'''8 f'''8 | % m.373
+}
+
+viola = {
+  \clef "alto"
+  b4 r4 r4 | % m.324
+  c2.~ | % m.325
+  c2.~ | % m.326
+  c2.~ | % m.327
+  c2.~ | % m.328
+  c2.~ | % m.329
+  c2.~ | % m.330
+  c2.~ | % m.331
+  c2.~ | % m.332
+  c2.~ | % m.333
+  c2.~ | % m.334
+  c2.~ | % m.335
+  c2.~ | % m.336
+  c2.~ | % m.337
+  c2.~ | % m.338
+  c2.~ | % m.339
+  c2.~ | % m.340
+  c2.~ | % m.341
+  c2.~ | % m.342
+  c2.~ | % m.343
+  c2.~ | % m.344
+  c2.~ | % m.345
+  c2.~ | % m.346
+  c2.~ | % m.347
+  c2.~ | % m.348
+  c2.~ | % m.349
+  c2.~ | % m.350
+  c2.~ | % m.351
+  c2.~ | % m.352
+  c2.~ | % m.353
+  c2.~ | % m.354
+  c2.~ | % m.355
+  c2.~ | % m.356
+  c2.~ | % m.357
+  c2.~ | % m.358
+  c2.~ | % m.359
+  c2.~ | % m.360
+  c2.~ | % m.361
+  c2.~ | % m.362
+  c2.~ | % m.363
+  c2.~ | % m.364
+  c2.~ | % m.365
+  c2.~ | % m.366
+  c2. | % m.367
+  c'8 c'8 c'8 c'8 c'8 c'8 | % m.368
+  c'8 c'8 c'8 c'8 c'8 c'8 | % m.369
+  c'8 c'8 c'8 c'8 c'8 c'8 | % m.370
+  d'8 d'8 d'8 d'8 d'8 d'8 | % m.371
+  d'8 d'8 d'8 d'8 d'8 d'8 | % m.372
+  d'8 d'8 d'8 d'8 d'8 d'8 | % m.373
+}
+
+cello = {
+  \clef "bass"
+  g,4 r4 r4 | % m.324
+  af,2.~ | % m.325
+  af,2.~ | % m.326
+  af,2.~ | % m.327
+  af,2.~ | % m.328
+  af,2.~ | % m.329
+  af,2.~ | % m.330
+  af,2.~ | % m.331
+  af,2.~ | % m.332
+  af,2.~ | % m.333
+  af,2.~ | % m.334
+  af,2.~ | % m.335
+  af,2.~ | % m.336
+  af,2.~ | % m.337
+  af,2.~ | % m.338
+  af,2.~ | % m.339
+  af,4 af,4 af,4 | % m.340
+  af,4 af,4 af,4 | % m.341
+  af,4 r4 r4 | % m.342
+  r4 g,4 g,4 | % m.343
+  g,4 r4 r4 | % m.344
+  r4 fs,4 fs,4 | % m.345
+  fs,4 r4 r4 | % m.346
+  r4 g,4 g,4 | % m.347
+  g,4 r4 r4 | % m.348
+  r4 af,4 af,4 | % m.349
+  af,4 r4 r4 | % m.350
+  r4 g,4 g,4 | % m.351
+  g,4 g,4 g,4 | % m.352
+  g,4 g,4 g,4 | % m.353
+  g,4 g,4 g,4 | % m.354
+  g,4 g,4 g,4 | % m.355
+  g,4 g,4 g,4 | % m.356
+  g,4 g,4 g,4 | % m.357
+  g,4 g,4 g,4 | % m.358
+  g,4 g,4 g,4 | % m.359
+  g,4 g,4 g,4 | % m.360
+  g,4 g,4 g,4 | % m.361
+  g,4 g,4 g,4 | % m.362
+  g,4 g,4 g,4 | % m.363
+  g,4 g,4 g,4 | % m.364
+  g,4 g,4 g,4 | % m.365
+  g,4 g,4 g,4 | % m.366
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.367
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.368
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.369
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.370
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.371
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.372
+  g,8 g,8 g,8 g,8 g,8 g,8 | % m.373
+}
+
+\score {
+  <<
+    \new Staff = "Timp" {
+      \set Staff.midiInstrument = "timpani"
+      \global
+      \timpani
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ### 3.4 贝多芬 Op. 92 第二乐章：长达 74 小节的静默与动力爆发
 在《第七交响曲》Op. 92 第二乐章（*Allegretto*，A 小调，2/4 拍）中，贝多芬为定音鼓指定了 **Timpani in A. E.**（分谱实音为大字组 $A_2$ 与小字组 $E_3$，低音谱表第一间与第三间）：
@@ -127,7 +383,237 @@ flowchart TD
 2. **《第九交响曲》Op. 125 第二乐章（Molto vivace 谐谑曲，D 小调）**：贝多芬再次指定 **Timpani in F. f.**（小三度音与大字组平行主音八度）。在乐章开篇的赋格呈示引子中，定音鼓独奏以尖锐的八度跳跃（f - F）劈开管弦声场；更重要的是，在著名的三小节节拍（*Ritmo di tre battute*）与四小节节拍（*Ritmo di quattro battute*）的高速变换中，定音鼓的重音击打成为了引导整个乐队划定曲式骨架的唯一节拍仲裁者；
 3. **《第九交响曲》Op. 125 第一乐章再现部（Allegro ma non troppo，m. 301）**：全奏爆发雷鸣般的 D 大调 $ff$ Tutti，定音鼓以极罕见的长达数十小节的持续震音（D 滚奏）与弦乐大提琴、低音提琴的低音升 F 音强烈对冲，以震撼的声学风暴坚决捍卫 D 音的绝对引力中心。
 
-谱例待补：贝多芬《第九交响曲》Op. 125 第二乐章，mm. 1–9 与 mm. 195–205（定音鼓 in F. f. 纯八度定音，在谐谑曲开篇以独奏八度跳跃陈述动机，并在三小节节拍变换中确立重音）
+```lilypond title="贝多芬 第九交响曲 Op.125 第二乐章" location="Molto vivace，mm.1–9（实音记谱；定音鼓 in F 的八度跳跃与弦乐八度动机）" id="beethoven-op125-ii-mm1-9"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 底本 Timpani in F3, F2（定音 F 与 f 上下八度）；Corno 1,2 in D 与 Corno 3,4 in B♭ basso 已换算为实音。
+% 本谱例为实音记谱。
+
+global = {
+  \key d \minor
+  \time 3/4
+}
+
+timpani = {
+  \clef "bass"
+  \tempo "Molto vivace" 2 = 116
+  r2. | % m.1
+  r2. | % m.2
+  r2. | % m.3
+  r2. | % m.4
+  f4. f,8 f,4 | % m.5
+  r2. | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  r2. | % m.9
+}
+
+hornsI = {
+  \clef "treble"
+  r2. | % m.1
+  r2. | % m.2
+  r2. | % m.3
+  r2. | % m.4
+  r2. | % m.5
+  d''4. d'8 d'4 | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  r2. | % m.9
+}
+
+violinI = {
+  \clef "treble"
+  d'''4. d''8 d''4 | % m.1
+  r2. | % m.2
+  a''4. a'8 a'4 | % m.3
+  r2. | % m.4
+  r2. | % m.5
+  d''4. d'8 d'4 | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  r2. | % m.9
+}
+
+violinII = {
+  \clef "treble"
+  d'''4. d''8 d''4 | % m.1
+  r2. | % m.2
+  a''4. a'8 a'4 | % m.3
+  r2. | % m.4
+  r2. | % m.5
+  d''4. d'8 d'4 | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  a''4. s4. | % m.9
+}
+
+viola = {
+  \clef "alto"
+  d''4. d'8 d'4 | % m.1
+  r2. | % m.2
+  a'4. a8 a4 | % m.3
+  r2. | % m.4
+  r2. | % m.5
+  d'4. d8 d4 | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  r2. | % m.9
+}
+
+cello = {
+  \clef "bass"
+  d'4. d8 d4 | % m.1
+  r2. | % m.2
+  a4. a,8 a,4 | % m.3
+  r2. | % m.4
+  r2. | % m.5
+  d4. d,8 d,4 | % m.6
+  r2. | % m.7
+  r2. | % m.8
+  r2. | % m.9
+}
+
+\score {
+  <<
+    \new Staff = "Timp(F,f)" {
+      \set Staff.midiInstrument = "timpani"
+      \global
+      \timpani
+    }
+    \new Staff = "Cor 1,2" {
+      \set Staff.midiInstrument = "french horn"
+      \global
+      \hornsI
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "VlnII" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinII
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
+
+```lilypond title="贝多芬 第九交响曲 Op.125 第二乐章" location="Molto vivace，mm.195–205（实音记谱；定音鼓 in F, f 以三小节为周期确立重音）" id="beethoven-op125-ii-mm195-205"
+\version "2.26.0"
+\language "english"
+
+% 据 CCARH MuseData 转写，学术用途。
+% 本段局部为 F 大调（与乐章主调 D 小调共用同一调号：一个降号）。
+% 定音鼓在 mm.195 / 198 / 201 / 204 各击一次，周期恰为三小节；本谱例为实音记谱。
+
+global = {
+  \key d \minor
+  \time 3/4
+}
+
+timpani = {
+  \clef "bass"
+  \tempo "Molto vivace" 2 = 116
+  f4. f,8 f,4 | % m.195
+  r2. | % m.196
+  r2. | % m.197
+  f4. f,8 f,4 | % m.198
+  r2. | % m.199
+  r2. | % m.200
+  f4. f,8 f,4 | % m.201
+  r2. | % m.202
+  r2. | % m.203
+  f4. f,8 f,4 | % m.204
+  r2. | % m.205
+}
+
+violinI = {
+  \clef "treble"
+  r2. | % m.195
+  f''4 s2 | % m.196
+  f'4 r4 r4 | % m.197
+  r2. | % m.198
+  f''4 r4 r4 | % m.199
+  f'4 r4 r4 | % m.200
+  r2. | % m.201
+  f''4 r4 r4 | % m.202
+  f'4 r4 r4 | % m.203
+  r2. | % m.204
+  f''4 r4 r4 | % m.205
+}
+
+viola = {
+  \clef "alto"
+  r2. | % m.195
+  f'4 s2 | % m.196
+  f4 r4 r4 | % m.197
+  r2. | % m.198
+  f'4 r4 r4 | % m.199
+  f4 r4 r4 | % m.200
+  r2. | % m.201
+  f'4 r4 r4 | % m.202
+  f4 r4 r4 | % m.203
+  r2. | % m.204
+  f'4 r4 r4 | % m.205
+}
+
+cello = {
+  \clef "bass"
+  r2. | % m.195
+  f'4 s2 | % m.196
+  f4 r4 r4 | % m.197
+  r2. | % m.198
+  f'4 r4 r4 | % m.199
+  f4 r4 r4 | % m.200
+  r2. | % m.201
+  f'4 r4 r4 | % m.202
+  f4 r4 r4 | % m.203
+  r2. | % m.204
+  f'4 r4 r4 | % m.205
+}
+
+\score {
+  <<
+    \new Staff = "Timp(F,f)" {
+      \set Staff.midiInstrument = "timpani"
+      \global
+      \timpani
+    }
+    \new Staff = "VlnI" {
+      \set Staff.midiInstrument = "violin"
+      \global
+      \violinI
+    }
+    \new Staff = "Vla" {
+      \set Staff.midiInstrument = "viola"
+      \global
+      \viola
+    }
+    \new Staff = "Vc" {
+      \set Staff.midiInstrument = "cello"
+      \global
+      \cello
+    }
+  >>
+  \layout { ragged-right = ##f }
+  \midi { }
+}
+```
 
 ---
 
